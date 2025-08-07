@@ -24,7 +24,7 @@ import http.client as httplib
 import json
 # Import OAuth2 handler
 try:
-    from .oauth2_handler import OAuth2Handler
+    from .api.oauth2_handler import OAuth2Handler
 except ImportError:
     OAuth2Handler = None
 
@@ -118,6 +118,7 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
             os.mkdir(self.persitent_folder)
         self.config_file = os.path.join(self.persitent_folder, "config.json")
 
+        need_to_update = False
         # If the config file exists, load the client id and project id from it
         if os.path.exists(self.config_file):
             with open(self.config_file, "r") as f:
@@ -130,20 +131,29 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
             self.token_endpoint = config["token_endpoint"]
             self.refresh_endpoint = config["refresh_endpoint"]
             self.verify_ssl = config["verify_ssl"]
+            self.original_client_id = config["original_client_id"] if "original_client_id" in config else None
+            self.original_project_id = config["original_project_id"] if "original_project_id" in config else None
+            self.original_access_token = config["original_access_token"] if "original_access_token" in config else None
+            self.original_refresh_token = config["original_refresh_token"] if "original_refresh_token" in config else None
+            need_to_update = self.original_client_id != self.client_id or self.original_project_id != self.project_id or self.original_refresh_token != self.refresh_token
 
         # If the config file does not exist, create it
-        if not os.path.exists(self.config_file):
+        if not os.path.exists(self.config_file) or need_to_update:
             with open(self.config_file, "w") as f:
                 json.dump(
                     {
                         "client_id": self.client_id,
                         "project_id": self.project_id, 
                         "access_token": self.access_token, 
-                        "refresh_token": self.refresh_token, 
+                        "refresh_token": self.refresh_token,
+                        "original_client_id": self.client_id,
+                        "original_project_id": self.project_id,
+                        "original_access_token": self.access_token,
+                        "original_refresh_token": self.refresh_token,
                         "host": self.host, 
                         "token_endpoint": self.token_endpoint, 
                         "refresh_endpoint": self.refresh_endpoint, 
-                        "verify_ssl": self.verify_ssl
+                        "verify_ssl": self.verify_ssl,
                         }, f)
 
         # OAuth2 Settings

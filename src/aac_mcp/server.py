@@ -1,3 +1,4 @@
+
 """
 FastMCP Server for Alteryx Analytics Cloud Schedule API.
 """
@@ -7,10 +8,10 @@ import logging
 from typing import Any, Dict, List, Optional
 
 from fastmcp import FastMCP
-from src.client.api.schedule_api import ScheduleApi
-from src.client.api_client import ApiClient
-from src.client.configuration import Configuration
-from src.client.models import ScheduleCreateRequest, ScheduleUpdateRequest
+from ..client.schedule_api import ScheduleApi
+from ..client.api.api_client import ApiClient
+from ..client.configuration import Configuration
+from ..client.scheduling_models import ScheduleCreateRequest, ScheduleUpdateRequest
 
 logger = logging.getLogger(__name__)
 
@@ -25,7 +26,7 @@ class AACMCPServer:
         self.schedule_api = ScheduleApi(api_client)
         
         # Initialize FastMCP server
-        self.mcp = FastMCP(
+        self.app = FastMCP(
             name="aac-mcp",
             instructions="MCP server for Alteryx Analytics Cloud Schedule API operations"
         )
@@ -48,7 +49,7 @@ class AACMCPServer:
     def _register_tools(self) -> None:
         """Register all MCP tools."""
         
-        @self.mcp.tool(
+        @self.app.tool(
             name="list_schedules",
             description="List all schedules in the workspace"
         )
@@ -63,7 +64,7 @@ class AACMCPServer:
                 logger.error(f"Error listing schedules: {e}")
                 raise
         
-        @self.mcp.tool(
+        @self.app.tool(
             name="get_schedule",
             description="Get details of a specific schedule by ID"
         )
@@ -85,7 +86,7 @@ class AACMCPServer:
                 logger.error(f"Error getting schedule {schedule_id}: {e}")
                 raise
         
-        @self.mcp.tool(
+        @self.app.tool(
             name="create_schedule",
             description="Create a new schedule"
         )
@@ -114,7 +115,7 @@ class AACMCPServer:
                 logger.error(f"Error creating schedule: {e}")
                 raise
         
-        @self.mcp.tool(
+        @self.app.tool(
             name="update_schedule",
             description="Update an existing schedule"
         )
@@ -146,7 +147,7 @@ class AACMCPServer:
                 logger.error(f"Error updating schedule {schedule_id}: {e}")
                 raise
         
-        @self.mcp.tool(
+        @self.app.tool(
             name="delete_schedule",
             description="Delete a schedule by ID"
         )
@@ -168,7 +169,7 @@ class AACMCPServer:
                 logger.error(f"Error deleting schedule {schedule_id}: {e}")
                 raise
         
-        @self.mcp.tool(
+        @self.app.tool(
             name="enable_schedule",
             description="Enable a schedule by ID"
         )
@@ -190,7 +191,7 @@ class AACMCPServer:
                 logger.error(f"Error enabling schedule {schedule_id}: {e}")
                 raise
         
-        @self.mcp.tool(
+        @self.app.tool(
             name="disable_schedule",
             description="Disable a schedule by ID"
         )
@@ -212,7 +213,7 @@ class AACMCPServer:
                 logger.error(f"Error disabling schedule {schedule_id}: {e}")
                 raise
         
-        @self.mcp.tool(
+        @self.app.tool(
             name="count_schedules",
             description="Get the count of schedules in the workspace"
         )
@@ -226,27 +227,3 @@ class AACMCPServer:
             except Exception as e:
                 logger.error(f"Error counting schedules: {e}")
                 raise
-    
-    async def run_stdio(self) -> None:
-        """Run the MCP server with stdio transport."""
-        await self.mcp.run_stdio_async()
-    
-    async def run_sse(self, host: str = "localhost", port: int = 8000) -> None:
-        """Run the MCP server with SSE transport."""
-        await self.mcp.run_sse_async(host=host, port=port)
-    
-    async def run_streamable_http(self, host: str = "localhost", port: int = 8001) -> None:
-        """Run the MCP server with streamable HTTP transport."""
-        await self.mcp.run_streamable_http_async(host=host, port=port)
-
-
-async def main():
-    """Main entry point for the MCP server (legacy compatibility)."""
-    logging.basicConfig(level=logging.INFO)
-    server = AACMCPServer()
-    await server.run_stdio()
-
-
-if __name__ == "__main__":
-    import asyncio
-    asyncio.run(main())

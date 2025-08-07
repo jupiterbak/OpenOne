@@ -20,8 +20,8 @@ import unittest
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from src.client.configuration import Configuration
-from src.client.api_client import ApiClient
-from src.client.api.schedule_api import ScheduleApi
+from src.client.api.api_client import ApiClient
+from src.client.schedule_api import ScheduleApi
 
 class TestCount(unittest.TestCase):
     """Count unit test stubs"""
