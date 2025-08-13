@@ -16,6 +16,11 @@ from __future__ import absolute_import
 
 # import apis into sdk package
 from src.client.schedule_api import ScheduleApi
+from src.client.plan_api import PlanApi
+from src.client.plan_edge_api import PlanEdgeApi
+from src.client.plan_node_api import PlanNodeApi
+from src.client.plan_override_api import PlanOverrideApi
+from src.client.plan_snapshot_run_api import PlanSnapshotRunApi
 # import ApiClient
 from src.client.api.api_client import ApiClient
 from src.client.configuration import Configuration
