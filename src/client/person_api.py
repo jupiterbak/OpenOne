@@ -17,7 +17,7 @@ import re  # noqa: F401
 # python 2 and python 3 compatibility library
 import six
 
-from swagger_client.api_client import ApiClient
+from .api.api_client import ApiClient
 
 
 class PersonApi(object):
@@ -133,7 +133,7 @@ class PersonApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/iam/v1/people/{id}', 'GET',
@@ -240,7 +240,7 @@ class PersonApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/iam/v1/workspaces/{workspaceId}/admins', 'GET',

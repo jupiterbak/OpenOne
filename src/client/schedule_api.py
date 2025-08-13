@@ -224,7 +224,7 @@ class ScheduleApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/scheduling/v1/schedules', 'POST',
@@ -315,7 +315,7 @@ class ScheduleApi(object):
 
         body_params = None
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/scheduling/v1/schedules/{id}', 'DELETE',
@@ -418,7 +418,7 @@ class ScheduleApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/scheduling/v1/schedules/{id}/disable', 'POST',
@@ -521,7 +521,7 @@ class ScheduleApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/scheduling/v1/schedules/{id}/enable', 'POST',
@@ -616,7 +616,7 @@ class ScheduleApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/scheduling/v1/schedules/{id}', 'GET',
@@ -736,7 +736,7 @@ class ScheduleApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/scheduling/v1/schedules', 'GET',
@@ -843,7 +843,7 @@ class ScheduleApi(object):
             ['application/json'])  # noqa: E501
 
         # Authentication setting
-        auth_settings = []  # noqa: E501
+        auth_settings = ['Bearer']  # noqa: E501
 
         return self.api_client.call_api(
             '/scheduling/v1/schedules/{id}', 'PUT',
