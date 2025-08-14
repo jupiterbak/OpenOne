@@ -32,7 +32,7 @@ class LPublishMetadataInfo(object):
         'publish_validation': 'object',
         'publish_queries': 'object',
         'performance_params': 'object',
-        'publish_info': 'PublishInfo'
+        'publish_info': 'LPublishInfo'
     }
 
     attribute_map = {
@@ -45,7 +45,7 @@ class LPublishMetadataInfo(object):
     }
 
     def __init__(self, publish_method=None, publish_type_map=None, publish_validation=None, publish_queries=None, performance_params=None, publish_info=None):  # noqa: E501
-        """PublishMetadataInfo - a model defined in Swagger"""  # noqa: E501
+        """LPublishMetadataInfo - a model defined in Swagger"""  # noqa: E501
         self._publish_method = None
         self._publish_type_map = None
         self._publish_validation = None
@@ -68,20 +68,20 @@ class LPublishMetadataInfo(object):
 
     @property
     def publish_method(self):
-        """Gets the publish_method of this PublishMetadataInfo.  # noqa: E501
+        """Gets the publish_method of this LPublishMetadataInfo.  # noqa: E501
 
 
-        :return: The publish_method of this PublishMetadataInfo.  # noqa: E501
+        :return: The publish_method of this LPublishMetadataInfo.  # noqa: E501
         :rtype: str
         """
         return self._publish_method
 
     @publish_method.setter
     def publish_method(self, publish_method):
-        """Sets the publish_method of this PublishMetadataInfo.
+        """Sets the publish_method of this LPublishMetadataInfo.
 
 
-        :param publish_method: The publish_method of this PublishMetadataInfo.  # noqa: E501
+        :param publish_method: The publish_method of this LPublishMetadataInfo.  # noqa: E501
         :type: str
         """
         allowed_values = ["direct", "stagingWithCreate", "stagingWithTruncate"]  # noqa: E501
@@ -95,20 +95,20 @@ class LPublishMetadataInfo(object):
 
     @property
     def publish_type_map(self):
-        """Gets the publish_type_map of this PublishMetadataInfo.  # noqa: E501
+        """Gets the publish_type_map of this LPublishMetadataInfo.  # noqa: E501
 
 
-        :return: The publish_type_map of this PublishMetadataInfo.  # noqa: E501
+        :return: The publish_type_map of this LPublishMetadataInfo.  # noqa: E501
         :rtype: list[object]
         """
         return self._publish_type_map
 
     @publish_type_map.setter
     def publish_type_map(self, publish_type_map):
-        """Sets the publish_type_map of this PublishMetadataInfo.
+        """Sets the publish_type_map of this LPublishMetadataInfo.
 
 
-        :param publish_type_map: The publish_type_map of this PublishMetadataInfo.  # noqa: E501
+        :param publish_type_map: The publish_type_map of this LPublishMetadataInfo.  # noqa: E501
         :type: list[object]
         """
 
@@ -116,20 +116,20 @@ class LPublishMetadataInfo(object):
 
     @property
     def publish_validation(self):
-        """Gets the publish_validation of this PublishMetadataInfo.  # noqa: E501
+        """Gets the publish_validation of this LPublishMetadataInfo.  # noqa: E501
 
 
-        :return: The publish_validation of this PublishMetadataInfo.  # noqa: E501
+        :return: The publish_validation of this LPublishMetadataInfo.  # noqa: E501
         :rtype: object
         """
         return self._publish_validation
 
     @publish_validation.setter
     def publish_validation(self, publish_validation):
-        """Sets the publish_validation of this PublishMetadataInfo.
+        """Sets the publish_validation of this LPublishMetadataInfo.
 
 
-        :param publish_validation: The publish_validation of this PublishMetadataInfo.  # noqa: E501
+        :param publish_validation: The publish_validation of this LPublishMetadataInfo.  # noqa: E501
         :type: object
         """
 
@@ -137,20 +137,20 @@ class LPublishMetadataInfo(object):
 
     @property
     def publish_queries(self):
-        """Gets the publish_queries of this PublishMetadataInfo.  # noqa: E501
+        """Gets the publish_queries of this LPublishMetadataInfo.  # noqa: E501
 
 
-        :return: The publish_queries of this PublishMetadataInfo.  # noqa: E501
+        :return: The publish_queries of this LPublishMetadataInfo.  # noqa: E501
         :rtype: object
         """
         return self._publish_queries
 
     @publish_queries.setter
     def publish_queries(self, publish_queries):
-        """Sets the publish_queries of this PublishMetadataInfo.
+        """Sets the publish_queries of this LPublishMetadataInfo.
 
 
-        :param publish_queries: The publish_queries of this PublishMetadataInfo.  # noqa: E501
+        :param publish_queries: The publish_queries of this LPublishMetadataInfo.  # noqa: E501
         :type: object
         """
 
@@ -158,20 +158,20 @@ class LPublishMetadataInfo(object):
 
     @property
     def performance_params(self):
-        """Gets the performance_params of this PublishMetadataInfo.  # noqa: E501
+        """Gets the performance_params of this LPublishMetadataInfo.  # noqa: E501
 
 
-        :return: The performance_params of this PublishMetadataInfo.  # noqa: E501
+        :return: The performance_params of this LPublishMetadataInfo.  # noqa: E501
         :rtype: object
         """
         return self._performance_params
 
     @performance_params.setter
     def performance_params(self, performance_params):
-        """Sets the performance_params of this PublishMetadataInfo.
+        """Sets the performance_params of this LPublishMetadataInfo.
 
 
-        :param performance_params: The performance_params of this PublishMetadataInfo.  # noqa: E501
+        :param performance_params: The performance_params of this LPublishMetadataInfo.  # noqa: E501
         :type: object
         """
 
@@ -179,21 +179,21 @@ class LPublishMetadataInfo(object):
 
     @property
     def publish_info(self):
-        """Gets the publish_info of this PublishMetadataInfo.  # noqa: E501
+        """Gets the publish_info of this LPublishMetadataInfo.  # noqa: E501
 
 
-        :return: The publish_info of this PublishMetadataInfo.  # noqa: E501
-        :rtype: PublishInfo
+        :return: The publish_info of this LPublishMetadataInfo.  # noqa: E501
+        :rtype: LPublishInfo
         """
         return self._publish_info
 
     @publish_info.setter
     def publish_info(self, publish_info):
-        """Sets the publish_info of this PublishMetadataInfo.
+        """Sets the publish_info of this LPublishMetadataInfo.
 
 
-        :param publish_info: The publish_info of this PublishMetadataInfo.  # noqa: E501
-        :type: PublishInfo
+        :param publish_info: The publish_info of this LPublishMetadataInfo.  # noqa: E501
+        :type: LPublishInfo
         """
 
         self._publish_info = publish_info
@@ -219,7 +219,7 @@ class LPublishMetadataInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PublishMetadataInfo, dict):
+        if issubclass(LPublishMetadataInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -235,7 +235,7 @@ class LPublishMetadataInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PublishMetadataInfo):
+        if not isinstance(other, LPublishMetadataInfo):
             return False
 
         return self.__dict__ == other.__dict__

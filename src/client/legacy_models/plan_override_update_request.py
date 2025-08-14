@@ -27,9 +27,9 @@ class LPlanOverrideUpdateRequest(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'plan_node_id': 'AnyOfplanOverrideUpdateRequestPlanNodeId',
+        'plan_node_id': 'LAnyOfplanOverrideUpdateRequestPlanNodeId',
         'override_key': 'str',
-        'value': 'OneOfplanOverrideUpdateRequestValue'
+        'value': 'LOneOfplanOverrideUpdateRequestValue'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class LPlanOverrideUpdateRequest(object):
     }
 
     def __init__(self, plan_node_id=None, override_key=None, value=None):  # noqa: E501
-        """PlanOverrideUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LPlanOverrideUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._plan_node_id = None
         self._override_key = None
         self._value = None
@@ -50,21 +50,21 @@ class LPlanOverrideUpdateRequest(object):
 
     @property
     def plan_node_id(self):
-        """Gets the plan_node_id of this PlanOverrideUpdateRequest.  # noqa: E501
+        """Gets the plan_node_id of this LPlanOverrideUpdateRequest.  # noqa: E501
 
 
-        :return: The plan_node_id of this PlanOverrideUpdateRequest.  # noqa: E501
-        :rtype: AnyOfplanOverrideUpdateRequestPlanNodeId
+        :return: The plan_node_id of this LPlanOverrideUpdateRequest.  # noqa: E501
+        :rtype: LAnyOfplanOverrideUpdateRequestPlanNodeId
         """
         return self._plan_node_id
 
     @plan_node_id.setter
     def plan_node_id(self, plan_node_id):
-        """Sets the plan_node_id of this PlanOverrideUpdateRequest.
+        """Sets the plan_node_id of this LPlanOverrideUpdateRequest.
 
 
-        :param plan_node_id: The plan_node_id of this PlanOverrideUpdateRequest.  # noqa: E501
-        :type: AnyOfplanOverrideUpdateRequestPlanNodeId
+        :param plan_node_id: The plan_node_id of this LPlanOverrideUpdateRequest.  # noqa: E501
+        :type: LAnyOfplanOverrideUpdateRequestPlanNodeId
         """
         if plan_node_id is None:
             raise ValueError("Invalid value for `plan_node_id`, must not be `None`")  # noqa: E501
@@ -73,22 +73,22 @@ class LPlanOverrideUpdateRequest(object):
 
     @property
     def override_key(self):
-        """Gets the override_key of this PlanOverrideUpdateRequest.  # noqa: E501
+        """Gets the override_key of this LPlanOverrideUpdateRequest.  # noqa: E501
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :return: The override_key of this PlanOverrideUpdateRequest.  # noqa: E501
+        :return: The override_key of this LPlanOverrideUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._override_key
 
     @override_key.setter
     def override_key(self, override_key):
-        """Sets the override_key of this PlanOverrideUpdateRequest.
+        """Sets the override_key of this LPlanOverrideUpdateRequest.
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :param override_key: The override_key of this PlanOverrideUpdateRequest.  # noqa: E501
+        :param override_key: The override_key of this LPlanOverrideUpdateRequest.  # noqa: E501
         :type: str
         """
         if override_key is None:
@@ -98,21 +98,21 @@ class LPlanOverrideUpdateRequest(object):
 
     @property
     def value(self):
-        """Gets the value of this PlanOverrideUpdateRequest.  # noqa: E501
+        """Gets the value of this LPlanOverrideUpdateRequest.  # noqa: E501
 
 
-        :return: The value of this PlanOverrideUpdateRequest.  # noqa: E501
-        :rtype: OneOfplanOverrideUpdateRequestValue
+        :return: The value of this LPlanOverrideUpdateRequest.  # noqa: E501
+        :rtype: LOneOfplanOverrideUpdateRequestValue
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PlanOverrideUpdateRequest.
+        """Sets the value of this LPlanOverrideUpdateRequest.
 
 
-        :param value: The value of this PlanOverrideUpdateRequest.  # noqa: E501
-        :type: OneOfplanOverrideUpdateRequestValue
+        :param value: The value of this LPlanOverrideUpdateRequest.  # noqa: E501
+        :type: LOneOfplanOverrideUpdateRequestValue
         """
         if value is None:
             raise ValueError("Invalid value for `value`, must not be `None`")  # noqa: E501
@@ -140,7 +140,7 @@ class LPlanOverrideUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanOverrideUpdateRequest, dict):
+        if issubclass(LPlanOverrideUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -156,7 +156,7 @@ class LPlanOverrideUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanOverrideUpdateRequest):
+        if not isinstance(other, LPlanOverrideUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -37,7 +37,7 @@ class LHttpQueryBasedAuth(object):
     }
 
     def __init__(self, query_key=None, query_value=None):  # noqa: E501
-        """HttpQueryBasedAuth - a model defined in Swagger"""  # noqa: E501
+        """LHttpQueryBasedAuth - a model defined in Swagger"""  # noqa: E501
         self._query_key = None
         self._query_value = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LHttpQueryBasedAuth(object):
 
     @property
     def query_key(self):
-        """Gets the query_key of this HttpQueryBasedAuth.  # noqa: E501
+        """Gets the query_key of this LHttpQueryBasedAuth.  # noqa: E501
 
 
-        :return: The query_key of this HttpQueryBasedAuth.  # noqa: E501
+        :return: The query_key of this LHttpQueryBasedAuth.  # noqa: E501
         :rtype: str
         """
         return self._query_key
 
     @query_key.setter
     def query_key(self, query_key):
-        """Sets the query_key of this HttpQueryBasedAuth.
+        """Sets the query_key of this LHttpQueryBasedAuth.
 
 
-        :param query_key: The query_key of this HttpQueryBasedAuth.  # noqa: E501
+        :param query_key: The query_key of this LHttpQueryBasedAuth.  # noqa: E501
         :type: str
         """
         if query_key is None:
@@ -69,20 +69,20 @@ class LHttpQueryBasedAuth(object):
 
     @property
     def query_value(self):
-        """Gets the query_value of this HttpQueryBasedAuth.  # noqa: E501
+        """Gets the query_value of this LHttpQueryBasedAuth.  # noqa: E501
 
 
-        :return: The query_value of this HttpQueryBasedAuth.  # noqa: E501
+        :return: The query_value of this LHttpQueryBasedAuth.  # noqa: E501
         :rtype: str
         """
         return self._query_value
 
     @query_value.setter
     def query_value(self, query_value):
-        """Sets the query_value of this HttpQueryBasedAuth.
+        """Sets the query_value of this LHttpQueryBasedAuth.
 
 
-        :param query_value: The query_value of this HttpQueryBasedAuth.  # noqa: E501
+        :param query_value: The query_value of this LHttpQueryBasedAuth.  # noqa: E501
         :type: str
         """
         if query_value is None:
@@ -111,7 +111,7 @@ class LHttpQueryBasedAuth(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(HttpQueryBasedAuth, dict):
+        if issubclass(LHttpQueryBasedAuth, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LHttpQueryBasedAuth(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, HttpQueryBasedAuth):
+        if not isinstance(other, LHttpQueryBasedAuth):
             return False
 
         return self.__dict__ == other.__dict__

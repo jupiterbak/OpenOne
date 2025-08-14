@@ -27,7 +27,7 @@ class LDatasetLibraryListObject(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[AnyOfdatasetLibraryListObjectDataItems]',
+        'data': 'list[LAnyOfdatasetLibraryListObjectDataItems]',
         'count': 'object'
     }
 
@@ -37,7 +37,7 @@ class LDatasetLibraryListObject(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """DatasetLibraryListObject - a model defined in Swagger"""  # noqa: E501
+        """LDatasetLibraryListObject - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LDatasetLibraryListObject(object):
 
     @property
     def data(self):
-        """Gets the data of this DatasetLibraryListObject.  # noqa: E501
+        """Gets the data of this LDatasetLibraryListObject.  # noqa: E501
 
 
-        :return: The data of this DatasetLibraryListObject.  # noqa: E501
-        :rtype: list[AnyOfdatasetLibraryListObjectDataItems]
+        :return: The data of this LDatasetLibraryListObject.  # noqa: E501
+        :rtype: list[LAnyOfdatasetLibraryListObjectDataItems]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DatasetLibraryListObject.
+        """Sets the data of this LDatasetLibraryListObject.
 
 
-        :param data: The data of this DatasetLibraryListObject.  # noqa: E501
-        :type: list[AnyOfdatasetLibraryListObjectDataItems]
+        :param data: The data of this LDatasetLibraryListObject.  # noqa: E501
+        :type: list[LAnyOfdatasetLibraryListObjectDataItems]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LDatasetLibraryListObject(object):
 
     @property
     def count(self):
-        """Gets the count of this DatasetLibraryListObject.  # noqa: E501
+        """Gets the count of this LDatasetLibraryListObject.  # noqa: E501
 
 
-        :return: The count of this DatasetLibraryListObject.  # noqa: E501
+        :return: The count of this LDatasetLibraryListObject.  # noqa: E501
         :rtype: object
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this DatasetLibraryListObject.
+        """Sets the count of this LDatasetLibraryListObject.
 
 
-        :param count: The count of this DatasetLibraryListObject.  # noqa: E501
+        :param count: The count of this LDatasetLibraryListObject.  # noqa: E501
         :type: object
         """
 
@@ -110,7 +110,7 @@ class LDatasetLibraryListObject(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DatasetLibraryListObject, dict):
+        if issubclass(LDatasetLibraryListObject, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LDatasetLibraryListObject(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DatasetLibraryListObject):
+        if not isinstance(other, LDatasetLibraryListObject):
             return False
 
         return self.__dict__ == other.__dict__

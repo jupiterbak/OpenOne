@@ -27,7 +27,7 @@ class LApiAccessTokenList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[ApiAccessToken]',
+        'data': 'list[LApiAccessToken]',
         'count': 'int'
     }
 
@@ -37,7 +37,7 @@ class LApiAccessTokenList(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """ApiAccessTokenList - a model defined in Swagger"""  # noqa: E501
+        """LApiAccessTokenList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LApiAccessTokenList(object):
 
     @property
     def data(self):
-        """Gets the data of this ApiAccessTokenList.  # noqa: E501
+        """Gets the data of this LApiAccessTokenList.  # noqa: E501
 
 
-        :return: The data of this ApiAccessTokenList.  # noqa: E501
-        :rtype: list[ApiAccessToken]
+        :return: The data of this LApiAccessTokenList.  # noqa: E501
+        :rtype: list[LApiAccessToken]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ApiAccessTokenList.
+        """Sets the data of this LApiAccessTokenList.
 
 
-        :param data: The data of this ApiAccessTokenList.  # noqa: E501
-        :type: list[ApiAccessToken]
+        :param data: The data of this LApiAccessTokenList.  # noqa: E501
+        :type: list[LApiAccessToken]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LApiAccessTokenList(object):
 
     @property
     def count(self):
-        """Gets the count of this ApiAccessTokenList.  # noqa: E501
+        """Gets the count of this LApiAccessTokenList.  # noqa: E501
 
 
-        :return: The count of this ApiAccessTokenList.  # noqa: E501
+        :return: The count of this LApiAccessTokenList.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ApiAccessTokenList.
+        """Sets the count of this LApiAccessTokenList.
 
 
-        :param count: The count of this ApiAccessTokenList.  # noqa: E501
+        :param count: The count of this LApiAccessTokenList.  # noqa: E501
         :type: int
         """
 
@@ -110,7 +110,7 @@ class LApiAccessTokenList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ApiAccessTokenList, dict):
+        if issubclass(LApiAccessTokenList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LApiAccessTokenList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ApiAccessTokenList):
+        if not isinstance(other, LApiAccessTokenList):
             return False
 
         return self.__dict__ == other.__dict__

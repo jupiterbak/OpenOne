@@ -27,8 +27,8 @@ class LCreatePlanWatcherFromPerson(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'plan_id': 'AnyOfcreatePlanWatcherFromPersonPlanId',
-        'person_id': 'AnyOfcreatePlanWatcherFromPersonPersonId'
+        'plan_id': 'LAnyOfcreatePlanWatcherFromPersonPlanId',
+        'person_id': 'LAnyOfcreatePlanWatcherFromPersonPersonId'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LCreatePlanWatcherFromPerson(object):
     }
 
     def __init__(self, plan_id=None, person_id=None):  # noqa: E501
-        """CreatePlanWatcherFromPerson - a model defined in Swagger"""  # noqa: E501
+        """LCreatePlanWatcherFromPerson - a model defined in Swagger"""  # noqa: E501
         self._plan_id = None
         self._person_id = None
         self.discriminator = None
@@ -46,21 +46,21 @@ class LCreatePlanWatcherFromPerson(object):
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this CreatePlanWatcherFromPerson.  # noqa: E501
+        """Gets the plan_id of this LCreatePlanWatcherFromPerson.  # noqa: E501
 
 
-        :return: The plan_id of this CreatePlanWatcherFromPerson.  # noqa: E501
-        :rtype: AnyOfcreatePlanWatcherFromPersonPlanId
+        :return: The plan_id of this LCreatePlanWatcherFromPerson.  # noqa: E501
+        :rtype: LAnyOfcreatePlanWatcherFromPersonPlanId
         """
         return self._plan_id
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this CreatePlanWatcherFromPerson.
+        """Sets the plan_id of this LCreatePlanWatcherFromPerson.
 
 
-        :param plan_id: The plan_id of this CreatePlanWatcherFromPerson.  # noqa: E501
-        :type: AnyOfcreatePlanWatcherFromPersonPlanId
+        :param plan_id: The plan_id of this LCreatePlanWatcherFromPerson.  # noqa: E501
+        :type: LAnyOfcreatePlanWatcherFromPersonPlanId
         """
         if plan_id is None:
             raise ValueError("Invalid value for `plan_id`, must not be `None`")  # noqa: E501
@@ -69,21 +69,21 @@ class LCreatePlanWatcherFromPerson(object):
 
     @property
     def person_id(self):
-        """Gets the person_id of this CreatePlanWatcherFromPerson.  # noqa: E501
+        """Gets the person_id of this LCreatePlanWatcherFromPerson.  # noqa: E501
 
 
-        :return: The person_id of this CreatePlanWatcherFromPerson.  # noqa: E501
-        :rtype: AnyOfcreatePlanWatcherFromPersonPersonId
+        :return: The person_id of this LCreatePlanWatcherFromPerson.  # noqa: E501
+        :rtype: LAnyOfcreatePlanWatcherFromPersonPersonId
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this CreatePlanWatcherFromPerson.
+        """Sets the person_id of this LCreatePlanWatcherFromPerson.
 
 
-        :param person_id: The person_id of this CreatePlanWatcherFromPerson.  # noqa: E501
-        :type: AnyOfcreatePlanWatcherFromPersonPersonId
+        :param person_id: The person_id of this LCreatePlanWatcherFromPerson.  # noqa: E501
+        :type: LAnyOfcreatePlanWatcherFromPersonPersonId
         """
         if person_id is None:
             raise ValueError("Invalid value for `person_id`, must not be `None`")  # noqa: E501
@@ -111,7 +111,7 @@ class LCreatePlanWatcherFromPerson(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(CreatePlanWatcherFromPerson, dict):
+        if issubclass(LCreatePlanWatcherFromPerson, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LCreatePlanWatcherFromPerson(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreatePlanWatcherFromPerson):
+        if not isinstance(other, LCreatePlanWatcherFromPerson):
             return False
 
         return self.__dict__ == other.__dict__

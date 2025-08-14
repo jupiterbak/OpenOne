@@ -39,7 +39,7 @@ class LFlowPermissionWithEmailRequest(object):
     }
 
     def __init__(self, role=None, policy=None, email=None):  # noqa: E501
-        """FlowPermissionWithEmailRequest - a model defined in Swagger"""  # noqa: E501
+        """LFlowPermissionWithEmailRequest - a model defined in Swagger"""  # noqa: E501
         self._role = None
         self._policy = None
         self._email = None
@@ -51,22 +51,22 @@ class LFlowPermissionWithEmailRequest(object):
 
     @property
     def role(self):
-        """Gets the role of this FlowPermissionWithEmailRequest.  # noqa: E501
+        """Gets the role of this LFlowPermissionWithEmailRequest.  # noqa: E501
 
         Role * `collaborator` - Flow collaborator, can see and edit recipes in the flow. * `readOnly` - Read only user. Can see recipes in the flow.  # noqa: E501
 
-        :return: The role of this FlowPermissionWithEmailRequest.  # noqa: E501
+        :return: The role of this LFlowPermissionWithEmailRequest.  # noqa: E501
         :rtype: str
         """
         return self._role
 
     @role.setter
     def role(self, role):
-        """Sets the role of this FlowPermissionWithEmailRequest.
+        """Sets the role of this LFlowPermissionWithEmailRequest.
 
         Role * `collaborator` - Flow collaborator, can see and edit recipes in the flow. * `readOnly` - Read only user. Can see recipes in the flow.  # noqa: E501
 
-        :param role: The role of this FlowPermissionWithEmailRequest.  # noqa: E501
+        :param role: The role of this LFlowPermissionWithEmailRequest.  # noqa: E501
         :type: str
         """
         if role is None:
@@ -82,20 +82,20 @@ class LFlowPermissionWithEmailRequest(object):
 
     @property
     def policy(self):
-        """Gets the policy of this FlowPermissionWithEmailRequest.  # noqa: E501
+        """Gets the policy of this LFlowPermissionWithEmailRequest.  # noqa: E501
 
 
-        :return: The policy of this FlowPermissionWithEmailRequest.  # noqa: E501
+        :return: The policy of this LFlowPermissionWithEmailRequest.  # noqa: E501
         :rtype: str
         """
         return self._policy
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this FlowPermissionWithEmailRequest.
+        """Sets the policy of this LFlowPermissionWithEmailRequest.
 
 
-        :param policy: The policy of this FlowPermissionWithEmailRequest.  # noqa: E501
+        :param policy: The policy of this LFlowPermissionWithEmailRequest.  # noqa: E501
         :type: str
         """
 
@@ -103,20 +103,20 @@ class LFlowPermissionWithEmailRequest(object):
 
     @property
     def email(self):
-        """Gets the email of this FlowPermissionWithEmailRequest.  # noqa: E501
+        """Gets the email of this LFlowPermissionWithEmailRequest.  # noqa: E501
 
 
-        :return: The email of this FlowPermissionWithEmailRequest.  # noqa: E501
+        :return: The email of this LFlowPermissionWithEmailRequest.  # noqa: E501
         :rtype: str
         """
         return self._email
 
     @email.setter
     def email(self, email):
-        """Sets the email of this FlowPermissionWithEmailRequest.
+        """Sets the email of this LFlowPermissionWithEmailRequest.
 
 
-        :param email: The email of this FlowPermissionWithEmailRequest.  # noqa: E501
+        :param email: The email of this LFlowPermissionWithEmailRequest.  # noqa: E501
         :type: str
         """
         if email is None:
@@ -145,7 +145,7 @@ class LFlowPermissionWithEmailRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowPermissionWithEmailRequest, dict):
+        if issubclass(LFlowPermissionWithEmailRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -161,7 +161,7 @@ class LFlowPermissionWithEmailRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowPermissionWithEmailRequest):
+        if not isinstance(other, LFlowPermissionWithEmailRequest):
             return False
 
         return self.__dict__ == other.__dict__

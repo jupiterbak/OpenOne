@@ -37,7 +37,7 @@ class LSshKey(object):
     }
 
     def __init__(self, username=None, ssh_key=None):  # noqa: E501
-        """SshKey - a model defined in Swagger"""  # noqa: E501
+        """LSshKey - a model defined in Swagger"""  # noqa: E501
         self._username = None
         self._ssh_key = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LSshKey(object):
 
     @property
     def username(self):
-        """Gets the username of this SshKey.  # noqa: E501
+        """Gets the username of this LSshKey.  # noqa: E501
 
 
-        :return: The username of this SshKey.  # noqa: E501
+        :return: The username of this LSshKey.  # noqa: E501
         :rtype: str
         """
         return self._username
 
     @username.setter
     def username(self, username):
-        """Sets the username of this SshKey.
+        """Sets the username of this LSshKey.
 
 
-        :param username: The username of this SshKey.  # noqa: E501
+        :param username: The username of this LSshKey.  # noqa: E501
         :type: str
         """
         if username is None:
@@ -69,20 +69,20 @@ class LSshKey(object):
 
     @property
     def ssh_key(self):
-        """Gets the ssh_key of this SshKey.  # noqa: E501
+        """Gets the ssh_key of this LSshKey.  # noqa: E501
 
 
-        :return: The ssh_key of this SshKey.  # noqa: E501
+        :return: The ssh_key of this LSshKey.  # noqa: E501
         :rtype: str
         """
         return self._ssh_key
 
     @ssh_key.setter
     def ssh_key(self, ssh_key):
-        """Sets the ssh_key of this SshKey.
+        """Sets the ssh_key of this LSshKey.
 
 
-        :param ssh_key: The ssh_key of this SshKey.  # noqa: E501
+        :param ssh_key: The ssh_key of this LSshKey.  # noqa: E501
         :type: str
         """
         if ssh_key is None:
@@ -111,7 +111,7 @@ class LSshKey(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(SshKey, dict):
+        if issubclass(LSshKey, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LSshKey(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SshKey):
+        if not isinstance(other, LSshKey):
             return False
 
         return self.__dict__ == other.__dict__

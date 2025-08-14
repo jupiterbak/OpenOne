@@ -37,7 +37,7 @@ class LApiKeyWithToken(object):
     }
 
     def __init__(self, api_key=None, token=None):  # noqa: E501
-        """ApiKeyWithToken - a model defined in Swagger"""  # noqa: E501
+        """LApiKeyWithToken - a model defined in Swagger"""  # noqa: E501
         self._api_key = None
         self._token = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LApiKeyWithToken(object):
 
     @property
     def api_key(self):
-        """Gets the api_key of this ApiKeyWithToken.  # noqa: E501
+        """Gets the api_key of this LApiKeyWithToken.  # noqa: E501
 
 
-        :return: The api_key of this ApiKeyWithToken.  # noqa: E501
+        :return: The api_key of this LApiKeyWithToken.  # noqa: E501
         :rtype: str
         """
         return self._api_key
 
     @api_key.setter
     def api_key(self, api_key):
-        """Sets the api_key of this ApiKeyWithToken.
+        """Sets the api_key of this LApiKeyWithToken.
 
 
-        :param api_key: The api_key of this ApiKeyWithToken.  # noqa: E501
+        :param api_key: The api_key of this LApiKeyWithToken.  # noqa: E501
         :type: str
         """
         if api_key is None:
@@ -69,20 +69,20 @@ class LApiKeyWithToken(object):
 
     @property
     def token(self):
-        """Gets the token of this ApiKeyWithToken.  # noqa: E501
+        """Gets the token of this LApiKeyWithToken.  # noqa: E501
 
 
-        :return: The token of this ApiKeyWithToken.  # noqa: E501
+        :return: The token of this LApiKeyWithToken.  # noqa: E501
         :rtype: str
         """
         return self._token
 
     @token.setter
     def token(self, token):
-        """Sets the token of this ApiKeyWithToken.
+        """Sets the token of this LApiKeyWithToken.
 
 
-        :param token: The token of this ApiKeyWithToken.  # noqa: E501
+        :param token: The token of this LApiKeyWithToken.  # noqa: E501
         :type: str
         """
         if token is None:
@@ -111,7 +111,7 @@ class LApiKeyWithToken(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ApiKeyWithToken, dict):
+        if issubclass(LApiKeyWithToken, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LApiKeyWithToken(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ApiKeyWithToken):
+        if not isinstance(other, LApiKeyWithToken):
             return False
 
         return self.__dict__ == other.__dict__

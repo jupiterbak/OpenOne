@@ -33,7 +33,7 @@ class LIncludeDeleted(object):
     }
 
     def __init__(self):  # noqa: E501
-        """IncludeDeleted - a model defined in Swagger"""  # noqa: E501
+        """LIncludeDeleted - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LIncludeDeleted(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(IncludeDeleted, dict):
+        if issubclass(LIncludeDeleted, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LIncludeDeleted(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, IncludeDeleted):
+        if not isinstance(other, LIncludeDeleted):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,7 +27,7 @@ class LConnectionPermissionCreateRequest(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[OneOfconnectionPermissionCreateRequestDataItems]'
+        'data': 'list[LOneOfconnectionPermissionCreateRequestDataItems]'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LConnectionPermissionCreateRequest(object):
     }
 
     def __init__(self, data=None):  # noqa: E501
-        """ConnectionPermissionCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LConnectionPermissionCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self.discriminator = None
         self.data = data
 
     @property
     def data(self):
-        """Gets the data of this ConnectionPermissionCreateRequest.  # noqa: E501
+        """Gets the data of this LConnectionPermissionCreateRequest.  # noqa: E501
 
 
-        :return: The data of this ConnectionPermissionCreateRequest.  # noqa: E501
-        :rtype: list[OneOfconnectionPermissionCreateRequestDataItems]
+        :return: The data of this LConnectionPermissionCreateRequest.  # noqa: E501
+        :rtype: list[LOneOfconnectionPermissionCreateRequestDataItems]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ConnectionPermissionCreateRequest.
+        """Sets the data of this LConnectionPermissionCreateRequest.
 
 
-        :param data: The data of this ConnectionPermissionCreateRequest.  # noqa: E501
-        :type: list[OneOfconnectionPermissionCreateRequestDataItems]
+        :param data: The data of this LConnectionPermissionCreateRequest.  # noqa: E501
+        :type: list[LOneOfconnectionPermissionCreateRequestDataItems]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LConnectionPermissionCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConnectionPermissionCreateRequest, dict):
+        if issubclass(LConnectionPermissionCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LConnectionPermissionCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConnectionPermissionCreateRequest):
+        if not isinstance(other, LConnectionPermissionCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

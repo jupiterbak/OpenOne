@@ -30,7 +30,7 @@ class LTaskEntity(object):
         'id': 'str',
         'name': 'str',
         'type': 'str',
-        'children': 'list[TaskEntity]',
+        'children': 'list[LTaskEntity]',
         'updated_at': 'datetime'
     }
 
@@ -43,7 +43,7 @@ class LTaskEntity(object):
     }
 
     def __init__(self, id=None, name=None, type=None, children=None, updated_at=None):  # noqa: E501
-        """TaskEntity - a model defined in Swagger"""  # noqa: E501
+        """LTaskEntity - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._name = None
         self._type = None
@@ -60,22 +60,22 @@ class LTaskEntity(object):
 
     @property
     def id(self):
-        """Gets the id of this TaskEntity.  # noqa: E501
+        """Gets the id of this LTaskEntity.  # noqa: E501
 
         Id of the task entity  # noqa: E501
 
-        :return: The id of this TaskEntity.  # noqa: E501
+        :return: The id of this LTaskEntity.  # noqa: E501
         :rtype: str
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TaskEntity.
+        """Sets the id of this LTaskEntity.
 
         Id of the task entity  # noqa: E501
 
-        :param id: The id of this TaskEntity.  # noqa: E501
+        :param id: The id of this LTaskEntity.  # noqa: E501
         :type: str
         """
         if id is None:
@@ -85,22 +85,22 @@ class LTaskEntity(object):
 
     @property
     def name(self):
-        """Gets the name of this TaskEntity.  # noqa: E501
+        """Gets the name of this LTaskEntity.  # noqa: E501
 
         Name of the task entity  # noqa: E501
 
-        :return: The name of this TaskEntity.  # noqa: E501
+        :return: The name of this LTaskEntity.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TaskEntity.
+        """Sets the name of this LTaskEntity.
 
         Name of the task entity  # noqa: E501
 
-        :param name: The name of this TaskEntity.  # noqa: E501
+        :param name: The name of this LTaskEntity.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -110,22 +110,22 @@ class LTaskEntity(object):
 
     @property
     def type(self):
-        """Gets the type of this TaskEntity.  # noqa: E501
+        """Gets the type of this LTaskEntity.  # noqa: E501
 
         Type of the task entity  # noqa: E501
 
-        :return: The type of this TaskEntity.  # noqa: E501
+        :return: The type of this LTaskEntity.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TaskEntity.
+        """Sets the type of this LTaskEntity.
 
         Type of the task entity  # noqa: E501
 
-        :param type: The type of this TaskEntity.  # noqa: E501
+        :param type: The type of this LTaskEntity.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -135,43 +135,43 @@ class LTaskEntity(object):
 
     @property
     def children(self):
-        """Gets the children of this TaskEntity.  # noqa: E501
+        """Gets the children of this LTaskEntity.  # noqa: E501
 
 
-        :return: The children of this TaskEntity.  # noqa: E501
-        :rtype: list[TaskEntity]
+        :return: The children of this LTaskEntity.  # noqa: E501
+        :rtype: list[LTaskEntity]
         """
         return self._children
 
     @children.setter
     def children(self, children):
-        """Sets the children of this TaskEntity.
+        """Sets the children of this LTaskEntity.
 
 
-        :param children: The children of this TaskEntity.  # noqa: E501
-        :type: list[TaskEntity]
+        :param children: The children of this LTaskEntity.  # noqa: E501
+        :type: list[LTaskEntity]
         """
 
         self._children = children
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this TaskEntity.  # noqa: E501
+        """Gets the updated_at of this LTaskEntity.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this TaskEntity.  # noqa: E501
+        :return: The updated_at of this LTaskEntity.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this TaskEntity.
+        """Sets the updated_at of this LTaskEntity.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this TaskEntity.  # noqa: E501
+        :param updated_at: The updated_at of this LTaskEntity.  # noqa: E501
         :type: datetime
         """
 
@@ -198,7 +198,7 @@ class LTaskEntity(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(TaskEntity, dict):
+        if issubclass(LTaskEntity, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -214,7 +214,7 @@ class LTaskEntity(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TaskEntity):
+        if not isinstance(other, LTaskEntity):
             return False
 
         return self.__dict__ == other.__dict__

@@ -47,7 +47,7 @@ class LDatasetLibraryRecipe(object):
     }
 
     def __init__(self, type=None, reference_count=None, count=None, name=None, description=None, updated_at=None, flow_nodes=None):  # noqa: E501
-        """DatasetLibraryRecipe - a model defined in Swagger"""  # noqa: E501
+        """LDatasetLibraryRecipe - a model defined in Swagger"""  # noqa: E501
         self._type = None
         self._reference_count = None
         self._count = None
@@ -68,20 +68,20 @@ class LDatasetLibraryRecipe(object):
 
     @property
     def type(self):
-        """Gets the type of this DatasetLibraryRecipe.  # noqa: E501
+        """Gets the type of this LDatasetLibraryRecipe.  # noqa: E501
 
 
-        :return: The type of this DatasetLibraryRecipe.  # noqa: E501
+        :return: The type of this LDatasetLibraryRecipe.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DatasetLibraryRecipe.
+        """Sets the type of this LDatasetLibraryRecipe.
 
 
-        :param type: The type of this DatasetLibraryRecipe.  # noqa: E501
+        :param type: The type of this LDatasetLibraryRecipe.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -97,22 +97,22 @@ class LDatasetLibraryRecipe(object):
 
     @property
     def reference_count(self):
-        """Gets the reference_count of this DatasetLibraryRecipe.  # noqa: E501
+        """Gets the reference_count of this LDatasetLibraryRecipe.  # noqa: E501
 
         [deprecated, always return 0] The number of flows this dataset is referenced in.  # noqa: E501
 
-        :return: The reference_count of this DatasetLibraryRecipe.  # noqa: E501
+        :return: The reference_count of this LDatasetLibraryRecipe.  # noqa: E501
         :rtype: int
         """
         return self._reference_count
 
     @reference_count.setter
     def reference_count(self, reference_count):
-        """Sets the reference_count of this DatasetLibraryRecipe.
+        """Sets the reference_count of this LDatasetLibraryRecipe.
 
         [deprecated, always return 0] The number of flows this dataset is referenced in.  # noqa: E501
 
-        :param reference_count: The reference_count of this DatasetLibraryRecipe.  # noqa: E501
+        :param reference_count: The reference_count of this LDatasetLibraryRecipe.  # noqa: E501
         :type: int
         """
         if reference_count is None:
@@ -122,22 +122,22 @@ class LDatasetLibraryRecipe(object):
 
     @property
     def count(self):
-        """Gets the count of this DatasetLibraryRecipe.  # noqa: E501
+        """Gets the count of this LDatasetLibraryRecipe.  # noqa: E501
 
         Indicates the count of this object  # noqa: E501
 
-        :return: The count of this DatasetLibraryRecipe.  # noqa: E501
+        :return: The count of this LDatasetLibraryRecipe.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this DatasetLibraryRecipe.
+        """Sets the count of this LDatasetLibraryRecipe.
 
         Indicates the count of this object  # noqa: E501
 
-        :param count: The count of this DatasetLibraryRecipe.  # noqa: E501
+        :param count: The count of this LDatasetLibraryRecipe.  # noqa: E501
         :type: int
         """
 
@@ -145,22 +145,22 @@ class LDatasetLibraryRecipe(object):
 
     @property
     def name(self):
-        """Gets the name of this DatasetLibraryRecipe.  # noqa: E501
+        """Gets the name of this LDatasetLibraryRecipe.  # noqa: E501
 
         Display name of the recipe.  # noqa: E501
 
-        :return: The name of this DatasetLibraryRecipe.  # noqa: E501
+        :return: The name of this LDatasetLibraryRecipe.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatasetLibraryRecipe.
+        """Sets the name of this LDatasetLibraryRecipe.
 
         Display name of the recipe.  # noqa: E501
 
-        :param name: The name of this DatasetLibraryRecipe.  # noqa: E501
+        :param name: The name of this LDatasetLibraryRecipe.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -170,20 +170,20 @@ class LDatasetLibraryRecipe(object):
 
     @property
     def description(self):
-        """Gets the description of this DatasetLibraryRecipe.  # noqa: E501
+        """Gets the description of this LDatasetLibraryRecipe.  # noqa: E501
 
 
-        :return: The description of this DatasetLibraryRecipe.  # noqa: E501
+        :return: The description of this LDatasetLibraryRecipe.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DatasetLibraryRecipe.
+        """Sets the description of this LDatasetLibraryRecipe.
 
 
-        :param description: The description of this DatasetLibraryRecipe.  # noqa: E501
+        :param description: The description of this LDatasetLibraryRecipe.  # noqa: E501
         :type: str
         """
 
@@ -191,22 +191,22 @@ class LDatasetLibraryRecipe(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this DatasetLibraryRecipe.  # noqa: E501
+        """Gets the updated_at of this LDatasetLibraryRecipe.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this DatasetLibraryRecipe.  # noqa: E501
+        :return: The updated_at of this LDatasetLibraryRecipe.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this DatasetLibraryRecipe.
+        """Sets the updated_at of this LDatasetLibraryRecipe.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this DatasetLibraryRecipe.  # noqa: E501
+        :param updated_at: The updated_at of this LDatasetLibraryRecipe.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -216,20 +216,20 @@ class LDatasetLibraryRecipe(object):
 
     @property
     def flow_nodes(self):
-        """Gets the flow_nodes of this DatasetLibraryRecipe.  # noqa: E501
+        """Gets the flow_nodes of this LDatasetLibraryRecipe.  # noqa: E501
 
 
-        :return: The flow_nodes of this DatasetLibraryRecipe.  # noqa: E501
+        :return: The flow_nodes of this LDatasetLibraryRecipe.  # noqa: E501
         :rtype: object
         """
         return self._flow_nodes
 
     @flow_nodes.setter
     def flow_nodes(self, flow_nodes):
-        """Sets the flow_nodes of this DatasetLibraryRecipe.
+        """Sets the flow_nodes of this LDatasetLibraryRecipe.
 
 
-        :param flow_nodes: The flow_nodes of this DatasetLibraryRecipe.  # noqa: E501
+        :param flow_nodes: The flow_nodes of this LDatasetLibraryRecipe.  # noqa: E501
         :type: object
         """
         if flow_nodes is None:
@@ -258,7 +258,7 @@ class LDatasetLibraryRecipe(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DatasetLibraryRecipe, dict):
+        if issubclass(LDatasetLibraryRecipe, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -274,7 +274,7 @@ class LDatasetLibraryRecipe(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DatasetLibraryRecipe):
+        if not isinstance(other, LDatasetLibraryRecipe):
             return False
 
         return self.__dict__ == other.__dict__

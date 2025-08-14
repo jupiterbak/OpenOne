@@ -37,17 +37,17 @@ class LAwsAccount(object):
     }
 
     attribute_map = {
-        'account_id': 'AccountId',
-        'vpc_id': 'VpcId',
-        'region': 'Region',
-        'access_key_id': 'AccessKeyId',
-        'secret_access_key': 'SecretAccessKey',
-        'key_arn': 'KeyARN',
-        'dp_egress_ips': 'DPEgressIPs'
+        'account_id': 'LAccountId',
+        'vpc_id': 'LVpcId',
+        'region': 'LRegion',
+        'access_key_id': 'LAccessKeyId',
+        'secret_access_key': 'LSecretAccessKey',
+        'key_arn': 'LKeyARN',
+        'dp_egress_ips': 'LDPEgressIPs'
     }
 
     def __init__(self, account_id=None, vpc_id=None, region=None, access_key_id=None, secret_access_key=None, key_arn=None, dp_egress_ips=None):  # noqa: E501
-        """AwsAccount - a model defined in Swagger"""  # noqa: E501
+        """LAwsAccount - a model defined in Swagger"""  # noqa: E501
         self._account_id = None
         self._vpc_id = None
         self._region = None
@@ -69,20 +69,20 @@ class LAwsAccount(object):
 
     @property
     def account_id(self):
-        """Gets the account_id of this AwsAccount.  # noqa: E501
+        """Gets the account_id of this LAwsAccount.  # noqa: E501
 
 
-        :return: The account_id of this AwsAccount.  # noqa: E501
+        :return: The account_id of this LAwsAccount.  # noqa: E501
         :rtype: str
         """
         return self._account_id
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this AwsAccount.
+        """Sets the account_id of this LAwsAccount.
 
 
-        :param account_id: The account_id of this AwsAccount.  # noqa: E501
+        :param account_id: The account_id of this LAwsAccount.  # noqa: E501
         :type: str
         """
         if account_id is None:
@@ -92,20 +92,20 @@ class LAwsAccount(object):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this AwsAccount.  # noqa: E501
+        """Gets the vpc_id of this LAwsAccount.  # noqa: E501
 
 
-        :return: The vpc_id of this AwsAccount.  # noqa: E501
+        :return: The vpc_id of this LAwsAccount.  # noqa: E501
         :rtype: str
         """
         return self._vpc_id
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this AwsAccount.
+        """Sets the vpc_id of this LAwsAccount.
 
 
-        :param vpc_id: The vpc_id of this AwsAccount.  # noqa: E501
+        :param vpc_id: The vpc_id of this LAwsAccount.  # noqa: E501
         :type: str
         """
         if vpc_id is None:
@@ -115,20 +115,20 @@ class LAwsAccount(object):
 
     @property
     def region(self):
-        """Gets the region of this AwsAccount.  # noqa: E501
+        """Gets the region of this LAwsAccount.  # noqa: E501
 
 
-        :return: The region of this AwsAccount.  # noqa: E501
+        :return: The region of this LAwsAccount.  # noqa: E501
         :rtype: str
         """
         return self._region
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AwsAccount.
+        """Sets the region of this LAwsAccount.
 
 
-        :param region: The region of this AwsAccount.  # noqa: E501
+        :param region: The region of this LAwsAccount.  # noqa: E501
         :type: str
         """
         if region is None:
@@ -138,20 +138,20 @@ class LAwsAccount(object):
 
     @property
     def access_key_id(self):
-        """Gets the access_key_id of this AwsAccount.  # noqa: E501
+        """Gets the access_key_id of this LAwsAccount.  # noqa: E501
 
 
-        :return: The access_key_id of this AwsAccount.  # noqa: E501
+        :return: The access_key_id of this LAwsAccount.  # noqa: E501
         :rtype: str
         """
         return self._access_key_id
 
     @access_key_id.setter
     def access_key_id(self, access_key_id):
-        """Sets the access_key_id of this AwsAccount.
+        """Sets the access_key_id of this LAwsAccount.
 
 
-        :param access_key_id: The access_key_id of this AwsAccount.  # noqa: E501
+        :param access_key_id: The access_key_id of this LAwsAccount.  # noqa: E501
         :type: str
         """
 
@@ -159,20 +159,20 @@ class LAwsAccount(object):
 
     @property
     def secret_access_key(self):
-        """Gets the secret_access_key of this AwsAccount.  # noqa: E501
+        """Gets the secret_access_key of this LAwsAccount.  # noqa: E501
 
 
-        :return: The secret_access_key of this AwsAccount.  # noqa: E501
+        :return: The secret_access_key of this LAwsAccount.  # noqa: E501
         :rtype: str
         """
         return self._secret_access_key
 
     @secret_access_key.setter
     def secret_access_key(self, secret_access_key):
-        """Sets the secret_access_key of this AwsAccount.
+        """Sets the secret_access_key of this LAwsAccount.
 
 
-        :param secret_access_key: The secret_access_key of this AwsAccount.  # noqa: E501
+        :param secret_access_key: The secret_access_key of this LAwsAccount.  # noqa: E501
         :type: str
         """
 
@@ -180,20 +180,20 @@ class LAwsAccount(object):
 
     @property
     def key_arn(self):
-        """Gets the key_arn of this AwsAccount.  # noqa: E501
+        """Gets the key_arn of this LAwsAccount.  # noqa: E501
 
 
-        :return: The key_arn of this AwsAccount.  # noqa: E501
+        :return: The key_arn of this LAwsAccount.  # noqa: E501
         :rtype: str
         """
         return self._key_arn
 
     @key_arn.setter
     def key_arn(self, key_arn):
-        """Sets the key_arn of this AwsAccount.
+        """Sets the key_arn of this LAwsAccount.
 
 
-        :param key_arn: The key_arn of this AwsAccount.  # noqa: E501
+        :param key_arn: The key_arn of this LAwsAccount.  # noqa: E501
         :type: str
         """
 
@@ -201,20 +201,20 @@ class LAwsAccount(object):
 
     @property
     def dp_egress_ips(self):
-        """Gets the dp_egress_ips of this AwsAccount.  # noqa: E501
+        """Gets the dp_egress_ips of this LAwsAccount.  # noqa: E501
 
 
-        :return: The dp_egress_ips of this AwsAccount.  # noqa: E501
+        :return: The dp_egress_ips of this LAwsAccount.  # noqa: E501
         :rtype: str
         """
         return self._dp_egress_ips
 
     @dp_egress_ips.setter
     def dp_egress_ips(self, dp_egress_ips):
-        """Sets the dp_egress_ips of this AwsAccount.
+        """Sets the dp_egress_ips of this LAwsAccount.
 
 
-        :param dp_egress_ips: The dp_egress_ips of this AwsAccount.  # noqa: E501
+        :param dp_egress_ips: The dp_egress_ips of this LAwsAccount.  # noqa: E501
         :type: str
         """
         if dp_egress_ips is None:
@@ -243,7 +243,7 @@ class LAwsAccount(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AwsAccount, dict):
+        if issubclass(LAwsAccount, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -259,7 +259,7 @@ class LAwsAccount(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AwsAccount):
+        if not isinstance(other, LAwsAccount):
             return False
 
         return self.__dict__ == other.__dict__

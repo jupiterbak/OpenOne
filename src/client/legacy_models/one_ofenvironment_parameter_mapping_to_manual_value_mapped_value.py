@@ -33,7 +33,7 @@ class LOneOfenvironmentParameterMappingToManualValueMappedValue(object):
     }
 
     def __init__(self):  # noqa: E501
-        """OneOfenvironmentParameterMappingToManualValueMappedValue - a model defined in Swagger"""  # noqa: E501
+        """LOneOfenvironmentParameterMappingToManualValueMappedValue - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LOneOfenvironmentParameterMappingToManualValueMappedValue(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OneOfenvironmentParameterMappingToManualValueMappedValue, dict):
+        if issubclass(LOneOfenvironmentParameterMappingToManualValueMappedValue, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LOneOfenvironmentParameterMappingToManualValueMappedValue(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OneOfenvironmentParameterMappingToManualValueMappedValue):
+        if not isinstance(other, LOneOfenvironmentParameterMappingToManualValueMappedValue):
             return False
 
         return self.__dict__ == other.__dict__

@@ -28,11 +28,11 @@ class LPlanScheduleOverride(object):
     """
     swagger_types = {
         'override_key': 'str',
-        'value': 'OneOfplanScheduleOverrideValue',
-        'id': 'AnyOfplanScheduleOverrideId',
-        'plan_node_id': 'AnyOfplanScheduleOverridePlanNodeId',
-        'plan_id': 'AnyOfplanScheduleOverridePlanId',
-        'schedule_id': 'AnyOfplanScheduleOverrideScheduleId',
+        'value': 'LOneOfplanScheduleOverrideValue',
+        'id': 'LAnyOfplanScheduleOverrideId',
+        'plan_node_id': 'LAnyOfplanScheduleOverridePlanNodeId',
+        'plan_id': 'LAnyOfplanScheduleOverridePlanId',
+        'schedule_id': 'LAnyOfplanScheduleOverrideScheduleId',
         'created_at': 'datetime',
         'deleted_at': 'datetime',
         'updated_at': 'datetime'
@@ -51,7 +51,7 @@ class LPlanScheduleOverride(object):
     }
 
     def __init__(self, override_key=None, value=None, id=None, plan_node_id=None, plan_id=None, schedule_id=None, created_at=None, deleted_at=None, updated_at=None):  # noqa: E501
-        """PlanScheduleOverride - a model defined in Swagger"""  # noqa: E501
+        """LPlanScheduleOverride - a model defined in Swagger"""  # noqa: E501
         self._override_key = None
         self._value = None
         self._id = None
@@ -83,22 +83,22 @@ class LPlanScheduleOverride(object):
 
     @property
     def override_key(self):
-        """Gets the override_key of this PlanScheduleOverride.  # noqa: E501
+        """Gets the override_key of this LPlanScheduleOverride.  # noqa: E501
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :return: The override_key of this PlanScheduleOverride.  # noqa: E501
+        :return: The override_key of this LPlanScheduleOverride.  # noqa: E501
         :rtype: str
         """
         return self._override_key
 
     @override_key.setter
     def override_key(self, override_key):
-        """Sets the override_key of this PlanScheduleOverride.
+        """Sets the override_key of this LPlanScheduleOverride.
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :param override_key: The override_key of this PlanScheduleOverride.  # noqa: E501
+        :param override_key: The override_key of this LPlanScheduleOverride.  # noqa: E501
         :type: str
         """
 
@@ -106,127 +106,127 @@ class LPlanScheduleOverride(object):
 
     @property
     def value(self):
-        """Gets the value of this PlanScheduleOverride.  # noqa: E501
+        """Gets the value of this LPlanScheduleOverride.  # noqa: E501
 
 
-        :return: The value of this PlanScheduleOverride.  # noqa: E501
-        :rtype: OneOfplanScheduleOverrideValue
+        :return: The value of this LPlanScheduleOverride.  # noqa: E501
+        :rtype: LOneOfplanScheduleOverrideValue
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PlanScheduleOverride.
+        """Sets the value of this LPlanScheduleOverride.
 
 
-        :param value: The value of this PlanScheduleOverride.  # noqa: E501
-        :type: OneOfplanScheduleOverrideValue
+        :param value: The value of this LPlanScheduleOverride.  # noqa: E501
+        :type: LOneOfplanScheduleOverrideValue
         """
 
         self._value = value
 
     @property
     def id(self):
-        """Gets the id of this PlanScheduleOverride.  # noqa: E501
+        """Gets the id of this LPlanScheduleOverride.  # noqa: E501
 
 
-        :return: The id of this PlanScheduleOverride.  # noqa: E501
-        :rtype: AnyOfplanScheduleOverrideId
+        :return: The id of this LPlanScheduleOverride.  # noqa: E501
+        :rtype: LAnyOfplanScheduleOverrideId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PlanScheduleOverride.
+        """Sets the id of this LPlanScheduleOverride.
 
 
-        :param id: The id of this PlanScheduleOverride.  # noqa: E501
-        :type: AnyOfplanScheduleOverrideId
+        :param id: The id of this LPlanScheduleOverride.  # noqa: E501
+        :type: LAnyOfplanScheduleOverrideId
         """
 
         self._id = id
 
     @property
     def plan_node_id(self):
-        """Gets the plan_node_id of this PlanScheduleOverride.  # noqa: E501
+        """Gets the plan_node_id of this LPlanScheduleOverride.  # noqa: E501
 
 
-        :return: The plan_node_id of this PlanScheduleOverride.  # noqa: E501
-        :rtype: AnyOfplanScheduleOverridePlanNodeId
+        :return: The plan_node_id of this LPlanScheduleOverride.  # noqa: E501
+        :rtype: LAnyOfplanScheduleOverridePlanNodeId
         """
         return self._plan_node_id
 
     @plan_node_id.setter
     def plan_node_id(self, plan_node_id):
-        """Sets the plan_node_id of this PlanScheduleOverride.
+        """Sets the plan_node_id of this LPlanScheduleOverride.
 
 
-        :param plan_node_id: The plan_node_id of this PlanScheduleOverride.  # noqa: E501
-        :type: AnyOfplanScheduleOverridePlanNodeId
+        :param plan_node_id: The plan_node_id of this LPlanScheduleOverride.  # noqa: E501
+        :type: LAnyOfplanScheduleOverridePlanNodeId
         """
 
         self._plan_node_id = plan_node_id
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this PlanScheduleOverride.  # noqa: E501
+        """Gets the plan_id of this LPlanScheduleOverride.  # noqa: E501
 
 
-        :return: The plan_id of this PlanScheduleOverride.  # noqa: E501
-        :rtype: AnyOfplanScheduleOverridePlanId
+        :return: The plan_id of this LPlanScheduleOverride.  # noqa: E501
+        :rtype: LAnyOfplanScheduleOverridePlanId
         """
         return self._plan_id
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this PlanScheduleOverride.
+        """Sets the plan_id of this LPlanScheduleOverride.
 
 
-        :param plan_id: The plan_id of this PlanScheduleOverride.  # noqa: E501
-        :type: AnyOfplanScheduleOverridePlanId
+        :param plan_id: The plan_id of this LPlanScheduleOverride.  # noqa: E501
+        :type: LAnyOfplanScheduleOverridePlanId
         """
 
         self._plan_id = plan_id
 
     @property
     def schedule_id(self):
-        """Gets the schedule_id of this PlanScheduleOverride.  # noqa: E501
+        """Gets the schedule_id of this LPlanScheduleOverride.  # noqa: E501
 
 
-        :return: The schedule_id of this PlanScheduleOverride.  # noqa: E501
-        :rtype: AnyOfplanScheduleOverrideScheduleId
+        :return: The schedule_id of this LPlanScheduleOverride.  # noqa: E501
+        :rtype: LAnyOfplanScheduleOverrideScheduleId
         """
         return self._schedule_id
 
     @schedule_id.setter
     def schedule_id(self, schedule_id):
-        """Sets the schedule_id of this PlanScheduleOverride.
+        """Sets the schedule_id of this LPlanScheduleOverride.
 
 
-        :param schedule_id: The schedule_id of this PlanScheduleOverride.  # noqa: E501
-        :type: AnyOfplanScheduleOverrideScheduleId
+        :param schedule_id: The schedule_id of this LPlanScheduleOverride.  # noqa: E501
+        :type: LAnyOfplanScheduleOverrideScheduleId
         """
 
         self._schedule_id = schedule_id
 
     @property
     def created_at(self):
-        """Gets the created_at of this PlanScheduleOverride.  # noqa: E501
+        """Gets the created_at of this LPlanScheduleOverride.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this PlanScheduleOverride.  # noqa: E501
+        :return: The created_at of this LPlanScheduleOverride.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this PlanScheduleOverride.
+        """Sets the created_at of this LPlanScheduleOverride.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this PlanScheduleOverride.  # noqa: E501
+        :param created_at: The created_at of this LPlanScheduleOverride.  # noqa: E501
         :type: datetime
         """
 
@@ -234,22 +234,22 @@ class LPlanScheduleOverride(object):
 
     @property
     def deleted_at(self):
-        """Gets the deleted_at of this PlanScheduleOverride.  # noqa: E501
+        """Gets the deleted_at of this LPlanScheduleOverride.  # noqa: E501
 
         The time this object was deleted.  # noqa: E501
 
-        :return: The deleted_at of this PlanScheduleOverride.  # noqa: E501
+        :return: The deleted_at of this LPlanScheduleOverride.  # noqa: E501
         :rtype: datetime
         """
         return self._deleted_at
 
     @deleted_at.setter
     def deleted_at(self, deleted_at):
-        """Sets the deleted_at of this PlanScheduleOverride.
+        """Sets the deleted_at of this LPlanScheduleOverride.
 
         The time this object was deleted.  # noqa: E501
 
-        :param deleted_at: The deleted_at of this PlanScheduleOverride.  # noqa: E501
+        :param deleted_at: The deleted_at of this LPlanScheduleOverride.  # noqa: E501
         :type: datetime
         """
 
@@ -257,22 +257,22 @@ class LPlanScheduleOverride(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this PlanScheduleOverride.  # noqa: E501
+        """Gets the updated_at of this LPlanScheduleOverride.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this PlanScheduleOverride.  # noqa: E501
+        :return: The updated_at of this LPlanScheduleOverride.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this PlanScheduleOverride.
+        """Sets the updated_at of this LPlanScheduleOverride.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this PlanScheduleOverride.  # noqa: E501
+        :param updated_at: The updated_at of this LPlanScheduleOverride.  # noqa: E501
         :type: datetime
         """
 
@@ -299,7 +299,7 @@ class LPlanScheduleOverride(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanScheduleOverride, dict):
+        if issubclass(LPlanScheduleOverride, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -315,7 +315,7 @@ class LPlanScheduleOverride(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanScheduleOverride):
+        if not isinstance(other, LPlanScheduleOverride):
             return False
 
         return self.__dict__ == other.__dict__

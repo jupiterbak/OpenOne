@@ -28,8 +28,8 @@ class LScheduleResponseWithTask(object):
     """
     swagger_types = {
         'name': 'str',
-        'triggers': 'OneOfscheduleResponseWithTaskTriggers',
-        'tasks': 'list[RunTaskSchema]',
+        'triggers': 'LOneOfscheduleResponseWithTaskTriggers',
+        'tasks': 'list[LRunTaskSchema]',
         'enabled': 'bool',
         'id': 'int',
         'created_at': 'datetime',
@@ -55,7 +55,7 @@ class LScheduleResponseWithTask(object):
     }
 
     def __init__(self, name=None, triggers=None, tasks=None, enabled=None, id=None, created_at=None, updated_at=None, created_by=None, updated_by=None, creator=None, disable_reason=None):  # noqa: E501
-        """ScheduleResponseWithTask - a model defined in Swagger"""  # noqa: E501
+        """LScheduleResponseWithTask - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._triggers = None
         self._tasks = None
@@ -88,22 +88,22 @@ class LScheduleResponseWithTask(object):
 
     @property
     def name(self):
-        """Gets the name of this ScheduleResponseWithTask.  # noqa: E501
+        """Gets the name of this LScheduleResponseWithTask.  # noqa: E501
 
         name of the schedule  # noqa: E501
 
-        :return: The name of this ScheduleResponseWithTask.  # noqa: E501
+        :return: The name of this LScheduleResponseWithTask.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScheduleResponseWithTask.
+        """Sets the name of this LScheduleResponseWithTask.
 
         name of the schedule  # noqa: E501
 
-        :param name: The name of this ScheduleResponseWithTask.  # noqa: E501
+        :param name: The name of this LScheduleResponseWithTask.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -113,21 +113,21 @@ class LScheduleResponseWithTask(object):
 
     @property
     def triggers(self):
-        """Gets the triggers of this ScheduleResponseWithTask.  # noqa: E501
+        """Gets the triggers of this LScheduleResponseWithTask.  # noqa: E501
 
 
-        :return: The triggers of this ScheduleResponseWithTask.  # noqa: E501
-        :rtype: OneOfscheduleResponseWithTaskTriggers
+        :return: The triggers of this LScheduleResponseWithTask.  # noqa: E501
+        :rtype: LOneOfscheduleResponseWithTaskTriggers
         """
         return self._triggers
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this ScheduleResponseWithTask.
+        """Sets the triggers of this LScheduleResponseWithTask.
 
 
-        :param triggers: The triggers of this ScheduleResponseWithTask.  # noqa: E501
-        :type: OneOfscheduleResponseWithTaskTriggers
+        :param triggers: The triggers of this LScheduleResponseWithTask.  # noqa: E501
+        :type: LOneOfscheduleResponseWithTaskTriggers
         """
         if triggers is None:
             raise ValueError("Invalid value for `triggers`, must not be `None`")  # noqa: E501
@@ -136,21 +136,21 @@ class LScheduleResponseWithTask(object):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ScheduleResponseWithTask.  # noqa: E501
+        """Gets the tasks of this LScheduleResponseWithTask.  # noqa: E501
 
 
-        :return: The tasks of this ScheduleResponseWithTask.  # noqa: E501
-        :rtype: list[RunTaskSchema]
+        :return: The tasks of this LScheduleResponseWithTask.  # noqa: E501
+        :rtype: list[LRunTaskSchema]
         """
         return self._tasks
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ScheduleResponseWithTask.
+        """Sets the tasks of this LScheduleResponseWithTask.
 
 
-        :param tasks: The tasks of this ScheduleResponseWithTask.  # noqa: E501
-        :type: list[RunTaskSchema]
+        :param tasks: The tasks of this LScheduleResponseWithTask.  # noqa: E501
+        :type: list[LRunTaskSchema]
         """
         if tasks is None:
             raise ValueError("Invalid value for `tasks`, must not be `None`")  # noqa: E501
@@ -159,22 +159,22 @@ class LScheduleResponseWithTask(object):
 
     @property
     def enabled(self):
-        """Gets the enabled of this ScheduleResponseWithTask.  # noqa: E501
+        """Gets the enabled of this LScheduleResponseWithTask.  # noqa: E501
 
         indicate if the schedule is enabled or not  # noqa: E501
 
-        :return: The enabled of this ScheduleResponseWithTask.  # noqa: E501
+        :return: The enabled of this LScheduleResponseWithTask.  # noqa: E501
         :rtype: bool
         """
         return self._enabled
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ScheduleResponseWithTask.
+        """Sets the enabled of this LScheduleResponseWithTask.
 
         indicate if the schedule is enabled or not  # noqa: E501
 
-        :param enabled: The enabled of this ScheduleResponseWithTask.  # noqa: E501
+        :param enabled: The enabled of this LScheduleResponseWithTask.  # noqa: E501
         :type: bool
         """
 
@@ -182,22 +182,22 @@ class LScheduleResponseWithTask(object):
 
     @property
     def id(self):
-        """Gets the id of this ScheduleResponseWithTask.  # noqa: E501
+        """Gets the id of this LScheduleResponseWithTask.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this ScheduleResponseWithTask.  # noqa: E501
+        :return: The id of this LScheduleResponseWithTask.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScheduleResponseWithTask.
+        """Sets the id of this LScheduleResponseWithTask.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this ScheduleResponseWithTask.  # noqa: E501
+        :param id: The id of this LScheduleResponseWithTask.  # noqa: E501
         :type: int
         """
 
@@ -205,22 +205,22 @@ class LScheduleResponseWithTask(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ScheduleResponseWithTask.  # noqa: E501
+        """Gets the created_at of this LScheduleResponseWithTask.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this ScheduleResponseWithTask.  # noqa: E501
+        :return: The created_at of this LScheduleResponseWithTask.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ScheduleResponseWithTask.
+        """Sets the created_at of this LScheduleResponseWithTask.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this ScheduleResponseWithTask.  # noqa: E501
+        :param created_at: The created_at of this LScheduleResponseWithTask.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -230,22 +230,22 @@ class LScheduleResponseWithTask(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ScheduleResponseWithTask.  # noqa: E501
+        """Gets the updated_at of this LScheduleResponseWithTask.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this ScheduleResponseWithTask.  # noqa: E501
+        :return: The updated_at of this LScheduleResponseWithTask.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ScheduleResponseWithTask.
+        """Sets the updated_at of this LScheduleResponseWithTask.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this ScheduleResponseWithTask.  # noqa: E501
+        :param updated_at: The updated_at of this LScheduleResponseWithTask.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -255,22 +255,22 @@ class LScheduleResponseWithTask(object):
 
     @property
     def created_by(self):
-        """Gets the created_by of this ScheduleResponseWithTask.  # noqa: E501
+        """Gets the created_by of this LScheduleResponseWithTask.  # noqa: E501
 
         Identifier of the user who created this object.  # noqa: E501
 
-        :return: The created_by of this ScheduleResponseWithTask.  # noqa: E501
+        :return: The created_by of this LScheduleResponseWithTask.  # noqa: E501
         :rtype: int
         """
         return self._created_by
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this ScheduleResponseWithTask.
+        """Sets the created_by of this LScheduleResponseWithTask.
 
         Identifier of the user who created this object.  # noqa: E501
 
-        :param created_by: The created_by of this ScheduleResponseWithTask.  # noqa: E501
+        :param created_by: The created_by of this LScheduleResponseWithTask.  # noqa: E501
         :type: int
         """
 
@@ -278,22 +278,22 @@ class LScheduleResponseWithTask(object):
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this ScheduleResponseWithTask.  # noqa: E501
+        """Gets the updated_by of this LScheduleResponseWithTask.  # noqa: E501
 
         Identifier of the user who last updated this object.  # noqa: E501
 
-        :return: The updated_by of this ScheduleResponseWithTask.  # noqa: E501
+        :return: The updated_by of this LScheduleResponseWithTask.  # noqa: E501
         :rtype: int
         """
         return self._updated_by
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this ScheduleResponseWithTask.
+        """Sets the updated_by of this LScheduleResponseWithTask.
 
         Identifier of the user who last updated this object.  # noqa: E501
 
-        :param updated_by: The updated_by of this ScheduleResponseWithTask.  # noqa: E501
+        :param updated_by: The updated_by of this LScheduleResponseWithTask.  # noqa: E501
         :type: int
         """
 
@@ -301,20 +301,20 @@ class LScheduleResponseWithTask(object):
 
     @property
     def creator(self):
-        """Gets the creator of this ScheduleResponseWithTask.  # noqa: E501
+        """Gets the creator of this LScheduleResponseWithTask.  # noqa: E501
 
 
-        :return: The creator of this ScheduleResponseWithTask.  # noqa: E501
+        :return: The creator of this LScheduleResponseWithTask.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ScheduleResponseWithTask.
+        """Sets the creator of this LScheduleResponseWithTask.
 
 
-        :param creator: The creator of this ScheduleResponseWithTask.  # noqa: E501
+        :param creator: The creator of this LScheduleResponseWithTask.  # noqa: E501
         :type: object
         """
 
@@ -322,22 +322,22 @@ class LScheduleResponseWithTask(object):
 
     @property
     def disable_reason(self):
-        """Gets the disable_reason of this ScheduleResponseWithTask.  # noqa: E501
+        """Gets the disable_reason of this LScheduleResponseWithTask.  # noqa: E501
 
         reason for disabling the schedule  # noqa: E501
 
-        :return: The disable_reason of this ScheduleResponseWithTask.  # noqa: E501
+        :return: The disable_reason of this LScheduleResponseWithTask.  # noqa: E501
         :rtype: str
         """
         return self._disable_reason
 
     @disable_reason.setter
     def disable_reason(self, disable_reason):
-        """Sets the disable_reason of this ScheduleResponseWithTask.
+        """Sets the disable_reason of this LScheduleResponseWithTask.
 
         reason for disabling the schedule  # noqa: E501
 
-        :param disable_reason: The disable_reason of this ScheduleResponseWithTask.  # noqa: E501
+        :param disable_reason: The disable_reason of this LScheduleResponseWithTask.  # noqa: E501
         :type: str
         """
 
@@ -364,7 +364,7 @@ class LScheduleResponseWithTask(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ScheduleResponseWithTask, dict):
+        if issubclass(LScheduleResponseWithTask, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -380,7 +380,7 @@ class LScheduleResponseWithTask(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ScheduleResponseWithTask):
+        if not isinstance(other, LScheduleResponseWithTask):
             return False
 
         return self.__dict__ == other.__dict__

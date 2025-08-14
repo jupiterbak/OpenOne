@@ -27,7 +27,7 @@ class LPlanNode(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfplanNodeId',
+        'id': 'LAnyOfplanNodeId',
         'task_type': 'str',
         'creator': 'object',
         'updater': 'object',
@@ -49,7 +49,7 @@ class LPlanNode(object):
     }
 
     def __init__(self, id=None, task_type=None, creator=None, updater=None, created_at=None, updated_at=None, coordinates=None, name=None):  # noqa: E501
-        """PlanNode - a model defined in Swagger"""  # noqa: E501
+        """LPlanNode - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._task_type = None
         self._creator = None
@@ -71,21 +71,21 @@ class LPlanNode(object):
 
     @property
     def id(self):
-        """Gets the id of this PlanNode.  # noqa: E501
+        """Gets the id of this LPlanNode.  # noqa: E501
 
 
-        :return: The id of this PlanNode.  # noqa: E501
-        :rtype: AnyOfplanNodeId
+        :return: The id of this LPlanNode.  # noqa: E501
+        :rtype: LAnyOfplanNodeId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PlanNode.
+        """Sets the id of this LPlanNode.
 
 
-        :param id: The id of this PlanNode.  # noqa: E501
-        :type: AnyOfplanNodeId
+        :param id: The id of this LPlanNode.  # noqa: E501
+        :type: LAnyOfplanNodeId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -94,22 +94,22 @@ class LPlanNode(object):
 
     @property
     def task_type(self):
-        """Gets the task_type of this PlanNode.  # noqa: E501
+        """Gets the task_type of this LPlanNode.  # noqa: E501
 
          * `flow` -  * `http` -  * `storage` -  * `workflow` -  * `ml_predict` -  * `ml_retrain` -  * `script_sql` -  * `ml_project_update` -  * `reporting_generate` -   * `cefd_desktop` -  * `li_project_replay` -  * `ai_dataset` -  * `email` -  * `delay` -  * `approval` -   # noqa: E501
 
-        :return: The task_type of this PlanNode.  # noqa: E501
+        :return: The task_type of this LPlanNode.  # noqa: E501
         :rtype: str
         """
         return self._task_type
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this PlanNode.
+        """Sets the task_type of this LPlanNode.
 
          * `flow` -  * `http` -  * `storage` -  * `workflow` -  * `ml_predict` -  * `ml_retrain` -  * `script_sql` -  * `ml_project_update` -  * `reporting_generate` -   * `cefd_desktop` -  * `li_project_replay` -  * `ai_dataset` -  * `email` -  * `delay` -  * `approval` -   # noqa: E501
 
-        :param task_type: The task_type of this PlanNode.  # noqa: E501
+        :param task_type: The task_type of this LPlanNode.  # noqa: E501
         :type: str
         """
         if task_type is None:
@@ -125,20 +125,20 @@ class LPlanNode(object):
 
     @property
     def creator(self):
-        """Gets the creator of this PlanNode.  # noqa: E501
+        """Gets the creator of this LPlanNode.  # noqa: E501
 
 
-        :return: The creator of this PlanNode.  # noqa: E501
+        :return: The creator of this LPlanNode.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this PlanNode.
+        """Sets the creator of this LPlanNode.
 
 
-        :param creator: The creator of this PlanNode.  # noqa: E501
+        :param creator: The creator of this LPlanNode.  # noqa: E501
         :type: object
         """
         if creator is None:
@@ -148,20 +148,20 @@ class LPlanNode(object):
 
     @property
     def updater(self):
-        """Gets the updater of this PlanNode.  # noqa: E501
+        """Gets the updater of this LPlanNode.  # noqa: E501
 
 
-        :return: The updater of this PlanNode.  # noqa: E501
+        :return: The updater of this LPlanNode.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this PlanNode.
+        """Sets the updater of this LPlanNode.
 
 
-        :param updater: The updater of this PlanNode.  # noqa: E501
+        :param updater: The updater of this LPlanNode.  # noqa: E501
         :type: object
         """
         if updater is None:
@@ -171,22 +171,22 @@ class LPlanNode(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this PlanNode.  # noqa: E501
+        """Gets the created_at of this LPlanNode.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this PlanNode.  # noqa: E501
+        :return: The created_at of this LPlanNode.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this PlanNode.
+        """Sets the created_at of this LPlanNode.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this PlanNode.  # noqa: E501
+        :param created_at: The created_at of this LPlanNode.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -196,22 +196,22 @@ class LPlanNode(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this PlanNode.  # noqa: E501
+        """Gets the updated_at of this LPlanNode.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this PlanNode.  # noqa: E501
+        :return: The updated_at of this LPlanNode.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this PlanNode.
+        """Sets the updated_at of this LPlanNode.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this PlanNode.  # noqa: E501
+        :param updated_at: The updated_at of this LPlanNode.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -221,22 +221,22 @@ class LPlanNode(object):
 
     @property
     def coordinates(self):
-        """Gets the coordinates of this PlanNode.  # noqa: E501
+        """Gets the coordinates of this LPlanNode.  # noqa: E501
 
         Location of the plan node  # noqa: E501
 
-        :return: The coordinates of this PlanNode.  # noqa: E501
+        :return: The coordinates of this LPlanNode.  # noqa: E501
         :rtype: object
         """
         return self._coordinates
 
     @coordinates.setter
     def coordinates(self, coordinates):
-        """Sets the coordinates of this PlanNode.
+        """Sets the coordinates of this LPlanNode.
 
         Location of the plan node  # noqa: E501
 
-        :param coordinates: The coordinates of this PlanNode.  # noqa: E501
+        :param coordinates: The coordinates of this LPlanNode.  # noqa: E501
         :type: object
         """
 
@@ -244,22 +244,22 @@ class LPlanNode(object):
 
     @property
     def name(self):
-        """Gets the name of this PlanNode.  # noqa: E501
+        """Gets the name of this LPlanNode.  # noqa: E501
 
         Name of the plan node  # noqa: E501
 
-        :return: The name of this PlanNode.  # noqa: E501
+        :return: The name of this LPlanNode.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PlanNode.
+        """Sets the name of this LPlanNode.
 
         Name of the plan node  # noqa: E501
 
-        :param name: The name of this PlanNode.  # noqa: E501
+        :param name: The name of this LPlanNode.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -288,7 +288,7 @@ class LPlanNode(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanNode, dict):
+        if issubclass(LPlanNode, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -304,7 +304,7 @@ class LPlanNode(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanNode):
+        if not isinstance(other, LPlanNode):
             return False
 
         return self.__dict__ == other.__dict__

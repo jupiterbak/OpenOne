@@ -28,7 +28,7 @@ class LRunFlowResult(object):
     """
     swagger_types = {
         'flow_run_id': 'int',
-        'data': 'list[RunJobResult]'
+        'data': 'list[LRunJobResult]'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LRunFlowResult(object):
     }
 
     def __init__(self, flow_run_id=None, data=None):  # noqa: E501
-        """RunFlowResult - a model defined in Swagger"""  # noqa: E501
+        """LRunFlowResult - a model defined in Swagger"""  # noqa: E501
         self._flow_run_id = None
         self._data = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LRunFlowResult(object):
 
     @property
     def flow_run_id(self):
-        """Gets the flow_run_id of this RunFlowResult.  # noqa: E501
+        """Gets the flow_run_id of this LRunFlowResult.  # noqa: E501
 
 
-        :return: The flow_run_id of this RunFlowResult.  # noqa: E501
+        :return: The flow_run_id of this LRunFlowResult.  # noqa: E501
         :rtype: int
         """
         return self._flow_run_id
 
     @flow_run_id.setter
     def flow_run_id(self, flow_run_id):
-        """Sets the flow_run_id of this RunFlowResult.
+        """Sets the flow_run_id of this LRunFlowResult.
 
 
-        :param flow_run_id: The flow_run_id of this RunFlowResult.  # noqa: E501
+        :param flow_run_id: The flow_run_id of this LRunFlowResult.  # noqa: E501
         :type: int
         """
         if flow_run_id is None:
@@ -69,21 +69,21 @@ class LRunFlowResult(object):
 
     @property
     def data(self):
-        """Gets the data of this RunFlowResult.  # noqa: E501
+        """Gets the data of this LRunFlowResult.  # noqa: E501
 
 
-        :return: The data of this RunFlowResult.  # noqa: E501
-        :rtype: list[RunJobResult]
+        :return: The data of this LRunFlowResult.  # noqa: E501
+        :rtype: list[LRunJobResult]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this RunFlowResult.
+        """Sets the data of this LRunFlowResult.
 
 
-        :param data: The data of this RunFlowResult.  # noqa: E501
-        :type: list[RunJobResult]
+        :param data: The data of this LRunFlowResult.  # noqa: E501
+        :type: list[LRunJobResult]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -111,7 +111,7 @@ class LRunFlowResult(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunFlowResult, dict):
+        if issubclass(LRunFlowResult, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LRunFlowResult(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunFlowResult):
+        if not isinstance(other, LRunFlowResult):
             return False
 
         return self.__dict__ == other.__dict__

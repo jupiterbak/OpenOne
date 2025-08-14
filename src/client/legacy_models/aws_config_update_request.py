@@ -34,8 +34,8 @@ class LAwsConfigUpdateRequest(object):
         'role': 'str',
         'key': 'str',
         'secret': 'str',
-        'person_id': 'AnyOfawsConfigUpdateRequestPersonId',
-        'workspace_id': 'AnyOfawsConfigUpdateRequestWorkspaceId',
+        'person_id': 'LAnyOfawsConfigUpdateRequestPersonId',
+        'workspace_id': 'LAnyOfawsConfigUpdateRequestWorkspaceId',
         'external_id': 'str'
     }
 
@@ -53,7 +53,7 @@ class LAwsConfigUpdateRequest(object):
     }
 
     def __init__(self, id=None, default_bucket=None, extra_buckets=None, credential_provider=None, role=None, key=None, secret=None, person_id=None, workspace_id=None, external_id=None):  # noqa: E501
-        """AwsConfigUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LAwsConfigUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._default_bucket = None
         self._extra_buckets = None
@@ -88,22 +88,22 @@ class LAwsConfigUpdateRequest(object):
 
     @property
     def id(self):
-        """Gets the id of this AwsConfigUpdateRequest.  # noqa: E501
+        """Gets the id of this LAwsConfigUpdateRequest.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this AwsConfigUpdateRequest.  # noqa: E501
+        :return: The id of this LAwsConfigUpdateRequest.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AwsConfigUpdateRequest.
+        """Sets the id of this LAwsConfigUpdateRequest.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this AwsConfigUpdateRequest.  # noqa: E501
+        :param id: The id of this LAwsConfigUpdateRequest.  # noqa: E501
         :type: int
         """
 
@@ -111,22 +111,22 @@ class LAwsConfigUpdateRequest(object):
 
     @property
     def default_bucket(self):
-        """Gets the default_bucket of this AwsConfigUpdateRequest.  # noqa: E501
+        """Gets the default_bucket of this LAwsConfigUpdateRequest.  # noqa: E501
 
         Default S3 bucket where user can upload and write results  # noqa: E501
 
-        :return: The default_bucket of this AwsConfigUpdateRequest.  # noqa: E501
+        :return: The default_bucket of this LAwsConfigUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._default_bucket
 
     @default_bucket.setter
     def default_bucket(self, default_bucket):
-        """Sets the default_bucket of this AwsConfigUpdateRequest.
+        """Sets the default_bucket of this LAwsConfigUpdateRequest.
 
         Default S3 bucket where user can upload and write results  # noqa: E501
 
-        :param default_bucket: The default_bucket of this AwsConfigUpdateRequest.  # noqa: E501
+        :param default_bucket: The default_bucket of this LAwsConfigUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -134,20 +134,20 @@ class LAwsConfigUpdateRequest(object):
 
     @property
     def extra_buckets(self):
-        """Gets the extra_buckets of this AwsConfigUpdateRequest.  # noqa: E501
+        """Gets the extra_buckets of this LAwsConfigUpdateRequest.  # noqa: E501
 
 
-        :return: The extra_buckets of this AwsConfigUpdateRequest.  # noqa: E501
+        :return: The extra_buckets of this LAwsConfigUpdateRequest.  # noqa: E501
         :rtype: list[str]
         """
         return self._extra_buckets
 
     @extra_buckets.setter
     def extra_buckets(self, extra_buckets):
-        """Sets the extra_buckets of this AwsConfigUpdateRequest.
+        """Sets the extra_buckets of this LAwsConfigUpdateRequest.
 
 
-        :param extra_buckets: The extra_buckets of this AwsConfigUpdateRequest.  # noqa: E501
+        :param extra_buckets: The extra_buckets of this LAwsConfigUpdateRequest.  # noqa: E501
         :type: list[str]
         """
 
@@ -155,22 +155,22 @@ class LAwsConfigUpdateRequest(object):
 
     @property
     def credential_provider(self):
-        """Gets the credential_provider of this AwsConfigUpdateRequest.  # noqa: E501
+        """Gets the credential_provider of this LAwsConfigUpdateRequest.  # noqa: E501
 
          * `default` - Using AWS key/secret to authenticate to S3 * `temporary` - Using AWS IAM Role to authenticate to S3  # noqa: E501
 
-        :return: The credential_provider of this AwsConfigUpdateRequest.  # noqa: E501
+        :return: The credential_provider of this LAwsConfigUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._credential_provider
 
     @credential_provider.setter
     def credential_provider(self, credential_provider):
-        """Sets the credential_provider of this AwsConfigUpdateRequest.
+        """Sets the credential_provider of this LAwsConfigUpdateRequest.
 
          * `default` - Using AWS key/secret to authenticate to S3 * `temporary` - Using AWS IAM Role to authenticate to S3  # noqa: E501
 
-        :param credential_provider: The credential_provider of this AwsConfigUpdateRequest.  # noqa: E501
+        :param credential_provider: The credential_provider of this LAwsConfigUpdateRequest.  # noqa: E501
         :type: str
         """
         allowed_values = ["default", "temporary"]  # noqa: E501
@@ -184,22 +184,22 @@ class LAwsConfigUpdateRequest(object):
 
     @property
     def role(self):
-        """Gets the role of this AwsConfigUpdateRequest.  # noqa: E501
+        """Gets the role of this LAwsConfigUpdateRequest.  # noqa: E501
 
         AWS IAM Role, required when credential provider is set to temporary  # noqa: E501
 
-        :return: The role of this AwsConfigUpdateRequest.  # noqa: E501
+        :return: The role of this LAwsConfigUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._role
 
     @role.setter
     def role(self, role):
-        """Sets the role of this AwsConfigUpdateRequest.
+        """Sets the role of this LAwsConfigUpdateRequest.
 
         AWS IAM Role, required when credential provider is set to temporary  # noqa: E501
 
-        :param role: The role of this AwsConfigUpdateRequest.  # noqa: E501
+        :param role: The role of this LAwsConfigUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -207,22 +207,22 @@ class LAwsConfigUpdateRequest(object):
 
     @property
     def key(self):
-        """Gets the key of this AwsConfigUpdateRequest.  # noqa: E501
+        """Gets the key of this LAwsConfigUpdateRequest.  # noqa: E501
 
         AWS key string, required when credential provider is set to default  # noqa: E501
 
-        :return: The key of this AwsConfigUpdateRequest.  # noqa: E501
+        :return: The key of this LAwsConfigUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._key
 
     @key.setter
     def key(self, key):
-        """Sets the key of this AwsConfigUpdateRequest.
+        """Sets the key of this LAwsConfigUpdateRequest.
 
         AWS key string, required when credential provider is set to default  # noqa: E501
 
-        :param key: The key of this AwsConfigUpdateRequest.  # noqa: E501
+        :param key: The key of this LAwsConfigUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -230,22 +230,22 @@ class LAwsConfigUpdateRequest(object):
 
     @property
     def secret(self):
-        """Gets the secret of this AwsConfigUpdateRequest.  # noqa: E501
+        """Gets the secret of this LAwsConfigUpdateRequest.  # noqa: E501
 
         AWS secret string, required when credential provider is set to default  # noqa: E501
 
-        :return: The secret of this AwsConfigUpdateRequest.  # noqa: E501
+        :return: The secret of this LAwsConfigUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._secret
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this AwsConfigUpdateRequest.
+        """Sets the secret of this LAwsConfigUpdateRequest.
 
         AWS secret string, required when credential provider is set to default  # noqa: E501
 
-        :param secret: The secret of this AwsConfigUpdateRequest.  # noqa: E501
+        :param secret: The secret of this LAwsConfigUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -253,64 +253,64 @@ class LAwsConfigUpdateRequest(object):
 
     @property
     def person_id(self):
-        """Gets the person_id of this AwsConfigUpdateRequest.  # noqa: E501
+        """Gets the person_id of this LAwsConfigUpdateRequest.  # noqa: E501
 
 
-        :return: The person_id of this AwsConfigUpdateRequest.  # noqa: E501
-        :rtype: AnyOfawsConfigUpdateRequestPersonId
+        :return: The person_id of this LAwsConfigUpdateRequest.  # noqa: E501
+        :rtype: LAnyOfawsConfigUpdateRequestPersonId
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this AwsConfigUpdateRequest.
+        """Sets the person_id of this LAwsConfigUpdateRequest.
 
 
-        :param person_id: The person_id of this AwsConfigUpdateRequest.  # noqa: E501
-        :type: AnyOfawsConfigUpdateRequestPersonId
+        :param person_id: The person_id of this LAwsConfigUpdateRequest.  # noqa: E501
+        :type: LAnyOfawsConfigUpdateRequestPersonId
         """
 
         self._person_id = person_id
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this AwsConfigUpdateRequest.  # noqa: E501
+        """Gets the workspace_id of this LAwsConfigUpdateRequest.  # noqa: E501
 
 
-        :return: The workspace_id of this AwsConfigUpdateRequest.  # noqa: E501
-        :rtype: AnyOfawsConfigUpdateRequestWorkspaceId
+        :return: The workspace_id of this LAwsConfigUpdateRequest.  # noqa: E501
+        :rtype: LAnyOfawsConfigUpdateRequestWorkspaceId
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this AwsConfigUpdateRequest.
+        """Sets the workspace_id of this LAwsConfigUpdateRequest.
 
 
-        :param workspace_id: The workspace_id of this AwsConfigUpdateRequest.  # noqa: E501
-        :type: AnyOfawsConfigUpdateRequestWorkspaceId
+        :param workspace_id: The workspace_id of this LAwsConfigUpdateRequest.  # noqa: E501
+        :type: LAnyOfawsConfigUpdateRequestWorkspaceId
         """
 
         self._workspace_id = workspace_id
 
     @property
     def external_id(self):
-        """Gets the external_id of this AwsConfigUpdateRequest.  # noqa: E501
+        """Gets the external_id of this LAwsConfigUpdateRequest.  # noqa: E501
 
         This identifier is used to manage     cross-account access in AWS. This value should not be modified.  # noqa: E501
 
-        :return: The external_id of this AwsConfigUpdateRequest.  # noqa: E501
+        :return: The external_id of this LAwsConfigUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._external_id
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this AwsConfigUpdateRequest.
+        """Sets the external_id of this LAwsConfigUpdateRequest.
 
         This identifier is used to manage     cross-account access in AWS. This value should not be modified.  # noqa: E501
 
-        :param external_id: The external_id of this AwsConfigUpdateRequest.  # noqa: E501
+        :param external_id: The external_id of this LAwsConfigUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -337,7 +337,7 @@ class LAwsConfigUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AwsConfigUpdateRequest, dict):
+        if issubclass(LAwsConfigUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -353,7 +353,7 @@ class LAwsConfigUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AwsConfigUpdateRequest):
+        if not isinstance(other, LAwsConfigUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -23,7 +23,7 @@ import six
 from six.moves.urllib.parse import quote
 
 from ..configuration import Configuration
-from .. import scheduling_models, plan_models, iam_models
+from .. import scheduling_models, plan_models, iam_models, legacy_models
 from . import rest
 
 
@@ -143,7 +143,7 @@ class ApiClient(object):
             body = self.sanitize_for_serialization(body)
 
         # request url
-        url = self.configuration.host + resource_path
+        url = self.configuration.host + resource_path if '/v4' not in resource_path else self.configuration.legacy_host + resource_path
 
         # perform request and return response
         response_data = self.request(
@@ -268,11 +268,20 @@ class ApiClient(object):
                     klass = getattr(plan_models, klass)
                 elif klass in iam_models.__dict__:
                     klass = getattr(iam_models, klass)
+                elif klass in legacy_models.__dict__:
+                    klass = getattr(legacy_models, klass)
                 else:
                     raise ValueError(f"Class {klass} not found in any of the modules")
-                # if the class is found in multiple modules, raise an error
-                if klass in scheduling_models.__dict__ and klass in plan_models.__dict__ or klass in scheduling_models.__dict__ and klass in iam_models.__dict__ or klass in plan_models.__dict__ and klass in iam_models.__dict__:
-                    raise ValueError(f"Class {klass} found in multiple modules")
+                
+                # Check if the class is found in multiple modules to avoid conflicts
+                modules = [scheduling_models, plan_models, iam_models, legacy_models]
+                class_name = klass.__name__ if hasattr(klass, '__name__') else str(klass)
+                
+                # Count how many modules contain this class
+                module_count = sum(1 for module in modules if class_name in module.__dict__)
+                
+                if module_count > 1:
+                    raise ValueError(f"Class {class_name} found in multiple modules: {', '.join(module.__name__ for module in modules if class_name in module.__dict__)}")
 
         if klass in self.PRIMITIVE_TYPES:
             return self.__deserialize_primitive(data, klass)

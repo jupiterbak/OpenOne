@@ -27,7 +27,7 @@ class LConfigurationChangePayload(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'configuration': 'list[ConfigurationKeyValueSchema]'
+        'configuration': 'list[LConfigurationKeyValueSchema]'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LConfigurationChangePayload(object):
     }
 
     def __init__(self, configuration=None):  # noqa: E501
-        """ConfigurationChangePayload - a model defined in Swagger"""  # noqa: E501
+        """LConfigurationChangePayload - a model defined in Swagger"""  # noqa: E501
         self._configuration = None
         self.discriminator = None
         self.configuration = configuration
 
     @property
     def configuration(self):
-        """Gets the configuration of this ConfigurationChangePayload.  # noqa: E501
+        """Gets the configuration of this LConfigurationChangePayload.  # noqa: E501
 
 
-        :return: The configuration of this ConfigurationChangePayload.  # noqa: E501
-        :rtype: list[ConfigurationKeyValueSchema]
+        :return: The configuration of this LConfigurationChangePayload.  # noqa: E501
+        :rtype: list[LConfigurationKeyValueSchema]
         """
         return self._configuration
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this ConfigurationChangePayload.
+        """Sets the configuration of this LConfigurationChangePayload.
 
 
-        :param configuration: The configuration of this ConfigurationChangePayload.  # noqa: E501
-        :type: list[ConfigurationKeyValueSchema]
+        :param configuration: The configuration of this LConfigurationChangePayload.  # noqa: E501
+        :type: list[LConfigurationKeyValueSchema]
         """
         if configuration is None:
             raise ValueError("Invalid value for `configuration`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LConfigurationChangePayload(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConfigurationChangePayload, dict):
+        if issubclass(LConfigurationChangePayload, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LConfigurationChangePayload(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConfigurationChangePayload):
+        if not isinstance(other, LConfigurationChangePayload):
             return False
 
         return self.__dict__ == other.__dict__

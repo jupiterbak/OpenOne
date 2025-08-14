@@ -35,27 +35,27 @@ class LUpdateGroupPayload(object):
     }
 
     def __init__(self, name=None):  # noqa: E501
-        """UpdateGroupPayload - a model defined in Swagger"""  # noqa: E501
+        """LUpdateGroupPayload - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self.discriminator = None
         self.name = name
 
     @property
     def name(self):
-        """Gets the name of this UpdateGroupPayload.  # noqa: E501
+        """Gets the name of this LUpdateGroupPayload.  # noqa: E501
 
 
-        :return: The name of this UpdateGroupPayload.  # noqa: E501
+        :return: The name of this LUpdateGroupPayload.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateGroupPayload.
+        """Sets the name of this LUpdateGroupPayload.
 
 
-        :param name: The name of this UpdateGroupPayload.  # noqa: E501
+        :param name: The name of this LUpdateGroupPayload.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -84,7 +84,7 @@ class LUpdateGroupPayload(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(UpdateGroupPayload, dict):
+        if issubclass(LUpdateGroupPayload, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LUpdateGroupPayload(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdateGroupPayload):
+        if not isinstance(other, LUpdateGroupPayload):
             return False
 
         return self.__dict__ == other.__dict__

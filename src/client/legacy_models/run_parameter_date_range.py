@@ -27,7 +27,7 @@ class LRunParameterDateRange(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'date_range': 'OneOfrunParameterDateRangeDateRange'
+        'date_range': 'LOneOfrunParameterDateRangeDateRange'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LRunParameterDateRange(object):
     }
 
     def __init__(self, date_range=None):  # noqa: E501
-        """RunParameterDateRange - a model defined in Swagger"""  # noqa: E501
+        """LRunParameterDateRange - a model defined in Swagger"""  # noqa: E501
         self._date_range = None
         self.discriminator = None
         self.date_range = date_range
 
     @property
     def date_range(self):
-        """Gets the date_range of this RunParameterDateRange.  # noqa: E501
+        """Gets the date_range of this LRunParameterDateRange.  # noqa: E501
 
 
-        :return: The date_range of this RunParameterDateRange.  # noqa: E501
-        :rtype: OneOfrunParameterDateRangeDateRange
+        :return: The date_range of this LRunParameterDateRange.  # noqa: E501
+        :rtype: LOneOfrunParameterDateRangeDateRange
         """
         return self._date_range
 
     @date_range.setter
     def date_range(self, date_range):
-        """Sets the date_range of this RunParameterDateRange.
+        """Sets the date_range of this LRunParameterDateRange.
 
 
-        :param date_range: The date_range of this RunParameterDateRange.  # noqa: E501
-        :type: OneOfrunParameterDateRangeDateRange
+        :param date_range: The date_range of this LRunParameterDateRange.  # noqa: E501
+        :type: LOneOfrunParameterDateRangeDateRange
         """
         if date_range is None:
             raise ValueError("Invalid value for `date_range`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LRunParameterDateRange(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunParameterDateRange, dict):
+        if issubclass(LRunParameterDateRange, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunParameterDateRange(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunParameterDateRange):
+        if not isinstance(other, LRunParameterDateRange):
             return False
 
         return self.__dict__ == other.__dict__

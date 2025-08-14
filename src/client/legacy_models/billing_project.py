@@ -47,7 +47,7 @@ class LBillingProject(object):
     }
 
     def __init__(self, id=None, person_id=None, workspace_id=None, billing_project=None, created_at=None, updated_at=None, is_default=None):  # noqa: E501
-        """BillingProject - a model defined in Swagger"""  # noqa: E501
+        """LBillingProject - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._person_id = None
         self._workspace_id = None
@@ -66,20 +66,20 @@ class LBillingProject(object):
 
     @property
     def id(self):
-        """Gets the id of this BillingProject.  # noqa: E501
+        """Gets the id of this LBillingProject.  # noqa: E501
 
 
-        :return: The id of this BillingProject.  # noqa: E501
+        :return: The id of this LBillingProject.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BillingProject.
+        """Sets the id of this LBillingProject.
 
 
-        :param id: The id of this BillingProject.  # noqa: E501
+        :param id: The id of this LBillingProject.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -89,20 +89,20 @@ class LBillingProject(object):
 
     @property
     def person_id(self):
-        """Gets the person_id of this BillingProject.  # noqa: E501
+        """Gets the person_id of this LBillingProject.  # noqa: E501
 
 
-        :return: The person_id of this BillingProject.  # noqa: E501
+        :return: The person_id of this LBillingProject.  # noqa: E501
         :rtype: int
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this BillingProject.
+        """Sets the person_id of this LBillingProject.
 
 
-        :param person_id: The person_id of this BillingProject.  # noqa: E501
+        :param person_id: The person_id of this LBillingProject.  # noqa: E501
         :type: int
         """
         if person_id is None:
@@ -112,20 +112,20 @@ class LBillingProject(object):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this BillingProject.  # noqa: E501
+        """Gets the workspace_id of this LBillingProject.  # noqa: E501
 
 
-        :return: The workspace_id of this BillingProject.  # noqa: E501
+        :return: The workspace_id of this LBillingProject.  # noqa: E501
         :rtype: int
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this BillingProject.
+        """Sets the workspace_id of this LBillingProject.
 
 
-        :param workspace_id: The workspace_id of this BillingProject.  # noqa: E501
+        :param workspace_id: The workspace_id of this LBillingProject.  # noqa: E501
         :type: int
         """
         if workspace_id is None:
@@ -135,20 +135,20 @@ class LBillingProject(object):
 
     @property
     def billing_project(self):
-        """Gets the billing_project of this BillingProject.  # noqa: E501
+        """Gets the billing_project of this LBillingProject.  # noqa: E501
 
 
-        :return: The billing_project of this BillingProject.  # noqa: E501
+        :return: The billing_project of this LBillingProject.  # noqa: E501
         :rtype: str
         """
         return self._billing_project
 
     @billing_project.setter
     def billing_project(self, billing_project):
-        """Sets the billing_project of this BillingProject.
+        """Sets the billing_project of this LBillingProject.
 
 
-        :param billing_project: The billing_project of this BillingProject.  # noqa: E501
+        :param billing_project: The billing_project of this LBillingProject.  # noqa: E501
         :type: str
         """
         if billing_project is None:
@@ -158,20 +158,20 @@ class LBillingProject(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this BillingProject.  # noqa: E501
+        """Gets the created_at of this LBillingProject.  # noqa: E501
 
 
-        :return: The created_at of this BillingProject.  # noqa: E501
+        :return: The created_at of this LBillingProject.  # noqa: E501
         :rtype: str
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this BillingProject.
+        """Sets the created_at of this LBillingProject.
 
 
-        :param created_at: The created_at of this BillingProject.  # noqa: E501
+        :param created_at: The created_at of this LBillingProject.  # noqa: E501
         :type: str
         """
         if created_at is None:
@@ -181,20 +181,20 @@ class LBillingProject(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this BillingProject.  # noqa: E501
+        """Gets the updated_at of this LBillingProject.  # noqa: E501
 
 
-        :return: The updated_at of this BillingProject.  # noqa: E501
+        :return: The updated_at of this LBillingProject.  # noqa: E501
         :rtype: str
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this BillingProject.
+        """Sets the updated_at of this LBillingProject.
 
 
-        :param updated_at: The updated_at of this BillingProject.  # noqa: E501
+        :param updated_at: The updated_at of this LBillingProject.  # noqa: E501
         :type: str
         """
         if updated_at is None:
@@ -204,20 +204,20 @@ class LBillingProject(object):
 
     @property
     def is_default(self):
-        """Gets the is_default of this BillingProject.  # noqa: E501
+        """Gets the is_default of this LBillingProject.  # noqa: E501
 
 
-        :return: The is_default of this BillingProject.  # noqa: E501
+        :return: The is_default of this LBillingProject.  # noqa: E501
         :rtype: bool
         """
         return self._is_default
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this BillingProject.
+        """Sets the is_default of this LBillingProject.
 
 
-        :param is_default: The is_default of this BillingProject.  # noqa: E501
+        :param is_default: The is_default of this LBillingProject.  # noqa: E501
         :type: bool
         """
         if is_default is None:
@@ -246,7 +246,7 @@ class LBillingProject(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(BillingProject, dict):
+        if issubclass(LBillingProject, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -262,7 +262,7 @@ class LBillingProject(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BillingProject):
+        if not isinstance(other, LBillingProject):
             return False
 
         return self.__dict__ == other.__dict__

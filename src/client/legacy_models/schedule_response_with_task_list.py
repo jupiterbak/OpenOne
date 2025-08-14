@@ -27,7 +27,7 @@ class LScheduleResponseWithTaskList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[ScheduleResponseWithTask]',
+        'data': 'list[LScheduleResponseWithTask]',
         'count': 'int'
     }
 
@@ -37,7 +37,7 @@ class LScheduleResponseWithTaskList(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """ScheduleResponseWithTaskList - a model defined in Swagger"""  # noqa: E501
+        """LScheduleResponseWithTaskList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LScheduleResponseWithTaskList(object):
 
     @property
     def data(self):
-        """Gets the data of this ScheduleResponseWithTaskList.  # noqa: E501
+        """Gets the data of this LScheduleResponseWithTaskList.  # noqa: E501
 
 
-        :return: The data of this ScheduleResponseWithTaskList.  # noqa: E501
-        :rtype: list[ScheduleResponseWithTask]
+        :return: The data of this LScheduleResponseWithTaskList.  # noqa: E501
+        :rtype: list[LScheduleResponseWithTask]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ScheduleResponseWithTaskList.
+        """Sets the data of this LScheduleResponseWithTaskList.
 
 
-        :param data: The data of this ScheduleResponseWithTaskList.  # noqa: E501
-        :type: list[ScheduleResponseWithTask]
+        :param data: The data of this LScheduleResponseWithTaskList.  # noqa: E501
+        :type: list[LScheduleResponseWithTask]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LScheduleResponseWithTaskList(object):
 
     @property
     def count(self):
-        """Gets the count of this ScheduleResponseWithTaskList.  # noqa: E501
+        """Gets the count of this LScheduleResponseWithTaskList.  # noqa: E501
 
 
-        :return: The count of this ScheduleResponseWithTaskList.  # noqa: E501
+        :return: The count of this LScheduleResponseWithTaskList.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ScheduleResponseWithTaskList.
+        """Sets the count of this LScheduleResponseWithTaskList.
 
 
-        :param count: The count of this ScheduleResponseWithTaskList.  # noqa: E501
+        :param count: The count of this LScheduleResponseWithTaskList.  # noqa: E501
         :type: int
         """
 
@@ -110,7 +110,7 @@ class LScheduleResponseWithTaskList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ScheduleResponseWithTaskList, dict):
+        if issubclass(LScheduleResponseWithTaskList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LScheduleResponseWithTaskList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ScheduleResponseWithTaskList):
+        if not isinstance(other, LScheduleResponseWithTaskList):
             return False
 
         return self.__dict__ == other.__dict__

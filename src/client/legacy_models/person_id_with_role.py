@@ -27,7 +27,7 @@ class LPersonIdWithRole(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'person_id': 'AnyOfpersonIdWithRolePersonId',
+        'person_id': 'LAnyOfpersonIdWithRolePersonId',
         'role': 'str',
         'policy': 'str'
     }
@@ -39,7 +39,7 @@ class LPersonIdWithRole(object):
     }
 
     def __init__(self, person_id=None, role=None, policy=None):  # noqa: E501
-        """PersonIdWithRole - a model defined in Swagger"""  # noqa: E501
+        """LPersonIdWithRole - a model defined in Swagger"""  # noqa: E501
         self._person_id = None
         self._role = None
         self._policy = None
@@ -51,21 +51,21 @@ class LPersonIdWithRole(object):
 
     @property
     def person_id(self):
-        """Gets the person_id of this PersonIdWithRole.  # noqa: E501
+        """Gets the person_id of this LPersonIdWithRole.  # noqa: E501
 
 
-        :return: The person_id of this PersonIdWithRole.  # noqa: E501
-        :rtype: AnyOfpersonIdWithRolePersonId
+        :return: The person_id of this LPersonIdWithRole.  # noqa: E501
+        :rtype: LAnyOfpersonIdWithRolePersonId
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this PersonIdWithRole.
+        """Sets the person_id of this LPersonIdWithRole.
 
 
-        :param person_id: The person_id of this PersonIdWithRole.  # noqa: E501
-        :type: AnyOfpersonIdWithRolePersonId
+        :param person_id: The person_id of this LPersonIdWithRole.  # noqa: E501
+        :type: LAnyOfpersonIdWithRolePersonId
         """
         if person_id is None:
             raise ValueError("Invalid value for `person_id`, must not be `None`")  # noqa: E501
@@ -74,20 +74,20 @@ class LPersonIdWithRole(object):
 
     @property
     def role(self):
-        """Gets the role of this PersonIdWithRole.  # noqa: E501
+        """Gets the role of this LPersonIdWithRole.  # noqa: E501
 
 
-        :return: The role of this PersonIdWithRole.  # noqa: E501
+        :return: The role of this LPersonIdWithRole.  # noqa: E501
         :rtype: str
         """
         return self._role
 
     @role.setter
     def role(self, role):
-        """Sets the role of this PersonIdWithRole.
+        """Sets the role of this LPersonIdWithRole.
 
 
-        :param role: The role of this PersonIdWithRole.  # noqa: E501
+        :param role: The role of this LPersonIdWithRole.  # noqa: E501
         :type: str
         """
         if role is None:
@@ -103,20 +103,20 @@ class LPersonIdWithRole(object):
 
     @property
     def policy(self):
-        """Gets the policy of this PersonIdWithRole.  # noqa: E501
+        """Gets the policy of this LPersonIdWithRole.  # noqa: E501
 
 
-        :return: The policy of this PersonIdWithRole.  # noqa: E501
+        :return: The policy of this LPersonIdWithRole.  # noqa: E501
         :rtype: str
         """
         return self._policy
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this PersonIdWithRole.
+        """Sets the policy of this LPersonIdWithRole.
 
 
-        :param policy: The policy of this PersonIdWithRole.  # noqa: E501
+        :param policy: The policy of this LPersonIdWithRole.  # noqa: E501
         :type: str
         """
 
@@ -143,7 +143,7 @@ class LPersonIdWithRole(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PersonIdWithRole, dict):
+        if issubclass(LPersonIdWithRole, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -159,7 +159,7 @@ class LPersonIdWithRole(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PersonIdWithRole):
+        if not isinstance(other, LPersonIdWithRole):
             return False
 
         return self.__dict__ == other.__dict__

@@ -28,8 +28,8 @@ class LPublishJobRequest(object):
     """
     swagger_types = {
         'adhoc': 'bool',
-        'publication_id': 'AnyOfpublishJobRequestPublicationId',
-        'scriptresult_id': 'AnyOfpublishJobRequestScriptresultId'
+        'publication_id': 'LAnyOfpublishJobRequestPublicationId',
+        'scriptresult_id': 'LAnyOfpublishJobRequestScriptresultId'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class LPublishJobRequest(object):
     }
 
     def __init__(self, adhoc=None, publication_id=None, scriptresult_id=None):  # noqa: E501
-        """PublishJobRequest - a model defined in Swagger"""  # noqa: E501
+        """LPublishJobRequest - a model defined in Swagger"""  # noqa: E501
         self._adhoc = None
         self._publication_id = None
         self._scriptresult_id = None
@@ -51,20 +51,20 @@ class LPublishJobRequest(object):
 
     @property
     def adhoc(self):
-        """Gets the adhoc of this PublishJobRequest.  # noqa: E501
+        """Gets the adhoc of this LPublishJobRequest.  # noqa: E501
 
 
-        :return: The adhoc of this PublishJobRequest.  # noqa: E501
+        :return: The adhoc of this LPublishJobRequest.  # noqa: E501
         :rtype: bool
         """
         return self._adhoc
 
     @adhoc.setter
     def adhoc(self, adhoc):
-        """Sets the adhoc of this PublishJobRequest.
+        """Sets the adhoc of this LPublishJobRequest.
 
 
-        :param adhoc: The adhoc of this PublishJobRequest.  # noqa: E501
+        :param adhoc: The adhoc of this LPublishJobRequest.  # noqa: E501
         :type: bool
         """
 
@@ -72,21 +72,21 @@ class LPublishJobRequest(object):
 
     @property
     def publication_id(self):
-        """Gets the publication_id of this PublishJobRequest.  # noqa: E501
+        """Gets the publication_id of this LPublishJobRequest.  # noqa: E501
 
 
-        :return: The publication_id of this PublishJobRequest.  # noqa: E501
-        :rtype: AnyOfpublishJobRequestPublicationId
+        :return: The publication_id of this LPublishJobRequest.  # noqa: E501
+        :rtype: LAnyOfpublishJobRequestPublicationId
         """
         return self._publication_id
 
     @publication_id.setter
     def publication_id(self, publication_id):
-        """Sets the publication_id of this PublishJobRequest.
+        """Sets the publication_id of this LPublishJobRequest.
 
 
-        :param publication_id: The publication_id of this PublishJobRequest.  # noqa: E501
-        :type: AnyOfpublishJobRequestPublicationId
+        :param publication_id: The publication_id of this LPublishJobRequest.  # noqa: E501
+        :type: LAnyOfpublishJobRequestPublicationId
         """
         if publication_id is None:
             raise ValueError("Invalid value for `publication_id`, must not be `None`")  # noqa: E501
@@ -95,21 +95,21 @@ class LPublishJobRequest(object):
 
     @property
     def scriptresult_id(self):
-        """Gets the scriptresult_id of this PublishJobRequest.  # noqa: E501
+        """Gets the scriptresult_id of this LPublishJobRequest.  # noqa: E501
 
 
-        :return: The scriptresult_id of this PublishJobRequest.  # noqa: E501
-        :rtype: AnyOfpublishJobRequestScriptresultId
+        :return: The scriptresult_id of this LPublishJobRequest.  # noqa: E501
+        :rtype: LAnyOfpublishJobRequestScriptresultId
         """
         return self._scriptresult_id
 
     @scriptresult_id.setter
     def scriptresult_id(self, scriptresult_id):
-        """Sets the scriptresult_id of this PublishJobRequest.
+        """Sets the scriptresult_id of this LPublishJobRequest.
 
 
-        :param scriptresult_id: The scriptresult_id of this PublishJobRequest.  # noqa: E501
-        :type: AnyOfpublishJobRequestScriptresultId
+        :param scriptresult_id: The scriptresult_id of this LPublishJobRequest.  # noqa: E501
+        :type: LAnyOfpublishJobRequestScriptresultId
         """
         if scriptresult_id is None:
             raise ValueError("Invalid value for `scriptresult_id`, must not be `None`")  # noqa: E501
@@ -137,7 +137,7 @@ class LPublishJobRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PublishJobRequest, dict):
+        if issubclass(LPublishJobRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -153,7 +153,7 @@ class LPublishJobRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PublishJobRequest):
+        if not isinstance(other, LPublishJobRequest):
             return False
 
         return self.__dict__ == other.__dict__

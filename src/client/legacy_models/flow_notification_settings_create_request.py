@@ -39,7 +39,7 @@ class LFlowNotificationSettingsCreateRequest(object):
     }
 
     def __init__(self, on_job_failure=None, on_job_success=None, flow_id=None):  # noqa: E501
-        """FlowNotificationSettingsCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LFlowNotificationSettingsCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._on_job_failure = None
         self._on_job_success = None
         self._flow_id = None
@@ -50,22 +50,22 @@ class LFlowNotificationSettingsCreateRequest(object):
 
     @property
     def on_job_failure(self):
-        """Gets the on_job_failure of this FlowNotificationSettingsCreateRequest.  # noqa: E501
+        """Gets the on_job_failure of this LFlowNotificationSettingsCreateRequest.  # noqa: E501
 
         on job failure trigger condition  # noqa: E501
 
-        :return: The on_job_failure of this FlowNotificationSettingsCreateRequest.  # noqa: E501
+        :return: The on_job_failure of this LFlowNotificationSettingsCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._on_job_failure
 
     @on_job_failure.setter
     def on_job_failure(self, on_job_failure):
-        """Sets the on_job_failure of this FlowNotificationSettingsCreateRequest.
+        """Sets the on_job_failure of this LFlowNotificationSettingsCreateRequest.
 
         on job failure trigger condition  # noqa: E501
 
-        :param on_job_failure: The on_job_failure of this FlowNotificationSettingsCreateRequest.  # noqa: E501
+        :param on_job_failure: The on_job_failure of this LFlowNotificationSettingsCreateRequest.  # noqa: E501
         :type: str
         """
         if on_job_failure is None:
@@ -81,22 +81,22 @@ class LFlowNotificationSettingsCreateRequest(object):
 
     @property
     def on_job_success(self):
-        """Gets the on_job_success of this FlowNotificationSettingsCreateRequest.  # noqa: E501
+        """Gets the on_job_success of this LFlowNotificationSettingsCreateRequest.  # noqa: E501
 
         on job success trigger condition  # noqa: E501
 
-        :return: The on_job_success of this FlowNotificationSettingsCreateRequest.  # noqa: E501
+        :return: The on_job_success of this LFlowNotificationSettingsCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._on_job_success
 
     @on_job_success.setter
     def on_job_success(self, on_job_success):
-        """Sets the on_job_success of this FlowNotificationSettingsCreateRequest.
+        """Sets the on_job_success of this LFlowNotificationSettingsCreateRequest.
 
         on job success trigger condition  # noqa: E501
 
-        :param on_job_success: The on_job_success of this FlowNotificationSettingsCreateRequest.  # noqa: E501
+        :param on_job_success: The on_job_success of this LFlowNotificationSettingsCreateRequest.  # noqa: E501
         :type: str
         """
         if on_job_success is None:
@@ -112,20 +112,20 @@ class LFlowNotificationSettingsCreateRequest(object):
 
     @property
     def flow_id(self):
-        """Gets the flow_id of this FlowNotificationSettingsCreateRequest.  # noqa: E501
+        """Gets the flow_id of this LFlowNotificationSettingsCreateRequest.  # noqa: E501
 
 
-        :return: The flow_id of this FlowNotificationSettingsCreateRequest.  # noqa: E501
+        :return: The flow_id of this LFlowNotificationSettingsCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._flow_id
 
     @flow_id.setter
     def flow_id(self, flow_id):
-        """Sets the flow_id of this FlowNotificationSettingsCreateRequest.
+        """Sets the flow_id of this LFlowNotificationSettingsCreateRequest.
 
 
-        :param flow_id: The flow_id of this FlowNotificationSettingsCreateRequest.  # noqa: E501
+        :param flow_id: The flow_id of this LFlowNotificationSettingsCreateRequest.  # noqa: E501
         :type: int
         """
         if flow_id is None:
@@ -154,7 +154,7 @@ class LFlowNotificationSettingsCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowNotificationSettingsCreateRequest, dict):
+        if issubclass(LFlowNotificationSettingsCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -170,7 +170,7 @@ class LFlowNotificationSettingsCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowNotificationSettingsCreateRequest):
+        if not isinstance(other, LFlowNotificationSettingsCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

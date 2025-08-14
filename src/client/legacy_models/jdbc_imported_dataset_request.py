@@ -51,8 +51,8 @@ class LJdbcImportedDatasetRequest(object):
         'raw': 'str',
         'columns': 'list[str]',
         'size': 'int',
-        'run_parameters': 'list[RunParameterSqlInfo]',
-        'connection_id': 'AnyOfjdbcImportedDatasetRequestConnectionId',
+        'run_parameters': 'list[LRunParameterSqlInfo]',
+        'connection_id': 'LAnyOfjdbcImportedDatasetRequestConnectionId',
         'filter': 'str'
     }
 
@@ -87,7 +87,7 @@ class LJdbcImportedDatasetRequest(object):
     }
 
     def __init__(self, id=None, job_status=None, jobgroup_id=None, visible=None, is_pending=None, num_flows=None, bucket_name=None, dynamic_bucket=None, dynamic_host=None, dynamic_user_info=None, name=None, description=None, disable_type_inference=None, type=None, is_converted=None, is_dynamic=False, host=None, userinfo=None, jdbc_path=None, jdbc_table=None, jdbc_type=None, raw=None, columns=None, size=None, run_parameters=None, connection_id=None, filter=None):  # noqa: E501
-        """JdbcImportedDatasetRequest - a model defined in Swagger"""  # noqa: E501
+        """LJdbcImportedDatasetRequest - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._job_status = None
         self._jobgroup_id = None
@@ -171,22 +171,22 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def id(self):
-        """Gets the id of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the id of this LJdbcImportedDatasetRequest.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The id of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this JdbcImportedDatasetRequest.
+        """Sets the id of this LJdbcImportedDatasetRequest.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param id: The id of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: int
         """
 
@@ -194,20 +194,20 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def job_status(self):
-        """Gets the job_status of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the job_status of this LJdbcImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The job_status of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The job_status of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._job_status
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this JdbcImportedDatasetRequest.
+        """Sets the job_status of this LJdbcImportedDatasetRequest.
 
 
-        :param job_status: The job_status of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param job_status: The job_status of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -215,20 +215,20 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def jobgroup_id(self):
-        """Gets the jobgroup_id of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the jobgroup_id of this LJdbcImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The jobgroup_id of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The jobgroup_id of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._jobgroup_id
 
     @jobgroup_id.setter
     def jobgroup_id(self, jobgroup_id):
-        """Sets the jobgroup_id of this JdbcImportedDatasetRequest.
+        """Sets the jobgroup_id of this LJdbcImportedDatasetRequest.
 
 
-        :param jobgroup_id: The jobgroup_id of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param jobgroup_id: The jobgroup_id of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -236,20 +236,20 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def visible(self):
-        """Gets the visible of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the visible of this LJdbcImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The visible of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The visible of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: bool
         """
         return self._visible
 
     @visible.setter
     def visible(self, visible):
-        """Sets the visible of this JdbcImportedDatasetRequest.
+        """Sets the visible of this LJdbcImportedDatasetRequest.
 
 
-        :param visible: The visible of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param visible: The visible of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: bool
         """
 
@@ -257,20 +257,20 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def is_pending(self):
-        """Gets the is_pending of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the is_pending of this LJdbcImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The is_pending of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The is_pending of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: bool
         """
         return self._is_pending
 
     @is_pending.setter
     def is_pending(self, is_pending):
-        """Sets the is_pending of this JdbcImportedDatasetRequest.
+        """Sets the is_pending of this LJdbcImportedDatasetRequest.
 
 
-        :param is_pending: The is_pending of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param is_pending: The is_pending of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: bool
         """
 
@@ -278,20 +278,20 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def num_flows(self):
-        """Gets the num_flows of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the num_flows of this LJdbcImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The num_flows of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The num_flows of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: int
         """
         return self._num_flows
 
     @num_flows.setter
     def num_flows(self, num_flows):
-        """Sets the num_flows of this JdbcImportedDatasetRequest.
+        """Sets the num_flows of this LJdbcImportedDatasetRequest.
 
 
-        :param num_flows: The num_flows of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param num_flows: The num_flows of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: int
         """
 
@@ -299,20 +299,20 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the bucket_name of this LJdbcImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The bucket_name of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The bucket_name of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._bucket_name
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this JdbcImportedDatasetRequest.
+        """Sets the bucket_name of this LJdbcImportedDatasetRequest.
 
 
-        :param bucket_name: The bucket_name of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param bucket_name: The bucket_name of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -320,22 +320,22 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def dynamic_bucket(self):
-        """Gets the dynamic_bucket of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the dynamic_bucket of this LJdbcImportedDatasetRequest.  # noqa: E501
 
         Bucket used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :return: The dynamic_bucket of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The dynamic_bucket of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._dynamic_bucket
 
     @dynamic_bucket.setter
     def dynamic_bucket(self, dynamic_bucket):
-        """Sets the dynamic_bucket of this JdbcImportedDatasetRequest.
+        """Sets the dynamic_bucket of this LJdbcImportedDatasetRequest.
 
         Bucket used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :param dynamic_bucket: The dynamic_bucket of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param dynamic_bucket: The dynamic_bucket of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -343,22 +343,22 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def dynamic_host(self):
-        """Gets the dynamic_host of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the dynamic_host of this LJdbcImportedDatasetRequest.  # noqa: E501
 
         Host used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :return: The dynamic_host of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The dynamic_host of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._dynamic_host
 
     @dynamic_host.setter
     def dynamic_host(self, dynamic_host):
-        """Sets the dynamic_host of this JdbcImportedDatasetRequest.
+        """Sets the dynamic_host of this LJdbcImportedDatasetRequest.
 
         Host used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :param dynamic_host: The dynamic_host of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param dynamic_host: The dynamic_host of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -366,22 +366,22 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def dynamic_user_info(self):
-        """Gets the dynamic_user_info of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the dynamic_user_info of this LJdbcImportedDatasetRequest.  # noqa: E501
 
         User used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :return: The dynamic_user_info of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The dynamic_user_info of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._dynamic_user_info
 
     @dynamic_user_info.setter
     def dynamic_user_info(self, dynamic_user_info):
-        """Sets the dynamic_user_info of this JdbcImportedDatasetRequest.
+        """Sets the dynamic_user_info of this LJdbcImportedDatasetRequest.
 
         User used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :param dynamic_user_info: The dynamic_user_info of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param dynamic_user_info: The dynamic_user_info of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -389,22 +389,22 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def name(self):
-        """Gets the name of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the name of this LJdbcImportedDatasetRequest.  # noqa: E501
 
         Display name of the imported dataset.  # noqa: E501
 
-        :return: The name of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The name of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JdbcImportedDatasetRequest.
+        """Sets the name of this LJdbcImportedDatasetRequest.
 
         Display name of the imported dataset.  # noqa: E501
 
-        :param name: The name of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param name: The name of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -414,22 +414,22 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def description(self):
-        """Gets the description of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the description of this LJdbcImportedDatasetRequest.  # noqa: E501
 
         User-friendly description for the imported dataset.  # noqa: E501
 
-        :return: The description of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The description of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this JdbcImportedDatasetRequest.
+        """Sets the description of this LJdbcImportedDatasetRequest.
 
         User-friendly description for the imported dataset.  # noqa: E501
 
-        :param description: The description of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param description: The description of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -437,22 +437,22 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def disable_type_inference(self):
-        """Gets the disable_type_inference of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the disable_type_inference of this LJdbcImportedDatasetRequest.  # noqa: E501
 
         Only applicable to relational sources (database tables/views for e.g.). Prevent Alteryx Analytics Cloud type inference from running and inferring types by looking at the first rows of the dataset.  # noqa: E501
 
-        :return: The disable_type_inference of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The disable_type_inference of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: bool
         """
         return self._disable_type_inference
 
     @disable_type_inference.setter
     def disable_type_inference(self, disable_type_inference):
-        """Sets the disable_type_inference of this JdbcImportedDatasetRequest.
+        """Sets the disable_type_inference of this LJdbcImportedDatasetRequest.
 
         Only applicable to relational sources (database tables/views for e.g.). Prevent Alteryx Analytics Cloud type inference from running and inferring types by looking at the first rows of the dataset.  # noqa: E501
 
-        :param disable_type_inference: The disable_type_inference of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param disable_type_inference: The disable_type_inference of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: bool
         """
 
@@ -460,22 +460,22 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def type(self):
-        """Gets the type of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the type of this LJdbcImportedDatasetRequest.  # noqa: E501
 
         Indicate the type of dataset. If not specified, the default storage protocol is used.  # noqa: E501
 
-        :return: The type of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The type of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this JdbcImportedDatasetRequest.
+        """Sets the type of this LJdbcImportedDatasetRequest.
 
         Indicate the type of dataset. If not specified, the default storage protocol is used.  # noqa: E501
 
-        :param type: The type of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param type: The type of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -483,22 +483,22 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def is_converted(self):
-        """Gets the is_converted of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the is_converted of this LJdbcImportedDatasetRequest.  # noqa: E501
 
         Indicate if the imported dataset is converted. This is the case for Microsoft Excel Dataset for e.g.  # noqa: E501
 
-        :return: The is_converted of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The is_converted of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: bool
         """
         return self._is_converted
 
     @is_converted.setter
     def is_converted(self, is_converted):
-        """Sets the is_converted of this JdbcImportedDatasetRequest.
+        """Sets the is_converted of this LJdbcImportedDatasetRequest.
 
         Indicate if the imported dataset is converted. This is the case for Microsoft Excel Dataset for e.g.  # noqa: E501
 
-        :param is_converted: The is_converted of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param is_converted: The is_converted of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: bool
         """
 
@@ -506,22 +506,22 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def is_dynamic(self):
-        """Gets the is_dynamic of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the is_dynamic of this LJdbcImportedDatasetRequest.  # noqa: E501
 
         indicate if the datasource is parameterized. In that case, a `dynamicPath` should be passed.  # noqa: E501
 
-        :return: The is_dynamic of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The is_dynamic of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: bool
         """
         return self._is_dynamic
 
     @is_dynamic.setter
     def is_dynamic(self, is_dynamic):
-        """Sets the is_dynamic of this JdbcImportedDatasetRequest.
+        """Sets the is_dynamic of this LJdbcImportedDatasetRequest.
 
         indicate if the datasource is parameterized. In that case, a `dynamicPath` should be passed.  # noqa: E501
 
-        :param is_dynamic: The is_dynamic of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param is_dynamic: The is_dynamic of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: bool
         """
 
@@ -529,22 +529,22 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def host(self):
-        """Gets the host of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the host of this LJdbcImportedDatasetRequest.  # noqa: E501
 
         Host for the dataset  # noqa: E501
 
-        :return: The host of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The host of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._host
 
     @host.setter
     def host(self, host):
-        """Sets the host of this JdbcImportedDatasetRequest.
+        """Sets the host of this LJdbcImportedDatasetRequest.
 
         Host for the dataset  # noqa: E501
 
-        :param host: The host of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param host: The host of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -552,22 +552,22 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def userinfo(self):
-        """Gets the userinfo of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the userinfo of this LJdbcImportedDatasetRequest.  # noqa: E501
 
         User info for the dataset  # noqa: E501
 
-        :return: The userinfo of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The userinfo of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._userinfo
 
     @userinfo.setter
     def userinfo(self, userinfo):
-        """Sets the userinfo of this JdbcImportedDatasetRequest.
+        """Sets the userinfo of this LJdbcImportedDatasetRequest.
 
         User info for the dataset  # noqa: E501
 
-        :param userinfo: The userinfo of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param userinfo: The userinfo of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -575,20 +575,20 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def jdbc_path(self):
-        """Gets the jdbc_path of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the jdbc_path of this LJdbcImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The jdbc_path of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The jdbc_path of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: list[str]
         """
         return self._jdbc_path
 
     @jdbc_path.setter
     def jdbc_path(self, jdbc_path):
-        """Sets the jdbc_path of this JdbcImportedDatasetRequest.
+        """Sets the jdbc_path of this LJdbcImportedDatasetRequest.
 
 
-        :param jdbc_path: The jdbc_path of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param jdbc_path: The jdbc_path of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: list[str]
         """
 
@@ -596,20 +596,20 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def jdbc_table(self):
-        """Gets the jdbc_table of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the jdbc_table of this LJdbcImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The jdbc_table of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The jdbc_table of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._jdbc_table
 
     @jdbc_table.setter
     def jdbc_table(self, jdbc_table):
-        """Sets the jdbc_table of this JdbcImportedDatasetRequest.
+        """Sets the jdbc_table of this LJdbcImportedDatasetRequest.
 
 
-        :param jdbc_table: The jdbc_table of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param jdbc_table: The jdbc_table of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -617,20 +617,20 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def jdbc_type(self):
-        """Gets the jdbc_type of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the jdbc_type of this LJdbcImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The jdbc_type of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The jdbc_type of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._jdbc_type
 
     @jdbc_type.setter
     def jdbc_type(self, jdbc_type):
-        """Sets the jdbc_type of this JdbcImportedDatasetRequest.
+        """Sets the jdbc_type of this LJdbcImportedDatasetRequest.
 
 
-        :param jdbc_type: The jdbc_type of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param jdbc_type: The jdbc_type of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -638,22 +638,22 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def raw(self):
-        """Gets the raw of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the raw of this LJdbcImportedDatasetRequest.  # noqa: E501
 
         Raw SQL query  # noqa: E501
 
-        :return: The raw of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The raw of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._raw
 
     @raw.setter
     def raw(self, raw):
-        """Sets the raw of this JdbcImportedDatasetRequest.
+        """Sets the raw of this LJdbcImportedDatasetRequest.
 
         Raw SQL query  # noqa: E501
 
-        :param raw: The raw of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param raw: The raw of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -661,20 +661,20 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def columns(self):
-        """Gets the columns of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the columns of this LJdbcImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The columns of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The columns of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: list[str]
         """
         return self._columns
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this JdbcImportedDatasetRequest.
+        """Sets the columns of this LJdbcImportedDatasetRequest.
 
 
-        :param columns: The columns of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param columns: The columns of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: list[str]
         """
 
@@ -682,20 +682,20 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def size(self):
-        """Gets the size of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the size of this LJdbcImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The size of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The size of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: int
         """
         return self._size
 
     @size.setter
     def size(self, size):
-        """Sets the size of this JdbcImportedDatasetRequest.
+        """Sets the size of this LJdbcImportedDatasetRequest.
 
 
-        :param size: The size of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param size: The size of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: int
         """
 
@@ -703,44 +703,44 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def run_parameters(self):
-        """Gets the run_parameters of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the run_parameters of this LJdbcImportedDatasetRequest.  # noqa: E501
 
         Description of the dataset parameters if the dataset is parameterized. `isDynamic` should be set to `true` in that case.  # noqa: E501
 
-        :return: The run_parameters of this JdbcImportedDatasetRequest.  # noqa: E501
-        :rtype: list[RunParameterSqlInfo]
+        :return: The run_parameters of this LJdbcImportedDatasetRequest.  # noqa: E501
+        :rtype: list[LRunParameterSqlInfo]
         """
         return self._run_parameters
 
     @run_parameters.setter
     def run_parameters(self, run_parameters):
-        """Sets the run_parameters of this JdbcImportedDatasetRequest.
+        """Sets the run_parameters of this LJdbcImportedDatasetRequest.
 
         Description of the dataset parameters if the dataset is parameterized. `isDynamic` should be set to `true` in that case.  # noqa: E501
 
-        :param run_parameters: The run_parameters of this JdbcImportedDatasetRequest.  # noqa: E501
-        :type: list[RunParameterSqlInfo]
+        :param run_parameters: The run_parameters of this LJdbcImportedDatasetRequest.  # noqa: E501
+        :type: list[LRunParameterSqlInfo]
         """
 
         self._run_parameters = run_parameters
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the connection_id of this LJdbcImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The connection_id of this JdbcImportedDatasetRequest.  # noqa: E501
-        :rtype: AnyOfjdbcImportedDatasetRequestConnectionId
+        :return: The connection_id of this LJdbcImportedDatasetRequest.  # noqa: E501
+        :rtype: LAnyOfjdbcImportedDatasetRequestConnectionId
         """
         return self._connection_id
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this JdbcImportedDatasetRequest.
+        """Sets the connection_id of this LJdbcImportedDatasetRequest.
 
 
-        :param connection_id: The connection_id of this JdbcImportedDatasetRequest.  # noqa: E501
-        :type: AnyOfjdbcImportedDatasetRequestConnectionId
+        :param connection_id: The connection_id of this LJdbcImportedDatasetRequest.  # noqa: E501
+        :type: LAnyOfjdbcImportedDatasetRequestConnectionId
         """
         if connection_id is None:
             raise ValueError("Invalid value for `connection_id`, must not be `None`")  # noqa: E501
@@ -749,20 +749,20 @@ class LJdbcImportedDatasetRequest(object):
 
     @property
     def filter(self):
-        """Gets the filter of this JdbcImportedDatasetRequest.  # noqa: E501
+        """Gets the filter of this LJdbcImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The filter of this JdbcImportedDatasetRequest.  # noqa: E501
+        :return: The filter of this LJdbcImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._filter
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this JdbcImportedDatasetRequest.
+        """Sets the filter of this LJdbcImportedDatasetRequest.
 
 
-        :param filter: The filter of this JdbcImportedDatasetRequest.  # noqa: E501
+        :param filter: The filter of this LJdbcImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -789,7 +789,7 @@ class LJdbcImportedDatasetRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(JdbcImportedDatasetRequest, dict):
+        if issubclass(LJdbcImportedDatasetRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -805,7 +805,7 @@ class LJdbcImportedDatasetRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, JdbcImportedDatasetRequest):
+        if not isinstance(other, LJdbcImportedDatasetRequest):
             return False
 
         return self.__dict__ == other.__dict__

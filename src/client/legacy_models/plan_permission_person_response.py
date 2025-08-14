@@ -27,7 +27,7 @@ class LPlanPermissionPersonResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[PersonReadResponse]'
+        'data': 'list[LPersonReadResponse]'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LPlanPermissionPersonResponse(object):
     }
 
     def __init__(self, data=None):  # noqa: E501
-        """PlanPermissionPersonResponse - a model defined in Swagger"""  # noqa: E501
+        """LPlanPermissionPersonResponse - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self.discriminator = None
         self.data = data
 
     @property
     def data(self):
-        """Gets the data of this PlanPermissionPersonResponse.  # noqa: E501
+        """Gets the data of this LPlanPermissionPersonResponse.  # noqa: E501
 
 
-        :return: The data of this PlanPermissionPersonResponse.  # noqa: E501
-        :rtype: list[PersonReadResponse]
+        :return: The data of this LPlanPermissionPersonResponse.  # noqa: E501
+        :rtype: list[LPersonReadResponse]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this PlanPermissionPersonResponse.
+        """Sets the data of this LPlanPermissionPersonResponse.
 
 
-        :param data: The data of this PlanPermissionPersonResponse.  # noqa: E501
-        :type: list[PersonReadResponse]
+        :param data: The data of this LPlanPermissionPersonResponse.  # noqa: E501
+        :type: list[LPersonReadResponse]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LPlanPermissionPersonResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanPermissionPersonResponse, dict):
+        if issubclass(LPlanPermissionPersonResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LPlanPermissionPersonResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanPermissionPersonResponse):
+        if not isinstance(other, LPlanPermissionPersonResponse):
             return False
 
         return self.__dict__ == other.__dict__

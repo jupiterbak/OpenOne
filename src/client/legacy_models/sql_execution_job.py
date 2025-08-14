@@ -28,7 +28,7 @@ class LSqlExecutionJob(object):
     """
     swagger_types = {
         'sqlscript': 'object',
-        'id': 'AnyOfsqlExecutionJobId',
+        'id': 'LAnyOfsqlExecutionJobId',
         'cp_job_id': 'str'
     }
 
@@ -39,7 +39,7 @@ class LSqlExecutionJob(object):
     }
 
     def __init__(self, sqlscript=None, id=None, cp_job_id=None):  # noqa: E501
-        """SqlExecutionJob - a model defined in Swagger"""  # noqa: E501
+        """LSqlExecutionJob - a model defined in Swagger"""  # noqa: E501
         self._sqlscript = None
         self._id = None
         self._cp_job_id = None
@@ -51,20 +51,20 @@ class LSqlExecutionJob(object):
 
     @property
     def sqlscript(self):
-        """Gets the sqlscript of this SqlExecutionJob.  # noqa: E501
+        """Gets the sqlscript of this LSqlExecutionJob.  # noqa: E501
 
 
-        :return: The sqlscript of this SqlExecutionJob.  # noqa: E501
+        :return: The sqlscript of this LSqlExecutionJob.  # noqa: E501
         :rtype: object
         """
         return self._sqlscript
 
     @sqlscript.setter
     def sqlscript(self, sqlscript):
-        """Sets the sqlscript of this SqlExecutionJob.
+        """Sets the sqlscript of this LSqlExecutionJob.
 
 
-        :param sqlscript: The sqlscript of this SqlExecutionJob.  # noqa: E501
+        :param sqlscript: The sqlscript of this LSqlExecutionJob.  # noqa: E501
         :type: object
         """
         if sqlscript is None:
@@ -74,21 +74,21 @@ class LSqlExecutionJob(object):
 
     @property
     def id(self):
-        """Gets the id of this SqlExecutionJob.  # noqa: E501
+        """Gets the id of this LSqlExecutionJob.  # noqa: E501
 
 
-        :return: The id of this SqlExecutionJob.  # noqa: E501
-        :rtype: AnyOfsqlExecutionJobId
+        :return: The id of this LSqlExecutionJob.  # noqa: E501
+        :rtype: LAnyOfsqlExecutionJobId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SqlExecutionJob.
+        """Sets the id of this LSqlExecutionJob.
 
 
-        :param id: The id of this SqlExecutionJob.  # noqa: E501
-        :type: AnyOfsqlExecutionJobId
+        :param id: The id of this LSqlExecutionJob.  # noqa: E501
+        :type: LAnyOfsqlExecutionJobId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -97,20 +97,20 @@ class LSqlExecutionJob(object):
 
     @property
     def cp_job_id(self):
-        """Gets the cp_job_id of this SqlExecutionJob.  # noqa: E501
+        """Gets the cp_job_id of this LSqlExecutionJob.  # noqa: E501
 
 
-        :return: The cp_job_id of this SqlExecutionJob.  # noqa: E501
+        :return: The cp_job_id of this LSqlExecutionJob.  # noqa: E501
         :rtype: str
         """
         return self._cp_job_id
 
     @cp_job_id.setter
     def cp_job_id(self, cp_job_id):
-        """Sets the cp_job_id of this SqlExecutionJob.
+        """Sets the cp_job_id of this LSqlExecutionJob.
 
 
-        :param cp_job_id: The cp_job_id of this SqlExecutionJob.  # noqa: E501
+        :param cp_job_id: The cp_job_id of this LSqlExecutionJob.  # noqa: E501
         :type: str
         """
 
@@ -137,7 +137,7 @@ class LSqlExecutionJob(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(SqlExecutionJob, dict):
+        if issubclass(LSqlExecutionJob, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -153,7 +153,7 @@ class LSqlExecutionJob(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SqlExecutionJob):
+        if not isinstance(other, LSqlExecutionJob):
             return False
 
         return self.__dict__ == other.__dict__

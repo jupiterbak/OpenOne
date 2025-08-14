@@ -34,8 +34,8 @@ class LAwsConfigCreateRequest(object):
         'external_id': 'str',
         'key': 'str',
         'secret': 'str',
-        'person_id': 'AnyOfawsConfigCreateRequestPersonId',
-        'workspace_id': 'AnyOfawsConfigCreateRequestWorkspaceId'
+        'person_id': 'LAnyOfawsConfigCreateRequestPersonId',
+        'workspace_id': 'LAnyOfawsConfigCreateRequestWorkspaceId'
     }
 
     attribute_map = {
@@ -51,7 +51,7 @@ class LAwsConfigCreateRequest(object):
     }
 
     def __init__(self, default_bucket=None, extra_buckets=None, credential_provider=None, role=None, external_id=None, key=None, secret=None, person_id=None, workspace_id=None):  # noqa: E501
-        """AwsConfigCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LAwsConfigCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._default_bucket = None
         self._extra_buckets = None
         self._credential_provider = None
@@ -82,22 +82,22 @@ class LAwsConfigCreateRequest(object):
 
     @property
     def default_bucket(self):
-        """Gets the default_bucket of this AwsConfigCreateRequest.  # noqa: E501
+        """Gets the default_bucket of this LAwsConfigCreateRequest.  # noqa: E501
 
         Default S3 bucket where user can upload and write results  # noqa: E501
 
-        :return: The default_bucket of this AwsConfigCreateRequest.  # noqa: E501
+        :return: The default_bucket of this LAwsConfigCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._default_bucket
 
     @default_bucket.setter
     def default_bucket(self, default_bucket):
-        """Sets the default_bucket of this AwsConfigCreateRequest.
+        """Sets the default_bucket of this LAwsConfigCreateRequest.
 
         Default S3 bucket where user can upload and write results  # noqa: E501
 
-        :param default_bucket: The default_bucket of this AwsConfigCreateRequest.  # noqa: E501
+        :param default_bucket: The default_bucket of this LAwsConfigCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -105,20 +105,20 @@ class LAwsConfigCreateRequest(object):
 
     @property
     def extra_buckets(self):
-        """Gets the extra_buckets of this AwsConfigCreateRequest.  # noqa: E501
+        """Gets the extra_buckets of this LAwsConfigCreateRequest.  # noqa: E501
 
 
-        :return: The extra_buckets of this AwsConfigCreateRequest.  # noqa: E501
+        :return: The extra_buckets of this LAwsConfigCreateRequest.  # noqa: E501
         :rtype: list[str]
         """
         return self._extra_buckets
 
     @extra_buckets.setter
     def extra_buckets(self, extra_buckets):
-        """Sets the extra_buckets of this AwsConfigCreateRequest.
+        """Sets the extra_buckets of this LAwsConfigCreateRequest.
 
 
-        :param extra_buckets: The extra_buckets of this AwsConfigCreateRequest.  # noqa: E501
+        :param extra_buckets: The extra_buckets of this LAwsConfigCreateRequest.  # noqa: E501
         :type: list[str]
         """
 
@@ -126,22 +126,22 @@ class LAwsConfigCreateRequest(object):
 
     @property
     def credential_provider(self):
-        """Gets the credential_provider of this AwsConfigCreateRequest.  # noqa: E501
+        """Gets the credential_provider of this LAwsConfigCreateRequest.  # noqa: E501
 
          * `default` - Using AWS key/secret to authenticate to S3 * `temporary` - Using AWS IAM Role to authenticate to S3  # noqa: E501
 
-        :return: The credential_provider of this AwsConfigCreateRequest.  # noqa: E501
+        :return: The credential_provider of this LAwsConfigCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._credential_provider
 
     @credential_provider.setter
     def credential_provider(self, credential_provider):
-        """Sets the credential_provider of this AwsConfigCreateRequest.
+        """Sets the credential_provider of this LAwsConfigCreateRequest.
 
          * `default` - Using AWS key/secret to authenticate to S3 * `temporary` - Using AWS IAM Role to authenticate to S3  # noqa: E501
 
-        :param credential_provider: The credential_provider of this AwsConfigCreateRequest.  # noqa: E501
+        :param credential_provider: The credential_provider of this LAwsConfigCreateRequest.  # noqa: E501
         :type: str
         """
         if credential_provider is None:
@@ -157,22 +157,22 @@ class LAwsConfigCreateRequest(object):
 
     @property
     def role(self):
-        """Gets the role of this AwsConfigCreateRequest.  # noqa: E501
+        """Gets the role of this LAwsConfigCreateRequest.  # noqa: E501
 
         AWS IAM Role, required when credential provider is set to temporary  # noqa: E501
 
-        :return: The role of this AwsConfigCreateRequest.  # noqa: E501
+        :return: The role of this LAwsConfigCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._role
 
     @role.setter
     def role(self, role):
-        """Sets the role of this AwsConfigCreateRequest.
+        """Sets the role of this LAwsConfigCreateRequest.
 
         AWS IAM Role, required when credential provider is set to temporary  # noqa: E501
 
-        :param role: The role of this AwsConfigCreateRequest.  # noqa: E501
+        :param role: The role of this LAwsConfigCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -180,22 +180,22 @@ class LAwsConfigCreateRequest(object):
 
     @property
     def external_id(self):
-        """Gets the external_id of this AwsConfigCreateRequest.  # noqa: E501
+        """Gets the external_id of this LAwsConfigCreateRequest.  # noqa: E501
 
         This identifier is used to manage     cross-account access in AWS. This value should not be modified.  # noqa: E501
 
-        :return: The external_id of this AwsConfigCreateRequest.  # noqa: E501
+        :return: The external_id of this LAwsConfigCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._external_id
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this AwsConfigCreateRequest.
+        """Sets the external_id of this LAwsConfigCreateRequest.
 
         This identifier is used to manage     cross-account access in AWS. This value should not be modified.  # noqa: E501
 
-        :param external_id: The external_id of this AwsConfigCreateRequest.  # noqa: E501
+        :param external_id: The external_id of this LAwsConfigCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -203,22 +203,22 @@ class LAwsConfigCreateRequest(object):
 
     @property
     def key(self):
-        """Gets the key of this AwsConfigCreateRequest.  # noqa: E501
+        """Gets the key of this LAwsConfigCreateRequest.  # noqa: E501
 
         AWS key string, required when credential provider is set to default  # noqa: E501
 
-        :return: The key of this AwsConfigCreateRequest.  # noqa: E501
+        :return: The key of this LAwsConfigCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._key
 
     @key.setter
     def key(self, key):
-        """Sets the key of this AwsConfigCreateRequest.
+        """Sets the key of this LAwsConfigCreateRequest.
 
         AWS key string, required when credential provider is set to default  # noqa: E501
 
-        :param key: The key of this AwsConfigCreateRequest.  # noqa: E501
+        :param key: The key of this LAwsConfigCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -226,22 +226,22 @@ class LAwsConfigCreateRequest(object):
 
     @property
     def secret(self):
-        """Gets the secret of this AwsConfigCreateRequest.  # noqa: E501
+        """Gets the secret of this LAwsConfigCreateRequest.  # noqa: E501
 
         AWS secret string, required when credential provider is set to default  # noqa: E501
 
-        :return: The secret of this AwsConfigCreateRequest.  # noqa: E501
+        :return: The secret of this LAwsConfigCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._secret
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this AwsConfigCreateRequest.
+        """Sets the secret of this LAwsConfigCreateRequest.
 
         AWS secret string, required when credential provider is set to default  # noqa: E501
 
-        :param secret: The secret of this AwsConfigCreateRequest.  # noqa: E501
+        :param secret: The secret of this LAwsConfigCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -249,42 +249,42 @@ class LAwsConfigCreateRequest(object):
 
     @property
     def person_id(self):
-        """Gets the person_id of this AwsConfigCreateRequest.  # noqa: E501
+        """Gets the person_id of this LAwsConfigCreateRequest.  # noqa: E501
 
 
-        :return: The person_id of this AwsConfigCreateRequest.  # noqa: E501
-        :rtype: AnyOfawsConfigCreateRequestPersonId
+        :return: The person_id of this LAwsConfigCreateRequest.  # noqa: E501
+        :rtype: LAnyOfawsConfigCreateRequestPersonId
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this AwsConfigCreateRequest.
+        """Sets the person_id of this LAwsConfigCreateRequest.
 
 
-        :param person_id: The person_id of this AwsConfigCreateRequest.  # noqa: E501
-        :type: AnyOfawsConfigCreateRequestPersonId
+        :param person_id: The person_id of this LAwsConfigCreateRequest.  # noqa: E501
+        :type: LAnyOfawsConfigCreateRequestPersonId
         """
 
         self._person_id = person_id
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this AwsConfigCreateRequest.  # noqa: E501
+        """Gets the workspace_id of this LAwsConfigCreateRequest.  # noqa: E501
 
 
-        :return: The workspace_id of this AwsConfigCreateRequest.  # noqa: E501
-        :rtype: AnyOfawsConfigCreateRequestWorkspaceId
+        :return: The workspace_id of this LAwsConfigCreateRequest.  # noqa: E501
+        :rtype: LAnyOfawsConfigCreateRequestWorkspaceId
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this AwsConfigCreateRequest.
+        """Sets the workspace_id of this LAwsConfigCreateRequest.
 
 
-        :param workspace_id: The workspace_id of this AwsConfigCreateRequest.  # noqa: E501
-        :type: AnyOfawsConfigCreateRequestWorkspaceId
+        :param workspace_id: The workspace_id of this LAwsConfigCreateRequest.  # noqa: E501
+        :type: LAnyOfawsConfigCreateRequestWorkspaceId
         """
 
         self._workspace_id = workspace_id
@@ -310,7 +310,7 @@ class LAwsConfigCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AwsConfigCreateRequest, dict):
+        if issubclass(LAwsConfigCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -326,7 +326,7 @@ class LAwsConfigCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AwsConfigCreateRequest):
+        if not isinstance(other, LAwsConfigCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

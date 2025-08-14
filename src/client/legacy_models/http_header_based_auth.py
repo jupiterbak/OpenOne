@@ -37,7 +37,7 @@ class LHttpHeaderBasedAuth(object):
     }
 
     def __init__(self, header_key=None, header_value=None):  # noqa: E501
-        """HttpHeaderBasedAuth - a model defined in Swagger"""  # noqa: E501
+        """LHttpHeaderBasedAuth - a model defined in Swagger"""  # noqa: E501
         self._header_key = None
         self._header_value = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LHttpHeaderBasedAuth(object):
 
     @property
     def header_key(self):
-        """Gets the header_key of this HttpHeaderBasedAuth.  # noqa: E501
+        """Gets the header_key of this LHttpHeaderBasedAuth.  # noqa: E501
 
 
-        :return: The header_key of this HttpHeaderBasedAuth.  # noqa: E501
+        :return: The header_key of this LHttpHeaderBasedAuth.  # noqa: E501
         :rtype: str
         """
         return self._header_key
 
     @header_key.setter
     def header_key(self, header_key):
-        """Sets the header_key of this HttpHeaderBasedAuth.
+        """Sets the header_key of this LHttpHeaderBasedAuth.
 
 
-        :param header_key: The header_key of this HttpHeaderBasedAuth.  # noqa: E501
+        :param header_key: The header_key of this LHttpHeaderBasedAuth.  # noqa: E501
         :type: str
         """
         if header_key is None:
@@ -69,20 +69,20 @@ class LHttpHeaderBasedAuth(object):
 
     @property
     def header_value(self):
-        """Gets the header_value of this HttpHeaderBasedAuth.  # noqa: E501
+        """Gets the header_value of this LHttpHeaderBasedAuth.  # noqa: E501
 
 
-        :return: The header_value of this HttpHeaderBasedAuth.  # noqa: E501
+        :return: The header_value of this LHttpHeaderBasedAuth.  # noqa: E501
         :rtype: str
         """
         return self._header_value
 
     @header_value.setter
     def header_value(self, header_value):
-        """Sets the header_value of this HttpHeaderBasedAuth.
+        """Sets the header_value of this LHttpHeaderBasedAuth.
 
 
-        :param header_value: The header_value of this HttpHeaderBasedAuth.  # noqa: E501
+        :param header_value: The header_value of this LHttpHeaderBasedAuth.  # noqa: E501
         :type: str
         """
         if header_value is None:
@@ -111,7 +111,7 @@ class LHttpHeaderBasedAuth(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(HttpHeaderBasedAuth, dict):
+        if issubclass(LHttpHeaderBasedAuth, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LHttpHeaderBasedAuth(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, HttpHeaderBasedAuth):
+        if not isinstance(other, LHttpHeaderBasedAuth):
             return False
 
         return self.__dict__ == other.__dict__

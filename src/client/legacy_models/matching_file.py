@@ -37,7 +37,7 @@ class LMatchingFile(object):
     }
 
     def __init__(self, path=None, type=None):  # noqa: E501
-        """MatchingFile - a model defined in Swagger"""  # noqa: E501
+        """LMatchingFile - a model defined in Swagger"""  # noqa: E501
         self._path = None
         self._type = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LMatchingFile(object):
 
     @property
     def path(self):
-        """Gets the path of this MatchingFile.  # noqa: E501
+        """Gets the path of this LMatchingFile.  # noqa: E501
 
 
-        :return: The path of this MatchingFile.  # noqa: E501
+        :return: The path of this LMatchingFile.  # noqa: E501
         :rtype: str
         """
         return self._path
 
     @path.setter
     def path(self, path):
-        """Sets the path of this MatchingFile.
+        """Sets the path of this LMatchingFile.
 
 
-        :param path: The path of this MatchingFile.  # noqa: E501
+        :param path: The path of this LMatchingFile.  # noqa: E501
         :type: str
         """
         if path is None:
@@ -69,20 +69,20 @@ class LMatchingFile(object):
 
     @property
     def type(self):
-        """Gets the type of this MatchingFile.  # noqa: E501
+        """Gets the type of this LMatchingFile.  # noqa: E501
 
 
-        :return: The type of this MatchingFile.  # noqa: E501
+        :return: The type of this LMatchingFile.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MatchingFile.
+        """Sets the type of this LMatchingFile.
 
 
-        :param type: The type of this MatchingFile.  # noqa: E501
+        :param type: The type of this LMatchingFile.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -117,7 +117,7 @@ class LMatchingFile(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(MatchingFile, dict):
+        if issubclass(LMatchingFile, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -133,7 +133,7 @@ class LMatchingFile(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, MatchingFile):
+        if not isinstance(other, LMatchingFile):
             return False
 
         return self.__dict__ == other.__dict__

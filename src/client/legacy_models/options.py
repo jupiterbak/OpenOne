@@ -38,18 +38,18 @@ class LOptions(object):
     }
 
     attribute_map = {
-        'enable_auto_insights': 'EnableAutoInsights',
-        'enable_app_builder': 'EnableAppBuilder',
-        'enable_cloud_exec': 'EnableCloudExec',
-        'enable_emr_serverless': 'EnableEMRServerless',
-        'enable_ai_din': 'EnableAiDIN',
-        'enable_designer_cloud': 'EnableDesignerCloud',
-        'enable_auto_ml': 'EnableAutoML',
-        'cloud_exec_max_scaling': 'CloudExecMaxScaling'
+        'enable_auto_insights': 'LEnableAutoInsights',
+        'enable_app_builder': 'LEnableAppBuilder',
+        'enable_cloud_exec': 'LEnableCloudExec',
+        'enable_emr_serverless': 'LEnableEMRServerless',
+        'enable_ai_din': 'LEnableAiDIN',
+        'enable_designer_cloud': 'LEnableDesignerCloud',
+        'enable_auto_ml': 'LEnableAutoML',
+        'cloud_exec_max_scaling': 'LCloudExecMaxScaling'
     }
 
     def __init__(self, enable_auto_insights=None, enable_app_builder=None, enable_cloud_exec=None, enable_emr_serverless=None, enable_ai_din=None, enable_designer_cloud=None, enable_auto_ml=None, cloud_exec_max_scaling=None):  # noqa: E501
-        """Options - a model defined in Swagger"""  # noqa: E501
+        """LOptions - a model defined in Swagger"""  # noqa: E501
         self._enable_auto_insights = None
         self._enable_app_builder = None
         self._enable_cloud_exec = None
@@ -78,20 +78,20 @@ class LOptions(object):
 
     @property
     def enable_auto_insights(self):
-        """Gets the enable_auto_insights of this Options.  # noqa: E501
+        """Gets the enable_auto_insights of this LOptions.  # noqa: E501
 
 
-        :return: The enable_auto_insights of this Options.  # noqa: E501
+        :return: The enable_auto_insights of this LOptions.  # noqa: E501
         :rtype: bool
         """
         return self._enable_auto_insights
 
     @enable_auto_insights.setter
     def enable_auto_insights(self, enable_auto_insights):
-        """Sets the enable_auto_insights of this Options.
+        """Sets the enable_auto_insights of this LOptions.
 
 
-        :param enable_auto_insights: The enable_auto_insights of this Options.  # noqa: E501
+        :param enable_auto_insights: The enable_auto_insights of this LOptions.  # noqa: E501
         :type: bool
         """
 
@@ -99,20 +99,20 @@ class LOptions(object):
 
     @property
     def enable_app_builder(self):
-        """Gets the enable_app_builder of this Options.  # noqa: E501
+        """Gets the enable_app_builder of this LOptions.  # noqa: E501
 
 
-        :return: The enable_app_builder of this Options.  # noqa: E501
+        :return: The enable_app_builder of this LOptions.  # noqa: E501
         :rtype: bool
         """
         return self._enable_app_builder
 
     @enable_app_builder.setter
     def enable_app_builder(self, enable_app_builder):
-        """Sets the enable_app_builder of this Options.
+        """Sets the enable_app_builder of this LOptions.
 
 
-        :param enable_app_builder: The enable_app_builder of this Options.  # noqa: E501
+        :param enable_app_builder: The enable_app_builder of this LOptions.  # noqa: E501
         :type: bool
         """
 
@@ -120,20 +120,20 @@ class LOptions(object):
 
     @property
     def enable_cloud_exec(self):
-        """Gets the enable_cloud_exec of this Options.  # noqa: E501
+        """Gets the enable_cloud_exec of this LOptions.  # noqa: E501
 
 
-        :return: The enable_cloud_exec of this Options.  # noqa: E501
+        :return: The enable_cloud_exec of this LOptions.  # noqa: E501
         :rtype: bool
         """
         return self._enable_cloud_exec
 
     @enable_cloud_exec.setter
     def enable_cloud_exec(self, enable_cloud_exec):
-        """Sets the enable_cloud_exec of this Options.
+        """Sets the enable_cloud_exec of this LOptions.
 
 
-        :param enable_cloud_exec: The enable_cloud_exec of this Options.  # noqa: E501
+        :param enable_cloud_exec: The enable_cloud_exec of this LOptions.  # noqa: E501
         :type: bool
         """
 
@@ -141,20 +141,20 @@ class LOptions(object):
 
     @property
     def enable_emr_serverless(self):
-        """Gets the enable_emr_serverless of this Options.  # noqa: E501
+        """Gets the enable_emr_serverless of this LOptions.  # noqa: E501
 
 
-        :return: The enable_emr_serverless of this Options.  # noqa: E501
+        :return: The enable_emr_serverless of this LOptions.  # noqa: E501
         :rtype: bool
         """
         return self._enable_emr_serverless
 
     @enable_emr_serverless.setter
     def enable_emr_serverless(self, enable_emr_serverless):
-        """Sets the enable_emr_serverless of this Options.
+        """Sets the enable_emr_serverless of this LOptions.
 
 
-        :param enable_emr_serverless: The enable_emr_serverless of this Options.  # noqa: E501
+        :param enable_emr_serverless: The enable_emr_serverless of this LOptions.  # noqa: E501
         :type: bool
         """
 
@@ -162,20 +162,20 @@ class LOptions(object):
 
     @property
     def enable_ai_din(self):
-        """Gets the enable_ai_din of this Options.  # noqa: E501
+        """Gets the enable_ai_din of this LOptions.  # noqa: E501
 
 
-        :return: The enable_ai_din of this Options.  # noqa: E501
+        :return: The enable_ai_din of this LOptions.  # noqa: E501
         :rtype: bool
         """
         return self._enable_ai_din
 
     @enable_ai_din.setter
     def enable_ai_din(self, enable_ai_din):
-        """Sets the enable_ai_din of this Options.
+        """Sets the enable_ai_din of this LOptions.
 
 
-        :param enable_ai_din: The enable_ai_din of this Options.  # noqa: E501
+        :param enable_ai_din: The enable_ai_din of this LOptions.  # noqa: E501
         :type: bool
         """
 
@@ -183,20 +183,20 @@ class LOptions(object):
 
     @property
     def enable_designer_cloud(self):
-        """Gets the enable_designer_cloud of this Options.  # noqa: E501
+        """Gets the enable_designer_cloud of this LOptions.  # noqa: E501
 
 
-        :return: The enable_designer_cloud of this Options.  # noqa: E501
+        :return: The enable_designer_cloud of this LOptions.  # noqa: E501
         :rtype: bool
         """
         return self._enable_designer_cloud
 
     @enable_designer_cloud.setter
     def enable_designer_cloud(self, enable_designer_cloud):
-        """Sets the enable_designer_cloud of this Options.
+        """Sets the enable_designer_cloud of this LOptions.
 
 
-        :param enable_designer_cloud: The enable_designer_cloud of this Options.  # noqa: E501
+        :param enable_designer_cloud: The enable_designer_cloud of this LOptions.  # noqa: E501
         :type: bool
         """
 
@@ -204,20 +204,20 @@ class LOptions(object):
 
     @property
     def enable_auto_ml(self):
-        """Gets the enable_auto_ml of this Options.  # noqa: E501
+        """Gets the enable_auto_ml of this LOptions.  # noqa: E501
 
 
-        :return: The enable_auto_ml of this Options.  # noqa: E501
+        :return: The enable_auto_ml of this LOptions.  # noqa: E501
         :rtype: bool
         """
         return self._enable_auto_ml
 
     @enable_auto_ml.setter
     def enable_auto_ml(self, enable_auto_ml):
-        """Sets the enable_auto_ml of this Options.
+        """Sets the enable_auto_ml of this LOptions.
 
 
-        :param enable_auto_ml: The enable_auto_ml of this Options.  # noqa: E501
+        :param enable_auto_ml: The enable_auto_ml of this LOptions.  # noqa: E501
         :type: bool
         """
 
@@ -225,20 +225,20 @@ class LOptions(object):
 
     @property
     def cloud_exec_max_scaling(self):
-        """Gets the cloud_exec_max_scaling of this Options.  # noqa: E501
+        """Gets the cloud_exec_max_scaling of this LOptions.  # noqa: E501
 
 
-        :return: The cloud_exec_max_scaling of this Options.  # noqa: E501
+        :return: The cloud_exec_max_scaling of this LOptions.  # noqa: E501
         :rtype: int
         """
         return self._cloud_exec_max_scaling
 
     @cloud_exec_max_scaling.setter
     def cloud_exec_max_scaling(self, cloud_exec_max_scaling):
-        """Sets the cloud_exec_max_scaling of this Options.
+        """Sets the cloud_exec_max_scaling of this LOptions.
 
 
-        :param cloud_exec_max_scaling: The cloud_exec_max_scaling of this Options.  # noqa: E501
+        :param cloud_exec_max_scaling: The cloud_exec_max_scaling of this LOptions.  # noqa: E501
         :type: int
         """
 
@@ -265,7 +265,7 @@ class LOptions(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Options, dict):
+        if issubclass(LOptions, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -281,7 +281,7 @@ class LOptions(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Options):
+        if not isinstance(other, LOptions):
             return False
 
         return self.__dict__ == other.__dict__

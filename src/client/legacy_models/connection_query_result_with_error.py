@@ -51,7 +51,7 @@ class LConnectionQueryResultWithError(object):
     }
 
     def __init__(self, name=None, last_modified=None, error=None, row_count=None, column_count=None, raw_data_size=None, total_size=None, path=None, read_only=None):  # noqa: E501
-        """ConnectionQueryResultWithError - a model defined in Swagger"""  # noqa: E501
+        """LConnectionQueryResultWithError - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._last_modified = None
         self._error = None
@@ -80,20 +80,20 @@ class LConnectionQueryResultWithError(object):
 
     @property
     def name(self):
-        """Gets the name of this ConnectionQueryResultWithError.  # noqa: E501
+        """Gets the name of this LConnectionQueryResultWithError.  # noqa: E501
 
 
-        :return: The name of this ConnectionQueryResultWithError.  # noqa: E501
+        :return: The name of this LConnectionQueryResultWithError.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConnectionQueryResultWithError.
+        """Sets the name of this LConnectionQueryResultWithError.
 
 
-        :param name: The name of this ConnectionQueryResultWithError.  # noqa: E501
+        :param name: The name of this LConnectionQueryResultWithError.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -103,20 +103,20 @@ class LConnectionQueryResultWithError(object):
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this ConnectionQueryResultWithError.  # noqa: E501
+        """Gets the last_modified of this LConnectionQueryResultWithError.  # noqa: E501
 
 
-        :return: The last_modified of this ConnectionQueryResultWithError.  # noqa: E501
+        :return: The last_modified of this LConnectionQueryResultWithError.  # noqa: E501
         :rtype: int
         """
         return self._last_modified
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this ConnectionQueryResultWithError.
+        """Sets the last_modified of this LConnectionQueryResultWithError.
 
 
-        :param last_modified: The last_modified of this ConnectionQueryResultWithError.  # noqa: E501
+        :param last_modified: The last_modified of this LConnectionQueryResultWithError.  # noqa: E501
         :type: int
         """
 
@@ -124,20 +124,20 @@ class LConnectionQueryResultWithError(object):
 
     @property
     def error(self):
-        """Gets the error of this ConnectionQueryResultWithError.  # noqa: E501
+        """Gets the error of this LConnectionQueryResultWithError.  # noqa: E501
 
 
-        :return: The error of this ConnectionQueryResultWithError.  # noqa: E501
+        :return: The error of this LConnectionQueryResultWithError.  # noqa: E501
         :rtype: object
         """
         return self._error
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ConnectionQueryResultWithError.
+        """Sets the error of this LConnectionQueryResultWithError.
 
 
-        :param error: The error of this ConnectionQueryResultWithError.  # noqa: E501
+        :param error: The error of this LConnectionQueryResultWithError.  # noqa: E501
         :type: object
         """
 
@@ -145,20 +145,20 @@ class LConnectionQueryResultWithError(object):
 
     @property
     def row_count(self):
-        """Gets the row_count of this ConnectionQueryResultWithError.  # noqa: E501
+        """Gets the row_count of this LConnectionQueryResultWithError.  # noqa: E501
 
 
-        :return: The row_count of this ConnectionQueryResultWithError.  # noqa: E501
+        :return: The row_count of this LConnectionQueryResultWithError.  # noqa: E501
         :rtype: int
         """
         return self._row_count
 
     @row_count.setter
     def row_count(self, row_count):
-        """Sets the row_count of this ConnectionQueryResultWithError.
+        """Sets the row_count of this LConnectionQueryResultWithError.
 
 
-        :param row_count: The row_count of this ConnectionQueryResultWithError.  # noqa: E501
+        :param row_count: The row_count of this LConnectionQueryResultWithError.  # noqa: E501
         :type: int
         """
 
@@ -166,20 +166,20 @@ class LConnectionQueryResultWithError(object):
 
     @property
     def column_count(self):
-        """Gets the column_count of this ConnectionQueryResultWithError.  # noqa: E501
+        """Gets the column_count of this LConnectionQueryResultWithError.  # noqa: E501
 
 
-        :return: The column_count of this ConnectionQueryResultWithError.  # noqa: E501
+        :return: The column_count of this LConnectionQueryResultWithError.  # noqa: E501
         :rtype: int
         """
         return self._column_count
 
     @column_count.setter
     def column_count(self, column_count):
-        """Sets the column_count of this ConnectionQueryResultWithError.
+        """Sets the column_count of this LConnectionQueryResultWithError.
 
 
-        :param column_count: The column_count of this ConnectionQueryResultWithError.  # noqa: E501
+        :param column_count: The column_count of this LConnectionQueryResultWithError.  # noqa: E501
         :type: int
         """
 
@@ -187,20 +187,20 @@ class LConnectionQueryResultWithError(object):
 
     @property
     def raw_data_size(self):
-        """Gets the raw_data_size of this ConnectionQueryResultWithError.  # noqa: E501
+        """Gets the raw_data_size of this LConnectionQueryResultWithError.  # noqa: E501
 
 
-        :return: The raw_data_size of this ConnectionQueryResultWithError.  # noqa: E501
+        :return: The raw_data_size of this LConnectionQueryResultWithError.  # noqa: E501
         :rtype: int
         """
         return self._raw_data_size
 
     @raw_data_size.setter
     def raw_data_size(self, raw_data_size):
-        """Sets the raw_data_size of this ConnectionQueryResultWithError.
+        """Sets the raw_data_size of this LConnectionQueryResultWithError.
 
 
-        :param raw_data_size: The raw_data_size of this ConnectionQueryResultWithError.  # noqa: E501
+        :param raw_data_size: The raw_data_size of this LConnectionQueryResultWithError.  # noqa: E501
         :type: int
         """
 
@@ -208,20 +208,20 @@ class LConnectionQueryResultWithError(object):
 
     @property
     def total_size(self):
-        """Gets the total_size of this ConnectionQueryResultWithError.  # noqa: E501
+        """Gets the total_size of this LConnectionQueryResultWithError.  # noqa: E501
 
 
-        :return: The total_size of this ConnectionQueryResultWithError.  # noqa: E501
+        :return: The total_size of this LConnectionQueryResultWithError.  # noqa: E501
         :rtype: int
         """
         return self._total_size
 
     @total_size.setter
     def total_size(self, total_size):
-        """Sets the total_size of this ConnectionQueryResultWithError.
+        """Sets the total_size of this LConnectionQueryResultWithError.
 
 
-        :param total_size: The total_size of this ConnectionQueryResultWithError.  # noqa: E501
+        :param total_size: The total_size of this LConnectionQueryResultWithError.  # noqa: E501
         :type: int
         """
 
@@ -229,20 +229,20 @@ class LConnectionQueryResultWithError(object):
 
     @property
     def path(self):
-        """Gets the path of this ConnectionQueryResultWithError.  # noqa: E501
+        """Gets the path of this LConnectionQueryResultWithError.  # noqa: E501
 
 
-        :return: The path of this ConnectionQueryResultWithError.  # noqa: E501
+        :return: The path of this LConnectionQueryResultWithError.  # noqa: E501
         :rtype: list[str]
         """
         return self._path
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ConnectionQueryResultWithError.
+        """Sets the path of this LConnectionQueryResultWithError.
 
 
-        :param path: The path of this ConnectionQueryResultWithError.  # noqa: E501
+        :param path: The path of this LConnectionQueryResultWithError.  # noqa: E501
         :type: list[str]
         """
         if path is None:
@@ -252,20 +252,20 @@ class LConnectionQueryResultWithError(object):
 
     @property
     def read_only(self):
-        """Gets the read_only of this ConnectionQueryResultWithError.  # noqa: E501
+        """Gets the read_only of this LConnectionQueryResultWithError.  # noqa: E501
 
 
-        :return: The read_only of this ConnectionQueryResultWithError.  # noqa: E501
+        :return: The read_only of this LConnectionQueryResultWithError.  # noqa: E501
         :rtype: bool
         """
         return self._read_only
 
     @read_only.setter
     def read_only(self, read_only):
-        """Sets the read_only of this ConnectionQueryResultWithError.
+        """Sets the read_only of this LConnectionQueryResultWithError.
 
 
-        :param read_only: The read_only of this ConnectionQueryResultWithError.  # noqa: E501
+        :param read_only: The read_only of this LConnectionQueryResultWithError.  # noqa: E501
         :type: bool
         """
         if read_only is None:
@@ -294,7 +294,7 @@ class LConnectionQueryResultWithError(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConnectionQueryResultWithError, dict):
+        if issubclass(LConnectionQueryResultWithError, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -310,7 +310,7 @@ class LConnectionQueryResultWithError(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConnectionQueryResultWithError):
+        if not isinstance(other, LConnectionQueryResultWithError):
             return False
 
         return self.__dict__ == other.__dict__

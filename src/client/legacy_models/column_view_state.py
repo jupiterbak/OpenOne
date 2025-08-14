@@ -39,7 +39,7 @@ class LColumnViewState(object):
     }
 
     def __init__(self, column_id=None, width=None, hidden=None):  # noqa: E501
-        """ColumnViewState - a model defined in Swagger"""  # noqa: E501
+        """LColumnViewState - a model defined in Swagger"""  # noqa: E501
         self._column_id = None
         self._width = None
         self._hidden = None
@@ -52,20 +52,20 @@ class LColumnViewState(object):
 
     @property
     def column_id(self):
-        """Gets the column_id of this ColumnViewState.  # noqa: E501
+        """Gets the column_id of this LColumnViewState.  # noqa: E501
 
 
-        :return: The column_id of this ColumnViewState.  # noqa: E501
+        :return: The column_id of this LColumnViewState.  # noqa: E501
         :rtype: str
         """
         return self._column_id
 
     @column_id.setter
     def column_id(self, column_id):
-        """Sets the column_id of this ColumnViewState.
+        """Sets the column_id of this LColumnViewState.
 
 
-        :param column_id: The column_id of this ColumnViewState.  # noqa: E501
+        :param column_id: The column_id of this LColumnViewState.  # noqa: E501
         :type: str
         """
         if column_id is None:
@@ -75,20 +75,20 @@ class LColumnViewState(object):
 
     @property
     def width(self):
-        """Gets the width of this ColumnViewState.  # noqa: E501
+        """Gets the width of this LColumnViewState.  # noqa: E501
 
 
-        :return: The width of this ColumnViewState.  # noqa: E501
+        :return: The width of this LColumnViewState.  # noqa: E501
         :rtype: int
         """
         return self._width
 
     @width.setter
     def width(self, width):
-        """Sets the width of this ColumnViewState.
+        """Sets the width of this LColumnViewState.
 
 
-        :param width: The width of this ColumnViewState.  # noqa: E501
+        :param width: The width of this LColumnViewState.  # noqa: E501
         :type: int
         """
 
@@ -96,20 +96,20 @@ class LColumnViewState(object):
 
     @property
     def hidden(self):
-        """Gets the hidden of this ColumnViewState.  # noqa: E501
+        """Gets the hidden of this LColumnViewState.  # noqa: E501
 
 
-        :return: The hidden of this ColumnViewState.  # noqa: E501
+        :return: The hidden of this LColumnViewState.  # noqa: E501
         :rtype: bool
         """
         return self._hidden
 
     @hidden.setter
     def hidden(self, hidden):
-        """Sets the hidden of this ColumnViewState.
+        """Sets the hidden of this LColumnViewState.
 
 
-        :param hidden: The hidden of this ColumnViewState.  # noqa: E501
+        :param hidden: The hidden of this LColumnViewState.  # noqa: E501
         :type: bool
         """
 
@@ -136,7 +136,7 @@ class LColumnViewState(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ColumnViewState, dict):
+        if issubclass(LColumnViewState, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -152,7 +152,7 @@ class LColumnViewState(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ColumnViewState):
+        if not isinstance(other, LColumnViewState):
             return False
 
         return self.__dict__ == other.__dict__

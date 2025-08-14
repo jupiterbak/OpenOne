@@ -33,7 +33,7 @@ class LWrangledOrImportedDataset(object):
     }
 
     def __init__(self):  # noqa: E501
-        """WrangledOrImportedDataset - a model defined in Swagger"""  # noqa: E501
+        """LWrangledOrImportedDataset - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LWrangledOrImportedDataset(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WrangledOrImportedDataset, dict):
+        if issubclass(LWrangledOrImportedDataset, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LWrangledOrImportedDataset(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WrangledOrImportedDataset):
+        if not isinstance(other, LWrangledOrImportedDataset):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,7 +27,7 @@ class LScheduleHistoryList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[ScheduleHistory]',
+        'data': 'list[LScheduleHistory]',
         'count': 'int'
     }
 
@@ -37,7 +37,7 @@ class LScheduleHistoryList(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """ScheduleHistoryList - a model defined in Swagger"""  # noqa: E501
+        """LScheduleHistoryList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LScheduleHistoryList(object):
 
     @property
     def data(self):
-        """Gets the data of this ScheduleHistoryList.  # noqa: E501
+        """Gets the data of this LScheduleHistoryList.  # noqa: E501
 
 
-        :return: The data of this ScheduleHistoryList.  # noqa: E501
-        :rtype: list[ScheduleHistory]
+        :return: The data of this LScheduleHistoryList.  # noqa: E501
+        :rtype: list[LScheduleHistory]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ScheduleHistoryList.
+        """Sets the data of this LScheduleHistoryList.
 
 
-        :param data: The data of this ScheduleHistoryList.  # noqa: E501
-        :type: list[ScheduleHistory]
+        :param data: The data of this LScheduleHistoryList.  # noqa: E501
+        :type: list[LScheduleHistory]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LScheduleHistoryList(object):
 
     @property
     def count(self):
-        """Gets the count of this ScheduleHistoryList.  # noqa: E501
+        """Gets the count of this LScheduleHistoryList.  # noqa: E501
 
 
-        :return: The count of this ScheduleHistoryList.  # noqa: E501
+        :return: The count of this LScheduleHistoryList.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ScheduleHistoryList.
+        """Sets the count of this LScheduleHistoryList.
 
 
-        :param count: The count of this ScheduleHistoryList.  # noqa: E501
+        :param count: The count of this LScheduleHistoryList.  # noqa: E501
         :type: int
         """
 
@@ -110,7 +110,7 @@ class LScheduleHistoryList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ScheduleHistoryList, dict):
+        if issubclass(LScheduleHistoryList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LScheduleHistoryList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ScheduleHistoryList):
+        if not isinstance(other, LScheduleHistoryList):
             return False
 
         return self.__dict__ == other.__dict__

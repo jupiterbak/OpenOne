@@ -39,7 +39,7 @@ class LFilereaderJob(object):
     }
 
     def __init__(self, location=None, datasource=None, id=None):  # noqa: E501
-        """FilereaderJob - a model defined in Swagger"""  # noqa: E501
+        """LFilereaderJob - a model defined in Swagger"""  # noqa: E501
         self._location = None
         self._datasource = None
         self._id = None
@@ -52,20 +52,20 @@ class LFilereaderJob(object):
 
     @property
     def location(self):
-        """Gets the location of this FilereaderJob.  # noqa: E501
+        """Gets the location of this LFilereaderJob.  # noqa: E501
 
 
-        :return: The location of this FilereaderJob.  # noqa: E501
+        :return: The location of this LFilereaderJob.  # noqa: E501
         :rtype: str
         """
         return self._location
 
     @location.setter
     def location(self, location):
-        """Sets the location of this FilereaderJob.
+        """Sets the location of this LFilereaderJob.
 
 
-        :param location: The location of this FilereaderJob.  # noqa: E501
+        :param location: The location of this LFilereaderJob.  # noqa: E501
         :type: str
         """
 
@@ -73,20 +73,20 @@ class LFilereaderJob(object):
 
     @property
     def datasource(self):
-        """Gets the datasource of this FilereaderJob.  # noqa: E501
+        """Gets the datasource of this LFilereaderJob.  # noqa: E501
 
 
-        :return: The datasource of this FilereaderJob.  # noqa: E501
+        :return: The datasource of this LFilereaderJob.  # noqa: E501
         :rtype: object
         """
         return self._datasource
 
     @datasource.setter
     def datasource(self, datasource):
-        """Sets the datasource of this FilereaderJob.
+        """Sets the datasource of this LFilereaderJob.
 
 
-        :param datasource: The datasource of this FilereaderJob.  # noqa: E501
+        :param datasource: The datasource of this LFilereaderJob.  # noqa: E501
         :type: object
         """
 
@@ -94,22 +94,22 @@ class LFilereaderJob(object):
 
     @property
     def id(self):
-        """Gets the id of this FilereaderJob.  # noqa: E501
+        """Gets the id of this LFilereaderJob.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this FilereaderJob.  # noqa: E501
+        :return: The id of this LFilereaderJob.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FilereaderJob.
+        """Sets the id of this LFilereaderJob.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this FilereaderJob.  # noqa: E501
+        :param id: The id of this LFilereaderJob.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -138,7 +138,7 @@ class LFilereaderJob(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FilereaderJob, dict):
+        if issubclass(LFilereaderJob, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -154,7 +154,7 @@ class LFilereaderJob(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FilereaderJob):
+        if not isinstance(other, LFilereaderJob):
             return False
 
         return self.__dict__ == other.__dict__

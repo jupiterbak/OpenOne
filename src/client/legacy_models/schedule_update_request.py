@@ -28,8 +28,8 @@ class LScheduleUpdateRequest(object):
     """
     swagger_types = {
         'name': 'str',
-        'triggers': 'OneOfscheduleUpdateRequestTriggers',
-        'tasks': 'OneOfscheduleUpdateRequestTasks'
+        'triggers': 'LOneOfscheduleUpdateRequestTriggers',
+        'tasks': 'LOneOfscheduleUpdateRequestTasks'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class LScheduleUpdateRequest(object):
     }
 
     def __init__(self, name=None, triggers=None, tasks=None):  # noqa: E501
-        """ScheduleUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LScheduleUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._triggers = None
         self._tasks = None
@@ -53,22 +53,22 @@ class LScheduleUpdateRequest(object):
 
     @property
     def name(self):
-        """Gets the name of this ScheduleUpdateRequest.  # noqa: E501
+        """Gets the name of this LScheduleUpdateRequest.  # noqa: E501
 
         name of the schedule  # noqa: E501
 
-        :return: The name of this ScheduleUpdateRequest.  # noqa: E501
+        :return: The name of this LScheduleUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScheduleUpdateRequest.
+        """Sets the name of this LScheduleUpdateRequest.
 
         name of the schedule  # noqa: E501
 
-        :param name: The name of this ScheduleUpdateRequest.  # noqa: E501
+        :param name: The name of this LScheduleUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -76,42 +76,42 @@ class LScheduleUpdateRequest(object):
 
     @property
     def triggers(self):
-        """Gets the triggers of this ScheduleUpdateRequest.  # noqa: E501
+        """Gets the triggers of this LScheduleUpdateRequest.  # noqa: E501
 
 
-        :return: The triggers of this ScheduleUpdateRequest.  # noqa: E501
-        :rtype: OneOfscheduleUpdateRequestTriggers
+        :return: The triggers of this LScheduleUpdateRequest.  # noqa: E501
+        :rtype: LOneOfscheduleUpdateRequestTriggers
         """
         return self._triggers
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this ScheduleUpdateRequest.
+        """Sets the triggers of this LScheduleUpdateRequest.
 
 
-        :param triggers: The triggers of this ScheduleUpdateRequest.  # noqa: E501
-        :type: OneOfscheduleUpdateRequestTriggers
+        :param triggers: The triggers of this LScheduleUpdateRequest.  # noqa: E501
+        :type: LOneOfscheduleUpdateRequestTriggers
         """
 
         self._triggers = triggers
 
     @property
     def tasks(self):
-        """Gets the tasks of this ScheduleUpdateRequest.  # noqa: E501
+        """Gets the tasks of this LScheduleUpdateRequest.  # noqa: E501
 
 
-        :return: The tasks of this ScheduleUpdateRequest.  # noqa: E501
-        :rtype: OneOfscheduleUpdateRequestTasks
+        :return: The tasks of this LScheduleUpdateRequest.  # noqa: E501
+        :rtype: LOneOfscheduleUpdateRequestTasks
         """
         return self._tasks
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ScheduleUpdateRequest.
+        """Sets the tasks of this LScheduleUpdateRequest.
 
 
-        :param tasks: The tasks of this ScheduleUpdateRequest.  # noqa: E501
-        :type: OneOfscheduleUpdateRequestTasks
+        :param tasks: The tasks of this LScheduleUpdateRequest.  # noqa: E501
+        :type: LOneOfscheduleUpdateRequestTasks
         """
 
         self._tasks = tasks
@@ -137,7 +137,7 @@ class LScheduleUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ScheduleUpdateRequest, dict):
+        if issubclass(LScheduleUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -153,7 +153,7 @@ class LScheduleUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ScheduleUpdateRequest):
+        if not isinstance(other, LScheduleUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

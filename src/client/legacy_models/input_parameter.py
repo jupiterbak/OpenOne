@@ -30,7 +30,7 @@ class LInputParameter(object):
         'alias': 'str',
         'description': 'str',
         'display_type': 'str',
-        'examples': 'list[InputExample]'
+        'examples': 'list[LInputExample]'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class LInputParameter(object):
     }
 
     def __init__(self, alias=None, description=None, display_type=None, examples=None):  # noqa: E501
-        """InputParameter - a model defined in Swagger"""  # noqa: E501
+        """LInputParameter - a model defined in Swagger"""  # noqa: E501
         self._alias = None
         self._description = None
         self._display_type = None
@@ -57,22 +57,22 @@ class LInputParameter(object):
 
     @property
     def alias(self):
-        """Gets the alias of this InputParameter.  # noqa: E501
+        """Gets the alias of this LInputParameter.  # noqa: E501
 
         Name of the input parameter. Alphanumeric values without any special characters are recommended.  # noqa: E501
 
-        :return: The alias of this InputParameter.  # noqa: E501
+        :return: The alias of this LInputParameter.  # noqa: E501
         :rtype: str
         """
         return self._alias
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this InputParameter.
+        """Sets the alias of this LInputParameter.
 
         Name of the input parameter. Alphanumeric values without any special characters are recommended.  # noqa: E501
 
-        :param alias: The alias of this InputParameter.  # noqa: E501
+        :param alias: The alias of this LInputParameter.  # noqa: E501
         :type: str
         """
         if alias is None:
@@ -82,22 +82,22 @@ class LInputParameter(object):
 
     @property
     def description(self):
-        """Gets the description of this InputParameter.  # noqa: E501
+        """Gets the description of this LInputParameter.  # noqa: E501
 
         User-friendly description for the input parameter.  # noqa: E501
 
-        :return: The description of this InputParameter.  # noqa: E501
+        :return: The description of this LInputParameter.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InputParameter.
+        """Sets the description of this LInputParameter.
 
         User-friendly description for the input parameter.  # noqa: E501
 
-        :param description: The description of this InputParameter.  # noqa: E501
+        :param description: The description of this LInputParameter.  # noqa: E501
         :type: str
         """
 
@@ -105,22 +105,22 @@ class LInputParameter(object):
 
     @property
     def display_type(self):
-        """Gets the display_type of this InputParameter.  # noqa: E501
+        """Gets the display_type of this LInputParameter.  # noqa: E501
 
         Comma-separated list of allowed data types.  # noqa: E501
 
-        :return: The display_type of this InputParameter.  # noqa: E501
+        :return: The display_type of this LInputParameter.  # noqa: E501
         :rtype: str
         """
         return self._display_type
 
     @display_type.setter
     def display_type(self, display_type):
-        """Sets the display_type of this InputParameter.
+        """Sets the display_type of this LInputParameter.
 
         Comma-separated list of allowed data types.  # noqa: E501
 
-        :param display_type: The display_type of this InputParameter.  # noqa: E501
+        :param display_type: The display_type of this LInputParameter.  # noqa: E501
         :type: str
         """
 
@@ -128,23 +128,23 @@ class LInputParameter(object):
 
     @property
     def examples(self):
-        """Gets the examples of this InputParameter.  # noqa: E501
+        """Gets the examples of this LInputParameter.  # noqa: E501
 
         List of examples.  # noqa: E501
 
-        :return: The examples of this InputParameter.  # noqa: E501
-        :rtype: list[InputExample]
+        :return: The examples of this LInputParameter.  # noqa: E501
+        :rtype: list[LInputExample]
         """
         return self._examples
 
     @examples.setter
     def examples(self, examples):
-        """Sets the examples of this InputParameter.
+        """Sets the examples of this LInputParameter.
 
         List of examples.  # noqa: E501
 
-        :param examples: The examples of this InputParameter.  # noqa: E501
-        :type: list[InputExample]
+        :param examples: The examples of this LInputParameter.  # noqa: E501
+        :type: list[LInputExample]
         """
 
         self._examples = examples
@@ -170,7 +170,7 @@ class LInputParameter(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(InputParameter, dict):
+        if issubclass(LInputParameter, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -186,7 +186,7 @@ class LInputParameter(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, InputParameter):
+        if not isinstance(other, LInputParameter):
             return False
 
         return self.__dict__ == other.__dict__

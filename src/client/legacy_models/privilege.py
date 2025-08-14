@@ -37,7 +37,7 @@ class LPrivilege(object):
     }
 
     def __init__(self, operations=None, resource_type=None):  # noqa: E501
-        """Privilege - a model defined in Swagger"""  # noqa: E501
+        """LPrivilege - a model defined in Swagger"""  # noqa: E501
         self._operations = None
         self._resource_type = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LPrivilege(object):
 
     @property
     def operations(self):
-        """Gets the operations of this Privilege.  # noqa: E501
+        """Gets the operations of this LPrivilege.  # noqa: E501
 
 
-        :return: The operations of this Privilege.  # noqa: E501
+        :return: The operations of this LPrivilege.  # noqa: E501
         :rtype: list[str]
         """
         return self._operations
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this Privilege.
+        """Sets the operations of this LPrivilege.
 
 
-        :param operations: The operations of this Privilege.  # noqa: E501
+        :param operations: The operations of this LPrivilege.  # noqa: E501
         :type: list[str]
         """
         if operations is None:
@@ -76,20 +76,20 @@ class LPrivilege(object):
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Privilege.  # noqa: E501
+        """Gets the resource_type of this LPrivilege.  # noqa: E501
 
 
-        :return: The resource_type of this Privilege.  # noqa: E501
+        :return: The resource_type of this LPrivilege.  # noqa: E501
         :rtype: str
         """
         return self._resource_type
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Privilege.
+        """Sets the resource_type of this LPrivilege.
 
 
-        :param resource_type: The resource_type of this Privilege.  # noqa: E501
+        :param resource_type: The resource_type of this LPrivilege.  # noqa: E501
         :type: str
         """
         if resource_type is None:
@@ -124,7 +124,7 @@ class LPrivilege(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Privilege, dict):
+        if issubclass(LPrivilege, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -140,7 +140,7 @@ class LPrivilege(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Privilege):
+        if not isinstance(other, LPrivilege):
             return False
 
         return self.__dict__ == other.__dict__

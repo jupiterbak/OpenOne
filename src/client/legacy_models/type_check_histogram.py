@@ -37,7 +37,7 @@ class LTypeCheckHistogram(object):
     }
 
     def __init__(self, key=None, count=None):  # noqa: E501
-        """TypeCheckHistogram - a model defined in Swagger"""  # noqa: E501
+        """LTypeCheckHistogram - a model defined in Swagger"""  # noqa: E501
         self._key = None
         self._count = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LTypeCheckHistogram(object):
 
     @property
     def key(self):
-        """Gets the key of this TypeCheckHistogram.  # noqa: E501
+        """Gets the key of this LTypeCheckHistogram.  # noqa: E501
 
 
-        :return: The key of this TypeCheckHistogram.  # noqa: E501
+        :return: The key of this LTypeCheckHistogram.  # noqa: E501
         :rtype: str
         """
         return self._key
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TypeCheckHistogram.
+        """Sets the key of this LTypeCheckHistogram.
 
 
-        :param key: The key of this TypeCheckHistogram.  # noqa: E501
+        :param key: The key of this LTypeCheckHistogram.  # noqa: E501
         :type: str
         """
         if key is None:
@@ -75,20 +75,20 @@ class LTypeCheckHistogram(object):
 
     @property
     def count(self):
-        """Gets the count of this TypeCheckHistogram.  # noqa: E501
+        """Gets the count of this LTypeCheckHistogram.  # noqa: E501
 
 
-        :return: The count of this TypeCheckHistogram.  # noqa: E501
+        :return: The count of this LTypeCheckHistogram.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this TypeCheckHistogram.
+        """Sets the count of this LTypeCheckHistogram.
 
 
-        :param count: The count of this TypeCheckHistogram.  # noqa: E501
+        :param count: The count of this LTypeCheckHistogram.  # noqa: E501
         :type: int
         """
         if count is None:
@@ -117,7 +117,7 @@ class LTypeCheckHistogram(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(TypeCheckHistogram, dict):
+        if issubclass(LTypeCheckHistogram, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -133,7 +133,7 @@ class LTypeCheckHistogram(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TypeCheckHistogram):
+        if not isinstance(other, LTypeCheckHistogram):
             return False
 
         return self.__dict__ == other.__dict__

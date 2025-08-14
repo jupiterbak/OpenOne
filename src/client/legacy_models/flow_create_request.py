@@ -43,7 +43,7 @@ class LFlowCreateRequest(object):
     }
 
     def __init__(self, name=None, description=None, settings=None, increment_name=False, folder_id=None):  # noqa: E501
-        """FlowCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LFlowCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._description = None
         self._settings = None
@@ -63,22 +63,22 @@ class LFlowCreateRequest(object):
 
     @property
     def name(self):
-        """Gets the name of this FlowCreateRequest.  # noqa: E501
+        """Gets the name of this LFlowCreateRequest.  # noqa: E501
 
         Display name of the flow.  # noqa: E501
 
-        :return: The name of this FlowCreateRequest.  # noqa: E501
+        :return: The name of this LFlowCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FlowCreateRequest.
+        """Sets the name of this LFlowCreateRequest.
 
         Display name of the flow.  # noqa: E501
 
-        :param name: The name of this FlowCreateRequest.  # noqa: E501
+        :param name: The name of this LFlowCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -86,22 +86,22 @@ class LFlowCreateRequest(object):
 
     @property
     def description(self):
-        """Gets the description of this FlowCreateRequest.  # noqa: E501
+        """Gets the description of this LFlowCreateRequest.  # noqa: E501
 
         User-friendly description for the flow.  # noqa: E501
 
-        :return: The description of this FlowCreateRequest.  # noqa: E501
+        :return: The description of this LFlowCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FlowCreateRequest.
+        """Sets the description of this LFlowCreateRequest.
 
         User-friendly description for the flow.  # noqa: E501
 
-        :param description: The description of this FlowCreateRequest.  # noqa: E501
+        :param description: The description of this LFlowCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -109,22 +109,22 @@ class LFlowCreateRequest(object):
 
     @property
     def settings(self):
-        """Gets the settings of this FlowCreateRequest.  # noqa: E501
+        """Gets the settings of this LFlowCreateRequest.  # noqa: E501
 
         Settings for the flow.  # noqa: E501
 
-        :return: The settings of this FlowCreateRequest.  # noqa: E501
+        :return: The settings of this LFlowCreateRequest.  # noqa: E501
         :rtype: object
         """
         return self._settings
 
     @settings.setter
     def settings(self, settings):
-        """Sets the settings of this FlowCreateRequest.
+        """Sets the settings of this LFlowCreateRequest.
 
         Settings for the flow.  # noqa: E501
 
-        :param settings: The settings of this FlowCreateRequest.  # noqa: E501
+        :param settings: The settings of this LFlowCreateRequest.  # noqa: E501
         :type: object
         """
 
@@ -132,22 +132,22 @@ class LFlowCreateRequest(object):
 
     @property
     def increment_name(self):
-        """Gets the increment_name of this FlowCreateRequest.  # noqa: E501
+        """Gets the increment_name of this LFlowCreateRequest.  # noqa: E501
 
         Increment the flow name if a similar flow name already exist  # noqa: E501
 
-        :return: The increment_name of this FlowCreateRequest.  # noqa: E501
+        :return: The increment_name of this LFlowCreateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._increment_name
 
     @increment_name.setter
     def increment_name(self, increment_name):
-        """Sets the increment_name of this FlowCreateRequest.
+        """Sets the increment_name of this LFlowCreateRequest.
 
         Increment the flow name if a similar flow name already exist  # noqa: E501
 
-        :param increment_name: The increment_name of this FlowCreateRequest.  # noqa: E501
+        :param increment_name: The increment_name of this LFlowCreateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -155,22 +155,22 @@ class LFlowCreateRequest(object):
 
     @property
     def folder_id(self):
-        """Gets the folder_id of this FlowCreateRequest.  # noqa: E501
+        """Gets the folder_id of this LFlowCreateRequest.  # noqa: E501
 
         Internal identifier for a Flow [folder](#tag/Folder).  # noqa: E501
 
-        :return: The folder_id of this FlowCreateRequest.  # noqa: E501
+        :return: The folder_id of this LFlowCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._folder_id
 
     @folder_id.setter
     def folder_id(self, folder_id):
-        """Sets the folder_id of this FlowCreateRequest.
+        """Sets the folder_id of this LFlowCreateRequest.
 
         Internal identifier for a Flow [folder](#tag/Folder).  # noqa: E501
 
-        :param folder_id: The folder_id of this FlowCreateRequest.  # noqa: E501
+        :param folder_id: The folder_id of this LFlowCreateRequest.  # noqa: E501
         :type: int
         """
 
@@ -197,7 +197,7 @@ class LFlowCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowCreateRequest, dict):
+        if issubclass(LFlowCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -213,7 +213,7 @@ class LFlowCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowCreateRequest):
+        if not isinstance(other, LFlowCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

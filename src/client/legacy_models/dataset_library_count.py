@@ -35,27 +35,27 @@ class LDatasetLibraryCount(object):
     }
 
     def __init__(self, count=None):  # noqa: E501
-        """DatasetLibraryCount - a model defined in Swagger"""  # noqa: E501
+        """LDatasetLibraryCount - a model defined in Swagger"""  # noqa: E501
         self._count = None
         self.discriminator = None
         self.count = count
 
     @property
     def count(self):
-        """Gets the count of this DatasetLibraryCount.  # noqa: E501
+        """Gets the count of this LDatasetLibraryCount.  # noqa: E501
 
 
-        :return: The count of this DatasetLibraryCount.  # noqa: E501
+        :return: The count of this LDatasetLibraryCount.  # noqa: E501
         :rtype: object
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this DatasetLibraryCount.
+        """Sets the count of this LDatasetLibraryCount.
 
 
-        :param count: The count of this DatasetLibraryCount.  # noqa: E501
+        :param count: The count of this LDatasetLibraryCount.  # noqa: E501
         :type: object
         """
         if count is None:
@@ -84,7 +84,7 @@ class LDatasetLibraryCount(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DatasetLibraryCount, dict):
+        if issubclass(LDatasetLibraryCount, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LDatasetLibraryCount(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DatasetLibraryCount):
+        if not isinstance(other, LDatasetLibraryCount):
             return False
 
         return self.__dict__ == other.__dict__

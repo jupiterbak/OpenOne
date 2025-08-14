@@ -28,7 +28,7 @@ class LCreateGroupPayload(object):
     """
     swagger_types = {
         'name': 'str',
-        'roles': 'list[AnyOfcreateGroupPayloadRolesItems]',
+        'roles': 'list[LAnyOfcreateGroupPayloadRolesItems]',
         'members': 'list[str]',
         'scim_enabled': 'bool',
         'external_id': 'str'
@@ -43,7 +43,7 @@ class LCreateGroupPayload(object):
     }
 
     def __init__(self, name=None, roles=None, members=None, scim_enabled=None, external_id=None):  # noqa: E501
-        """CreateGroupPayload - a model defined in Swagger"""  # noqa: E501
+        """LCreateGroupPayload - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._roles = None
         self._members = None
@@ -61,20 +61,20 @@ class LCreateGroupPayload(object):
 
     @property
     def name(self):
-        """Gets the name of this CreateGroupPayload.  # noqa: E501
+        """Gets the name of this LCreateGroupPayload.  # noqa: E501
 
 
-        :return: The name of this CreateGroupPayload.  # noqa: E501
+        :return: The name of this LCreateGroupPayload.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateGroupPayload.
+        """Sets the name of this LCreateGroupPayload.
 
 
-        :param name: The name of this CreateGroupPayload.  # noqa: E501
+        :param name: The name of this LCreateGroupPayload.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -84,41 +84,41 @@ class LCreateGroupPayload(object):
 
     @property
     def roles(self):
-        """Gets the roles of this CreateGroupPayload.  # noqa: E501
+        """Gets the roles of this LCreateGroupPayload.  # noqa: E501
 
 
-        :return: The roles of this CreateGroupPayload.  # noqa: E501
-        :rtype: list[AnyOfcreateGroupPayloadRolesItems]
+        :return: The roles of this LCreateGroupPayload.  # noqa: E501
+        :rtype: list[LAnyOfcreateGroupPayloadRolesItems]
         """
         return self._roles
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this CreateGroupPayload.
+        """Sets the roles of this LCreateGroupPayload.
 
 
-        :param roles: The roles of this CreateGroupPayload.  # noqa: E501
-        :type: list[AnyOfcreateGroupPayloadRolesItems]
+        :param roles: The roles of this LCreateGroupPayload.  # noqa: E501
+        :type: list[LAnyOfcreateGroupPayloadRolesItems]
         """
 
         self._roles = roles
 
     @property
     def members(self):
-        """Gets the members of this CreateGroupPayload.  # noqa: E501
+        """Gets the members of this LCreateGroupPayload.  # noqa: E501
 
 
-        :return: The members of this CreateGroupPayload.  # noqa: E501
+        :return: The members of this LCreateGroupPayload.  # noqa: E501
         :rtype: list[str]
         """
         return self._members
 
     @members.setter
     def members(self, members):
-        """Sets the members of this CreateGroupPayload.
+        """Sets the members of this LCreateGroupPayload.
 
 
-        :param members: The members of this CreateGroupPayload.  # noqa: E501
+        :param members: The members of this LCreateGroupPayload.  # noqa: E501
         :type: list[str]
         """
         if members is None:
@@ -128,20 +128,20 @@ class LCreateGroupPayload(object):
 
     @property
     def scim_enabled(self):
-        """Gets the scim_enabled of this CreateGroupPayload.  # noqa: E501
+        """Gets the scim_enabled of this LCreateGroupPayload.  # noqa: E501
 
 
-        :return: The scim_enabled of this CreateGroupPayload.  # noqa: E501
+        :return: The scim_enabled of this LCreateGroupPayload.  # noqa: E501
         :rtype: bool
         """
         return self._scim_enabled
 
     @scim_enabled.setter
     def scim_enabled(self, scim_enabled):
-        """Sets the scim_enabled of this CreateGroupPayload.
+        """Sets the scim_enabled of this LCreateGroupPayload.
 
 
-        :param scim_enabled: The scim_enabled of this CreateGroupPayload.  # noqa: E501
+        :param scim_enabled: The scim_enabled of this LCreateGroupPayload.  # noqa: E501
         :type: bool
         """
 
@@ -149,20 +149,20 @@ class LCreateGroupPayload(object):
 
     @property
     def external_id(self):
-        """Gets the external_id of this CreateGroupPayload.  # noqa: E501
+        """Gets the external_id of this LCreateGroupPayload.  # noqa: E501
 
 
-        :return: The external_id of this CreateGroupPayload.  # noqa: E501
+        :return: The external_id of this LCreateGroupPayload.  # noqa: E501
         :rtype: str
         """
         return self._external_id
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this CreateGroupPayload.
+        """Sets the external_id of this LCreateGroupPayload.
 
 
-        :param external_id: The external_id of this CreateGroupPayload.  # noqa: E501
+        :param external_id: The external_id of this LCreateGroupPayload.  # noqa: E501
         :type: str
         """
 
@@ -189,7 +189,7 @@ class LCreateGroupPayload(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(CreateGroupPayload, dict):
+        if issubclass(LCreateGroupPayload, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -205,7 +205,7 @@ class LCreateGroupPayload(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateGroupPayload):
+        if not isinstance(other, LCreateGroupPayload):
             return False
 
         return self.__dict__ == other.__dict__

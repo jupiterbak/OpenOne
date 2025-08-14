@@ -35,27 +35,27 @@ class LPrivateApp(object):
     }
 
     def __init__(self, private_app=None):  # noqa: E501
-        """PrivateApp - a model defined in Swagger"""  # noqa: E501
+        """LPrivateApp - a model defined in Swagger"""  # noqa: E501
         self._private_app = None
         self.discriminator = None
         self.private_app = private_app
 
     @property
     def private_app(self):
-        """Gets the private_app of this PrivateApp.  # noqa: E501
+        """Gets the private_app of this LPrivateApp.  # noqa: E501
 
 
-        :return: The private_app of this PrivateApp.  # noqa: E501
+        :return: The private_app of this LPrivateApp.  # noqa: E501
         :rtype: str
         """
         return self._private_app
 
     @private_app.setter
     def private_app(self, private_app):
-        """Sets the private_app of this PrivateApp.
+        """Sets the private_app of this LPrivateApp.
 
 
-        :param private_app: The private_app of this PrivateApp.  # noqa: E501
+        :param private_app: The private_app of this LPrivateApp.  # noqa: E501
         :type: str
         """
         if private_app is None:
@@ -84,7 +84,7 @@ class LPrivateApp(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PrivateApp, dict):
+        if issubclass(LPrivateApp, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LPrivateApp(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PrivateApp):
+        if not isinstance(other, LPrivateApp):
             return False
 
         return self.__dict__ == other.__dict__

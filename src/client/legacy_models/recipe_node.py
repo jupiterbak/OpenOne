@@ -45,7 +45,7 @@ class LRecipeNode(object):
     }
 
     def __init__(self, flow=None, recipe=None, active_sample=None, associated_people=None, referenceinfo=None, wrangled=None):  # noqa: E501
-        """RecipeNode - a model defined in Swagger"""  # noqa: E501
+        """LRecipeNode - a model defined in Swagger"""  # noqa: E501
         self._flow = None
         self._recipe = None
         self._active_sample = None
@@ -66,20 +66,20 @@ class LRecipeNode(object):
 
     @property
     def flow(self):
-        """Gets the flow of this RecipeNode.  # noqa: E501
+        """Gets the flow of this LRecipeNode.  # noqa: E501
 
 
-        :return: The flow of this RecipeNode.  # noqa: E501
+        :return: The flow of this LRecipeNode.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this RecipeNode.
+        """Sets the flow of this LRecipeNode.
 
 
-        :param flow: The flow of this RecipeNode.  # noqa: E501
+        :param flow: The flow of this LRecipeNode.  # noqa: E501
         :type: object
         """
         if flow is None:
@@ -89,20 +89,20 @@ class LRecipeNode(object):
 
     @property
     def recipe(self):
-        """Gets the recipe of this RecipeNode.  # noqa: E501
+        """Gets the recipe of this LRecipeNode.  # noqa: E501
 
 
-        :return: The recipe of this RecipeNode.  # noqa: E501
+        :return: The recipe of this LRecipeNode.  # noqa: E501
         :rtype: object
         """
         return self._recipe
 
     @recipe.setter
     def recipe(self, recipe):
-        """Sets the recipe of this RecipeNode.
+        """Sets the recipe of this LRecipeNode.
 
 
-        :param recipe: The recipe of this RecipeNode.  # noqa: E501
+        :param recipe: The recipe of this LRecipeNode.  # noqa: E501
         :type: object
         """
 
@@ -110,20 +110,20 @@ class LRecipeNode(object):
 
     @property
     def active_sample(self):
-        """Gets the active_sample of this RecipeNode.  # noqa: E501
+        """Gets the active_sample of this LRecipeNode.  # noqa: E501
 
 
-        :return: The active_sample of this RecipeNode.  # noqa: E501
+        :return: The active_sample of this LRecipeNode.  # noqa: E501
         :rtype: object
         """
         return self._active_sample
 
     @active_sample.setter
     def active_sample(self, active_sample):
-        """Sets the active_sample of this RecipeNode.
+        """Sets the active_sample of this LRecipeNode.
 
 
-        :param active_sample: The active_sample of this RecipeNode.  # noqa: E501
+        :param active_sample: The active_sample of this LRecipeNode.  # noqa: E501
         :type: object
         """
 
@@ -131,20 +131,20 @@ class LRecipeNode(object):
 
     @property
     def associated_people(self):
-        """Gets the associated_people of this RecipeNode.  # noqa: E501
+        """Gets the associated_people of this LRecipeNode.  # noqa: E501
 
 
-        :return: The associated_people of this RecipeNode.  # noqa: E501
+        :return: The associated_people of this LRecipeNode.  # noqa: E501
         :rtype: object
         """
         return self._associated_people
 
     @associated_people.setter
     def associated_people(self, associated_people):
-        """Sets the associated_people of this RecipeNode.
+        """Sets the associated_people of this LRecipeNode.
 
 
-        :param associated_people: The associated_people of this RecipeNode.  # noqa: E501
+        :param associated_people: The associated_people of this LRecipeNode.  # noqa: E501
         :type: object
         """
 
@@ -152,20 +152,20 @@ class LRecipeNode(object):
 
     @property
     def referenceinfo(self):
-        """Gets the referenceinfo of this RecipeNode.  # noqa: E501
+        """Gets the referenceinfo of this LRecipeNode.  # noqa: E501
 
 
-        :return: The referenceinfo of this RecipeNode.  # noqa: E501
+        :return: The referenceinfo of this LRecipeNode.  # noqa: E501
         :rtype: object
         """
         return self._referenceinfo
 
     @referenceinfo.setter
     def referenceinfo(self, referenceinfo):
-        """Sets the referenceinfo of this RecipeNode.
+        """Sets the referenceinfo of this LRecipeNode.
 
 
-        :param referenceinfo: The referenceinfo of this RecipeNode.  # noqa: E501
+        :param referenceinfo: The referenceinfo of this LRecipeNode.  # noqa: E501
         :type: object
         """
 
@@ -173,22 +173,22 @@ class LRecipeNode(object):
 
     @property
     def wrangled(self):
-        """Gets the wrangled of this RecipeNode.  # noqa: E501
+        """Gets the wrangled of this LRecipeNode.  # noqa: E501
 
         If false, this is an input dataset (i.e. an imported dataset or a reference dataset). If true, this flowNode contains a recipe that can be edited by the user.  # noqa: E501
 
-        :return: The wrangled of this RecipeNode.  # noqa: E501
+        :return: The wrangled of this LRecipeNode.  # noqa: E501
         :rtype: bool
         """
         return self._wrangled
 
     @wrangled.setter
     def wrangled(self, wrangled):
-        """Sets the wrangled of this RecipeNode.
+        """Sets the wrangled of this LRecipeNode.
 
         If false, this is an input dataset (i.e. an imported dataset or a reference dataset). If true, this flowNode contains a recipe that can be edited by the user.  # noqa: E501
 
-        :param wrangled: The wrangled of this RecipeNode.  # noqa: E501
+        :param wrangled: The wrangled of this LRecipeNode.  # noqa: E501
         :type: bool
         """
         if wrangled is None:
@@ -217,7 +217,7 @@ class LRecipeNode(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RecipeNode, dict):
+        if issubclass(LRecipeNode, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -233,7 +233,7 @@ class LRecipeNode(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RecipeNode):
+        if not isinstance(other, LRecipeNode):
             return False
 
         return self.__dict__ == other.__dict__

@@ -28,7 +28,7 @@ class LTimeBasedTrigger(object):
     """
     swagger_types = {
         'id': 'int',
-        'time_based': 'OneOftimeBasedTriggerTimeBased'
+        'time_based': 'LOneOftimeBasedTriggerTimeBased'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LTimeBasedTrigger(object):
     }
 
     def __init__(self, id=None, time_based=None):  # noqa: E501
-        """TimeBasedTrigger - a model defined in Swagger"""  # noqa: E501
+        """LTimeBasedTrigger - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._time_based = None
         self.discriminator = None
@@ -47,22 +47,22 @@ class LTimeBasedTrigger(object):
 
     @property
     def id(self):
-        """Gets the id of this TimeBasedTrigger.  # noqa: E501
+        """Gets the id of this LTimeBasedTrigger.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this TimeBasedTrigger.  # noqa: E501
+        :return: The id of this LTimeBasedTrigger.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TimeBasedTrigger.
+        """Sets the id of this LTimeBasedTrigger.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this TimeBasedTrigger.  # noqa: E501
+        :param id: The id of this LTimeBasedTrigger.  # noqa: E501
         :type: int
         """
 
@@ -70,21 +70,21 @@ class LTimeBasedTrigger(object):
 
     @property
     def time_based(self):
-        """Gets the time_based of this TimeBasedTrigger.  # noqa: E501
+        """Gets the time_based of this LTimeBasedTrigger.  # noqa: E501
 
 
-        :return: The time_based of this TimeBasedTrigger.  # noqa: E501
-        :rtype: OneOftimeBasedTriggerTimeBased
+        :return: The time_based of this LTimeBasedTrigger.  # noqa: E501
+        :rtype: LOneOftimeBasedTriggerTimeBased
         """
         return self._time_based
 
     @time_based.setter
     def time_based(self, time_based):
-        """Sets the time_based of this TimeBasedTrigger.
+        """Sets the time_based of this LTimeBasedTrigger.
 
 
-        :param time_based: The time_based of this TimeBasedTrigger.  # noqa: E501
-        :type: OneOftimeBasedTriggerTimeBased
+        :param time_based: The time_based of this LTimeBasedTrigger.  # noqa: E501
+        :type: LOneOftimeBasedTriggerTimeBased
         """
         if time_based is None:
             raise ValueError("Invalid value for `time_based`, must not be `None`")  # noqa: E501
@@ -112,7 +112,7 @@ class LTimeBasedTrigger(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(TimeBasedTrigger, dict):
+        if issubclass(LTimeBasedTrigger, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -128,7 +128,7 @@ class LTimeBasedTrigger(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TimeBasedTrigger):
+        if not isinstance(other, LTimeBasedTrigger):
             return False
 
         return self.__dict__ == other.__dict__

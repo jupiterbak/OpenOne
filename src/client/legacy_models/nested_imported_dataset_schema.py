@@ -35,27 +35,27 @@ class LNestedImportedDatasetSchema(object):
     }
 
     def __init__(self, imported_dataset=None):  # noqa: E501
-        """NestedImportedDatasetSchema - a model defined in Swagger"""  # noqa: E501
+        """LNestedImportedDatasetSchema - a model defined in Swagger"""  # noqa: E501
         self._imported_dataset = None
         self.discriminator = None
         self.imported_dataset = imported_dataset
 
     @property
     def imported_dataset(self):
-        """Gets the imported_dataset of this NestedImportedDatasetSchema.  # noqa: E501
+        """Gets the imported_dataset of this LNestedImportedDatasetSchema.  # noqa: E501
 
 
-        :return: The imported_dataset of this NestedImportedDatasetSchema.  # noqa: E501
+        :return: The imported_dataset of this LNestedImportedDatasetSchema.  # noqa: E501
         :rtype: object
         """
         return self._imported_dataset
 
     @imported_dataset.setter
     def imported_dataset(self, imported_dataset):
-        """Sets the imported_dataset of this NestedImportedDatasetSchema.
+        """Sets the imported_dataset of this LNestedImportedDatasetSchema.
 
 
-        :param imported_dataset: The imported_dataset of this NestedImportedDatasetSchema.  # noqa: E501
+        :param imported_dataset: The imported_dataset of this LNestedImportedDatasetSchema.  # noqa: E501
         :type: object
         """
         if imported_dataset is None:
@@ -84,7 +84,7 @@ class LNestedImportedDatasetSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(NestedImportedDatasetSchema, dict):
+        if issubclass(LNestedImportedDatasetSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LNestedImportedDatasetSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, NestedImportedDatasetSchema):
+        if not isinstance(other, LNestedImportedDatasetSchema):
             return False
 
         return self.__dict__ == other.__dict__

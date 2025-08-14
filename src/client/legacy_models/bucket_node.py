@@ -41,7 +41,7 @@ class LBucketNode(object):
     }
 
     def __init__(self, name=None, path=None, type=None, bucket=None):  # noqa: E501
-        """BucketNode - a model defined in Swagger"""  # noqa: E501
+        """LBucketNode - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._path = None
         self._type = None
@@ -56,20 +56,20 @@ class LBucketNode(object):
 
     @property
     def name(self):
-        """Gets the name of this BucketNode.  # noqa: E501
+        """Gets the name of this LBucketNode.  # noqa: E501
 
 
-        :return: The name of this BucketNode.  # noqa: E501
+        :return: The name of this LBucketNode.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BucketNode.
+        """Sets the name of this LBucketNode.
 
 
-        :param name: The name of this BucketNode.  # noqa: E501
+        :param name: The name of this LBucketNode.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -79,20 +79,20 @@ class LBucketNode(object):
 
     @property
     def path(self):
-        """Gets the path of this BucketNode.  # noqa: E501
+        """Gets the path of this LBucketNode.  # noqa: E501
 
 
-        :return: The path of this BucketNode.  # noqa: E501
+        :return: The path of this LBucketNode.  # noqa: E501
         :rtype: str
         """
         return self._path
 
     @path.setter
     def path(self, path):
-        """Sets the path of this BucketNode.
+        """Sets the path of this LBucketNode.
 
 
-        :param path: The path of this BucketNode.  # noqa: E501
+        :param path: The path of this LBucketNode.  # noqa: E501
         :type: str
         """
 
@@ -100,22 +100,22 @@ class LBucketNode(object):
 
     @property
     def type(self):
-        """Gets the type of this BucketNode.  # noqa: E501
+        """Gets the type of this LBucketNode.  # noqa: E501
 
         One of hdfs, s3, s3n, file, jdbc, gs, bigquery, wasb, wasbs, adls, adlss, abfs, abfss, gsheets, sftp  # noqa: E501
 
-        :return: The type of this BucketNode.  # noqa: E501
+        :return: The type of this LBucketNode.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BucketNode.
+        """Sets the type of this LBucketNode.
 
         One of hdfs, s3, s3n, file, jdbc, gs, bigquery, wasb, wasbs, adls, adlss, abfs, abfss, gsheets, sftp  # noqa: E501
 
-        :param type: The type of this BucketNode.  # noqa: E501
+        :param type: The type of this LBucketNode.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -125,20 +125,20 @@ class LBucketNode(object):
 
     @property
     def bucket(self):
-        """Gets the bucket of this BucketNode.  # noqa: E501
+        """Gets the bucket of this LBucketNode.  # noqa: E501
 
 
-        :return: The bucket of this BucketNode.  # noqa: E501
+        :return: The bucket of this LBucketNode.  # noqa: E501
         :rtype: str
         """
         return self._bucket
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this BucketNode.
+        """Sets the bucket of this LBucketNode.
 
 
-        :param bucket: The bucket of this BucketNode.  # noqa: E501
+        :param bucket: The bucket of this LBucketNode.  # noqa: E501
         :type: str
         """
 
@@ -165,7 +165,7 @@ class LBucketNode(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(BucketNode, dict):
+        if issubclass(LBucketNode, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -181,7 +181,7 @@ class LBucketNode(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BucketNode):
+        if not isinstance(other, LBucketNode):
             return False
 
         return self.__dict__ == other.__dict__

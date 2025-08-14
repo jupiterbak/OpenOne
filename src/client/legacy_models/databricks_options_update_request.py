@@ -37,7 +37,7 @@ class LDatabricksOptionsUpdateRequest(object):
     }
 
     def __init__(self, key=None, value=None):  # noqa: E501
-        """DatabricksOptionsUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LDatabricksOptionsUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._key = None
         self._value = None
         self.discriminator = None
@@ -47,22 +47,22 @@ class LDatabricksOptionsUpdateRequest(object):
 
     @property
     def key(self):
-        """Gets the key of this DatabricksOptionsUpdateRequest.  # noqa: E501
+        """Gets the key of this LDatabricksOptionsUpdateRequest.  # noqa: E501
 
         Databricks property key. e.g. maxWorkers  # noqa: E501
 
-        :return: The key of this DatabricksOptionsUpdateRequest.  # noqa: E501
+        :return: The key of this LDatabricksOptionsUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._key
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DatabricksOptionsUpdateRequest.
+        """Sets the key of this LDatabricksOptionsUpdateRequest.
 
         Databricks property key. e.g. maxWorkers  # noqa: E501
 
-        :param key: The key of this DatabricksOptionsUpdateRequest.  # noqa: E501
+        :param key: The key of this LDatabricksOptionsUpdateRequest.  # noqa: E501
         :type: str
         """
         if key is None:
@@ -72,22 +72,22 @@ class LDatabricksOptionsUpdateRequest(object):
 
     @property
     def value(self):
-        """Gets the value of this DatabricksOptionsUpdateRequest.  # noqa: E501
+        """Gets the value of this LDatabricksOptionsUpdateRequest.  # noqa: E501
 
         Value to set for the databricks property  # noqa: E501
 
-        :return: The value of this DatabricksOptionsUpdateRequest.  # noqa: E501
+        :return: The value of this LDatabricksOptionsUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DatabricksOptionsUpdateRequest.
+        """Sets the value of this LDatabricksOptionsUpdateRequest.
 
         Value to set for the databricks property  # noqa: E501
 
-        :param value: The value of this DatabricksOptionsUpdateRequest.  # noqa: E501
+        :param value: The value of this LDatabricksOptionsUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -114,7 +114,7 @@ class LDatabricksOptionsUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DatabricksOptionsUpdateRequest, dict):
+        if issubclass(LDatabricksOptionsUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -130,7 +130,7 @@ class LDatabricksOptionsUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DatabricksOptionsUpdateRequest):
+        if not isinstance(other, LDatabricksOptionsUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -37,7 +37,7 @@ class LMonthlyTrigger(object):
     }
 
     def __init__(self, monthly=None, timezone=None):  # noqa: E501
-        """MonthlyTrigger - a model defined in Swagger"""  # noqa: E501
+        """LMonthlyTrigger - a model defined in Swagger"""  # noqa: E501
         self._monthly = None
         self._timezone = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LMonthlyTrigger(object):
 
     @property
     def monthly(self):
-        """Gets the monthly of this MonthlyTrigger.  # noqa: E501
+        """Gets the monthly of this LMonthlyTrigger.  # noqa: E501
 
 
-        :return: The monthly of this MonthlyTrigger.  # noqa: E501
+        :return: The monthly of this LMonthlyTrigger.  # noqa: E501
         :rtype: object
         """
         return self._monthly
 
     @monthly.setter
     def monthly(self, monthly):
-        """Sets the monthly of this MonthlyTrigger.
+        """Sets the monthly of this LMonthlyTrigger.
 
 
-        :param monthly: The monthly of this MonthlyTrigger.  # noqa: E501
+        :param monthly: The monthly of this LMonthlyTrigger.  # noqa: E501
         :type: object
         """
         if monthly is None:
@@ -69,22 +69,22 @@ class LMonthlyTrigger(object):
 
     @property
     def timezone(self):
-        """Gets the timezone of this MonthlyTrigger.  # noqa: E501
+        """Gets the timezone of this LMonthlyTrigger.  # noqa: E501
 
         timezone for this trigger, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :return: The timezone of this MonthlyTrigger.  # noqa: E501
+        :return: The timezone of this LMonthlyTrigger.  # noqa: E501
         :rtype: str
         """
         return self._timezone
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this MonthlyTrigger.
+        """Sets the timezone of this LMonthlyTrigger.
 
         timezone for this trigger, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :param timezone: The timezone of this MonthlyTrigger.  # noqa: E501
+        :param timezone: The timezone of this LMonthlyTrigger.  # noqa: E501
         :type: str
         """
         if timezone is None:
@@ -113,7 +113,7 @@ class LMonthlyTrigger(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(MonthlyTrigger, dict):
+        if issubclass(LMonthlyTrigger, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LMonthlyTrigger(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, MonthlyTrigger):
+        if not isinstance(other, LMonthlyTrigger):
             return False
 
         return self.__dict__ == other.__dict__

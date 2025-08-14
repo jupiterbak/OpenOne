@@ -32,7 +32,7 @@ class LComputeUsageUnit(object):
         'amount': 'int',
         'execution_language': 'str',
         'job_count': 'int',
-        'workspace_id': 'AnyOfcomputeUsageUnitWorkspaceId',
+        'workspace_id': 'LAnyOfcomputeUsageUnitWorkspaceId',
         'workspace_name': 'str'
     }
 
@@ -47,7 +47,7 @@ class LComputeUsageUnit(object):
     }
 
     def __init__(self, _from=None, to=None, amount=None, execution_language=None, job_count=None, workspace_id=None, workspace_name=None):  # noqa: E501
-        """ComputeUsageUnit - a model defined in Swagger"""  # noqa: E501
+        """LComputeUsageUnit - a model defined in Swagger"""  # noqa: E501
         self.__from = None
         self._to = None
         self._amount = None
@@ -69,22 +69,22 @@ class LComputeUsageUnit(object):
 
     @property
     def _from(self):
-        """Gets the _from of this ComputeUsageUnit.  # noqa: E501
+        """Gets the _from of this LComputeUsageUnit.  # noqa: E501
 
         milliseconds since Unix epoch  # noqa: E501
 
-        :return: The _from of this ComputeUsageUnit.  # noqa: E501
+        :return: The _from of this LComputeUsageUnit.  # noqa: E501
         :rtype: int
         """
         return self.__from
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ComputeUsageUnit.
+        """Sets the _from of this LComputeUsageUnit.
 
         milliseconds since Unix epoch  # noqa: E501
 
-        :param _from: The _from of this ComputeUsageUnit.  # noqa: E501
+        :param _from: The _from of this LComputeUsageUnit.  # noqa: E501
         :type: int
         """
         if _from is None:
@@ -94,22 +94,22 @@ class LComputeUsageUnit(object):
 
     @property
     def to(self):
-        """Gets the to of this ComputeUsageUnit.  # noqa: E501
+        """Gets the to of this LComputeUsageUnit.  # noqa: E501
 
         milliseconds since Unix epoch  # noqa: E501
 
-        :return: The to of this ComputeUsageUnit.  # noqa: E501
+        :return: The to of this LComputeUsageUnit.  # noqa: E501
         :rtype: int
         """
         return self._to
 
     @to.setter
     def to(self, to):
-        """Sets the to of this ComputeUsageUnit.
+        """Sets the to of this LComputeUsageUnit.
 
         milliseconds since Unix epoch  # noqa: E501
 
-        :param to: The to of this ComputeUsageUnit.  # noqa: E501
+        :param to: The to of this LComputeUsageUnit.  # noqa: E501
         :type: int
         """
         if to is None:
@@ -119,20 +119,20 @@ class LComputeUsageUnit(object):
 
     @property
     def amount(self):
-        """Gets the amount of this ComputeUsageUnit.  # noqa: E501
+        """Gets the amount of this LComputeUsageUnit.  # noqa: E501
 
 
-        :return: The amount of this ComputeUsageUnit.  # noqa: E501
+        :return: The amount of this LComputeUsageUnit.  # noqa: E501
         :rtype: int
         """
         return self._amount
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this ComputeUsageUnit.
+        """Sets the amount of this LComputeUsageUnit.
 
 
-        :param amount: The amount of this ComputeUsageUnit.  # noqa: E501
+        :param amount: The amount of this LComputeUsageUnit.  # noqa: E501
         :type: int
         """
         if amount is None:
@@ -142,20 +142,20 @@ class LComputeUsageUnit(object):
 
     @property
     def execution_language(self):
-        """Gets the execution_language of this ComputeUsageUnit.  # noqa: E501
+        """Gets the execution_language of this LComputeUsageUnit.  # noqa: E501
 
 
-        :return: The execution_language of this ComputeUsageUnit.  # noqa: E501
+        :return: The execution_language of this LComputeUsageUnit.  # noqa: E501
         :rtype: str
         """
         return self._execution_language
 
     @execution_language.setter
     def execution_language(self, execution_language):
-        """Sets the execution_language of this ComputeUsageUnit.
+        """Sets the execution_language of this LComputeUsageUnit.
 
 
-        :param execution_language: The execution_language of this ComputeUsageUnit.  # noqa: E501
+        :param execution_language: The execution_language of this LComputeUsageUnit.  # noqa: E501
         :type: str
         """
 
@@ -163,20 +163,20 @@ class LComputeUsageUnit(object):
 
     @property
     def job_count(self):
-        """Gets the job_count of this ComputeUsageUnit.  # noqa: E501
+        """Gets the job_count of this LComputeUsageUnit.  # noqa: E501
 
 
-        :return: The job_count of this ComputeUsageUnit.  # noqa: E501
+        :return: The job_count of this LComputeUsageUnit.  # noqa: E501
         :rtype: int
         """
         return self._job_count
 
     @job_count.setter
     def job_count(self, job_count):
-        """Sets the job_count of this ComputeUsageUnit.
+        """Sets the job_count of this LComputeUsageUnit.
 
 
-        :param job_count: The job_count of this ComputeUsageUnit.  # noqa: E501
+        :param job_count: The job_count of this LComputeUsageUnit.  # noqa: E501
         :type: int
         """
         if job_count is None:
@@ -186,41 +186,41 @@ class LComputeUsageUnit(object):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ComputeUsageUnit.  # noqa: E501
+        """Gets the workspace_id of this LComputeUsageUnit.  # noqa: E501
 
 
-        :return: The workspace_id of this ComputeUsageUnit.  # noqa: E501
-        :rtype: AnyOfcomputeUsageUnitWorkspaceId
+        :return: The workspace_id of this LComputeUsageUnit.  # noqa: E501
+        :rtype: LAnyOfcomputeUsageUnitWorkspaceId
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ComputeUsageUnit.
+        """Sets the workspace_id of this LComputeUsageUnit.
 
 
-        :param workspace_id: The workspace_id of this ComputeUsageUnit.  # noqa: E501
-        :type: AnyOfcomputeUsageUnitWorkspaceId
+        :param workspace_id: The workspace_id of this LComputeUsageUnit.  # noqa: E501
+        :type: LAnyOfcomputeUsageUnitWorkspaceId
         """
 
         self._workspace_id = workspace_id
 
     @property
     def workspace_name(self):
-        """Gets the workspace_name of this ComputeUsageUnit.  # noqa: E501
+        """Gets the workspace_name of this LComputeUsageUnit.  # noqa: E501
 
 
-        :return: The workspace_name of this ComputeUsageUnit.  # noqa: E501
+        :return: The workspace_name of this LComputeUsageUnit.  # noqa: E501
         :rtype: str
         """
         return self._workspace_name
 
     @workspace_name.setter
     def workspace_name(self, workspace_name):
-        """Sets the workspace_name of this ComputeUsageUnit.
+        """Sets the workspace_name of this LComputeUsageUnit.
 
 
-        :param workspace_name: The workspace_name of this ComputeUsageUnit.  # noqa: E501
+        :param workspace_name: The workspace_name of this LComputeUsageUnit.  # noqa: E501
         :type: str
         """
 
@@ -247,7 +247,7 @@ class LComputeUsageUnit(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ComputeUsageUnit, dict):
+        if issubclass(LComputeUsageUnit, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -263,7 +263,7 @@ class LComputeUsageUnit(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ComputeUsageUnit):
+        if not isinstance(other, LComputeUsageUnit):
             return False
 
         return self.__dict__ == other.__dict__

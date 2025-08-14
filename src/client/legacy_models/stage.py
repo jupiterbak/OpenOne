@@ -34,14 +34,14 @@ class LStage(object):
     }
 
     attribute_map = {
-        'type': 'Type',
-        'error': 'Error',
-        'timestamp': 'Timestamp',
-        'status': 'Status'
+        'type': 'LType',
+        'error': 'LError',
+        'timestamp': 'LTimestamp',
+        'status': 'LStatus'
     }
 
     def __init__(self, type=None, error=None, timestamp=None, status=None):  # noqa: E501
-        """Stage - a model defined in Swagger"""  # noqa: E501
+        """LStage - a model defined in Swagger"""  # noqa: E501
         self._type = None
         self._error = None
         self._timestamp = None
@@ -54,20 +54,20 @@ class LStage(object):
 
     @property
     def type(self):
-        """Gets the type of this Stage.  # noqa: E501
+        """Gets the type of this LStage.  # noqa: E501
 
 
-        :return: The type of this Stage.  # noqa: E501
+        :return: The type of this LStage.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Stage.
+        """Sets the type of this LStage.
 
 
-        :param type: The type of this Stage.  # noqa: E501
+        :param type: The type of this LStage.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -77,20 +77,20 @@ class LStage(object):
 
     @property
     def error(self):
-        """Gets the error of this Stage.  # noqa: E501
+        """Gets the error of this LStage.  # noqa: E501
 
 
-        :return: The error of this Stage.  # noqa: E501
+        :return: The error of this LStage.  # noqa: E501
         :rtype: str
         """
         return self._error
 
     @error.setter
     def error(self, error):
-        """Sets the error of this Stage.
+        """Sets the error of this LStage.
 
 
-        :param error: The error of this Stage.  # noqa: E501
+        :param error: The error of this LStage.  # noqa: E501
         :type: str
         """
         if error is None:
@@ -100,20 +100,20 @@ class LStage(object):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this Stage.  # noqa: E501
+        """Gets the timestamp of this LStage.  # noqa: E501
 
 
-        :return: The timestamp of this Stage.  # noqa: E501
+        :return: The timestamp of this LStage.  # noqa: E501
         :rtype: str
         """
         return self._timestamp
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this Stage.
+        """Sets the timestamp of this LStage.
 
 
-        :param timestamp: The timestamp of this Stage.  # noqa: E501
+        :param timestamp: The timestamp of this LStage.  # noqa: E501
         :type: str
         """
         if timestamp is None:
@@ -123,20 +123,20 @@ class LStage(object):
 
     @property
     def status(self):
-        """Gets the status of this Stage.  # noqa: E501
+        """Gets the status of this LStage.  # noqa: E501
 
 
-        :return: The status of this Stage.  # noqa: E501
+        :return: The status of this LStage.  # noqa: E501
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Stage.
+        """Sets the status of this LStage.
 
 
-        :param status: The status of this Stage.  # noqa: E501
+        :param status: The status of this LStage.  # noqa: E501
         :type: str
         """
         if status is None:
@@ -165,7 +165,7 @@ class LStage(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Stage, dict):
+        if issubclass(LStage, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -181,7 +181,7 @@ class LStage(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Stage):
+        if not isinstance(other, LStage):
             return False
 
         return self.__dict__ == other.__dict__

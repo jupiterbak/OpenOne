@@ -45,7 +45,7 @@ class LAzureCloudConfigsResponseSchema(object):
     }
 
     def __init__(self, settings=None, credential_provider=None, default_host=None, default_user_info=None, created_at=None, updated_at=None):  # noqa: E501
-        """AzureCloudConfigsResponseSchema - a model defined in Swagger"""  # noqa: E501
+        """LAzureCloudConfigsResponseSchema - a model defined in Swagger"""  # noqa: E501
         self._settings = None
         self._credential_provider = None
         self._default_host = None
@@ -63,20 +63,20 @@ class LAzureCloudConfigsResponseSchema(object):
 
     @property
     def settings(self):
-        """Gets the settings of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the settings of this LAzureCloudConfigsResponseSchema.  # noqa: E501
 
 
-        :return: The settings of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        :return: The settings of this LAzureCloudConfigsResponseSchema.  # noqa: E501
         :rtype: object
         """
         return self._settings
 
     @settings.setter
     def settings(self, settings):
-        """Sets the settings of this AzureCloudConfigsResponseSchema.
+        """Sets the settings of this LAzureCloudConfigsResponseSchema.
 
 
-        :param settings: The settings of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        :param settings: The settings of this LAzureCloudConfigsResponseSchema.  # noqa: E501
         :type: object
         """
 
@@ -84,22 +84,22 @@ class LAzureCloudConfigsResponseSchema(object):
 
     @property
     def credential_provider(self):
-        """Gets the credential_provider of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the credential_provider of this LAzureCloudConfigsResponseSchema.  # noqa: E501
 
         Authentication types like SSO passthrough, Shared Access Signature etc. * `ssoPassthrough` - Authentication through sso.  # noqa: E501
 
-        :return: The credential_provider of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        :return: The credential_provider of this LAzureCloudConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._credential_provider
 
     @credential_provider.setter
     def credential_provider(self, credential_provider):
-        """Sets the credential_provider of this AzureCloudConfigsResponseSchema.
+        """Sets the credential_provider of this LAzureCloudConfigsResponseSchema.
 
         Authentication types like SSO passthrough, Shared Access Signature etc. * `ssoPassthrough` - Authentication through sso.  # noqa: E501
 
-        :param credential_provider: The credential_provider of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        :param credential_provider: The credential_provider of this LAzureCloudConfigsResponseSchema.  # noqa: E501
         :type: str
         """
         if credential_provider is None:
@@ -115,22 +115,22 @@ class LAzureCloudConfigsResponseSchema(object):
 
     @property
     def default_host(self):
-        """Gets the default_host of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the default_host of this LAzureCloudConfigsResponseSchema.  # noqa: E501
 
         A string that specifies the default ADLS storage account that will be used for uploads, outputs and staging files.  # noqa: E501
 
-        :return: The default_host of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        :return: The default_host of this LAzureCloudConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._default_host
 
     @default_host.setter
     def default_host(self, default_host):
-        """Sets the default_host of this AzureCloudConfigsResponseSchema.
+        """Sets the default_host of this LAzureCloudConfigsResponseSchema.
 
         A string that specifies the default ADLS storage account that will be used for uploads, outputs and staging files.  # noqa: E501
 
-        :param default_host: The default_host of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        :param default_host: The default_host of this LAzureCloudConfigsResponseSchema.  # noqa: E501
         :type: str
         """
         if default_host is None:
@@ -140,22 +140,22 @@ class LAzureCloudConfigsResponseSchema(object):
 
     @property
     def default_user_info(self):
-        """Gets the default_user_info of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the default_user_info of this LAzureCloudConfigsResponseSchema.  # noqa: E501
 
         A string that specifies the default ADLS filesystem or container that will be used for uploads, outputs and staging files.  # noqa: E501
 
-        :return: The default_user_info of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        :return: The default_user_info of this LAzureCloudConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._default_user_info
 
     @default_user_info.setter
     def default_user_info(self, default_user_info):
-        """Sets the default_user_info of this AzureCloudConfigsResponseSchema.
+        """Sets the default_user_info of this LAzureCloudConfigsResponseSchema.
 
         A string that specifies the default ADLS filesystem or container that will be used for uploads, outputs and staging files.  # noqa: E501
 
-        :param default_user_info: The default_user_info of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        :param default_user_info: The default_user_info of this LAzureCloudConfigsResponseSchema.  # noqa: E501
         :type: str
         """
         if default_user_info is None:
@@ -165,22 +165,22 @@ class LAzureCloudConfigsResponseSchema(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the created_at of this LAzureCloudConfigsResponseSchema.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        :return: The created_at of this LAzureCloudConfigsResponseSchema.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AzureCloudConfigsResponseSchema.
+        """Sets the created_at of this LAzureCloudConfigsResponseSchema.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        :param created_at: The created_at of this LAzureCloudConfigsResponseSchema.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -190,22 +190,22 @@ class LAzureCloudConfigsResponseSchema(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the updated_at of this LAzureCloudConfigsResponseSchema.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        :return: The updated_at of this LAzureCloudConfigsResponseSchema.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this AzureCloudConfigsResponseSchema.
+        """Sets the updated_at of this LAzureCloudConfigsResponseSchema.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this AzureCloudConfigsResponseSchema.  # noqa: E501
+        :param updated_at: The updated_at of this LAzureCloudConfigsResponseSchema.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -234,7 +234,7 @@ class LAzureCloudConfigsResponseSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AzureCloudConfigsResponseSchema, dict):
+        if issubclass(LAzureCloudConfigsResponseSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -250,7 +250,7 @@ class LAzureCloudConfigsResponseSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AzureCloudConfigsResponseSchema):
+        if not isinstance(other, LAzureCloudConfigsResponseSchema):
             return False
 
         return self.__dict__ == other.__dict__

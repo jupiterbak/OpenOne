@@ -33,7 +33,7 @@ class LScriptLine(object):
         'task': 'object',
         'table_data': 'object',
         'hash': 'str',
-        'id': 'AnyOfscriptLineId',
+        'id': 'LAnyOfscriptLineId',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'creator': 'object',
@@ -55,7 +55,7 @@ class LScriptLine(object):
     }
 
     def __init__(self, column_metadata=None, encoding=None, edit_script_line=None, task=None, table_data=None, hash=None, id=None, created_at=None, updated_at=None, creator=None, updater=None):  # noqa: E501
-        """ScriptLine - a model defined in Swagger"""  # noqa: E501
+        """LScriptLine - a model defined in Swagger"""  # noqa: E501
         self._column_metadata = None
         self._encoding = None
         self._edit_script_line = None
@@ -90,20 +90,20 @@ class LScriptLine(object):
 
     @property
     def column_metadata(self):
-        """Gets the column_metadata of this ScriptLine.  # noqa: E501
+        """Gets the column_metadata of this LScriptLine.  # noqa: E501
 
 
-        :return: The column_metadata of this ScriptLine.  # noqa: E501
+        :return: The column_metadata of this LScriptLine.  # noqa: E501
         :rtype: object
         """
         return self._column_metadata
 
     @column_metadata.setter
     def column_metadata(self, column_metadata):
-        """Sets the column_metadata of this ScriptLine.
+        """Sets the column_metadata of this LScriptLine.
 
 
-        :param column_metadata: The column_metadata of this ScriptLine.  # noqa: E501
+        :param column_metadata: The column_metadata of this LScriptLine.  # noqa: E501
         :type: object
         """
 
@@ -111,20 +111,20 @@ class LScriptLine(object):
 
     @property
     def encoding(self):
-        """Gets the encoding of this ScriptLine.  # noqa: E501
+        """Gets the encoding of this LScriptLine.  # noqa: E501
 
 
-        :return: The encoding of this ScriptLine.  # noqa: E501
+        :return: The encoding of this LScriptLine.  # noqa: E501
         :rtype: str
         """
         return self._encoding
 
     @encoding.setter
     def encoding(self, encoding):
-        """Sets the encoding of this ScriptLine.
+        """Sets the encoding of this LScriptLine.
 
 
-        :param encoding: The encoding of this ScriptLine.  # noqa: E501
+        :param encoding: The encoding of this LScriptLine.  # noqa: E501
         :type: str
         """
 
@@ -132,20 +132,20 @@ class LScriptLine(object):
 
     @property
     def edit_script_line(self):
-        """Gets the edit_script_line of this ScriptLine.  # noqa: E501
+        """Gets the edit_script_line of this LScriptLine.  # noqa: E501
 
 
-        :return: The edit_script_line of this ScriptLine.  # noqa: E501
+        :return: The edit_script_line of this LScriptLine.  # noqa: E501
         :rtype: object
         """
         return self._edit_script_line
 
     @edit_script_line.setter
     def edit_script_line(self, edit_script_line):
-        """Sets the edit_script_line of this ScriptLine.
+        """Sets the edit_script_line of this LScriptLine.
 
 
-        :param edit_script_line: The edit_script_line of this ScriptLine.  # noqa: E501
+        :param edit_script_line: The edit_script_line of this LScriptLine.  # noqa: E501
         :type: object
         """
 
@@ -153,20 +153,20 @@ class LScriptLine(object):
 
     @property
     def task(self):
-        """Gets the task of this ScriptLine.  # noqa: E501
+        """Gets the task of this LScriptLine.  # noqa: E501
 
 
-        :return: The task of this ScriptLine.  # noqa: E501
+        :return: The task of this LScriptLine.  # noqa: E501
         :rtype: object
         """
         return self._task
 
     @task.setter
     def task(self, task):
-        """Sets the task of this ScriptLine.
+        """Sets the task of this LScriptLine.
 
 
-        :param task: The task of this ScriptLine.  # noqa: E501
+        :param task: The task of this LScriptLine.  # noqa: E501
         :type: object
         """
 
@@ -174,20 +174,20 @@ class LScriptLine(object):
 
     @property
     def table_data(self):
-        """Gets the table_data of this ScriptLine.  # noqa: E501
+        """Gets the table_data of this LScriptLine.  # noqa: E501
 
 
-        :return: The table_data of this ScriptLine.  # noqa: E501
+        :return: The table_data of this LScriptLine.  # noqa: E501
         :rtype: object
         """
         return self._table_data
 
     @table_data.setter
     def table_data(self, table_data):
-        """Sets the table_data of this ScriptLine.
+        """Sets the table_data of this LScriptLine.
 
 
-        :param table_data: The table_data of this ScriptLine.  # noqa: E501
+        :param table_data: The table_data of this LScriptLine.  # noqa: E501
         :type: object
         """
 
@@ -195,20 +195,20 @@ class LScriptLine(object):
 
     @property
     def hash(self):
-        """Gets the hash of this ScriptLine.  # noqa: E501
+        """Gets the hash of this LScriptLine.  # noqa: E501
 
 
-        :return: The hash of this ScriptLine.  # noqa: E501
+        :return: The hash of this LScriptLine.  # noqa: E501
         :rtype: str
         """
         return self._hash
 
     @hash.setter
     def hash(self, hash):
-        """Sets the hash of this ScriptLine.
+        """Sets the hash of this LScriptLine.
 
 
-        :param hash: The hash of this ScriptLine.  # noqa: E501
+        :param hash: The hash of this LScriptLine.  # noqa: E501
         :type: str
         """
 
@@ -216,21 +216,21 @@ class LScriptLine(object):
 
     @property
     def id(self):
-        """Gets the id of this ScriptLine.  # noqa: E501
+        """Gets the id of this LScriptLine.  # noqa: E501
 
 
-        :return: The id of this ScriptLine.  # noqa: E501
-        :rtype: AnyOfscriptLineId
+        :return: The id of this LScriptLine.  # noqa: E501
+        :rtype: LAnyOfscriptLineId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScriptLine.
+        """Sets the id of this LScriptLine.
 
 
-        :param id: The id of this ScriptLine.  # noqa: E501
-        :type: AnyOfscriptLineId
+        :param id: The id of this LScriptLine.  # noqa: E501
+        :type: LAnyOfscriptLineId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -239,22 +239,22 @@ class LScriptLine(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ScriptLine.  # noqa: E501
+        """Gets the created_at of this LScriptLine.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this ScriptLine.  # noqa: E501
+        :return: The created_at of this LScriptLine.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ScriptLine.
+        """Sets the created_at of this LScriptLine.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this ScriptLine.  # noqa: E501
+        :param created_at: The created_at of this LScriptLine.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -264,22 +264,22 @@ class LScriptLine(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ScriptLine.  # noqa: E501
+        """Gets the updated_at of this LScriptLine.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this ScriptLine.  # noqa: E501
+        :return: The updated_at of this LScriptLine.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ScriptLine.
+        """Sets the updated_at of this LScriptLine.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this ScriptLine.  # noqa: E501
+        :param updated_at: The updated_at of this LScriptLine.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -289,20 +289,20 @@ class LScriptLine(object):
 
     @property
     def creator(self):
-        """Gets the creator of this ScriptLine.  # noqa: E501
+        """Gets the creator of this LScriptLine.  # noqa: E501
 
 
-        :return: The creator of this ScriptLine.  # noqa: E501
+        :return: The creator of this LScriptLine.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ScriptLine.
+        """Sets the creator of this LScriptLine.
 
 
-        :param creator: The creator of this ScriptLine.  # noqa: E501
+        :param creator: The creator of this LScriptLine.  # noqa: E501
         :type: object
         """
 
@@ -310,20 +310,20 @@ class LScriptLine(object):
 
     @property
     def updater(self):
-        """Gets the updater of this ScriptLine.  # noqa: E501
+        """Gets the updater of this LScriptLine.  # noqa: E501
 
 
-        :return: The updater of this ScriptLine.  # noqa: E501
+        :return: The updater of this LScriptLine.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this ScriptLine.
+        """Sets the updater of this LScriptLine.
 
 
-        :param updater: The updater of this ScriptLine.  # noqa: E501
+        :param updater: The updater of this LScriptLine.  # noqa: E501
         :type: object
         """
 
@@ -350,7 +350,7 @@ class LScriptLine(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ScriptLine, dict):
+        if issubclass(LScriptLine, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -366,7 +366,7 @@ class LScriptLine(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ScriptLine):
+        if not isinstance(other, LScriptLine):
             return False
 
         return self.__dict__ == other.__dict__

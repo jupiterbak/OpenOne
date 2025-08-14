@@ -37,7 +37,7 @@ class LScriptResult(object):
         'name': 'str',
         'row_count': 'int',
         'storage_location': 'object',
-        'id': 'AnyOfscriptResultId',
+        'id': 'LAnyOfscriptResultId',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'creator': 'object',
@@ -63,7 +63,7 @@ class LScriptResult(object):
     }
 
     def __init__(self, script_id=None, table_name=None, format=None, is_primary_output=None, schema=None, session_id=None, compression=None, name=None, row_count=None, storage_location=None, id=None, created_at=None, updated_at=None, creator=None, updater=None):  # noqa: E501
-        """ScriptResult - a model defined in Swagger"""  # noqa: E501
+        """LScriptResult - a model defined in Swagger"""  # noqa: E501
         self._script_id = None
         self._table_name = None
         self._format = None
@@ -110,20 +110,20 @@ class LScriptResult(object):
 
     @property
     def script_id(self):
-        """Gets the script_id of this ScriptResult.  # noqa: E501
+        """Gets the script_id of this LScriptResult.  # noqa: E501
 
 
-        :return: The script_id of this ScriptResult.  # noqa: E501
+        :return: The script_id of this LScriptResult.  # noqa: E501
         :rtype: str
         """
         return self._script_id
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this ScriptResult.
+        """Sets the script_id of this LScriptResult.
 
 
-        :param script_id: The script_id of this ScriptResult.  # noqa: E501
+        :param script_id: The script_id of this LScriptResult.  # noqa: E501
         :type: str
         """
 
@@ -131,20 +131,20 @@ class LScriptResult(object):
 
     @property
     def table_name(self):
-        """Gets the table_name of this ScriptResult.  # noqa: E501
+        """Gets the table_name of this LScriptResult.  # noqa: E501
 
 
-        :return: The table_name of this ScriptResult.  # noqa: E501
+        :return: The table_name of this LScriptResult.  # noqa: E501
         :rtype: str
         """
         return self._table_name
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ScriptResult.
+        """Sets the table_name of this LScriptResult.
 
 
-        :param table_name: The table_name of this ScriptResult.  # noqa: E501
+        :param table_name: The table_name of this LScriptResult.  # noqa: E501
         :type: str
         """
 
@@ -152,20 +152,20 @@ class LScriptResult(object):
 
     @property
     def format(self):
-        """Gets the format of this ScriptResult.  # noqa: E501
+        """Gets the format of this LScriptResult.  # noqa: E501
 
 
-        :return: The format of this ScriptResult.  # noqa: E501
+        :return: The format of this LScriptResult.  # noqa: E501
         :rtype: str
         """
         return self._format
 
     @format.setter
     def format(self, format):
-        """Sets the format of this ScriptResult.
+        """Sets the format of this LScriptResult.
 
 
-        :param format: The format of this ScriptResult.  # noqa: E501
+        :param format: The format of this LScriptResult.  # noqa: E501
         :type: str
         """
         allowed_values = ["csv", "json", "avro", "pqt", "bigquery", "hyper", "jdbc", "excel"]  # noqa: E501
@@ -179,20 +179,20 @@ class LScriptResult(object):
 
     @property
     def is_primary_output(self):
-        """Gets the is_primary_output of this ScriptResult.  # noqa: E501
+        """Gets the is_primary_output of this LScriptResult.  # noqa: E501
 
 
-        :return: The is_primary_output of this ScriptResult.  # noqa: E501
+        :return: The is_primary_output of this LScriptResult.  # noqa: E501
         :rtype: bool
         """
         return self._is_primary_output
 
     @is_primary_output.setter
     def is_primary_output(self, is_primary_output):
-        """Sets the is_primary_output of this ScriptResult.
+        """Sets the is_primary_output of this LScriptResult.
 
 
-        :param is_primary_output: The is_primary_output of this ScriptResult.  # noqa: E501
+        :param is_primary_output: The is_primary_output of this LScriptResult.  # noqa: E501
         :type: bool
         """
 
@@ -200,20 +200,20 @@ class LScriptResult(object):
 
     @property
     def schema(self):
-        """Gets the schema of this ScriptResult.  # noqa: E501
+        """Gets the schema of this LScriptResult.  # noqa: E501
 
 
-        :return: The schema of this ScriptResult.  # noqa: E501
+        :return: The schema of this LScriptResult.  # noqa: E501
         :rtype: str
         """
         return self._schema
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this ScriptResult.
+        """Sets the schema of this LScriptResult.
 
 
-        :param schema: The schema of this ScriptResult.  # noqa: E501
+        :param schema: The schema of this LScriptResult.  # noqa: E501
         :type: str
         """
 
@@ -221,20 +221,20 @@ class LScriptResult(object):
 
     @property
     def session_id(self):
-        """Gets the session_id of this ScriptResult.  # noqa: E501
+        """Gets the session_id of this LScriptResult.  # noqa: E501
 
 
-        :return: The session_id of this ScriptResult.  # noqa: E501
+        :return: The session_id of this LScriptResult.  # noqa: E501
         :rtype: str
         """
         return self._session_id
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this ScriptResult.
+        """Sets the session_id of this LScriptResult.
 
 
-        :param session_id: The session_id of this ScriptResult.  # noqa: E501
+        :param session_id: The session_id of this LScriptResult.  # noqa: E501
         :type: str
         """
 
@@ -242,20 +242,20 @@ class LScriptResult(object):
 
     @property
     def compression(self):
-        """Gets the compression of this ScriptResult.  # noqa: E501
+        """Gets the compression of this LScriptResult.  # noqa: E501
 
 
-        :return: The compression of this ScriptResult.  # noqa: E501
+        :return: The compression of this LScriptResult.  # noqa: E501
         :rtype: str
         """
         return self._compression
 
     @compression.setter
     def compression(self, compression):
-        """Sets the compression of this ScriptResult.
+        """Sets the compression of this LScriptResult.
 
 
-        :param compression: The compression of this ScriptResult.  # noqa: E501
+        :param compression: The compression of this LScriptResult.  # noqa: E501
         :type: str
         """
         allowed_values = ["none", "gzip", "bzip2", "snappy"]  # noqa: E501
@@ -269,20 +269,20 @@ class LScriptResult(object):
 
     @property
     def name(self):
-        """Gets the name of this ScriptResult.  # noqa: E501
+        """Gets the name of this LScriptResult.  # noqa: E501
 
 
-        :return: The name of this ScriptResult.  # noqa: E501
+        :return: The name of this LScriptResult.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScriptResult.
+        """Sets the name of this LScriptResult.
 
 
-        :param name: The name of this ScriptResult.  # noqa: E501
+        :param name: The name of this LScriptResult.  # noqa: E501
         :type: str
         """
 
@@ -290,20 +290,20 @@ class LScriptResult(object):
 
     @property
     def row_count(self):
-        """Gets the row_count of this ScriptResult.  # noqa: E501
+        """Gets the row_count of this LScriptResult.  # noqa: E501
 
 
-        :return: The row_count of this ScriptResult.  # noqa: E501
+        :return: The row_count of this LScriptResult.  # noqa: E501
         :rtype: int
         """
         return self._row_count
 
     @row_count.setter
     def row_count(self, row_count):
-        """Sets the row_count of this ScriptResult.
+        """Sets the row_count of this LScriptResult.
 
 
-        :param row_count: The row_count of this ScriptResult.  # noqa: E501
+        :param row_count: The row_count of this LScriptResult.  # noqa: E501
         :type: int
         """
 
@@ -311,20 +311,20 @@ class LScriptResult(object):
 
     @property
     def storage_location(self):
-        """Gets the storage_location of this ScriptResult.  # noqa: E501
+        """Gets the storage_location of this LScriptResult.  # noqa: E501
 
 
-        :return: The storage_location of this ScriptResult.  # noqa: E501
+        :return: The storage_location of this LScriptResult.  # noqa: E501
         :rtype: object
         """
         return self._storage_location
 
     @storage_location.setter
     def storage_location(self, storage_location):
-        """Sets the storage_location of this ScriptResult.
+        """Sets the storage_location of this LScriptResult.
 
 
-        :param storage_location: The storage_location of this ScriptResult.  # noqa: E501
+        :param storage_location: The storage_location of this LScriptResult.  # noqa: E501
         :type: object
         """
 
@@ -332,21 +332,21 @@ class LScriptResult(object):
 
     @property
     def id(self):
-        """Gets the id of this ScriptResult.  # noqa: E501
+        """Gets the id of this LScriptResult.  # noqa: E501
 
 
-        :return: The id of this ScriptResult.  # noqa: E501
-        :rtype: AnyOfscriptResultId
+        :return: The id of this LScriptResult.  # noqa: E501
+        :rtype: LAnyOfscriptResultId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScriptResult.
+        """Sets the id of this LScriptResult.
 
 
-        :param id: The id of this ScriptResult.  # noqa: E501
-        :type: AnyOfscriptResultId
+        :param id: The id of this LScriptResult.  # noqa: E501
+        :type: LAnyOfscriptResultId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -355,22 +355,22 @@ class LScriptResult(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ScriptResult.  # noqa: E501
+        """Gets the created_at of this LScriptResult.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this ScriptResult.  # noqa: E501
+        :return: The created_at of this LScriptResult.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ScriptResult.
+        """Sets the created_at of this LScriptResult.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this ScriptResult.  # noqa: E501
+        :param created_at: The created_at of this LScriptResult.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -380,22 +380,22 @@ class LScriptResult(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ScriptResult.  # noqa: E501
+        """Gets the updated_at of this LScriptResult.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this ScriptResult.  # noqa: E501
+        :return: The updated_at of this LScriptResult.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ScriptResult.
+        """Sets the updated_at of this LScriptResult.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this ScriptResult.  # noqa: E501
+        :param updated_at: The updated_at of this LScriptResult.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -405,20 +405,20 @@ class LScriptResult(object):
 
     @property
     def creator(self):
-        """Gets the creator of this ScriptResult.  # noqa: E501
+        """Gets the creator of this LScriptResult.  # noqa: E501
 
 
-        :return: The creator of this ScriptResult.  # noqa: E501
+        :return: The creator of this LScriptResult.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ScriptResult.
+        """Sets the creator of this LScriptResult.
 
 
-        :param creator: The creator of this ScriptResult.  # noqa: E501
+        :param creator: The creator of this LScriptResult.  # noqa: E501
         :type: object
         """
 
@@ -426,20 +426,20 @@ class LScriptResult(object):
 
     @property
     def updater(self):
-        """Gets the updater of this ScriptResult.  # noqa: E501
+        """Gets the updater of this LScriptResult.  # noqa: E501
 
 
-        :return: The updater of this ScriptResult.  # noqa: E501
+        :return: The updater of this LScriptResult.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this ScriptResult.
+        """Sets the updater of this LScriptResult.
 
 
-        :param updater: The updater of this ScriptResult.  # noqa: E501
+        :param updater: The updater of this LScriptResult.  # noqa: E501
         :type: object
         """
 
@@ -466,7 +466,7 @@ class LScriptResult(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ScriptResult, dict):
+        if issubclass(LScriptResult, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -482,7 +482,7 @@ class LScriptResult(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ScriptResult):
+        if not isinstance(other, LScriptResult):
             return False
 
         return self.__dict__ == other.__dict__

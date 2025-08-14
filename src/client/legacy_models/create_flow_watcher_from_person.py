@@ -27,8 +27,8 @@ class LCreateFlowWatcherFromPerson(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'flow_id': 'AnyOfcreateFlowWatcherFromPersonFlowId',
-        'person_id': 'AnyOfcreateFlowWatcherFromPersonPersonId'
+        'flow_id': 'LAnyOfcreateFlowWatcherFromPersonFlowId',
+        'person_id': 'LAnyOfcreateFlowWatcherFromPersonPersonId'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LCreateFlowWatcherFromPerson(object):
     }
 
     def __init__(self, flow_id=None, person_id=None):  # noqa: E501
-        """CreateFlowWatcherFromPerson - a model defined in Swagger"""  # noqa: E501
+        """LCreateFlowWatcherFromPerson - a model defined in Swagger"""  # noqa: E501
         self._flow_id = None
         self._person_id = None
         self.discriminator = None
@@ -46,21 +46,21 @@ class LCreateFlowWatcherFromPerson(object):
 
     @property
     def flow_id(self):
-        """Gets the flow_id of this CreateFlowWatcherFromPerson.  # noqa: E501
+        """Gets the flow_id of this LCreateFlowWatcherFromPerson.  # noqa: E501
 
 
-        :return: The flow_id of this CreateFlowWatcherFromPerson.  # noqa: E501
-        :rtype: AnyOfcreateFlowWatcherFromPersonFlowId
+        :return: The flow_id of this LCreateFlowWatcherFromPerson.  # noqa: E501
+        :rtype: LAnyOfcreateFlowWatcherFromPersonFlowId
         """
         return self._flow_id
 
     @flow_id.setter
     def flow_id(self, flow_id):
-        """Sets the flow_id of this CreateFlowWatcherFromPerson.
+        """Sets the flow_id of this LCreateFlowWatcherFromPerson.
 
 
-        :param flow_id: The flow_id of this CreateFlowWatcherFromPerson.  # noqa: E501
-        :type: AnyOfcreateFlowWatcherFromPersonFlowId
+        :param flow_id: The flow_id of this LCreateFlowWatcherFromPerson.  # noqa: E501
+        :type: LAnyOfcreateFlowWatcherFromPersonFlowId
         """
         if flow_id is None:
             raise ValueError("Invalid value for `flow_id`, must not be `None`")  # noqa: E501
@@ -69,21 +69,21 @@ class LCreateFlowWatcherFromPerson(object):
 
     @property
     def person_id(self):
-        """Gets the person_id of this CreateFlowWatcherFromPerson.  # noqa: E501
+        """Gets the person_id of this LCreateFlowWatcherFromPerson.  # noqa: E501
 
 
-        :return: The person_id of this CreateFlowWatcherFromPerson.  # noqa: E501
-        :rtype: AnyOfcreateFlowWatcherFromPersonPersonId
+        :return: The person_id of this LCreateFlowWatcherFromPerson.  # noqa: E501
+        :rtype: LAnyOfcreateFlowWatcherFromPersonPersonId
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this CreateFlowWatcherFromPerson.
+        """Sets the person_id of this LCreateFlowWatcherFromPerson.
 
 
-        :param person_id: The person_id of this CreateFlowWatcherFromPerson.  # noqa: E501
-        :type: AnyOfcreateFlowWatcherFromPersonPersonId
+        :param person_id: The person_id of this LCreateFlowWatcherFromPerson.  # noqa: E501
+        :type: LAnyOfcreateFlowWatcherFromPersonPersonId
         """
         if person_id is None:
             raise ValueError("Invalid value for `person_id`, must not be `None`")  # noqa: E501
@@ -111,7 +111,7 @@ class LCreateFlowWatcherFromPerson(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(CreateFlowWatcherFromPerson, dict):
+        if issubclass(LCreateFlowWatcherFromPerson, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LCreateFlowWatcherFromPerson(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateFlowWatcherFromPerson):
+        if not isinstance(other, LCreateFlowWatcherFromPerson):
             return False
 
         return self.__dict__ == other.__dict__

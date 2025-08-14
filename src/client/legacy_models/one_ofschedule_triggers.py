@@ -33,7 +33,7 @@ class LOneOfscheduleTriggers(object):
     }
 
     def __init__(self):  # noqa: E501
-        """OneOfscheduleTriggers - a model defined in Swagger"""  # noqa: E501
+        """LOneOfscheduleTriggers - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LOneOfscheduleTriggers(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OneOfscheduleTriggers, dict):
+        if issubclass(LOneOfscheduleTriggers, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LOneOfscheduleTriggers(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OneOfscheduleTriggers):
+        if not isinstance(other, LOneOfscheduleTriggers):
             return False
 
         return self.__dict__ == other.__dict__

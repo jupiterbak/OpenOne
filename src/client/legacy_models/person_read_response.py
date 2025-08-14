@@ -31,13 +31,13 @@ class LPersonReadResponse(object):
         'is_disabled': 'bool',
         'state': 'str',
         'validate_export_compliance': 'bool',
-        'id': 'AnyOfpersonReadResponseId',
+        'id': 'LAnyOfpersonReadResponseId',
         'output_home_dir': 'str',
         'upload_dir': 'str',
         'last_login_time': 'datetime',
         'last_state_change': 'datetime',
-        'maximal_privileges': 'list[Privilege]',
-        'maximal_capabilities': 'MaximalCapabilitiesInfo'
+        'maximal_privileges': 'list[LPrivilege]',
+        'maximal_capabilities': 'LMaximalCapabilitiesInfo'
     }
 
     attribute_map = {
@@ -55,7 +55,7 @@ class LPersonReadResponse(object):
     }
 
     def __init__(self, email=None, is_disabled=None, state=None, validate_export_compliance=None, id=None, output_home_dir=None, upload_dir=None, last_login_time=None, last_state_change=None, maximal_privileges=None, maximal_capabilities=None):  # noqa: E501
-        """PersonReadResponse - a model defined in Swagger"""  # noqa: E501
+        """LPersonReadResponse - a model defined in Swagger"""  # noqa: E501
         self._email = None
         self._is_disabled = None
         self._state = None
@@ -92,20 +92,20 @@ class LPersonReadResponse(object):
 
     @property
     def email(self):
-        """Gets the email of this PersonReadResponse.  # noqa: E501
+        """Gets the email of this LPersonReadResponse.  # noqa: E501
 
 
-        :return: The email of this PersonReadResponse.  # noqa: E501
+        :return: The email of this LPersonReadResponse.  # noqa: E501
         :rtype: str
         """
         return self._email
 
     @email.setter
     def email(self, email):
-        """Sets the email of this PersonReadResponse.
+        """Sets the email of this LPersonReadResponse.
 
 
-        :param email: The email of this PersonReadResponse.  # noqa: E501
+        :param email: The email of this LPersonReadResponse.  # noqa: E501
         :type: str
         """
 
@@ -113,22 +113,22 @@ class LPersonReadResponse(object):
 
     @property
     def is_disabled(self):
-        """Gets the is_disabled of this PersonReadResponse.  # noqa: E501
+        """Gets the is_disabled of this LPersonReadResponse.  # noqa: E501
 
         If true, the account is disabled. This property can only be changed by an admin account.  # noqa: E501
 
-        :return: The is_disabled of this PersonReadResponse.  # noqa: E501
+        :return: The is_disabled of this LPersonReadResponse.  # noqa: E501
         :rtype: bool
         """
         return self._is_disabled
 
     @is_disabled.setter
     def is_disabled(self, is_disabled):
-        """Sets the is_disabled of this PersonReadResponse.
+        """Sets the is_disabled of this LPersonReadResponse.
 
         If true, the account is disabled. This property can only be changed by an admin account.  # noqa: E501
 
-        :param is_disabled: The is_disabled of this PersonReadResponse.  # noqa: E501
+        :param is_disabled: The is_disabled of this LPersonReadResponse.  # noqa: E501
         :type: bool
         """
 
@@ -136,22 +136,22 @@ class LPersonReadResponse(object):
 
     @property
     def state(self):
-        """Gets the state of this PersonReadResponse.  # noqa: E501
+        """Gets the state of this LPersonReadResponse.  # noqa: E501
 
         Current state of the user account. This property can only be changed by an admin account. * `active` - User is active and usable in the workspace * `hidden` - User cannot access the workspace. User's data remains.  # noqa: E501
 
-        :return: The state of this PersonReadResponse.  # noqa: E501
+        :return: The state of this LPersonReadResponse.  # noqa: E501
         :rtype: str
         """
         return self._state
 
     @state.setter
     def state(self, state):
-        """Sets the state of this PersonReadResponse.
+        """Sets the state of this LPersonReadResponse.
 
         Current state of the user account. This property can only be changed by an admin account. * `active` - User is active and usable in the workspace * `hidden` - User cannot access the workspace. User's data remains.  # noqa: E501
 
-        :param state: The state of this PersonReadResponse.  # noqa: E501
+        :param state: The state of this LPersonReadResponse.  # noqa: E501
         :type: str
         """
         allowed_values = ["active", "hidden"]  # noqa: E501
@@ -165,22 +165,22 @@ class LPersonReadResponse(object):
 
     @property
     def validate_export_compliance(self):
-        """Gets the validate_export_compliance of this PersonReadResponse.  # noqa: E501
+        """Gets the validate_export_compliance of this LPersonReadResponse.  # noqa: E501
 
         When true, the user is subject to an export compliance check when they register.  # noqa: E501
 
-        :return: The validate_export_compliance of this PersonReadResponse.  # noqa: E501
+        :return: The validate_export_compliance of this LPersonReadResponse.  # noqa: E501
         :rtype: bool
         """
         return self._validate_export_compliance
 
     @validate_export_compliance.setter
     def validate_export_compliance(self, validate_export_compliance):
-        """Sets the validate_export_compliance of this PersonReadResponse.
+        """Sets the validate_export_compliance of this LPersonReadResponse.
 
         When true, the user is subject to an export compliance check when they register.  # noqa: E501
 
-        :param validate_export_compliance: The validate_export_compliance of this PersonReadResponse.  # noqa: E501
+        :param validate_export_compliance: The validate_export_compliance of this LPersonReadResponse.  # noqa: E501
         :type: bool
         """
 
@@ -188,21 +188,21 @@ class LPersonReadResponse(object):
 
     @property
     def id(self):
-        """Gets the id of this PersonReadResponse.  # noqa: E501
+        """Gets the id of this LPersonReadResponse.  # noqa: E501
 
 
-        :return: The id of this PersonReadResponse.  # noqa: E501
-        :rtype: AnyOfpersonReadResponseId
+        :return: The id of this LPersonReadResponse.  # noqa: E501
+        :rtype: LAnyOfpersonReadResponseId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PersonReadResponse.
+        """Sets the id of this LPersonReadResponse.
 
 
-        :param id: The id of this PersonReadResponse.  # noqa: E501
-        :type: AnyOfpersonReadResponseId
+        :param id: The id of this LPersonReadResponse.  # noqa: E501
+        :type: LAnyOfpersonReadResponseId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -211,22 +211,22 @@ class LPersonReadResponse(object):
 
     @property
     def output_home_dir(self):
-        """Gets the output_home_dir of this PersonReadResponse.  # noqa: E501
+        """Gets the output_home_dir of this LPersonReadResponse.  # noqa: E501
 
         Home directory where the user's generated results are written  # noqa: E501
 
-        :return: The output_home_dir of this PersonReadResponse.  # noqa: E501
+        :return: The output_home_dir of this LPersonReadResponse.  # noqa: E501
         :rtype: str
         """
         return self._output_home_dir
 
     @output_home_dir.setter
     def output_home_dir(self, output_home_dir):
-        """Sets the output_home_dir of this PersonReadResponse.
+        """Sets the output_home_dir of this LPersonReadResponse.
 
         Home directory where the user's generated results are written  # noqa: E501
 
-        :param output_home_dir: The output_home_dir of this PersonReadResponse.  # noqa: E501
+        :param output_home_dir: The output_home_dir of this LPersonReadResponse.  # noqa: E501
         :type: str
         """
 
@@ -234,22 +234,22 @@ class LPersonReadResponse(object):
 
     @property
     def upload_dir(self):
-        """Gets the upload_dir of this PersonReadResponse.  # noqa: E501
+        """Gets the upload_dir of this LPersonReadResponse.  # noqa: E501
 
         Path on backend datastore where files uploaded from the user's desktop are stored for use as imported datasets.  # noqa: E501
 
-        :return: The upload_dir of this PersonReadResponse.  # noqa: E501
+        :return: The upload_dir of this LPersonReadResponse.  # noqa: E501
         :rtype: str
         """
         return self._upload_dir
 
     @upload_dir.setter
     def upload_dir(self, upload_dir):
-        """Sets the upload_dir of this PersonReadResponse.
+        """Sets the upload_dir of this LPersonReadResponse.
 
         Path on backend datastore where files uploaded from the user's desktop are stored for use as imported datasets.  # noqa: E501
 
-        :param upload_dir: The upload_dir of this PersonReadResponse.  # noqa: E501
+        :param upload_dir: The upload_dir of this LPersonReadResponse.  # noqa: E501
         :type: str
         """
 
@@ -257,22 +257,22 @@ class LPersonReadResponse(object):
 
     @property
     def last_login_time(self):
-        """Gets the last_login_time of this PersonReadResponse.  # noqa: E501
+        """Gets the last_login_time of this LPersonReadResponse.  # noqa: E501
 
         Timestamp for when the user last logged in to the product.  # noqa: E501
 
-        :return: The last_login_time of this PersonReadResponse.  # noqa: E501
+        :return: The last_login_time of this LPersonReadResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._last_login_time
 
     @last_login_time.setter
     def last_login_time(self, last_login_time):
-        """Sets the last_login_time of this PersonReadResponse.
+        """Sets the last_login_time of this LPersonReadResponse.
 
         Timestamp for when the user last logged in to the product.  # noqa: E501
 
-        :param last_login_time: The last_login_time of this PersonReadResponse.  # noqa: E501
+        :param last_login_time: The last_login_time of this LPersonReadResponse.  # noqa: E501
         :type: datetime
         """
 
@@ -280,22 +280,22 @@ class LPersonReadResponse(object):
 
     @property
     def last_state_change(self):
-        """Gets the last_state_change of this PersonReadResponse.  # noqa: E501
+        """Gets the last_state_change of this LPersonReadResponse.  # noqa: E501
 
         Timestamp for when the value of the state parameter was changed.  # noqa: E501
 
-        :return: The last_state_change of this PersonReadResponse.  # noqa: E501
+        :return: The last_state_change of this LPersonReadResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._last_state_change
 
     @last_state_change.setter
     def last_state_change(self, last_state_change):
-        """Sets the last_state_change of this PersonReadResponse.
+        """Sets the last_state_change of this LPersonReadResponse.
 
         Timestamp for when the value of the state parameter was changed.  # noqa: E501
 
-        :param last_state_change: The last_state_change of this PersonReadResponse.  # noqa: E501
+        :param last_state_change: The last_state_change of this LPersonReadResponse.  # noqa: E501
         :type: datetime
         """
 
@@ -303,44 +303,44 @@ class LPersonReadResponse(object):
 
     @property
     def maximal_privileges(self):
-        """Gets the maximal_privileges of this PersonReadResponse.  # noqa: E501
+        """Gets the maximal_privileges of this LPersonReadResponse.  # noqa: E501
 
         List of the maximal privileges that this subject possesses  # noqa: E501
 
-        :return: The maximal_privileges of this PersonReadResponse.  # noqa: E501
-        :rtype: list[Privilege]
+        :return: The maximal_privileges of this LPersonReadResponse.  # noqa: E501
+        :rtype: list[LPrivilege]
         """
         return self._maximal_privileges
 
     @maximal_privileges.setter
     def maximal_privileges(self, maximal_privileges):
-        """Sets the maximal_privileges of this PersonReadResponse.
+        """Sets the maximal_privileges of this LPersonReadResponse.
 
         List of the maximal privileges that this subject possesses  # noqa: E501
 
-        :param maximal_privileges: The maximal_privileges of this PersonReadResponse.  # noqa: E501
-        :type: list[Privilege]
+        :param maximal_privileges: The maximal_privileges of this LPersonReadResponse.  # noqa: E501
+        :type: list[LPrivilege]
         """
 
         self._maximal_privileges = maximal_privileges
 
     @property
     def maximal_capabilities(self):
-        """Gets the maximal_capabilities of this PersonReadResponse.  # noqa: E501
+        """Gets the maximal_capabilities of this LPersonReadResponse.  # noqa: E501
 
 
-        :return: The maximal_capabilities of this PersonReadResponse.  # noqa: E501
-        :rtype: MaximalCapabilitiesInfo
+        :return: The maximal_capabilities of this LPersonReadResponse.  # noqa: E501
+        :rtype: LMaximalCapabilitiesInfo
         """
         return self._maximal_capabilities
 
     @maximal_capabilities.setter
     def maximal_capabilities(self, maximal_capabilities):
-        """Sets the maximal_capabilities of this PersonReadResponse.
+        """Sets the maximal_capabilities of this LPersonReadResponse.
 
 
-        :param maximal_capabilities: The maximal_capabilities of this PersonReadResponse.  # noqa: E501
-        :type: MaximalCapabilitiesInfo
+        :param maximal_capabilities: The maximal_capabilities of this LPersonReadResponse.  # noqa: E501
+        :type: LMaximalCapabilitiesInfo
         """
 
         self._maximal_capabilities = maximal_capabilities
@@ -366,7 +366,7 @@ class LPersonReadResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PersonReadResponse, dict):
+        if issubclass(LPersonReadResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -382,7 +382,7 @@ class LPersonReadResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PersonReadResponse):
+        if not isinstance(other, LPersonReadResponse):
             return False
 
         return self.__dict__ == other.__dict__

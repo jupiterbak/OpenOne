@@ -47,7 +47,7 @@ class LCountOrUsageMetrics(object):
     }
 
     def __init__(self, usage=None, limit=None, remaining=None, unit=None, from_time=None, to_time=None, approaching_threshold=None):  # noqa: E501
-        """CountOrUsageMetrics - a model defined in Swagger"""  # noqa: E501
+        """LCountOrUsageMetrics - a model defined in Swagger"""  # noqa: E501
         self._usage = None
         self._limit = None
         self._remaining = None
@@ -70,20 +70,20 @@ class LCountOrUsageMetrics(object):
 
     @property
     def usage(self):
-        """Gets the usage of this CountOrUsageMetrics.  # noqa: E501
+        """Gets the usage of this LCountOrUsageMetrics.  # noqa: E501
 
 
-        :return: The usage of this CountOrUsageMetrics.  # noqa: E501
+        :return: The usage of this LCountOrUsageMetrics.  # noqa: E501
         :rtype: int
         """
         return self._usage
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this CountOrUsageMetrics.
+        """Sets the usage of this LCountOrUsageMetrics.
 
 
-        :param usage: The usage of this CountOrUsageMetrics.  # noqa: E501
+        :param usage: The usage of this LCountOrUsageMetrics.  # noqa: E501
         :type: int
         """
         if usage is None:
@@ -93,20 +93,20 @@ class LCountOrUsageMetrics(object):
 
     @property
     def limit(self):
-        """Gets the limit of this CountOrUsageMetrics.  # noqa: E501
+        """Gets the limit of this LCountOrUsageMetrics.  # noqa: E501
 
 
-        :return: The limit of this CountOrUsageMetrics.  # noqa: E501
+        :return: The limit of this LCountOrUsageMetrics.  # noqa: E501
         :rtype: int
         """
         return self._limit
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this CountOrUsageMetrics.
+        """Sets the limit of this LCountOrUsageMetrics.
 
 
-        :param limit: The limit of this CountOrUsageMetrics.  # noqa: E501
+        :param limit: The limit of this LCountOrUsageMetrics.  # noqa: E501
         :type: int
         """
         if limit is None:
@@ -116,20 +116,20 @@ class LCountOrUsageMetrics(object):
 
     @property
     def remaining(self):
-        """Gets the remaining of this CountOrUsageMetrics.  # noqa: E501
+        """Gets the remaining of this LCountOrUsageMetrics.  # noqa: E501
 
 
-        :return: The remaining of this CountOrUsageMetrics.  # noqa: E501
+        :return: The remaining of this LCountOrUsageMetrics.  # noqa: E501
         :rtype: int
         """
         return self._remaining
 
     @remaining.setter
     def remaining(self, remaining):
-        """Sets the remaining of this CountOrUsageMetrics.
+        """Sets the remaining of this LCountOrUsageMetrics.
 
 
-        :param remaining: The remaining of this CountOrUsageMetrics.  # noqa: E501
+        :param remaining: The remaining of this LCountOrUsageMetrics.  # noqa: E501
         :type: int
         """
         if remaining is None:
@@ -139,22 +139,22 @@ class LCountOrUsageMetrics(object):
 
     @property
     def unit(self):
-        """Gets the unit of this CountOrUsageMetrics.  # noqa: E501
+        """Gets the unit of this LCountOrUsageMetrics.  # noqa: E501
 
         The unit measurement of the quota amount  # noqa: E501
 
-        :return: The unit of this CountOrUsageMetrics.  # noqa: E501
+        :return: The unit of this LCountOrUsageMetrics.  # noqa: E501
         :rtype: str
         """
         return self._unit
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this CountOrUsageMetrics.
+        """Sets the unit of this LCountOrUsageMetrics.
 
         The unit measurement of the quota amount  # noqa: E501
 
-        :param unit: The unit of this CountOrUsageMetrics.  # noqa: E501
+        :param unit: The unit of this LCountOrUsageMetrics.  # noqa: E501
         :type: str
         """
         allowed_values = ["seconds", "bytes", "N/A"]  # noqa: E501
@@ -168,22 +168,22 @@ class LCountOrUsageMetrics(object):
 
     @property
     def from_time(self):
-        """Gets the from_time of this CountOrUsageMetrics.  # noqa: E501
+        """Gets the from_time of this LCountOrUsageMetrics.  # noqa: E501
 
         The unix timestamp at which to start calculating usage  # noqa: E501
 
-        :return: The from_time of this CountOrUsageMetrics.  # noqa: E501
+        :return: The from_time of this LCountOrUsageMetrics.  # noqa: E501
         :rtype: int
         """
         return self._from_time
 
     @from_time.setter
     def from_time(self, from_time):
-        """Sets the from_time of this CountOrUsageMetrics.
+        """Sets the from_time of this LCountOrUsageMetrics.
 
         The unix timestamp at which to start calculating usage  # noqa: E501
 
-        :param from_time: The from_time of this CountOrUsageMetrics.  # noqa: E501
+        :param from_time: The from_time of this LCountOrUsageMetrics.  # noqa: E501
         :type: int
         """
 
@@ -191,22 +191,22 @@ class LCountOrUsageMetrics(object):
 
     @property
     def to_time(self):
-        """Gets the to_time of this CountOrUsageMetrics.  # noqa: E501
+        """Gets the to_time of this LCountOrUsageMetrics.  # noqa: E501
 
         The unix timestamp at which to stop calculating usage  # noqa: E501
 
-        :return: The to_time of this CountOrUsageMetrics.  # noqa: E501
+        :return: The to_time of this LCountOrUsageMetrics.  # noqa: E501
         :rtype: int
         """
         return self._to_time
 
     @to_time.setter
     def to_time(self, to_time):
-        """Sets the to_time of this CountOrUsageMetrics.
+        """Sets the to_time of this LCountOrUsageMetrics.
 
         The unix timestamp at which to stop calculating usage  # noqa: E501
 
-        :param to_time: The to_time of this CountOrUsageMetrics.  # noqa: E501
+        :param to_time: The to_time of this LCountOrUsageMetrics.  # noqa: E501
         :type: int
         """
 
@@ -214,20 +214,20 @@ class LCountOrUsageMetrics(object):
 
     @property
     def approaching_threshold(self):
-        """Gets the approaching_threshold of this CountOrUsageMetrics.  # noqa: E501
+        """Gets the approaching_threshold of this LCountOrUsageMetrics.  # noqa: E501
 
 
-        :return: The approaching_threshold of this CountOrUsageMetrics.  # noqa: E501
+        :return: The approaching_threshold of this LCountOrUsageMetrics.  # noqa: E501
         :rtype: bool
         """
         return self._approaching_threshold
 
     @approaching_threshold.setter
     def approaching_threshold(self, approaching_threshold):
-        """Sets the approaching_threshold of this CountOrUsageMetrics.
+        """Sets the approaching_threshold of this LCountOrUsageMetrics.
 
 
-        :param approaching_threshold: The approaching_threshold of this CountOrUsageMetrics.  # noqa: E501
+        :param approaching_threshold: The approaching_threshold of this LCountOrUsageMetrics.  # noqa: E501
         :type: bool
         """
 
@@ -254,7 +254,7 @@ class LCountOrUsageMetrics(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(CountOrUsageMetrics, dict):
+        if issubclass(LCountOrUsageMetrics, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -270,7 +270,7 @@ class LCountOrUsageMetrics(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CountOrUsageMetrics):
+        if not isinstance(other, LCountOrUsageMetrics):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,9 +27,9 @@ class LImportPlanDataRequest(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'package_contents': 'ImportPlanPackageRequestZip',
-        'environment_parameter_mapping': 'list[EnvironmentParameterMapping]',
-        'connection_id_mapping': 'list[ConnectionIdMapping]'
+        'package_contents': 'LImportPlanPackageRequestZip',
+        'environment_parameter_mapping': 'list[LEnvironmentParameterMapping]',
+        'connection_id_mapping': 'list[LConnectionIdMapping]'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class LImportPlanDataRequest(object):
     }
 
     def __init__(self, package_contents=None, environment_parameter_mapping=None, connection_id_mapping=None):  # noqa: E501
-        """ImportPlanDataRequest - a model defined in Swagger"""  # noqa: E501
+        """LImportPlanDataRequest - a model defined in Swagger"""  # noqa: E501
         self._package_contents = None
         self._environment_parameter_mapping = None
         self._connection_id_mapping = None
@@ -52,21 +52,21 @@ class LImportPlanDataRequest(object):
 
     @property
     def package_contents(self):
-        """Gets the package_contents of this ImportPlanDataRequest.  # noqa: E501
+        """Gets the package_contents of this LImportPlanDataRequest.  # noqa: E501
 
 
-        :return: The package_contents of this ImportPlanDataRequest.  # noqa: E501
-        :rtype: ImportPlanPackageRequestZip
+        :return: The package_contents of this LImportPlanDataRequest.  # noqa: E501
+        :rtype: LImportPlanPackageRequestZip
         """
         return self._package_contents
 
     @package_contents.setter
     def package_contents(self, package_contents):
-        """Sets the package_contents of this ImportPlanDataRequest.
+        """Sets the package_contents of this LImportPlanDataRequest.
 
 
-        :param package_contents: The package_contents of this ImportPlanDataRequest.  # noqa: E501
-        :type: ImportPlanPackageRequestZip
+        :param package_contents: The package_contents of this LImportPlanDataRequest.  # noqa: E501
+        :type: LImportPlanPackageRequestZip
         """
         if package_contents is None:
             raise ValueError("Invalid value for `package_contents`, must not be `None`")  # noqa: E501
@@ -75,42 +75,42 @@ class LImportPlanDataRequest(object):
 
     @property
     def environment_parameter_mapping(self):
-        """Gets the environment_parameter_mapping of this ImportPlanDataRequest.  # noqa: E501
+        """Gets the environment_parameter_mapping of this LImportPlanDataRequest.  # noqa: E501
 
 
-        :return: The environment_parameter_mapping of this ImportPlanDataRequest.  # noqa: E501
-        :rtype: list[EnvironmentParameterMapping]
+        :return: The environment_parameter_mapping of this LImportPlanDataRequest.  # noqa: E501
+        :rtype: list[LEnvironmentParameterMapping]
         """
         return self._environment_parameter_mapping
 
     @environment_parameter_mapping.setter
     def environment_parameter_mapping(self, environment_parameter_mapping):
-        """Sets the environment_parameter_mapping of this ImportPlanDataRequest.
+        """Sets the environment_parameter_mapping of this LImportPlanDataRequest.
 
 
-        :param environment_parameter_mapping: The environment_parameter_mapping of this ImportPlanDataRequest.  # noqa: E501
-        :type: list[EnvironmentParameterMapping]
+        :param environment_parameter_mapping: The environment_parameter_mapping of this LImportPlanDataRequest.  # noqa: E501
+        :type: list[LEnvironmentParameterMapping]
         """
 
         self._environment_parameter_mapping = environment_parameter_mapping
 
     @property
     def connection_id_mapping(self):
-        """Gets the connection_id_mapping of this ImportPlanDataRequest.  # noqa: E501
+        """Gets the connection_id_mapping of this LImportPlanDataRequest.  # noqa: E501
 
 
-        :return: The connection_id_mapping of this ImportPlanDataRequest.  # noqa: E501
-        :rtype: list[ConnectionIdMapping]
+        :return: The connection_id_mapping of this LImportPlanDataRequest.  # noqa: E501
+        :rtype: list[LConnectionIdMapping]
         """
         return self._connection_id_mapping
 
     @connection_id_mapping.setter
     def connection_id_mapping(self, connection_id_mapping):
-        """Sets the connection_id_mapping of this ImportPlanDataRequest.
+        """Sets the connection_id_mapping of this LImportPlanDataRequest.
 
 
-        :param connection_id_mapping: The connection_id_mapping of this ImportPlanDataRequest.  # noqa: E501
-        :type: list[ConnectionIdMapping]
+        :param connection_id_mapping: The connection_id_mapping of this LImportPlanDataRequest.  # noqa: E501
+        :type: list[LConnectionIdMapping]
         """
 
         self._connection_id_mapping = connection_id_mapping
@@ -136,7 +136,7 @@ class LImportPlanDataRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ImportPlanDataRequest, dict):
+        if issubclass(LImportPlanDataRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -152,7 +152,7 @@ class LImportPlanDataRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImportPlanDataRequest):
+        if not isinstance(other, LImportPlanDataRequest):
             return False
 
         return self.__dict__ == other.__dict__

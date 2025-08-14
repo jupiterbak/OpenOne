@@ -37,7 +37,7 @@ class LArtifactStagingJob(object):
     }
 
     def __init__(self, artifact=None, id=None):  # noqa: E501
-        """ArtifactStagingJob - a model defined in Swagger"""  # noqa: E501
+        """LArtifactStagingJob - a model defined in Swagger"""  # noqa: E501
         self._artifact = None
         self._id = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LArtifactStagingJob(object):
 
     @property
     def artifact(self):
-        """Gets the artifact of this ArtifactStagingJob.  # noqa: E501
+        """Gets the artifact of this LArtifactStagingJob.  # noqa: E501
 
 
-        :return: The artifact of this ArtifactStagingJob.  # noqa: E501
+        :return: The artifact of this LArtifactStagingJob.  # noqa: E501
         :rtype: object
         """
         return self._artifact
 
     @artifact.setter
     def artifact(self, artifact):
-        """Sets the artifact of this ArtifactStagingJob.
+        """Sets the artifact of this LArtifactStagingJob.
 
 
-        :param artifact: The artifact of this ArtifactStagingJob.  # noqa: E501
+        :param artifact: The artifact of this LArtifactStagingJob.  # noqa: E501
         :type: object
         """
         if artifact is None:
@@ -69,22 +69,22 @@ class LArtifactStagingJob(object):
 
     @property
     def id(self):
-        """Gets the id of this ArtifactStagingJob.  # noqa: E501
+        """Gets the id of this LArtifactStagingJob.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this ArtifactStagingJob.  # noqa: E501
+        :return: The id of this LArtifactStagingJob.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ArtifactStagingJob.
+        """Sets the id of this LArtifactStagingJob.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this ArtifactStagingJob.  # noqa: E501
+        :param id: The id of this LArtifactStagingJob.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -113,7 +113,7 @@ class LArtifactStagingJob(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ArtifactStagingJob, dict):
+        if issubclass(LArtifactStagingJob, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LArtifactStagingJob(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ArtifactStagingJob):
+        if not isinstance(other, LArtifactStagingJob):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,7 +27,7 @@ class LOutputHomeDirOption(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'output_home_dir': 'UserPreference'
+        'output_home_dir': 'LUserPreference'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LOutputHomeDirOption(object):
     }
 
     def __init__(self, output_home_dir=None):  # noqa: E501
-        """OutputHomeDirOption - a model defined in Swagger"""  # noqa: E501
+        """LOutputHomeDirOption - a model defined in Swagger"""  # noqa: E501
         self._output_home_dir = None
         self.discriminator = None
         self.output_home_dir = output_home_dir
 
     @property
     def output_home_dir(self):
-        """Gets the output_home_dir of this OutputHomeDirOption.  # noqa: E501
+        """Gets the output_home_dir of this LOutputHomeDirOption.  # noqa: E501
 
 
-        :return: The output_home_dir of this OutputHomeDirOption.  # noqa: E501
-        :rtype: UserPreference
+        :return: The output_home_dir of this LOutputHomeDirOption.  # noqa: E501
+        :rtype: LUserPreference
         """
         return self._output_home_dir
 
     @output_home_dir.setter
     def output_home_dir(self, output_home_dir):
-        """Sets the output_home_dir of this OutputHomeDirOption.
+        """Sets the output_home_dir of this LOutputHomeDirOption.
 
 
-        :param output_home_dir: The output_home_dir of this OutputHomeDirOption.  # noqa: E501
-        :type: UserPreference
+        :param output_home_dir: The output_home_dir of this LOutputHomeDirOption.  # noqa: E501
+        :type: LUserPreference
         """
         if output_home_dir is None:
             raise ValueError("Invalid value for `output_home_dir`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LOutputHomeDirOption(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OutputHomeDirOption, dict):
+        if issubclass(LOutputHomeDirOption, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LOutputHomeDirOption(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OutputHomeDirOption):
+        if not isinstance(other, LOutputHomeDirOption):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,7 +27,7 @@ class LConnectionList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[Connection]',
+        'data': 'list[LConnection]',
         'count': 'int'
     }
 
@@ -37,7 +37,7 @@ class LConnectionList(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """ConnectionList - a model defined in Swagger"""  # noqa: E501
+        """LConnectionList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LConnectionList(object):
 
     @property
     def data(self):
-        """Gets the data of this ConnectionList.  # noqa: E501
+        """Gets the data of this LConnectionList.  # noqa: E501
 
 
-        :return: The data of this ConnectionList.  # noqa: E501
-        :rtype: list[Connection]
+        :return: The data of this LConnectionList.  # noqa: E501
+        :rtype: list[LConnection]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ConnectionList.
+        """Sets the data of this LConnectionList.
 
 
-        :param data: The data of this ConnectionList.  # noqa: E501
-        :type: list[Connection]
+        :param data: The data of this LConnectionList.  # noqa: E501
+        :type: list[LConnection]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LConnectionList(object):
 
     @property
     def count(self):
-        """Gets the count of this ConnectionList.  # noqa: E501
+        """Gets the count of this LConnectionList.  # noqa: E501
 
 
-        :return: The count of this ConnectionList.  # noqa: E501
+        :return: The count of this LConnectionList.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ConnectionList.
+        """Sets the count of this LConnectionList.
 
 
-        :param count: The count of this ConnectionList.  # noqa: E501
+        :param count: The count of this LConnectionList.  # noqa: E501
         :type: int
         """
 
@@ -110,7 +110,7 @@ class LConnectionList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConnectionList, dict):
+        if issubclass(LConnectionList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LConnectionList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConnectionList):
+        if not isinstance(other, LConnectionList):
             return False
 
         return self.__dict__ == other.__dict__

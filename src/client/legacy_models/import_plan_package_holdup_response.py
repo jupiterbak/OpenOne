@@ -27,7 +27,7 @@ class LImportPlanPackageHoldupResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'package_contents': 'ImportPlanPackageRequestZip',
+        'package_contents': 'LImportPlanPackageRequestZip',
         'referenced_environment_parameters': 'list[object]',
         'connections_without_mapping': 'list[object]'
     }
@@ -39,7 +39,7 @@ class LImportPlanPackageHoldupResponse(object):
     }
 
     def __init__(self, package_contents=None, referenced_environment_parameters=None, connections_without_mapping=None):  # noqa: E501
-        """ImportPlanPackageHoldupResponse - a model defined in Swagger"""  # noqa: E501
+        """LImportPlanPackageHoldupResponse - a model defined in Swagger"""  # noqa: E501
         self._package_contents = None
         self._referenced_environment_parameters = None
         self._connections_without_mapping = None
@@ -52,21 +52,21 @@ class LImportPlanPackageHoldupResponse(object):
 
     @property
     def package_contents(self):
-        """Gets the package_contents of this ImportPlanPackageHoldupResponse.  # noqa: E501
+        """Gets the package_contents of this LImportPlanPackageHoldupResponse.  # noqa: E501
 
 
-        :return: The package_contents of this ImportPlanPackageHoldupResponse.  # noqa: E501
-        :rtype: ImportPlanPackageRequestZip
+        :return: The package_contents of this LImportPlanPackageHoldupResponse.  # noqa: E501
+        :rtype: LImportPlanPackageRequestZip
         """
         return self._package_contents
 
     @package_contents.setter
     def package_contents(self, package_contents):
-        """Sets the package_contents of this ImportPlanPackageHoldupResponse.
+        """Sets the package_contents of this LImportPlanPackageHoldupResponse.
 
 
-        :param package_contents: The package_contents of this ImportPlanPackageHoldupResponse.  # noqa: E501
-        :type: ImportPlanPackageRequestZip
+        :param package_contents: The package_contents of this LImportPlanPackageHoldupResponse.  # noqa: E501
+        :type: LImportPlanPackageRequestZip
         """
         if package_contents is None:
             raise ValueError("Invalid value for `package_contents`, must not be `None`")  # noqa: E501
@@ -75,20 +75,20 @@ class LImportPlanPackageHoldupResponse(object):
 
     @property
     def referenced_environment_parameters(self):
-        """Gets the referenced_environment_parameters of this ImportPlanPackageHoldupResponse.  # noqa: E501
+        """Gets the referenced_environment_parameters of this LImportPlanPackageHoldupResponse.  # noqa: E501
 
 
-        :return: The referenced_environment_parameters of this ImportPlanPackageHoldupResponse.  # noqa: E501
+        :return: The referenced_environment_parameters of this LImportPlanPackageHoldupResponse.  # noqa: E501
         :rtype: list[object]
         """
         return self._referenced_environment_parameters
 
     @referenced_environment_parameters.setter
     def referenced_environment_parameters(self, referenced_environment_parameters):
-        """Sets the referenced_environment_parameters of this ImportPlanPackageHoldupResponse.
+        """Sets the referenced_environment_parameters of this LImportPlanPackageHoldupResponse.
 
 
-        :param referenced_environment_parameters: The referenced_environment_parameters of this ImportPlanPackageHoldupResponse.  # noqa: E501
+        :param referenced_environment_parameters: The referenced_environment_parameters of this LImportPlanPackageHoldupResponse.  # noqa: E501
         :type: list[object]
         """
 
@@ -96,20 +96,20 @@ class LImportPlanPackageHoldupResponse(object):
 
     @property
     def connections_without_mapping(self):
-        """Gets the connections_without_mapping of this ImportPlanPackageHoldupResponse.  # noqa: E501
+        """Gets the connections_without_mapping of this LImportPlanPackageHoldupResponse.  # noqa: E501
 
 
-        :return: The connections_without_mapping of this ImportPlanPackageHoldupResponse.  # noqa: E501
+        :return: The connections_without_mapping of this LImportPlanPackageHoldupResponse.  # noqa: E501
         :rtype: list[object]
         """
         return self._connections_without_mapping
 
     @connections_without_mapping.setter
     def connections_without_mapping(self, connections_without_mapping):
-        """Sets the connections_without_mapping of this ImportPlanPackageHoldupResponse.
+        """Sets the connections_without_mapping of this LImportPlanPackageHoldupResponse.
 
 
-        :param connections_without_mapping: The connections_without_mapping of this ImportPlanPackageHoldupResponse.  # noqa: E501
+        :param connections_without_mapping: The connections_without_mapping of this LImportPlanPackageHoldupResponse.  # noqa: E501
         :type: list[object]
         """
 
@@ -136,7 +136,7 @@ class LImportPlanPackageHoldupResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ImportPlanPackageHoldupResponse, dict):
+        if issubclass(LImportPlanPackageHoldupResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -152,7 +152,7 @@ class LImportPlanPackageHoldupResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImportPlanPackageHoldupResponse):
+        if not isinstance(other, LImportPlanPackageHoldupResponse):
             return False
 
         return self.__dict__ == other.__dict__

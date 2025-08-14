@@ -28,7 +28,7 @@ class LViewState(object):
     """
     swagger_types = {
         'recipe': 'object',
-        'id': 'AnyOfviewStateId',
+        'id': 'LAnyOfviewStateId',
         'created_at': 'datetime',
         'updated_at': 'datetime'
     }
@@ -41,7 +41,7 @@ class LViewState(object):
     }
 
     def __init__(self, recipe=None, id=None, created_at=None, updated_at=None):  # noqa: E501
-        """ViewState - a model defined in Swagger"""  # noqa: E501
+        """LViewState - a model defined in Swagger"""  # noqa: E501
         self._recipe = None
         self._id = None
         self._created_at = None
@@ -56,20 +56,20 @@ class LViewState(object):
 
     @property
     def recipe(self):
-        """Gets the recipe of this ViewState.  # noqa: E501
+        """Gets the recipe of this LViewState.  # noqa: E501
 
 
-        :return: The recipe of this ViewState.  # noqa: E501
+        :return: The recipe of this LViewState.  # noqa: E501
         :rtype: object
         """
         return self._recipe
 
     @recipe.setter
     def recipe(self, recipe):
-        """Sets the recipe of this ViewState.
+        """Sets the recipe of this LViewState.
 
 
-        :param recipe: The recipe of this ViewState.  # noqa: E501
+        :param recipe: The recipe of this LViewState.  # noqa: E501
         :type: object
         """
         if recipe is None:
@@ -79,21 +79,21 @@ class LViewState(object):
 
     @property
     def id(self):
-        """Gets the id of this ViewState.  # noqa: E501
+        """Gets the id of this LViewState.  # noqa: E501
 
 
-        :return: The id of this ViewState.  # noqa: E501
-        :rtype: AnyOfviewStateId
+        :return: The id of this LViewState.  # noqa: E501
+        :rtype: LAnyOfviewStateId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ViewState.
+        """Sets the id of this LViewState.
 
 
-        :param id: The id of this ViewState.  # noqa: E501
-        :type: AnyOfviewStateId
+        :param id: The id of this LViewState.  # noqa: E501
+        :type: LAnyOfviewStateId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -102,22 +102,22 @@ class LViewState(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ViewState.  # noqa: E501
+        """Gets the created_at of this LViewState.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this ViewState.  # noqa: E501
+        :return: The created_at of this LViewState.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ViewState.
+        """Sets the created_at of this LViewState.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this ViewState.  # noqa: E501
+        :param created_at: The created_at of this LViewState.  # noqa: E501
         :type: datetime
         """
 
@@ -125,22 +125,22 @@ class LViewState(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ViewState.  # noqa: E501
+        """Gets the updated_at of this LViewState.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this ViewState.  # noqa: E501
+        :return: The updated_at of this LViewState.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ViewState.
+        """Sets the updated_at of this LViewState.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this ViewState.  # noqa: E501
+        :param updated_at: The updated_at of this LViewState.  # noqa: E501
         :type: datetime
         """
 
@@ -167,7 +167,7 @@ class LViewState(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ViewState, dict):
+        if issubclass(LViewState, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -183,7 +183,7 @@ class LViewState(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ViewState):
+        if not isinstance(other, LViewState):
             return False
 
         return self.__dict__ == other.__dict__

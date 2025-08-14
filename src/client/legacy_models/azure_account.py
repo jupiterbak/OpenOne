@@ -36,16 +36,16 @@ class LAzureAccount(object):
     }
 
     attribute_map = {
-        'subscription_id': 'SubscriptionId',
-        'resource_group': 'ResourceGroup',
-        'region': 'Region',
-        'client_id': 'ClientId',
-        'client_secret': 'ClientSecret',
-        'tenant_id': 'TenantId'
+        'subscription_id': 'LSubscriptionId',
+        'resource_group': 'LResourceGroup',
+        'region': 'LRegion',
+        'client_id': 'LClientId',
+        'client_secret': 'LClientSecret',
+        'tenant_id': 'LTenantId'
     }
 
     def __init__(self, subscription_id=None, resource_group=None, region=None, client_id=None, client_secret=None, tenant_id=None):  # noqa: E501
-        """AzureAccount - a model defined in Swagger"""  # noqa: E501
+        """LAzureAccount - a model defined in Swagger"""  # noqa: E501
         self._subscription_id = None
         self._resource_group = None
         self._region = None
@@ -63,20 +63,20 @@ class LAzureAccount(object):
 
     @property
     def subscription_id(self):
-        """Gets the subscription_id of this AzureAccount.  # noqa: E501
+        """Gets the subscription_id of this LAzureAccount.  # noqa: E501
 
 
-        :return: The subscription_id of this AzureAccount.  # noqa: E501
+        :return: The subscription_id of this LAzureAccount.  # noqa: E501
         :rtype: str
         """
         return self._subscription_id
 
     @subscription_id.setter
     def subscription_id(self, subscription_id):
-        """Sets the subscription_id of this AzureAccount.
+        """Sets the subscription_id of this LAzureAccount.
 
 
-        :param subscription_id: The subscription_id of this AzureAccount.  # noqa: E501
+        :param subscription_id: The subscription_id of this LAzureAccount.  # noqa: E501
         :type: str
         """
         if subscription_id is None:
@@ -86,20 +86,20 @@ class LAzureAccount(object):
 
     @property
     def resource_group(self):
-        """Gets the resource_group of this AzureAccount.  # noqa: E501
+        """Gets the resource_group of this LAzureAccount.  # noqa: E501
 
 
-        :return: The resource_group of this AzureAccount.  # noqa: E501
+        :return: The resource_group of this LAzureAccount.  # noqa: E501
         :rtype: str
         """
         return self._resource_group
 
     @resource_group.setter
     def resource_group(self, resource_group):
-        """Sets the resource_group of this AzureAccount.
+        """Sets the resource_group of this LAzureAccount.
 
 
-        :param resource_group: The resource_group of this AzureAccount.  # noqa: E501
+        :param resource_group: The resource_group of this LAzureAccount.  # noqa: E501
         :type: str
         """
         if resource_group is None:
@@ -109,20 +109,20 @@ class LAzureAccount(object):
 
     @property
     def region(self):
-        """Gets the region of this AzureAccount.  # noqa: E501
+        """Gets the region of this LAzureAccount.  # noqa: E501
 
 
-        :return: The region of this AzureAccount.  # noqa: E501
+        :return: The region of this LAzureAccount.  # noqa: E501
         :rtype: str
         """
         return self._region
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AzureAccount.
+        """Sets the region of this LAzureAccount.
 
 
-        :param region: The region of this AzureAccount.  # noqa: E501
+        :param region: The region of this LAzureAccount.  # noqa: E501
         :type: str
         """
         if region is None:
@@ -132,20 +132,20 @@ class LAzureAccount(object):
 
     @property
     def client_id(self):
-        """Gets the client_id of this AzureAccount.  # noqa: E501
+        """Gets the client_id of this LAzureAccount.  # noqa: E501
 
 
-        :return: The client_id of this AzureAccount.  # noqa: E501
+        :return: The client_id of this LAzureAccount.  # noqa: E501
         :rtype: str
         """
         return self._client_id
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this AzureAccount.
+        """Sets the client_id of this LAzureAccount.
 
 
-        :param client_id: The client_id of this AzureAccount.  # noqa: E501
+        :param client_id: The client_id of this LAzureAccount.  # noqa: E501
         :type: str
         """
         if client_id is None:
@@ -155,20 +155,20 @@ class LAzureAccount(object):
 
     @property
     def client_secret(self):
-        """Gets the client_secret of this AzureAccount.  # noqa: E501
+        """Gets the client_secret of this LAzureAccount.  # noqa: E501
 
 
-        :return: The client_secret of this AzureAccount.  # noqa: E501
+        :return: The client_secret of this LAzureAccount.  # noqa: E501
         :rtype: str
         """
         return self._client_secret
 
     @client_secret.setter
     def client_secret(self, client_secret):
-        """Sets the client_secret of this AzureAccount.
+        """Sets the client_secret of this LAzureAccount.
 
 
-        :param client_secret: The client_secret of this AzureAccount.  # noqa: E501
+        :param client_secret: The client_secret of this LAzureAccount.  # noqa: E501
         :type: str
         """
 
@@ -176,20 +176,20 @@ class LAzureAccount(object):
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this AzureAccount.  # noqa: E501
+        """Gets the tenant_id of this LAzureAccount.  # noqa: E501
 
 
-        :return: The tenant_id of this AzureAccount.  # noqa: E501
+        :return: The tenant_id of this LAzureAccount.  # noqa: E501
         :rtype: str
         """
         return self._tenant_id
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this AzureAccount.
+        """Sets the tenant_id of this LAzureAccount.
 
 
-        :param tenant_id: The tenant_id of this AzureAccount.  # noqa: E501
+        :param tenant_id: The tenant_id of this LAzureAccount.  # noqa: E501
         :type: str
         """
         if tenant_id is None:
@@ -218,7 +218,7 @@ class LAzureAccount(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AzureAccount, dict):
+        if issubclass(LAzureAccount, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -234,7 +234,7 @@ class LAzureAccount(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AzureAccount):
+        if not isinstance(other, LAzureAccount):
             return False
 
         return self.__dict__ == other.__dict__

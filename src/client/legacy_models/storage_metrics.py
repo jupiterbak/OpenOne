@@ -43,7 +43,7 @@ class LStorageMetrics(object):
     }
 
     def __init__(self, usage=None, limit=None, remaining=None, unit=None, approaching_threshold=None):  # noqa: E501
-        """StorageMetrics - a model defined in Swagger"""  # noqa: E501
+        """LStorageMetrics - a model defined in Swagger"""  # noqa: E501
         self._usage = None
         self._limit = None
         self._remaining = None
@@ -60,20 +60,20 @@ class LStorageMetrics(object):
 
     @property
     def usage(self):
-        """Gets the usage of this StorageMetrics.  # noqa: E501
+        """Gets the usage of this LStorageMetrics.  # noqa: E501
 
 
-        :return: The usage of this StorageMetrics.  # noqa: E501
+        :return: The usage of this LStorageMetrics.  # noqa: E501
         :rtype: object
         """
         return self._usage
 
     @usage.setter
     def usage(self, usage):
-        """Sets the usage of this StorageMetrics.
+        """Sets the usage of this LStorageMetrics.
 
 
-        :param usage: The usage of this StorageMetrics.  # noqa: E501
+        :param usage: The usage of this LStorageMetrics.  # noqa: E501
         :type: object
         """
         if usage is None:
@@ -83,20 +83,20 @@ class LStorageMetrics(object):
 
     @property
     def limit(self):
-        """Gets the limit of this StorageMetrics.  # noqa: E501
+        """Gets the limit of this LStorageMetrics.  # noqa: E501
 
 
-        :return: The limit of this StorageMetrics.  # noqa: E501
+        :return: The limit of this LStorageMetrics.  # noqa: E501
         :rtype: int
         """
         return self._limit
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this StorageMetrics.
+        """Sets the limit of this LStorageMetrics.
 
 
-        :param limit: The limit of this StorageMetrics.  # noqa: E501
+        :param limit: The limit of this LStorageMetrics.  # noqa: E501
         :type: int
         """
         if limit is None:
@@ -106,20 +106,20 @@ class LStorageMetrics(object):
 
     @property
     def remaining(self):
-        """Gets the remaining of this StorageMetrics.  # noqa: E501
+        """Gets the remaining of this LStorageMetrics.  # noqa: E501
 
 
-        :return: The remaining of this StorageMetrics.  # noqa: E501
+        :return: The remaining of this LStorageMetrics.  # noqa: E501
         :rtype: int
         """
         return self._remaining
 
     @remaining.setter
     def remaining(self, remaining):
-        """Sets the remaining of this StorageMetrics.
+        """Sets the remaining of this LStorageMetrics.
 
 
-        :param remaining: The remaining of this StorageMetrics.  # noqa: E501
+        :param remaining: The remaining of this LStorageMetrics.  # noqa: E501
         :type: int
         """
         if remaining is None:
@@ -129,22 +129,22 @@ class LStorageMetrics(object):
 
     @property
     def unit(self):
-        """Gets the unit of this StorageMetrics.  # noqa: E501
+        """Gets the unit of this LStorageMetrics.  # noqa: E501
 
         The unit measurement of the quota amount  # noqa: E501
 
-        :return: The unit of this StorageMetrics.  # noqa: E501
+        :return: The unit of this LStorageMetrics.  # noqa: E501
         :rtype: str
         """
         return self._unit
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this StorageMetrics.
+        """Sets the unit of this LStorageMetrics.
 
         The unit measurement of the quota amount  # noqa: E501
 
-        :param unit: The unit of this StorageMetrics.  # noqa: E501
+        :param unit: The unit of this LStorageMetrics.  # noqa: E501
         :type: str
         """
         allowed_values = ["seconds", "bytes", "N/A"]  # noqa: E501
@@ -158,20 +158,20 @@ class LStorageMetrics(object):
 
     @property
     def approaching_threshold(self):
-        """Gets the approaching_threshold of this StorageMetrics.  # noqa: E501
+        """Gets the approaching_threshold of this LStorageMetrics.  # noqa: E501
 
 
-        :return: The approaching_threshold of this StorageMetrics.  # noqa: E501
+        :return: The approaching_threshold of this LStorageMetrics.  # noqa: E501
         :rtype: bool
         """
         return self._approaching_threshold
 
     @approaching_threshold.setter
     def approaching_threshold(self, approaching_threshold):
-        """Sets the approaching_threshold of this StorageMetrics.
+        """Sets the approaching_threshold of this LStorageMetrics.
 
 
-        :param approaching_threshold: The approaching_threshold of this StorageMetrics.  # noqa: E501
+        :param approaching_threshold: The approaching_threshold of this LStorageMetrics.  # noqa: E501
         :type: bool
         """
 
@@ -198,7 +198,7 @@ class LStorageMetrics(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(StorageMetrics, dict):
+        if issubclass(LStorageMetrics, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -214,7 +214,7 @@ class LStorageMetrics(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, StorageMetrics):
+        if not isinstance(other, LStorageMetrics):
             return False
 
         return self.__dict__ == other.__dict__

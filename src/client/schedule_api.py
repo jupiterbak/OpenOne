@@ -17,7 +17,7 @@ import re  # noqa: F401
 # python 2 and python 3 compatibility library
 import six
 
-from .api.api_client import ApiClient
+from  src.client.api.api_client import ApiClient
 
 
 class ScheduleApi(object):

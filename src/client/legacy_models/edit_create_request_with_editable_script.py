@@ -39,7 +39,7 @@ class LEditCreateRequestWithEditableScript(object):
     }
 
     def __init__(self, parent_id=None, scriptlines=None, editablescript_id=None):  # noqa: E501
-        """EditCreateRequestWithEditableScript - a model defined in Swagger"""  # noqa: E501
+        """LEditCreateRequestWithEditableScript - a model defined in Swagger"""  # noqa: E501
         self._parent_id = None
         self._scriptlines = None
         self._editablescript_id = None
@@ -52,22 +52,22 @@ class LEditCreateRequestWithEditableScript(object):
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this EditCreateRequestWithEditableScript.  # noqa: E501
+        """Gets the parent_id of this LEditCreateRequestWithEditableScript.  # noqa: E501
 
         Identifier for the parent of this edit (the edit immediately preceeding this one).  # noqa: E501
 
-        :return: The parent_id of this EditCreateRequestWithEditableScript.  # noqa: E501
+        :return: The parent_id of this LEditCreateRequestWithEditableScript.  # noqa: E501
         :rtype: int
         """
         return self._parent_id
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this EditCreateRequestWithEditableScript.
+        """Sets the parent_id of this LEditCreateRequestWithEditableScript.
 
         Identifier for the parent of this edit (the edit immediately preceeding this one).  # noqa: E501
 
-        :param parent_id: The parent_id of this EditCreateRequestWithEditableScript.  # noqa: E501
+        :param parent_id: The parent_id of this LEditCreateRequestWithEditableScript.  # noqa: E501
         :type: int
         """
 
@@ -75,20 +75,20 @@ class LEditCreateRequestWithEditableScript(object):
 
     @property
     def scriptlines(self):
-        """Gets the scriptlines of this EditCreateRequestWithEditableScript.  # noqa: E501
+        """Gets the scriptlines of this LEditCreateRequestWithEditableScript.  # noqa: E501
 
 
-        :return: The scriptlines of this EditCreateRequestWithEditableScript.  # noqa: E501
+        :return: The scriptlines of this LEditCreateRequestWithEditableScript.  # noqa: E501
         :rtype: list[object]
         """
         return self._scriptlines
 
     @scriptlines.setter
     def scriptlines(self, scriptlines):
-        """Sets the scriptlines of this EditCreateRequestWithEditableScript.
+        """Sets the scriptlines of this LEditCreateRequestWithEditableScript.
 
 
-        :param scriptlines: The scriptlines of this EditCreateRequestWithEditableScript.  # noqa: E501
+        :param scriptlines: The scriptlines of this LEditCreateRequestWithEditableScript.  # noqa: E501
         :type: list[object]
         """
 
@@ -96,22 +96,22 @@ class LEditCreateRequestWithEditableScript(object):
 
     @property
     def editablescript_id(self):
-        """Gets the editablescript_id of this EditCreateRequestWithEditableScript.  # noqa: E501
+        """Gets the editablescript_id of this LEditCreateRequestWithEditableScript.  # noqa: E501
 
         Identifier for the recipe to which this edit belongs.  # noqa: E501
 
-        :return: The editablescript_id of this EditCreateRequestWithEditableScript.  # noqa: E501
+        :return: The editablescript_id of this LEditCreateRequestWithEditableScript.  # noqa: E501
         :rtype: int
         """
         return self._editablescript_id
 
     @editablescript_id.setter
     def editablescript_id(self, editablescript_id):
-        """Sets the editablescript_id of this EditCreateRequestWithEditableScript.
+        """Sets the editablescript_id of this LEditCreateRequestWithEditableScript.
 
         Identifier for the recipe to which this edit belongs.  # noqa: E501
 
-        :param editablescript_id: The editablescript_id of this EditCreateRequestWithEditableScript.  # noqa: E501
+        :param editablescript_id: The editablescript_id of this LEditCreateRequestWithEditableScript.  # noqa: E501
         :type: int
         """
         if editablescript_id is None:
@@ -140,7 +140,7 @@ class LEditCreateRequestWithEditableScript(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(EditCreateRequestWithEditableScript, dict):
+        if issubclass(LEditCreateRequestWithEditableScript, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -156,7 +156,7 @@ class LEditCreateRequestWithEditableScript(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, EditCreateRequestWithEditableScript):
+        if not isinstance(other, LEditCreateRequestWithEditableScript):
             return False
 
         return self.__dict__ == other.__dict__

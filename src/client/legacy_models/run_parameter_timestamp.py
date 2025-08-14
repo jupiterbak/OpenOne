@@ -35,27 +35,27 @@ class LRunParameterTimestamp(object):
     }
 
     def __init__(self, timestamp=None):  # noqa: E501
-        """RunParameterTimestamp - a model defined in Swagger"""  # noqa: E501
+        """LRunParameterTimestamp - a model defined in Swagger"""  # noqa: E501
         self._timestamp = None
         self.discriminator = None
         self.timestamp = timestamp
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this RunParameterTimestamp.  # noqa: E501
+        """Gets the timestamp of this LRunParameterTimestamp.  # noqa: E501
 
 
-        :return: The timestamp of this RunParameterTimestamp.  # noqa: E501
+        :return: The timestamp of this LRunParameterTimestamp.  # noqa: E501
         :rtype: object
         """
         return self._timestamp
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this RunParameterTimestamp.
+        """Sets the timestamp of this LRunParameterTimestamp.
 
 
-        :param timestamp: The timestamp of this RunParameterTimestamp.  # noqa: E501
+        :param timestamp: The timestamp of this LRunParameterTimestamp.  # noqa: E501
         :type: object
         """
         if timestamp is None:
@@ -84,7 +84,7 @@ class LRunParameterTimestamp(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunParameterTimestamp, dict):
+        if issubclass(LRunParameterTimestamp, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunParameterTimestamp(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunParameterTimestamp):
+        if not isinstance(other, LRunParameterTimestamp):
             return False
 
         return self.__dict__ == other.__dict__

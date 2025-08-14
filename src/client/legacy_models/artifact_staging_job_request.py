@@ -35,29 +35,29 @@ class LArtifactStagingJobRequest(object):
     }
 
     def __init__(self, artifact_id=None):  # noqa: E501
-        """ArtifactStagingJobRequest - a model defined in Swagger"""  # noqa: E501
+        """LArtifactStagingJobRequest - a model defined in Swagger"""  # noqa: E501
         self._artifact_id = None
         self.discriminator = None
         self.artifact_id = artifact_id
 
     @property
     def artifact_id(self):
-        """Gets the artifact_id of this ArtifactStagingJobRequest.  # noqa: E501
+        """Gets the artifact_id of this LArtifactStagingJobRequest.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The artifact_id of this ArtifactStagingJobRequest.  # noqa: E501
+        :return: The artifact_id of this LArtifactStagingJobRequest.  # noqa: E501
         :rtype: int
         """
         return self._artifact_id
 
     @artifact_id.setter
     def artifact_id(self, artifact_id):
-        """Sets the artifact_id of this ArtifactStagingJobRequest.
+        """Sets the artifact_id of this LArtifactStagingJobRequest.
 
         unique identifier for this object.  # noqa: E501
 
-        :param artifact_id: The artifact_id of this ArtifactStagingJobRequest.  # noqa: E501
+        :param artifact_id: The artifact_id of this LArtifactStagingJobRequest.  # noqa: E501
         :type: int
         """
         if artifact_id is None:
@@ -86,7 +86,7 @@ class LArtifactStagingJobRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ArtifactStagingJobRequest, dict):
+        if issubclass(LArtifactStagingJobRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -102,7 +102,7 @@ class LArtifactStagingJobRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ArtifactStagingJobRequest):
+        if not isinstance(other, LArtifactStagingJobRequest):
             return False
 
         return self.__dict__ == other.__dict__

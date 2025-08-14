@@ -29,9 +29,9 @@ class LPlanNodeRunParameterResponse(object):
     swagger_types = {
         'handle': 'str',
         'display_id': 'int',
-        'plan_node_id': 'AnyOfplanNodeRunParameterResponsePlanNodeId',
+        'plan_node_id': 'LAnyOfplanNodeRunParameterResponsePlanNodeId',
         'conflicts': 'list',
-        'flow': 'Flow',
+        'flow': 'LFlow',
         'datasources': 'object',
         'output_objects': 'object',
         'plan_overrides': 'object'
@@ -49,7 +49,7 @@ class LPlanNodeRunParameterResponse(object):
     }
 
     def __init__(self, handle=None, display_id=None, plan_node_id=None, conflicts=None, flow=None, datasources=None, output_objects=None, plan_overrides=None):  # noqa: E501
-        """PlanNodeRunParameterResponse - a model defined in Swagger"""  # noqa: E501
+        """LPlanNodeRunParameterResponse - a model defined in Swagger"""  # noqa: E501
         self._handle = None
         self._display_id = None
         self._plan_node_id = None
@@ -76,22 +76,22 @@ class LPlanNodeRunParameterResponse(object):
 
     @property
     def handle(self):
-        """Gets the handle of this PlanNodeRunParameterResponse.  # noqa: E501
+        """Gets the handle of this LPlanNodeRunParameterResponse.  # noqa: E501
 
         Unique, readable identifier of a plan node in a plan.  # noqa: E501
 
-        :return: The handle of this PlanNodeRunParameterResponse.  # noqa: E501
+        :return: The handle of this LPlanNodeRunParameterResponse.  # noqa: E501
         :rtype: str
         """
         return self._handle
 
     @handle.setter
     def handle(self, handle):
-        """Sets the handle of this PlanNodeRunParameterResponse.
+        """Sets the handle of this LPlanNodeRunParameterResponse.
 
         Unique, readable identifier of a plan node in a plan.  # noqa: E501
 
-        :param handle: The handle of this PlanNodeRunParameterResponse.  # noqa: E501
+        :param handle: The handle of this LPlanNodeRunParameterResponse.  # noqa: E501
         :type: str
         """
         if handle is None:
@@ -101,22 +101,22 @@ class LPlanNodeRunParameterResponse(object):
 
     @property
     def display_id(self):
-        """Gets the display_id of this PlanNodeRunParameterResponse.  # noqa: E501
+        """Gets the display_id of this LPlanNodeRunParameterResponse.  # noqa: E501
 
         Unique, numeric, incremental identifier of a plan node in a plan per task type.  # noqa: E501
 
-        :return: The display_id of this PlanNodeRunParameterResponse.  # noqa: E501
+        :return: The display_id of this LPlanNodeRunParameterResponse.  # noqa: E501
         :rtype: int
         """
         return self._display_id
 
     @display_id.setter
     def display_id(self, display_id):
-        """Sets the display_id of this PlanNodeRunParameterResponse.
+        """Sets the display_id of this LPlanNodeRunParameterResponse.
 
         Unique, numeric, incremental identifier of a plan node in a plan per task type.  # noqa: E501
 
-        :param display_id: The display_id of this PlanNodeRunParameterResponse.  # noqa: E501
+        :param display_id: The display_id of this LPlanNodeRunParameterResponse.  # noqa: E501
         :type: int
         """
 
@@ -124,21 +124,21 @@ class LPlanNodeRunParameterResponse(object):
 
     @property
     def plan_node_id(self):
-        """Gets the plan_node_id of this PlanNodeRunParameterResponse.  # noqa: E501
+        """Gets the plan_node_id of this LPlanNodeRunParameterResponse.  # noqa: E501
 
 
-        :return: The plan_node_id of this PlanNodeRunParameterResponse.  # noqa: E501
-        :rtype: AnyOfplanNodeRunParameterResponsePlanNodeId
+        :return: The plan_node_id of this LPlanNodeRunParameterResponse.  # noqa: E501
+        :rtype: LAnyOfplanNodeRunParameterResponsePlanNodeId
         """
         return self._plan_node_id
 
     @plan_node_id.setter
     def plan_node_id(self, plan_node_id):
-        """Sets the plan_node_id of this PlanNodeRunParameterResponse.
+        """Sets the plan_node_id of this LPlanNodeRunParameterResponse.
 
 
-        :param plan_node_id: The plan_node_id of this PlanNodeRunParameterResponse.  # noqa: E501
-        :type: AnyOfplanNodeRunParameterResponsePlanNodeId
+        :param plan_node_id: The plan_node_id of this LPlanNodeRunParameterResponse.  # noqa: E501
+        :type: LAnyOfplanNodeRunParameterResponsePlanNodeId
         """
         if plan_node_id is None:
             raise ValueError("Invalid value for `plan_node_id`, must not be `None`")  # noqa: E501
@@ -147,22 +147,22 @@ class LPlanNodeRunParameterResponse(object):
 
     @property
     def conflicts(self):
-        """Gets the conflicts of this PlanNodeRunParameterResponse.  # noqa: E501
+        """Gets the conflicts of this LPlanNodeRunParameterResponse.  # noqa: E501
 
         All overrideKeys that cause a parameter conflict during execution.  # noqa: E501
 
-        :return: The conflicts of this PlanNodeRunParameterResponse.  # noqa: E501
+        :return: The conflicts of this LPlanNodeRunParameterResponse.  # noqa: E501
         :rtype: list
         """
         return self._conflicts
 
     @conflicts.setter
     def conflicts(self, conflicts):
-        """Sets the conflicts of this PlanNodeRunParameterResponse.
+        """Sets the conflicts of this LPlanNodeRunParameterResponse.
 
         All overrideKeys that cause a parameter conflict during execution.  # noqa: E501
 
-        :param conflicts: The conflicts of this PlanNodeRunParameterResponse.  # noqa: E501
+        :param conflicts: The conflicts of this LPlanNodeRunParameterResponse.  # noqa: E501
         :type: list
         """
 
@@ -170,41 +170,41 @@ class LPlanNodeRunParameterResponse(object):
 
     @property
     def flow(self):
-        """Gets the flow of this PlanNodeRunParameterResponse.  # noqa: E501
+        """Gets the flow of this LPlanNodeRunParameterResponse.  # noqa: E501
 
 
-        :return: The flow of this PlanNodeRunParameterResponse.  # noqa: E501
-        :rtype: Flow
+        :return: The flow of this LPlanNodeRunParameterResponse.  # noqa: E501
+        :rtype: LFlow
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this PlanNodeRunParameterResponse.
+        """Sets the flow of this LPlanNodeRunParameterResponse.
 
 
-        :param flow: The flow of this PlanNodeRunParameterResponse.  # noqa: E501
-        :type: Flow
+        :param flow: The flow of this LPlanNodeRunParameterResponse.  # noqa: E501
+        :type: LFlow
         """
 
         self._flow = flow
 
     @property
     def datasources(self):
-        """Gets the datasources of this PlanNodeRunParameterResponse.  # noqa: E501
+        """Gets the datasources of this LPlanNodeRunParameterResponse.  # noqa: E501
 
 
-        :return: The datasources of this PlanNodeRunParameterResponse.  # noqa: E501
+        :return: The datasources of this LPlanNodeRunParameterResponse.  # noqa: E501
         :rtype: object
         """
         return self._datasources
 
     @datasources.setter
     def datasources(self, datasources):
-        """Sets the datasources of this PlanNodeRunParameterResponse.
+        """Sets the datasources of this LPlanNodeRunParameterResponse.
 
 
-        :param datasources: The datasources of this PlanNodeRunParameterResponse.  # noqa: E501
+        :param datasources: The datasources of this LPlanNodeRunParameterResponse.  # noqa: E501
         :type: object
         """
 
@@ -212,20 +212,20 @@ class LPlanNodeRunParameterResponse(object):
 
     @property
     def output_objects(self):
-        """Gets the output_objects of this PlanNodeRunParameterResponse.  # noqa: E501
+        """Gets the output_objects of this LPlanNodeRunParameterResponse.  # noqa: E501
 
 
-        :return: The output_objects of this PlanNodeRunParameterResponse.  # noqa: E501
+        :return: The output_objects of this LPlanNodeRunParameterResponse.  # noqa: E501
         :rtype: object
         """
         return self._output_objects
 
     @output_objects.setter
     def output_objects(self, output_objects):
-        """Sets the output_objects of this PlanNodeRunParameterResponse.
+        """Sets the output_objects of this LPlanNodeRunParameterResponse.
 
 
-        :param output_objects: The output_objects of this PlanNodeRunParameterResponse.  # noqa: E501
+        :param output_objects: The output_objects of this LPlanNodeRunParameterResponse.  # noqa: E501
         :type: object
         """
 
@@ -233,20 +233,20 @@ class LPlanNodeRunParameterResponse(object):
 
     @property
     def plan_overrides(self):
-        """Gets the plan_overrides of this PlanNodeRunParameterResponse.  # noqa: E501
+        """Gets the plan_overrides of this LPlanNodeRunParameterResponse.  # noqa: E501
 
 
-        :return: The plan_overrides of this PlanNodeRunParameterResponse.  # noqa: E501
+        :return: The plan_overrides of this LPlanNodeRunParameterResponse.  # noqa: E501
         :rtype: object
         """
         return self._plan_overrides
 
     @plan_overrides.setter
     def plan_overrides(self, plan_overrides):
-        """Sets the plan_overrides of this PlanNodeRunParameterResponse.
+        """Sets the plan_overrides of this LPlanNodeRunParameterResponse.
 
 
-        :param plan_overrides: The plan_overrides of this PlanNodeRunParameterResponse.  # noqa: E501
+        :param plan_overrides: The plan_overrides of this LPlanNodeRunParameterResponse.  # noqa: E501
         :type: object
         """
 
@@ -273,7 +273,7 @@ class LPlanNodeRunParameterResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanNodeRunParameterResponse, dict):
+        if issubclass(LPlanNodeRunParameterResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -289,7 +289,7 @@ class LPlanNodeRunParameterResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanNodeRunParameterResponse):
+        if not isinstance(other, LPlanNodeRunParameterResponse):
             return False
 
         return self.__dict__ == other.__dict__

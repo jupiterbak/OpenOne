@@ -43,7 +43,7 @@ class LImportFlowPackageRequest(object):
     }
 
     def __init__(self, data=None, metadata=None, hash=None, type=None, kind=None):  # noqa: E501
-        """ImportFlowPackageRequest - a model defined in Swagger"""  # noqa: E501
+        """LImportFlowPackageRequest - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._metadata = None
         self._hash = None
@@ -58,20 +58,20 @@ class LImportFlowPackageRequest(object):
 
     @property
     def data(self):
-        """Gets the data of this ImportFlowPackageRequest.  # noqa: E501
+        """Gets the data of this LImportFlowPackageRequest.  # noqa: E501
 
 
-        :return: The data of this ImportFlowPackageRequest.  # noqa: E501
+        :return: The data of this LImportFlowPackageRequest.  # noqa: E501
         :rtype: object
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ImportFlowPackageRequest.
+        """Sets the data of this LImportFlowPackageRequest.
 
 
-        :param data: The data of this ImportFlowPackageRequest.  # noqa: E501
+        :param data: The data of this LImportFlowPackageRequest.  # noqa: E501
         :type: object
         """
         if data is None:
@@ -81,20 +81,20 @@ class LImportFlowPackageRequest(object):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ImportFlowPackageRequest.  # noqa: E501
+        """Gets the metadata of this LImportFlowPackageRequest.  # noqa: E501
 
 
-        :return: The metadata of this ImportFlowPackageRequest.  # noqa: E501
+        :return: The metadata of this LImportFlowPackageRequest.  # noqa: E501
         :rtype: object
         """
         return self._metadata
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ImportFlowPackageRequest.
+        """Sets the metadata of this LImportFlowPackageRequest.
 
 
-        :param metadata: The metadata of this ImportFlowPackageRequest.  # noqa: E501
+        :param metadata: The metadata of this LImportFlowPackageRequest.  # noqa: E501
         :type: object
         """
         if metadata is None:
@@ -104,22 +104,22 @@ class LImportFlowPackageRequest(object):
 
     @property
     def hash(self):
-        """Gets the hash of this ImportFlowPackageRequest.  # noqa: E501
+        """Gets the hash of this LImportFlowPackageRequest.  # noqa: E501
 
         Checksum of package  # noqa: E501
 
-        :return: The hash of this ImportFlowPackageRequest.  # noqa: E501
+        :return: The hash of this LImportFlowPackageRequest.  # noqa: E501
         :rtype: str
         """
         return self._hash
 
     @hash.setter
     def hash(self, hash):
-        """Sets the hash of this ImportFlowPackageRequest.
+        """Sets the hash of this LImportFlowPackageRequest.
 
         Checksum of package  # noqa: E501
 
-        :param hash: The hash of this ImportFlowPackageRequest.  # noqa: E501
+        :param hash: The hash of this LImportFlowPackageRequest.  # noqa: E501
         :type: str
         """
         if hash is None:
@@ -129,22 +129,22 @@ class LImportFlowPackageRequest(object):
 
     @property
     def type(self):
-        """Gets the type of this ImportFlowPackageRequest.  # noqa: E501
+        """Gets the type of this LImportFlowPackageRequest.  # noqa: E501
 
         Type of package (always \"flow\")  # noqa: E501
 
-        :return: The type of this ImportFlowPackageRequest.  # noqa: E501
+        :return: The type of this LImportFlowPackageRequest.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ImportFlowPackageRequest.
+        """Sets the type of this LImportFlowPackageRequest.
 
         Type of package (always \"flow\")  # noqa: E501
 
-        :param type: The type of this ImportFlowPackageRequest.  # noqa: E501
+        :param type: The type of this LImportFlowPackageRequest.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -154,22 +154,22 @@ class LImportFlowPackageRequest(object):
 
     @property
     def kind(self):
-        """Gets the kind of this ImportFlowPackageRequest.  # noqa: E501
+        """Gets the kind of this LImportFlowPackageRequest.  # noqa: E501
 
         Kind of package (always \"artifact\")  # noqa: E501
 
-        :return: The kind of this ImportFlowPackageRequest.  # noqa: E501
+        :return: The kind of this LImportFlowPackageRequest.  # noqa: E501
         :rtype: str
         """
         return self._kind
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ImportFlowPackageRequest.
+        """Sets the kind of this LImportFlowPackageRequest.
 
         Kind of package (always \"artifact\")  # noqa: E501
 
-        :param kind: The kind of this ImportFlowPackageRequest.  # noqa: E501
+        :param kind: The kind of this LImportFlowPackageRequest.  # noqa: E501
         :type: str
         """
         if kind is None:
@@ -198,7 +198,7 @@ class LImportFlowPackageRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ImportFlowPackageRequest, dict):
+        if issubclass(LImportFlowPackageRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -214,7 +214,7 @@ class LImportFlowPackageRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImportFlowPackageRequest):
+        if not isinstance(other, LImportFlowPackageRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,7 +27,7 @@ class LAccountRole(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfaccountRoleId',
+        'id': 'LAnyOfaccountRoleId',
         'role_name': 'str',
         'role_description': 'str'
     }
@@ -39,7 +39,7 @@ class LAccountRole(object):
     }
 
     def __init__(self, id=None, role_name=None, role_description=None):  # noqa: E501
-        """AccountRole - a model defined in Swagger"""  # noqa: E501
+        """LAccountRole - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._role_name = None
         self._role_description = None
@@ -50,21 +50,21 @@ class LAccountRole(object):
 
     @property
     def id(self):
-        """Gets the id of this AccountRole.  # noqa: E501
+        """Gets the id of this LAccountRole.  # noqa: E501
 
 
-        :return: The id of this AccountRole.  # noqa: E501
-        :rtype: AnyOfaccountRoleId
+        :return: The id of this LAccountRole.  # noqa: E501
+        :rtype: LAnyOfaccountRoleId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AccountRole.
+        """Sets the id of this LAccountRole.
 
 
-        :param id: The id of this AccountRole.  # noqa: E501
-        :type: AnyOfaccountRoleId
+        :param id: The id of this LAccountRole.  # noqa: E501
+        :type: LAnyOfaccountRoleId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -73,20 +73,20 @@ class LAccountRole(object):
 
     @property
     def role_name(self):
-        """Gets the role_name of this AccountRole.  # noqa: E501
+        """Gets the role_name of this LAccountRole.  # noqa: E501
 
 
-        :return: The role_name of this AccountRole.  # noqa: E501
+        :return: The role_name of this LAccountRole.  # noqa: E501
         :rtype: str
         """
         return self._role_name
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this AccountRole.
+        """Sets the role_name of this LAccountRole.
 
 
-        :param role_name: The role_name of this AccountRole.  # noqa: E501
+        :param role_name: The role_name of this LAccountRole.  # noqa: E501
         :type: str
         """
         if role_name is None:
@@ -96,20 +96,20 @@ class LAccountRole(object):
 
     @property
     def role_description(self):
-        """Gets the role_description of this AccountRole.  # noqa: E501
+        """Gets the role_description of this LAccountRole.  # noqa: E501
 
 
-        :return: The role_description of this AccountRole.  # noqa: E501
+        :return: The role_description of this LAccountRole.  # noqa: E501
         :rtype: str
         """
         return self._role_description
 
     @role_description.setter
     def role_description(self, role_description):
-        """Sets the role_description of this AccountRole.
+        """Sets the role_description of this LAccountRole.
 
 
-        :param role_description: The role_description of this AccountRole.  # noqa: E501
+        :param role_description: The role_description of this LAccountRole.  # noqa: E501
         :type: str
         """
         if role_description is None:
@@ -138,7 +138,7 @@ class LAccountRole(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AccountRole, dict):
+        if issubclass(LAccountRole, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -154,7 +154,7 @@ class LAccountRole(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AccountRole):
+        if not isinstance(other, LAccountRole):
             return False
 
         return self.__dict__ == other.__dict__

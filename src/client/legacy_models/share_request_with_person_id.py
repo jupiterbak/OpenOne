@@ -27,7 +27,7 @@ class LShareRequestWithPersonId(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'person_id': 'AnyOfshareRequestWithPersonIdPersonId',
+        'person_id': 'LAnyOfshareRequestWithPersonIdPersonId',
         'role': 'str',
         'policy': 'str'
     }
@@ -39,7 +39,7 @@ class LShareRequestWithPersonId(object):
     }
 
     def __init__(self, person_id=None, role=None, policy=None):  # noqa: E501
-        """ShareRequestWithPersonId - a model defined in Swagger"""  # noqa: E501
+        """LShareRequestWithPersonId - a model defined in Swagger"""  # noqa: E501
         self._person_id = None
         self._role = None
         self._policy = None
@@ -50,21 +50,21 @@ class LShareRequestWithPersonId(object):
 
     @property
     def person_id(self):
-        """Gets the person_id of this ShareRequestWithPersonId.  # noqa: E501
+        """Gets the person_id of this LShareRequestWithPersonId.  # noqa: E501
 
 
-        :return: The person_id of this ShareRequestWithPersonId.  # noqa: E501
-        :rtype: AnyOfshareRequestWithPersonIdPersonId
+        :return: The person_id of this LShareRequestWithPersonId.  # noqa: E501
+        :rtype: LAnyOfshareRequestWithPersonIdPersonId
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this ShareRequestWithPersonId.
+        """Sets the person_id of this LShareRequestWithPersonId.
 
 
-        :param person_id: The person_id of this ShareRequestWithPersonId.  # noqa: E501
-        :type: AnyOfshareRequestWithPersonIdPersonId
+        :param person_id: The person_id of this LShareRequestWithPersonId.  # noqa: E501
+        :type: LAnyOfshareRequestWithPersonIdPersonId
         """
         if person_id is None:
             raise ValueError("Invalid value for `person_id`, must not be `None`")  # noqa: E501
@@ -73,22 +73,22 @@ class LShareRequestWithPersonId(object):
 
     @property
     def role(self):
-        """Gets the role of this ShareRequestWithPersonId.  # noqa: E501
+        """Gets the role of this LShareRequestWithPersonId.  # noqa: E501
 
         Role that should be assigned. * `collaborator` - A user who has access to a plan but does not own it is a collaborator. * `readOnly` - Allow the user to view and run the plan.  # noqa: E501
 
-        :return: The role of this ShareRequestWithPersonId.  # noqa: E501
+        :return: The role of this LShareRequestWithPersonId.  # noqa: E501
         :rtype: str
         """
         return self._role
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ShareRequestWithPersonId.
+        """Sets the role of this LShareRequestWithPersonId.
 
         Role that should be assigned. * `collaborator` - A user who has access to a plan but does not own it is a collaborator. * `readOnly` - Allow the user to view and run the plan.  # noqa: E501
 
-        :param role: The role of this ShareRequestWithPersonId.  # noqa: E501
+        :param role: The role of this LShareRequestWithPersonId.  # noqa: E501
         :type: str
         """
         if role is None:
@@ -104,22 +104,22 @@ class LShareRequestWithPersonId(object):
 
     @property
     def policy(self):
-        """Gets the policy of this ShareRequestWithPersonId.  # noqa: E501
+        """Gets the policy of this LShareRequestWithPersonId.  # noqa: E501
 
         Policy that should be assigned. * `plan_editor` - Plan editor, can edit plan description and share the plan with others. * `plan_viewer` - Plan viewer, can see and run the plan.  # noqa: E501
 
-        :return: The policy of this ShareRequestWithPersonId.  # noqa: E501
+        :return: The policy of this LShareRequestWithPersonId.  # noqa: E501
         :rtype: str
         """
         return self._policy
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this ShareRequestWithPersonId.
+        """Sets the policy of this LShareRequestWithPersonId.
 
         Policy that should be assigned. * `plan_editor` - Plan editor, can edit plan description and share the plan with others. * `plan_viewer` - Plan viewer, can see and run the plan.  # noqa: E501
 
-        :param policy: The policy of this ShareRequestWithPersonId.  # noqa: E501
+        :param policy: The policy of this LShareRequestWithPersonId.  # noqa: E501
         :type: str
         """
         if policy is None:
@@ -154,7 +154,7 @@ class LShareRequestWithPersonId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ShareRequestWithPersonId, dict):
+        if issubclass(LShareRequestWithPersonId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -170,7 +170,7 @@ class LShareRequestWithPersonId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShareRequestWithPersonId):
+        if not isinstance(other, LShareRequestWithPersonId):
             return False
 
         return self.__dict__ == other.__dict__

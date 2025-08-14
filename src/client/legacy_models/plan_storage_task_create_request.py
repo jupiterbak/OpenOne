@@ -39,7 +39,7 @@ class LPlanStorageTaskCreateRequest(object):
     }
 
     def __init__(self, path=None, type=None, connection_id=None):  # noqa: E501
-        """PlanStorageTaskCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LPlanStorageTaskCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._path = None
         self._type = None
         self._connection_id = None
@@ -52,20 +52,20 @@ class LPlanStorageTaskCreateRequest(object):
 
     @property
     def path(self):
-        """Gets the path of this PlanStorageTaskCreateRequest.  # noqa: E501
+        """Gets the path of this LPlanStorageTaskCreateRequest.  # noqa: E501
 
 
-        :return: The path of this PlanStorageTaskCreateRequest.  # noqa: E501
+        :return: The path of this LPlanStorageTaskCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._path
 
     @path.setter
     def path(self, path):
-        """Sets the path of this PlanStorageTaskCreateRequest.
+        """Sets the path of this LPlanStorageTaskCreateRequest.
 
 
-        :param path: The path of this PlanStorageTaskCreateRequest.  # noqa: E501
+        :param path: The path of this LPlanStorageTaskCreateRequest.  # noqa: E501
         :type: str
         """
         if path is None:
@@ -75,20 +75,20 @@ class LPlanStorageTaskCreateRequest(object):
 
     @property
     def type(self):
-        """Gets the type of this PlanStorageTaskCreateRequest.  # noqa: E501
+        """Gets the type of this LPlanStorageTaskCreateRequest.  # noqa: E501
 
 
-        :return: The type of this PlanStorageTaskCreateRequest.  # noqa: E501
+        :return: The type of this LPlanStorageTaskCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PlanStorageTaskCreateRequest.
+        """Sets the type of this LPlanStorageTaskCreateRequest.
 
 
-        :param type: The type of this PlanStorageTaskCreateRequest.  # noqa: E501
+        :param type: The type of this LPlanStorageTaskCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -96,20 +96,20 @@ class LPlanStorageTaskCreateRequest(object):
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this PlanStorageTaskCreateRequest.  # noqa: E501
+        """Gets the connection_id of this LPlanStorageTaskCreateRequest.  # noqa: E501
 
 
-        :return: The connection_id of this PlanStorageTaskCreateRequest.  # noqa: E501
+        :return: The connection_id of this LPlanStorageTaskCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._connection_id
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this PlanStorageTaskCreateRequest.
+        """Sets the connection_id of this LPlanStorageTaskCreateRequest.
 
 
-        :param connection_id: The connection_id of this PlanStorageTaskCreateRequest.  # noqa: E501
+        :param connection_id: The connection_id of this LPlanStorageTaskCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -136,7 +136,7 @@ class LPlanStorageTaskCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanStorageTaskCreateRequest, dict):
+        if issubclass(LPlanStorageTaskCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -152,7 +152,7 @@ class LPlanStorageTaskCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanStorageTaskCreateRequest):
+        if not isinstance(other, LPlanStorageTaskCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

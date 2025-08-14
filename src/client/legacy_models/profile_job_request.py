@@ -31,7 +31,7 @@ class LProfileJobRequest(object):
         'execution_language': 'str',
         'cp_job_id': 'str',
         'emrcluster': 'object',
-        'emr_config_id': 'AnyOfprofileJobRequestEmrConfigId'
+        'emr_config_id': 'LAnyOfprofileJobRequestEmrConfigId'
     }
 
     attribute_map = {
@@ -43,7 +43,7 @@ class LProfileJobRequest(object):
     }
 
     def __init__(self, spec=None, execution_language=None, cp_job_id=None, emrcluster=None, emr_config_id=None):  # noqa: E501
-        """ProfileJobRequest - a model defined in Swagger"""  # noqa: E501
+        """LProfileJobRequest - a model defined in Swagger"""  # noqa: E501
         self._spec = None
         self._execution_language = None
         self._cp_job_id = None
@@ -61,20 +61,20 @@ class LProfileJobRequest(object):
 
     @property
     def spec(self):
-        """Gets the spec of this ProfileJobRequest.  # noqa: E501
+        """Gets the spec of this LProfileJobRequest.  # noqa: E501
 
 
-        :return: The spec of this ProfileJobRequest.  # noqa: E501
+        :return: The spec of this LProfileJobRequest.  # noqa: E501
         :rtype: str
         """
         return self._spec
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ProfileJobRequest.
+        """Sets the spec of this LProfileJobRequest.
 
 
-        :param spec: The spec of this ProfileJobRequest.  # noqa: E501
+        :param spec: The spec of this LProfileJobRequest.  # noqa: E501
         :type: str
         """
         if spec is None:
@@ -84,20 +84,20 @@ class LProfileJobRequest(object):
 
     @property
     def execution_language(self):
-        """Gets the execution_language of this ProfileJobRequest.  # noqa: E501
+        """Gets the execution_language of this LProfileJobRequest.  # noqa: E501
 
 
-        :return: The execution_language of this ProfileJobRequest.  # noqa: E501
+        :return: The execution_language of this LProfileJobRequest.  # noqa: E501
         :rtype: str
         """
         return self._execution_language
 
     @execution_language.setter
     def execution_language(self, execution_language):
-        """Sets the execution_language of this ProfileJobRequest.
+        """Sets the execution_language of this LProfileJobRequest.
 
 
-        :param execution_language: The execution_language of this ProfileJobRequest.  # noqa: E501
+        :param execution_language: The execution_language of this LProfileJobRequest.  # noqa: E501
         :type: str
         """
         if execution_language is None:
@@ -113,20 +113,20 @@ class LProfileJobRequest(object):
 
     @property
     def cp_job_id(self):
-        """Gets the cp_job_id of this ProfileJobRequest.  # noqa: E501
+        """Gets the cp_job_id of this LProfileJobRequest.  # noqa: E501
 
 
-        :return: The cp_job_id of this ProfileJobRequest.  # noqa: E501
+        :return: The cp_job_id of this LProfileJobRequest.  # noqa: E501
         :rtype: str
         """
         return self._cp_job_id
 
     @cp_job_id.setter
     def cp_job_id(self, cp_job_id):
-        """Sets the cp_job_id of this ProfileJobRequest.
+        """Sets the cp_job_id of this LProfileJobRequest.
 
 
-        :param cp_job_id: The cp_job_id of this ProfileJobRequest.  # noqa: E501
+        :param cp_job_id: The cp_job_id of this LProfileJobRequest.  # noqa: E501
         :type: str
         """
 
@@ -134,20 +134,20 @@ class LProfileJobRequest(object):
 
     @property
     def emrcluster(self):
-        """Gets the emrcluster of this ProfileJobRequest.  # noqa: E501
+        """Gets the emrcluster of this LProfileJobRequest.  # noqa: E501
 
 
-        :return: The emrcluster of this ProfileJobRequest.  # noqa: E501
+        :return: The emrcluster of this LProfileJobRequest.  # noqa: E501
         :rtype: object
         """
         return self._emrcluster
 
     @emrcluster.setter
     def emrcluster(self, emrcluster):
-        """Sets the emrcluster of this ProfileJobRequest.
+        """Sets the emrcluster of this LProfileJobRequest.
 
 
-        :param emrcluster: The emrcluster of this ProfileJobRequest.  # noqa: E501
+        :param emrcluster: The emrcluster of this LProfileJobRequest.  # noqa: E501
         :type: object
         """
 
@@ -155,21 +155,21 @@ class LProfileJobRequest(object):
 
     @property
     def emr_config_id(self):
-        """Gets the emr_config_id of this ProfileJobRequest.  # noqa: E501
+        """Gets the emr_config_id of this LProfileJobRequest.  # noqa: E501
 
 
-        :return: The emr_config_id of this ProfileJobRequest.  # noqa: E501
-        :rtype: AnyOfprofileJobRequestEmrConfigId
+        :return: The emr_config_id of this LProfileJobRequest.  # noqa: E501
+        :rtype: LAnyOfprofileJobRequestEmrConfigId
         """
         return self._emr_config_id
 
     @emr_config_id.setter
     def emr_config_id(self, emr_config_id):
-        """Sets the emr_config_id of this ProfileJobRequest.
+        """Sets the emr_config_id of this LProfileJobRequest.
 
 
-        :param emr_config_id: The emr_config_id of this ProfileJobRequest.  # noqa: E501
-        :type: AnyOfprofileJobRequestEmrConfigId
+        :param emr_config_id: The emr_config_id of this LProfileJobRequest.  # noqa: E501
+        :type: LAnyOfprofileJobRequestEmrConfigId
         """
 
         self._emr_config_id = emr_config_id
@@ -195,7 +195,7 @@ class LProfileJobRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ProfileJobRequest, dict):
+        if issubclass(LProfileJobRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -211,7 +211,7 @@ class LProfileJobRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ProfileJobRequest):
+        if not isinstance(other, LProfileJobRequest):
             return False
 
         return self.__dict__ == other.__dict__

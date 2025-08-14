@@ -37,7 +37,7 @@ class LMonthlyWeekdayTrigger(object):
     }
 
     def __init__(self, monthly_weekday=None, timezone=None):  # noqa: E501
-        """MonthlyWeekdayTrigger - a model defined in Swagger"""  # noqa: E501
+        """LMonthlyWeekdayTrigger - a model defined in Swagger"""  # noqa: E501
         self._monthly_weekday = None
         self._timezone = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LMonthlyWeekdayTrigger(object):
 
     @property
     def monthly_weekday(self):
-        """Gets the monthly_weekday of this MonthlyWeekdayTrigger.  # noqa: E501
+        """Gets the monthly_weekday of this LMonthlyWeekdayTrigger.  # noqa: E501
 
 
-        :return: The monthly_weekday of this MonthlyWeekdayTrigger.  # noqa: E501
+        :return: The monthly_weekday of this LMonthlyWeekdayTrigger.  # noqa: E501
         :rtype: object
         """
         return self._monthly_weekday
 
     @monthly_weekday.setter
     def monthly_weekday(self, monthly_weekday):
-        """Sets the monthly_weekday of this MonthlyWeekdayTrigger.
+        """Sets the monthly_weekday of this LMonthlyWeekdayTrigger.
 
 
-        :param monthly_weekday: The monthly_weekday of this MonthlyWeekdayTrigger.  # noqa: E501
+        :param monthly_weekday: The monthly_weekday of this LMonthlyWeekdayTrigger.  # noqa: E501
         :type: object
         """
         if monthly_weekday is None:
@@ -69,22 +69,22 @@ class LMonthlyWeekdayTrigger(object):
 
     @property
     def timezone(self):
-        """Gets the timezone of this MonthlyWeekdayTrigger.  # noqa: E501
+        """Gets the timezone of this LMonthlyWeekdayTrigger.  # noqa: E501
 
         timezone for this trigger, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :return: The timezone of this MonthlyWeekdayTrigger.  # noqa: E501
+        :return: The timezone of this LMonthlyWeekdayTrigger.  # noqa: E501
         :rtype: str
         """
         return self._timezone
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this MonthlyWeekdayTrigger.
+        """Sets the timezone of this LMonthlyWeekdayTrigger.
 
         timezone for this trigger, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :param timezone: The timezone of this MonthlyWeekdayTrigger.  # noqa: E501
+        :param timezone: The timezone of this LMonthlyWeekdayTrigger.  # noqa: E501
         :type: str
         """
         if timezone is None:
@@ -113,7 +113,7 @@ class LMonthlyWeekdayTrigger(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(MonthlyWeekdayTrigger, dict):
+        if issubclass(LMonthlyWeekdayTrigger, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LMonthlyWeekdayTrigger(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, MonthlyWeekdayTrigger):
+        if not isinstance(other, LMonthlyWeekdayTrigger):
             return False
 
         return self.__dict__ == other.__dict__

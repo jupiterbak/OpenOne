@@ -35,29 +35,29 @@ class LTaskErrorResponse(object):
     }
 
     def __init__(self, errors=None):  # noqa: E501
-        """TaskErrorResponse - a model defined in Swagger"""  # noqa: E501
+        """LTaskErrorResponse - a model defined in Swagger"""  # noqa: E501
         self._errors = None
         self.discriminator = None
         self.errors = errors
 
     @property
     def errors(self):
-        """Gets the errors of this TaskErrorResponse.  # noqa: E501
+        """Gets the errors of this LTaskErrorResponse.  # noqa: E501
 
         array of task error objects  # noqa: E501
 
-        :return: The errors of this TaskErrorResponse.  # noqa: E501
+        :return: The errors of this LTaskErrorResponse.  # noqa: E501
         :rtype: list[object]
         """
         return self._errors
 
     @errors.setter
     def errors(self, errors):
-        """Sets the errors of this TaskErrorResponse.
+        """Sets the errors of this LTaskErrorResponse.
 
         array of task error objects  # noqa: E501
 
-        :param errors: The errors of this TaskErrorResponse.  # noqa: E501
+        :param errors: The errors of this LTaskErrorResponse.  # noqa: E501
         :type: list[object]
         """
         if errors is None:
@@ -86,7 +86,7 @@ class LTaskErrorResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(TaskErrorResponse, dict):
+        if issubclass(LTaskErrorResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -102,7 +102,7 @@ class LTaskErrorResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TaskErrorResponse):
+        if not isinstance(other, LTaskErrorResponse):
             return False
 
         return self.__dict__ == other.__dict__

@@ -33,7 +33,7 @@ class LFileImportedDatasetRequest(object):
     }
 
     def __init__(self):  # noqa: E501
-        """FileImportedDatasetRequest - a model defined in Swagger"""  # noqa: E501
+        """LFileImportedDatasetRequest - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LFileImportedDatasetRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FileImportedDatasetRequest, dict):
+        if issubclass(LFileImportedDatasetRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LFileImportedDatasetRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FileImportedDatasetRequest):
+        if not isinstance(other, LFileImportedDatasetRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,7 +27,7 @@ class LConnectionPermissions(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[ConnectionPermission]'
+        'data': 'list[LConnectionPermission]'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LConnectionPermissions(object):
     }
 
     def __init__(self, data=None):  # noqa: E501
-        """ConnectionPermissions - a model defined in Swagger"""  # noqa: E501
+        """LConnectionPermissions - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self.discriminator = None
         self.data = data
 
     @property
     def data(self):
-        """Gets the data of this ConnectionPermissions.  # noqa: E501
+        """Gets the data of this LConnectionPermissions.  # noqa: E501
 
 
-        :return: The data of this ConnectionPermissions.  # noqa: E501
-        :rtype: list[ConnectionPermission]
+        :return: The data of this LConnectionPermissions.  # noqa: E501
+        :rtype: list[LConnectionPermission]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ConnectionPermissions.
+        """Sets the data of this LConnectionPermissions.
 
 
-        :param data: The data of this ConnectionPermissions.  # noqa: E501
-        :type: list[ConnectionPermission]
+        :param data: The data of this LConnectionPermissions.  # noqa: E501
+        :type: list[LConnectionPermission]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LConnectionPermissions(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConnectionPermissions, dict):
+        if issubclass(LConnectionPermissions, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LConnectionPermissions(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConnectionPermissions):
+        if not isinstance(other, LConnectionPermissions):
             return False
 
         return self.__dict__ == other.__dict__

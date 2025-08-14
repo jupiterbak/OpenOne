@@ -37,7 +37,7 @@ class LNextPageURLPagination(object):
     }
 
     def __init__(self, pagination_type=None, pageurlpath=None):  # noqa: E501
-        """NextPageURLPagination - a model defined in Swagger"""  # noqa: E501
+        """LNextPageURLPagination - a model defined in Swagger"""  # noqa: E501
         self._pagination_type = None
         self._pageurlpath = None
         self.discriminator = None
@@ -46,22 +46,22 @@ class LNextPageURLPagination(object):
 
     @property
     def pagination_type(self):
-        """Gets the pagination_type of this NextPageURLPagination.  # noqa: E501
+        """Gets the pagination_type of this LNextPageURLPagination.  # noqa: E501
 
         nextPageURL pagination type.  # noqa: E501
 
-        :return: The pagination_type of this NextPageURLPagination.  # noqa: E501
+        :return: The pagination_type of this LNextPageURLPagination.  # noqa: E501
         :rtype: str
         """
         return self._pagination_type
 
     @pagination_type.setter
     def pagination_type(self, pagination_type):
-        """Sets the pagination_type of this NextPageURLPagination.
+        """Sets the pagination_type of this LNextPageURLPagination.
 
         nextPageURL pagination type.  # noqa: E501
 
-        :param pagination_type: The pagination_type of this NextPageURLPagination.  # noqa: E501
+        :param pagination_type: The pagination_type of this LNextPageURLPagination.  # noqa: E501
         :type: str
         """
         if pagination_type is None:
@@ -71,22 +71,22 @@ class LNextPageURLPagination(object):
 
     @property
     def pageurlpath(self):
-        """Gets the pageurlpath of this NextPageURLPagination.  # noqa: E501
+        """Gets the pageurlpath of this LNextPageURLPagination.  # noqa: E501
 
         xPath to next page URL.  # noqa: E501
 
-        :return: The pageurlpath of this NextPageURLPagination.  # noqa: E501
+        :return: The pageurlpath of this LNextPageURLPagination.  # noqa: E501
         :rtype: str
         """
         return self._pageurlpath
 
     @pageurlpath.setter
     def pageurlpath(self, pageurlpath):
-        """Sets the pageurlpath of this NextPageURLPagination.
+        """Sets the pageurlpath of this LNextPageURLPagination.
 
         xPath to next page URL.  # noqa: E501
 
-        :param pageurlpath: The pageurlpath of this NextPageURLPagination.  # noqa: E501
+        :param pageurlpath: The pageurlpath of this LNextPageURLPagination.  # noqa: E501
         :type: str
         """
         if pageurlpath is None:
@@ -115,7 +115,7 @@ class LNextPageURLPagination(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(NextPageURLPagination, dict):
+        if issubclass(LNextPageURLPagination, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -131,7 +131,7 @@ class LNextPageURLPagination(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, NextPageURLPagination):
+        if not isinstance(other, LNextPageURLPagination):
             return False
 
         return self.__dict__ == other.__dict__

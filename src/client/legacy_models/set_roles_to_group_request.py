@@ -27,7 +27,7 @@ class LSetRolesToGroupRequest(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'role_ids': 'list[AnyOfsetRolesToGroupRequestRoleIdsItems]'
+        'role_ids': 'list[LAnyOfsetRolesToGroupRequestRoleIdsItems]'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LSetRolesToGroupRequest(object):
     }
 
     def __init__(self, role_ids=None):  # noqa: E501
-        """SetRolesToGroupRequest - a model defined in Swagger"""  # noqa: E501
+        """LSetRolesToGroupRequest - a model defined in Swagger"""  # noqa: E501
         self._role_ids = None
         self.discriminator = None
         self.role_ids = role_ids
 
     @property
     def role_ids(self):
-        """Gets the role_ids of this SetRolesToGroupRequest.  # noqa: E501
+        """Gets the role_ids of this LSetRolesToGroupRequest.  # noqa: E501
 
 
-        :return: The role_ids of this SetRolesToGroupRequest.  # noqa: E501
-        :rtype: list[AnyOfsetRolesToGroupRequestRoleIdsItems]
+        :return: The role_ids of this LSetRolesToGroupRequest.  # noqa: E501
+        :rtype: list[LAnyOfsetRolesToGroupRequestRoleIdsItems]
         """
         return self._role_ids
 
     @role_ids.setter
     def role_ids(self, role_ids):
-        """Sets the role_ids of this SetRolesToGroupRequest.
+        """Sets the role_ids of this LSetRolesToGroupRequest.
 
 
-        :param role_ids: The role_ids of this SetRolesToGroupRequest.  # noqa: E501
-        :type: list[AnyOfsetRolesToGroupRequestRoleIdsItems]
+        :param role_ids: The role_ids of this LSetRolesToGroupRequest.  # noqa: E501
+        :type: list[LAnyOfsetRolesToGroupRequestRoleIdsItems]
         """
         if role_ids is None:
             raise ValueError("Invalid value for `role_ids`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LSetRolesToGroupRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(SetRolesToGroupRequest, dict):
+        if issubclass(LSetRolesToGroupRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LSetRolesToGroupRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SetRolesToGroupRequest):
+        if not isinstance(other, LSetRolesToGroupRequest):
             return False
 
         return self.__dict__ == other.__dict__

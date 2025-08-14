@@ -27,7 +27,7 @@ class LWrangledDatasetList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[WrangledDataset]',
+        'data': 'list[LWrangledDataset]',
         'count': 'int'
     }
 
@@ -37,7 +37,7 @@ class LWrangledDatasetList(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """WrangledDatasetList - a model defined in Swagger"""  # noqa: E501
+        """LWrangledDatasetList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LWrangledDatasetList(object):
 
     @property
     def data(self):
-        """Gets the data of this WrangledDatasetList.  # noqa: E501
+        """Gets the data of this LWrangledDatasetList.  # noqa: E501
 
 
-        :return: The data of this WrangledDatasetList.  # noqa: E501
-        :rtype: list[WrangledDataset]
+        :return: The data of this LWrangledDatasetList.  # noqa: E501
+        :rtype: list[LWrangledDataset]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this WrangledDatasetList.
+        """Sets the data of this LWrangledDatasetList.
 
 
-        :param data: The data of this WrangledDatasetList.  # noqa: E501
-        :type: list[WrangledDataset]
+        :param data: The data of this LWrangledDatasetList.  # noqa: E501
+        :type: list[LWrangledDataset]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LWrangledDatasetList(object):
 
     @property
     def count(self):
-        """Gets the count of this WrangledDatasetList.  # noqa: E501
+        """Gets the count of this LWrangledDatasetList.  # noqa: E501
 
 
-        :return: The count of this WrangledDatasetList.  # noqa: E501
+        :return: The count of this LWrangledDatasetList.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this WrangledDatasetList.
+        """Sets the count of this LWrangledDatasetList.
 
 
-        :param count: The count of this WrangledDatasetList.  # noqa: E501
+        :param count: The count of this LWrangledDatasetList.  # noqa: E501
         :type: int
         """
 
@@ -110,7 +110,7 @@ class LWrangledDatasetList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WrangledDatasetList, dict):
+        if issubclass(LWrangledDatasetList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LWrangledDatasetList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WrangledDatasetList):
+        if not isinstance(other, LWrangledDatasetList):
             return False
 
         return self.__dict__ == other.__dict__

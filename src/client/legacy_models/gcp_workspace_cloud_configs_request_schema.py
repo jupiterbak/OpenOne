@@ -35,27 +35,27 @@ class LGcpWorkspaceCloudConfigsRequestSchema(object):
     }
 
     def __init__(self, gcp=None):  # noqa: E501
-        """GcpWorkspaceCloudConfigsRequestSchema - a model defined in Swagger"""  # noqa: E501
+        """LGcpWorkspaceCloudConfigsRequestSchema - a model defined in Swagger"""  # noqa: E501
         self._gcp = None
         self.discriminator = None
         self.gcp = gcp
 
     @property
     def gcp(self):
-        """Gets the gcp of this GcpWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        """Gets the gcp of this LGcpWorkspaceCloudConfigsRequestSchema.  # noqa: E501
 
 
-        :return: The gcp of this GcpWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        :return: The gcp of this LGcpWorkspaceCloudConfigsRequestSchema.  # noqa: E501
         :rtype: object
         """
         return self._gcp
 
     @gcp.setter
     def gcp(self, gcp):
-        """Sets the gcp of this GcpWorkspaceCloudConfigsRequestSchema.
+        """Sets the gcp of this LGcpWorkspaceCloudConfigsRequestSchema.
 
 
-        :param gcp: The gcp of this GcpWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        :param gcp: The gcp of this LGcpWorkspaceCloudConfigsRequestSchema.  # noqa: E501
         :type: object
         """
         if gcp is None:
@@ -84,7 +84,7 @@ class LGcpWorkspaceCloudConfigsRequestSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(GcpWorkspaceCloudConfigsRequestSchema, dict):
+        if issubclass(LGcpWorkspaceCloudConfigsRequestSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LGcpWorkspaceCloudConfigsRequestSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, GcpWorkspaceCloudConfigsRequestSchema):
+        if not isinstance(other, LGcpWorkspaceCloudConfigsRequestSchema):
             return False
 
         return self.__dict__ == other.__dict__

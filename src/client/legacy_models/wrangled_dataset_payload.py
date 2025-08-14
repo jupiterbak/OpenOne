@@ -39,7 +39,7 @@ class LWrangledDatasetPayload(object):
     }
 
     def __init__(self, wrangled_dataset=None, flow=None, name=None):  # noqa: E501
-        """WrangledDatasetPayload - a model defined in Swagger"""  # noqa: E501
+        """LWrangledDatasetPayload - a model defined in Swagger"""  # noqa: E501
         self._wrangled_dataset = None
         self._flow = None
         self._name = None
@@ -50,20 +50,20 @@ class LWrangledDatasetPayload(object):
 
     @property
     def wrangled_dataset(self):
-        """Gets the wrangled_dataset of this WrangledDatasetPayload.  # noqa: E501
+        """Gets the wrangled_dataset of this LWrangledDatasetPayload.  # noqa: E501
 
 
-        :return: The wrangled_dataset of this WrangledDatasetPayload.  # noqa: E501
+        :return: The wrangled_dataset of this LWrangledDatasetPayload.  # noqa: E501
         :rtype: object
         """
         return self._wrangled_dataset
 
     @wrangled_dataset.setter
     def wrangled_dataset(self, wrangled_dataset):
-        """Sets the wrangled_dataset of this WrangledDatasetPayload.
+        """Sets the wrangled_dataset of this LWrangledDatasetPayload.
 
 
-        :param wrangled_dataset: The wrangled_dataset of this WrangledDatasetPayload.  # noqa: E501
+        :param wrangled_dataset: The wrangled_dataset of this LWrangledDatasetPayload.  # noqa: E501
         :type: object
         """
         if wrangled_dataset is None:
@@ -73,20 +73,20 @@ class LWrangledDatasetPayload(object):
 
     @property
     def flow(self):
-        """Gets the flow of this WrangledDatasetPayload.  # noqa: E501
+        """Gets the flow of this LWrangledDatasetPayload.  # noqa: E501
 
 
-        :return: The flow of this WrangledDatasetPayload.  # noqa: E501
+        :return: The flow of this LWrangledDatasetPayload.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this WrangledDatasetPayload.
+        """Sets the flow of this LWrangledDatasetPayload.
 
 
-        :param flow: The flow of this WrangledDatasetPayload.  # noqa: E501
+        :param flow: The flow of this LWrangledDatasetPayload.  # noqa: E501
         :type: object
         """
         if flow is None:
@@ -96,20 +96,20 @@ class LWrangledDatasetPayload(object):
 
     @property
     def name(self):
-        """Gets the name of this WrangledDatasetPayload.  # noqa: E501
+        """Gets the name of this LWrangledDatasetPayload.  # noqa: E501
 
 
-        :return: The name of this WrangledDatasetPayload.  # noqa: E501
+        :return: The name of this LWrangledDatasetPayload.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WrangledDatasetPayload.
+        """Sets the name of this LWrangledDatasetPayload.
 
 
-        :param name: The name of this WrangledDatasetPayload.  # noqa: E501
+        :param name: The name of this LWrangledDatasetPayload.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -138,7 +138,7 @@ class LWrangledDatasetPayload(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WrangledDatasetPayload, dict):
+        if issubclass(LWrangledDatasetPayload, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -154,7 +154,7 @@ class LWrangledDatasetPayload(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WrangledDatasetPayload):
+        if not isinstance(other, LWrangledDatasetPayload):
             return False
 
         return self.__dict__ == other.__dict__

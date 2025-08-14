@@ -33,7 +33,7 @@ class LAnyOfsharePlanRequestDataItems(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfsharePlanRequestDataItems - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfsharePlanRequestDataItems - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfsharePlanRequestDataItems(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfsharePlanRequestDataItems, dict):
+        if issubclass(LAnyOfsharePlanRequestDataItems, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfsharePlanRequestDataItems(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfsharePlanRequestDataItems):
+        if not isinstance(other, LAnyOfsharePlanRequestDataItems):
             return False
 
         return self.__dict__ == other.__dict__

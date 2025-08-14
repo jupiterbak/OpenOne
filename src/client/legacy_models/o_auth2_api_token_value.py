@@ -45,7 +45,7 @@ class LOAuth2ApiTokenValue(object):
     }
 
     def __init__(self, access_token=None, token_type=None, expires_in=None, refresh_token=None, scope=None, id_token=None):  # noqa: E501
-        """OAuth2ApiTokenValue - a model defined in Swagger"""  # noqa: E501
+        """LOAuth2ApiTokenValue - a model defined in Swagger"""  # noqa: E501
         self._access_token = None
         self._token_type = None
         self._expires_in = None
@@ -63,22 +63,22 @@ class LOAuth2ApiTokenValue(object):
 
     @property
     def access_token(self):
-        """Gets the access_token of this OAuth2ApiTokenValue.  # noqa: E501
+        """Gets the access_token of this LOAuth2ApiTokenValue.  # noqa: E501
 
         The JWT access token issued by AAC  # noqa: E501
 
-        :return: The access_token of this OAuth2ApiTokenValue.  # noqa: E501
+        :return: The access_token of this LOAuth2ApiTokenValue.  # noqa: E501
         :rtype: str
         """
         return self._access_token
 
     @access_token.setter
     def access_token(self, access_token):
-        """Sets the access_token of this OAuth2ApiTokenValue.
+        """Sets the access_token of this LOAuth2ApiTokenValue.
 
         The JWT access token issued by AAC  # noqa: E501
 
-        :param access_token: The access_token of this OAuth2ApiTokenValue.  # noqa: E501
+        :param access_token: The access_token of this LOAuth2ApiTokenValue.  # noqa: E501
         :type: str
         """
         if access_token is None:
@@ -88,22 +88,22 @@ class LOAuth2ApiTokenValue(object):
 
     @property
     def token_type(self):
-        """Gets the token_type of this OAuth2ApiTokenValue.  # noqa: E501
+        """Gets the token_type of this LOAuth2ApiTokenValue.  # noqa: E501
 
         A string that specifies the type of the access token  # noqa: E501
 
-        :return: The token_type of this OAuth2ApiTokenValue.  # noqa: E501
+        :return: The token_type of this LOAuth2ApiTokenValue.  # noqa: E501
         :rtype: str
         """
         return self._token_type
 
     @token_type.setter
     def token_type(self, token_type):
-        """Sets the token_type of this OAuth2ApiTokenValue.
+        """Sets the token_type of this LOAuth2ApiTokenValue.
 
         A string that specifies the type of the access token  # noqa: E501
 
-        :param token_type: The token_type of this OAuth2ApiTokenValue.  # noqa: E501
+        :param token_type: The token_type of this LOAuth2ApiTokenValue.  # noqa: E501
         :type: str
         """
         if token_type is None:
@@ -113,22 +113,22 @@ class LOAuth2ApiTokenValue(object):
 
     @property
     def expires_in(self):
-        """Gets the expires_in of this OAuth2ApiTokenValue.  # noqa: E501
+        """Gets the expires_in of this LOAuth2ApiTokenValue.  # noqa: E501
 
         An integer that specifies the number of seconds that the access token is valid  # noqa: E501
 
-        :return: The expires_in of this OAuth2ApiTokenValue.  # noqa: E501
+        :return: The expires_in of this LOAuth2ApiTokenValue.  # noqa: E501
         :rtype: str
         """
         return self._expires_in
 
     @expires_in.setter
     def expires_in(self, expires_in):
-        """Sets the expires_in of this OAuth2ApiTokenValue.
+        """Sets the expires_in of this LOAuth2ApiTokenValue.
 
         An integer that specifies the number of seconds that the access token is valid  # noqa: E501
 
-        :param expires_in: The expires_in of this OAuth2ApiTokenValue.  # noqa: E501
+        :param expires_in: The expires_in of this LOAuth2ApiTokenValue.  # noqa: E501
         :type: str
         """
         if expires_in is None:
@@ -138,22 +138,22 @@ class LOAuth2ApiTokenValue(object):
 
     @property
     def refresh_token(self):
-        """Gets the refresh_token of this OAuth2ApiTokenValue.  # noqa: E501
+        """Gets the refresh_token of this LOAuth2ApiTokenValue.  # noqa: E501
 
         The JWT refresh token issued by AAC  # noqa: E501
 
-        :return: The refresh_token of this OAuth2ApiTokenValue.  # noqa: E501
+        :return: The refresh_token of this LOAuth2ApiTokenValue.  # noqa: E501
         :rtype: str
         """
         return self._refresh_token
 
     @refresh_token.setter
     def refresh_token(self, refresh_token):
-        """Sets the refresh_token of this OAuth2ApiTokenValue.
+        """Sets the refresh_token of this LOAuth2ApiTokenValue.
 
         The JWT refresh token issued by AAC  # noqa: E501
 
-        :param refresh_token: The refresh_token of this OAuth2ApiTokenValue.  # noqa: E501
+        :param refresh_token: The refresh_token of this LOAuth2ApiTokenValue.  # noqa: E501
         :type: str
         """
         if refresh_token is None:
@@ -163,22 +163,22 @@ class LOAuth2ApiTokenValue(object):
 
     @property
     def scope(self):
-        """Gets the scope of this OAuth2ApiTokenValue.  # noqa: E501
+        """Gets the scope of this LOAuth2ApiTokenValue.  # noqa: E501
 
         A string that specifies the scopes of the token separated by space  # noqa: E501
 
-        :return: The scope of this OAuth2ApiTokenValue.  # noqa: E501
+        :return: The scope of this LOAuth2ApiTokenValue.  # noqa: E501
         :rtype: str
         """
         return self._scope
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this OAuth2ApiTokenValue.
+        """Sets the scope of this LOAuth2ApiTokenValue.
 
         A string that specifies the scopes of the token separated by space  # noqa: E501
 
-        :param scope: The scope of this OAuth2ApiTokenValue.  # noqa: E501
+        :param scope: The scope of this LOAuth2ApiTokenValue.  # noqa: E501
         :type: str
         """
         if scope is None:
@@ -188,22 +188,22 @@ class LOAuth2ApiTokenValue(object):
 
     @property
     def id_token(self):
-        """Gets the id_token of this OAuth2ApiTokenValue.  # noqa: E501
+        """Gets the id_token of this LOAuth2ApiTokenValue.  # noqa: E501
 
         The ID token issued by AAC  # noqa: E501
 
-        :return: The id_token of this OAuth2ApiTokenValue.  # noqa: E501
+        :return: The id_token of this LOAuth2ApiTokenValue.  # noqa: E501
         :rtype: str
         """
         return self._id_token
 
     @id_token.setter
     def id_token(self, id_token):
-        """Sets the id_token of this OAuth2ApiTokenValue.
+        """Sets the id_token of this LOAuth2ApiTokenValue.
 
         The ID token issued by AAC  # noqa: E501
 
-        :param id_token: The id_token of this OAuth2ApiTokenValue.  # noqa: E501
+        :param id_token: The id_token of this LOAuth2ApiTokenValue.  # noqa: E501
         :type: str
         """
 
@@ -230,7 +230,7 @@ class LOAuth2ApiTokenValue(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OAuth2ApiTokenValue, dict):
+        if issubclass(LOAuth2ApiTokenValue, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -246,7 +246,7 @@ class LOAuth2ApiTokenValue(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OAuth2ApiTokenValue):
+        if not isinstance(other, LOAuth2ApiTokenValue):
             return False
 
         return self.__dict__ == other.__dict__

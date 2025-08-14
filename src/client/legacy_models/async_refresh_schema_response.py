@@ -35,27 +35,27 @@ class LAsyncRefreshSchemaResponse(object):
     }
 
     def __init__(self, resource_task_state_id=None):  # noqa: E501
-        """AsyncRefreshSchemaResponse - a model defined in Swagger"""  # noqa: E501
+        """LAsyncRefreshSchemaResponse - a model defined in Swagger"""  # noqa: E501
         self._resource_task_state_id = None
         self.discriminator = None
         self.resource_task_state_id = resource_task_state_id
 
     @property
     def resource_task_state_id(self):
-        """Gets the resource_task_state_id of this AsyncRefreshSchemaResponse.  # noqa: E501
+        """Gets the resource_task_state_id of this LAsyncRefreshSchemaResponse.  # noqa: E501
 
 
-        :return: The resource_task_state_id of this AsyncRefreshSchemaResponse.  # noqa: E501
+        :return: The resource_task_state_id of this LAsyncRefreshSchemaResponse.  # noqa: E501
         :rtype: int
         """
         return self._resource_task_state_id
 
     @resource_task_state_id.setter
     def resource_task_state_id(self, resource_task_state_id):
-        """Sets the resource_task_state_id of this AsyncRefreshSchemaResponse.
+        """Sets the resource_task_state_id of this LAsyncRefreshSchemaResponse.
 
 
-        :param resource_task_state_id: The resource_task_state_id of this AsyncRefreshSchemaResponse.  # noqa: E501
+        :param resource_task_state_id: The resource_task_state_id of this LAsyncRefreshSchemaResponse.  # noqa: E501
         :type: int
         """
         if resource_task_state_id is None:
@@ -84,7 +84,7 @@ class LAsyncRefreshSchemaResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AsyncRefreshSchemaResponse, dict):
+        if issubclass(LAsyncRefreshSchemaResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LAsyncRefreshSchemaResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AsyncRefreshSchemaResponse):
+        if not isinstance(other, LAsyncRefreshSchemaResponse):
             return False
 
         return self.__dict__ == other.__dict__

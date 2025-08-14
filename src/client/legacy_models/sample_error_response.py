@@ -35,7 +35,7 @@ class LSampleErrorResponse(object):
     }
 
     def __init__(self, exception=None):  # noqa: E501
-        """SampleErrorResponse - a model defined in Swagger"""  # noqa: E501
+        """LSampleErrorResponse - a model defined in Swagger"""  # noqa: E501
         self._exception = None
         self.discriminator = None
         if exception is not None:
@@ -43,20 +43,20 @@ class LSampleErrorResponse(object):
 
     @property
     def exception(self):
-        """Gets the exception of this SampleErrorResponse.  # noqa: E501
+        """Gets the exception of this LSampleErrorResponse.  # noqa: E501
 
 
-        :return: The exception of this SampleErrorResponse.  # noqa: E501
+        :return: The exception of this LSampleErrorResponse.  # noqa: E501
         :rtype: object
         """
         return self._exception
 
     @exception.setter
     def exception(self, exception):
-        """Sets the exception of this SampleErrorResponse.
+        """Sets the exception of this LSampleErrorResponse.
 
 
-        :param exception: The exception of this SampleErrorResponse.  # noqa: E501
+        :param exception: The exception of this LSampleErrorResponse.  # noqa: E501
         :type: object
         """
 
@@ -83,7 +83,7 @@ class LSampleErrorResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(SampleErrorResponse, dict):
+        if issubclass(LSampleErrorResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -99,7 +99,7 @@ class LSampleErrorResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SampleErrorResponse):
+        if not isinstance(other, LSampleErrorResponse):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,7 +27,7 @@ class LFlowWatcher(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfflowWatcherId',
+        'id': 'LAnyOfflowWatcherId',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'flow': 'object',
@@ -47,7 +47,7 @@ class LFlowWatcher(object):
     }
 
     def __init__(self, id=None, created_at=None, updated_at=None, flow=None, person=None, email=None, subscription_id=None):  # noqa: E501
-        """FlowWatcher - a model defined in Swagger"""  # noqa: E501
+        """LFlowWatcher - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._created_at = None
         self._updated_at = None
@@ -68,21 +68,21 @@ class LFlowWatcher(object):
 
     @property
     def id(self):
-        """Gets the id of this FlowWatcher.  # noqa: E501
+        """Gets the id of this LFlowWatcher.  # noqa: E501
 
 
-        :return: The id of this FlowWatcher.  # noqa: E501
-        :rtype: AnyOfflowWatcherId
+        :return: The id of this LFlowWatcher.  # noqa: E501
+        :rtype: LAnyOfflowWatcherId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FlowWatcher.
+        """Sets the id of this LFlowWatcher.
 
 
-        :param id: The id of this FlowWatcher.  # noqa: E501
-        :type: AnyOfflowWatcherId
+        :param id: The id of this LFlowWatcher.  # noqa: E501
+        :type: LAnyOfflowWatcherId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -91,22 +91,22 @@ class LFlowWatcher(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this FlowWatcher.  # noqa: E501
+        """Gets the created_at of this LFlowWatcher.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this FlowWatcher.  # noqa: E501
+        :return: The created_at of this LFlowWatcher.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this FlowWatcher.
+        """Sets the created_at of this LFlowWatcher.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this FlowWatcher.  # noqa: E501
+        :param created_at: The created_at of this LFlowWatcher.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -116,22 +116,22 @@ class LFlowWatcher(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this FlowWatcher.  # noqa: E501
+        """Gets the updated_at of this LFlowWatcher.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this FlowWatcher.  # noqa: E501
+        :return: The updated_at of this LFlowWatcher.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this FlowWatcher.
+        """Sets the updated_at of this LFlowWatcher.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this FlowWatcher.  # noqa: E501
+        :param updated_at: The updated_at of this LFlowWatcher.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -141,20 +141,20 @@ class LFlowWatcher(object):
 
     @property
     def flow(self):
-        """Gets the flow of this FlowWatcher.  # noqa: E501
+        """Gets the flow of this LFlowWatcher.  # noqa: E501
 
 
-        :return: The flow of this FlowWatcher.  # noqa: E501
+        :return: The flow of this LFlowWatcher.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this FlowWatcher.
+        """Sets the flow of this LFlowWatcher.
 
 
-        :param flow: The flow of this FlowWatcher.  # noqa: E501
+        :param flow: The flow of this LFlowWatcher.  # noqa: E501
         :type: object
         """
         if flow is None:
@@ -164,20 +164,20 @@ class LFlowWatcher(object):
 
     @property
     def person(self):
-        """Gets the person of this FlowWatcher.  # noqa: E501
+        """Gets the person of this LFlowWatcher.  # noqa: E501
 
 
-        :return: The person of this FlowWatcher.  # noqa: E501
+        :return: The person of this LFlowWatcher.  # noqa: E501
         :rtype: object
         """
         return self._person
 
     @person.setter
     def person(self, person):
-        """Sets the person of this FlowWatcher.
+        """Sets the person of this LFlowWatcher.
 
 
-        :param person: The person of this FlowWatcher.  # noqa: E501
+        :param person: The person of this LFlowWatcher.  # noqa: E501
         :type: object
         """
 
@@ -185,20 +185,20 @@ class LFlowWatcher(object):
 
     @property
     def email(self):
-        """Gets the email of this FlowWatcher.  # noqa: E501
+        """Gets the email of this LFlowWatcher.  # noqa: E501
 
 
-        :return: The email of this FlowWatcher.  # noqa: E501
+        :return: The email of this LFlowWatcher.  # noqa: E501
         :rtype: str
         """
         return self._email
 
     @email.setter
     def email(self, email):
-        """Sets the email of this FlowWatcher.
+        """Sets the email of this LFlowWatcher.
 
 
-        :param email: The email of this FlowWatcher.  # noqa: E501
+        :param email: The email of this LFlowWatcher.  # noqa: E501
         :type: str
         """
 
@@ -206,20 +206,20 @@ class LFlowWatcher(object):
 
     @property
     def subscription_id(self):
-        """Gets the subscription_id of this FlowWatcher.  # noqa: E501
+        """Gets the subscription_id of this LFlowWatcher.  # noqa: E501
 
 
-        :return: The subscription_id of this FlowWatcher.  # noqa: E501
+        :return: The subscription_id of this LFlowWatcher.  # noqa: E501
         :rtype: str
         """
         return self._subscription_id
 
     @subscription_id.setter
     def subscription_id(self, subscription_id):
-        """Sets the subscription_id of this FlowWatcher.
+        """Sets the subscription_id of this LFlowWatcher.
 
 
-        :param subscription_id: The subscription_id of this FlowWatcher.  # noqa: E501
+        :param subscription_id: The subscription_id of this LFlowWatcher.  # noqa: E501
         :type: str
         """
         if subscription_id is None:
@@ -248,7 +248,7 @@ class LFlowWatcher(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowWatcher, dict):
+        if issubclass(LFlowWatcher, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -264,7 +264,7 @@ class LFlowWatcher(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowWatcher):
+        if not isinstance(other, LFlowWatcher):
             return False
 
         return self.__dict__ == other.__dict__

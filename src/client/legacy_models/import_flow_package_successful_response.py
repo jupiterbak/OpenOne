@@ -30,13 +30,13 @@ class LImportFlowPackageSuccessfulResponse(object):
         'deleted_objects': 'object',
         'created_object_mapping': 'object',
         'import_rule_changes': 'object',
-        'primary_flow_ids': 'list[AnyOfimportFlowPackageSuccessfulResponsePrimaryFlowIdsItems]',
-        'flows': 'list[Flow]',
-        'datasources': 'list[ImportedDataset]',
-        'flownodes': 'list[FlowNode]',
-        'flowedges': 'list[FlowEdge]',
-        'recipes': 'list[Recipe]',
-        'outputobjects': 'list[OutputObject]',
+        'primary_flow_ids': 'list[LAnyOfimportFlowPackageSuccessfulResponsePrimaryFlowIdsItems]',
+        'flows': 'list[LFlow]',
+        'datasources': 'list[LImportedDataset]',
+        'flownodes': 'list[LFlowNode]',
+        'flowedges': 'list[LFlowEdge]',
+        'recipes': 'list[LRecipe]',
+        'outputobjects': 'list[LOutputObject]',
         'webhookflowtasks': 'list[object]',
         'release': 'object'
     }
@@ -57,7 +57,7 @@ class LImportFlowPackageSuccessfulResponse(object):
     }
 
     def __init__(self, deleted_objects=None, created_object_mapping=None, import_rule_changes=None, primary_flow_ids=None, flows=None, datasources=None, flownodes=None, flowedges=None, recipes=None, outputobjects=None, webhookflowtasks=None, release=None):  # noqa: E501
-        """ImportFlowPackageSuccessfulResponse - a model defined in Swagger"""  # noqa: E501
+        """LImportFlowPackageSuccessfulResponse - a model defined in Swagger"""  # noqa: E501
         self._deleted_objects = None
         self._created_object_mapping = None
         self._import_rule_changes = None
@@ -96,20 +96,20 @@ class LImportFlowPackageSuccessfulResponse(object):
 
     @property
     def deleted_objects(self):
-        """Gets the deleted_objects of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        """Gets the deleted_objects of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
 
 
-        :return: The deleted_objects of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :return: The deleted_objects of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
         :rtype: object
         """
         return self._deleted_objects
 
     @deleted_objects.setter
     def deleted_objects(self, deleted_objects):
-        """Sets the deleted_objects of this ImportFlowPackageSuccessfulResponse.
+        """Sets the deleted_objects of this LImportFlowPackageSuccessfulResponse.
 
 
-        :param deleted_objects: The deleted_objects of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :param deleted_objects: The deleted_objects of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
         :type: object
         """
 
@@ -117,20 +117,20 @@ class LImportFlowPackageSuccessfulResponse(object):
 
     @property
     def created_object_mapping(self):
-        """Gets the created_object_mapping of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        """Gets the created_object_mapping of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
 
 
-        :return: The created_object_mapping of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :return: The created_object_mapping of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
         :rtype: object
         """
         return self._created_object_mapping
 
     @created_object_mapping.setter
     def created_object_mapping(self, created_object_mapping):
-        """Sets the created_object_mapping of this ImportFlowPackageSuccessfulResponse.
+        """Sets the created_object_mapping of this LImportFlowPackageSuccessfulResponse.
 
 
-        :param created_object_mapping: The created_object_mapping of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :param created_object_mapping: The created_object_mapping of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
         :type: object
         """
 
@@ -138,20 +138,20 @@ class LImportFlowPackageSuccessfulResponse(object):
 
     @property
     def import_rule_changes(self):
-        """Gets the import_rule_changes of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        """Gets the import_rule_changes of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
 
 
-        :return: The import_rule_changes of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :return: The import_rule_changes of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
         :rtype: object
         """
         return self._import_rule_changes
 
     @import_rule_changes.setter
     def import_rule_changes(self, import_rule_changes):
-        """Sets the import_rule_changes of this ImportFlowPackageSuccessfulResponse.
+        """Sets the import_rule_changes of this LImportFlowPackageSuccessfulResponse.
 
 
-        :param import_rule_changes: The import_rule_changes of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :param import_rule_changes: The import_rule_changes of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
         :type: object
         """
 
@@ -159,21 +159,21 @@ class LImportFlowPackageSuccessfulResponse(object):
 
     @property
     def primary_flow_ids(self):
-        """Gets the primary_flow_ids of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        """Gets the primary_flow_ids of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
 
 
-        :return: The primary_flow_ids of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
-        :rtype: list[AnyOfimportFlowPackageSuccessfulResponsePrimaryFlowIdsItems]
+        :return: The primary_flow_ids of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :rtype: list[LAnyOfimportFlowPackageSuccessfulResponsePrimaryFlowIdsItems]
         """
         return self._primary_flow_ids
 
     @primary_flow_ids.setter
     def primary_flow_ids(self, primary_flow_ids):
-        """Sets the primary_flow_ids of this ImportFlowPackageSuccessfulResponse.
+        """Sets the primary_flow_ids of this LImportFlowPackageSuccessfulResponse.
 
 
-        :param primary_flow_ids: The primary_flow_ids of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
-        :type: list[AnyOfimportFlowPackageSuccessfulResponsePrimaryFlowIdsItems]
+        :param primary_flow_ids: The primary_flow_ids of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :type: list[LAnyOfimportFlowPackageSuccessfulResponsePrimaryFlowIdsItems]
         """
         if primary_flow_ids is None:
             raise ValueError("Invalid value for `primary_flow_ids`, must not be `None`")  # noqa: E501
@@ -182,21 +182,21 @@ class LImportFlowPackageSuccessfulResponse(object):
 
     @property
     def flows(self):
-        """Gets the flows of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        """Gets the flows of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
 
 
-        :return: The flows of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
-        :rtype: list[Flow]
+        :return: The flows of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :rtype: list[LFlow]
         """
         return self._flows
 
     @flows.setter
     def flows(self, flows):
-        """Sets the flows of this ImportFlowPackageSuccessfulResponse.
+        """Sets the flows of this LImportFlowPackageSuccessfulResponse.
 
 
-        :param flows: The flows of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
-        :type: list[Flow]
+        :param flows: The flows of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :type: list[LFlow]
         """
         if flows is None:
             raise ValueError("Invalid value for `flows`, must not be `None`")  # noqa: E501
@@ -205,125 +205,125 @@ class LImportFlowPackageSuccessfulResponse(object):
 
     @property
     def datasources(self):
-        """Gets the datasources of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        """Gets the datasources of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
 
 
-        :return: The datasources of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
-        :rtype: list[ImportedDataset]
+        :return: The datasources of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :rtype: list[LImportedDataset]
         """
         return self._datasources
 
     @datasources.setter
     def datasources(self, datasources):
-        """Sets the datasources of this ImportFlowPackageSuccessfulResponse.
+        """Sets the datasources of this LImportFlowPackageSuccessfulResponse.
 
 
-        :param datasources: The datasources of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
-        :type: list[ImportedDataset]
+        :param datasources: The datasources of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :type: list[LImportedDataset]
         """
 
         self._datasources = datasources
 
     @property
     def flownodes(self):
-        """Gets the flownodes of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        """Gets the flownodes of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
 
 
-        :return: The flownodes of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
-        :rtype: list[FlowNode]
+        :return: The flownodes of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :rtype: list[LFlowNode]
         """
         return self._flownodes
 
     @flownodes.setter
     def flownodes(self, flownodes):
-        """Sets the flownodes of this ImportFlowPackageSuccessfulResponse.
+        """Sets the flownodes of this LImportFlowPackageSuccessfulResponse.
 
 
-        :param flownodes: The flownodes of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
-        :type: list[FlowNode]
+        :param flownodes: The flownodes of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :type: list[LFlowNode]
         """
 
         self._flownodes = flownodes
 
     @property
     def flowedges(self):
-        """Gets the flowedges of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        """Gets the flowedges of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
 
 
-        :return: The flowedges of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
-        :rtype: list[FlowEdge]
+        :return: The flowedges of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :rtype: list[LFlowEdge]
         """
         return self._flowedges
 
     @flowedges.setter
     def flowedges(self, flowedges):
-        """Sets the flowedges of this ImportFlowPackageSuccessfulResponse.
+        """Sets the flowedges of this LImportFlowPackageSuccessfulResponse.
 
 
-        :param flowedges: The flowedges of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
-        :type: list[FlowEdge]
+        :param flowedges: The flowedges of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :type: list[LFlowEdge]
         """
 
         self._flowedges = flowedges
 
     @property
     def recipes(self):
-        """Gets the recipes of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        """Gets the recipes of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
 
 
-        :return: The recipes of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
-        :rtype: list[Recipe]
+        :return: The recipes of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :rtype: list[LRecipe]
         """
         return self._recipes
 
     @recipes.setter
     def recipes(self, recipes):
-        """Sets the recipes of this ImportFlowPackageSuccessfulResponse.
+        """Sets the recipes of this LImportFlowPackageSuccessfulResponse.
 
 
-        :param recipes: The recipes of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
-        :type: list[Recipe]
+        :param recipes: The recipes of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :type: list[LRecipe]
         """
 
         self._recipes = recipes
 
     @property
     def outputobjects(self):
-        """Gets the outputobjects of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        """Gets the outputobjects of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
 
 
-        :return: The outputobjects of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
-        :rtype: list[OutputObject]
+        :return: The outputobjects of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :rtype: list[LOutputObject]
         """
         return self._outputobjects
 
     @outputobjects.setter
     def outputobjects(self, outputobjects):
-        """Sets the outputobjects of this ImportFlowPackageSuccessfulResponse.
+        """Sets the outputobjects of this LImportFlowPackageSuccessfulResponse.
 
 
-        :param outputobjects: The outputobjects of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
-        :type: list[OutputObject]
+        :param outputobjects: The outputobjects of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :type: list[LOutputObject]
         """
 
         self._outputobjects = outputobjects
 
     @property
     def webhookflowtasks(self):
-        """Gets the webhookflowtasks of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        """Gets the webhookflowtasks of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
 
 
-        :return: The webhookflowtasks of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :return: The webhookflowtasks of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
         :rtype: list[object]
         """
         return self._webhookflowtasks
 
     @webhookflowtasks.setter
     def webhookflowtasks(self, webhookflowtasks):
-        """Sets the webhookflowtasks of this ImportFlowPackageSuccessfulResponse.
+        """Sets the webhookflowtasks of this LImportFlowPackageSuccessfulResponse.
 
 
-        :param webhookflowtasks: The webhookflowtasks of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :param webhookflowtasks: The webhookflowtasks of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
         :type: list[object]
         """
 
@@ -331,20 +331,20 @@ class LImportFlowPackageSuccessfulResponse(object):
 
     @property
     def release(self):
-        """Gets the release of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        """Gets the release of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
 
 
-        :return: The release of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :return: The release of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
         :rtype: object
         """
         return self._release
 
     @release.setter
     def release(self, release):
-        """Sets the release of this ImportFlowPackageSuccessfulResponse.
+        """Sets the release of this LImportFlowPackageSuccessfulResponse.
 
 
-        :param release: The release of this ImportFlowPackageSuccessfulResponse.  # noqa: E501
+        :param release: The release of this LImportFlowPackageSuccessfulResponse.  # noqa: E501
         :type: object
         """
 
@@ -371,7 +371,7 @@ class LImportFlowPackageSuccessfulResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ImportFlowPackageSuccessfulResponse, dict):
+        if issubclass(LImportFlowPackageSuccessfulResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -387,7 +387,7 @@ class LImportFlowPackageSuccessfulResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImportFlowPackageSuccessfulResponse):
+        if not isinstance(other, LImportFlowPackageSuccessfulResponse):
             return False
 
         return self.__dict__ == other.__dict__

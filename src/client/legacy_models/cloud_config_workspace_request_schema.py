@@ -33,7 +33,7 @@ class LCloudConfigWorkspaceRequestSchema(object):
     }
 
     def __init__(self):  # noqa: E501
-        """CloudConfigWorkspaceRequestSchema - a model defined in Swagger"""  # noqa: E501
+        """LCloudConfigWorkspaceRequestSchema - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LCloudConfigWorkspaceRequestSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(CloudConfigWorkspaceRequestSchema, dict):
+        if issubclass(LCloudConfigWorkspaceRequestSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LCloudConfigWorkspaceRequestSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CloudConfigWorkspaceRequestSchema):
+        if not isinstance(other, LCloudConfigWorkspaceRequestSchema):
             return False
 
         return self.__dict__ == other.__dict__

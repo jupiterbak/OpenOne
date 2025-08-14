@@ -28,13 +28,13 @@ class LFlowRunRequest(object):
     """
     swagger_types = {
         'ignore_recipe_errors': 'bool',
-        'run_parameters': 'RunParameterOverrides',
-        'schedule_execution_id': 'AnyOfflowRunRequestScheduleExecutionId',
-        'spark_options': 'list[OutputObjectSparkOptionUpdateRequest]',
-        'schema_drift_options': 'OutputObjectSchemaDriftOptionsUpdateRequest',
-        'databricks_options': 'list[DatabricksOptionsUpdateRequest]',
+        'run_parameters': 'LRunParameterOverrides',
+        'schedule_execution_id': 'LAnyOfflowRunRequestScheduleExecutionId',
+        'spark_options': 'list[LOutputObjectSparkOptionUpdateRequest]',
+        'schema_drift_options': 'LOutputObjectSchemaDriftOptionsUpdateRequest',
+        'databricks_options': 'list[LDatabricksOptionsUpdateRequest]',
         'execution': 'str',
-        'wrangled_dataset_ids': 'list[AnyOfflowRunRequestWrangledDatasetIdsItems]',
+        'wrangled_dataset_ids': 'list[LAnyOfflowRunRequestWrangledDatasetIdsItems]',
         'overrides': 'dict(str, object)'
     }
 
@@ -51,7 +51,7 @@ class LFlowRunRequest(object):
     }
 
     def __init__(self, ignore_recipe_errors=None, run_parameters=None, schedule_execution_id=None, spark_options=None, schema_drift_options=None, databricks_options=None, execution=None, wrangled_dataset_ids=None, overrides=None):  # noqa: E501
-        """FlowRunRequest - a model defined in Swagger"""  # noqa: E501
+        """LFlowRunRequest - a model defined in Swagger"""  # noqa: E501
         self._ignore_recipe_errors = None
         self._run_parameters = None
         self._schedule_execution_id = None
@@ -83,22 +83,22 @@ class LFlowRunRequest(object):
 
     @property
     def ignore_recipe_errors(self):
-        """Gets the ignore_recipe_errors of this FlowRunRequest.  # noqa: E501
+        """Gets the ignore_recipe_errors of this LFlowRunRequest.  # noqa: E501
 
         Setting this flag to true will mean the job will run even if there are upstream recipe errors. Setting it to false will cause the Request to fail on recipe errors.  # noqa: E501
 
-        :return: The ignore_recipe_errors of this FlowRunRequest.  # noqa: E501
+        :return: The ignore_recipe_errors of this LFlowRunRequest.  # noqa: E501
         :rtype: bool
         """
         return self._ignore_recipe_errors
 
     @ignore_recipe_errors.setter
     def ignore_recipe_errors(self, ignore_recipe_errors):
-        """Sets the ignore_recipe_errors of this FlowRunRequest.
+        """Sets the ignore_recipe_errors of this LFlowRunRequest.
 
         Setting this flag to true will mean the job will run even if there are upstream recipe errors. Setting it to false will cause the Request to fail on recipe errors.  # noqa: E501
 
-        :param ignore_recipe_errors: The ignore_recipe_errors of this FlowRunRequest.  # noqa: E501
+        :param ignore_recipe_errors: The ignore_recipe_errors of this LFlowRunRequest.  # noqa: E501
         :type: bool
         """
 
@@ -106,127 +106,127 @@ class LFlowRunRequest(object):
 
     @property
     def run_parameters(self):
-        """Gets the run_parameters of this FlowRunRequest.  # noqa: E501
+        """Gets the run_parameters of this LFlowRunRequest.  # noqa: E501
 
 
-        :return: The run_parameters of this FlowRunRequest.  # noqa: E501
-        :rtype: RunParameterOverrides
+        :return: The run_parameters of this LFlowRunRequest.  # noqa: E501
+        :rtype: LRunParameterOverrides
         """
         return self._run_parameters
 
     @run_parameters.setter
     def run_parameters(self, run_parameters):
-        """Sets the run_parameters of this FlowRunRequest.
+        """Sets the run_parameters of this LFlowRunRequest.
 
 
-        :param run_parameters: The run_parameters of this FlowRunRequest.  # noqa: E501
-        :type: RunParameterOverrides
+        :param run_parameters: The run_parameters of this LFlowRunRequest.  # noqa: E501
+        :type: LRunParameterOverrides
         """
 
         self._run_parameters = run_parameters
 
     @property
     def schedule_execution_id(self):
-        """Gets the schedule_execution_id of this FlowRunRequest.  # noqa: E501
+        """Gets the schedule_execution_id of this LFlowRunRequest.  # noqa: E501
 
 
-        :return: The schedule_execution_id of this FlowRunRequest.  # noqa: E501
-        :rtype: AnyOfflowRunRequestScheduleExecutionId
+        :return: The schedule_execution_id of this LFlowRunRequest.  # noqa: E501
+        :rtype: LAnyOfflowRunRequestScheduleExecutionId
         """
         return self._schedule_execution_id
 
     @schedule_execution_id.setter
     def schedule_execution_id(self, schedule_execution_id):
-        """Sets the schedule_execution_id of this FlowRunRequest.
+        """Sets the schedule_execution_id of this LFlowRunRequest.
 
 
-        :param schedule_execution_id: The schedule_execution_id of this FlowRunRequest.  # noqa: E501
-        :type: AnyOfflowRunRequestScheduleExecutionId
+        :param schedule_execution_id: The schedule_execution_id of this LFlowRunRequest.  # noqa: E501
+        :type: LAnyOfflowRunRequestScheduleExecutionId
         """
 
         self._schedule_execution_id = schedule_execution_id
 
     @property
     def spark_options(self):
-        """Gets the spark_options of this FlowRunRequest.  # noqa: E501
+        """Gets the spark_options of this LFlowRunRequest.  # noqa: E501
 
 
-        :return: The spark_options of this FlowRunRequest.  # noqa: E501
-        :rtype: list[OutputObjectSparkOptionUpdateRequest]
+        :return: The spark_options of this LFlowRunRequest.  # noqa: E501
+        :rtype: list[LOutputObjectSparkOptionUpdateRequest]
         """
         return self._spark_options
 
     @spark_options.setter
     def spark_options(self, spark_options):
-        """Sets the spark_options of this FlowRunRequest.
+        """Sets the spark_options of this LFlowRunRequest.
 
 
-        :param spark_options: The spark_options of this FlowRunRequest.  # noqa: E501
-        :type: list[OutputObjectSparkOptionUpdateRequest]
+        :param spark_options: The spark_options of this LFlowRunRequest.  # noqa: E501
+        :type: list[LOutputObjectSparkOptionUpdateRequest]
         """
 
         self._spark_options = spark_options
 
     @property
     def schema_drift_options(self):
-        """Gets the schema_drift_options of this FlowRunRequest.  # noqa: E501
+        """Gets the schema_drift_options of this LFlowRunRequest.  # noqa: E501
 
 
-        :return: The schema_drift_options of this FlowRunRequest.  # noqa: E501
-        :rtype: OutputObjectSchemaDriftOptionsUpdateRequest
+        :return: The schema_drift_options of this LFlowRunRequest.  # noqa: E501
+        :rtype: LOutputObjectSchemaDriftOptionsUpdateRequest
         """
         return self._schema_drift_options
 
     @schema_drift_options.setter
     def schema_drift_options(self, schema_drift_options):
-        """Sets the schema_drift_options of this FlowRunRequest.
+        """Sets the schema_drift_options of this LFlowRunRequest.
 
 
-        :param schema_drift_options: The schema_drift_options of this FlowRunRequest.  # noqa: E501
-        :type: OutputObjectSchemaDriftOptionsUpdateRequest
+        :param schema_drift_options: The schema_drift_options of this LFlowRunRequest.  # noqa: E501
+        :type: LOutputObjectSchemaDriftOptionsUpdateRequest
         """
 
         self._schema_drift_options = schema_drift_options
 
     @property
     def databricks_options(self):
-        """Gets the databricks_options of this FlowRunRequest.  # noqa: E501
+        """Gets the databricks_options of this LFlowRunRequest.  # noqa: E501
 
 
-        :return: The databricks_options of this FlowRunRequest.  # noqa: E501
-        :rtype: list[DatabricksOptionsUpdateRequest]
+        :return: The databricks_options of this LFlowRunRequest.  # noqa: E501
+        :rtype: list[LDatabricksOptionsUpdateRequest]
         """
         return self._databricks_options
 
     @databricks_options.setter
     def databricks_options(self, databricks_options):
-        """Sets the databricks_options of this FlowRunRequest.
+        """Sets the databricks_options of this LFlowRunRequest.
 
 
-        :param databricks_options: The databricks_options of this FlowRunRequest.  # noqa: E501
-        :type: list[DatabricksOptionsUpdateRequest]
+        :param databricks_options: The databricks_options of this LFlowRunRequest.  # noqa: E501
+        :type: list[LDatabricksOptionsUpdateRequest]
         """
 
         self._databricks_options = databricks_options
 
     @property
     def execution(self):
-        """Gets the execution of this FlowRunRequest.  # noqa: E501
+        """Gets the execution of this LFlowRunRequest.  # noqa: E501
 
         Execution language. Indicate on which engine the job was executed.   Can be null/missing for scheduled jobs that fail during the validation phase.  * `photon` - Photon engine. High performance embedded engine designed for small datasets (up to 1GB).       Not available for all product editions. * `amp` - Amp engine. * `xml-amp` - XML-AMP engine. Only available for standard workflows.    * `emrSpark` - Spark engine running on EMR       # noqa: E501
 
-        :return: The execution of this FlowRunRequest.  # noqa: E501
+        :return: The execution of this LFlowRunRequest.  # noqa: E501
         :rtype: str
         """
         return self._execution
 
     @execution.setter
     def execution(self, execution):
-        """Sets the execution of this FlowRunRequest.
+        """Sets the execution of this LFlowRunRequest.
 
         Execution language. Indicate on which engine the job was executed.   Can be null/missing for scheduled jobs that fail during the validation phase.  * `photon` - Photon engine. High performance embedded engine designed for small datasets (up to 1GB).       Not available for all product editions. * `amp` - Amp engine. * `xml-amp` - XML-AMP engine. Only available for standard workflows.    * `emrSpark` - Spark engine running on EMR       # noqa: E501
 
-        :param execution: The execution of this FlowRunRequest.  # noqa: E501
+        :param execution: The execution of this LFlowRunRequest.  # noqa: E501
         :type: str
         """
         allowed_values = ["photon", "amp", "xml-amp", "emrSpark"]  # noqa: E501
@@ -240,45 +240,45 @@ class LFlowRunRequest(object):
 
     @property
     def wrangled_dataset_ids(self):
-        """Gets the wrangled_dataset_ids of this FlowRunRequest.  # noqa: E501
+        """Gets the wrangled_dataset_ids of this LFlowRunRequest.  # noqa: E501
 
         Subset of outputs (identified by identifier of the recipe preceding the output) in this flow to run. When empty or unspecified, all outputs in the flow will be run.  # noqa: E501
 
-        :return: The wrangled_dataset_ids of this FlowRunRequest.  # noqa: E501
-        :rtype: list[AnyOfflowRunRequestWrangledDatasetIdsItems]
+        :return: The wrangled_dataset_ids of this LFlowRunRequest.  # noqa: E501
+        :rtype: list[LAnyOfflowRunRequestWrangledDatasetIdsItems]
         """
         return self._wrangled_dataset_ids
 
     @wrangled_dataset_ids.setter
     def wrangled_dataset_ids(self, wrangled_dataset_ids):
-        """Sets the wrangled_dataset_ids of this FlowRunRequest.
+        """Sets the wrangled_dataset_ids of this LFlowRunRequest.
 
         Subset of outputs (identified by identifier of the recipe preceding the output) in this flow to run. When empty or unspecified, all outputs in the flow will be run.  # noqa: E501
 
-        :param wrangled_dataset_ids: The wrangled_dataset_ids of this FlowRunRequest.  # noqa: E501
-        :type: list[AnyOfflowRunRequestWrangledDatasetIdsItems]
+        :param wrangled_dataset_ids: The wrangled_dataset_ids of this LFlowRunRequest.  # noqa: E501
+        :type: list[LAnyOfflowRunRequestWrangledDatasetIdsItems]
         """
 
         self._wrangled_dataset_ids = wrangled_dataset_ids
 
     @property
     def overrides(self):
-        """Gets the overrides of this FlowRunRequest.  # noqa: E501
+        """Gets the overrides of this LFlowRunRequest.  # noqa: E501
 
         Overrides for each of the output object. Use the recipe name to specify the overrides.  # noqa: E501
 
-        :return: The overrides of this FlowRunRequest.  # noqa: E501
+        :return: The overrides of this LFlowRunRequest.  # noqa: E501
         :rtype: dict(str, object)
         """
         return self._overrides
 
     @overrides.setter
     def overrides(self, overrides):
-        """Sets the overrides of this FlowRunRequest.
+        """Sets the overrides of this LFlowRunRequest.
 
         Overrides for each of the output object. Use the recipe name to specify the overrides.  # noqa: E501
 
-        :param overrides: The overrides of this FlowRunRequest.  # noqa: E501
+        :param overrides: The overrides of this LFlowRunRequest.  # noqa: E501
         :type: dict(str, object)
         """
 
@@ -305,7 +305,7 @@ class LFlowRunRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowRunRequest, dict):
+        if issubclass(LFlowRunRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -321,7 +321,7 @@ class LFlowRunRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowRunRequest):
+        if not isinstance(other, LFlowRunRequest):
             return False
 
         return self.__dict__ == other.__dict__

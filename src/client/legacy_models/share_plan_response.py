@@ -35,27 +35,27 @@ class LSharePlanResponse(object):
     }
 
     def __init__(self, data=None):  # noqa: E501
-        """SharePlanResponse - a model defined in Swagger"""  # noqa: E501
+        """LSharePlanResponse - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self.discriminator = None
         self.data = data
 
     @property
     def data(self):
-        """Gets the data of this SharePlanResponse.  # noqa: E501
+        """Gets the data of this LSharePlanResponse.  # noqa: E501
 
 
-        :return: The data of this SharePlanResponse.  # noqa: E501
+        :return: The data of this LSharePlanResponse.  # noqa: E501
         :rtype: list[object]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SharePlanResponse.
+        """Sets the data of this LSharePlanResponse.
 
 
-        :param data: The data of this SharePlanResponse.  # noqa: E501
+        :param data: The data of this LSharePlanResponse.  # noqa: E501
         :type: list[object]
         """
         if data is None:
@@ -84,7 +84,7 @@ class LSharePlanResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(SharePlanResponse, dict):
+        if issubclass(LSharePlanResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LSharePlanResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SharePlanResponse):
+        if not isinstance(other, LSharePlanResponse):
             return False
 
         return self.__dict__ == other.__dict__

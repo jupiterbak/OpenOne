@@ -31,7 +31,7 @@ class LProfileJob(object):
         'execution_language': 'str',
         'cp_job_id': 'str',
         'emrcluster': 'object',
-        'id': 'AnyOfprofileJobId'
+        'id': 'LAnyOfprofileJobId'
     }
 
     attribute_map = {
@@ -43,7 +43,7 @@ class LProfileJob(object):
     }
 
     def __init__(self, spec=None, execution_language=None, cp_job_id=None, emrcluster=None, id=None):  # noqa: E501
-        """ProfileJob - a model defined in Swagger"""  # noqa: E501
+        """LProfileJob - a model defined in Swagger"""  # noqa: E501
         self._spec = None
         self._execution_language = None
         self._cp_job_id = None
@@ -60,20 +60,20 @@ class LProfileJob(object):
 
     @property
     def spec(self):
-        """Gets the spec of this ProfileJob.  # noqa: E501
+        """Gets the spec of this LProfileJob.  # noqa: E501
 
 
-        :return: The spec of this ProfileJob.  # noqa: E501
+        :return: The spec of this LProfileJob.  # noqa: E501
         :rtype: str
         """
         return self._spec
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ProfileJob.
+        """Sets the spec of this LProfileJob.
 
 
-        :param spec: The spec of this ProfileJob.  # noqa: E501
+        :param spec: The spec of this LProfileJob.  # noqa: E501
         :type: str
         """
         if spec is None:
@@ -83,20 +83,20 @@ class LProfileJob(object):
 
     @property
     def execution_language(self):
-        """Gets the execution_language of this ProfileJob.  # noqa: E501
+        """Gets the execution_language of this LProfileJob.  # noqa: E501
 
 
-        :return: The execution_language of this ProfileJob.  # noqa: E501
+        :return: The execution_language of this LProfileJob.  # noqa: E501
         :rtype: str
         """
         return self._execution_language
 
     @execution_language.setter
     def execution_language(self, execution_language):
-        """Sets the execution_language of this ProfileJob.
+        """Sets the execution_language of this LProfileJob.
 
 
-        :param execution_language: The execution_language of this ProfileJob.  # noqa: E501
+        :param execution_language: The execution_language of this LProfileJob.  # noqa: E501
         :type: str
         """
         if execution_language is None:
@@ -112,20 +112,20 @@ class LProfileJob(object):
 
     @property
     def cp_job_id(self):
-        """Gets the cp_job_id of this ProfileJob.  # noqa: E501
+        """Gets the cp_job_id of this LProfileJob.  # noqa: E501
 
 
-        :return: The cp_job_id of this ProfileJob.  # noqa: E501
+        :return: The cp_job_id of this LProfileJob.  # noqa: E501
         :rtype: str
         """
         return self._cp_job_id
 
     @cp_job_id.setter
     def cp_job_id(self, cp_job_id):
-        """Sets the cp_job_id of this ProfileJob.
+        """Sets the cp_job_id of this LProfileJob.
 
 
-        :param cp_job_id: The cp_job_id of this ProfileJob.  # noqa: E501
+        :param cp_job_id: The cp_job_id of this LProfileJob.  # noqa: E501
         :type: str
         """
 
@@ -133,20 +133,20 @@ class LProfileJob(object):
 
     @property
     def emrcluster(self):
-        """Gets the emrcluster of this ProfileJob.  # noqa: E501
+        """Gets the emrcluster of this LProfileJob.  # noqa: E501
 
 
-        :return: The emrcluster of this ProfileJob.  # noqa: E501
+        :return: The emrcluster of this LProfileJob.  # noqa: E501
         :rtype: object
         """
         return self._emrcluster
 
     @emrcluster.setter
     def emrcluster(self, emrcluster):
-        """Sets the emrcluster of this ProfileJob.
+        """Sets the emrcluster of this LProfileJob.
 
 
-        :param emrcluster: The emrcluster of this ProfileJob.  # noqa: E501
+        :param emrcluster: The emrcluster of this LProfileJob.  # noqa: E501
         :type: object
         """
 
@@ -154,21 +154,21 @@ class LProfileJob(object):
 
     @property
     def id(self):
-        """Gets the id of this ProfileJob.  # noqa: E501
+        """Gets the id of this LProfileJob.  # noqa: E501
 
 
-        :return: The id of this ProfileJob.  # noqa: E501
-        :rtype: AnyOfprofileJobId
+        :return: The id of this LProfileJob.  # noqa: E501
+        :rtype: LAnyOfprofileJobId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProfileJob.
+        """Sets the id of this LProfileJob.
 
 
-        :param id: The id of this ProfileJob.  # noqa: E501
-        :type: AnyOfprofileJobId
+        :param id: The id of this LProfileJob.  # noqa: E501
+        :type: LAnyOfprofileJobId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -196,7 +196,7 @@ class LProfileJob(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ProfileJob, dict):
+        if issubclass(LProfileJob, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -212,7 +212,7 @@ class LProfileJob(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ProfileJob):
+        if not isinstance(other, LProfileJob):
             return False
 
         return self.__dict__ == other.__dict__

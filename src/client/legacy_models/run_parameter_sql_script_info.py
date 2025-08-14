@@ -30,7 +30,7 @@ class LRunParameterSqlScriptInfo(object):
         'type': 'str',
         'override_key': 'str',
         'insertion_indices': 'list[object]',
-        'value': 'RunParameterValueSqlScriptSchema'
+        'value': 'LRunParameterValueSqlScriptSchema'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class LRunParameterSqlScriptInfo(object):
     }
 
     def __init__(self, type=None, override_key=None, insertion_indices=None, value=None):  # noqa: E501
-        """RunParameterSqlScriptInfo - a model defined in Swagger"""  # noqa: E501
+        """LRunParameterSqlScriptInfo - a model defined in Swagger"""  # noqa: E501
         self._type = None
         self._override_key = None
         self._insertion_indices = None
@@ -55,20 +55,20 @@ class LRunParameterSqlScriptInfo(object):
 
     @property
     def type(self):
-        """Gets the type of this RunParameterSqlScriptInfo.  # noqa: E501
+        """Gets the type of this LRunParameterSqlScriptInfo.  # noqa: E501
 
 
-        :return: The type of this RunParameterSqlScriptInfo.  # noqa: E501
+        :return: The type of this LRunParameterSqlScriptInfo.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RunParameterSqlScriptInfo.
+        """Sets the type of this LRunParameterSqlScriptInfo.
 
 
-        :param type: The type of this RunParameterSqlScriptInfo.  # noqa: E501
+        :param type: The type of this LRunParameterSqlScriptInfo.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -84,22 +84,22 @@ class LRunParameterSqlScriptInfo(object):
 
     @property
     def override_key(self):
-        """Gets the override_key of this RunParameterSqlScriptInfo.  # noqa: E501
+        """Gets the override_key of this LRunParameterSqlScriptInfo.  # noqa: E501
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :return: The override_key of this RunParameterSqlScriptInfo.  # noqa: E501
+        :return: The override_key of this LRunParameterSqlScriptInfo.  # noqa: E501
         :rtype: str
         """
         return self._override_key
 
     @override_key.setter
     def override_key(self, override_key):
-        """Sets the override_key of this RunParameterSqlScriptInfo.
+        """Sets the override_key of this LRunParameterSqlScriptInfo.
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :param override_key: The override_key of this RunParameterSqlScriptInfo.  # noqa: E501
+        :param override_key: The override_key of this LRunParameterSqlScriptInfo.  # noqa: E501
         :type: str
         """
 
@@ -107,20 +107,20 @@ class LRunParameterSqlScriptInfo(object):
 
     @property
     def insertion_indices(self):
-        """Gets the insertion_indices of this RunParameterSqlScriptInfo.  # noqa: E501
+        """Gets the insertion_indices of this LRunParameterSqlScriptInfo.  # noqa: E501
 
 
-        :return: The insertion_indices of this RunParameterSqlScriptInfo.  # noqa: E501
+        :return: The insertion_indices of this LRunParameterSqlScriptInfo.  # noqa: E501
         :rtype: list[object]
         """
         return self._insertion_indices
 
     @insertion_indices.setter
     def insertion_indices(self, insertion_indices):
-        """Sets the insertion_indices of this RunParameterSqlScriptInfo.
+        """Sets the insertion_indices of this LRunParameterSqlScriptInfo.
 
 
-        :param insertion_indices: The insertion_indices of this RunParameterSqlScriptInfo.  # noqa: E501
+        :param insertion_indices: The insertion_indices of this LRunParameterSqlScriptInfo.  # noqa: E501
         :type: list[object]
         """
         if insertion_indices is None:
@@ -130,21 +130,21 @@ class LRunParameterSqlScriptInfo(object):
 
     @property
     def value(self):
-        """Gets the value of this RunParameterSqlScriptInfo.  # noqa: E501
+        """Gets the value of this LRunParameterSqlScriptInfo.  # noqa: E501
 
 
-        :return: The value of this RunParameterSqlScriptInfo.  # noqa: E501
-        :rtype: RunParameterValueSqlScriptSchema
+        :return: The value of this LRunParameterSqlScriptInfo.  # noqa: E501
+        :rtype: LRunParameterValueSqlScriptSchema
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RunParameterSqlScriptInfo.
+        """Sets the value of this LRunParameterSqlScriptInfo.
 
 
-        :param value: The value of this RunParameterSqlScriptInfo.  # noqa: E501
-        :type: RunParameterValueSqlScriptSchema
+        :param value: The value of this LRunParameterSqlScriptInfo.  # noqa: E501
+        :type: LRunParameterValueSqlScriptSchema
         """
         if value is None:
             raise ValueError("Invalid value for `value`, must not be `None`")  # noqa: E501
@@ -172,7 +172,7 @@ class LRunParameterSqlScriptInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunParameterSqlScriptInfo, dict):
+        if issubclass(LRunParameterSqlScriptInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -188,7 +188,7 @@ class LRunParameterSqlScriptInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunParameterSqlScriptInfo):
+        if not isinstance(other, LRunParameterSqlScriptInfo):
             return False
 
         return self.__dict__ == other.__dict__

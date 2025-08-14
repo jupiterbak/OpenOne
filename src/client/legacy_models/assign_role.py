@@ -33,7 +33,7 @@ class LAssignRole(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AssignRole - a model defined in Swagger"""  # noqa: E501
+        """LAssignRole - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAssignRole(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AssignRole, dict):
+        if issubclass(LAssignRole, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAssignRole(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AssignRole):
+        if not isinstance(other, LAssignRole):
             return False
 
         return self.__dict__ == other.__dict__

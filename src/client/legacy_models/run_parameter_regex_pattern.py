@@ -35,27 +35,27 @@ class LRunParameterRegexPattern(object):
     }
 
     def __init__(self, regex=None):  # noqa: E501
-        """RunParameterRegexPattern - a model defined in Swagger"""  # noqa: E501
+        """LRunParameterRegexPattern - a model defined in Swagger"""  # noqa: E501
         self._regex = None
         self.discriminator = None
         self.regex = regex
 
     @property
     def regex(self):
-        """Gets the regex of this RunParameterRegexPattern.  # noqa: E501
+        """Gets the regex of this LRunParameterRegexPattern.  # noqa: E501
 
 
-        :return: The regex of this RunParameterRegexPattern.  # noqa: E501
+        :return: The regex of this LRunParameterRegexPattern.  # noqa: E501
         :rtype: object
         """
         return self._regex
 
     @regex.setter
     def regex(self, regex):
-        """Sets the regex of this RunParameterRegexPattern.
+        """Sets the regex of this LRunParameterRegexPattern.
 
 
-        :param regex: The regex of this RunParameterRegexPattern.  # noqa: E501
+        :param regex: The regex of this LRunParameterRegexPattern.  # noqa: E501
         :type: object
         """
         if regex is None:
@@ -84,7 +84,7 @@ class LRunParameterRegexPattern(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunParameterRegexPattern, dict):
+        if issubclass(LRunParameterRegexPattern, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunParameterRegexPattern(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunParameterRegexPattern):
+        if not isinstance(other, LRunParameterRegexPattern):
             return False
 
         return self.__dict__ == other.__dict__

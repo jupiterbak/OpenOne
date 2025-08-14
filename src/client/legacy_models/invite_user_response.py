@@ -27,7 +27,7 @@ class LInviteUserResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'WorkspaceUserId'
+        'data': 'LWorkspaceUserId'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LInviteUserResponse(object):
     }
 
     def __init__(self, data=None):  # noqa: E501
-        """InviteUserResponse - a model defined in Swagger"""  # noqa: E501
+        """LInviteUserResponse - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self.discriminator = None
         self.data = data
 
     @property
     def data(self):
-        """Gets the data of this InviteUserResponse.  # noqa: E501
+        """Gets the data of this LInviteUserResponse.  # noqa: E501
 
 
-        :return: The data of this InviteUserResponse.  # noqa: E501
-        :rtype: WorkspaceUserId
+        :return: The data of this LInviteUserResponse.  # noqa: E501
+        :rtype: LWorkspaceUserId
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this InviteUserResponse.
+        """Sets the data of this LInviteUserResponse.
 
 
-        :param data: The data of this InviteUserResponse.  # noqa: E501
-        :type: WorkspaceUserId
+        :param data: The data of this LInviteUserResponse.  # noqa: E501
+        :type: LWorkspaceUserId
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LInviteUserResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(InviteUserResponse, dict):
+        if issubclass(LInviteUserResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LInviteUserResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, InviteUserResponse):
+        if not isinstance(other, LInviteUserResponse):
             return False
 
         return self.__dict__ == other.__dict__

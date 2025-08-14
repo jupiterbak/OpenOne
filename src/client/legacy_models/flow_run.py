@@ -45,7 +45,7 @@ class LFlowRun(object):
     }
 
     def __init__(self, id=None, created_at=None, updated_at=None, schedule_execution_id=None, request_id=None, flow=None):  # noqa: E501
-        """FlowRun - a model defined in Swagger"""  # noqa: E501
+        """LFlowRun - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._created_at = None
         self._updated_at = None
@@ -65,22 +65,22 @@ class LFlowRun(object):
 
     @property
     def id(self):
-        """Gets the id of this FlowRun.  # noqa: E501
+        """Gets the id of this LFlowRun.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this FlowRun.  # noqa: E501
+        :return: The id of this LFlowRun.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FlowRun.
+        """Sets the id of this LFlowRun.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this FlowRun.  # noqa: E501
+        :param id: The id of this LFlowRun.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -90,22 +90,22 @@ class LFlowRun(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this FlowRun.  # noqa: E501
+        """Gets the created_at of this LFlowRun.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this FlowRun.  # noqa: E501
+        :return: The created_at of this LFlowRun.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this FlowRun.
+        """Sets the created_at of this LFlowRun.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this FlowRun.  # noqa: E501
+        :param created_at: The created_at of this LFlowRun.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -115,22 +115,22 @@ class LFlowRun(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this FlowRun.  # noqa: E501
+        """Gets the updated_at of this LFlowRun.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this FlowRun.  # noqa: E501
+        :return: The updated_at of this LFlowRun.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this FlowRun.
+        """Sets the updated_at of this LFlowRun.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this FlowRun.  # noqa: E501
+        :param updated_at: The updated_at of this LFlowRun.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -140,20 +140,20 @@ class LFlowRun(object):
 
     @property
     def schedule_execution_id(self):
-        """Gets the schedule_execution_id of this FlowRun.  # noqa: E501
+        """Gets the schedule_execution_id of this LFlowRun.  # noqa: E501
 
 
-        :return: The schedule_execution_id of this FlowRun.  # noqa: E501
+        :return: The schedule_execution_id of this LFlowRun.  # noqa: E501
         :rtype: int
         """
         return self._schedule_execution_id
 
     @schedule_execution_id.setter
     def schedule_execution_id(self, schedule_execution_id):
-        """Sets the schedule_execution_id of this FlowRun.
+        """Sets the schedule_execution_id of this LFlowRun.
 
 
-        :param schedule_execution_id: The schedule_execution_id of this FlowRun.  # noqa: E501
+        :param schedule_execution_id: The schedule_execution_id of this LFlowRun.  # noqa: E501
         :type: int
         """
 
@@ -161,20 +161,20 @@ class LFlowRun(object):
 
     @property
     def request_id(self):
-        """Gets the request_id of this FlowRun.  # noqa: E501
+        """Gets the request_id of this LFlowRun.  # noqa: E501
 
 
-        :return: The request_id of this FlowRun.  # noqa: E501
+        :return: The request_id of this LFlowRun.  # noqa: E501
         :rtype: str
         """
         return self._request_id
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this FlowRun.
+        """Sets the request_id of this LFlowRun.
 
 
-        :param request_id: The request_id of this FlowRun.  # noqa: E501
+        :param request_id: The request_id of this LFlowRun.  # noqa: E501
         :type: str
         """
 
@@ -182,20 +182,20 @@ class LFlowRun(object):
 
     @property
     def flow(self):
-        """Gets the flow of this FlowRun.  # noqa: E501
+        """Gets the flow of this LFlowRun.  # noqa: E501
 
 
-        :return: The flow of this FlowRun.  # noqa: E501
+        :return: The flow of this LFlowRun.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this FlowRun.
+        """Sets the flow of this LFlowRun.
 
 
-        :param flow: The flow of this FlowRun.  # noqa: E501
+        :param flow: The flow of this LFlowRun.  # noqa: E501
         :type: object
         """
 
@@ -222,7 +222,7 @@ class LFlowRun(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowRun, dict):
+        if issubclass(LFlowRun, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -238,7 +238,7 @@ class LFlowRun(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowRun):
+        if not isinstance(other, LFlowRun):
             return False
 
         return self.__dict__ == other.__dict__

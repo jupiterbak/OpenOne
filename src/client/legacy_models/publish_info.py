@@ -41,7 +41,7 @@ class LPublishInfo(object):
     }
 
     def __init__(self, qualifying_path=None, supported_actions=None, supported_protocols=None, external_file_formats=None):  # noqa: E501
-        """PublishInfo - a model defined in Swagger"""  # noqa: E501
+        """LPublishInfo - a model defined in Swagger"""  # noqa: E501
         self._qualifying_path = None
         self._supported_actions = None
         self._supported_protocols = None
@@ -58,20 +58,20 @@ class LPublishInfo(object):
 
     @property
     def qualifying_path(self):
-        """Gets the qualifying_path of this PublishInfo.  # noqa: E501
+        """Gets the qualifying_path of this LPublishInfo.  # noqa: E501
 
 
-        :return: The qualifying_path of this PublishInfo.  # noqa: E501
+        :return: The qualifying_path of this LPublishInfo.  # noqa: E501
         :rtype: list[str]
         """
         return self._qualifying_path
 
     @qualifying_path.setter
     def qualifying_path(self, qualifying_path):
-        """Sets the qualifying_path of this PublishInfo.
+        """Sets the qualifying_path of this LPublishInfo.
 
 
-        :param qualifying_path: The qualifying_path of this PublishInfo.  # noqa: E501
+        :param qualifying_path: The qualifying_path of this LPublishInfo.  # noqa: E501
         :type: list[str]
         """
 
@@ -79,20 +79,20 @@ class LPublishInfo(object):
 
     @property
     def supported_actions(self):
-        """Gets the supported_actions of this PublishInfo.  # noqa: E501
+        """Gets the supported_actions of this LPublishInfo.  # noqa: E501
 
 
-        :return: The supported_actions of this PublishInfo.  # noqa: E501
+        :return: The supported_actions of this LPublishInfo.  # noqa: E501
         :rtype: list[str]
         """
         return self._supported_actions
 
     @supported_actions.setter
     def supported_actions(self, supported_actions):
-        """Sets the supported_actions of this PublishInfo.
+        """Sets the supported_actions of this LPublishInfo.
 
 
-        :param supported_actions: The supported_actions of this PublishInfo.  # noqa: E501
+        :param supported_actions: The supported_actions of this LPublishInfo.  # noqa: E501
         :type: list[str]
         """
         allowed_values = ["create", "load", "drop", "truncateAndLoad", "createAndLoad", "dropAndLoad", "upsert"]  # noqa: E501
@@ -107,20 +107,20 @@ class LPublishInfo(object):
 
     @property
     def supported_protocols(self):
-        """Gets the supported_protocols of this PublishInfo.  # noqa: E501
+        """Gets the supported_protocols of this LPublishInfo.  # noqa: E501
 
 
-        :return: The supported_protocols of this PublishInfo.  # noqa: E501
+        :return: The supported_protocols of this LPublishInfo.  # noqa: E501
         :rtype: list[str]
         """
         return self._supported_protocols
 
     @supported_protocols.setter
     def supported_protocols(self, supported_protocols):
-        """Sets the supported_protocols of this PublishInfo.
+        """Sets the supported_protocols of this LPublishInfo.
 
 
-        :param supported_protocols: The supported_protocols of this PublishInfo.  # noqa: E501
+        :param supported_protocols: The supported_protocols of this LPublishInfo.  # noqa: E501
         :type: list[str]
         """
 
@@ -128,20 +128,20 @@ class LPublishInfo(object):
 
     @property
     def external_file_formats(self):
-        """Gets the external_file_formats of this PublishInfo.  # noqa: E501
+        """Gets the external_file_formats of this LPublishInfo.  # noqa: E501
 
 
-        :return: The external_file_formats of this PublishInfo.  # noqa: E501
+        :return: The external_file_formats of this LPublishInfo.  # noqa: E501
         :rtype: list[str]
         """
         return self._external_file_formats
 
     @external_file_formats.setter
     def external_file_formats(self, external_file_formats):
-        """Sets the external_file_formats of this PublishInfo.
+        """Sets the external_file_formats of this LPublishInfo.
 
 
-        :param external_file_formats: The external_file_formats of this PublishInfo.  # noqa: E501
+        :param external_file_formats: The external_file_formats of this LPublishInfo.  # noqa: E501
         :type: list[str]
         """
         allowed_values = ["pqt", "csv", "json", "avro", "hyper"]  # noqa: E501
@@ -175,7 +175,7 @@ class LPublishInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PublishInfo, dict):
+        if issubclass(LPublishInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -191,7 +191,7 @@ class LPublishInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PublishInfo):
+        if not isinstance(other, LPublishInfo):
             return False
 
         return self.__dict__ == other.__dict__

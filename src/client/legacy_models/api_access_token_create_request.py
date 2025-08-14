@@ -37,7 +37,7 @@ class LApiAccessTokenCreateRequest(object):
     }
 
     def __init__(self, lifetime_seconds=None, description=None):  # noqa: E501
-        """ApiAccessTokenCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LApiAccessTokenCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._lifetime_seconds = None
         self._description = None
         self.discriminator = None
@@ -47,22 +47,22 @@ class LApiAccessTokenCreateRequest(object):
 
     @property
     def lifetime_seconds(self):
-        """Gets the lifetime_seconds of this ApiAccessTokenCreateRequest.  # noqa: E501
+        """Gets the lifetime_seconds of this LApiAccessTokenCreateRequest.  # noqa: E501
 
         Lifetime in seconds for the access token. Set this value to -1 to create a non-expiring token.  # noqa: E501
 
-        :return: The lifetime_seconds of this ApiAccessTokenCreateRequest.  # noqa: E501
+        :return: The lifetime_seconds of this LApiAccessTokenCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._lifetime_seconds
 
     @lifetime_seconds.setter
     def lifetime_seconds(self, lifetime_seconds):
-        """Sets the lifetime_seconds of this ApiAccessTokenCreateRequest.
+        """Sets the lifetime_seconds of this LApiAccessTokenCreateRequest.
 
         Lifetime in seconds for the access token. Set this value to -1 to create a non-expiring token.  # noqa: E501
 
-        :param lifetime_seconds: The lifetime_seconds of this ApiAccessTokenCreateRequest.  # noqa: E501
+        :param lifetime_seconds: The lifetime_seconds of this LApiAccessTokenCreateRequest.  # noqa: E501
         :type: int
         """
         if lifetime_seconds is None:
@@ -72,22 +72,22 @@ class LApiAccessTokenCreateRequest(object):
 
     @property
     def description(self):
-        """Gets the description of this ApiAccessTokenCreateRequest.  # noqa: E501
+        """Gets the description of this LApiAccessTokenCreateRequest.  # noqa: E501
 
         User-friendly description for the access token  # noqa: E501
 
-        :return: The description of this ApiAccessTokenCreateRequest.  # noqa: E501
+        :return: The description of this LApiAccessTokenCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApiAccessTokenCreateRequest.
+        """Sets the description of this LApiAccessTokenCreateRequest.
 
         User-friendly description for the access token  # noqa: E501
 
-        :param description: The description of this ApiAccessTokenCreateRequest.  # noqa: E501
+        :param description: The description of this LApiAccessTokenCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -114,7 +114,7 @@ class LApiAccessTokenCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ApiAccessTokenCreateRequest, dict):
+        if issubclass(LApiAccessTokenCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -130,7 +130,7 @@ class LApiAccessTokenCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ApiAccessTokenCreateRequest):
+        if not isinstance(other, LApiAccessTokenCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

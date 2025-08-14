@@ -27,7 +27,7 @@ class LAwsRoleListResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[AwsRole]'
+        'data': 'list[LAwsRole]'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LAwsRoleListResponse(object):
     }
 
     def __init__(self, data=None):  # noqa: E501
-        """AwsRoleListResponse - a model defined in Swagger"""  # noqa: E501
+        """LAwsRoleListResponse - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self.discriminator = None
         self.data = data
 
     @property
     def data(self):
-        """Gets the data of this AwsRoleListResponse.  # noqa: E501
+        """Gets the data of this LAwsRoleListResponse.  # noqa: E501
 
 
-        :return: The data of this AwsRoleListResponse.  # noqa: E501
-        :rtype: list[AwsRole]
+        :return: The data of this LAwsRoleListResponse.  # noqa: E501
+        :rtype: list[LAwsRole]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this AwsRoleListResponse.
+        """Sets the data of this LAwsRoleListResponse.
 
 
-        :param data: The data of this AwsRoleListResponse.  # noqa: E501
-        :type: list[AwsRole]
+        :param data: The data of this LAwsRoleListResponse.  # noqa: E501
+        :type: list[LAwsRole]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LAwsRoleListResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AwsRoleListResponse, dict):
+        if issubclass(LAwsRoleListResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LAwsRoleListResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AwsRoleListResponse):
+        if not isinstance(other, LAwsRoleListResponse):
             return False
 
         return self.__dict__ == other.__dict__

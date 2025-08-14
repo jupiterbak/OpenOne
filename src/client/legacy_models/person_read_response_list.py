@@ -27,7 +27,7 @@ class LPersonReadResponseList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[PersonReadResponse]',
+        'data': 'list[LPersonReadResponse]',
         'count': 'int'
     }
 
@@ -37,7 +37,7 @@ class LPersonReadResponseList(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """PersonReadResponseList - a model defined in Swagger"""  # noqa: E501
+        """LPersonReadResponseList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LPersonReadResponseList(object):
 
     @property
     def data(self):
-        """Gets the data of this PersonReadResponseList.  # noqa: E501
+        """Gets the data of this LPersonReadResponseList.  # noqa: E501
 
 
-        :return: The data of this PersonReadResponseList.  # noqa: E501
-        :rtype: list[PersonReadResponse]
+        :return: The data of this LPersonReadResponseList.  # noqa: E501
+        :rtype: list[LPersonReadResponse]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this PersonReadResponseList.
+        """Sets the data of this LPersonReadResponseList.
 
 
-        :param data: The data of this PersonReadResponseList.  # noqa: E501
-        :type: list[PersonReadResponse]
+        :param data: The data of this LPersonReadResponseList.  # noqa: E501
+        :type: list[LPersonReadResponse]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LPersonReadResponseList(object):
 
     @property
     def count(self):
-        """Gets the count of this PersonReadResponseList.  # noqa: E501
+        """Gets the count of this LPersonReadResponseList.  # noqa: E501
 
 
-        :return: The count of this PersonReadResponseList.  # noqa: E501
+        :return: The count of this LPersonReadResponseList.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this PersonReadResponseList.
+        """Sets the count of this LPersonReadResponseList.
 
 
-        :param count: The count of this PersonReadResponseList.  # noqa: E501
+        :param count: The count of this LPersonReadResponseList.  # noqa: E501
         :type: int
         """
 
@@ -110,7 +110,7 @@ class LPersonReadResponseList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PersonReadResponseList, dict):
+        if issubclass(LPersonReadResponseList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LPersonReadResponseList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PersonReadResponseList):
+        if not isinstance(other, LPersonReadResponseList):
             return False
 
         return self.__dict__ == other.__dict__

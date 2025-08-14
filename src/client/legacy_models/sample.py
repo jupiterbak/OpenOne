@@ -38,7 +38,7 @@ class LSample(object):
         'read_script': 'object',
         'snapshot': 'object',
         'configuration': 'object',
-        'id': 'AnyOfsampleId',
+        'id': 'LAnyOfsampleId',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'creator': 'object',
@@ -65,7 +65,7 @@ class LSample(object):
     }
 
     def __init__(self, name=None, seen=None, num_rows=None, bytes=None, method=None, status=None, wrangled_dataset=None, write_job_group=None, read_script=None, snapshot=None, configuration=None, id=None, created_at=None, updated_at=None, creator=None, updater=None):  # noqa: E501
-        """Sample - a model defined in Swagger"""  # noqa: E501
+        """LSample - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._seen = None
         self._num_rows = None
@@ -115,22 +115,22 @@ class LSample(object):
 
     @property
     def name(self):
-        """Gets the name of this Sample.  # noqa: E501
+        """Gets the name of this LSample.  # noqa: E501
 
         Display name of the sample.  # noqa: E501
 
-        :return: The name of this Sample.  # noqa: E501
+        :return: The name of this LSample.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Sample.
+        """Sets the name of this LSample.
 
         Display name of the sample.  # noqa: E501
 
-        :param name: The name of this Sample.  # noqa: E501
+        :param name: The name of this LSample.  # noqa: E501
         :type: str
         """
 
@@ -138,20 +138,20 @@ class LSample(object):
 
     @property
     def seen(self):
-        """Gets the seen of this Sample.  # noqa: E501
+        """Gets the seen of this LSample.  # noqa: E501
 
 
-        :return: The seen of this Sample.  # noqa: E501
+        :return: The seen of this LSample.  # noqa: E501
         :rtype: bool
         """
         return self._seen
 
     @seen.setter
     def seen(self, seen):
-        """Sets the seen of this Sample.
+        """Sets the seen of this LSample.
 
 
-        :param seen: The seen of this Sample.  # noqa: E501
+        :param seen: The seen of this LSample.  # noqa: E501
         :type: bool
         """
 
@@ -159,20 +159,20 @@ class LSample(object):
 
     @property
     def num_rows(self):
-        """Gets the num_rows of this Sample.  # noqa: E501
+        """Gets the num_rows of this LSample.  # noqa: E501
 
 
-        :return: The num_rows of this Sample.  # noqa: E501
+        :return: The num_rows of this LSample.  # noqa: E501
         :rtype: int
         """
         return self._num_rows
 
     @num_rows.setter
     def num_rows(self, num_rows):
-        """Sets the num_rows of this Sample.
+        """Sets the num_rows of this LSample.
 
 
-        :param num_rows: The num_rows of this Sample.  # noqa: E501
+        :param num_rows: The num_rows of this LSample.  # noqa: E501
         :type: int
         """
 
@@ -180,20 +180,20 @@ class LSample(object):
 
     @property
     def bytes(self):
-        """Gets the bytes of this Sample.  # noqa: E501
+        """Gets the bytes of this LSample.  # noqa: E501
 
 
-        :return: The bytes of this Sample.  # noqa: E501
+        :return: The bytes of this LSample.  # noqa: E501
         :rtype: int
         """
         return self._bytes
 
     @bytes.setter
     def bytes(self, bytes):
-        """Sets the bytes of this Sample.
+        """Sets the bytes of this LSample.
 
 
-        :param bytes: The bytes of this Sample.  # noqa: E501
+        :param bytes: The bytes of this LSample.  # noqa: E501
         :type: int
         """
 
@@ -201,20 +201,20 @@ class LSample(object):
 
     @property
     def method(self):
-        """Gets the method of this Sample.  # noqa: E501
+        """Gets the method of this LSample.  # noqa: E501
 
 
-        :return: The method of this Sample.  # noqa: E501
+        :return: The method of this LSample.  # noqa: E501
         :rtype: str
         """
         return self._method
 
     @method.setter
     def method(self, method):
-        """Sets the method of this Sample.
+        """Sets the method of this LSample.
 
 
-        :param method: The method of this Sample.  # noqa: E501
+        :param method: The method of this LSample.  # noqa: E501
         :type: str
         """
         allowed_values = ["initial", "head", "random", "filter", "stratified", "cluster", "anomaly"]  # noqa: E501
@@ -228,20 +228,20 @@ class LSample(object):
 
     @property
     def status(self):
-        """Gets the status of this Sample.  # noqa: E501
+        """Gets the status of this LSample.  # noqa: E501
 
 
-        :return: The status of this Sample.  # noqa: E501
+        :return: The status of this LSample.  # noqa: E501
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Sample.
+        """Sets the status of this LSample.
 
 
-        :param status: The status of this Sample.  # noqa: E501
+        :param status: The status of this LSample.  # noqa: E501
         :type: str
         """
         allowed_values = ["InProgress", "Complete", "Failed", "Canceled"]  # noqa: E501
@@ -255,20 +255,20 @@ class LSample(object):
 
     @property
     def wrangled_dataset(self):
-        """Gets the wrangled_dataset of this Sample.  # noqa: E501
+        """Gets the wrangled_dataset of this LSample.  # noqa: E501
 
 
-        :return: The wrangled_dataset of this Sample.  # noqa: E501
+        :return: The wrangled_dataset of this LSample.  # noqa: E501
         :rtype: object
         """
         return self._wrangled_dataset
 
     @wrangled_dataset.setter
     def wrangled_dataset(self, wrangled_dataset):
-        """Sets the wrangled_dataset of this Sample.
+        """Sets the wrangled_dataset of this LSample.
 
 
-        :param wrangled_dataset: The wrangled_dataset of this Sample.  # noqa: E501
+        :param wrangled_dataset: The wrangled_dataset of this LSample.  # noqa: E501
         :type: object
         """
 
@@ -276,20 +276,20 @@ class LSample(object):
 
     @property
     def write_job_group(self):
-        """Gets the write_job_group of this Sample.  # noqa: E501
+        """Gets the write_job_group of this LSample.  # noqa: E501
 
 
-        :return: The write_job_group of this Sample.  # noqa: E501
+        :return: The write_job_group of this LSample.  # noqa: E501
         :rtype: object
         """
         return self._write_job_group
 
     @write_job_group.setter
     def write_job_group(self, write_job_group):
-        """Sets the write_job_group of this Sample.
+        """Sets the write_job_group of this LSample.
 
 
-        :param write_job_group: The write_job_group of this Sample.  # noqa: E501
+        :param write_job_group: The write_job_group of this LSample.  # noqa: E501
         :type: object
         """
 
@@ -297,20 +297,20 @@ class LSample(object):
 
     @property
     def read_script(self):
-        """Gets the read_script of this Sample.  # noqa: E501
+        """Gets the read_script of this LSample.  # noqa: E501
 
 
-        :return: The read_script of this Sample.  # noqa: E501
+        :return: The read_script of this LSample.  # noqa: E501
         :rtype: object
         """
         return self._read_script
 
     @read_script.setter
     def read_script(self, read_script):
-        """Sets the read_script of this Sample.
+        """Sets the read_script of this LSample.
 
 
-        :param read_script: The read_script of this Sample.  # noqa: E501
+        :param read_script: The read_script of this LSample.  # noqa: E501
         :type: object
         """
 
@@ -318,20 +318,20 @@ class LSample(object):
 
     @property
     def snapshot(self):
-        """Gets the snapshot of this Sample.  # noqa: E501
+        """Gets the snapshot of this LSample.  # noqa: E501
 
 
-        :return: The snapshot of this Sample.  # noqa: E501
+        :return: The snapshot of this LSample.  # noqa: E501
         :rtype: object
         """
         return self._snapshot
 
     @snapshot.setter
     def snapshot(self, snapshot):
-        """Sets the snapshot of this Sample.
+        """Sets the snapshot of this LSample.
 
 
-        :param snapshot: The snapshot of this Sample.  # noqa: E501
+        :param snapshot: The snapshot of this LSample.  # noqa: E501
         :type: object
         """
 
@@ -339,20 +339,20 @@ class LSample(object):
 
     @property
     def configuration(self):
-        """Gets the configuration of this Sample.  # noqa: E501
+        """Gets the configuration of this LSample.  # noqa: E501
 
 
-        :return: The configuration of this Sample.  # noqa: E501
+        :return: The configuration of this LSample.  # noqa: E501
         :rtype: object
         """
         return self._configuration
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this Sample.
+        """Sets the configuration of this LSample.
 
 
-        :param configuration: The configuration of this Sample.  # noqa: E501
+        :param configuration: The configuration of this LSample.  # noqa: E501
         :type: object
         """
 
@@ -360,21 +360,21 @@ class LSample(object):
 
     @property
     def id(self):
-        """Gets the id of this Sample.  # noqa: E501
+        """Gets the id of this LSample.  # noqa: E501
 
 
-        :return: The id of this Sample.  # noqa: E501
-        :rtype: AnyOfsampleId
+        :return: The id of this LSample.  # noqa: E501
+        :rtype: LAnyOfsampleId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Sample.
+        """Sets the id of this LSample.
 
 
-        :param id: The id of this Sample.  # noqa: E501
-        :type: AnyOfsampleId
+        :param id: The id of this LSample.  # noqa: E501
+        :type: LAnyOfsampleId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -383,22 +383,22 @@ class LSample(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this Sample.  # noqa: E501
+        """Gets the created_at of this LSample.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this Sample.  # noqa: E501
+        :return: The created_at of this LSample.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Sample.
+        """Sets the created_at of this LSample.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this Sample.  # noqa: E501
+        :param created_at: The created_at of this LSample.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -408,22 +408,22 @@ class LSample(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Sample.  # noqa: E501
+        """Gets the updated_at of this LSample.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this Sample.  # noqa: E501
+        :return: The updated_at of this LSample.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Sample.
+        """Sets the updated_at of this LSample.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this Sample.  # noqa: E501
+        :param updated_at: The updated_at of this LSample.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -433,20 +433,20 @@ class LSample(object):
 
     @property
     def creator(self):
-        """Gets the creator of this Sample.  # noqa: E501
+        """Gets the creator of this LSample.  # noqa: E501
 
 
-        :return: The creator of this Sample.  # noqa: E501
+        :return: The creator of this LSample.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this Sample.
+        """Sets the creator of this LSample.
 
 
-        :param creator: The creator of this Sample.  # noqa: E501
+        :param creator: The creator of this LSample.  # noqa: E501
         :type: object
         """
 
@@ -454,20 +454,20 @@ class LSample(object):
 
     @property
     def updater(self):
-        """Gets the updater of this Sample.  # noqa: E501
+        """Gets the updater of this LSample.  # noqa: E501
 
 
-        :return: The updater of this Sample.  # noqa: E501
+        :return: The updater of this LSample.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this Sample.
+        """Sets the updater of this LSample.
 
 
-        :param updater: The updater of this Sample.  # noqa: E501
+        :param updater: The updater of this LSample.  # noqa: E501
         :type: object
         """
 
@@ -494,7 +494,7 @@ class LSample(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Sample, dict):
+        if issubclass(LSample, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -510,7 +510,7 @@ class LSample(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Sample):
+        if not isinstance(other, LSample):
             return False
 
         return self.__dict__ == other.__dict__

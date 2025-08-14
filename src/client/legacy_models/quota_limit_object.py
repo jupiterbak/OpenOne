@@ -29,7 +29,7 @@ class LQuotaLimitObject(object):
     swagger_types = {
         'key': 'str',
         'value': 'int',
-        'workspace': 'AnyOfquotaLimitObjectWorkspace',
+        'workspace': 'LAnyOfquotaLimitObjectWorkspace',
         'tier': 'int',
         'system': 'int'
     }
@@ -43,7 +43,7 @@ class LQuotaLimitObject(object):
     }
 
     def __init__(self, key=None, value=None, workspace=None, tier=None, system=None):  # noqa: E501
-        """QuotaLimitObject - a model defined in Swagger"""  # noqa: E501
+        """LQuotaLimitObject - a model defined in Swagger"""  # noqa: E501
         self._key = None
         self._value = None
         self._workspace = None
@@ -62,20 +62,20 @@ class LQuotaLimitObject(object):
 
     @property
     def key(self):
-        """Gets the key of this QuotaLimitObject.  # noqa: E501
+        """Gets the key of this LQuotaLimitObject.  # noqa: E501
 
 
-        :return: The key of this QuotaLimitObject.  # noqa: E501
+        :return: The key of this LQuotaLimitObject.  # noqa: E501
         :rtype: str
         """
         return self._key
 
     @key.setter
     def key(self, key):
-        """Sets the key of this QuotaLimitObject.
+        """Sets the key of this LQuotaLimitObject.
 
 
-        :param key: The key of this QuotaLimitObject.  # noqa: E501
+        :param key: The key of this LQuotaLimitObject.  # noqa: E501
         :type: str
         """
         if key is None:
@@ -85,20 +85,20 @@ class LQuotaLimitObject(object):
 
     @property
     def value(self):
-        """Gets the value of this QuotaLimitObject.  # noqa: E501
+        """Gets the value of this LQuotaLimitObject.  # noqa: E501
 
 
-        :return: The value of this QuotaLimitObject.  # noqa: E501
+        :return: The value of this LQuotaLimitObject.  # noqa: E501
         :rtype: int
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this QuotaLimitObject.
+        """Sets the value of this LQuotaLimitObject.
 
 
-        :param value: The value of this QuotaLimitObject.  # noqa: E501
+        :param value: The value of this LQuotaLimitObject.  # noqa: E501
         :type: int
         """
 
@@ -106,41 +106,41 @@ class LQuotaLimitObject(object):
 
     @property
     def workspace(self):
-        """Gets the workspace of this QuotaLimitObject.  # noqa: E501
+        """Gets the workspace of this LQuotaLimitObject.  # noqa: E501
 
 
-        :return: The workspace of this QuotaLimitObject.  # noqa: E501
-        :rtype: AnyOfquotaLimitObjectWorkspace
+        :return: The workspace of this LQuotaLimitObject.  # noqa: E501
+        :rtype: LAnyOfquotaLimitObjectWorkspace
         """
         return self._workspace
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this QuotaLimitObject.
+        """Sets the workspace of this LQuotaLimitObject.
 
 
-        :param workspace: The workspace of this QuotaLimitObject.  # noqa: E501
-        :type: AnyOfquotaLimitObjectWorkspace
+        :param workspace: The workspace of this LQuotaLimitObject.  # noqa: E501
+        :type: LAnyOfquotaLimitObjectWorkspace
         """
 
         self._workspace = workspace
 
     @property
     def tier(self):
-        """Gets the tier of this QuotaLimitObject.  # noqa: E501
+        """Gets the tier of this LQuotaLimitObject.  # noqa: E501
 
 
-        :return: The tier of this QuotaLimitObject.  # noqa: E501
+        :return: The tier of this LQuotaLimitObject.  # noqa: E501
         :rtype: int
         """
         return self._tier
 
     @tier.setter
     def tier(self, tier):
-        """Sets the tier of this QuotaLimitObject.
+        """Sets the tier of this LQuotaLimitObject.
 
 
-        :param tier: The tier of this QuotaLimitObject.  # noqa: E501
+        :param tier: The tier of this LQuotaLimitObject.  # noqa: E501
         :type: int
         """
 
@@ -148,20 +148,20 @@ class LQuotaLimitObject(object):
 
     @property
     def system(self):
-        """Gets the system of this QuotaLimitObject.  # noqa: E501
+        """Gets the system of this LQuotaLimitObject.  # noqa: E501
 
 
-        :return: The system of this QuotaLimitObject.  # noqa: E501
+        :return: The system of this LQuotaLimitObject.  # noqa: E501
         :rtype: int
         """
         return self._system
 
     @system.setter
     def system(self, system):
-        """Sets the system of this QuotaLimitObject.
+        """Sets the system of this LQuotaLimitObject.
 
 
-        :param system: The system of this QuotaLimitObject.  # noqa: E501
+        :param system: The system of this LQuotaLimitObject.  # noqa: E501
         :type: int
         """
 
@@ -188,7 +188,7 @@ class LQuotaLimitObject(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(QuotaLimitObject, dict):
+        if issubclass(LQuotaLimitObject, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -204,7 +204,7 @@ class LQuotaLimitObject(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, QuotaLimitObject):
+        if not isinstance(other, LQuotaLimitObject):
             return False
 
         return self.__dict__ == other.__dict__

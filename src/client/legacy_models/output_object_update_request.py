@@ -30,10 +30,10 @@ class LOutputObjectUpdateRequest(object):
         'execution': 'str',
         'profiler': 'bool',
         'ignore_recipe_errors': 'bool',
-        'write_settings': 'list[WriteSettingCreateRequest]',
-        'sql_scripts': 'list[SqlScriptCreateRequest]',
-        'publications': 'list[PublicationCreateRequest]',
-        'output_object_schema_drift_options': 'OutputObjectSchemaDriftOptionsUpdateRequest',
+        'write_settings': 'list[LWriteSettingCreateRequest]',
+        'sql_scripts': 'list[LSqlScriptCreateRequest]',
+        'publications': 'list[LPublicationCreateRequest]',
+        'output_object_schema_drift_options': 'LOutputObjectSchemaDriftOptionsUpdateRequest',
         'name': 'str',
         'description': 'str'
     }
@@ -51,7 +51,7 @@ class LOutputObjectUpdateRequest(object):
     }
 
     def __init__(self, execution=None, profiler=None, ignore_recipe_errors=None, write_settings=None, sql_scripts=None, publications=None, output_object_schema_drift_options=None, name=None, description=None):  # noqa: E501
-        """OutputObjectUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LOutputObjectUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._execution = None
         self._profiler = None
         self._ignore_recipe_errors = None
@@ -83,22 +83,22 @@ class LOutputObjectUpdateRequest(object):
 
     @property
     def execution(self):
-        """Gets the execution of this OutputObjectUpdateRequest.  # noqa: E501
+        """Gets the execution of this LOutputObjectUpdateRequest.  # noqa: E501
 
         Execution language. Indicate on which engine the job was executed.   Can be null/missing for scheduled jobs that fail during the validation phase.  * `photon` - Photon engine. High performance embedded engine designed for small datasets (up to 1GB).       Not available for all product editions. * `amp` - Amp engine. * `xml-amp` - XML-AMP engine. Only available for standard workflows.    * `emrSpark` - Spark engine running on EMR       # noqa: E501
 
-        :return: The execution of this OutputObjectUpdateRequest.  # noqa: E501
+        :return: The execution of this LOutputObjectUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._execution
 
     @execution.setter
     def execution(self, execution):
-        """Sets the execution of this OutputObjectUpdateRequest.
+        """Sets the execution of this LOutputObjectUpdateRequest.
 
         Execution language. Indicate on which engine the job was executed.   Can be null/missing for scheduled jobs that fail during the validation phase.  * `photon` - Photon engine. High performance embedded engine designed for small datasets (up to 1GB).       Not available for all product editions. * `amp` - Amp engine. * `xml-amp` - XML-AMP engine. Only available for standard workflows.    * `emrSpark` - Spark engine running on EMR       # noqa: E501
 
-        :param execution: The execution of this OutputObjectUpdateRequest.  # noqa: E501
+        :param execution: The execution of this LOutputObjectUpdateRequest.  # noqa: E501
         :type: str
         """
         allowed_values = ["photon", "amp", "xml-amp", "emrSpark"]  # noqa: E501
@@ -112,22 +112,22 @@ class LOutputObjectUpdateRequest(object):
 
     @property
     def profiler(self):
-        """Gets the profiler of this OutputObjectUpdateRequest.  # noqa: E501
+        """Gets the profiler of this LOutputObjectUpdateRequest.  # noqa: E501
 
         Indicate if recipe errors should be ignored for the [jobGroup](#tag/JobGroup).  # noqa: E501
 
-        :return: The profiler of this OutputObjectUpdateRequest.  # noqa: E501
+        :return: The profiler of this LOutputObjectUpdateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._profiler
 
     @profiler.setter
     def profiler(self, profiler):
-        """Sets the profiler of this OutputObjectUpdateRequest.
+        """Sets the profiler of this LOutputObjectUpdateRequest.
 
         Indicate if recipe errors should be ignored for the [jobGroup](#tag/JobGroup).  # noqa: E501
 
-        :param profiler: The profiler of this OutputObjectUpdateRequest.  # noqa: E501
+        :param profiler: The profiler of this LOutputObjectUpdateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -135,22 +135,22 @@ class LOutputObjectUpdateRequest(object):
 
     @property
     def ignore_recipe_errors(self):
-        """Gets the ignore_recipe_errors of this OutputObjectUpdateRequest.  # noqa: E501
+        """Gets the ignore_recipe_errors of this LOutputObjectUpdateRequest.  # noqa: E501
 
         Indicate if profiling information should be produced as part of the [jobGroup](#tag/JobGroup). This will create a Profile [job](#tag/Job).  # noqa: E501
 
-        :return: The ignore_recipe_errors of this OutputObjectUpdateRequest.  # noqa: E501
+        :return: The ignore_recipe_errors of this LOutputObjectUpdateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._ignore_recipe_errors
 
     @ignore_recipe_errors.setter
     def ignore_recipe_errors(self, ignore_recipe_errors):
-        """Sets the ignore_recipe_errors of this OutputObjectUpdateRequest.
+        """Sets the ignore_recipe_errors of this LOutputObjectUpdateRequest.
 
         Indicate if profiling information should be produced as part of the [jobGroup](#tag/JobGroup). This will create a Profile [job](#tag/Job).  # noqa: E501
 
-        :param ignore_recipe_errors: The ignore_recipe_errors of this OutputObjectUpdateRequest.  # noqa: E501
+        :param ignore_recipe_errors: The ignore_recipe_errors of this LOutputObjectUpdateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -158,106 +158,106 @@ class LOutputObjectUpdateRequest(object):
 
     @property
     def write_settings(self):
-        """Gets the write_settings of this OutputObjectUpdateRequest.  # noqa: E501
+        """Gets the write_settings of this LOutputObjectUpdateRequest.  # noqa: E501
 
 
-        :return: The write_settings of this OutputObjectUpdateRequest.  # noqa: E501
-        :rtype: list[WriteSettingCreateRequest]
+        :return: The write_settings of this LOutputObjectUpdateRequest.  # noqa: E501
+        :rtype: list[LWriteSettingCreateRequest]
         """
         return self._write_settings
 
     @write_settings.setter
     def write_settings(self, write_settings):
-        """Sets the write_settings of this OutputObjectUpdateRequest.
+        """Sets the write_settings of this LOutputObjectUpdateRequest.
 
 
-        :param write_settings: The write_settings of this OutputObjectUpdateRequest.  # noqa: E501
-        :type: list[WriteSettingCreateRequest]
+        :param write_settings: The write_settings of this LOutputObjectUpdateRequest.  # noqa: E501
+        :type: list[LWriteSettingCreateRequest]
         """
 
         self._write_settings = write_settings
 
     @property
     def sql_scripts(self):
-        """Gets the sql_scripts of this OutputObjectUpdateRequest.  # noqa: E501
+        """Gets the sql_scripts of this LOutputObjectUpdateRequest.  # noqa: E501
 
 
-        :return: The sql_scripts of this OutputObjectUpdateRequest.  # noqa: E501
-        :rtype: list[SqlScriptCreateRequest]
+        :return: The sql_scripts of this LOutputObjectUpdateRequest.  # noqa: E501
+        :rtype: list[LSqlScriptCreateRequest]
         """
         return self._sql_scripts
 
     @sql_scripts.setter
     def sql_scripts(self, sql_scripts):
-        """Sets the sql_scripts of this OutputObjectUpdateRequest.
+        """Sets the sql_scripts of this LOutputObjectUpdateRequest.
 
 
-        :param sql_scripts: The sql_scripts of this OutputObjectUpdateRequest.  # noqa: E501
-        :type: list[SqlScriptCreateRequest]
+        :param sql_scripts: The sql_scripts of this LOutputObjectUpdateRequest.  # noqa: E501
+        :type: list[LSqlScriptCreateRequest]
         """
 
         self._sql_scripts = sql_scripts
 
     @property
     def publications(self):
-        """Gets the publications of this OutputObjectUpdateRequest.  # noqa: E501
+        """Gets the publications of this LOutputObjectUpdateRequest.  # noqa: E501
 
 
-        :return: The publications of this OutputObjectUpdateRequest.  # noqa: E501
-        :rtype: list[PublicationCreateRequest]
+        :return: The publications of this LOutputObjectUpdateRequest.  # noqa: E501
+        :rtype: list[LPublicationCreateRequest]
         """
         return self._publications
 
     @publications.setter
     def publications(self, publications):
-        """Sets the publications of this OutputObjectUpdateRequest.
+        """Sets the publications of this LOutputObjectUpdateRequest.
 
 
-        :param publications: The publications of this OutputObjectUpdateRequest.  # noqa: E501
-        :type: list[PublicationCreateRequest]
+        :param publications: The publications of this LOutputObjectUpdateRequest.  # noqa: E501
+        :type: list[LPublicationCreateRequest]
         """
 
         self._publications = publications
 
     @property
     def output_object_schema_drift_options(self):
-        """Gets the output_object_schema_drift_options of this OutputObjectUpdateRequest.  # noqa: E501
+        """Gets the output_object_schema_drift_options of this LOutputObjectUpdateRequest.  # noqa: E501
 
 
-        :return: The output_object_schema_drift_options of this OutputObjectUpdateRequest.  # noqa: E501
-        :rtype: OutputObjectSchemaDriftOptionsUpdateRequest
+        :return: The output_object_schema_drift_options of this LOutputObjectUpdateRequest.  # noqa: E501
+        :rtype: LOutputObjectSchemaDriftOptionsUpdateRequest
         """
         return self._output_object_schema_drift_options
 
     @output_object_schema_drift_options.setter
     def output_object_schema_drift_options(self, output_object_schema_drift_options):
-        """Sets the output_object_schema_drift_options of this OutputObjectUpdateRequest.
+        """Sets the output_object_schema_drift_options of this LOutputObjectUpdateRequest.
 
 
-        :param output_object_schema_drift_options: The output_object_schema_drift_options of this OutputObjectUpdateRequest.  # noqa: E501
-        :type: OutputObjectSchemaDriftOptionsUpdateRequest
+        :param output_object_schema_drift_options: The output_object_schema_drift_options of this LOutputObjectUpdateRequest.  # noqa: E501
+        :type: LOutputObjectSchemaDriftOptionsUpdateRequest
         """
 
         self._output_object_schema_drift_options = output_object_schema_drift_options
 
     @property
     def name(self):
-        """Gets the name of this OutputObjectUpdateRequest.  # noqa: E501
+        """Gets the name of this LOutputObjectUpdateRequest.  # noqa: E501
 
         Name of output as it appears in the flow view  # noqa: E501
 
-        :return: The name of this OutputObjectUpdateRequest.  # noqa: E501
+        :return: The name of this LOutputObjectUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OutputObjectUpdateRequest.
+        """Sets the name of this LOutputObjectUpdateRequest.
 
         Name of output as it appears in the flow view  # noqa: E501
 
-        :param name: The name of this OutputObjectUpdateRequest.  # noqa: E501
+        :param name: The name of this LOutputObjectUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -265,22 +265,22 @@ class LOutputObjectUpdateRequest(object):
 
     @property
     def description(self):
-        """Gets the description of this OutputObjectUpdateRequest.  # noqa: E501
+        """Gets the description of this LOutputObjectUpdateRequest.  # noqa: E501
 
         Description of output  # noqa: E501
 
-        :return: The description of this OutputObjectUpdateRequest.  # noqa: E501
+        :return: The description of this LOutputObjectUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OutputObjectUpdateRequest.
+        """Sets the description of this LOutputObjectUpdateRequest.
 
         Description of output  # noqa: E501
 
-        :param description: The description of this OutputObjectUpdateRequest.  # noqa: E501
+        :param description: The description of this LOutputObjectUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -307,7 +307,7 @@ class LOutputObjectUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OutputObjectUpdateRequest, dict):
+        if issubclass(LOutputObjectUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -323,7 +323,7 @@ class LOutputObjectUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OutputObjectUpdateRequest):
+        if not isinstance(other, LOutputObjectUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

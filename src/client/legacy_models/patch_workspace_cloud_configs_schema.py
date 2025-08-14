@@ -33,7 +33,7 @@ class LPatchWorkspaceCloudConfigsSchema(object):
     }
 
     def __init__(self):  # noqa: E501
-        """PatchWorkspaceCloudConfigsSchema - a model defined in Swagger"""  # noqa: E501
+        """LPatchWorkspaceCloudConfigsSchema - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LPatchWorkspaceCloudConfigsSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PatchWorkspaceCloudConfigsSchema, dict):
+        if issubclass(LPatchWorkspaceCloudConfigsSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LPatchWorkspaceCloudConfigsSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PatchWorkspaceCloudConfigsSchema):
+        if not isinstance(other, LPatchWorkspaceCloudConfigsSchema):
             return False
 
         return self.__dict__ == other.__dict__

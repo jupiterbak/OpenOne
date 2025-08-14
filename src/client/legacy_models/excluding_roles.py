@@ -33,7 +33,7 @@ class LExcludingRoles(object):
     }
 
     def __init__(self):  # noqa: E501
-        """ExcludingRoles - a model defined in Swagger"""  # noqa: E501
+        """LExcludingRoles - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LExcludingRoles(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ExcludingRoles, dict):
+        if issubclass(LExcludingRoles, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LExcludingRoles(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ExcludingRoles):
+        if not isinstance(other, LExcludingRoles):
             return False
 
         return self.__dict__ == other.__dict__

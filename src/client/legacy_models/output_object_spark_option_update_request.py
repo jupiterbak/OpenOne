@@ -37,7 +37,7 @@ class LOutputObjectSparkOptionUpdateRequest(object):
     }
 
     def __init__(self, key=None, value=None):  # noqa: E501
-        """OutputObjectSparkOptionUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LOutputObjectSparkOptionUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._key = None
         self._value = None
         self.discriminator = None
@@ -47,22 +47,22 @@ class LOutputObjectSparkOptionUpdateRequest(object):
 
     @property
     def key(self):
-        """Gets the key of this OutputObjectSparkOptionUpdateRequest.  # noqa: E501
+        """Gets the key of this LOutputObjectSparkOptionUpdateRequest.  # noqa: E501
 
         Spark property key. e.g. spark.executor.cores  # noqa: E501
 
-        :return: The key of this OutputObjectSparkOptionUpdateRequest.  # noqa: E501
+        :return: The key of this LOutputObjectSparkOptionUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._key
 
     @key.setter
     def key(self, key):
-        """Sets the key of this OutputObjectSparkOptionUpdateRequest.
+        """Sets the key of this LOutputObjectSparkOptionUpdateRequest.
 
         Spark property key. e.g. spark.executor.cores  # noqa: E501
 
-        :param key: The key of this OutputObjectSparkOptionUpdateRequest.  # noqa: E501
+        :param key: The key of this LOutputObjectSparkOptionUpdateRequest.  # noqa: E501
         :type: str
         """
         if key is None:
@@ -72,22 +72,22 @@ class LOutputObjectSparkOptionUpdateRequest(object):
 
     @property
     def value(self):
-        """Gets the value of this OutputObjectSparkOptionUpdateRequest.  # noqa: E501
+        """Gets the value of this LOutputObjectSparkOptionUpdateRequest.  # noqa: E501
 
         Value to set for the spark property  # noqa: E501
 
-        :return: The value of this OutputObjectSparkOptionUpdateRequest.  # noqa: E501
+        :return: The value of this LOutputObjectSparkOptionUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this OutputObjectSparkOptionUpdateRequest.
+        """Sets the value of this LOutputObjectSparkOptionUpdateRequest.
 
         Value to set for the spark property  # noqa: E501
 
-        :param value: The value of this OutputObjectSparkOptionUpdateRequest.  # noqa: E501
+        :param value: The value of this LOutputObjectSparkOptionUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -114,7 +114,7 @@ class LOutputObjectSparkOptionUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OutputObjectSparkOptionUpdateRequest, dict):
+        if issubclass(LOutputObjectSparkOptionUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -130,7 +130,7 @@ class LOutputObjectSparkOptionUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OutputObjectSparkOptionUpdateRequest):
+        if not isinstance(other, LOutputObjectSparkOptionUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

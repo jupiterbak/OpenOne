@@ -35,27 +35,27 @@ class LAwsUserCloudConfigsRequestSchema(object):
     }
 
     def __init__(self, aws=None):  # noqa: E501
-        """AwsUserCloudConfigsRequestSchema - a model defined in Swagger"""  # noqa: E501
+        """LAwsUserCloudConfigsRequestSchema - a model defined in Swagger"""  # noqa: E501
         self._aws = None
         self.discriminator = None
         self.aws = aws
 
     @property
     def aws(self):
-        """Gets the aws of this AwsUserCloudConfigsRequestSchema.  # noqa: E501
+        """Gets the aws of this LAwsUserCloudConfigsRequestSchema.  # noqa: E501
 
 
-        :return: The aws of this AwsUserCloudConfigsRequestSchema.  # noqa: E501
+        :return: The aws of this LAwsUserCloudConfigsRequestSchema.  # noqa: E501
         :rtype: object
         """
         return self._aws
 
     @aws.setter
     def aws(self, aws):
-        """Sets the aws of this AwsUserCloudConfigsRequestSchema.
+        """Sets the aws of this LAwsUserCloudConfigsRequestSchema.
 
 
-        :param aws: The aws of this AwsUserCloudConfigsRequestSchema.  # noqa: E501
+        :param aws: The aws of this LAwsUserCloudConfigsRequestSchema.  # noqa: E501
         :type: object
         """
         if aws is None:
@@ -84,7 +84,7 @@ class LAwsUserCloudConfigsRequestSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AwsUserCloudConfigsRequestSchema, dict):
+        if issubclass(LAwsUserCloudConfigsRequestSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LAwsUserCloudConfigsRequestSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AwsUserCloudConfigsRequestSchema):
+        if not isinstance(other, LAwsUserCloudConfigsRequestSchema):
             return False
 
         return self.__dict__ == other.__dict__

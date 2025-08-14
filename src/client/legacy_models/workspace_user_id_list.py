@@ -27,7 +27,7 @@ class LWorkspaceUserIdList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[WorkspaceUserId]',
+        'data': 'list[LWorkspaceUserId]',
         'count': 'int'
     }
 
@@ -37,7 +37,7 @@ class LWorkspaceUserIdList(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """WorkspaceUserIdList - a model defined in Swagger"""  # noqa: E501
+        """LWorkspaceUserIdList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LWorkspaceUserIdList(object):
 
     @property
     def data(self):
-        """Gets the data of this WorkspaceUserIdList.  # noqa: E501
+        """Gets the data of this LWorkspaceUserIdList.  # noqa: E501
 
 
-        :return: The data of this WorkspaceUserIdList.  # noqa: E501
-        :rtype: list[WorkspaceUserId]
+        :return: The data of this LWorkspaceUserIdList.  # noqa: E501
+        :rtype: list[LWorkspaceUserId]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this WorkspaceUserIdList.
+        """Sets the data of this LWorkspaceUserIdList.
 
 
-        :param data: The data of this WorkspaceUserIdList.  # noqa: E501
-        :type: list[WorkspaceUserId]
+        :param data: The data of this LWorkspaceUserIdList.  # noqa: E501
+        :type: list[LWorkspaceUserId]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LWorkspaceUserIdList(object):
 
     @property
     def count(self):
-        """Gets the count of this WorkspaceUserIdList.  # noqa: E501
+        """Gets the count of this LWorkspaceUserIdList.  # noqa: E501
 
 
-        :return: The count of this WorkspaceUserIdList.  # noqa: E501
+        :return: The count of this LWorkspaceUserIdList.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this WorkspaceUserIdList.
+        """Sets the count of this LWorkspaceUserIdList.
 
 
-        :param count: The count of this WorkspaceUserIdList.  # noqa: E501
+        :param count: The count of this LWorkspaceUserIdList.  # noqa: E501
         :type: int
         """
 
@@ -110,7 +110,7 @@ class LWorkspaceUserIdList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WorkspaceUserIdList, dict):
+        if issubclass(LWorkspaceUserIdList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LWorkspaceUserIdList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WorkspaceUserIdList):
+        if not isinstance(other, LWorkspaceUserIdList):
             return False
 
         return self.__dict__ == other.__dict__

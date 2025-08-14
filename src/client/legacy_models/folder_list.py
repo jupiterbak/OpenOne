@@ -27,7 +27,7 @@ class LFolderList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[Folder]',
+        'data': 'list[LFolder]',
         'count': 'int'
     }
 
@@ -37,7 +37,7 @@ class LFolderList(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """FolderList - a model defined in Swagger"""  # noqa: E501
+        """LFolderList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LFolderList(object):
 
     @property
     def data(self):
-        """Gets the data of this FolderList.  # noqa: E501
+        """Gets the data of this LFolderList.  # noqa: E501
 
 
-        :return: The data of this FolderList.  # noqa: E501
-        :rtype: list[Folder]
+        :return: The data of this LFolderList.  # noqa: E501
+        :rtype: list[LFolder]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this FolderList.
+        """Sets the data of this LFolderList.
 
 
-        :param data: The data of this FolderList.  # noqa: E501
-        :type: list[Folder]
+        :param data: The data of this LFolderList.  # noqa: E501
+        :type: list[LFolder]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LFolderList(object):
 
     @property
     def count(self):
-        """Gets the count of this FolderList.  # noqa: E501
+        """Gets the count of this LFolderList.  # noqa: E501
 
 
-        :return: The count of this FolderList.  # noqa: E501
+        :return: The count of this LFolderList.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this FolderList.
+        """Sets the count of this LFolderList.
 
 
-        :param count: The count of this FolderList.  # noqa: E501
+        :param count: The count of this LFolderList.  # noqa: E501
         :type: int
         """
 
@@ -110,7 +110,7 @@ class LFolderList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FolderList, dict):
+        if issubclass(LFolderList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LFolderList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FolderList):
+        if not isinstance(other, LFolderList):
             return False
 
         return self.__dict__ == other.__dict__

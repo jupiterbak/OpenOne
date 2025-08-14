@@ -51,7 +51,7 @@ class LConnectionMetadataInfo(object):
     }
 
     def __init__(self, name=None, display_name=None, type=None, category=None, new_category=None, status=None, credential_types=None, operation=None, connection_parameters=None):  # noqa: E501
-        """ConnectionMetadataInfo - a model defined in Swagger"""  # noqa: E501
+        """LConnectionMetadataInfo - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._display_name = None
         self._type = None
@@ -83,20 +83,20 @@ class LConnectionMetadataInfo(object):
 
     @property
     def name(self):
-        """Gets the name of this ConnectionMetadataInfo.  # noqa: E501
+        """Gets the name of this LConnectionMetadataInfo.  # noqa: E501
 
 
-        :return: The name of this ConnectionMetadataInfo.  # noqa: E501
+        :return: The name of this LConnectionMetadataInfo.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConnectionMetadataInfo.
+        """Sets the name of this LConnectionMetadataInfo.
 
 
-        :param name: The name of this ConnectionMetadataInfo.  # noqa: E501
+        :param name: The name of this LConnectionMetadataInfo.  # noqa: E501
         :type: str
         """
 
@@ -104,20 +104,20 @@ class LConnectionMetadataInfo(object):
 
     @property
     def display_name(self):
-        """Gets the display_name of this ConnectionMetadataInfo.  # noqa: E501
+        """Gets the display_name of this LConnectionMetadataInfo.  # noqa: E501
 
 
-        :return: The display_name of this ConnectionMetadataInfo.  # noqa: E501
+        :return: The display_name of this LConnectionMetadataInfo.  # noqa: E501
         :rtype: str
         """
         return self._display_name
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ConnectionMetadataInfo.
+        """Sets the display_name of this LConnectionMetadataInfo.
 
 
-        :param display_name: The display_name of this ConnectionMetadataInfo.  # noqa: E501
+        :param display_name: The display_name of this LConnectionMetadataInfo.  # noqa: E501
         :type: str
         """
 
@@ -125,20 +125,20 @@ class LConnectionMetadataInfo(object):
 
     @property
     def type(self):
-        """Gets the type of this ConnectionMetadataInfo.  # noqa: E501
+        """Gets the type of this LConnectionMetadataInfo.  # noqa: E501
 
 
-        :return: The type of this ConnectionMetadataInfo.  # noqa: E501
+        :return: The type of this LConnectionMetadataInfo.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConnectionMetadataInfo.
+        """Sets the type of this LConnectionMetadataInfo.
 
 
-        :param type: The type of this ConnectionMetadataInfo.  # noqa: E501
+        :param type: The type of this LConnectionMetadataInfo.  # noqa: E501
         :type: str
         """
 
@@ -146,20 +146,20 @@ class LConnectionMetadataInfo(object):
 
     @property
     def category(self):
-        """Gets the category of this ConnectionMetadataInfo.  # noqa: E501
+        """Gets the category of this LConnectionMetadataInfo.  # noqa: E501
 
 
-        :return: The category of this ConnectionMetadataInfo.  # noqa: E501
+        :return: The category of this LConnectionMetadataInfo.  # noqa: E501
         :rtype: str
         """
         return self._category
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ConnectionMetadataInfo.
+        """Sets the category of this LConnectionMetadataInfo.
 
 
-        :param category: The category of this ConnectionMetadataInfo.  # noqa: E501
+        :param category: The category of this LConnectionMetadataInfo.  # noqa: E501
         :type: str
         """
 
@@ -167,20 +167,20 @@ class LConnectionMetadataInfo(object):
 
     @property
     def new_category(self):
-        """Gets the new_category of this ConnectionMetadataInfo.  # noqa: E501
+        """Gets the new_category of this LConnectionMetadataInfo.  # noqa: E501
 
 
-        :return: The new_category of this ConnectionMetadataInfo.  # noqa: E501
+        :return: The new_category of this LConnectionMetadataInfo.  # noqa: E501
         :rtype: list[object]
         """
         return self._new_category
 
     @new_category.setter
     def new_category(self, new_category):
-        """Sets the new_category of this ConnectionMetadataInfo.
+        """Sets the new_category of this LConnectionMetadataInfo.
 
 
-        :param new_category: The new_category of this ConnectionMetadataInfo.  # noqa: E501
+        :param new_category: The new_category of this LConnectionMetadataInfo.  # noqa: E501
         :type: list[object]
         """
 
@@ -188,20 +188,20 @@ class LConnectionMetadataInfo(object):
 
     @property
     def status(self):
-        """Gets the status of this ConnectionMetadataInfo.  # noqa: E501
+        """Gets the status of this LConnectionMetadataInfo.  # noqa: E501
 
 
-        :return: The status of this ConnectionMetadataInfo.  # noqa: E501
+        :return: The status of this LConnectionMetadataInfo.  # noqa: E501
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ConnectionMetadataInfo.
+        """Sets the status of this LConnectionMetadataInfo.
 
 
-        :param status: The status of this ConnectionMetadataInfo.  # noqa: E501
+        :param status: The status of this LConnectionMetadataInfo.  # noqa: E501
         :type: str
         """
         allowed_values = ["supported", "comingsoon", "earlypreview"]  # noqa: E501
@@ -215,20 +215,20 @@ class LConnectionMetadataInfo(object):
 
     @property
     def credential_types(self):
-        """Gets the credential_types of this ConnectionMetadataInfo.  # noqa: E501
+        """Gets the credential_types of this LConnectionMetadataInfo.  # noqa: E501
 
 
-        :return: The credential_types of this ConnectionMetadataInfo.  # noqa: E501
+        :return: The credential_types of this LConnectionMetadataInfo.  # noqa: E501
         :rtype: list[str]
         """
         return self._credential_types
 
     @credential_types.setter
     def credential_types(self, credential_types):
-        """Sets the credential_types of this ConnectionMetadataInfo.
+        """Sets the credential_types of this LConnectionMetadataInfo.
 
 
-        :param credential_types: The credential_types of this ConnectionMetadataInfo.  # noqa: E501
+        :param credential_types: The credential_types of this LConnectionMetadataInfo.  # noqa: E501
         :type: list[str]
         """
         allowed_values = ["basic", "securityToken", "iamRoleArn", "iamDbUser", "oauth2", "keySecret", "apiKey", "awsKeySecret", "basicWithAppToken", "userWithApiToken", "basicApp", "transactionKey", "password", "apiKeyWithToken", "noAuth", "httpHeaderBasedAuth", "privateApp", "httpQueryBasedAuth", "accessToken", "personalAccessToken", "tokenAuth", "personalAccessTokenNameSecret", "convergedConnectorAuth"]  # noqa: E501
@@ -243,20 +243,20 @@ class LConnectionMetadataInfo(object):
 
     @property
     def operation(self):
-        """Gets the operation of this ConnectionMetadataInfo.  # noqa: E501
+        """Gets the operation of this LConnectionMetadataInfo.  # noqa: E501
 
 
-        :return: The operation of this ConnectionMetadataInfo.  # noqa: E501
+        :return: The operation of this LConnectionMetadataInfo.  # noqa: E501
         :rtype: str
         """
         return self._operation
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this ConnectionMetadataInfo.
+        """Sets the operation of this LConnectionMetadataInfo.
 
 
-        :param operation: The operation of this ConnectionMetadataInfo.  # noqa: E501
+        :param operation: The operation of this LConnectionMetadataInfo.  # noqa: E501
         :type: str
         """
         allowed_values = ["import", "publish", "both", "none"]  # noqa: E501
@@ -270,20 +270,20 @@ class LConnectionMetadataInfo(object):
 
     @property
     def connection_parameters(self):
-        """Gets the connection_parameters of this ConnectionMetadataInfo.  # noqa: E501
+        """Gets the connection_parameters of this LConnectionMetadataInfo.  # noqa: E501
 
 
-        :return: The connection_parameters of this ConnectionMetadataInfo.  # noqa: E501
+        :return: The connection_parameters of this LConnectionMetadataInfo.  # noqa: E501
         :rtype: list[object]
         """
         return self._connection_parameters
 
     @connection_parameters.setter
     def connection_parameters(self, connection_parameters):
-        """Sets the connection_parameters of this ConnectionMetadataInfo.
+        """Sets the connection_parameters of this LConnectionMetadataInfo.
 
 
-        :param connection_parameters: The connection_parameters of this ConnectionMetadataInfo.  # noqa: E501
+        :param connection_parameters: The connection_parameters of this LConnectionMetadataInfo.  # noqa: E501
         :type: list[object]
         """
 
@@ -310,7 +310,7 @@ class LConnectionMetadataInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConnectionMetadataInfo, dict):
+        if issubclass(LConnectionMetadataInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -326,7 +326,7 @@ class LConnectionMetadataInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConnectionMetadataInfo):
+        if not isinstance(other, LConnectionMetadataInfo):
             return False
 
         return self.__dict__ == other.__dict__

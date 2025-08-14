@@ -35,27 +35,27 @@ class LRunParameterSelector(object):
     }
 
     def __init__(self, selector=None):  # noqa: E501
-        """RunParameterSelector - a model defined in Swagger"""  # noqa: E501
+        """LRunParameterSelector - a model defined in Swagger"""  # noqa: E501
         self._selector = None
         self.discriminator = None
         self.selector = selector
 
     @property
     def selector(self):
-        """Gets the selector of this RunParameterSelector.  # noqa: E501
+        """Gets the selector of this LRunParameterSelector.  # noqa: E501
 
 
-        :return: The selector of this RunParameterSelector.  # noqa: E501
+        :return: The selector of this LRunParameterSelector.  # noqa: E501
         :rtype: object
         """
         return self._selector
 
     @selector.setter
     def selector(self, selector):
-        """Sets the selector of this RunParameterSelector.
+        """Sets the selector of this LRunParameterSelector.
 
 
-        :param selector: The selector of this RunParameterSelector.  # noqa: E501
+        :param selector: The selector of this LRunParameterSelector.  # noqa: E501
         :type: object
         """
         if selector is None:
@@ -84,7 +84,7 @@ class LRunParameterSelector(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunParameterSelector, dict):
+        if issubclass(LRunParameterSelector, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunParameterSelector(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunParameterSelector):
+        if not isinstance(other, LRunParameterSelector):
             return False
 
         return self.__dict__ == other.__dict__

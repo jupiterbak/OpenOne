@@ -37,7 +37,7 @@ class LAuthCheckResponse(object):
     }
 
     def __init__(self, body=None, headers=None):  # noqa: E501
-        """AuthCheckResponse - a model defined in Swagger"""  # noqa: E501
+        """LAuthCheckResponse - a model defined in Swagger"""  # noqa: E501
         self._body = None
         self._headers = None
         self.discriminator = None
@@ -46,22 +46,22 @@ class LAuthCheckResponse(object):
 
     @property
     def body(self):
-        """Gets the body of this AuthCheckResponse.  # noqa: E501
+        """Gets the body of this LAuthCheckResponse.  # noqa: E501
 
         `\"Unauthorized\"` if the user does not have access and `\"OK\"` otherwise.  # noqa: E501
 
-        :return: The body of this AuthCheckResponse.  # noqa: E501
+        :return: The body of this LAuthCheckResponse.  # noqa: E501
         :rtype: str
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AuthCheckResponse.
+        """Sets the body of this LAuthCheckResponse.
 
         `\"Unauthorized\"` if the user does not have access and `\"OK\"` otherwise.  # noqa: E501
 
-        :param body: The body of this AuthCheckResponse.  # noqa: E501
+        :param body: The body of this LAuthCheckResponse.  # noqa: E501
         :type: str
         """
         if body is None:
@@ -71,20 +71,20 @@ class LAuthCheckResponse(object):
 
     @property
     def headers(self):
-        """Gets the headers of this AuthCheckResponse.  # noqa: E501
+        """Gets the headers of this LAuthCheckResponse.  # noqa: E501
 
 
-        :return: The headers of this AuthCheckResponse.  # noqa: E501
+        :return: The headers of this LAuthCheckResponse.  # noqa: E501
         :rtype: object
         """
         return self._headers
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this AuthCheckResponse.
+        """Sets the headers of this LAuthCheckResponse.
 
 
-        :param headers: The headers of this AuthCheckResponse.  # noqa: E501
+        :param headers: The headers of this LAuthCheckResponse.  # noqa: E501
         :type: object
         """
         if headers is None:
@@ -113,7 +113,7 @@ class LAuthCheckResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AuthCheckResponse, dict):
+        if issubclass(LAuthCheckResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LAuthCheckResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AuthCheckResponse):
+        if not isinstance(other, LAuthCheckResponse):
             return False
 
         return self.__dict__ == other.__dict__

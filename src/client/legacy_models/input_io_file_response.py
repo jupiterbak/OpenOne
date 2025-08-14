@@ -37,7 +37,7 @@ class LInputIoFileResponse(object):
     }
 
     def __init__(self, uri=None, file_type=None):  # noqa: E501
-        """InputIoFileResponse - a model defined in Swagger"""  # noqa: E501
+        """LInputIoFileResponse - a model defined in Swagger"""  # noqa: E501
         self._uri = None
         self._file_type = None
         self.discriminator = None
@@ -47,20 +47,20 @@ class LInputIoFileResponse(object):
 
     @property
     def uri(self):
-        """Gets the uri of this InputIoFileResponse.  # noqa: E501
+        """Gets the uri of this LInputIoFileResponse.  # noqa: E501
 
 
-        :return: The uri of this InputIoFileResponse.  # noqa: E501
+        :return: The uri of this LInputIoFileResponse.  # noqa: E501
         :rtype: str
         """
         return self._uri
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this InputIoFileResponse.
+        """Sets the uri of this LInputIoFileResponse.
 
 
-        :param uri: The uri of this InputIoFileResponse.  # noqa: E501
+        :param uri: The uri of this LInputIoFileResponse.  # noqa: E501
         :type: str
         """
         if uri is None:
@@ -70,20 +70,20 @@ class LInputIoFileResponse(object):
 
     @property
     def file_type(self):
-        """Gets the file_type of this InputIoFileResponse.  # noqa: E501
+        """Gets the file_type of this LInputIoFileResponse.  # noqa: E501
 
 
-        :return: The file_type of this InputIoFileResponse.  # noqa: E501
+        :return: The file_type of this LInputIoFileResponse.  # noqa: E501
         :rtype: str
         """
         return self._file_type
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this InputIoFileResponse.
+        """Sets the file_type of this LInputIoFileResponse.
 
 
-        :param file_type: The file_type of this InputIoFileResponse.  # noqa: E501
+        :param file_type: The file_type of this LInputIoFileResponse.  # noqa: E501
         :type: str
         """
         allowed_values = ["FILE", "DIRECTORY"]  # noqa: E501
@@ -116,7 +116,7 @@ class LInputIoFileResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(InputIoFileResponse, dict):
+        if issubclass(LInputIoFileResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -132,7 +132,7 @@ class LInputIoFileResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, InputIoFileResponse):
+        if not isinstance(other, LInputIoFileResponse):
             return False
 
         return self.__dict__ == other.__dict__

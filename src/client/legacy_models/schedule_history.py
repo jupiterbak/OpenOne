@@ -28,8 +28,8 @@ class LScheduleHistory(object):
     """
     swagger_types = {
         'name': 'str',
-        'triggers': 'AnyOfscheduleHistoryTriggers',
-        'tasks': 'AnyOfscheduleHistoryTasks',
+        'triggers': 'LAnyOfscheduleHistoryTriggers',
+        'tasks': 'LAnyOfscheduleHistoryTasks',
         'enabled': 'bool',
         'id': 'int',
         'created_at': 'datetime',
@@ -53,7 +53,7 @@ class LScheduleHistory(object):
     }
 
     def __init__(self, name=None, triggers=None, tasks=None, enabled=None, id=None, created_at=None, updated_at=None, created_by=None, updated_by=None, creator=None):  # noqa: E501
-        """ScheduleHistory - a model defined in Swagger"""  # noqa: E501
+        """LScheduleHistory - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._triggers = None
         self._tasks = None
@@ -83,22 +83,22 @@ class LScheduleHistory(object):
 
     @property
     def name(self):
-        """Gets the name of this ScheduleHistory.  # noqa: E501
+        """Gets the name of this LScheduleHistory.  # noqa: E501
 
         name of the schedule  # noqa: E501
 
-        :return: The name of this ScheduleHistory.  # noqa: E501
+        :return: The name of this LScheduleHistory.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScheduleHistory.
+        """Sets the name of this LScheduleHistory.
 
         name of the schedule  # noqa: E501
 
-        :param name: The name of this ScheduleHistory.  # noqa: E501
+        :param name: The name of this LScheduleHistory.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -108,21 +108,21 @@ class LScheduleHistory(object):
 
     @property
     def triggers(self):
-        """Gets the triggers of this ScheduleHistory.  # noqa: E501
+        """Gets the triggers of this LScheduleHistory.  # noqa: E501
 
 
-        :return: The triggers of this ScheduleHistory.  # noqa: E501
-        :rtype: AnyOfscheduleHistoryTriggers
+        :return: The triggers of this LScheduleHistory.  # noqa: E501
+        :rtype: LAnyOfscheduleHistoryTriggers
         """
         return self._triggers
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this ScheduleHistory.
+        """Sets the triggers of this LScheduleHistory.
 
 
-        :param triggers: The triggers of this ScheduleHistory.  # noqa: E501
-        :type: AnyOfscheduleHistoryTriggers
+        :param triggers: The triggers of this LScheduleHistory.  # noqa: E501
+        :type: LAnyOfscheduleHistoryTriggers
         """
         if triggers is None:
             raise ValueError("Invalid value for `triggers`, must not be `None`")  # noqa: E501
@@ -131,21 +131,21 @@ class LScheduleHistory(object):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ScheduleHistory.  # noqa: E501
+        """Gets the tasks of this LScheduleHistory.  # noqa: E501
 
 
-        :return: The tasks of this ScheduleHistory.  # noqa: E501
-        :rtype: AnyOfscheduleHistoryTasks
+        :return: The tasks of this LScheduleHistory.  # noqa: E501
+        :rtype: LAnyOfscheduleHistoryTasks
         """
         return self._tasks
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ScheduleHistory.
+        """Sets the tasks of this LScheduleHistory.
 
 
-        :param tasks: The tasks of this ScheduleHistory.  # noqa: E501
-        :type: AnyOfscheduleHistoryTasks
+        :param tasks: The tasks of this LScheduleHistory.  # noqa: E501
+        :type: LAnyOfscheduleHistoryTasks
         """
         if tasks is None:
             raise ValueError("Invalid value for `tasks`, must not be `None`")  # noqa: E501
@@ -154,22 +154,22 @@ class LScheduleHistory(object):
 
     @property
     def enabled(self):
-        """Gets the enabled of this ScheduleHistory.  # noqa: E501
+        """Gets the enabled of this LScheduleHistory.  # noqa: E501
 
         indicate if the schedule is enabled or not  # noqa: E501
 
-        :return: The enabled of this ScheduleHistory.  # noqa: E501
+        :return: The enabled of this LScheduleHistory.  # noqa: E501
         :rtype: bool
         """
         return self._enabled
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ScheduleHistory.
+        """Sets the enabled of this LScheduleHistory.
 
         indicate if the schedule is enabled or not  # noqa: E501
 
-        :param enabled: The enabled of this ScheduleHistory.  # noqa: E501
+        :param enabled: The enabled of this LScheduleHistory.  # noqa: E501
         :type: bool
         """
 
@@ -177,22 +177,22 @@ class LScheduleHistory(object):
 
     @property
     def id(self):
-        """Gets the id of this ScheduleHistory.  # noqa: E501
+        """Gets the id of this LScheduleHistory.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this ScheduleHistory.  # noqa: E501
+        :return: The id of this LScheduleHistory.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScheduleHistory.
+        """Sets the id of this LScheduleHistory.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this ScheduleHistory.  # noqa: E501
+        :param id: The id of this LScheduleHistory.  # noqa: E501
         :type: int
         """
 
@@ -200,22 +200,22 @@ class LScheduleHistory(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ScheduleHistory.  # noqa: E501
+        """Gets the created_at of this LScheduleHistory.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this ScheduleHistory.  # noqa: E501
+        :return: The created_at of this LScheduleHistory.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ScheduleHistory.
+        """Sets the created_at of this LScheduleHistory.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this ScheduleHistory.  # noqa: E501
+        :param created_at: The created_at of this LScheduleHistory.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -225,22 +225,22 @@ class LScheduleHistory(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ScheduleHistory.  # noqa: E501
+        """Gets the updated_at of this LScheduleHistory.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this ScheduleHistory.  # noqa: E501
+        :return: The updated_at of this LScheduleHistory.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ScheduleHistory.
+        """Sets the updated_at of this LScheduleHistory.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this ScheduleHistory.  # noqa: E501
+        :param updated_at: The updated_at of this LScheduleHistory.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -250,22 +250,22 @@ class LScheduleHistory(object):
 
     @property
     def created_by(self):
-        """Gets the created_by of this ScheduleHistory.  # noqa: E501
+        """Gets the created_by of this LScheduleHistory.  # noqa: E501
 
         Identifier of the user who created this object.  # noqa: E501
 
-        :return: The created_by of this ScheduleHistory.  # noqa: E501
+        :return: The created_by of this LScheduleHistory.  # noqa: E501
         :rtype: int
         """
         return self._created_by
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this ScheduleHistory.
+        """Sets the created_by of this LScheduleHistory.
 
         Identifier of the user who created this object.  # noqa: E501
 
-        :param created_by: The created_by of this ScheduleHistory.  # noqa: E501
+        :param created_by: The created_by of this LScheduleHistory.  # noqa: E501
         :type: int
         """
 
@@ -273,22 +273,22 @@ class LScheduleHistory(object):
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this ScheduleHistory.  # noqa: E501
+        """Gets the updated_by of this LScheduleHistory.  # noqa: E501
 
         Identifier of the user who last updated this object.  # noqa: E501
 
-        :return: The updated_by of this ScheduleHistory.  # noqa: E501
+        :return: The updated_by of this LScheduleHistory.  # noqa: E501
         :rtype: int
         """
         return self._updated_by
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this ScheduleHistory.
+        """Sets the updated_by of this LScheduleHistory.
 
         Identifier of the user who last updated this object.  # noqa: E501
 
-        :param updated_by: The updated_by of this ScheduleHistory.  # noqa: E501
+        :param updated_by: The updated_by of this LScheduleHistory.  # noqa: E501
         :type: int
         """
 
@@ -296,20 +296,20 @@ class LScheduleHistory(object):
 
     @property
     def creator(self):
-        """Gets the creator of this ScheduleHistory.  # noqa: E501
+        """Gets the creator of this LScheduleHistory.  # noqa: E501
 
 
-        :return: The creator of this ScheduleHistory.  # noqa: E501
+        :return: The creator of this LScheduleHistory.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ScheduleHistory.
+        """Sets the creator of this LScheduleHistory.
 
 
-        :param creator: The creator of this ScheduleHistory.  # noqa: E501
+        :param creator: The creator of this LScheduleHistory.  # noqa: E501
         :type: object
         """
 
@@ -336,7 +336,7 @@ class LScheduleHistory(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ScheduleHistory, dict):
+        if issubclass(LScheduleHistory, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -352,7 +352,7 @@ class LScheduleHistory(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ScheduleHistory):
+        if not isinstance(other, LScheduleHistory):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,8 +27,8 @@ class LPlanFlowTaskCreateRequest(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'flow_id': 'AnyOfplanFlowTaskCreateRequestFlowId',
-        'flow_node_ids': 'list[AnyOfplanFlowTaskCreateRequestFlowNodeIdsItems]'
+        'flow_id': 'LAnyOfplanFlowTaskCreateRequestFlowId',
+        'flow_node_ids': 'list[LAnyOfplanFlowTaskCreateRequestFlowNodeIdsItems]'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LPlanFlowTaskCreateRequest(object):
     }
 
     def __init__(self, flow_id=None, flow_node_ids=None):  # noqa: E501
-        """PlanFlowTaskCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LPlanFlowTaskCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._flow_id = None
         self._flow_node_ids = None
         self.discriminator = None
@@ -46,21 +46,21 @@ class LPlanFlowTaskCreateRequest(object):
 
     @property
     def flow_id(self):
-        """Gets the flow_id of this PlanFlowTaskCreateRequest.  # noqa: E501
+        """Gets the flow_id of this LPlanFlowTaskCreateRequest.  # noqa: E501
 
 
-        :return: The flow_id of this PlanFlowTaskCreateRequest.  # noqa: E501
-        :rtype: AnyOfplanFlowTaskCreateRequestFlowId
+        :return: The flow_id of this LPlanFlowTaskCreateRequest.  # noqa: E501
+        :rtype: LAnyOfplanFlowTaskCreateRequestFlowId
         """
         return self._flow_id
 
     @flow_id.setter
     def flow_id(self, flow_id):
-        """Sets the flow_id of this PlanFlowTaskCreateRequest.
+        """Sets the flow_id of this LPlanFlowTaskCreateRequest.
 
 
-        :param flow_id: The flow_id of this PlanFlowTaskCreateRequest.  # noqa: E501
-        :type: AnyOfplanFlowTaskCreateRequestFlowId
+        :param flow_id: The flow_id of this LPlanFlowTaskCreateRequest.  # noqa: E501
+        :type: LAnyOfplanFlowTaskCreateRequestFlowId
         """
         if flow_id is None:
             raise ValueError("Invalid value for `flow_id`, must not be `None`")  # noqa: E501
@@ -69,21 +69,21 @@ class LPlanFlowTaskCreateRequest(object):
 
     @property
     def flow_node_ids(self):
-        """Gets the flow_node_ids of this PlanFlowTaskCreateRequest.  # noqa: E501
+        """Gets the flow_node_ids of this LPlanFlowTaskCreateRequest.  # noqa: E501
 
 
-        :return: The flow_node_ids of this PlanFlowTaskCreateRequest.  # noqa: E501
-        :rtype: list[AnyOfplanFlowTaskCreateRequestFlowNodeIdsItems]
+        :return: The flow_node_ids of this LPlanFlowTaskCreateRequest.  # noqa: E501
+        :rtype: list[LAnyOfplanFlowTaskCreateRequestFlowNodeIdsItems]
         """
         return self._flow_node_ids
 
     @flow_node_ids.setter
     def flow_node_ids(self, flow_node_ids):
-        """Sets the flow_node_ids of this PlanFlowTaskCreateRequest.
+        """Sets the flow_node_ids of this LPlanFlowTaskCreateRequest.
 
 
-        :param flow_node_ids: The flow_node_ids of this PlanFlowTaskCreateRequest.  # noqa: E501
-        :type: list[AnyOfplanFlowTaskCreateRequestFlowNodeIdsItems]
+        :param flow_node_ids: The flow_node_ids of this LPlanFlowTaskCreateRequest.  # noqa: E501
+        :type: list[LAnyOfplanFlowTaskCreateRequestFlowNodeIdsItems]
         """
         if flow_node_ids is None:
             raise ValueError("Invalid value for `flow_node_ids`, must not be `None`")  # noqa: E501
@@ -111,7 +111,7 @@ class LPlanFlowTaskCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanFlowTaskCreateRequest, dict):
+        if issubclass(LPlanFlowTaskCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LPlanFlowTaskCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanFlowTaskCreateRequest):
+        if not isinstance(other, LPlanFlowTaskCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

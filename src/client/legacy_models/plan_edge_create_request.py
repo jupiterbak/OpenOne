@@ -27,9 +27,9 @@ class LPlanEdgeCreateRequest(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'plan_id': 'AnyOfplanEdgeCreateRequestPlanId',
-        'in_plan_node_id': 'AnyOfplanEdgeCreateRequestInPlanNodeId',
-        'out_plan_node_id': 'AnyOfplanEdgeCreateRequestOutPlanNodeId',
+        'plan_id': 'LAnyOfplanEdgeCreateRequestPlanId',
+        'in_plan_node_id': 'LAnyOfplanEdgeCreateRequestInPlanNodeId',
+        'out_plan_node_id': 'LAnyOfplanEdgeCreateRequestOutPlanNodeId',
         'status_rule': 'str'
     }
 
@@ -41,7 +41,7 @@ class LPlanEdgeCreateRequest(object):
     }
 
     def __init__(self, plan_id=None, in_plan_node_id=None, out_plan_node_id=None, status_rule=None):  # noqa: E501
-        """PlanEdgeCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LPlanEdgeCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._plan_id = None
         self._in_plan_node_id = None
         self._out_plan_node_id = None
@@ -54,21 +54,21 @@ class LPlanEdgeCreateRequest(object):
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this PlanEdgeCreateRequest.  # noqa: E501
+        """Gets the plan_id of this LPlanEdgeCreateRequest.  # noqa: E501
 
 
-        :return: The plan_id of this PlanEdgeCreateRequest.  # noqa: E501
-        :rtype: AnyOfplanEdgeCreateRequestPlanId
+        :return: The plan_id of this LPlanEdgeCreateRequest.  # noqa: E501
+        :rtype: LAnyOfplanEdgeCreateRequestPlanId
         """
         return self._plan_id
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this PlanEdgeCreateRequest.
+        """Sets the plan_id of this LPlanEdgeCreateRequest.
 
 
-        :param plan_id: The plan_id of this PlanEdgeCreateRequest.  # noqa: E501
-        :type: AnyOfplanEdgeCreateRequestPlanId
+        :param plan_id: The plan_id of this LPlanEdgeCreateRequest.  # noqa: E501
+        :type: LAnyOfplanEdgeCreateRequestPlanId
         """
         if plan_id is None:
             raise ValueError("Invalid value for `plan_id`, must not be `None`")  # noqa: E501
@@ -77,21 +77,21 @@ class LPlanEdgeCreateRequest(object):
 
     @property
     def in_plan_node_id(self):
-        """Gets the in_plan_node_id of this PlanEdgeCreateRequest.  # noqa: E501
+        """Gets the in_plan_node_id of this LPlanEdgeCreateRequest.  # noqa: E501
 
 
-        :return: The in_plan_node_id of this PlanEdgeCreateRequest.  # noqa: E501
-        :rtype: AnyOfplanEdgeCreateRequestInPlanNodeId
+        :return: The in_plan_node_id of this LPlanEdgeCreateRequest.  # noqa: E501
+        :rtype: LAnyOfplanEdgeCreateRequestInPlanNodeId
         """
         return self._in_plan_node_id
 
     @in_plan_node_id.setter
     def in_plan_node_id(self, in_plan_node_id):
-        """Sets the in_plan_node_id of this PlanEdgeCreateRequest.
+        """Sets the in_plan_node_id of this LPlanEdgeCreateRequest.
 
 
-        :param in_plan_node_id: The in_plan_node_id of this PlanEdgeCreateRequest.  # noqa: E501
-        :type: AnyOfplanEdgeCreateRequestInPlanNodeId
+        :param in_plan_node_id: The in_plan_node_id of this LPlanEdgeCreateRequest.  # noqa: E501
+        :type: LAnyOfplanEdgeCreateRequestInPlanNodeId
         """
         if in_plan_node_id is None:
             raise ValueError("Invalid value for `in_plan_node_id`, must not be `None`")  # noqa: E501
@@ -100,21 +100,21 @@ class LPlanEdgeCreateRequest(object):
 
     @property
     def out_plan_node_id(self):
-        """Gets the out_plan_node_id of this PlanEdgeCreateRequest.  # noqa: E501
+        """Gets the out_plan_node_id of this LPlanEdgeCreateRequest.  # noqa: E501
 
 
-        :return: The out_plan_node_id of this PlanEdgeCreateRequest.  # noqa: E501
-        :rtype: AnyOfplanEdgeCreateRequestOutPlanNodeId
+        :return: The out_plan_node_id of this LPlanEdgeCreateRequest.  # noqa: E501
+        :rtype: LAnyOfplanEdgeCreateRequestOutPlanNodeId
         """
         return self._out_plan_node_id
 
     @out_plan_node_id.setter
     def out_plan_node_id(self, out_plan_node_id):
-        """Sets the out_plan_node_id of this PlanEdgeCreateRequest.
+        """Sets the out_plan_node_id of this LPlanEdgeCreateRequest.
 
 
-        :param out_plan_node_id: The out_plan_node_id of this PlanEdgeCreateRequest.  # noqa: E501
-        :type: AnyOfplanEdgeCreateRequestOutPlanNodeId
+        :param out_plan_node_id: The out_plan_node_id of this LPlanEdgeCreateRequest.  # noqa: E501
+        :type: LAnyOfplanEdgeCreateRequestOutPlanNodeId
         """
         if out_plan_node_id is None:
             raise ValueError("Invalid value for `out_plan_node_id`, must not be `None`")  # noqa: E501
@@ -123,20 +123,20 @@ class LPlanEdgeCreateRequest(object):
 
     @property
     def status_rule(self):
-        """Gets the status_rule of this PlanEdgeCreateRequest.  # noqa: E501
+        """Gets the status_rule of this LPlanEdgeCreateRequest.  # noqa: E501
 
 
-        :return: The status_rule of this PlanEdgeCreateRequest.  # noqa: E501
+        :return: The status_rule of this LPlanEdgeCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._status_rule
 
     @status_rule.setter
     def status_rule(self, status_rule):
-        """Sets the status_rule of this PlanEdgeCreateRequest.
+        """Sets the status_rule of this LPlanEdgeCreateRequest.
 
 
-        :param status_rule: The status_rule of this PlanEdgeCreateRequest.  # noqa: E501
+        :param status_rule: The status_rule of this LPlanEdgeCreateRequest.  # noqa: E501
         :type: str
         """
         if status_rule is None:
@@ -171,7 +171,7 @@ class LPlanEdgeCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanEdgeCreateRequest, dict):
+        if issubclass(LPlanEdgeCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -187,7 +187,7 @@ class LPlanEdgeCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanEdgeCreateRequest):
+        if not isinstance(other, LPlanEdgeCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

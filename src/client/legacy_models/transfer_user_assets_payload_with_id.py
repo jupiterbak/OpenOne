@@ -27,8 +27,8 @@ class LTransferUserAssetsPayloadWithId(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'from_person_id': 'AnyOftransferUserAssetsPayloadWithIdFromPersonId',
-        'to_person_id': 'AnyOftransferUserAssetsPayloadWithIdToPersonId',
+        'from_person_id': 'LAnyOftransferUserAssetsPayloadWithIdFromPersonId',
+        'to_person_id': 'LAnyOftransferUserAssetsPayloadWithIdToPersonId',
         'assets': 'object'
     }
 
@@ -39,7 +39,7 @@ class LTransferUserAssetsPayloadWithId(object):
     }
 
     def __init__(self, from_person_id=None, to_person_id=None, assets=None):  # noqa: E501
-        """TransferUserAssetsPayloadWithId - a model defined in Swagger"""  # noqa: E501
+        """LTransferUserAssetsPayloadWithId - a model defined in Swagger"""  # noqa: E501
         self._from_person_id = None
         self._to_person_id = None
         self._assets = None
@@ -51,21 +51,21 @@ class LTransferUserAssetsPayloadWithId(object):
 
     @property
     def from_person_id(self):
-        """Gets the from_person_id of this TransferUserAssetsPayloadWithId.  # noqa: E501
+        """Gets the from_person_id of this LTransferUserAssetsPayloadWithId.  # noqa: E501
 
 
-        :return: The from_person_id of this TransferUserAssetsPayloadWithId.  # noqa: E501
-        :rtype: AnyOftransferUserAssetsPayloadWithIdFromPersonId
+        :return: The from_person_id of this LTransferUserAssetsPayloadWithId.  # noqa: E501
+        :rtype: LAnyOftransferUserAssetsPayloadWithIdFromPersonId
         """
         return self._from_person_id
 
     @from_person_id.setter
     def from_person_id(self, from_person_id):
-        """Sets the from_person_id of this TransferUserAssetsPayloadWithId.
+        """Sets the from_person_id of this LTransferUserAssetsPayloadWithId.
 
 
-        :param from_person_id: The from_person_id of this TransferUserAssetsPayloadWithId.  # noqa: E501
-        :type: AnyOftransferUserAssetsPayloadWithIdFromPersonId
+        :param from_person_id: The from_person_id of this LTransferUserAssetsPayloadWithId.  # noqa: E501
+        :type: LAnyOftransferUserAssetsPayloadWithIdFromPersonId
         """
         if from_person_id is None:
             raise ValueError("Invalid value for `from_person_id`, must not be `None`")  # noqa: E501
@@ -74,21 +74,21 @@ class LTransferUserAssetsPayloadWithId(object):
 
     @property
     def to_person_id(self):
-        """Gets the to_person_id of this TransferUserAssetsPayloadWithId.  # noqa: E501
+        """Gets the to_person_id of this LTransferUserAssetsPayloadWithId.  # noqa: E501
 
 
-        :return: The to_person_id of this TransferUserAssetsPayloadWithId.  # noqa: E501
-        :rtype: AnyOftransferUserAssetsPayloadWithIdToPersonId
+        :return: The to_person_id of this LTransferUserAssetsPayloadWithId.  # noqa: E501
+        :rtype: LAnyOftransferUserAssetsPayloadWithIdToPersonId
         """
         return self._to_person_id
 
     @to_person_id.setter
     def to_person_id(self, to_person_id):
-        """Sets the to_person_id of this TransferUserAssetsPayloadWithId.
+        """Sets the to_person_id of this LTransferUserAssetsPayloadWithId.
 
 
-        :param to_person_id: The to_person_id of this TransferUserAssetsPayloadWithId.  # noqa: E501
-        :type: AnyOftransferUserAssetsPayloadWithIdToPersonId
+        :param to_person_id: The to_person_id of this LTransferUserAssetsPayloadWithId.  # noqa: E501
+        :type: LAnyOftransferUserAssetsPayloadWithIdToPersonId
         """
         if to_person_id is None:
             raise ValueError("Invalid value for `to_person_id`, must not be `None`")  # noqa: E501
@@ -97,22 +97,22 @@ class LTransferUserAssetsPayloadWithId(object):
 
     @property
     def assets(self):
-        """Gets the assets of this TransferUserAssetsPayloadWithId.  # noqa: E501
+        """Gets the assets of this LTransferUserAssetsPayloadWithId.  # noqa: E501
 
         Asset IDs that need to be transferred. To specify all assets of a certain type, use \"all\" instead of integer array. If assets payload is not provided, all assets of all types will be transferred.  # noqa: E501
 
-        :return: The assets of this TransferUserAssetsPayloadWithId.  # noqa: E501
+        :return: The assets of this LTransferUserAssetsPayloadWithId.  # noqa: E501
         :rtype: object
         """
         return self._assets
 
     @assets.setter
     def assets(self, assets):
-        """Sets the assets of this TransferUserAssetsPayloadWithId.
+        """Sets the assets of this LTransferUserAssetsPayloadWithId.
 
         Asset IDs that need to be transferred. To specify all assets of a certain type, use \"all\" instead of integer array. If assets payload is not provided, all assets of all types will be transferred.  # noqa: E501
 
-        :param assets: The assets of this TransferUserAssetsPayloadWithId.  # noqa: E501
+        :param assets: The assets of this LTransferUserAssetsPayloadWithId.  # noqa: E501
         :type: object
         """
 
@@ -139,7 +139,7 @@ class LTransferUserAssetsPayloadWithId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(TransferUserAssetsPayloadWithId, dict):
+        if issubclass(LTransferUserAssetsPayloadWithId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -155,7 +155,7 @@ class LTransferUserAssetsPayloadWithId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TransferUserAssetsPayloadWithId):
+        if not isinstance(other, LTransferUserAssetsPayloadWithId):
             return False
 
         return self.__dict__ == other.__dict__

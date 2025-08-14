@@ -45,9 +45,9 @@ class LConnectionCreateRequest(object):
         'bucket': 'str',
         'params': 'object',
         'oauth2_state_id': 'str',
-        'credentials': 'AcceptedCredentials',
-        'advanced_credentials': 'AdvancedCredentialsInfo',
-        'endpoints': 'JdbcRestEndpointsInfo'
+        'credentials': 'LAcceptedCredentials',
+        'advanced_credentials': 'LAdvancedCredentialsInfo',
+        'endpoints': 'LJdbcRestEndpointsInfo'
     }
 
     attribute_map = {
@@ -75,7 +75,7 @@ class LConnectionCreateRequest(object):
     }
 
     def __init__(self, vendor=None, vendor_name=None, type=None, credential_type=None, advanced_credential_type=None, ssh_tunneling=None, ssl=None, name=None, description=None, disable_type_inference=None, is_global=None, credentials_shared=None, has_credentials=None, host=None, port=None, bucket=None, params=None, oauth2_state_id=None, credentials=None, advanced_credentials=None, endpoints=None):  # noqa: E501
-        """ConnectionCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LConnectionCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._vendor = None
         self._vendor_name = None
         self._type = None
@@ -137,22 +137,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def vendor(self):
-        """Gets the vendor of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the vendor of this LConnectionCreateRequest.  # noqa: E501
 
         String identifying the connection`s vendor  # noqa: E501
 
-        :return: The vendor of this ConnectionCreateRequest.  # noqa: E501
+        :return: The vendor of this LConnectionCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._vendor
 
     @vendor.setter
     def vendor(self, vendor):
-        """Sets the vendor of this ConnectionCreateRequest.
+        """Sets the vendor of this LConnectionCreateRequest.
 
         String identifying the connection`s vendor  # noqa: E501
 
-        :param vendor: The vendor of this ConnectionCreateRequest.  # noqa: E501
+        :param vendor: The vendor of this LConnectionCreateRequest.  # noqa: E501
         :type: str
         """
         if vendor is None:
@@ -162,22 +162,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def vendor_name(self):
-        """Gets the vendor_name of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the vendor_name of this LConnectionCreateRequest.  # noqa: E501
 
         Name of the vendor of the connection  # noqa: E501
 
-        :return: The vendor_name of this ConnectionCreateRequest.  # noqa: E501
+        :return: The vendor_name of this LConnectionCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._vendor_name
 
     @vendor_name.setter
     def vendor_name(self, vendor_name):
-        """Sets the vendor_name of this ConnectionCreateRequest.
+        """Sets the vendor_name of this LConnectionCreateRequest.
 
         Name of the vendor of the connection  # noqa: E501
 
-        :param vendor_name: The vendor_name of this ConnectionCreateRequest.  # noqa: E501
+        :param vendor_name: The vendor_name of this LConnectionCreateRequest.  # noqa: E501
         :type: str
         """
         if vendor_name is None:
@@ -187,22 +187,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def type(self):
-        """Gets the type of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the type of this LConnectionCreateRequest.  # noqa: E501
 
         Type of connection  # noqa: E501
 
-        :return: The type of this ConnectionCreateRequest.  # noqa: E501
+        :return: The type of this LConnectionCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConnectionCreateRequest.
+        """Sets the type of this LConnectionCreateRequest.
 
         Type of connection  # noqa: E501
 
-        :param type: The type of this ConnectionCreateRequest.  # noqa: E501
+        :param type: The type of this LConnectionCreateRequest.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -218,22 +218,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def credential_type(self):
-        """Gets the credential_type of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the credential_type of this LConnectionCreateRequest.  # noqa: E501
 
          * `basic` - Simple username/password to be provided in the credentials property      * `securityToken` - Connection uses username, password and security token to authenticate. * `iamRoleArn` - Connection uses username, password and optiona IAM Role ARN to authenticate. * `iamDbUser` - Connection uses IAM and DbUser to connect to the database. * `oauth2` - Connection uses OAuth 2.0 to authenticate. * `keySecret` - connection uses key and secret to authenticate. * `apiKey` - Connection uses API Key for authentication. * `awsKeySecret` - Connection uses AWS Access Key and Secret Key for authentication. * `basicWithAppToken` - Connection uses Username, Password and Application Token for authentication. * `userWithApiToken` - Connection uses User and Api Token for authentication. * `basicApp` - Connection uses App Id and Password for authentication. * `transactionKey` - Connection uses Login ID and Transaction key for authentication. * `password` - Connection uses Password for authentication. * `apiKeyWithToken` - Connection uses API Key and Token for authentication. * `noAuth` - No authentication required for the connection. * `httpHeaderBasedAuth` - Connection uses http header based credentials for authentication. * `privateApp` - Connection uses privateApp token for authentication. * `httpQueryBasedAuth` - Connection uses http query based credentials for authentication. * `accessToken` - Connection uses access token for authentication. * `personalAccessToken` - Connection uses personal access token for authentication. * `tokenAuth` - Connection uses token based authentication. * `personalAccessTokenNameSecret` - Connection uses personal access token name and secret pair for authentication. * `convergedConnectorAuth` - Authentication Type implemented by the converged connector.  # noqa: E501
 
-        :return: The credential_type of this ConnectionCreateRequest.  # noqa: E501
+        :return: The credential_type of this LConnectionCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._credential_type
 
     @credential_type.setter
     def credential_type(self, credential_type):
-        """Sets the credential_type of this ConnectionCreateRequest.
+        """Sets the credential_type of this LConnectionCreateRequest.
 
          * `basic` - Simple username/password to be provided in the credentials property      * `securityToken` - Connection uses username, password and security token to authenticate. * `iamRoleArn` - Connection uses username, password and optiona IAM Role ARN to authenticate. * `iamDbUser` - Connection uses IAM and DbUser to connect to the database. * `oauth2` - Connection uses OAuth 2.0 to authenticate. * `keySecret` - connection uses key and secret to authenticate. * `apiKey` - Connection uses API Key for authentication. * `awsKeySecret` - Connection uses AWS Access Key and Secret Key for authentication. * `basicWithAppToken` - Connection uses Username, Password and Application Token for authentication. * `userWithApiToken` - Connection uses User and Api Token for authentication. * `basicApp` - Connection uses App Id and Password for authentication. * `transactionKey` - Connection uses Login ID and Transaction key for authentication. * `password` - Connection uses Password for authentication. * `apiKeyWithToken` - Connection uses API Key and Token for authentication. * `noAuth` - No authentication required for the connection. * `httpHeaderBasedAuth` - Connection uses http header based credentials for authentication. * `privateApp` - Connection uses privateApp token for authentication. * `httpQueryBasedAuth` - Connection uses http query based credentials for authentication. * `accessToken` - Connection uses access token for authentication. * `personalAccessToken` - Connection uses personal access token for authentication. * `tokenAuth` - Connection uses token based authentication. * `personalAccessTokenNameSecret` - Connection uses personal access token name and secret pair for authentication. * `convergedConnectorAuth` - Authentication Type implemented by the converged connector.  # noqa: E501
 
-        :param credential_type: The credential_type of this ConnectionCreateRequest.  # noqa: E501
+        :param credential_type: The credential_type of this LConnectionCreateRequest.  # noqa: E501
         :type: str
         """
         if credential_type is None:
@@ -249,22 +249,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def advanced_credential_type(self):
-        """Gets the advanced_credential_type of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the advanced_credential_type of this LConnectionCreateRequest.  # noqa: E501
 
             # noqa: E501
 
-        :return: The advanced_credential_type of this ConnectionCreateRequest.  # noqa: E501
+        :return: The advanced_credential_type of this LConnectionCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._advanced_credential_type
 
     @advanced_credential_type.setter
     def advanced_credential_type(self, advanced_credential_type):
-        """Sets the advanced_credential_type of this ConnectionCreateRequest.
+        """Sets the advanced_credential_type of this LConnectionCreateRequest.
 
             # noqa: E501
 
-        :param advanced_credential_type: The advanced_credential_type of this ConnectionCreateRequest.  # noqa: E501
+        :param advanced_credential_type: The advanced_credential_type of this LConnectionCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -272,22 +272,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def ssh_tunneling(self):
-        """Gets the ssh_tunneling of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the ssh_tunneling of this LConnectionCreateRequest.  # noqa: E501
 
         When `true`, the Alteryx Analytics Cloud Platform uses SSH Tunneling to connect to the source  # noqa: E501
 
-        :return: The ssh_tunneling of this ConnectionCreateRequest.  # noqa: E501
+        :return: The ssh_tunneling of this LConnectionCreateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._ssh_tunneling
 
     @ssh_tunneling.setter
     def ssh_tunneling(self, ssh_tunneling):
-        """Sets the ssh_tunneling of this ConnectionCreateRequest.
+        """Sets the ssh_tunneling of this LConnectionCreateRequest.
 
         When `true`, the Alteryx Analytics Cloud Platform uses SSH Tunneling to connect to the source  # noqa: E501
 
-        :param ssh_tunneling: The ssh_tunneling of this ConnectionCreateRequest.  # noqa: E501
+        :param ssh_tunneling: The ssh_tunneling of this LConnectionCreateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -295,22 +295,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def ssl(self):
-        """Gets the ssl of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the ssl of this LConnectionCreateRequest.  # noqa: E501
 
         When `true`, the Alteryx Analytics Cloud Platform uses SSL to connect to the source  # noqa: E501
 
-        :return: The ssl of this ConnectionCreateRequest.  # noqa: E501
+        :return: The ssl of this LConnectionCreateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._ssl
 
     @ssl.setter
     def ssl(self, ssl):
-        """Sets the ssl of this ConnectionCreateRequest.
+        """Sets the ssl of this LConnectionCreateRequest.
 
         When `true`, the Alteryx Analytics Cloud Platform uses SSL to connect to the source  # noqa: E501
 
-        :param ssl: The ssl of this ConnectionCreateRequest.  # noqa: E501
+        :param ssl: The ssl of this LConnectionCreateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -318,22 +318,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def name(self):
-        """Gets the name of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the name of this LConnectionCreateRequest.  # noqa: E501
 
         Display name of the connection.  # noqa: E501
 
-        :return: The name of this ConnectionCreateRequest.  # noqa: E501
+        :return: The name of this LConnectionCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConnectionCreateRequest.
+        """Sets the name of this LConnectionCreateRequest.
 
         Display name of the connection.  # noqa: E501
 
-        :param name: The name of this ConnectionCreateRequest.  # noqa: E501
+        :param name: The name of this LConnectionCreateRequest.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -343,22 +343,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def description(self):
-        """Gets the description of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the description of this LConnectionCreateRequest.  # noqa: E501
 
         User-friendly description for the connection.  # noqa: E501
 
-        :return: The description of this ConnectionCreateRequest.  # noqa: E501
+        :return: The description of this LConnectionCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConnectionCreateRequest.
+        """Sets the description of this LConnectionCreateRequest.
 
         User-friendly description for the connection.  # noqa: E501
 
-        :param description: The description of this ConnectionCreateRequest.  # noqa: E501
+        :param description: The description of this LConnectionCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -366,22 +366,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def disable_type_inference(self):
-        """Gets the disable_type_inference of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the disable_type_inference of this LConnectionCreateRequest.  # noqa: E501
 
         If set to false, type inference has been disabled for this connection. The default is true. When type inference has been disabled, the Alteryx Analytics Cloud Platform does not apply Alteryx Analytics Cloud types to data when it is imported.  # noqa: E501
 
-        :return: The disable_type_inference of this ConnectionCreateRequest.  # noqa: E501
+        :return: The disable_type_inference of this LConnectionCreateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._disable_type_inference
 
     @disable_type_inference.setter
     def disable_type_inference(self, disable_type_inference):
-        """Sets the disable_type_inference of this ConnectionCreateRequest.
+        """Sets the disable_type_inference of this LConnectionCreateRequest.
 
         If set to false, type inference has been disabled for this connection. The default is true. When type inference has been disabled, the Alteryx Analytics Cloud Platform does not apply Alteryx Analytics Cloud types to data when it is imported.  # noqa: E501
 
-        :param disable_type_inference: The disable_type_inference of this ConnectionCreateRequest.  # noqa: E501
+        :param disable_type_inference: The disable_type_inference of this LConnectionCreateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -389,22 +389,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def is_global(self):
-        """Gets the is_global of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the is_global of this LConnectionCreateRequest.  # noqa: E501
 
         If `true`, the connection is public and available to all users. Default is false.  **NOTE**: After a connection has been made public, it cannot be made private again. It must be deleted and recreated.  # noqa: E501
 
-        :return: The is_global of this ConnectionCreateRequest.  # noqa: E501
+        :return: The is_global of this LConnectionCreateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._is_global
 
     @is_global.setter
     def is_global(self, is_global):
-        """Sets the is_global of this ConnectionCreateRequest.
+        """Sets the is_global of this LConnectionCreateRequest.
 
         If `true`, the connection is public and available to all users. Default is false.  **NOTE**: After a connection has been made public, it cannot be made private again. It must be deleted and recreated.  # noqa: E501
 
-        :param is_global: The is_global of this ConnectionCreateRequest.  # noqa: E501
+        :param is_global: The is_global of this LConnectionCreateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -412,22 +412,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def credentials_shared(self):
-        """Gets the credentials_shared of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the credentials_shared of this LConnectionCreateRequest.  # noqa: E501
 
         If `true`, the credentials used for the connection are available for use byusers who have been shared the connection.  # noqa: E501
 
-        :return: The credentials_shared of this ConnectionCreateRequest.  # noqa: E501
+        :return: The credentials_shared of this LConnectionCreateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._credentials_shared
 
     @credentials_shared.setter
     def credentials_shared(self, credentials_shared):
-        """Sets the credentials_shared of this ConnectionCreateRequest.
+        """Sets the credentials_shared of this LConnectionCreateRequest.
 
         If `true`, the credentials used for the connection are available for use byusers who have been shared the connection.  # noqa: E501
 
-        :param credentials_shared: The credentials_shared of this ConnectionCreateRequest.  # noqa: E501
+        :param credentials_shared: The credentials_shared of this LConnectionCreateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -435,22 +435,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def has_credentials(self):
-        """Gets the has_credentials of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the has_credentials of this LConnectionCreateRequest.  # noqa: E501
 
         When `true`, the connection has credentials associated with it to connect to the source.  # noqa: E501
 
-        :return: The has_credentials of this ConnectionCreateRequest.  # noqa: E501
+        :return: The has_credentials of this LConnectionCreateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._has_credentials
 
     @has_credentials.setter
     def has_credentials(self, has_credentials):
-        """Sets the has_credentials of this ConnectionCreateRequest.
+        """Sets the has_credentials of this LConnectionCreateRequest.
 
         When `true`, the connection has credentials associated with it to connect to the source.  # noqa: E501
 
-        :param has_credentials: The has_credentials of this ConnectionCreateRequest.  # noqa: E501
+        :param has_credentials: The has_credentials of this LConnectionCreateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -458,22 +458,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def host(self):
-        """Gets the host of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the host of this LConnectionCreateRequest.  # noqa: E501
 
         Host of the source  # noqa: E501
 
-        :return: The host of this ConnectionCreateRequest.  # noqa: E501
+        :return: The host of this LConnectionCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._host
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ConnectionCreateRequest.
+        """Sets the host of this LConnectionCreateRequest.
 
         Host of the source  # noqa: E501
 
-        :param host: The host of this ConnectionCreateRequest.  # noqa: E501
+        :param host: The host of this LConnectionCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -481,22 +481,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def port(self):
-        """Gets the port of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the port of this LConnectionCreateRequest.  # noqa: E501
 
         Port number for the source  # noqa: E501
 
-        :return: The port of this ConnectionCreateRequest.  # noqa: E501
+        :return: The port of this LConnectionCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._port
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ConnectionCreateRequest.
+        """Sets the port of this LConnectionCreateRequest.
 
         Port number for the source  # noqa: E501
 
-        :param port: The port of this ConnectionCreateRequest.  # noqa: E501
+        :param port: The port of this LConnectionCreateRequest.  # noqa: E501
         :type: int
         """
 
@@ -504,22 +504,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def bucket(self):
-        """Gets the bucket of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the bucket of this LConnectionCreateRequest.  # noqa: E501
 
         bucket name for the source  # noqa: E501
 
-        :return: The bucket of this ConnectionCreateRequest.  # noqa: E501
+        :return: The bucket of this LConnectionCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._bucket
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ConnectionCreateRequest.
+        """Sets the bucket of this LConnectionCreateRequest.
 
         bucket name for the source  # noqa: E501
 
-        :param bucket: The bucket of this ConnectionCreateRequest.  # noqa: E501
+        :param bucket: The bucket of this LConnectionCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -527,22 +527,22 @@ class LConnectionCreateRequest(object):
 
     @property
     def params(self):
-        """Gets the params of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the params of this LConnectionCreateRequest.  # noqa: E501
 
         This setting is populated with any parameters that are passed to the source duringconnection and operations. For relational sources, this setting may include thedefault database and extra load parameters.  # noqa: E501
 
-        :return: The params of this ConnectionCreateRequest.  # noqa: E501
+        :return: The params of this LConnectionCreateRequest.  # noqa: E501
         :rtype: object
         """
         return self._params
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ConnectionCreateRequest.
+        """Sets the params of this LConnectionCreateRequest.
 
         This setting is populated with any parameters that are passed to the source duringconnection and operations. For relational sources, this setting may include thedefault database and extra load parameters.  # noqa: E501
 
-        :param params: The params of this ConnectionCreateRequest.  # noqa: E501
+        :param params: The params of this LConnectionCreateRequest.  # noqa: E501
         :type: object
         """
         if params is None:
@@ -552,20 +552,20 @@ class LConnectionCreateRequest(object):
 
     @property
     def oauth2_state_id(self):
-        """Gets the oauth2_state_id of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the oauth2_state_id of this LConnectionCreateRequest.  # noqa: E501
 
 
-        :return: The oauth2_state_id of this ConnectionCreateRequest.  # noqa: E501
+        :return: The oauth2_state_id of this LConnectionCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._oauth2_state_id
 
     @oauth2_state_id.setter
     def oauth2_state_id(self, oauth2_state_id):
-        """Sets the oauth2_state_id of this ConnectionCreateRequest.
+        """Sets the oauth2_state_id of this LConnectionCreateRequest.
 
 
-        :param oauth2_state_id: The oauth2_state_id of this ConnectionCreateRequest.  # noqa: E501
+        :param oauth2_state_id: The oauth2_state_id of this LConnectionCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -573,63 +573,63 @@ class LConnectionCreateRequest(object):
 
     @property
     def credentials(self):
-        """Gets the credentials of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the credentials of this LConnectionCreateRequest.  # noqa: E501
 
 
-        :return: The credentials of this ConnectionCreateRequest.  # noqa: E501
-        :rtype: AcceptedCredentials
+        :return: The credentials of this LConnectionCreateRequest.  # noqa: E501
+        :rtype: LAcceptedCredentials
         """
         return self._credentials
 
     @credentials.setter
     def credentials(self, credentials):
-        """Sets the credentials of this ConnectionCreateRequest.
+        """Sets the credentials of this LConnectionCreateRequest.
 
 
-        :param credentials: The credentials of this ConnectionCreateRequest.  # noqa: E501
-        :type: AcceptedCredentials
+        :param credentials: The credentials of this LConnectionCreateRequest.  # noqa: E501
+        :type: LAcceptedCredentials
         """
 
         self._credentials = credentials
 
     @property
     def advanced_credentials(self):
-        """Gets the advanced_credentials of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the advanced_credentials of this LConnectionCreateRequest.  # noqa: E501
 
 
-        :return: The advanced_credentials of this ConnectionCreateRequest.  # noqa: E501
-        :rtype: AdvancedCredentialsInfo
+        :return: The advanced_credentials of this LConnectionCreateRequest.  # noqa: E501
+        :rtype: LAdvancedCredentialsInfo
         """
         return self._advanced_credentials
 
     @advanced_credentials.setter
     def advanced_credentials(self, advanced_credentials):
-        """Sets the advanced_credentials of this ConnectionCreateRequest.
+        """Sets the advanced_credentials of this LConnectionCreateRequest.
 
 
-        :param advanced_credentials: The advanced_credentials of this ConnectionCreateRequest.  # noqa: E501
-        :type: AdvancedCredentialsInfo
+        :param advanced_credentials: The advanced_credentials of this LConnectionCreateRequest.  # noqa: E501
+        :type: LAdvancedCredentialsInfo
         """
 
         self._advanced_credentials = advanced_credentials
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this ConnectionCreateRequest.  # noqa: E501
+        """Gets the endpoints of this LConnectionCreateRequest.  # noqa: E501
 
 
-        :return: The endpoints of this ConnectionCreateRequest.  # noqa: E501
-        :rtype: JdbcRestEndpointsInfo
+        :return: The endpoints of this LConnectionCreateRequest.  # noqa: E501
+        :rtype: LJdbcRestEndpointsInfo
         """
         return self._endpoints
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this ConnectionCreateRequest.
+        """Sets the endpoints of this LConnectionCreateRequest.
 
 
-        :param endpoints: The endpoints of this ConnectionCreateRequest.  # noqa: E501
-        :type: JdbcRestEndpointsInfo
+        :param endpoints: The endpoints of this LConnectionCreateRequest.  # noqa: E501
+        :type: LJdbcRestEndpointsInfo
         """
 
         self._endpoints = endpoints
@@ -655,7 +655,7 @@ class LConnectionCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConnectionCreateRequest, dict):
+        if issubclass(LConnectionCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -671,7 +671,7 @@ class LConnectionCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConnectionCreateRequest):
+        if not isinstance(other, LConnectionCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

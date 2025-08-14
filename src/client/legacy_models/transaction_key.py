@@ -37,7 +37,7 @@ class LTransactionKey(object):
     }
 
     def __init__(self, login_id=None, transaction_key=None):  # noqa: E501
-        """TransactionKey - a model defined in Swagger"""  # noqa: E501
+        """LTransactionKey - a model defined in Swagger"""  # noqa: E501
         self._login_id = None
         self._transaction_key = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LTransactionKey(object):
 
     @property
     def login_id(self):
-        """Gets the login_id of this TransactionKey.  # noqa: E501
+        """Gets the login_id of this LTransactionKey.  # noqa: E501
 
 
-        :return: The login_id of this TransactionKey.  # noqa: E501
+        :return: The login_id of this LTransactionKey.  # noqa: E501
         :rtype: str
         """
         return self._login_id
 
     @login_id.setter
     def login_id(self, login_id):
-        """Sets the login_id of this TransactionKey.
+        """Sets the login_id of this LTransactionKey.
 
 
-        :param login_id: The login_id of this TransactionKey.  # noqa: E501
+        :param login_id: The login_id of this LTransactionKey.  # noqa: E501
         :type: str
         """
         if login_id is None:
@@ -69,20 +69,20 @@ class LTransactionKey(object):
 
     @property
     def transaction_key(self):
-        """Gets the transaction_key of this TransactionKey.  # noqa: E501
+        """Gets the transaction_key of this LTransactionKey.  # noqa: E501
 
 
-        :return: The transaction_key of this TransactionKey.  # noqa: E501
+        :return: The transaction_key of this LTransactionKey.  # noqa: E501
         :rtype: str
         """
         return self._transaction_key
 
     @transaction_key.setter
     def transaction_key(self, transaction_key):
-        """Sets the transaction_key of this TransactionKey.
+        """Sets the transaction_key of this LTransactionKey.
 
 
-        :param transaction_key: The transaction_key of this TransactionKey.  # noqa: E501
+        :param transaction_key: The transaction_key of this LTransactionKey.  # noqa: E501
         :type: str
         """
         if transaction_key is None:
@@ -111,7 +111,7 @@ class LTransactionKey(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(TransactionKey, dict):
+        if issubclass(LTransactionKey, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LTransactionKey(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TransactionKey):
+        if not isinstance(other, LTransactionKey):
             return False
 
         return self.__dict__ == other.__dict__

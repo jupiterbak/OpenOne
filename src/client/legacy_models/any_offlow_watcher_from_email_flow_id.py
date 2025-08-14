@@ -33,7 +33,7 @@ class LAnyOfflowWatcherFromEmailFlowId(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfflowWatcherFromEmailFlowId - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfflowWatcherFromEmailFlowId - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfflowWatcherFromEmailFlowId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfflowWatcherFromEmailFlowId, dict):
+        if issubclass(LAnyOfflowWatcherFromEmailFlowId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfflowWatcherFromEmailFlowId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfflowWatcherFromEmailFlowId):
+        if not isinstance(other, LAnyOfflowWatcherFromEmailFlowId):
             return False
 
         return self.__dict__ == other.__dict__

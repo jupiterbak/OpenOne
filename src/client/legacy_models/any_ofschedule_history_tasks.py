@@ -33,7 +33,7 @@ class LAnyOfscheduleHistoryTasks(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfscheduleHistoryTasks - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfscheduleHistoryTasks - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfscheduleHistoryTasks(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfscheduleHistoryTasks, dict):
+        if issubclass(LAnyOfscheduleHistoryTasks, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfscheduleHistoryTasks(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfscheduleHistoryTasks):
+        if not isinstance(other, LAnyOfscheduleHistoryTasks):
             return False
 
         return self.__dict__ == other.__dict__

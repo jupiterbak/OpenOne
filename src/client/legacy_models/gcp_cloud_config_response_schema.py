@@ -43,7 +43,7 @@ class LGcpCloudConfigResponseSchema(object):
     }
 
     def __init__(self, enabled=None, settings=None, default_bucket=None, default_project=None, service_account_key_configured=None):  # noqa: E501
-        """GcpCloudConfigResponseSchema - a model defined in Swagger"""  # noqa: E501
+        """LGcpCloudConfigResponseSchema - a model defined in Swagger"""  # noqa: E501
         self._enabled = None
         self._settings = None
         self._default_bucket = None
@@ -62,20 +62,20 @@ class LGcpCloudConfigResponseSchema(object):
 
     @property
     def enabled(self):
-        """Gets the enabled of this GcpCloudConfigResponseSchema.  # noqa: E501
+        """Gets the enabled of this LGcpCloudConfigResponseSchema.  # noqa: E501
 
 
-        :return: The enabled of this GcpCloudConfigResponseSchema.  # noqa: E501
+        :return: The enabled of this LGcpCloudConfigResponseSchema.  # noqa: E501
         :rtype: bool
         """
         return self._enabled
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this GcpCloudConfigResponseSchema.
+        """Sets the enabled of this LGcpCloudConfigResponseSchema.
 
 
-        :param enabled: The enabled of this GcpCloudConfigResponseSchema.  # noqa: E501
+        :param enabled: The enabled of this LGcpCloudConfigResponseSchema.  # noqa: E501
         :type: bool
         """
         if enabled is None:
@@ -85,20 +85,20 @@ class LGcpCloudConfigResponseSchema(object):
 
     @property
     def settings(self):
-        """Gets the settings of this GcpCloudConfigResponseSchema.  # noqa: E501
+        """Gets the settings of this LGcpCloudConfigResponseSchema.  # noqa: E501
 
 
-        :return: The settings of this GcpCloudConfigResponseSchema.  # noqa: E501
+        :return: The settings of this LGcpCloudConfigResponseSchema.  # noqa: E501
         :rtype: object
         """
         return self._settings
 
     @settings.setter
     def settings(self, settings):
-        """Sets the settings of this GcpCloudConfigResponseSchema.
+        """Sets the settings of this LGcpCloudConfigResponseSchema.
 
 
-        :param settings: The settings of this GcpCloudConfigResponseSchema.  # noqa: E501
+        :param settings: The settings of this LGcpCloudConfigResponseSchema.  # noqa: E501
         :type: object
         """
 
@@ -106,20 +106,20 @@ class LGcpCloudConfigResponseSchema(object):
 
     @property
     def default_bucket(self):
-        """Gets the default_bucket of this GcpCloudConfigResponseSchema.  # noqa: E501
+        """Gets the default_bucket of this LGcpCloudConfigResponseSchema.  # noqa: E501
 
 
-        :return: The default_bucket of this GcpCloudConfigResponseSchema.  # noqa: E501
+        :return: The default_bucket of this LGcpCloudConfigResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._default_bucket
 
     @default_bucket.setter
     def default_bucket(self, default_bucket):
-        """Sets the default_bucket of this GcpCloudConfigResponseSchema.
+        """Sets the default_bucket of this LGcpCloudConfigResponseSchema.
 
 
-        :param default_bucket: The default_bucket of this GcpCloudConfigResponseSchema.  # noqa: E501
+        :param default_bucket: The default_bucket of this LGcpCloudConfigResponseSchema.  # noqa: E501
         :type: str
         """
 
@@ -127,20 +127,20 @@ class LGcpCloudConfigResponseSchema(object):
 
     @property
     def default_project(self):
-        """Gets the default_project of this GcpCloudConfigResponseSchema.  # noqa: E501
+        """Gets the default_project of this LGcpCloudConfigResponseSchema.  # noqa: E501
 
 
-        :return: The default_project of this GcpCloudConfigResponseSchema.  # noqa: E501
+        :return: The default_project of this LGcpCloudConfigResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._default_project
 
     @default_project.setter
     def default_project(self, default_project):
-        """Sets the default_project of this GcpCloudConfigResponseSchema.
+        """Sets the default_project of this LGcpCloudConfigResponseSchema.
 
 
-        :param default_project: The default_project of this GcpCloudConfigResponseSchema.  # noqa: E501
+        :param default_project: The default_project of this LGcpCloudConfigResponseSchema.  # noqa: E501
         :type: str
         """
 
@@ -148,20 +148,20 @@ class LGcpCloudConfigResponseSchema(object):
 
     @property
     def service_account_key_configured(self):
-        """Gets the service_account_key_configured of this GcpCloudConfigResponseSchema.  # noqa: E501
+        """Gets the service_account_key_configured of this LGcpCloudConfigResponseSchema.  # noqa: E501
 
 
-        :return: The service_account_key_configured of this GcpCloudConfigResponseSchema.  # noqa: E501
+        :return: The service_account_key_configured of this LGcpCloudConfigResponseSchema.  # noqa: E501
         :rtype: bool
         """
         return self._service_account_key_configured
 
     @service_account_key_configured.setter
     def service_account_key_configured(self, service_account_key_configured):
-        """Sets the service_account_key_configured of this GcpCloudConfigResponseSchema.
+        """Sets the service_account_key_configured of this LGcpCloudConfigResponseSchema.
 
 
-        :param service_account_key_configured: The service_account_key_configured of this GcpCloudConfigResponseSchema.  # noqa: E501
+        :param service_account_key_configured: The service_account_key_configured of this LGcpCloudConfigResponseSchema.  # noqa: E501
         :type: bool
         """
 
@@ -188,7 +188,7 @@ class LGcpCloudConfigResponseSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(GcpCloudConfigResponseSchema, dict):
+        if issubclass(LGcpCloudConfigResponseSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -204,7 +204,7 @@ class LGcpCloudConfigResponseSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, GcpCloudConfigResponseSchema):
+        if not isinstance(other, LGcpCloudConfigResponseSchema):
             return False
 
         return self.__dict__ == other.__dict__

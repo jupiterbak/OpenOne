@@ -39,7 +39,7 @@ class LTransferUserAssetsPayloadWithEmail(object):
     }
 
     def __init__(self, from_person_email=None, to_person_email=None, assets=None):  # noqa: E501
-        """TransferUserAssetsPayloadWithEmail - a model defined in Swagger"""  # noqa: E501
+        """LTransferUserAssetsPayloadWithEmail - a model defined in Swagger"""  # noqa: E501
         self._from_person_email = None
         self._to_person_email = None
         self._assets = None
@@ -51,22 +51,22 @@ class LTransferUserAssetsPayloadWithEmail(object):
 
     @property
     def from_person_email(self):
-        """Gets the from_person_email of this TransferUserAssetsPayloadWithEmail.  # noqa: E501
+        """Gets the from_person_email of this LTransferUserAssetsPayloadWithEmail.  # noqa: E501
 
         the email of the person to transfer assets from  # noqa: E501
 
-        :return: The from_person_email of this TransferUserAssetsPayloadWithEmail.  # noqa: E501
+        :return: The from_person_email of this LTransferUserAssetsPayloadWithEmail.  # noqa: E501
         :rtype: str
         """
         return self._from_person_email
 
     @from_person_email.setter
     def from_person_email(self, from_person_email):
-        """Sets the from_person_email of this TransferUserAssetsPayloadWithEmail.
+        """Sets the from_person_email of this LTransferUserAssetsPayloadWithEmail.
 
         the email of the person to transfer assets from  # noqa: E501
 
-        :param from_person_email: The from_person_email of this TransferUserAssetsPayloadWithEmail.  # noqa: E501
+        :param from_person_email: The from_person_email of this LTransferUserAssetsPayloadWithEmail.  # noqa: E501
         :type: str
         """
         if from_person_email is None:
@@ -76,22 +76,22 @@ class LTransferUserAssetsPayloadWithEmail(object):
 
     @property
     def to_person_email(self):
-        """Gets the to_person_email of this TransferUserAssetsPayloadWithEmail.  # noqa: E501
+        """Gets the to_person_email of this LTransferUserAssetsPayloadWithEmail.  # noqa: E501
 
         the email of the person to transfer assets to  # noqa: E501
 
-        :return: The to_person_email of this TransferUserAssetsPayloadWithEmail.  # noqa: E501
+        :return: The to_person_email of this LTransferUserAssetsPayloadWithEmail.  # noqa: E501
         :rtype: str
         """
         return self._to_person_email
 
     @to_person_email.setter
     def to_person_email(self, to_person_email):
-        """Sets the to_person_email of this TransferUserAssetsPayloadWithEmail.
+        """Sets the to_person_email of this LTransferUserAssetsPayloadWithEmail.
 
         the email of the person to transfer assets to  # noqa: E501
 
-        :param to_person_email: The to_person_email of this TransferUserAssetsPayloadWithEmail.  # noqa: E501
+        :param to_person_email: The to_person_email of this LTransferUserAssetsPayloadWithEmail.  # noqa: E501
         :type: str
         """
         if to_person_email is None:
@@ -101,22 +101,22 @@ class LTransferUserAssetsPayloadWithEmail(object):
 
     @property
     def assets(self):
-        """Gets the assets of this TransferUserAssetsPayloadWithEmail.  # noqa: E501
+        """Gets the assets of this LTransferUserAssetsPayloadWithEmail.  # noqa: E501
 
         Asset IDs that need to be transferred. To specify all assets of a certain type, use \"all\" instead of integer array. If assets payload is not provided, all assets of all types will be transferred.  # noqa: E501
 
-        :return: The assets of this TransferUserAssetsPayloadWithEmail.  # noqa: E501
+        :return: The assets of this LTransferUserAssetsPayloadWithEmail.  # noqa: E501
         :rtype: object
         """
         return self._assets
 
     @assets.setter
     def assets(self, assets):
-        """Sets the assets of this TransferUserAssetsPayloadWithEmail.
+        """Sets the assets of this LTransferUserAssetsPayloadWithEmail.
 
         Asset IDs that need to be transferred. To specify all assets of a certain type, use \"all\" instead of integer array. If assets payload is not provided, all assets of all types will be transferred.  # noqa: E501
 
-        :param assets: The assets of this TransferUserAssetsPayloadWithEmail.  # noqa: E501
+        :param assets: The assets of this LTransferUserAssetsPayloadWithEmail.  # noqa: E501
         :type: object
         """
 
@@ -143,7 +143,7 @@ class LTransferUserAssetsPayloadWithEmail(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(TransferUserAssetsPayloadWithEmail, dict):
+        if issubclass(LTransferUserAssetsPayloadWithEmail, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -159,7 +159,7 @@ class LTransferUserAssetsPayloadWithEmail(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TransferUserAssetsPayloadWithEmail):
+        if not isinstance(other, LTransferUserAssetsPayloadWithEmail):
             return False
 
         return self.__dict__ == other.__dict__

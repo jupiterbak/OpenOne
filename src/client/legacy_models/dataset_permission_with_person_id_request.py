@@ -35,29 +35,29 @@ class LDatasetPermissionWithPersonIdRequest(object):
     }
 
     def __init__(self, person_id=None):  # noqa: E501
-        """DatasetPermissionWithPersonIdRequest - a model defined in Swagger"""  # noqa: E501
+        """LDatasetPermissionWithPersonIdRequest - a model defined in Swagger"""  # noqa: E501
         self._person_id = None
         self.discriminator = None
         self.person_id = person_id
 
     @property
     def person_id(self):
-        """Gets the person_id of this DatasetPermissionWithPersonIdRequest.  # noqa: E501
+        """Gets the person_id of this LDatasetPermissionWithPersonIdRequest.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The person_id of this DatasetPermissionWithPersonIdRequest.  # noqa: E501
+        :return: The person_id of this LDatasetPermissionWithPersonIdRequest.  # noqa: E501
         :rtype: int
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this DatasetPermissionWithPersonIdRequest.
+        """Sets the person_id of this LDatasetPermissionWithPersonIdRequest.
 
         unique identifier for this object.  # noqa: E501
 
-        :param person_id: The person_id of this DatasetPermissionWithPersonIdRequest.  # noqa: E501
+        :param person_id: The person_id of this LDatasetPermissionWithPersonIdRequest.  # noqa: E501
         :type: int
         """
         if person_id is None:
@@ -86,7 +86,7 @@ class LDatasetPermissionWithPersonIdRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DatasetPermissionWithPersonIdRequest, dict):
+        if issubclass(LDatasetPermissionWithPersonIdRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -102,7 +102,7 @@ class LDatasetPermissionWithPersonIdRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DatasetPermissionWithPersonIdRequest):
+        if not isinstance(other, LDatasetPermissionWithPersonIdRequest):
             return False
 
         return self.__dict__ == other.__dict__

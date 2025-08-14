@@ -33,7 +33,7 @@ class LRunJobResponse(object):
     }
 
     def __init__(self):  # noqa: E501
-        """RunJobResponse - a model defined in Swagger"""  # noqa: E501
+        """LRunJobResponse - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LRunJobResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunJobResponse, dict):
+        if issubclass(LRunJobResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LRunJobResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunJobResponse):
+        if not isinstance(other, LRunJobResponse):
             return False
 
         return self.__dict__ == other.__dict__

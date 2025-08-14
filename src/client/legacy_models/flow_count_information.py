@@ -35,27 +35,27 @@ class LFlowCountInformation(object):
     }
 
     def __init__(self, count=None):  # noqa: E501
-        """FlowCountInformation - a model defined in Swagger"""  # noqa: E501
+        """LFlowCountInformation - a model defined in Swagger"""  # noqa: E501
         self._count = None
         self.discriminator = None
         self.count = count
 
     @property
     def count(self):
-        """Gets the count of this FlowCountInformation.  # noqa: E501
+        """Gets the count of this LFlowCountInformation.  # noqa: E501
 
 
-        :return: The count of this FlowCountInformation.  # noqa: E501
+        :return: The count of this LFlowCountInformation.  # noqa: E501
         :rtype: object
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this FlowCountInformation.
+        """Sets the count of this LFlowCountInformation.
 
 
-        :param count: The count of this FlowCountInformation.  # noqa: E501
+        :param count: The count of this LFlowCountInformation.  # noqa: E501
         :type: object
         """
         if count is None:
@@ -84,7 +84,7 @@ class LFlowCountInformation(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowCountInformation, dict):
+        if issubclass(LFlowCountInformation, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LFlowCountInformation(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowCountInformation):
+        if not isinstance(other, LFlowCountInformation):
             return False
 
         return self.__dict__ == other.__dict__

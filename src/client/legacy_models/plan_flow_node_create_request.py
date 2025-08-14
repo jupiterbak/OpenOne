@@ -28,12 +28,12 @@ class LPlanFlowNodeCreateRequest(object):
     """
     swagger_types = {
         'coordinates': 'object',
-        'plan_id': 'AnyOfplanFlowNodeCreateRequestPlanId',
+        'plan_id': 'LAnyOfplanFlowNodeCreateRequestPlanId',
         'task_type': 'str',
-        'task': 'PlanFlowTaskCreateRequest',
+        'task': 'LPlanFlowTaskCreateRequest',
         'name': 'str',
-        'in_plan_node_ids': 'list[AnyOfplanFlowNodeCreateRequestInPlanNodeIdsItems]',
-        'out_plan_node_ids': 'list[AnyOfplanFlowNodeCreateRequestOutPlanNodeIdsItems]'
+        'in_plan_node_ids': 'list[LAnyOfplanFlowNodeCreateRequestInPlanNodeIdsItems]',
+        'out_plan_node_ids': 'list[LAnyOfplanFlowNodeCreateRequestOutPlanNodeIdsItems]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class LPlanFlowNodeCreateRequest(object):
     }
 
     def __init__(self, coordinates=None, plan_id=None, task_type=None, task=None, name=None, in_plan_node_ids=None, out_plan_node_ids=None):  # noqa: E501
-        """PlanFlowNodeCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LPlanFlowNodeCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._coordinates = None
         self._plan_id = None
         self._task_type = None
@@ -70,22 +70,22 @@ class LPlanFlowNodeCreateRequest(object):
 
     @property
     def coordinates(self):
-        """Gets the coordinates of this PlanFlowNodeCreateRequest.  # noqa: E501
+        """Gets the coordinates of this LPlanFlowNodeCreateRequest.  # noqa: E501
 
         Location of the plan node  # noqa: E501
 
-        :return: The coordinates of this PlanFlowNodeCreateRequest.  # noqa: E501
+        :return: The coordinates of this LPlanFlowNodeCreateRequest.  # noqa: E501
         :rtype: object
         """
         return self._coordinates
 
     @coordinates.setter
     def coordinates(self, coordinates):
-        """Sets the coordinates of this PlanFlowNodeCreateRequest.
+        """Sets the coordinates of this LPlanFlowNodeCreateRequest.
 
         Location of the plan node  # noqa: E501
 
-        :param coordinates: The coordinates of this PlanFlowNodeCreateRequest.  # noqa: E501
+        :param coordinates: The coordinates of this LPlanFlowNodeCreateRequest.  # noqa: E501
         :type: object
         """
 
@@ -93,21 +93,21 @@ class LPlanFlowNodeCreateRequest(object):
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this PlanFlowNodeCreateRequest.  # noqa: E501
+        """Gets the plan_id of this LPlanFlowNodeCreateRequest.  # noqa: E501
 
 
-        :return: The plan_id of this PlanFlowNodeCreateRequest.  # noqa: E501
-        :rtype: AnyOfplanFlowNodeCreateRequestPlanId
+        :return: The plan_id of this LPlanFlowNodeCreateRequest.  # noqa: E501
+        :rtype: LAnyOfplanFlowNodeCreateRequestPlanId
         """
         return self._plan_id
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this PlanFlowNodeCreateRequest.
+        """Sets the plan_id of this LPlanFlowNodeCreateRequest.
 
 
-        :param plan_id: The plan_id of this PlanFlowNodeCreateRequest.  # noqa: E501
-        :type: AnyOfplanFlowNodeCreateRequestPlanId
+        :param plan_id: The plan_id of this LPlanFlowNodeCreateRequest.  # noqa: E501
+        :type: LAnyOfplanFlowNodeCreateRequestPlanId
         """
         if plan_id is None:
             raise ValueError("Invalid value for `plan_id`, must not be `None`")  # noqa: E501
@@ -116,20 +116,20 @@ class LPlanFlowNodeCreateRequest(object):
 
     @property
     def task_type(self):
-        """Gets the task_type of this PlanFlowNodeCreateRequest.  # noqa: E501
+        """Gets the task_type of this LPlanFlowNodeCreateRequest.  # noqa: E501
 
 
-        :return: The task_type of this PlanFlowNodeCreateRequest.  # noqa: E501
+        :return: The task_type of this LPlanFlowNodeCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._task_type
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this PlanFlowNodeCreateRequest.
+        """Sets the task_type of this LPlanFlowNodeCreateRequest.
 
 
-        :param task_type: The task_type of this PlanFlowNodeCreateRequest.  # noqa: E501
+        :param task_type: The task_type of this LPlanFlowNodeCreateRequest.  # noqa: E501
         :type: str
         """
         if task_type is None:
@@ -145,41 +145,41 @@ class LPlanFlowNodeCreateRequest(object):
 
     @property
     def task(self):
-        """Gets the task of this PlanFlowNodeCreateRequest.  # noqa: E501
+        """Gets the task of this LPlanFlowNodeCreateRequest.  # noqa: E501
 
 
-        :return: The task of this PlanFlowNodeCreateRequest.  # noqa: E501
-        :rtype: PlanFlowTaskCreateRequest
+        :return: The task of this LPlanFlowNodeCreateRequest.  # noqa: E501
+        :rtype: LPlanFlowTaskCreateRequest
         """
         return self._task
 
     @task.setter
     def task(self, task):
-        """Sets the task of this PlanFlowNodeCreateRequest.
+        """Sets the task of this LPlanFlowNodeCreateRequest.
 
 
-        :param task: The task of this PlanFlowNodeCreateRequest.  # noqa: E501
-        :type: PlanFlowTaskCreateRequest
+        :param task: The task of this LPlanFlowNodeCreateRequest.  # noqa: E501
+        :type: LPlanFlowTaskCreateRequest
         """
 
         self._task = task
 
     @property
     def name(self):
-        """Gets the name of this PlanFlowNodeCreateRequest.  # noqa: E501
+        """Gets the name of this LPlanFlowNodeCreateRequest.  # noqa: E501
 
 
-        :return: The name of this PlanFlowNodeCreateRequest.  # noqa: E501
+        :return: The name of this LPlanFlowNodeCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PlanFlowNodeCreateRequest.
+        """Sets the name of this LPlanFlowNodeCreateRequest.
 
 
-        :param name: The name of this PlanFlowNodeCreateRequest.  # noqa: E501
+        :param name: The name of this LPlanFlowNodeCreateRequest.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -189,42 +189,42 @@ class LPlanFlowNodeCreateRequest(object):
 
     @property
     def in_plan_node_ids(self):
-        """Gets the in_plan_node_ids of this PlanFlowNodeCreateRequest.  # noqa: E501
+        """Gets the in_plan_node_ids of this LPlanFlowNodeCreateRequest.  # noqa: E501
 
 
-        :return: The in_plan_node_ids of this PlanFlowNodeCreateRequest.  # noqa: E501
-        :rtype: list[AnyOfplanFlowNodeCreateRequestInPlanNodeIdsItems]
+        :return: The in_plan_node_ids of this LPlanFlowNodeCreateRequest.  # noqa: E501
+        :rtype: list[LAnyOfplanFlowNodeCreateRequestInPlanNodeIdsItems]
         """
         return self._in_plan_node_ids
 
     @in_plan_node_ids.setter
     def in_plan_node_ids(self, in_plan_node_ids):
-        """Sets the in_plan_node_ids of this PlanFlowNodeCreateRequest.
+        """Sets the in_plan_node_ids of this LPlanFlowNodeCreateRequest.
 
 
-        :param in_plan_node_ids: The in_plan_node_ids of this PlanFlowNodeCreateRequest.  # noqa: E501
-        :type: list[AnyOfplanFlowNodeCreateRequestInPlanNodeIdsItems]
+        :param in_plan_node_ids: The in_plan_node_ids of this LPlanFlowNodeCreateRequest.  # noqa: E501
+        :type: list[LAnyOfplanFlowNodeCreateRequestInPlanNodeIdsItems]
         """
 
         self._in_plan_node_ids = in_plan_node_ids
 
     @property
     def out_plan_node_ids(self):
-        """Gets the out_plan_node_ids of this PlanFlowNodeCreateRequest.  # noqa: E501
+        """Gets the out_plan_node_ids of this LPlanFlowNodeCreateRequest.  # noqa: E501
 
 
-        :return: The out_plan_node_ids of this PlanFlowNodeCreateRequest.  # noqa: E501
-        :rtype: list[AnyOfplanFlowNodeCreateRequestOutPlanNodeIdsItems]
+        :return: The out_plan_node_ids of this LPlanFlowNodeCreateRequest.  # noqa: E501
+        :rtype: list[LAnyOfplanFlowNodeCreateRequestOutPlanNodeIdsItems]
         """
         return self._out_plan_node_ids
 
     @out_plan_node_ids.setter
     def out_plan_node_ids(self, out_plan_node_ids):
-        """Sets the out_plan_node_ids of this PlanFlowNodeCreateRequest.
+        """Sets the out_plan_node_ids of this LPlanFlowNodeCreateRequest.
 
 
-        :param out_plan_node_ids: The out_plan_node_ids of this PlanFlowNodeCreateRequest.  # noqa: E501
-        :type: list[AnyOfplanFlowNodeCreateRequestOutPlanNodeIdsItems]
+        :param out_plan_node_ids: The out_plan_node_ids of this LPlanFlowNodeCreateRequest.  # noqa: E501
+        :type: list[LAnyOfplanFlowNodeCreateRequestOutPlanNodeIdsItems]
         """
 
         self._out_plan_node_ids = out_plan_node_ids
@@ -250,7 +250,7 @@ class LPlanFlowNodeCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanFlowNodeCreateRequest, dict):
+        if issubclass(LPlanFlowNodeCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -266,7 +266,7 @@ class LPlanFlowNodeCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanFlowNodeCreateRequest):
+        if not isinstance(other, LPlanFlowNodeCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

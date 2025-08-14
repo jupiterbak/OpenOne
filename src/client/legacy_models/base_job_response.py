@@ -55,7 +55,7 @@ class LBaseJobResponse(object):
     }
 
     def __init__(self, id=None, status=None, job_type=None, sample_size=None, percent_complete=None, job_group=None, error_message=None, last_heartbeat_at=None, created_at=None, updated_at=None, creator=None):  # noqa: E501
-        """BaseJobResponse - a model defined in Swagger"""  # noqa: E501
+        """LBaseJobResponse - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._status = None
         self._job_type = None
@@ -89,22 +89,22 @@ class LBaseJobResponse(object):
 
     @property
     def id(self):
-        """Gets the id of this BaseJobResponse.  # noqa: E501
+        """Gets the id of this LBaseJobResponse.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this BaseJobResponse.  # noqa: E501
+        :return: The id of this LBaseJobResponse.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BaseJobResponse.
+        """Sets the id of this LBaseJobResponse.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this BaseJobResponse.  # noqa: E501
+        :param id: The id of this LBaseJobResponse.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -114,22 +114,22 @@ class LBaseJobResponse(object):
 
     @property
     def status(self):
-        """Gets the status of this BaseJobResponse.  # noqa: E501
+        """Gets the status of this LBaseJobResponse.  # noqa: E501
 
         Current status of the job group * `Created` - Created based on the current action * `InProgress` - Currently running * `Complete` - Completed successfully * `Failed` - Failed * `Canceled` - Canceled by the user  # noqa: E501
 
-        :return: The status of this BaseJobResponse.  # noqa: E501
+        :return: The status of this LBaseJobResponse.  # noqa: E501
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BaseJobResponse.
+        """Sets the status of this LBaseJobResponse.
 
         Current status of the job group * `Created` - Created based on the current action * `InProgress` - Currently running * `Complete` - Completed successfully * `Failed` - Failed * `Canceled` - Canceled by the user  # noqa: E501
 
-        :param status: The status of this BaseJobResponse.  # noqa: E501
+        :param status: The status of this LBaseJobResponse.  # noqa: E501
         :type: str
         """
         if status is None:
@@ -145,22 +145,22 @@ class LBaseJobResponse(object):
 
     @property
     def job_type(self):
-        """Gets the job_type of this BaseJobResponse.  # noqa: E501
+        """Gets the job_type of this LBaseJobResponse.  # noqa: E501
 
          * `wrangle` - main transform job that executes the recipe logic * `profile` - job responsible for producing the profiling results * `publish` - job responsible for publishing to a Database table or an external source. * `filewriter` - job responsible for writing to a file system * `filereader` - job responsible for reading from a file system * `fileconverter` - job responsible for converting input data sources in a format that can be used for the execution (e.g. Excel to CSV) * `ingest` - job responsible for ingesting data from a Database or an external source to a file system that is supported by the execution engine * `artifactstaging` - job responsible for copying artifacts used in transform by examples or standardization to a file system * `sqlexecution` - job responsible for executing arbitrary SQL either before ingest job or after publish job * `schemadrift` - job responsible for executing schema validation against the original datasource schema  # noqa: E501
 
-        :return: The job_type of this BaseJobResponse.  # noqa: E501
+        :return: The job_type of this LBaseJobResponse.  # noqa: E501
         :rtype: str
         """
         return self._job_type
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this BaseJobResponse.
+        """Sets the job_type of this LBaseJobResponse.
 
          * `wrangle` - main transform job that executes the recipe logic * `profile` - job responsible for producing the profiling results * `publish` - job responsible for publishing to a Database table or an external source. * `filewriter` - job responsible for writing to a file system * `filereader` - job responsible for reading from a file system * `fileconverter` - job responsible for converting input data sources in a format that can be used for the execution (e.g. Excel to CSV) * `ingest` - job responsible for ingesting data from a Database or an external source to a file system that is supported by the execution engine * `artifactstaging` - job responsible for copying artifacts used in transform by examples or standardization to a file system * `sqlexecution` - job responsible for executing arbitrary SQL either before ingest job or after publish job * `schemadrift` - job responsible for executing schema validation against the original datasource schema  # noqa: E501
 
-        :param job_type: The job_type of this BaseJobResponse.  # noqa: E501
+        :param job_type: The job_type of this LBaseJobResponse.  # noqa: E501
         :type: str
         """
         if job_type is None:
@@ -176,20 +176,20 @@ class LBaseJobResponse(object):
 
     @property
     def sample_size(self):
-        """Gets the sample_size of this BaseJobResponse.  # noqa: E501
+        """Gets the sample_size of this LBaseJobResponse.  # noqa: E501
 
 
-        :return: The sample_size of this BaseJobResponse.  # noqa: E501
+        :return: The sample_size of this LBaseJobResponse.  # noqa: E501
         :rtype: int
         """
         return self._sample_size
 
     @sample_size.setter
     def sample_size(self, sample_size):
-        """Sets the sample_size of this BaseJobResponse.
+        """Sets the sample_size of this LBaseJobResponse.
 
 
-        :param sample_size: The sample_size of this BaseJobResponse.  # noqa: E501
+        :param sample_size: The sample_size of this LBaseJobResponse.  # noqa: E501
         :type: int
         """
 
@@ -197,20 +197,20 @@ class LBaseJobResponse(object):
 
     @property
     def percent_complete(self):
-        """Gets the percent_complete of this BaseJobResponse.  # noqa: E501
+        """Gets the percent_complete of this LBaseJobResponse.  # noqa: E501
 
 
-        :return: The percent_complete of this BaseJobResponse.  # noqa: E501
+        :return: The percent_complete of this LBaseJobResponse.  # noqa: E501
         :rtype: int
         """
         return self._percent_complete
 
     @percent_complete.setter
     def percent_complete(self, percent_complete):
-        """Sets the percent_complete of this BaseJobResponse.
+        """Sets the percent_complete of this LBaseJobResponse.
 
 
-        :param percent_complete: The percent_complete of this BaseJobResponse.  # noqa: E501
+        :param percent_complete: The percent_complete of this LBaseJobResponse.  # noqa: E501
         :type: int
         """
 
@@ -218,20 +218,20 @@ class LBaseJobResponse(object):
 
     @property
     def job_group(self):
-        """Gets the job_group of this BaseJobResponse.  # noqa: E501
+        """Gets the job_group of this LBaseJobResponse.  # noqa: E501
 
 
-        :return: The job_group of this BaseJobResponse.  # noqa: E501
+        :return: The job_group of this LBaseJobResponse.  # noqa: E501
         :rtype: object
         """
         return self._job_group
 
     @job_group.setter
     def job_group(self, job_group):
-        """Sets the job_group of this BaseJobResponse.
+        """Sets the job_group of this LBaseJobResponse.
 
 
-        :param job_group: The job_group of this BaseJobResponse.  # noqa: E501
+        :param job_group: The job_group of this LBaseJobResponse.  # noqa: E501
         :type: object
         """
         if job_group is None:
@@ -241,20 +241,20 @@ class LBaseJobResponse(object):
 
     @property
     def error_message(self):
-        """Gets the error_message of this BaseJobResponse.  # noqa: E501
+        """Gets the error_message of this LBaseJobResponse.  # noqa: E501
 
 
-        :return: The error_message of this BaseJobResponse.  # noqa: E501
+        :return: The error_message of this LBaseJobResponse.  # noqa: E501
         :rtype: object
         """
         return self._error_message
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this BaseJobResponse.
+        """Sets the error_message of this LBaseJobResponse.
 
 
-        :param error_message: The error_message of this BaseJobResponse.  # noqa: E501
+        :param error_message: The error_message of this LBaseJobResponse.  # noqa: E501
         :type: object
         """
 
@@ -262,20 +262,20 @@ class LBaseJobResponse(object):
 
     @property
     def last_heartbeat_at(self):
-        """Gets the last_heartbeat_at of this BaseJobResponse.  # noqa: E501
+        """Gets the last_heartbeat_at of this LBaseJobResponse.  # noqa: E501
 
 
-        :return: The last_heartbeat_at of this BaseJobResponse.  # noqa: E501
+        :return: The last_heartbeat_at of this LBaseJobResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._last_heartbeat_at
 
     @last_heartbeat_at.setter
     def last_heartbeat_at(self, last_heartbeat_at):
-        """Sets the last_heartbeat_at of this BaseJobResponse.
+        """Sets the last_heartbeat_at of this LBaseJobResponse.
 
 
-        :param last_heartbeat_at: The last_heartbeat_at of this BaseJobResponse.  # noqa: E501
+        :param last_heartbeat_at: The last_heartbeat_at of this LBaseJobResponse.  # noqa: E501
         :type: datetime
         """
 
@@ -283,22 +283,22 @@ class LBaseJobResponse(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this BaseJobResponse.  # noqa: E501
+        """Gets the created_at of this LBaseJobResponse.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this BaseJobResponse.  # noqa: E501
+        :return: The created_at of this LBaseJobResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this BaseJobResponse.
+        """Sets the created_at of this LBaseJobResponse.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this BaseJobResponse.  # noqa: E501
+        :param created_at: The created_at of this LBaseJobResponse.  # noqa: E501
         :type: datetime
         """
 
@@ -306,22 +306,22 @@ class LBaseJobResponse(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this BaseJobResponse.  # noqa: E501
+        """Gets the updated_at of this LBaseJobResponse.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this BaseJobResponse.  # noqa: E501
+        :return: The updated_at of this LBaseJobResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this BaseJobResponse.
+        """Sets the updated_at of this LBaseJobResponse.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this BaseJobResponse.  # noqa: E501
+        :param updated_at: The updated_at of this LBaseJobResponse.  # noqa: E501
         :type: datetime
         """
 
@@ -329,20 +329,20 @@ class LBaseJobResponse(object):
 
     @property
     def creator(self):
-        """Gets the creator of this BaseJobResponse.  # noqa: E501
+        """Gets the creator of this LBaseJobResponse.  # noqa: E501
 
 
-        :return: The creator of this BaseJobResponse.  # noqa: E501
+        :return: The creator of this LBaseJobResponse.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this BaseJobResponse.
+        """Sets the creator of this LBaseJobResponse.
 
 
-        :param creator: The creator of this BaseJobResponse.  # noqa: E501
+        :param creator: The creator of this LBaseJobResponse.  # noqa: E501
         :type: object
         """
 
@@ -369,7 +369,7 @@ class LBaseJobResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(BaseJobResponse, dict):
+        if issubclass(LBaseJobResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -385,7 +385,7 @@ class LBaseJobResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BaseJobResponse):
+        if not isinstance(other, LBaseJobResponse):
             return False
 
         return self.__dict__ == other.__dict__

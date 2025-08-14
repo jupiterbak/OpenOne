@@ -32,10 +32,10 @@ class LOutputObjectCreateRequest(object):
         'is_adhoc': 'bool',
         'ignore_recipe_errors': 'bool',
         'flow_node_id': 'int',
-        'write_settings': 'list[WriteSettingCreateRequest]',
-        'sql_scripts': 'list[SqlScriptCreateRequest]',
-        'publications': 'list[PublicationCreateRequest]',
-        'output_object_schema_drift_options': 'OutputObjectSchemaDriftOptionsUpdateRequest'
+        'write_settings': 'list[LWriteSettingCreateRequest]',
+        'sql_scripts': 'list[LSqlScriptCreateRequest]',
+        'publications': 'list[LPublicationCreateRequest]',
+        'output_object_schema_drift_options': 'LOutputObjectSchemaDriftOptionsUpdateRequest'
     }
 
     attribute_map = {
@@ -51,7 +51,7 @@ class LOutputObjectCreateRequest(object):
     }
 
     def __init__(self, execution=None, profiler=None, is_adhoc=True, ignore_recipe_errors=None, flow_node_id=None, write_settings=None, sql_scripts=None, publications=None, output_object_schema_drift_options=None):  # noqa: E501
-        """OutputObjectCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LOutputObjectCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._execution = None
         self._profiler = None
         self._is_adhoc = None
@@ -81,22 +81,22 @@ class LOutputObjectCreateRequest(object):
 
     @property
     def execution(self):
-        """Gets the execution of this OutputObjectCreateRequest.  # noqa: E501
+        """Gets the execution of this LOutputObjectCreateRequest.  # noqa: E501
 
         Execution language. Indicate on which engine the job was executed.   Can be null/missing for scheduled jobs that fail during the validation phase.  * `photon` - Photon engine. High performance embedded engine designed for small datasets (up to 1GB).       Not available for all product editions. * `amp` - Amp engine. * `xml-amp` - XML-AMP engine. Only available for standard workflows.    * `emrSpark` - Spark engine running on EMR       # noqa: E501
 
-        :return: The execution of this OutputObjectCreateRequest.  # noqa: E501
+        :return: The execution of this LOutputObjectCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._execution
 
     @execution.setter
     def execution(self, execution):
-        """Sets the execution of this OutputObjectCreateRequest.
+        """Sets the execution of this LOutputObjectCreateRequest.
 
         Execution language. Indicate on which engine the job was executed.   Can be null/missing for scheduled jobs that fail during the validation phase.  * `photon` - Photon engine. High performance embedded engine designed for small datasets (up to 1GB).       Not available for all product editions. * `amp` - Amp engine. * `xml-amp` - XML-AMP engine. Only available for standard workflows.    * `emrSpark` - Spark engine running on EMR       # noqa: E501
 
-        :param execution: The execution of this OutputObjectCreateRequest.  # noqa: E501
+        :param execution: The execution of this LOutputObjectCreateRequest.  # noqa: E501
         :type: str
         """
         if execution is None:
@@ -112,22 +112,22 @@ class LOutputObjectCreateRequest(object):
 
     @property
     def profiler(self):
-        """Gets the profiler of this OutputObjectCreateRequest.  # noqa: E501
+        """Gets the profiler of this LOutputObjectCreateRequest.  # noqa: E501
 
         Indicate if recipe errors should be ignored for the [jobGroup](#tag/JobGroup).  # noqa: E501
 
-        :return: The profiler of this OutputObjectCreateRequest.  # noqa: E501
+        :return: The profiler of this LOutputObjectCreateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._profiler
 
     @profiler.setter
     def profiler(self, profiler):
-        """Sets the profiler of this OutputObjectCreateRequest.
+        """Sets the profiler of this LOutputObjectCreateRequest.
 
         Indicate if recipe errors should be ignored for the [jobGroup](#tag/JobGroup).  # noqa: E501
 
-        :param profiler: The profiler of this OutputObjectCreateRequest.  # noqa: E501
+        :param profiler: The profiler of this LOutputObjectCreateRequest.  # noqa: E501
         :type: bool
         """
         if profiler is None:
@@ -137,22 +137,22 @@ class LOutputObjectCreateRequest(object):
 
     @property
     def is_adhoc(self):
-        """Gets the is_adhoc of this OutputObjectCreateRequest.  # noqa: E501
+        """Gets the is_adhoc of this LOutputObjectCreateRequest.  # noqa: E501
 
         Indicate if the [outputObject](#tag/OutputObject) correspond to manual (Adhoc) or scheduled run.  # noqa: E501
 
-        :return: The is_adhoc of this OutputObjectCreateRequest.  # noqa: E501
+        :return: The is_adhoc of this LOutputObjectCreateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._is_adhoc
 
     @is_adhoc.setter
     def is_adhoc(self, is_adhoc):
-        """Sets the is_adhoc of this OutputObjectCreateRequest.
+        """Sets the is_adhoc of this LOutputObjectCreateRequest.
 
         Indicate if the [outputObject](#tag/OutputObject) correspond to manual (Adhoc) or scheduled run.  # noqa: E501
 
-        :param is_adhoc: The is_adhoc of this OutputObjectCreateRequest.  # noqa: E501
+        :param is_adhoc: The is_adhoc of this LOutputObjectCreateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -160,22 +160,22 @@ class LOutputObjectCreateRequest(object):
 
     @property
     def ignore_recipe_errors(self):
-        """Gets the ignore_recipe_errors of this OutputObjectCreateRequest.  # noqa: E501
+        """Gets the ignore_recipe_errors of this LOutputObjectCreateRequest.  # noqa: E501
 
         Indicate if profiling information should be produced as part of the [jobGroup](#tag/JobGroup). This will create a Profile [job](#tag/Job).  # noqa: E501
 
-        :return: The ignore_recipe_errors of this OutputObjectCreateRequest.  # noqa: E501
+        :return: The ignore_recipe_errors of this LOutputObjectCreateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._ignore_recipe_errors
 
     @ignore_recipe_errors.setter
     def ignore_recipe_errors(self, ignore_recipe_errors):
-        """Sets the ignore_recipe_errors of this OutputObjectCreateRequest.
+        """Sets the ignore_recipe_errors of this LOutputObjectCreateRequest.
 
         Indicate if profiling information should be produced as part of the [jobGroup](#tag/JobGroup). This will create a Profile [job](#tag/Job).  # noqa: E501
 
-        :param ignore_recipe_errors: The ignore_recipe_errors of this OutputObjectCreateRequest.  # noqa: E501
+        :param ignore_recipe_errors: The ignore_recipe_errors of this LOutputObjectCreateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -183,22 +183,22 @@ class LOutputObjectCreateRequest(object):
 
     @property
     def flow_node_id(self):
-        """Gets the flow_node_id of this OutputObjectCreateRequest.  # noqa: E501
+        """Gets the flow_node_id of this LOutputObjectCreateRequest.  # noqa: E501
 
         FlowNode the [outputObject](#tag/OutputObject) should be attached to. (This is also the id of the [wrangledDataset](#tag/WrangledDataset)).  # noqa: E501
 
-        :return: The flow_node_id of this OutputObjectCreateRequest.  # noqa: E501
+        :return: The flow_node_id of this LOutputObjectCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._flow_node_id
 
     @flow_node_id.setter
     def flow_node_id(self, flow_node_id):
-        """Sets the flow_node_id of this OutputObjectCreateRequest.
+        """Sets the flow_node_id of this LOutputObjectCreateRequest.
 
         FlowNode the [outputObject](#tag/OutputObject) should be attached to. (This is also the id of the [wrangledDataset](#tag/WrangledDataset)).  # noqa: E501
 
-        :param flow_node_id: The flow_node_id of this OutputObjectCreateRequest.  # noqa: E501
+        :param flow_node_id: The flow_node_id of this LOutputObjectCreateRequest.  # noqa: E501
         :type: int
         """
 
@@ -206,90 +206,90 @@ class LOutputObjectCreateRequest(object):
 
     @property
     def write_settings(self):
-        """Gets the write_settings of this OutputObjectCreateRequest.  # noqa: E501
+        """Gets the write_settings of this LOutputObjectCreateRequest.  # noqa: E501
 
         Optionally you can include [writeSettings](#tag/WriteSetting) while creating the [outputObject](#tag/OutputObject)  # noqa: E501
 
-        :return: The write_settings of this OutputObjectCreateRequest.  # noqa: E501
-        :rtype: list[WriteSettingCreateRequest]
+        :return: The write_settings of this LOutputObjectCreateRequest.  # noqa: E501
+        :rtype: list[LWriteSettingCreateRequest]
         """
         return self._write_settings
 
     @write_settings.setter
     def write_settings(self, write_settings):
-        """Sets the write_settings of this OutputObjectCreateRequest.
+        """Sets the write_settings of this LOutputObjectCreateRequest.
 
         Optionally you can include [writeSettings](#tag/WriteSetting) while creating the [outputObject](#tag/OutputObject)  # noqa: E501
 
-        :param write_settings: The write_settings of this OutputObjectCreateRequest.  # noqa: E501
-        :type: list[WriteSettingCreateRequest]
+        :param write_settings: The write_settings of this LOutputObjectCreateRequest.  # noqa: E501
+        :type: list[LWriteSettingCreateRequest]
         """
 
         self._write_settings = write_settings
 
     @property
     def sql_scripts(self):
-        """Gets the sql_scripts of this OutputObjectCreateRequest.  # noqa: E501
+        """Gets the sql_scripts of this LOutputObjectCreateRequest.  # noqa: E501
 
         Optionally you can include [sqlScripts](#tag/SqlScript) while creating the [outputObject](#tag/OutputObject)  # noqa: E501
 
-        :return: The sql_scripts of this OutputObjectCreateRequest.  # noqa: E501
-        :rtype: list[SqlScriptCreateRequest]
+        :return: The sql_scripts of this LOutputObjectCreateRequest.  # noqa: E501
+        :rtype: list[LSqlScriptCreateRequest]
         """
         return self._sql_scripts
 
     @sql_scripts.setter
     def sql_scripts(self, sql_scripts):
-        """Sets the sql_scripts of this OutputObjectCreateRequest.
+        """Sets the sql_scripts of this LOutputObjectCreateRequest.
 
         Optionally you can include [sqlScripts](#tag/SqlScript) while creating the [outputObject](#tag/OutputObject)  # noqa: E501
 
-        :param sql_scripts: The sql_scripts of this OutputObjectCreateRequest.  # noqa: E501
-        :type: list[SqlScriptCreateRequest]
+        :param sql_scripts: The sql_scripts of this LOutputObjectCreateRequest.  # noqa: E501
+        :type: list[LSqlScriptCreateRequest]
         """
 
         self._sql_scripts = sql_scripts
 
     @property
     def publications(self):
-        """Gets the publications of this OutputObjectCreateRequest.  # noqa: E501
+        """Gets the publications of this LOutputObjectCreateRequest.  # noqa: E501
 
         Optionally you can include [publications](#tag/Publication) while creating the [outputObject](#tag/OutputObject)  # noqa: E501
 
-        :return: The publications of this OutputObjectCreateRequest.  # noqa: E501
-        :rtype: list[PublicationCreateRequest]
+        :return: The publications of this LOutputObjectCreateRequest.  # noqa: E501
+        :rtype: list[LPublicationCreateRequest]
         """
         return self._publications
 
     @publications.setter
     def publications(self, publications):
-        """Sets the publications of this OutputObjectCreateRequest.
+        """Sets the publications of this LOutputObjectCreateRequest.
 
         Optionally you can include [publications](#tag/Publication) while creating the [outputObject](#tag/OutputObject)  # noqa: E501
 
-        :param publications: The publications of this OutputObjectCreateRequest.  # noqa: E501
-        :type: list[PublicationCreateRequest]
+        :param publications: The publications of this LOutputObjectCreateRequest.  # noqa: E501
+        :type: list[LPublicationCreateRequest]
         """
 
         self._publications = publications
 
     @property
     def output_object_schema_drift_options(self):
-        """Gets the output_object_schema_drift_options of this OutputObjectCreateRequest.  # noqa: E501
+        """Gets the output_object_schema_drift_options of this LOutputObjectCreateRequest.  # noqa: E501
 
 
-        :return: The output_object_schema_drift_options of this OutputObjectCreateRequest.  # noqa: E501
-        :rtype: OutputObjectSchemaDriftOptionsUpdateRequest
+        :return: The output_object_schema_drift_options of this LOutputObjectCreateRequest.  # noqa: E501
+        :rtype: LOutputObjectSchemaDriftOptionsUpdateRequest
         """
         return self._output_object_schema_drift_options
 
     @output_object_schema_drift_options.setter
     def output_object_schema_drift_options(self, output_object_schema_drift_options):
-        """Sets the output_object_schema_drift_options of this OutputObjectCreateRequest.
+        """Sets the output_object_schema_drift_options of this LOutputObjectCreateRequest.
 
 
-        :param output_object_schema_drift_options: The output_object_schema_drift_options of this OutputObjectCreateRequest.  # noqa: E501
-        :type: OutputObjectSchemaDriftOptionsUpdateRequest
+        :param output_object_schema_drift_options: The output_object_schema_drift_options of this LOutputObjectCreateRequest.  # noqa: E501
+        :type: LOutputObjectSchemaDriftOptionsUpdateRequest
         """
 
         self._output_object_schema_drift_options = output_object_schema_drift_options
@@ -315,7 +315,7 @@ class LOutputObjectCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OutputObjectCreateRequest, dict):
+        if issubclass(LOutputObjectCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -331,7 +331,7 @@ class LOutputObjectCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OutputObjectCreateRequest):
+        if not isinstance(other, LOutputObjectCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

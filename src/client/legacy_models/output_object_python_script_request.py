@@ -28,7 +28,7 @@ class LOutputObjectPythonScriptRequest(object):
     """
     swagger_types = {
         'ordered_columns': 'str',
-        'overrides': 'CdfToPythonOverrides'
+        'overrides': 'LCdfToPythonOverrides'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LOutputObjectPythonScriptRequest(object):
     }
 
     def __init__(self, ordered_columns=None, overrides=None):  # noqa: E501
-        """OutputObjectPythonScriptRequest - a model defined in Swagger"""  # noqa: E501
+        """LOutputObjectPythonScriptRequest - a model defined in Swagger"""  # noqa: E501
         self._ordered_columns = None
         self._overrides = None
         self.discriminator = None
@@ -47,22 +47,22 @@ class LOutputObjectPythonScriptRequest(object):
 
     @property
     def ordered_columns(self):
-        """Gets the ordered_columns of this OutputObjectPythonScriptRequest.  # noqa: E501
+        """Gets the ordered_columns of this LOutputObjectPythonScriptRequest.  # noqa: E501
 
         Ordered Column Names for the input dataset  # noqa: E501
 
-        :return: The ordered_columns of this OutputObjectPythonScriptRequest.  # noqa: E501
+        :return: The ordered_columns of this LOutputObjectPythonScriptRequest.  # noqa: E501
         :rtype: str
         """
         return self._ordered_columns
 
     @ordered_columns.setter
     def ordered_columns(self, ordered_columns):
-        """Sets the ordered_columns of this OutputObjectPythonScriptRequest.
+        """Sets the ordered_columns of this LOutputObjectPythonScriptRequest.
 
         Ordered Column Names for the input dataset  # noqa: E501
 
-        :param ordered_columns: The ordered_columns of this OutputObjectPythonScriptRequest.  # noqa: E501
+        :param ordered_columns: The ordered_columns of this LOutputObjectPythonScriptRequest.  # noqa: E501
         :type: str
         """
         if ordered_columns is None:
@@ -72,21 +72,21 @@ class LOutputObjectPythonScriptRequest(object):
 
     @property
     def overrides(self):
-        """Gets the overrides of this OutputObjectPythonScriptRequest.  # noqa: E501
+        """Gets the overrides of this LOutputObjectPythonScriptRequest.  # noqa: E501
 
 
-        :return: The overrides of this OutputObjectPythonScriptRequest.  # noqa: E501
-        :rtype: CdfToPythonOverrides
+        :return: The overrides of this LOutputObjectPythonScriptRequest.  # noqa: E501
+        :rtype: LCdfToPythonOverrides
         """
         return self._overrides
 
     @overrides.setter
     def overrides(self, overrides):
-        """Sets the overrides of this OutputObjectPythonScriptRequest.
+        """Sets the overrides of this LOutputObjectPythonScriptRequest.
 
 
-        :param overrides: The overrides of this OutputObjectPythonScriptRequest.  # noqa: E501
-        :type: CdfToPythonOverrides
+        :param overrides: The overrides of this LOutputObjectPythonScriptRequest.  # noqa: E501
+        :type: LCdfToPythonOverrides
         """
 
         self._overrides = overrides
@@ -112,7 +112,7 @@ class LOutputObjectPythonScriptRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OutputObjectPythonScriptRequest, dict):
+        if issubclass(LOutputObjectPythonScriptRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -128,7 +128,7 @@ class LOutputObjectPythonScriptRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OutputObjectPythonScriptRequest):
+        if not isinstance(other, LOutputObjectPythonScriptRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,10 +27,10 @@ class LCreateGroupResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfcreateGroupResponseId',
+        'id': 'LAnyOfcreateGroupResponseId',
         'name': 'str',
         'display_name': 'str',
-        'workspace_id': 'AnyOfcreateGroupResponseWorkspaceId',
+        'workspace_id': 'LAnyOfcreateGroupResponseWorkspaceId',
         'status': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime',
@@ -53,7 +53,7 @@ class LCreateGroupResponse(object):
     }
 
     def __init__(self, id=None, name=None, display_name=None, workspace_id=None, status=None, created_at=None, updated_at=None, auto_provisioned=None, location=None, etag=None):  # noqa: E501
-        """CreateGroupResponse - a model defined in Swagger"""  # noqa: E501
+        """LCreateGroupResponse - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._name = None
         self._display_name = None
@@ -81,21 +81,21 @@ class LCreateGroupResponse(object):
 
     @property
     def id(self):
-        """Gets the id of this CreateGroupResponse.  # noqa: E501
+        """Gets the id of this LCreateGroupResponse.  # noqa: E501
 
 
-        :return: The id of this CreateGroupResponse.  # noqa: E501
-        :rtype: AnyOfcreateGroupResponseId
+        :return: The id of this LCreateGroupResponse.  # noqa: E501
+        :rtype: LAnyOfcreateGroupResponseId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateGroupResponse.
+        """Sets the id of this LCreateGroupResponse.
 
 
-        :param id: The id of this CreateGroupResponse.  # noqa: E501
-        :type: AnyOfcreateGroupResponseId
+        :param id: The id of this LCreateGroupResponse.  # noqa: E501
+        :type: LAnyOfcreateGroupResponseId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -104,20 +104,20 @@ class LCreateGroupResponse(object):
 
     @property
     def name(self):
-        """Gets the name of this CreateGroupResponse.  # noqa: E501
+        """Gets the name of this LCreateGroupResponse.  # noqa: E501
 
 
-        :return: The name of this CreateGroupResponse.  # noqa: E501
+        :return: The name of this LCreateGroupResponse.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateGroupResponse.
+        """Sets the name of this LCreateGroupResponse.
 
 
-        :param name: The name of this CreateGroupResponse.  # noqa: E501
+        :param name: The name of this LCreateGroupResponse.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -127,20 +127,20 @@ class LCreateGroupResponse(object):
 
     @property
     def display_name(self):
-        """Gets the display_name of this CreateGroupResponse.  # noqa: E501
+        """Gets the display_name of this LCreateGroupResponse.  # noqa: E501
 
 
-        :return: The display_name of this CreateGroupResponse.  # noqa: E501
+        :return: The display_name of this LCreateGroupResponse.  # noqa: E501
         :rtype: str
         """
         return self._display_name
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this CreateGroupResponse.
+        """Sets the display_name of this LCreateGroupResponse.
 
 
-        :param display_name: The display_name of this CreateGroupResponse.  # noqa: E501
+        :param display_name: The display_name of this LCreateGroupResponse.  # noqa: E501
         :type: str
         """
 
@@ -148,21 +148,21 @@ class LCreateGroupResponse(object):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateGroupResponse.  # noqa: E501
+        """Gets the workspace_id of this LCreateGroupResponse.  # noqa: E501
 
 
-        :return: The workspace_id of this CreateGroupResponse.  # noqa: E501
-        :rtype: AnyOfcreateGroupResponseWorkspaceId
+        :return: The workspace_id of this LCreateGroupResponse.  # noqa: E501
+        :rtype: LAnyOfcreateGroupResponseWorkspaceId
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateGroupResponse.
+        """Sets the workspace_id of this LCreateGroupResponse.
 
 
-        :param workspace_id: The workspace_id of this CreateGroupResponse.  # noqa: E501
-        :type: AnyOfcreateGroupResponseWorkspaceId
+        :param workspace_id: The workspace_id of this LCreateGroupResponse.  # noqa: E501
+        :type: LAnyOfcreateGroupResponseWorkspaceId
         """
         if workspace_id is None:
             raise ValueError("Invalid value for `workspace_id`, must not be `None`")  # noqa: E501
@@ -171,20 +171,20 @@ class LCreateGroupResponse(object):
 
     @property
     def status(self):
-        """Gets the status of this CreateGroupResponse.  # noqa: E501
+        """Gets the status of this LCreateGroupResponse.  # noqa: E501
 
 
-        :return: The status of this CreateGroupResponse.  # noqa: E501
+        :return: The status of this LCreateGroupResponse.  # noqa: E501
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateGroupResponse.
+        """Sets the status of this LCreateGroupResponse.
 
 
-        :param status: The status of this CreateGroupResponse.  # noqa: E501
+        :param status: The status of this LCreateGroupResponse.  # noqa: E501
         :type: str
         """
         if status is None:
@@ -194,22 +194,22 @@ class LCreateGroupResponse(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateGroupResponse.  # noqa: E501
+        """Gets the created_at of this LCreateGroupResponse.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this CreateGroupResponse.  # noqa: E501
+        :return: The created_at of this LCreateGroupResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateGroupResponse.
+        """Sets the created_at of this LCreateGroupResponse.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this CreateGroupResponse.  # noqa: E501
+        :param created_at: The created_at of this LCreateGroupResponse.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -219,22 +219,22 @@ class LCreateGroupResponse(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CreateGroupResponse.  # noqa: E501
+        """Gets the updated_at of this LCreateGroupResponse.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this CreateGroupResponse.  # noqa: E501
+        :return: The updated_at of this LCreateGroupResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CreateGroupResponse.
+        """Sets the updated_at of this LCreateGroupResponse.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this CreateGroupResponse.  # noqa: E501
+        :param updated_at: The updated_at of this LCreateGroupResponse.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -244,20 +244,20 @@ class LCreateGroupResponse(object):
 
     @property
     def auto_provisioned(self):
-        """Gets the auto_provisioned of this CreateGroupResponse.  # noqa: E501
+        """Gets the auto_provisioned of this LCreateGroupResponse.  # noqa: E501
 
 
-        :return: The auto_provisioned of this CreateGroupResponse.  # noqa: E501
+        :return: The auto_provisioned of this LCreateGroupResponse.  # noqa: E501
         :rtype: bool
         """
         return self._auto_provisioned
 
     @auto_provisioned.setter
     def auto_provisioned(self, auto_provisioned):
-        """Sets the auto_provisioned of this CreateGroupResponse.
+        """Sets the auto_provisioned of this LCreateGroupResponse.
 
 
-        :param auto_provisioned: The auto_provisioned of this CreateGroupResponse.  # noqa: E501
+        :param auto_provisioned: The auto_provisioned of this LCreateGroupResponse.  # noqa: E501
         :type: bool
         """
         if auto_provisioned is None:
@@ -267,20 +267,20 @@ class LCreateGroupResponse(object):
 
     @property
     def location(self):
-        """Gets the location of this CreateGroupResponse.  # noqa: E501
+        """Gets the location of this LCreateGroupResponse.  # noqa: E501
 
 
-        :return: The location of this CreateGroupResponse.  # noqa: E501
+        :return: The location of this LCreateGroupResponse.  # noqa: E501
         :rtype: str
         """
         return self._location
 
     @location.setter
     def location(self, location):
-        """Sets the location of this CreateGroupResponse.
+        """Sets the location of this LCreateGroupResponse.
 
 
-        :param location: The location of this CreateGroupResponse.  # noqa: E501
+        :param location: The location of this LCreateGroupResponse.  # noqa: E501
         :type: str
         """
 
@@ -288,20 +288,20 @@ class LCreateGroupResponse(object):
 
     @property
     def etag(self):
-        """Gets the etag of this CreateGroupResponse.  # noqa: E501
+        """Gets the etag of this LCreateGroupResponse.  # noqa: E501
 
 
-        :return: The etag of this CreateGroupResponse.  # noqa: E501
+        :return: The etag of this LCreateGroupResponse.  # noqa: E501
         :rtype: str
         """
         return self._etag
 
     @etag.setter
     def etag(self, etag):
-        """Sets the etag of this CreateGroupResponse.
+        """Sets the etag of this LCreateGroupResponse.
 
 
-        :param etag: The etag of this CreateGroupResponse.  # noqa: E501
+        :param etag: The etag of this LCreateGroupResponse.  # noqa: E501
         :type: str
         """
 
@@ -328,7 +328,7 @@ class LCreateGroupResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(CreateGroupResponse, dict):
+        if issubclass(LCreateGroupResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -344,7 +344,7 @@ class LCreateGroupResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CreateGroupResponse):
+        if not isinstance(other, LCreateGroupResponse):
             return False
 
         return self.__dict__ == other.__dict__

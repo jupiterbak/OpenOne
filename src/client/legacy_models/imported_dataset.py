@@ -83,7 +83,7 @@ class LImportedDataset(object):
     }
 
     def __init__(self, dynamic_path=None, dynamic_bucket=None, dynamic_host=None, dynamic_user_info=None, is_dynamic=False, is_converted=None, disable_type_inference=None, parsing_script=None, storage_location=None, connection=None, run_parameters=None, id=None, created_at=None, updated_at=None, creator=None, updater=None, workspace=None, name=None, description=None, relational_source=None, type=None, raw=None, jdbc_path=None, jdbc_table=None, file_configurations=None):  # noqa: E501
-        """ImportedDataset - a model defined in Swagger"""  # noqa: E501
+        """LImportedDataset - a model defined in Swagger"""  # noqa: E501
         self._dynamic_path = None
         self._dynamic_bucket = None
         self._dynamic_host = None
@@ -160,22 +160,22 @@ class LImportedDataset(object):
 
     @property
     def dynamic_path(self):
-        """Gets the dynamic_path of this ImportedDataset.  # noqa: E501
+        """Gets the dynamic_path of this LImportedDataset.  # noqa: E501
 
         Path used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :return: The dynamic_path of this ImportedDataset.  # noqa: E501
+        :return: The dynamic_path of this LImportedDataset.  # noqa: E501
         :rtype: str
         """
         return self._dynamic_path
 
     @dynamic_path.setter
     def dynamic_path(self, dynamic_path):
-        """Sets the dynamic_path of this ImportedDataset.
+        """Sets the dynamic_path of this LImportedDataset.
 
         Path used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :param dynamic_path: The dynamic_path of this ImportedDataset.  # noqa: E501
+        :param dynamic_path: The dynamic_path of this LImportedDataset.  # noqa: E501
         :type: str
         """
 
@@ -183,22 +183,22 @@ class LImportedDataset(object):
 
     @property
     def dynamic_bucket(self):
-        """Gets the dynamic_bucket of this ImportedDataset.  # noqa: E501
+        """Gets the dynamic_bucket of this LImportedDataset.  # noqa: E501
 
         Bucket used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :return: The dynamic_bucket of this ImportedDataset.  # noqa: E501
+        :return: The dynamic_bucket of this LImportedDataset.  # noqa: E501
         :rtype: str
         """
         return self._dynamic_bucket
 
     @dynamic_bucket.setter
     def dynamic_bucket(self, dynamic_bucket):
-        """Sets the dynamic_bucket of this ImportedDataset.
+        """Sets the dynamic_bucket of this LImportedDataset.
 
         Bucket used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :param dynamic_bucket: The dynamic_bucket of this ImportedDataset.  # noqa: E501
+        :param dynamic_bucket: The dynamic_bucket of this LImportedDataset.  # noqa: E501
         :type: str
         """
 
@@ -206,22 +206,22 @@ class LImportedDataset(object):
 
     @property
     def dynamic_host(self):
-        """Gets the dynamic_host of this ImportedDataset.  # noqa: E501
+        """Gets the dynamic_host of this LImportedDataset.  # noqa: E501
 
         Host used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :return: The dynamic_host of this ImportedDataset.  # noqa: E501
+        :return: The dynamic_host of this LImportedDataset.  # noqa: E501
         :rtype: str
         """
         return self._dynamic_host
 
     @dynamic_host.setter
     def dynamic_host(self, dynamic_host):
-        """Sets the dynamic_host of this ImportedDataset.
+        """Sets the dynamic_host of this LImportedDataset.
 
         Host used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :param dynamic_host: The dynamic_host of this ImportedDataset.  # noqa: E501
+        :param dynamic_host: The dynamic_host of this LImportedDataset.  # noqa: E501
         :type: str
         """
 
@@ -229,22 +229,22 @@ class LImportedDataset(object):
 
     @property
     def dynamic_user_info(self):
-        """Gets the dynamic_user_info of this ImportedDataset.  # noqa: E501
+        """Gets the dynamic_user_info of this LImportedDataset.  # noqa: E501
 
         User used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :return: The dynamic_user_info of this ImportedDataset.  # noqa: E501
+        :return: The dynamic_user_info of this LImportedDataset.  # noqa: E501
         :rtype: str
         """
         return self._dynamic_user_info
 
     @dynamic_user_info.setter
     def dynamic_user_info(self, dynamic_user_info):
-        """Sets the dynamic_user_info of this ImportedDataset.
+        """Sets the dynamic_user_info of this LImportedDataset.
 
         User used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :param dynamic_user_info: The dynamic_user_info of this ImportedDataset.  # noqa: E501
+        :param dynamic_user_info: The dynamic_user_info of this LImportedDataset.  # noqa: E501
         :type: str
         """
 
@@ -252,22 +252,22 @@ class LImportedDataset(object):
 
     @property
     def is_dynamic(self):
-        """Gets the is_dynamic of this ImportedDataset.  # noqa: E501
+        """Gets the is_dynamic of this LImportedDataset.  # noqa: E501
 
         indicate if the datasource is parameterized. In that case, a `dynamicPath` should be passed.  # noqa: E501
 
-        :return: The is_dynamic of this ImportedDataset.  # noqa: E501
+        :return: The is_dynamic of this LImportedDataset.  # noqa: E501
         :rtype: bool
         """
         return self._is_dynamic
 
     @is_dynamic.setter
     def is_dynamic(self, is_dynamic):
-        """Sets the is_dynamic of this ImportedDataset.
+        """Sets the is_dynamic of this LImportedDataset.
 
         indicate if the datasource is parameterized. In that case, a `dynamicPath` should be passed.  # noqa: E501
 
-        :param is_dynamic: The is_dynamic of this ImportedDataset.  # noqa: E501
+        :param is_dynamic: The is_dynamic of this LImportedDataset.  # noqa: E501
         :type: bool
         """
 
@@ -275,22 +275,22 @@ class LImportedDataset(object):
 
     @property
     def is_converted(self):
-        """Gets the is_converted of this ImportedDataset.  # noqa: E501
+        """Gets the is_converted of this LImportedDataset.  # noqa: E501
 
         Indicate if the imported dataset is converted. This is the case for Microsoft Excel Dataset for e.g.  # noqa: E501
 
-        :return: The is_converted of this ImportedDataset.  # noqa: E501
+        :return: The is_converted of this LImportedDataset.  # noqa: E501
         :rtype: bool
         """
         return self._is_converted
 
     @is_converted.setter
     def is_converted(self, is_converted):
-        """Sets the is_converted of this ImportedDataset.
+        """Sets the is_converted of this LImportedDataset.
 
         Indicate if the imported dataset is converted. This is the case for Microsoft Excel Dataset for e.g.  # noqa: E501
 
-        :param is_converted: The is_converted of this ImportedDataset.  # noqa: E501
+        :param is_converted: The is_converted of this LImportedDataset.  # noqa: E501
         :type: bool
         """
 
@@ -298,22 +298,22 @@ class LImportedDataset(object):
 
     @property
     def disable_type_inference(self):
-        """Gets the disable_type_inference of this ImportedDataset.  # noqa: E501
+        """Gets the disable_type_inference of this LImportedDataset.  # noqa: E501
 
         Only applicable to relational sources (database tables/views for e.g.). Prevent Alteryx Analytics Cloud type inference from running and inferring types by looking at the first rows of the dataset.  # noqa: E501
 
-        :return: The disable_type_inference of this ImportedDataset.  # noqa: E501
+        :return: The disable_type_inference of this LImportedDataset.  # noqa: E501
         :rtype: bool
         """
         return self._disable_type_inference
 
     @disable_type_inference.setter
     def disable_type_inference(self, disable_type_inference):
-        """Sets the disable_type_inference of this ImportedDataset.
+        """Sets the disable_type_inference of this LImportedDataset.
 
         Only applicable to relational sources (database tables/views for e.g.). Prevent Alteryx Analytics Cloud type inference from running and inferring types by looking at the first rows of the dataset.  # noqa: E501
 
-        :param disable_type_inference: The disable_type_inference of this ImportedDataset.  # noqa: E501
+        :param disable_type_inference: The disable_type_inference of this LImportedDataset.  # noqa: E501
         :type: bool
         """
 
@@ -321,20 +321,20 @@ class LImportedDataset(object):
 
     @property
     def parsing_script(self):
-        """Gets the parsing_script of this ImportedDataset.  # noqa: E501
+        """Gets the parsing_script of this LImportedDataset.  # noqa: E501
 
 
-        :return: The parsing_script of this ImportedDataset.  # noqa: E501
+        :return: The parsing_script of this LImportedDataset.  # noqa: E501
         :rtype: object
         """
         return self._parsing_script
 
     @parsing_script.setter
     def parsing_script(self, parsing_script):
-        """Sets the parsing_script of this ImportedDataset.
+        """Sets the parsing_script of this LImportedDataset.
 
 
-        :param parsing_script: The parsing_script of this ImportedDataset.  # noqa: E501
+        :param parsing_script: The parsing_script of this LImportedDataset.  # noqa: E501
         :type: object
         """
 
@@ -342,20 +342,20 @@ class LImportedDataset(object):
 
     @property
     def storage_location(self):
-        """Gets the storage_location of this ImportedDataset.  # noqa: E501
+        """Gets the storage_location of this LImportedDataset.  # noqa: E501
 
 
-        :return: The storage_location of this ImportedDataset.  # noqa: E501
+        :return: The storage_location of this LImportedDataset.  # noqa: E501
         :rtype: object
         """
         return self._storage_location
 
     @storage_location.setter
     def storage_location(self, storage_location):
-        """Sets the storage_location of this ImportedDataset.
+        """Sets the storage_location of this LImportedDataset.
 
 
-        :param storage_location: The storage_location of this ImportedDataset.  # noqa: E501
+        :param storage_location: The storage_location of this LImportedDataset.  # noqa: E501
         :type: object
         """
 
@@ -363,20 +363,20 @@ class LImportedDataset(object):
 
     @property
     def connection(self):
-        """Gets the connection of this ImportedDataset.  # noqa: E501
+        """Gets the connection of this LImportedDataset.  # noqa: E501
 
 
-        :return: The connection of this ImportedDataset.  # noqa: E501
+        :return: The connection of this LImportedDataset.  # noqa: E501
         :rtype: object
         """
         return self._connection
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this ImportedDataset.
+        """Sets the connection of this LImportedDataset.
 
 
-        :param connection: The connection of this ImportedDataset.  # noqa: E501
+        :param connection: The connection of this LImportedDataset.  # noqa: E501
         :type: object
         """
 
@@ -384,20 +384,20 @@ class LImportedDataset(object):
 
     @property
     def run_parameters(self):
-        """Gets the run_parameters of this ImportedDataset.  # noqa: E501
+        """Gets the run_parameters of this LImportedDataset.  # noqa: E501
 
 
-        :return: The run_parameters of this ImportedDataset.  # noqa: E501
+        :return: The run_parameters of this LImportedDataset.  # noqa: E501
         :rtype: object
         """
         return self._run_parameters
 
     @run_parameters.setter
     def run_parameters(self, run_parameters):
-        """Sets the run_parameters of this ImportedDataset.
+        """Sets the run_parameters of this LImportedDataset.
 
 
-        :param run_parameters: The run_parameters of this ImportedDataset.  # noqa: E501
+        :param run_parameters: The run_parameters of this LImportedDataset.  # noqa: E501
         :type: object
         """
 
@@ -405,22 +405,22 @@ class LImportedDataset(object):
 
     @property
     def id(self):
-        """Gets the id of this ImportedDataset.  # noqa: E501
+        """Gets the id of this LImportedDataset.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this ImportedDataset.  # noqa: E501
+        :return: The id of this LImportedDataset.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImportedDataset.
+        """Sets the id of this LImportedDataset.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this ImportedDataset.  # noqa: E501
+        :param id: The id of this LImportedDataset.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -430,22 +430,22 @@ class LImportedDataset(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ImportedDataset.  # noqa: E501
+        """Gets the created_at of this LImportedDataset.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this ImportedDataset.  # noqa: E501
+        :return: The created_at of this LImportedDataset.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ImportedDataset.
+        """Sets the created_at of this LImportedDataset.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this ImportedDataset.  # noqa: E501
+        :param created_at: The created_at of this LImportedDataset.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -455,22 +455,22 @@ class LImportedDataset(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ImportedDataset.  # noqa: E501
+        """Gets the updated_at of this LImportedDataset.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this ImportedDataset.  # noqa: E501
+        :return: The updated_at of this LImportedDataset.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ImportedDataset.
+        """Sets the updated_at of this LImportedDataset.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this ImportedDataset.  # noqa: E501
+        :param updated_at: The updated_at of this LImportedDataset.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -480,20 +480,20 @@ class LImportedDataset(object):
 
     @property
     def creator(self):
-        """Gets the creator of this ImportedDataset.  # noqa: E501
+        """Gets the creator of this LImportedDataset.  # noqa: E501
 
 
-        :return: The creator of this ImportedDataset.  # noqa: E501
+        :return: The creator of this LImportedDataset.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ImportedDataset.
+        """Sets the creator of this LImportedDataset.
 
 
-        :param creator: The creator of this ImportedDataset.  # noqa: E501
+        :param creator: The creator of this LImportedDataset.  # noqa: E501
         :type: object
         """
 
@@ -501,20 +501,20 @@ class LImportedDataset(object):
 
     @property
     def updater(self):
-        """Gets the updater of this ImportedDataset.  # noqa: E501
+        """Gets the updater of this LImportedDataset.  # noqa: E501
 
 
-        :return: The updater of this ImportedDataset.  # noqa: E501
+        :return: The updater of this LImportedDataset.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this ImportedDataset.
+        """Sets the updater of this LImportedDataset.
 
 
-        :param updater: The updater of this ImportedDataset.  # noqa: E501
+        :param updater: The updater of this LImportedDataset.  # noqa: E501
         :type: object
         """
 
@@ -522,20 +522,20 @@ class LImportedDataset(object):
 
     @property
     def workspace(self):
-        """Gets the workspace of this ImportedDataset.  # noqa: E501
+        """Gets the workspace of this LImportedDataset.  # noqa: E501
 
 
-        :return: The workspace of this ImportedDataset.  # noqa: E501
+        :return: The workspace of this LImportedDataset.  # noqa: E501
         :rtype: object
         """
         return self._workspace
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ImportedDataset.
+        """Sets the workspace of this LImportedDataset.
 
 
-        :param workspace: The workspace of this ImportedDataset.  # noqa: E501
+        :param workspace: The workspace of this LImportedDataset.  # noqa: E501
         :type: object
         """
 
@@ -543,22 +543,22 @@ class LImportedDataset(object):
 
     @property
     def name(self):
-        """Gets the name of this ImportedDataset.  # noqa: E501
+        """Gets the name of this LImportedDataset.  # noqa: E501
 
         Display name of the imported dataset.  # noqa: E501
 
-        :return: The name of this ImportedDataset.  # noqa: E501
+        :return: The name of this LImportedDataset.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ImportedDataset.
+        """Sets the name of this LImportedDataset.
 
         Display name of the imported dataset.  # noqa: E501
 
-        :param name: The name of this ImportedDataset.  # noqa: E501
+        :param name: The name of this LImportedDataset.  # noqa: E501
         :type: str
         """
 
@@ -566,22 +566,22 @@ class LImportedDataset(object):
 
     @property
     def description(self):
-        """Gets the description of this ImportedDataset.  # noqa: E501
+        """Gets the description of this LImportedDataset.  # noqa: E501
 
         User-friendly description for the imported dataset.  # noqa: E501
 
-        :return: The description of this ImportedDataset.  # noqa: E501
+        :return: The description of this LImportedDataset.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ImportedDataset.
+        """Sets the description of this LImportedDataset.
 
         User-friendly description for the imported dataset.  # noqa: E501
 
-        :param description: The description of this ImportedDataset.  # noqa: E501
+        :param description: The description of this LImportedDataset.  # noqa: E501
         :type: str
         """
 
@@ -589,20 +589,20 @@ class LImportedDataset(object):
 
     @property
     def relational_source(self):
-        """Gets the relational_source of this ImportedDataset.  # noqa: E501
+        """Gets the relational_source of this LImportedDataset.  # noqa: E501
 
 
-        :return: The relational_source of this ImportedDataset.  # noqa: E501
+        :return: The relational_source of this LImportedDataset.  # noqa: E501
         :rtype: object
         """
         return self._relational_source
 
     @relational_source.setter
     def relational_source(self, relational_source):
-        """Sets the relational_source of this ImportedDataset.
+        """Sets the relational_source of this LImportedDataset.
 
 
-        :param relational_source: The relational_source of this ImportedDataset.  # noqa: E501
+        :param relational_source: The relational_source of this LImportedDataset.  # noqa: E501
         :type: object
         """
 
@@ -610,22 +610,22 @@ class LImportedDataset(object):
 
     @property
     def type(self):
-        """Gets the type of this ImportedDataset.  # noqa: E501
+        """Gets the type of this LImportedDataset.  # noqa: E501
 
         The type of dataset.  # noqa: E501
 
-        :return: The type of this ImportedDataset.  # noqa: E501
+        :return: The type of this LImportedDataset.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ImportedDataset.
+        """Sets the type of this LImportedDataset.
 
         The type of dataset.  # noqa: E501
 
-        :param type: The type of this ImportedDataset.  # noqa: E501
+        :param type: The type of this LImportedDataset.  # noqa: E501
         :type: str
         """
 
@@ -633,22 +633,22 @@ class LImportedDataset(object):
 
     @property
     def raw(self):
-        """Gets the raw of this ImportedDataset.  # noqa: E501
+        """Gets the raw of this LImportedDataset.  # noqa: E501
 
         Raw SQL query.  # noqa: E501
 
-        :return: The raw of this ImportedDataset.  # noqa: E501
+        :return: The raw of this LImportedDataset.  # noqa: E501
         :rtype: list[str]
         """
         return self._raw
 
     @raw.setter
     def raw(self, raw):
-        """Sets the raw of this ImportedDataset.
+        """Sets the raw of this LImportedDataset.
 
         Raw SQL query.  # noqa: E501
 
-        :param raw: The raw of this ImportedDataset.  # noqa: E501
+        :param raw: The raw of this LImportedDataset.  # noqa: E501
         :type: list[str]
         """
 
@@ -656,20 +656,20 @@ class LImportedDataset(object):
 
     @property
     def jdbc_path(self):
-        """Gets the jdbc_path of this ImportedDataset.  # noqa: E501
+        """Gets the jdbc_path of this LImportedDataset.  # noqa: E501
 
 
-        :return: The jdbc_path of this ImportedDataset.  # noqa: E501
+        :return: The jdbc_path of this LImportedDataset.  # noqa: E501
         :rtype: list[str]
         """
         return self._jdbc_path
 
     @jdbc_path.setter
     def jdbc_path(self, jdbc_path):
-        """Sets the jdbc_path of this ImportedDataset.
+        """Sets the jdbc_path of this LImportedDataset.
 
 
-        :param jdbc_path: The jdbc_path of this ImportedDataset.  # noqa: E501
+        :param jdbc_path: The jdbc_path of this LImportedDataset.  # noqa: E501
         :type: list[str]
         """
 
@@ -677,20 +677,20 @@ class LImportedDataset(object):
 
     @property
     def jdbc_table(self):
-        """Gets the jdbc_table of this ImportedDataset.  # noqa: E501
+        """Gets the jdbc_table of this LImportedDataset.  # noqa: E501
 
 
-        :return: The jdbc_table of this ImportedDataset.  # noqa: E501
+        :return: The jdbc_table of this LImportedDataset.  # noqa: E501
         :rtype: str
         """
         return self._jdbc_table
 
     @jdbc_table.setter
     def jdbc_table(self, jdbc_table):
-        """Sets the jdbc_table of this ImportedDataset.
+        """Sets the jdbc_table of this LImportedDataset.
 
 
-        :param jdbc_table: The jdbc_table of this ImportedDataset.  # noqa: E501
+        :param jdbc_table: The jdbc_table of this LImportedDataset.  # noqa: E501
         :type: str
         """
 
@@ -698,20 +698,20 @@ class LImportedDataset(object):
 
     @property
     def file_configurations(self):
-        """Gets the file_configurations of this ImportedDataset.  # noqa: E501
+        """Gets the file_configurations of this LImportedDataset.  # noqa: E501
 
 
-        :return: The file_configurations of this ImportedDataset.  # noqa: E501
+        :return: The file_configurations of this LImportedDataset.  # noqa: E501
         :rtype: object
         """
         return self._file_configurations
 
     @file_configurations.setter
     def file_configurations(self, file_configurations):
-        """Sets the file_configurations of this ImportedDataset.
+        """Sets the file_configurations of this LImportedDataset.
 
 
-        :param file_configurations: The file_configurations of this ImportedDataset.  # noqa: E501
+        :param file_configurations: The file_configurations of this LImportedDataset.  # noqa: E501
         :type: object
         """
 
@@ -738,7 +738,7 @@ class LImportedDataset(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ImportedDataset, dict):
+        if issubclass(LImportedDataset, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -754,7 +754,7 @@ class LImportedDataset(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImportedDataset):
+        if not isinstance(other, LImportedDataset):
             return False
 
         return self.__dict__ == other.__dict__

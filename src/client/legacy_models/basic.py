@@ -37,7 +37,7 @@ class LBasic(object):
     }
 
     def __init__(self, username=None, password=None):  # noqa: E501
-        """Basic - a model defined in Swagger"""  # noqa: E501
+        """LBasic - a model defined in Swagger"""  # noqa: E501
         self._username = None
         self._password = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LBasic(object):
 
     @property
     def username(self):
-        """Gets the username of this Basic.  # noqa: E501
+        """Gets the username of this LBasic.  # noqa: E501
 
 
-        :return: The username of this Basic.  # noqa: E501
+        :return: The username of this LBasic.  # noqa: E501
         :rtype: str
         """
         return self._username
 
     @username.setter
     def username(self, username):
-        """Sets the username of this Basic.
+        """Sets the username of this LBasic.
 
 
-        :param username: The username of this Basic.  # noqa: E501
+        :param username: The username of this LBasic.  # noqa: E501
         :type: str
         """
         if username is None:
@@ -69,20 +69,20 @@ class LBasic(object):
 
     @property
     def password(self):
-        """Gets the password of this Basic.  # noqa: E501
+        """Gets the password of this LBasic.  # noqa: E501
 
 
-        :return: The password of this Basic.  # noqa: E501
+        :return: The password of this LBasic.  # noqa: E501
         :rtype: str
         """
         return self._password
 
     @password.setter
     def password(self, password):
-        """Sets the password of this Basic.
+        """Sets the password of this LBasic.
 
 
-        :param password: The password of this Basic.  # noqa: E501
+        :param password: The password of this LBasic.  # noqa: E501
         :type: str
         """
         if password is None:
@@ -111,7 +111,7 @@ class LBasic(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Basic, dict):
+        if issubclass(LBasic, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LBasic(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Basic):
+        if not isinstance(other, LBasic):
             return False
 
         return self.__dict__ == other.__dict__

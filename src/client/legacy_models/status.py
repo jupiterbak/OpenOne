@@ -33,7 +33,7 @@ class LStatus(object):
     }
 
     def __init__(self):  # noqa: E501
-        """Status - a model defined in Swagger"""  # noqa: E501
+        """LStatus - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LStatus(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Status, dict):
+        if issubclass(LStatus, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LStatus(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Status):
+        if not isinstance(other, LStatus):
             return False
 
         return self.__dict__ == other.__dict__

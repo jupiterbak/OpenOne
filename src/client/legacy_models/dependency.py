@@ -55,7 +55,7 @@ class LDependency(object):
     }
 
     def __init__(self, id=None, name=None, description=None, creator=None, updater=None, created_at=None, updated_at=None, approved_dependency=None, script_lines=None, editable_scripts=None, flow=None):  # noqa: E501
-        """Dependency - a model defined in Swagger"""  # noqa: E501
+        """LDependency - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._name = None
         self._description = None
@@ -88,22 +88,22 @@ class LDependency(object):
 
     @property
     def id(self):
-        """Gets the id of this Dependency.  # noqa: E501
+        """Gets the id of this LDependency.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this Dependency.  # noqa: E501
+        :return: The id of this LDependency.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Dependency.
+        """Sets the id of this LDependency.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this Dependency.  # noqa: E501
+        :param id: The id of this LDependency.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -113,20 +113,20 @@ class LDependency(object):
 
     @property
     def name(self):
-        """Gets the name of this Dependency.  # noqa: E501
+        """Gets the name of this LDependency.  # noqa: E501
 
 
-        :return: The name of this Dependency.  # noqa: E501
+        :return: The name of this LDependency.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Dependency.
+        """Sets the name of this LDependency.
 
 
-        :param name: The name of this Dependency.  # noqa: E501
+        :param name: The name of this LDependency.  # noqa: E501
         :type: str
         """
 
@@ -134,20 +134,20 @@ class LDependency(object):
 
     @property
     def description(self):
-        """Gets the description of this Dependency.  # noqa: E501
+        """Gets the description of this LDependency.  # noqa: E501
 
 
-        :return: The description of this Dependency.  # noqa: E501
+        :return: The description of this LDependency.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Dependency.
+        """Sets the description of this LDependency.
 
 
-        :param description: The description of this Dependency.  # noqa: E501
+        :param description: The description of this LDependency.  # noqa: E501
         :type: str
         """
 
@@ -155,20 +155,20 @@ class LDependency(object):
 
     @property
     def creator(self):
-        """Gets the creator of this Dependency.  # noqa: E501
+        """Gets the creator of this LDependency.  # noqa: E501
 
 
-        :return: The creator of this Dependency.  # noqa: E501
+        :return: The creator of this LDependency.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this Dependency.
+        """Sets the creator of this LDependency.
 
 
-        :param creator: The creator of this Dependency.  # noqa: E501
+        :param creator: The creator of this LDependency.  # noqa: E501
         :type: object
         """
         if creator is None:
@@ -178,20 +178,20 @@ class LDependency(object):
 
     @property
     def updater(self):
-        """Gets the updater of this Dependency.  # noqa: E501
+        """Gets the updater of this LDependency.  # noqa: E501
 
 
-        :return: The updater of this Dependency.  # noqa: E501
+        :return: The updater of this LDependency.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this Dependency.
+        """Sets the updater of this LDependency.
 
 
-        :param updater: The updater of this Dependency.  # noqa: E501
+        :param updater: The updater of this LDependency.  # noqa: E501
         :type: object
         """
         if updater is None:
@@ -201,22 +201,22 @@ class LDependency(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this Dependency.  # noqa: E501
+        """Gets the created_at of this LDependency.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this Dependency.  # noqa: E501
+        :return: The created_at of this LDependency.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Dependency.
+        """Sets the created_at of this LDependency.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this Dependency.  # noqa: E501
+        :param created_at: The created_at of this LDependency.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -226,22 +226,22 @@ class LDependency(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Dependency.  # noqa: E501
+        """Gets the updated_at of this LDependency.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this Dependency.  # noqa: E501
+        :return: The updated_at of this LDependency.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Dependency.
+        """Sets the updated_at of this LDependency.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this Dependency.  # noqa: E501
+        :param updated_at: The updated_at of this LDependency.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -251,20 +251,20 @@ class LDependency(object):
 
     @property
     def approved_dependency(self):
-        """Gets the approved_dependency of this Dependency.  # noqa: E501
+        """Gets the approved_dependency of this LDependency.  # noqa: E501
 
 
-        :return: The approved_dependency of this Dependency.  # noqa: E501
+        :return: The approved_dependency of this LDependency.  # noqa: E501
         :rtype: object
         """
         return self._approved_dependency
 
     @approved_dependency.setter
     def approved_dependency(self, approved_dependency):
-        """Sets the approved_dependency of this Dependency.
+        """Sets the approved_dependency of this LDependency.
 
 
-        :param approved_dependency: The approved_dependency of this Dependency.  # noqa: E501
+        :param approved_dependency: The approved_dependency of this LDependency.  # noqa: E501
         :type: object
         """
 
@@ -272,20 +272,20 @@ class LDependency(object):
 
     @property
     def script_lines(self):
-        """Gets the script_lines of this Dependency.  # noqa: E501
+        """Gets the script_lines of this LDependency.  # noqa: E501
 
 
-        :return: The script_lines of this Dependency.  # noqa: E501
+        :return: The script_lines of this LDependency.  # noqa: E501
         :rtype: object
         """
         return self._script_lines
 
     @script_lines.setter
     def script_lines(self, script_lines):
-        """Sets the script_lines of this Dependency.
+        """Sets the script_lines of this LDependency.
 
 
-        :param script_lines: The script_lines of this Dependency.  # noqa: E501
+        :param script_lines: The script_lines of this LDependency.  # noqa: E501
         :type: object
         """
 
@@ -293,20 +293,20 @@ class LDependency(object):
 
     @property
     def editable_scripts(self):
-        """Gets the editable_scripts of this Dependency.  # noqa: E501
+        """Gets the editable_scripts of this LDependency.  # noqa: E501
 
 
-        :return: The editable_scripts of this Dependency.  # noqa: E501
+        :return: The editable_scripts of this LDependency.  # noqa: E501
         :rtype: object
         """
         return self._editable_scripts
 
     @editable_scripts.setter
     def editable_scripts(self, editable_scripts):
-        """Sets the editable_scripts of this Dependency.
+        """Sets the editable_scripts of this LDependency.
 
 
-        :param editable_scripts: The editable_scripts of this Dependency.  # noqa: E501
+        :param editable_scripts: The editable_scripts of this LDependency.  # noqa: E501
         :type: object
         """
 
@@ -314,20 +314,20 @@ class LDependency(object):
 
     @property
     def flow(self):
-        """Gets the flow of this Dependency.  # noqa: E501
+        """Gets the flow of this LDependency.  # noqa: E501
 
 
-        :return: The flow of this Dependency.  # noqa: E501
+        :return: The flow of this LDependency.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this Dependency.
+        """Sets the flow of this LDependency.
 
 
-        :param flow: The flow of this Dependency.  # noqa: E501
+        :param flow: The flow of this LDependency.  # noqa: E501
         :type: object
         """
 
@@ -354,7 +354,7 @@ class LDependency(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Dependency, dict):
+        if issubclass(LDependency, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -370,7 +370,7 @@ class LDependency(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Dependency):
+        if not isinstance(other, LDependency):
             return False
 
         return self.__dict__ == other.__dict__

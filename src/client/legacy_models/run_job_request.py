@@ -31,7 +31,7 @@ class LRunJobRequest(object):
         'force_cache_update': 'bool',
         'ignore_recipe_errors': 'bool',
         'test_mode': 'bool',
-        'run_parameters': 'RunParameterOverrides',
+        'run_parameters': 'LRunParameterOverrides',
         'workspace_id': 'int',
         'overrides': 'object',
         'ranfrom': 'str'
@@ -49,7 +49,7 @@ class LRunJobRequest(object):
     }
 
     def __init__(self, wrangled_dataset=None, force_cache_update=None, ignore_recipe_errors=False, test_mode=None, run_parameters=None, workspace_id=None, overrides=None, ranfrom=None):  # noqa: E501
-        """RunJobRequest - a model defined in Swagger"""  # noqa: E501
+        """LRunJobRequest - a model defined in Swagger"""  # noqa: E501
         self._wrangled_dataset = None
         self._force_cache_update = None
         self._ignore_recipe_errors = None
@@ -77,22 +77,22 @@ class LRunJobRequest(object):
 
     @property
     def wrangled_dataset(self):
-        """Gets the wrangled_dataset of this RunJobRequest.  # noqa: E501
+        """Gets the wrangled_dataset of this LRunJobRequest.  # noqa: E501
 
         The identifier for the recipe you would like to run.  # noqa: E501
 
-        :return: The wrangled_dataset of this RunJobRequest.  # noqa: E501
+        :return: The wrangled_dataset of this LRunJobRequest.  # noqa: E501
         :rtype: object
         """
         return self._wrangled_dataset
 
     @wrangled_dataset.setter
     def wrangled_dataset(self, wrangled_dataset):
-        """Sets the wrangled_dataset of this RunJobRequest.
+        """Sets the wrangled_dataset of this LRunJobRequest.
 
         The identifier for the recipe you would like to run.  # noqa: E501
 
-        :param wrangled_dataset: The wrangled_dataset of this RunJobRequest.  # noqa: E501
+        :param wrangled_dataset: The wrangled_dataset of this LRunJobRequest.  # noqa: E501
         :type: object
         """
         if wrangled_dataset is None:
@@ -102,22 +102,22 @@ class LRunJobRequest(object):
 
     @property
     def force_cache_update(self):
-        """Gets the force_cache_update of this RunJobRequest.  # noqa: E501
+        """Gets the force_cache_update of this LRunJobRequest.  # noqa: E501
 
         Setting this flag to true will invalidate any cached datasources. This only applies to SQL datasets.  # noqa: E501
 
-        :return: The force_cache_update of this RunJobRequest.  # noqa: E501
+        :return: The force_cache_update of this LRunJobRequest.  # noqa: E501
         :rtype: bool
         """
         return self._force_cache_update
 
     @force_cache_update.setter
     def force_cache_update(self, force_cache_update):
-        """Sets the force_cache_update of this RunJobRequest.
+        """Sets the force_cache_update of this LRunJobRequest.
 
         Setting this flag to true will invalidate any cached datasources. This only applies to SQL datasets.  # noqa: E501
 
-        :param force_cache_update: The force_cache_update of this RunJobRequest.  # noqa: E501
+        :param force_cache_update: The force_cache_update of this LRunJobRequest.  # noqa: E501
         :type: bool
         """
 
@@ -125,22 +125,22 @@ class LRunJobRequest(object):
 
     @property
     def ignore_recipe_errors(self):
-        """Gets the ignore_recipe_errors of this RunJobRequest.  # noqa: E501
+        """Gets the ignore_recipe_errors of this LRunJobRequest.  # noqa: E501
 
         Setting this flag to true will mean the job will run even if there are upstream recipe errors. Setting it to false will cause the Request to fail on recipe errors.  # noqa: E501
 
-        :return: The ignore_recipe_errors of this RunJobRequest.  # noqa: E501
+        :return: The ignore_recipe_errors of this LRunJobRequest.  # noqa: E501
         :rtype: bool
         """
         return self._ignore_recipe_errors
 
     @ignore_recipe_errors.setter
     def ignore_recipe_errors(self, ignore_recipe_errors):
-        """Sets the ignore_recipe_errors of this RunJobRequest.
+        """Sets the ignore_recipe_errors of this LRunJobRequest.
 
         Setting this flag to true will mean the job will run even if there are upstream recipe errors. Setting it to false will cause the Request to fail on recipe errors.  # noqa: E501
 
-        :param ignore_recipe_errors: The ignore_recipe_errors of this RunJobRequest.  # noqa: E501
+        :param ignore_recipe_errors: The ignore_recipe_errors of this LRunJobRequest.  # noqa: E501
         :type: bool
         """
 
@@ -148,22 +148,22 @@ class LRunJobRequest(object):
 
     @property
     def test_mode(self):
-        """Gets the test_mode of this RunJobRequest.  # noqa: E501
+        """Gets the test_mode of this LRunJobRequest.  # noqa: E501
 
         Setting this flag to true will not run the job but just perform some validations.  # noqa: E501
 
-        :return: The test_mode of this RunJobRequest.  # noqa: E501
+        :return: The test_mode of this LRunJobRequest.  # noqa: E501
         :rtype: bool
         """
         return self._test_mode
 
     @test_mode.setter
     def test_mode(self, test_mode):
-        """Sets the test_mode of this RunJobRequest.
+        """Sets the test_mode of this LRunJobRequest.
 
         Setting this flag to true will not run the job but just perform some validations.  # noqa: E501
 
-        :param test_mode: The test_mode of this RunJobRequest.  # noqa: E501
+        :param test_mode: The test_mode of this LRunJobRequest.  # noqa: E501
         :type: bool
         """
 
@@ -171,43 +171,43 @@ class LRunJobRequest(object):
 
     @property
     def run_parameters(self):
-        """Gets the run_parameters of this RunJobRequest.  # noqa: E501
+        """Gets the run_parameters of this LRunJobRequest.  # noqa: E501
 
 
-        :return: The run_parameters of this RunJobRequest.  # noqa: E501
-        :rtype: RunParameterOverrides
+        :return: The run_parameters of this LRunJobRequest.  # noqa: E501
+        :rtype: LRunParameterOverrides
         """
         return self._run_parameters
 
     @run_parameters.setter
     def run_parameters(self, run_parameters):
-        """Sets the run_parameters of this RunJobRequest.
+        """Sets the run_parameters of this LRunJobRequest.
 
 
-        :param run_parameters: The run_parameters of this RunJobRequest.  # noqa: E501
-        :type: RunParameterOverrides
+        :param run_parameters: The run_parameters of this LRunJobRequest.  # noqa: E501
+        :type: LRunParameterOverrides
         """
 
         self._run_parameters = run_parameters
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this RunJobRequest.  # noqa: E501
+        """Gets the workspace_id of this LRunJobRequest.  # noqa: E501
 
         Internal. Does not need to be specified  # noqa: E501
 
-        :return: The workspace_id of this RunJobRequest.  # noqa: E501
+        :return: The workspace_id of this LRunJobRequest.  # noqa: E501
         :rtype: int
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this RunJobRequest.
+        """Sets the workspace_id of this LRunJobRequest.
 
         Internal. Does not need to be specified  # noqa: E501
 
-        :param workspace_id: The workspace_id of this RunJobRequest.  # noqa: E501
+        :param workspace_id: The workspace_id of this LRunJobRequest.  # noqa: E501
         :type: int
         """
 
@@ -215,22 +215,22 @@ class LRunJobRequest(object):
 
     @property
     def overrides(self):
-        """Gets the overrides of this RunJobRequest.  # noqa: E501
+        """Gets the overrides of this LRunJobRequest.  # noqa: E501
 
         Allows to override execution settings that are set on the output object.  # noqa: E501
 
-        :return: The overrides of this RunJobRequest.  # noqa: E501
+        :return: The overrides of this LRunJobRequest.  # noqa: E501
         :rtype: object
         """
         return self._overrides
 
     @overrides.setter
     def overrides(self, overrides):
-        """Sets the overrides of this RunJobRequest.
+        """Sets the overrides of this LRunJobRequest.
 
         Allows to override execution settings that are set on the output object.  # noqa: E501
 
-        :param overrides: The overrides of this RunJobRequest.  # noqa: E501
+        :param overrides: The overrides of this LRunJobRequest.  # noqa: E501
         :type: object
         """
 
@@ -238,22 +238,22 @@ class LRunJobRequest(object):
 
     @property
     def ranfrom(self):
-        """Gets the ranfrom of this RunJobRequest.  # noqa: E501
+        """Gets the ranfrom of this LRunJobRequest.  # noqa: E501
 
         Where the job was executed from. Does not need to be specified when using the API.  * `ui` - Alteryx Analytics Cloud application * `schedule` - Scheduled * `api` - the API (using an API token)  # noqa: E501
 
-        :return: The ranfrom of this RunJobRequest.  # noqa: E501
+        :return: The ranfrom of this LRunJobRequest.  # noqa: E501
         :rtype: str
         """
         return self._ranfrom
 
     @ranfrom.setter
     def ranfrom(self, ranfrom):
-        """Sets the ranfrom of this RunJobRequest.
+        """Sets the ranfrom of this LRunJobRequest.
 
         Where the job was executed from. Does not need to be specified when using the API.  * `ui` - Alteryx Analytics Cloud application * `schedule` - Scheduled * `api` - the API (using an API token)  # noqa: E501
 
-        :param ranfrom: The ranfrom of this RunJobRequest.  # noqa: E501
+        :param ranfrom: The ranfrom of this LRunJobRequest.  # noqa: E501
         :type: str
         """
         allowed_values = ["ui", "schedule", "api"]  # noqa: E501
@@ -286,7 +286,7 @@ class LRunJobRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunJobRequest, dict):
+        if issubclass(LRunJobRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -302,7 +302,7 @@ class LRunJobRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunJobRequest):
+        if not isinstance(other, LRunJobRequest):
             return False
 
         return self.__dict__ == other.__dict__

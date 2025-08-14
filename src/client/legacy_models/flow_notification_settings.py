@@ -45,7 +45,7 @@ class LFlowNotificationSettings(object):
     }
 
     def __init__(self, id=None, created_at=None, updated_at=None, on_job_failure=None, on_job_success=None, flow=None):  # noqa: E501
-        """FlowNotificationSettings - a model defined in Swagger"""  # noqa: E501
+        """LFlowNotificationSettings - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._created_at = None
         self._updated_at = None
@@ -62,22 +62,22 @@ class LFlowNotificationSettings(object):
 
     @property
     def id(self):
-        """Gets the id of this FlowNotificationSettings.  # noqa: E501
+        """Gets the id of this LFlowNotificationSettings.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this FlowNotificationSettings.  # noqa: E501
+        :return: The id of this LFlowNotificationSettings.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FlowNotificationSettings.
+        """Sets the id of this LFlowNotificationSettings.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this FlowNotificationSettings.  # noqa: E501
+        :param id: The id of this LFlowNotificationSettings.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -87,22 +87,22 @@ class LFlowNotificationSettings(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this FlowNotificationSettings.  # noqa: E501
+        """Gets the created_at of this LFlowNotificationSettings.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this FlowNotificationSettings.  # noqa: E501
+        :return: The created_at of this LFlowNotificationSettings.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this FlowNotificationSettings.
+        """Sets the created_at of this LFlowNotificationSettings.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this FlowNotificationSettings.  # noqa: E501
+        :param created_at: The created_at of this LFlowNotificationSettings.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -112,22 +112,22 @@ class LFlowNotificationSettings(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this FlowNotificationSettings.  # noqa: E501
+        """Gets the updated_at of this LFlowNotificationSettings.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this FlowNotificationSettings.  # noqa: E501
+        :return: The updated_at of this LFlowNotificationSettings.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this FlowNotificationSettings.
+        """Sets the updated_at of this LFlowNotificationSettings.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this FlowNotificationSettings.  # noqa: E501
+        :param updated_at: The updated_at of this LFlowNotificationSettings.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -137,22 +137,22 @@ class LFlowNotificationSettings(object):
 
     @property
     def on_job_failure(self):
-        """Gets the on_job_failure of this FlowNotificationSettings.  # noqa: E501
+        """Gets the on_job_failure of this LFlowNotificationSettings.  # noqa: E501
 
         on job failure trigger condition  # noqa: E501
 
-        :return: The on_job_failure of this FlowNotificationSettings.  # noqa: E501
+        :return: The on_job_failure of this LFlowNotificationSettings.  # noqa: E501
         :rtype: str
         """
         return self._on_job_failure
 
     @on_job_failure.setter
     def on_job_failure(self, on_job_failure):
-        """Sets the on_job_failure of this FlowNotificationSettings.
+        """Sets the on_job_failure of this LFlowNotificationSettings.
 
         on job failure trigger condition  # noqa: E501
 
-        :param on_job_failure: The on_job_failure of this FlowNotificationSettings.  # noqa: E501
+        :param on_job_failure: The on_job_failure of this LFlowNotificationSettings.  # noqa: E501
         :type: str
         """
         if on_job_failure is None:
@@ -168,22 +168,22 @@ class LFlowNotificationSettings(object):
 
     @property
     def on_job_success(self):
-        """Gets the on_job_success of this FlowNotificationSettings.  # noqa: E501
+        """Gets the on_job_success of this LFlowNotificationSettings.  # noqa: E501
 
         on job success trigger condition  # noqa: E501
 
-        :return: The on_job_success of this FlowNotificationSettings.  # noqa: E501
+        :return: The on_job_success of this LFlowNotificationSettings.  # noqa: E501
         :rtype: str
         """
         return self._on_job_success
 
     @on_job_success.setter
     def on_job_success(self, on_job_success):
-        """Sets the on_job_success of this FlowNotificationSettings.
+        """Sets the on_job_success of this LFlowNotificationSettings.
 
         on job success trigger condition  # noqa: E501
 
-        :param on_job_success: The on_job_success of this FlowNotificationSettings.  # noqa: E501
+        :param on_job_success: The on_job_success of this LFlowNotificationSettings.  # noqa: E501
         :type: str
         """
         if on_job_success is None:
@@ -199,20 +199,20 @@ class LFlowNotificationSettings(object):
 
     @property
     def flow(self):
-        """Gets the flow of this FlowNotificationSettings.  # noqa: E501
+        """Gets the flow of this LFlowNotificationSettings.  # noqa: E501
 
 
-        :return: The flow of this FlowNotificationSettings.  # noqa: E501
+        :return: The flow of this LFlowNotificationSettings.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this FlowNotificationSettings.
+        """Sets the flow of this LFlowNotificationSettings.
 
 
-        :param flow: The flow of this FlowNotificationSettings.  # noqa: E501
+        :param flow: The flow of this LFlowNotificationSettings.  # noqa: E501
         :type: object
         """
         if flow is None:
@@ -241,7 +241,7 @@ class LFlowNotificationSettings(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowNotificationSettings, dict):
+        if issubclass(LFlowNotificationSettings, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -257,7 +257,7 @@ class LFlowNotificationSettings(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowNotificationSettings):
+        if not isinstance(other, LFlowNotificationSettings):
             return False
 
         return self.__dict__ == other.__dict__

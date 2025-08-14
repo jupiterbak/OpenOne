@@ -35,27 +35,27 @@ class LRunPlanTaskWithPlanSchema(object):
     }
 
     def __init__(self, run_plan=None):  # noqa: E501
-        """RunPlanTaskWithPlanSchema - a model defined in Swagger"""  # noqa: E501
+        """LRunPlanTaskWithPlanSchema - a model defined in Swagger"""  # noqa: E501
         self._run_plan = None
         self.discriminator = None
         self.run_plan = run_plan
 
     @property
     def run_plan(self):
-        """Gets the run_plan of this RunPlanTaskWithPlanSchema.  # noqa: E501
+        """Gets the run_plan of this LRunPlanTaskWithPlanSchema.  # noqa: E501
 
 
-        :return: The run_plan of this RunPlanTaskWithPlanSchema.  # noqa: E501
+        :return: The run_plan of this LRunPlanTaskWithPlanSchema.  # noqa: E501
         :rtype: object
         """
         return self._run_plan
 
     @run_plan.setter
     def run_plan(self, run_plan):
-        """Sets the run_plan of this RunPlanTaskWithPlanSchema.
+        """Sets the run_plan of this LRunPlanTaskWithPlanSchema.
 
 
-        :param run_plan: The run_plan of this RunPlanTaskWithPlanSchema.  # noqa: E501
+        :param run_plan: The run_plan of this LRunPlanTaskWithPlanSchema.  # noqa: E501
         :type: object
         """
         if run_plan is None:
@@ -84,7 +84,7 @@ class LRunPlanTaskWithPlanSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunPlanTaskWithPlanSchema, dict):
+        if issubclass(LRunPlanTaskWithPlanSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunPlanTaskWithPlanSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunPlanTaskWithPlanSchema):
+        if not isinstance(other, LRunPlanTaskWithPlanSchema):
             return False
 
         return self.__dict__ == other.__dict__

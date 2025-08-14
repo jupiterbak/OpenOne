@@ -35,27 +35,27 @@ class LDeleteSettingsRequest(object):
     }
 
     def __init__(self, settings=None):  # noqa: E501
-        """DeleteSettingsRequest - a model defined in Swagger"""  # noqa: E501
+        """LDeleteSettingsRequest - a model defined in Swagger"""  # noqa: E501
         self._settings = None
         self.discriminator = None
         self.settings = settings
 
     @property
     def settings(self):
-        """Gets the settings of this DeleteSettingsRequest.  # noqa: E501
+        """Gets the settings of this LDeleteSettingsRequest.  # noqa: E501
 
 
-        :return: The settings of this DeleteSettingsRequest.  # noqa: E501
+        :return: The settings of this LDeleteSettingsRequest.  # noqa: E501
         :rtype: list[str]
         """
         return self._settings
 
     @settings.setter
     def settings(self, settings):
-        """Sets the settings of this DeleteSettingsRequest.
+        """Sets the settings of this LDeleteSettingsRequest.
 
 
-        :param settings: The settings of this DeleteSettingsRequest.  # noqa: E501
+        :param settings: The settings of this LDeleteSettingsRequest.  # noqa: E501
         :type: list[str]
         """
         if settings is None:
@@ -84,7 +84,7 @@ class LDeleteSettingsRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DeleteSettingsRequest, dict):
+        if issubclass(LDeleteSettingsRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LDeleteSettingsRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DeleteSettingsRequest):
+        if not isinstance(other, LDeleteSettingsRequest):
             return False
 
         return self.__dict__ == other.__dict__

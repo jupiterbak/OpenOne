@@ -35,27 +35,27 @@ class LRunAutoInsightsTaskWithAutoInsightsSchema(object):
     }
 
     def __init__(self, run_auto_insights=None):  # noqa: E501
-        """RunAutoInsightsTaskWithAutoInsightsSchema - a model defined in Swagger"""  # noqa: E501
+        """LRunAutoInsightsTaskWithAutoInsightsSchema - a model defined in Swagger"""  # noqa: E501
         self._run_auto_insights = None
         self.discriminator = None
         self.run_auto_insights = run_auto_insights
 
     @property
     def run_auto_insights(self):
-        """Gets the run_auto_insights of this RunAutoInsightsTaskWithAutoInsightsSchema.  # noqa: E501
+        """Gets the run_auto_insights of this LRunAutoInsightsTaskWithAutoInsightsSchema.  # noqa: E501
 
 
-        :return: The run_auto_insights of this RunAutoInsightsTaskWithAutoInsightsSchema.  # noqa: E501
+        :return: The run_auto_insights of this LRunAutoInsightsTaskWithAutoInsightsSchema.  # noqa: E501
         :rtype: object
         """
         return self._run_auto_insights
 
     @run_auto_insights.setter
     def run_auto_insights(self, run_auto_insights):
-        """Sets the run_auto_insights of this RunAutoInsightsTaskWithAutoInsightsSchema.
+        """Sets the run_auto_insights of this LRunAutoInsightsTaskWithAutoInsightsSchema.
 
 
-        :param run_auto_insights: The run_auto_insights of this RunAutoInsightsTaskWithAutoInsightsSchema.  # noqa: E501
+        :param run_auto_insights: The run_auto_insights of this LRunAutoInsightsTaskWithAutoInsightsSchema.  # noqa: E501
         :type: object
         """
         if run_auto_insights is None:
@@ -84,7 +84,7 @@ class LRunAutoInsightsTaskWithAutoInsightsSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunAutoInsightsTaskWithAutoInsightsSchema, dict):
+        if issubclass(LRunAutoInsightsTaskWithAutoInsightsSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunAutoInsightsTaskWithAutoInsightsSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunAutoInsightsTaskWithAutoInsightsSchema):
+        if not isinstance(other, LRunAutoInsightsTaskWithAutoInsightsSchema):
             return False
 
         return self.__dict__ == other.__dict__

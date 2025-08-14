@@ -35,27 +35,27 @@ class LPlanWorkflowTaskCreateRequest(object):
     }
 
     def __init__(self, workflow_id=None):  # noqa: E501
-        """PlanWorkflowTaskCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LPlanWorkflowTaskCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._workflow_id = None
         self.discriminator = None
         self.workflow_id = workflow_id
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this PlanWorkflowTaskCreateRequest.  # noqa: E501
+        """Gets the workflow_id of this LPlanWorkflowTaskCreateRequest.  # noqa: E501
 
 
-        :return: The workflow_id of this PlanWorkflowTaskCreateRequest.  # noqa: E501
+        :return: The workflow_id of this LPlanWorkflowTaskCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._workflow_id
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this PlanWorkflowTaskCreateRequest.
+        """Sets the workflow_id of this LPlanWorkflowTaskCreateRequest.
 
 
-        :param workflow_id: The workflow_id of this PlanWorkflowTaskCreateRequest.  # noqa: E501
+        :param workflow_id: The workflow_id of this LPlanWorkflowTaskCreateRequest.  # noqa: E501
         :type: str
         """
         if workflow_id is None:
@@ -84,7 +84,7 @@ class LPlanWorkflowTaskCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanWorkflowTaskCreateRequest, dict):
+        if issubclass(LPlanWorkflowTaskCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LPlanWorkflowTaskCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanWorkflowTaskCreateRequest):
+        if not isinstance(other, LPlanWorkflowTaskCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

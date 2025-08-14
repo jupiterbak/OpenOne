@@ -59,7 +59,7 @@ class LOAuth2ApiToken(object):
     }
 
     def __init__(self, name=None, sid=None, env_id=None, client_id=None, user_id=None, issuer=None, token_type=None, status=None, access_scope=None, scopes=None, expired_at=None, created_at=None, active_at=None):  # noqa: E501
-        """OAuth2ApiToken - a model defined in Swagger"""  # noqa: E501
+        """LOAuth2ApiToken - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._sid = None
         self._env_id = None
@@ -91,22 +91,22 @@ class LOAuth2ApiToken(object):
 
     @property
     def name(self):
-        """Gets the name of this OAuth2ApiToken.  # noqa: E501
+        """Gets the name of this LOAuth2ApiToken.  # noqa: E501
 
         User-friendly description for the access token  # noqa: E501
 
-        :return: The name of this OAuth2ApiToken.  # noqa: E501
+        :return: The name of this LOAuth2ApiToken.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OAuth2ApiToken.
+        """Sets the name of this LOAuth2ApiToken.
 
         User-friendly description for the access token  # noqa: E501
 
-        :param name: The name of this OAuth2ApiToken.  # noqa: E501
+        :param name: The name of this LOAuth2ApiToken.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -116,22 +116,22 @@ class LOAuth2ApiToken(object):
 
     @property
     def sid(self):
-        """Gets the sid of this OAuth2ApiToken.  # noqa: E501
+        """Gets the sid of this LOAuth2ApiToken.  # noqa: E501
 
         Token Session ID  # noqa: E501
 
-        :return: The sid of this OAuth2ApiToken.  # noqa: E501
+        :return: The sid of this LOAuth2ApiToken.  # noqa: E501
         :rtype: str
         """
         return self._sid
 
     @sid.setter
     def sid(self, sid):
-        """Sets the sid of this OAuth2ApiToken.
+        """Sets the sid of this LOAuth2ApiToken.
 
         Token Session ID  # noqa: E501
 
-        :param sid: The sid of this OAuth2ApiToken.  # noqa: E501
+        :param sid: The sid of this LOAuth2ApiToken.  # noqa: E501
         :type: str
         """
         if sid is None:
@@ -141,22 +141,22 @@ class LOAuth2ApiToken(object):
 
     @property
     def env_id(self):
-        """Gets the env_id of this OAuth2ApiToken.  # noqa: E501
+        """Gets the env_id of this LOAuth2ApiToken.  # noqa: E501
 
         Token Auth Server environment ID  # noqa: E501
 
-        :return: The env_id of this OAuth2ApiToken.  # noqa: E501
+        :return: The env_id of this LOAuth2ApiToken.  # noqa: E501
         :rtype: str
         """
         return self._env_id
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this OAuth2ApiToken.
+        """Sets the env_id of this LOAuth2ApiToken.
 
         Token Auth Server environment ID  # noqa: E501
 
-        :param env_id: The env_id of this OAuth2ApiToken.  # noqa: E501
+        :param env_id: The env_id of this LOAuth2ApiToken.  # noqa: E501
         :type: str
         """
         if env_id is None:
@@ -166,22 +166,22 @@ class LOAuth2ApiToken(object):
 
     @property
     def client_id(self):
-        """Gets the client_id of this OAuth2ApiToken.  # noqa: E501
+        """Gets the client_id of this LOAuth2ApiToken.  # noqa: E501
 
         Token Authentication Application ID  # noqa: E501
 
-        :return: The client_id of this OAuth2ApiToken.  # noqa: E501
+        :return: The client_id of this LOAuth2ApiToken.  # noqa: E501
         :rtype: str
         """
         return self._client_id
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this OAuth2ApiToken.
+        """Sets the client_id of this LOAuth2ApiToken.
 
         Token Authentication Application ID  # noqa: E501
 
-        :param client_id: The client_id of this OAuth2ApiToken.  # noqa: E501
+        :param client_id: The client_id of this LOAuth2ApiToken.  # noqa: E501
         :type: str
         """
         if client_id is None:
@@ -191,22 +191,22 @@ class LOAuth2ApiToken(object):
 
     @property
     def user_id(self):
-        """Gets the user_id of this OAuth2ApiToken.  # noqa: E501
+        """Gets the user_id of this LOAuth2ApiToken.  # noqa: E501
 
         Token User ID  # noqa: E501
 
-        :return: The user_id of this OAuth2ApiToken.  # noqa: E501
+        :return: The user_id of this LOAuth2ApiToken.  # noqa: E501
         :rtype: str
         """
         return self._user_id
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this OAuth2ApiToken.
+        """Sets the user_id of this LOAuth2ApiToken.
 
         Token User ID  # noqa: E501
 
-        :param user_id: The user_id of this OAuth2ApiToken.  # noqa: E501
+        :param user_id: The user_id of this LOAuth2ApiToken.  # noqa: E501
         :type: str
         """
         if user_id is None:
@@ -216,22 +216,22 @@ class LOAuth2ApiToken(object):
 
     @property
     def issuer(self):
-        """Gets the issuer of this OAuth2ApiToken.  # noqa: E501
+        """Gets the issuer of this LOAuth2ApiToken.  # noqa: E501
 
         Token Issuer URL  # noqa: E501
 
-        :return: The issuer of this OAuth2ApiToken.  # noqa: E501
+        :return: The issuer of this LOAuth2ApiToken.  # noqa: E501
         :rtype: str
         """
         return self._issuer
 
     @issuer.setter
     def issuer(self, issuer):
-        """Sets the issuer of this OAuth2ApiToken.
+        """Sets the issuer of this LOAuth2ApiToken.
 
         Token Issuer URL  # noqa: E501
 
-        :param issuer: The issuer of this OAuth2ApiToken.  # noqa: E501
+        :param issuer: The issuer of this LOAuth2ApiToken.  # noqa: E501
         :type: str
         """
         if issuer is None:
@@ -241,22 +241,22 @@ class LOAuth2ApiToken(object):
 
     @property
     def token_type(self):
-        """Gets the token_type of this OAuth2ApiToken.  # noqa: E501
+        """Gets the token_type of this LOAuth2ApiToken.  # noqa: E501
 
         Type of the token * `Workspace` - Workspace token * `Billing Account` - Billing account token  # noqa: E501
 
-        :return: The token_type of this OAuth2ApiToken.  # noqa: E501
+        :return: The token_type of this LOAuth2ApiToken.  # noqa: E501
         :rtype: str
         """
         return self._token_type
 
     @token_type.setter
     def token_type(self, token_type):
-        """Sets the token_type of this OAuth2ApiToken.
+        """Sets the token_type of this LOAuth2ApiToken.
 
         Type of the token * `Workspace` - Workspace token * `Billing Account` - Billing account token  # noqa: E501
 
-        :param token_type: The token_type of this OAuth2ApiToken.  # noqa: E501
+        :param token_type: The token_type of this LOAuth2ApiToken.  # noqa: E501
         :type: str
         """
         if token_type is None:
@@ -272,22 +272,22 @@ class LOAuth2ApiToken(object):
 
     @property
     def status(self):
-        """Gets the status of this OAuth2ApiToken.  # noqa: E501
+        """Gets the status of this LOAuth2ApiToken.  # noqa: E501
 
         Status of the token * `Enabled` - Token is active * `Disabled by User` - Token was disabled by user * `Disabled by Admin` - Token was disabled by admin * `Expired` - Token expired  # noqa: E501
 
-        :return: The status of this OAuth2ApiToken.  # noqa: E501
+        :return: The status of this LOAuth2ApiToken.  # noqa: E501
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this OAuth2ApiToken.
+        """Sets the status of this LOAuth2ApiToken.
 
         Status of the token * `Enabled` - Token is active * `Disabled by User` - Token was disabled by user * `Disabled by Admin` - Token was disabled by admin * `Expired` - Token expired  # noqa: E501
 
-        :param status: The status of this OAuth2ApiToken.  # noqa: E501
+        :param status: The status of this LOAuth2ApiToken.  # noqa: E501
         :type: str
         """
         if status is None:
@@ -303,22 +303,22 @@ class LOAuth2ApiToken(object):
 
     @property
     def access_scope(self):
-        """Gets the access_scope of this OAuth2ApiToken.  # noqa: E501
+        """Gets the access_scope of this LOAuth2ApiToken.  # noqa: E501
 
         Scope category of the token * `Full Access` - Token has full access scope * `Custom Access` - Token has custom access scope  # noqa: E501
 
-        :return: The access_scope of this OAuth2ApiToken.  # noqa: E501
+        :return: The access_scope of this LOAuth2ApiToken.  # noqa: E501
         :rtype: str
         """
         return self._access_scope
 
     @access_scope.setter
     def access_scope(self, access_scope):
-        """Sets the access_scope of this OAuth2ApiToken.
+        """Sets the access_scope of this LOAuth2ApiToken.
 
         Scope category of the token * `Full Access` - Token has full access scope * `Custom Access` - Token has custom access scope  # noqa: E501
 
-        :param access_scope: The access_scope of this OAuth2ApiToken.  # noqa: E501
+        :param access_scope: The access_scope of this LOAuth2ApiToken.  # noqa: E501
         :type: str
         """
         if access_scope is None:
@@ -334,22 +334,22 @@ class LOAuth2ApiToken(object):
 
     @property
     def scopes(self):
-        """Gets the scopes of this OAuth2ApiToken.  # noqa: E501
+        """Gets the scopes of this LOAuth2ApiToken.  # noqa: E501
 
         Scope of the token  # noqa: E501
 
-        :return: The scopes of this OAuth2ApiToken.  # noqa: E501
+        :return: The scopes of this LOAuth2ApiToken.  # noqa: E501
         :rtype: str
         """
         return self._scopes
 
     @scopes.setter
     def scopes(self, scopes):
-        """Sets the scopes of this OAuth2ApiToken.
+        """Sets the scopes of this LOAuth2ApiToken.
 
         Scope of the token  # noqa: E501
 
-        :param scopes: The scopes of this OAuth2ApiToken.  # noqa: E501
+        :param scopes: The scopes of this LOAuth2ApiToken.  # noqa: E501
         :type: str
         """
         if scopes is None:
@@ -359,22 +359,22 @@ class LOAuth2ApiToken(object):
 
     @property
     def expired_at(self):
-        """Gets the expired_at of this OAuth2ApiToken.  # noqa: E501
+        """Gets the expired_at of this LOAuth2ApiToken.  # noqa: E501
 
         Timestamp for when the access token expires. A `null` value indicates that the access token never expires.  # noqa: E501
 
-        :return: The expired_at of this OAuth2ApiToken.  # noqa: E501
+        :return: The expired_at of this LOAuth2ApiToken.  # noqa: E501
         :rtype: datetime
         """
         return self._expired_at
 
     @expired_at.setter
     def expired_at(self, expired_at):
-        """Sets the expired_at of this OAuth2ApiToken.
+        """Sets the expired_at of this LOAuth2ApiToken.
 
         Timestamp for when the access token expires. A `null` value indicates that the access token never expires.  # noqa: E501
 
-        :param expired_at: The expired_at of this OAuth2ApiToken.  # noqa: E501
+        :param expired_at: The expired_at of this LOAuth2ApiToken.  # noqa: E501
         :type: datetime
         """
         if expired_at is None:
@@ -384,22 +384,22 @@ class LOAuth2ApiToken(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this OAuth2ApiToken.  # noqa: E501
+        """Gets the created_at of this LOAuth2ApiToken.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this OAuth2ApiToken.  # noqa: E501
+        :return: The created_at of this LOAuth2ApiToken.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this OAuth2ApiToken.
+        """Sets the created_at of this LOAuth2ApiToken.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this OAuth2ApiToken.  # noqa: E501
+        :param created_at: The created_at of this LOAuth2ApiToken.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -409,22 +409,22 @@ class LOAuth2ApiToken(object):
 
     @property
     def active_at(self):
-        """Gets the active_at of this OAuth2ApiToken.  # noqa: E501
+        """Gets the active_at of this LOAuth2ApiToken.  # noqa: E501
 
         Timestamp for when the access token was last used. A `null` value indicates that the access token has never been used.  # noqa: E501
 
-        :return: The active_at of this OAuth2ApiToken.  # noqa: E501
+        :return: The active_at of this LOAuth2ApiToken.  # noqa: E501
         :rtype: datetime
         """
         return self._active_at
 
     @active_at.setter
     def active_at(self, active_at):
-        """Sets the active_at of this OAuth2ApiToken.
+        """Sets the active_at of this LOAuth2ApiToken.
 
         Timestamp for when the access token was last used. A `null` value indicates that the access token has never been used.  # noqa: E501
 
-        :param active_at: The active_at of this OAuth2ApiToken.  # noqa: E501
+        :param active_at: The active_at of this LOAuth2ApiToken.  # noqa: E501
         :type: datetime
         """
 
@@ -451,7 +451,7 @@ class LOAuth2ApiToken(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OAuth2ApiToken, dict):
+        if issubclass(LOAuth2ApiToken, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -467,7 +467,7 @@ class LOAuth2ApiToken(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OAuth2ApiToken):
+        if not isinstance(other, LOAuth2ApiToken):
             return False
 
         return self.__dict__ == other.__dict__

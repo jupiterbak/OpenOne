@@ -37,7 +37,7 @@ class LSshViewTunnelingBasic(object):
     }
 
     def __init__(self, ssh_tunneling_username=None, ssh_tunneling_password=None):  # noqa: E501
-        """SshViewTunnelingBasic - a model defined in Swagger"""  # noqa: E501
+        """LSshViewTunnelingBasic - a model defined in Swagger"""  # noqa: E501
         self._ssh_tunneling_username = None
         self._ssh_tunneling_password = None
         self.discriminator = None
@@ -47,20 +47,20 @@ class LSshViewTunnelingBasic(object):
 
     @property
     def ssh_tunneling_username(self):
-        """Gets the ssh_tunneling_username of this SshViewTunnelingBasic.  # noqa: E501
+        """Gets the ssh_tunneling_username of this LSshViewTunnelingBasic.  # noqa: E501
 
 
-        :return: The ssh_tunneling_username of this SshViewTunnelingBasic.  # noqa: E501
+        :return: The ssh_tunneling_username of this LSshViewTunnelingBasic.  # noqa: E501
         :rtype: str
         """
         return self._ssh_tunneling_username
 
     @ssh_tunneling_username.setter
     def ssh_tunneling_username(self, ssh_tunneling_username):
-        """Sets the ssh_tunneling_username of this SshViewTunnelingBasic.
+        """Sets the ssh_tunneling_username of this LSshViewTunnelingBasic.
 
 
-        :param ssh_tunneling_username: The ssh_tunneling_username of this SshViewTunnelingBasic.  # noqa: E501
+        :param ssh_tunneling_username: The ssh_tunneling_username of this LSshViewTunnelingBasic.  # noqa: E501
         :type: str
         """
         if ssh_tunneling_username is None:
@@ -70,20 +70,20 @@ class LSshViewTunnelingBasic(object):
 
     @property
     def ssh_tunneling_password(self):
-        """Gets the ssh_tunneling_password of this SshViewTunnelingBasic.  # noqa: E501
+        """Gets the ssh_tunneling_password of this LSshViewTunnelingBasic.  # noqa: E501
 
 
-        :return: The ssh_tunneling_password of this SshViewTunnelingBasic.  # noqa: E501
+        :return: The ssh_tunneling_password of this LSshViewTunnelingBasic.  # noqa: E501
         :rtype: str
         """
         return self._ssh_tunneling_password
 
     @ssh_tunneling_password.setter
     def ssh_tunneling_password(self, ssh_tunneling_password):
-        """Sets the ssh_tunneling_password of this SshViewTunnelingBasic.
+        """Sets the ssh_tunneling_password of this LSshViewTunnelingBasic.
 
 
-        :param ssh_tunneling_password: The ssh_tunneling_password of this SshViewTunnelingBasic.  # noqa: E501
+        :param ssh_tunneling_password: The ssh_tunneling_password of this LSshViewTunnelingBasic.  # noqa: E501
         :type: str
         """
 
@@ -110,7 +110,7 @@ class LSshViewTunnelingBasic(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(SshViewTunnelingBasic, dict):
+        if issubclass(LSshViewTunnelingBasic, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LSshViewTunnelingBasic(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SshViewTunnelingBasic):
+        if not isinstance(other, LSshViewTunnelingBasic):
             return False
 
         return self.__dict__ == other.__dict__

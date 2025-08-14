@@ -31,7 +31,7 @@ class LWorkloadErrorReportSchema(object):
         'person_id': 'int',
         'workspace_id': 'int',
         'status': 'str',
-        'workload_error': 'WorkloadErrorSchema'
+        'workload_error': 'LWorkloadErrorSchema'
     }
 
     attribute_map = {
@@ -43,7 +43,7 @@ class LWorkloadErrorReportSchema(object):
     }
 
     def __init__(self, job_group_id=None, person_id=None, workspace_id=None, status=None, workload_error=None):  # noqa: E501
-        """WorkloadErrorReportSchema - a model defined in Swagger"""  # noqa: E501
+        """LWorkloadErrorReportSchema - a model defined in Swagger"""  # noqa: E501
         self._job_group_id = None
         self._person_id = None
         self._workspace_id = None
@@ -59,20 +59,20 @@ class LWorkloadErrorReportSchema(object):
 
     @property
     def job_group_id(self):
-        """Gets the job_group_id of this WorkloadErrorReportSchema.  # noqa: E501
+        """Gets the job_group_id of this LWorkloadErrorReportSchema.  # noqa: E501
 
 
-        :return: The job_group_id of this WorkloadErrorReportSchema.  # noqa: E501
+        :return: The job_group_id of this LWorkloadErrorReportSchema.  # noqa: E501
         :rtype: int
         """
         return self._job_group_id
 
     @job_group_id.setter
     def job_group_id(self, job_group_id):
-        """Sets the job_group_id of this WorkloadErrorReportSchema.
+        """Sets the job_group_id of this LWorkloadErrorReportSchema.
 
 
-        :param job_group_id: The job_group_id of this WorkloadErrorReportSchema.  # noqa: E501
+        :param job_group_id: The job_group_id of this LWorkloadErrorReportSchema.  # noqa: E501
         :type: int
         """
         if job_group_id is None:
@@ -82,20 +82,20 @@ class LWorkloadErrorReportSchema(object):
 
     @property
     def person_id(self):
-        """Gets the person_id of this WorkloadErrorReportSchema.  # noqa: E501
+        """Gets the person_id of this LWorkloadErrorReportSchema.  # noqa: E501
 
 
-        :return: The person_id of this WorkloadErrorReportSchema.  # noqa: E501
+        :return: The person_id of this LWorkloadErrorReportSchema.  # noqa: E501
         :rtype: int
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this WorkloadErrorReportSchema.
+        """Sets the person_id of this LWorkloadErrorReportSchema.
 
 
-        :param person_id: The person_id of this WorkloadErrorReportSchema.  # noqa: E501
+        :param person_id: The person_id of this LWorkloadErrorReportSchema.  # noqa: E501
         :type: int
         """
 
@@ -103,20 +103,20 @@ class LWorkloadErrorReportSchema(object):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this WorkloadErrorReportSchema.  # noqa: E501
+        """Gets the workspace_id of this LWorkloadErrorReportSchema.  # noqa: E501
 
 
-        :return: The workspace_id of this WorkloadErrorReportSchema.  # noqa: E501
+        :return: The workspace_id of this LWorkloadErrorReportSchema.  # noqa: E501
         :rtype: int
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this WorkloadErrorReportSchema.
+        """Sets the workspace_id of this LWorkloadErrorReportSchema.
 
 
-        :param workspace_id: The workspace_id of this WorkloadErrorReportSchema.  # noqa: E501
+        :param workspace_id: The workspace_id of this LWorkloadErrorReportSchema.  # noqa: E501
         :type: int
         """
         if workspace_id is None:
@@ -126,20 +126,20 @@ class LWorkloadErrorReportSchema(object):
 
     @property
     def status(self):
-        """Gets the status of this WorkloadErrorReportSchema.  # noqa: E501
+        """Gets the status of this LWorkloadErrorReportSchema.  # noqa: E501
 
 
-        :return: The status of this WorkloadErrorReportSchema.  # noqa: E501
+        :return: The status of this LWorkloadErrorReportSchema.  # noqa: E501
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this WorkloadErrorReportSchema.
+        """Sets the status of this LWorkloadErrorReportSchema.
 
 
-        :param status: The status of this WorkloadErrorReportSchema.  # noqa: E501
+        :param status: The status of this LWorkloadErrorReportSchema.  # noqa: E501
         :type: str
         """
         if status is None:
@@ -149,21 +149,21 @@ class LWorkloadErrorReportSchema(object):
 
     @property
     def workload_error(self):
-        """Gets the workload_error of this WorkloadErrorReportSchema.  # noqa: E501
+        """Gets the workload_error of this LWorkloadErrorReportSchema.  # noqa: E501
 
 
-        :return: The workload_error of this WorkloadErrorReportSchema.  # noqa: E501
-        :rtype: WorkloadErrorSchema
+        :return: The workload_error of this LWorkloadErrorReportSchema.  # noqa: E501
+        :rtype: LWorkloadErrorSchema
         """
         return self._workload_error
 
     @workload_error.setter
     def workload_error(self, workload_error):
-        """Sets the workload_error of this WorkloadErrorReportSchema.
+        """Sets the workload_error of this LWorkloadErrorReportSchema.
 
 
-        :param workload_error: The workload_error of this WorkloadErrorReportSchema.  # noqa: E501
-        :type: WorkloadErrorSchema
+        :param workload_error: The workload_error of this LWorkloadErrorReportSchema.  # noqa: E501
+        :type: LWorkloadErrorSchema
         """
         if workload_error is None:
             raise ValueError("Invalid value for `workload_error`, must not be `None`")  # noqa: E501
@@ -191,7 +191,7 @@ class LWorkloadErrorReportSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WorkloadErrorReportSchema, dict):
+        if issubclass(LWorkloadErrorReportSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -207,7 +207,7 @@ class LWorkloadErrorReportSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WorkloadErrorReportSchema):
+        if not isinstance(other, LWorkloadErrorReportSchema):
             return False
 
         return self.__dict__ == other.__dict__

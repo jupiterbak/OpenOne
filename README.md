@@ -21,6 +21,21 @@ aac-mcp is an unofficial Model Context Protocol (MCP) server and Python API clie
 - **Python API Client** - Full-featured client for Alteryx Analytics Cloud
 - **Schedule Management** - Create, update, delete, enable/disable schedules
 - **Multi-Region Support** - Works with all AAC regions
+- **Comprehensive Legacy API Support** - Access to all legacy APIs including flows, datasets, jobs, connections, and more
+
+## Legacy API Coverage
+
+The client provides comprehensive access to all legacy Alteryx Analytics Cloud APIs:
+
+- **Account & Authentication** - Account management, API tokens, OAuth2, authorization
+- **AWS & Cloud Config** - AWS configuration, roles, storage, cloud settings
+- **Connections & Permissions** - Data connections, permissions, connector metadata
+- **Flows & Workflows** - Flow management, nodes, permissions, runs, notifications
+- **Data Management** - Imported datasets, wrangled datasets, folders
+- **Jobs & Scheduling** - Job management, job groups, scheduling
+- **Plans & Planning** - Plan management, nodes, edges, overrides
+- **Workspace & Users** - Workspace management, user management, write settings
+- **Scripts & Macros** - SQL scripts, macros, output objects, publications
 
 
 ## Installation

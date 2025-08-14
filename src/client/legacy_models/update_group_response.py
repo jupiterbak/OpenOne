@@ -27,12 +27,12 @@ class LUpdateGroupResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfupdateGroupResponseId',
-        'users': 'OneOfupdateGroupResponseUsers',
+        'id': 'LAnyOfupdateGroupResponseId',
+        'users': 'LOneOfupdateGroupResponseUsers',
         'policies': 'list[object]',
         'name': 'str',
         'display_name': 'str',
-        'workspace_id': 'AnyOfupdateGroupResponseWorkspaceId',
+        'workspace_id': 'LAnyOfupdateGroupResponseWorkspaceId',
         'status': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime',
@@ -57,7 +57,7 @@ class LUpdateGroupResponse(object):
     }
 
     def __init__(self, id=None, users=None, policies=None, name=None, display_name=None, workspace_id=None, status=None, created_at=None, updated_at=None, auto_provisioned=None, location=None, etag=None):  # noqa: E501
-        """UpdateGroupResponse - a model defined in Swagger"""  # noqa: E501
+        """LUpdateGroupResponse - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._users = None
         self._policies = None
@@ -91,21 +91,21 @@ class LUpdateGroupResponse(object):
 
     @property
     def id(self):
-        """Gets the id of this UpdateGroupResponse.  # noqa: E501
+        """Gets the id of this LUpdateGroupResponse.  # noqa: E501
 
 
-        :return: The id of this UpdateGroupResponse.  # noqa: E501
-        :rtype: AnyOfupdateGroupResponseId
+        :return: The id of this LUpdateGroupResponse.  # noqa: E501
+        :rtype: LAnyOfupdateGroupResponseId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateGroupResponse.
+        """Sets the id of this LUpdateGroupResponse.
 
 
-        :param id: The id of this UpdateGroupResponse.  # noqa: E501
-        :type: AnyOfupdateGroupResponseId
+        :param id: The id of this LUpdateGroupResponse.  # noqa: E501
+        :type: LAnyOfupdateGroupResponseId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -114,41 +114,41 @@ class LUpdateGroupResponse(object):
 
     @property
     def users(self):
-        """Gets the users of this UpdateGroupResponse.  # noqa: E501
+        """Gets the users of this LUpdateGroupResponse.  # noqa: E501
 
 
-        :return: The users of this UpdateGroupResponse.  # noqa: E501
-        :rtype: OneOfupdateGroupResponseUsers
+        :return: The users of this LUpdateGroupResponse.  # noqa: E501
+        :rtype: LOneOfupdateGroupResponseUsers
         """
         return self._users
 
     @users.setter
     def users(self, users):
-        """Sets the users of this UpdateGroupResponse.
+        """Sets the users of this LUpdateGroupResponse.
 
 
-        :param users: The users of this UpdateGroupResponse.  # noqa: E501
-        :type: OneOfupdateGroupResponseUsers
+        :param users: The users of this LUpdateGroupResponse.  # noqa: E501
+        :type: LOneOfupdateGroupResponseUsers
         """
 
         self._users = users
 
     @property
     def policies(self):
-        """Gets the policies of this UpdateGroupResponse.  # noqa: E501
+        """Gets the policies of this LUpdateGroupResponse.  # noqa: E501
 
 
-        :return: The policies of this UpdateGroupResponse.  # noqa: E501
+        :return: The policies of this LUpdateGroupResponse.  # noqa: E501
         :rtype: list[object]
         """
         return self._policies
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this UpdateGroupResponse.
+        """Sets the policies of this LUpdateGroupResponse.
 
 
-        :param policies: The policies of this UpdateGroupResponse.  # noqa: E501
+        :param policies: The policies of this LUpdateGroupResponse.  # noqa: E501
         :type: list[object]
         """
 
@@ -156,20 +156,20 @@ class LUpdateGroupResponse(object):
 
     @property
     def name(self):
-        """Gets the name of this UpdateGroupResponse.  # noqa: E501
+        """Gets the name of this LUpdateGroupResponse.  # noqa: E501
 
 
-        :return: The name of this UpdateGroupResponse.  # noqa: E501
+        :return: The name of this LUpdateGroupResponse.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateGroupResponse.
+        """Sets the name of this LUpdateGroupResponse.
 
 
-        :param name: The name of this UpdateGroupResponse.  # noqa: E501
+        :param name: The name of this LUpdateGroupResponse.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -179,20 +179,20 @@ class LUpdateGroupResponse(object):
 
     @property
     def display_name(self):
-        """Gets the display_name of this UpdateGroupResponse.  # noqa: E501
+        """Gets the display_name of this LUpdateGroupResponse.  # noqa: E501
 
 
-        :return: The display_name of this UpdateGroupResponse.  # noqa: E501
+        :return: The display_name of this LUpdateGroupResponse.  # noqa: E501
         :rtype: str
         """
         return self._display_name
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this UpdateGroupResponse.
+        """Sets the display_name of this LUpdateGroupResponse.
 
 
-        :param display_name: The display_name of this UpdateGroupResponse.  # noqa: E501
+        :param display_name: The display_name of this LUpdateGroupResponse.  # noqa: E501
         :type: str
         """
 
@@ -200,21 +200,21 @@ class LUpdateGroupResponse(object):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdateGroupResponse.  # noqa: E501
+        """Gets the workspace_id of this LUpdateGroupResponse.  # noqa: E501
 
 
-        :return: The workspace_id of this UpdateGroupResponse.  # noqa: E501
-        :rtype: AnyOfupdateGroupResponseWorkspaceId
+        :return: The workspace_id of this LUpdateGroupResponse.  # noqa: E501
+        :rtype: LAnyOfupdateGroupResponseWorkspaceId
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdateGroupResponse.
+        """Sets the workspace_id of this LUpdateGroupResponse.
 
 
-        :param workspace_id: The workspace_id of this UpdateGroupResponse.  # noqa: E501
-        :type: AnyOfupdateGroupResponseWorkspaceId
+        :param workspace_id: The workspace_id of this LUpdateGroupResponse.  # noqa: E501
+        :type: LAnyOfupdateGroupResponseWorkspaceId
         """
         if workspace_id is None:
             raise ValueError("Invalid value for `workspace_id`, must not be `None`")  # noqa: E501
@@ -223,20 +223,20 @@ class LUpdateGroupResponse(object):
 
     @property
     def status(self):
-        """Gets the status of this UpdateGroupResponse.  # noqa: E501
+        """Gets the status of this LUpdateGroupResponse.  # noqa: E501
 
 
-        :return: The status of this UpdateGroupResponse.  # noqa: E501
+        :return: The status of this LUpdateGroupResponse.  # noqa: E501
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateGroupResponse.
+        """Sets the status of this LUpdateGroupResponse.
 
 
-        :param status: The status of this UpdateGroupResponse.  # noqa: E501
+        :param status: The status of this LUpdateGroupResponse.  # noqa: E501
         :type: str
         """
         if status is None:
@@ -246,22 +246,22 @@ class LUpdateGroupResponse(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdateGroupResponse.  # noqa: E501
+        """Gets the created_at of this LUpdateGroupResponse.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this UpdateGroupResponse.  # noqa: E501
+        :return: The created_at of this LUpdateGroupResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdateGroupResponse.
+        """Sets the created_at of this LUpdateGroupResponse.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this UpdateGroupResponse.  # noqa: E501
+        :param created_at: The created_at of this LUpdateGroupResponse.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -271,22 +271,22 @@ class LUpdateGroupResponse(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateGroupResponse.  # noqa: E501
+        """Gets the updated_at of this LUpdateGroupResponse.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this UpdateGroupResponse.  # noqa: E501
+        :return: The updated_at of this LUpdateGroupResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateGroupResponse.
+        """Sets the updated_at of this LUpdateGroupResponse.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this UpdateGroupResponse.  # noqa: E501
+        :param updated_at: The updated_at of this LUpdateGroupResponse.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -296,20 +296,20 @@ class LUpdateGroupResponse(object):
 
     @property
     def auto_provisioned(self):
-        """Gets the auto_provisioned of this UpdateGroupResponse.  # noqa: E501
+        """Gets the auto_provisioned of this LUpdateGroupResponse.  # noqa: E501
 
 
-        :return: The auto_provisioned of this UpdateGroupResponse.  # noqa: E501
+        :return: The auto_provisioned of this LUpdateGroupResponse.  # noqa: E501
         :rtype: bool
         """
         return self._auto_provisioned
 
     @auto_provisioned.setter
     def auto_provisioned(self, auto_provisioned):
-        """Sets the auto_provisioned of this UpdateGroupResponse.
+        """Sets the auto_provisioned of this LUpdateGroupResponse.
 
 
-        :param auto_provisioned: The auto_provisioned of this UpdateGroupResponse.  # noqa: E501
+        :param auto_provisioned: The auto_provisioned of this LUpdateGroupResponse.  # noqa: E501
         :type: bool
         """
         if auto_provisioned is None:
@@ -319,20 +319,20 @@ class LUpdateGroupResponse(object):
 
     @property
     def location(self):
-        """Gets the location of this UpdateGroupResponse.  # noqa: E501
+        """Gets the location of this LUpdateGroupResponse.  # noqa: E501
 
 
-        :return: The location of this UpdateGroupResponse.  # noqa: E501
+        :return: The location of this LUpdateGroupResponse.  # noqa: E501
         :rtype: str
         """
         return self._location
 
     @location.setter
     def location(self, location):
-        """Sets the location of this UpdateGroupResponse.
+        """Sets the location of this LUpdateGroupResponse.
 
 
-        :param location: The location of this UpdateGroupResponse.  # noqa: E501
+        :param location: The location of this LUpdateGroupResponse.  # noqa: E501
         :type: str
         """
 
@@ -340,20 +340,20 @@ class LUpdateGroupResponse(object):
 
     @property
     def etag(self):
-        """Gets the etag of this UpdateGroupResponse.  # noqa: E501
+        """Gets the etag of this LUpdateGroupResponse.  # noqa: E501
 
 
-        :return: The etag of this UpdateGroupResponse.  # noqa: E501
+        :return: The etag of this LUpdateGroupResponse.  # noqa: E501
         :rtype: str
         """
         return self._etag
 
     @etag.setter
     def etag(self, etag):
-        """Sets the etag of this UpdateGroupResponse.
+        """Sets the etag of this LUpdateGroupResponse.
 
 
-        :param etag: The etag of this UpdateGroupResponse.  # noqa: E501
+        :param etag: The etag of this LUpdateGroupResponse.  # noqa: E501
         :type: str
         """
 
@@ -380,7 +380,7 @@ class LUpdateGroupResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(UpdateGroupResponse, dict):
+        if issubclass(LUpdateGroupResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -396,7 +396,7 @@ class LUpdateGroupResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdateGroupResponse):
+        if not isinstance(other, LUpdateGroupResponse):
             return False
 
         return self.__dict__ == other.__dict__

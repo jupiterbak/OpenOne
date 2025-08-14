@@ -43,7 +43,7 @@ class LDatabricksCluster(object):
     }
 
     def __init__(self, databricks_cluster_id=None, person_id=None, id=None, created_at=None, updated_at=None):  # noqa: E501
-        """DatabricksCluster - a model defined in Swagger"""  # noqa: E501
+        """LDatabricksCluster - a model defined in Swagger"""  # noqa: E501
         self._databricks_cluster_id = None
         self._person_id = None
         self._id = None
@@ -60,20 +60,20 @@ class LDatabricksCluster(object):
 
     @property
     def databricks_cluster_id(self):
-        """Gets the databricks_cluster_id of this DatabricksCluster.  # noqa: E501
+        """Gets the databricks_cluster_id of this LDatabricksCluster.  # noqa: E501
 
 
-        :return: The databricks_cluster_id of this DatabricksCluster.  # noqa: E501
+        :return: The databricks_cluster_id of this LDatabricksCluster.  # noqa: E501
         :rtype: str
         """
         return self._databricks_cluster_id
 
     @databricks_cluster_id.setter
     def databricks_cluster_id(self, databricks_cluster_id):
-        """Sets the databricks_cluster_id of this DatabricksCluster.
+        """Sets the databricks_cluster_id of this LDatabricksCluster.
 
 
-        :param databricks_cluster_id: The databricks_cluster_id of this DatabricksCluster.  # noqa: E501
+        :param databricks_cluster_id: The databricks_cluster_id of this LDatabricksCluster.  # noqa: E501
         :type: str
         """
 
@@ -81,20 +81,20 @@ class LDatabricksCluster(object):
 
     @property
     def person_id(self):
-        """Gets the person_id of this DatabricksCluster.  # noqa: E501
+        """Gets the person_id of this LDatabricksCluster.  # noqa: E501
 
 
-        :return: The person_id of this DatabricksCluster.  # noqa: E501
+        :return: The person_id of this LDatabricksCluster.  # noqa: E501
         :rtype: int
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this DatabricksCluster.
+        """Sets the person_id of this LDatabricksCluster.
 
 
-        :param person_id: The person_id of this DatabricksCluster.  # noqa: E501
+        :param person_id: The person_id of this LDatabricksCluster.  # noqa: E501
         :type: int
         """
 
@@ -102,22 +102,22 @@ class LDatabricksCluster(object):
 
     @property
     def id(self):
-        """Gets the id of this DatabricksCluster.  # noqa: E501
+        """Gets the id of this LDatabricksCluster.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this DatabricksCluster.  # noqa: E501
+        :return: The id of this LDatabricksCluster.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DatabricksCluster.
+        """Sets the id of this LDatabricksCluster.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this DatabricksCluster.  # noqa: E501
+        :param id: The id of this LDatabricksCluster.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -127,22 +127,22 @@ class LDatabricksCluster(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this DatabricksCluster.  # noqa: E501
+        """Gets the created_at of this LDatabricksCluster.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this DatabricksCluster.  # noqa: E501
+        :return: The created_at of this LDatabricksCluster.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this DatabricksCluster.
+        """Sets the created_at of this LDatabricksCluster.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this DatabricksCluster.  # noqa: E501
+        :param created_at: The created_at of this LDatabricksCluster.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -152,22 +152,22 @@ class LDatabricksCluster(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this DatabricksCluster.  # noqa: E501
+        """Gets the updated_at of this LDatabricksCluster.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this DatabricksCluster.  # noqa: E501
+        :return: The updated_at of this LDatabricksCluster.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this DatabricksCluster.
+        """Sets the updated_at of this LDatabricksCluster.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this DatabricksCluster.  # noqa: E501
+        :param updated_at: The updated_at of this LDatabricksCluster.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -196,7 +196,7 @@ class LDatabricksCluster(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DatabricksCluster, dict):
+        if issubclass(LDatabricksCluster, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -212,7 +212,7 @@ class LDatabricksCluster(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DatabricksCluster):
+        if not isinstance(other, LDatabricksCluster):
             return False
 
         return self.__dict__ == other.__dict__

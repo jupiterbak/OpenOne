@@ -28,7 +28,7 @@ class LAssociatedWorkspaceObject(object):
     """
     swagger_types = {
         'name': 'str',
-        'id': 'AnyOfassociatedWorkspaceObjectId'
+        'id': 'LAnyOfassociatedWorkspaceObjectId'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LAssociatedWorkspaceObject(object):
     }
 
     def __init__(self, name=None, id=None):  # noqa: E501
-        """AssociatedWorkspaceObject - a model defined in Swagger"""  # noqa: E501
+        """LAssociatedWorkspaceObject - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._id = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LAssociatedWorkspaceObject(object):
 
     @property
     def name(self):
-        """Gets the name of this AssociatedWorkspaceObject.  # noqa: E501
+        """Gets the name of this LAssociatedWorkspaceObject.  # noqa: E501
 
 
-        :return: The name of this AssociatedWorkspaceObject.  # noqa: E501
+        :return: The name of this LAssociatedWorkspaceObject.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AssociatedWorkspaceObject.
+        """Sets the name of this LAssociatedWorkspaceObject.
 
 
-        :param name: The name of this AssociatedWorkspaceObject.  # noqa: E501
+        :param name: The name of this LAssociatedWorkspaceObject.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -69,21 +69,21 @@ class LAssociatedWorkspaceObject(object):
 
     @property
     def id(self):
-        """Gets the id of this AssociatedWorkspaceObject.  # noqa: E501
+        """Gets the id of this LAssociatedWorkspaceObject.  # noqa: E501
 
 
-        :return: The id of this AssociatedWorkspaceObject.  # noqa: E501
-        :rtype: AnyOfassociatedWorkspaceObjectId
+        :return: The id of this LAssociatedWorkspaceObject.  # noqa: E501
+        :rtype: LAnyOfassociatedWorkspaceObjectId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AssociatedWorkspaceObject.
+        """Sets the id of this LAssociatedWorkspaceObject.
 
 
-        :param id: The id of this AssociatedWorkspaceObject.  # noqa: E501
-        :type: AnyOfassociatedWorkspaceObjectId
+        :param id: The id of this LAssociatedWorkspaceObject.  # noqa: E501
+        :type: LAnyOfassociatedWorkspaceObjectId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -111,7 +111,7 @@ class LAssociatedWorkspaceObject(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AssociatedWorkspaceObject, dict):
+        if issubclass(LAssociatedWorkspaceObject, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LAssociatedWorkspaceObject(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AssociatedWorkspaceObject):
+        if not isinstance(other, LAssociatedWorkspaceObject):
             return False
 
         return self.__dict__ == other.__dict__

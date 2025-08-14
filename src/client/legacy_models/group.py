@@ -33,8 +33,8 @@ class LGroup(object):
         'last_state_change': 'datetime',
         'created_at': 'datetime',
         'updated_at': 'datetime',
-        'maximal_privileges': 'list[Privilege]',
-        'members': 'Members'
+        'maximal_privileges': 'list[LPrivilege]',
+        'members': 'LMembers'
     }
 
     attribute_map = {
@@ -49,7 +49,7 @@ class LGroup(object):
     }
 
     def __init__(self, id=None, name=None, state=None, last_state_change=None, created_at=None, updated_at=None, maximal_privileges=None, members=None):  # noqa: E501
-        """Group - a model defined in Swagger"""  # noqa: E501
+        """LGroup - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._name = None
         self._state = None
@@ -76,22 +76,22 @@ class LGroup(object):
 
     @property
     def id(self):
-        """Gets the id of this Group.  # noqa: E501
+        """Gets the id of this LGroup.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this Group.  # noqa: E501
+        :return: The id of this LGroup.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Group.
+        """Sets the id of this LGroup.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this Group.  # noqa: E501
+        :param id: The id of this LGroup.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -101,20 +101,20 @@ class LGroup(object):
 
     @property
     def name(self):
-        """Gets the name of this Group.  # noqa: E501
+        """Gets the name of this LGroup.  # noqa: E501
 
 
-        :return: The name of this Group.  # noqa: E501
+        :return: The name of this LGroup.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Group.
+        """Sets the name of this LGroup.
 
 
-        :param name: The name of this Group.  # noqa: E501
+        :param name: The name of this LGroup.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -124,20 +124,20 @@ class LGroup(object):
 
     @property
     def state(self):
-        """Gets the state of this Group.  # noqa: E501
+        """Gets the state of this LGroup.  # noqa: E501
 
 
-        :return: The state of this Group.  # noqa: E501
+        :return: The state of this LGroup.  # noqa: E501
         :rtype: str
         """
         return self._state
 
     @state.setter
     def state(self, state):
-        """Sets the state of this Group.
+        """Sets the state of this LGroup.
 
 
-        :param state: The state of this Group.  # noqa: E501
+        :param state: The state of this LGroup.  # noqa: E501
         :type: str
         """
         allowed_values = ["active", "hidden"]  # noqa: E501
@@ -151,20 +151,20 @@ class LGroup(object):
 
     @property
     def last_state_change(self):
-        """Gets the last_state_change of this Group.  # noqa: E501
+        """Gets the last_state_change of this LGroup.  # noqa: E501
 
 
-        :return: The last_state_change of this Group.  # noqa: E501
+        :return: The last_state_change of this LGroup.  # noqa: E501
         :rtype: datetime
         """
         return self._last_state_change
 
     @last_state_change.setter
     def last_state_change(self, last_state_change):
-        """Sets the last_state_change of this Group.
+        """Sets the last_state_change of this LGroup.
 
 
-        :param last_state_change: The last_state_change of this Group.  # noqa: E501
+        :param last_state_change: The last_state_change of this LGroup.  # noqa: E501
         :type: datetime
         """
 
@@ -172,22 +172,22 @@ class LGroup(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this Group.  # noqa: E501
+        """Gets the created_at of this LGroup.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this Group.  # noqa: E501
+        :return: The created_at of this LGroup.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Group.
+        """Sets the created_at of this LGroup.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this Group.  # noqa: E501
+        :param created_at: The created_at of this LGroup.  # noqa: E501
         :type: datetime
         """
 
@@ -195,22 +195,22 @@ class LGroup(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Group.  # noqa: E501
+        """Gets the updated_at of this LGroup.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this Group.  # noqa: E501
+        :return: The updated_at of this LGroup.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Group.
+        """Sets the updated_at of this LGroup.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this Group.  # noqa: E501
+        :param updated_at: The updated_at of this LGroup.  # noqa: E501
         :type: datetime
         """
 
@@ -218,44 +218,44 @@ class LGroup(object):
 
     @property
     def maximal_privileges(self):
-        """Gets the maximal_privileges of this Group.  # noqa: E501
+        """Gets the maximal_privileges of this LGroup.  # noqa: E501
 
         List of the maximal privileges that this subject possesses  # noqa: E501
 
-        :return: The maximal_privileges of this Group.  # noqa: E501
-        :rtype: list[Privilege]
+        :return: The maximal_privileges of this LGroup.  # noqa: E501
+        :rtype: list[LPrivilege]
         """
         return self._maximal_privileges
 
     @maximal_privileges.setter
     def maximal_privileges(self, maximal_privileges):
-        """Sets the maximal_privileges of this Group.
+        """Sets the maximal_privileges of this LGroup.
 
         List of the maximal privileges that this subject possesses  # noqa: E501
 
-        :param maximal_privileges: The maximal_privileges of this Group.  # noqa: E501
-        :type: list[Privilege]
+        :param maximal_privileges: The maximal_privileges of this LGroup.  # noqa: E501
+        :type: list[LPrivilege]
         """
 
         self._maximal_privileges = maximal_privileges
 
     @property
     def members(self):
-        """Gets the members of this Group.  # noqa: E501
+        """Gets the members of this LGroup.  # noqa: E501
 
 
-        :return: The members of this Group.  # noqa: E501
-        :rtype: Members
+        :return: The members of this LGroup.  # noqa: E501
+        :rtype: LMembers
         """
         return self._members
 
     @members.setter
     def members(self, members):
-        """Sets the members of this Group.
+        """Sets the members of this LGroup.
 
 
-        :param members: The members of this Group.  # noqa: E501
-        :type: Members
+        :param members: The members of this LGroup.  # noqa: E501
+        :type: LMembers
         """
 
         self._members = members
@@ -281,7 +281,7 @@ class LGroup(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Group, dict):
+        if issubclass(LGroup, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -297,7 +297,7 @@ class LGroup(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Group):
+        if not isinstance(other, LGroup):
             return False
 
         return self.__dict__ == other.__dict__

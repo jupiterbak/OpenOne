@@ -39,7 +39,7 @@ class LPlanUpdateRequest(object):
     }
 
     def __init__(self, name=None, description=None, notifications_enabled=None):  # noqa: E501
-        """PlanUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LPlanUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._description = None
         self._notifications_enabled = None
@@ -53,22 +53,22 @@ class LPlanUpdateRequest(object):
 
     @property
     def name(self):
-        """Gets the name of this PlanUpdateRequest.  # noqa: E501
+        """Gets the name of this LPlanUpdateRequest.  # noqa: E501
 
         Display name of the plan.  # noqa: E501
 
-        :return: The name of this PlanUpdateRequest.  # noqa: E501
+        :return: The name of this LPlanUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PlanUpdateRequest.
+        """Sets the name of this LPlanUpdateRequest.
 
         Display name of the plan.  # noqa: E501
 
-        :param name: The name of this PlanUpdateRequest.  # noqa: E501
+        :param name: The name of this LPlanUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -76,22 +76,22 @@ class LPlanUpdateRequest(object):
 
     @property
     def description(self):
-        """Gets the description of this PlanUpdateRequest.  # noqa: E501
+        """Gets the description of this LPlanUpdateRequest.  # noqa: E501
 
         User-friendly description for the plan.  # noqa: E501
 
-        :return: The description of this PlanUpdateRequest.  # noqa: E501
+        :return: The description of this LPlanUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PlanUpdateRequest.
+        """Sets the description of this LPlanUpdateRequest.
 
         User-friendly description for the plan.  # noqa: E501
 
-        :param description: The description of this PlanUpdateRequest.  # noqa: E501
+        :param description: The description of this LPlanUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -99,22 +99,22 @@ class LPlanUpdateRequest(object):
 
     @property
     def notifications_enabled(self):
-        """Gets the notifications_enabled of this PlanUpdateRequest.  # noqa: E501
+        """Gets the notifications_enabled of this LPlanUpdateRequest.  # noqa: E501
 
         Indicate if notification will be sent for this plan  # noqa: E501
 
-        :return: The notifications_enabled of this PlanUpdateRequest.  # noqa: E501
+        :return: The notifications_enabled of this LPlanUpdateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._notifications_enabled
 
     @notifications_enabled.setter
     def notifications_enabled(self, notifications_enabled):
-        """Sets the notifications_enabled of this PlanUpdateRequest.
+        """Sets the notifications_enabled of this LPlanUpdateRequest.
 
         Indicate if notification will be sent for this plan  # noqa: E501
 
-        :param notifications_enabled: The notifications_enabled of this PlanUpdateRequest.  # noqa: E501
+        :param notifications_enabled: The notifications_enabled of this LPlanUpdateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -141,7 +141,7 @@ class LPlanUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanUpdateRequest, dict):
+        if issubclass(LPlanUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -157,7 +157,7 @@ class LPlanUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanUpdateRequest):
+        if not isinstance(other, LPlanUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

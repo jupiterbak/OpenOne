@@ -37,7 +37,7 @@ class LTableWatcherTrigger(object):
     }
 
     def __init__(self, id=None, table_watcher=None):  # noqa: E501
-        """TableWatcherTrigger - a model defined in Swagger"""  # noqa: E501
+        """LTableWatcherTrigger - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._table_watcher = None
         self.discriminator = None
@@ -47,22 +47,22 @@ class LTableWatcherTrigger(object):
 
     @property
     def id(self):
-        """Gets the id of this TableWatcherTrigger.  # noqa: E501
+        """Gets the id of this LTableWatcherTrigger.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this TableWatcherTrigger.  # noqa: E501
+        :return: The id of this LTableWatcherTrigger.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TableWatcherTrigger.
+        """Sets the id of this LTableWatcherTrigger.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this TableWatcherTrigger.  # noqa: E501
+        :param id: The id of this LTableWatcherTrigger.  # noqa: E501
         :type: int
         """
 
@@ -70,20 +70,20 @@ class LTableWatcherTrigger(object):
 
     @property
     def table_watcher(self):
-        """Gets the table_watcher of this TableWatcherTrigger.  # noqa: E501
+        """Gets the table_watcher of this LTableWatcherTrigger.  # noqa: E501
 
 
-        :return: The table_watcher of this TableWatcherTrigger.  # noqa: E501
+        :return: The table_watcher of this LTableWatcherTrigger.  # noqa: E501
         :rtype: object
         """
         return self._table_watcher
 
     @table_watcher.setter
     def table_watcher(self, table_watcher):
-        """Sets the table_watcher of this TableWatcherTrigger.
+        """Sets the table_watcher of this LTableWatcherTrigger.
 
 
-        :param table_watcher: The table_watcher of this TableWatcherTrigger.  # noqa: E501
+        :param table_watcher: The table_watcher of this LTableWatcherTrigger.  # noqa: E501
         :type: object
         """
         if table_watcher is None:
@@ -112,7 +112,7 @@ class LTableWatcherTrigger(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(TableWatcherTrigger, dict):
+        if issubclass(LTableWatcherTrigger, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -128,7 +128,7 @@ class LTableWatcherTrigger(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TableWatcherTrigger):
+        if not isinstance(other, LTableWatcherTrigger):
             return False
 
         return self.__dict__ == other.__dict__

@@ -33,7 +33,7 @@ class LAnyOfrunParameterOverrideCreateResponseFlowId(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfrunParameterOverrideCreateResponseFlowId - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfrunParameterOverrideCreateResponseFlowId - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfrunParameterOverrideCreateResponseFlowId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfrunParameterOverrideCreateResponseFlowId, dict):
+        if issubclass(LAnyOfrunParameterOverrideCreateResponseFlowId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfrunParameterOverrideCreateResponseFlowId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfrunParameterOverrideCreateResponseFlowId):
+        if not isinstance(other, LAnyOfrunParameterOverrideCreateResponseFlowId):
             return False
 
         return self.__dict__ == other.__dict__

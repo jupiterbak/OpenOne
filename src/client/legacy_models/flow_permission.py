@@ -43,7 +43,7 @@ class LFlowPermission(object):
     }
 
     def __init__(self, role=None, person=None, flow=None, created_at=None, updated_at=None):  # noqa: E501
-        """FlowPermission - a model defined in Swagger"""  # noqa: E501
+        """LFlowPermission - a model defined in Swagger"""  # noqa: E501
         self._role = None
         self._person = None
         self._flow = None
@@ -58,22 +58,22 @@ class LFlowPermission(object):
 
     @property
     def role(self):
-        """Gets the role of this FlowPermission.  # noqa: E501
+        """Gets the role of this LFlowPermission.  # noqa: E501
 
         Role * `owner` - Flow owner. * `collaborator` - Flow collaborator, can see and edit recipes in the flow. * `readOnly` - Read only user. Can see recipes in the flow.  # noqa: E501
 
-        :return: The role of this FlowPermission.  # noqa: E501
+        :return: The role of this LFlowPermission.  # noqa: E501
         :rtype: str
         """
         return self._role
 
     @role.setter
     def role(self, role):
-        """Sets the role of this FlowPermission.
+        """Sets the role of this LFlowPermission.
 
         Role * `owner` - Flow owner. * `collaborator` - Flow collaborator, can see and edit recipes in the flow. * `readOnly` - Read only user. Can see recipes in the flow.  # noqa: E501
 
-        :param role: The role of this FlowPermission.  # noqa: E501
+        :param role: The role of this LFlowPermission.  # noqa: E501
         :type: str
         """
         if role is None:
@@ -89,20 +89,20 @@ class LFlowPermission(object):
 
     @property
     def person(self):
-        """Gets the person of this FlowPermission.  # noqa: E501
+        """Gets the person of this LFlowPermission.  # noqa: E501
 
 
-        :return: The person of this FlowPermission.  # noqa: E501
+        :return: The person of this LFlowPermission.  # noqa: E501
         :rtype: object
         """
         return self._person
 
     @person.setter
     def person(self, person):
-        """Sets the person of this FlowPermission.
+        """Sets the person of this LFlowPermission.
 
 
-        :param person: The person of this FlowPermission.  # noqa: E501
+        :param person: The person of this LFlowPermission.  # noqa: E501
         :type: object
         """
         if person is None:
@@ -112,20 +112,20 @@ class LFlowPermission(object):
 
     @property
     def flow(self):
-        """Gets the flow of this FlowPermission.  # noqa: E501
+        """Gets the flow of this LFlowPermission.  # noqa: E501
 
 
-        :return: The flow of this FlowPermission.  # noqa: E501
+        :return: The flow of this LFlowPermission.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this FlowPermission.
+        """Sets the flow of this LFlowPermission.
 
 
-        :param flow: The flow of this FlowPermission.  # noqa: E501
+        :param flow: The flow of this LFlowPermission.  # noqa: E501
         :type: object
         """
         if flow is None:
@@ -135,22 +135,22 @@ class LFlowPermission(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this FlowPermission.  # noqa: E501
+        """Gets the created_at of this LFlowPermission.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this FlowPermission.  # noqa: E501
+        :return: The created_at of this LFlowPermission.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this FlowPermission.
+        """Sets the created_at of this LFlowPermission.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this FlowPermission.  # noqa: E501
+        :param created_at: The created_at of this LFlowPermission.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -160,22 +160,22 @@ class LFlowPermission(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this FlowPermission.  # noqa: E501
+        """Gets the updated_at of this LFlowPermission.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this FlowPermission.  # noqa: E501
+        :return: The updated_at of this LFlowPermission.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this FlowPermission.
+        """Sets the updated_at of this LFlowPermission.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this FlowPermission.  # noqa: E501
+        :param updated_at: The updated_at of this LFlowPermission.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -204,7 +204,7 @@ class LFlowPermission(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowPermission, dict):
+        if issubclass(LFlowPermission, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -220,7 +220,7 @@ class LFlowPermission(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowPermission):
+        if not isinstance(other, LFlowPermission):
             return False
 
         return self.__dict__ == other.__dict__

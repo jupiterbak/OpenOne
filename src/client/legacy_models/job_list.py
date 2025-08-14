@@ -27,7 +27,7 @@ class LJobList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[Job]',
+        'data': 'list[LJob]',
         'count': 'int'
     }
 
@@ -37,7 +37,7 @@ class LJobList(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """JobList - a model defined in Swagger"""  # noqa: E501
+        """LJobList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LJobList(object):
 
     @property
     def data(self):
-        """Gets the data of this JobList.  # noqa: E501
+        """Gets the data of this LJobList.  # noqa: E501
 
 
-        :return: The data of this JobList.  # noqa: E501
-        :rtype: list[Job]
+        :return: The data of this LJobList.  # noqa: E501
+        :rtype: list[LJob]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this JobList.
+        """Sets the data of this LJobList.
 
 
-        :param data: The data of this JobList.  # noqa: E501
-        :type: list[Job]
+        :param data: The data of this LJobList.  # noqa: E501
+        :type: list[LJob]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LJobList(object):
 
     @property
     def count(self):
-        """Gets the count of this JobList.  # noqa: E501
+        """Gets the count of this LJobList.  # noqa: E501
 
 
-        :return: The count of this JobList.  # noqa: E501
+        :return: The count of this LJobList.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this JobList.
+        """Sets the count of this LJobList.
 
 
-        :param count: The count of this JobList.  # noqa: E501
+        :param count: The count of this LJobList.  # noqa: E501
         :type: int
         """
 
@@ -110,7 +110,7 @@ class LJobList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(JobList, dict):
+        if issubclass(LJobList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LJobList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, JobList):
+        if not isinstance(other, LJobList):
             return False
 
         return self.__dict__ == other.__dict__

@@ -41,7 +41,7 @@ class LGeoJSON(object):
     }
 
     def __init__(self, name=None, geometry_type=None, crs=None, bbox=None):  # noqa: E501
-        """GeoJSON - a model defined in Swagger"""  # noqa: E501
+        """LGeoJSON - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._geometry_type = None
         self._crs = None
@@ -54,20 +54,20 @@ class LGeoJSON(object):
 
     @property
     def name(self):
-        """Gets the name of this GeoJSON.  # noqa: E501
+        """Gets the name of this LGeoJSON.  # noqa: E501
 
 
-        :return: The name of this GeoJSON.  # noqa: E501
+        :return: The name of this LGeoJSON.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GeoJSON.
+        """Sets the name of this LGeoJSON.
 
 
-        :param name: The name of this GeoJSON.  # noqa: E501
+        :param name: The name of this LGeoJSON.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -77,20 +77,20 @@ class LGeoJSON(object):
 
     @property
     def geometry_type(self):
-        """Gets the geometry_type of this GeoJSON.  # noqa: E501
+        """Gets the geometry_type of this LGeoJSON.  # noqa: E501
 
 
-        :return: The geometry_type of this GeoJSON.  # noqa: E501
+        :return: The geometry_type of this LGeoJSON.  # noqa: E501
         :rtype: list[str]
         """
         return self._geometry_type
 
     @geometry_type.setter
     def geometry_type(self, geometry_type):
-        """Sets the geometry_type of this GeoJSON.
+        """Sets the geometry_type of this LGeoJSON.
 
 
-        :param geometry_type: The geometry_type of this GeoJSON.  # noqa: E501
+        :param geometry_type: The geometry_type of this LGeoJSON.  # noqa: E501
         :type: list[str]
         """
         if geometry_type is None:
@@ -100,20 +100,20 @@ class LGeoJSON(object):
 
     @property
     def crs(self):
-        """Gets the crs of this GeoJSON.  # noqa: E501
+        """Gets the crs of this LGeoJSON.  # noqa: E501
 
 
-        :return: The crs of this GeoJSON.  # noqa: E501
+        :return: The crs of this LGeoJSON.  # noqa: E501
         :rtype: object
         """
         return self._crs
 
     @crs.setter
     def crs(self, crs):
-        """Sets the crs of this GeoJSON.
+        """Sets the crs of this LGeoJSON.
 
 
-        :param crs: The crs of this GeoJSON.  # noqa: E501
+        :param crs: The crs of this LGeoJSON.  # noqa: E501
         :type: object
         """
         if crs is None:
@@ -123,20 +123,20 @@ class LGeoJSON(object):
 
     @property
     def bbox(self):
-        """Gets the bbox of this GeoJSON.  # noqa: E501
+        """Gets the bbox of this LGeoJSON.  # noqa: E501
 
 
-        :return: The bbox of this GeoJSON.  # noqa: E501
+        :return: The bbox of this LGeoJSON.  # noqa: E501
         :rtype: object
         """
         return self._bbox
 
     @bbox.setter
     def bbox(self, bbox):
-        """Sets the bbox of this GeoJSON.
+        """Sets the bbox of this LGeoJSON.
 
 
-        :param bbox: The bbox of this GeoJSON.  # noqa: E501
+        :param bbox: The bbox of this LGeoJSON.  # noqa: E501
         :type: object
         """
         if bbox is None:
@@ -165,7 +165,7 @@ class LGeoJSON(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(GeoJSON, dict):
+        if issubclass(LGeoJSON, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -181,7 +181,7 @@ class LGeoJSON(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, GeoJSON):
+        if not isinstance(other, LGeoJSON):
             return False
 
         return self.__dict__ == other.__dict__

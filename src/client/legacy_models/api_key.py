@@ -35,27 +35,27 @@ class LApiKey(object):
     }
 
     def __init__(self, api_key=None):  # noqa: E501
-        """ApiKey - a model defined in Swagger"""  # noqa: E501
+        """LApiKey - a model defined in Swagger"""  # noqa: E501
         self._api_key = None
         self.discriminator = None
         self.api_key = api_key
 
     @property
     def api_key(self):
-        """Gets the api_key of this ApiKey.  # noqa: E501
+        """Gets the api_key of this LApiKey.  # noqa: E501
 
 
-        :return: The api_key of this ApiKey.  # noqa: E501
+        :return: The api_key of this LApiKey.  # noqa: E501
         :rtype: str
         """
         return self._api_key
 
     @api_key.setter
     def api_key(self, api_key):
-        """Sets the api_key of this ApiKey.
+        """Sets the api_key of this LApiKey.
 
 
-        :param api_key: The api_key of this ApiKey.  # noqa: E501
+        :param api_key: The api_key of this LApiKey.  # noqa: E501
         :type: str
         """
         if api_key is None:
@@ -84,7 +84,7 @@ class LApiKey(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ApiKey, dict):
+        if issubclass(LApiKey, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LApiKey(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ApiKey):
+        if not isinstance(other, LApiKey):
             return False
 
         return self.__dict__ == other.__dict__

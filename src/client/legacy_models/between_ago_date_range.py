@@ -28,7 +28,7 @@ class LBetweenAgoDateRange(object):
     """
     swagger_types = {
         'timezone': 'str',
-        'formats': 'AnyOfbetweenAgoDateRangeFormats',
+        'formats': 'LAnyOfbetweenAgoDateRangeFormats',
         'between_ago': 'object'
     }
 
@@ -39,7 +39,7 @@ class LBetweenAgoDateRange(object):
     }
 
     def __init__(self, timezone=None, formats=None, between_ago=None):  # noqa: E501
-        """BetweenAgoDateRange - a model defined in Swagger"""  # noqa: E501
+        """LBetweenAgoDateRange - a model defined in Swagger"""  # noqa: E501
         self._timezone = None
         self._formats = None
         self._between_ago = None
@@ -50,22 +50,22 @@ class LBetweenAgoDateRange(object):
 
     @property
     def timezone(self):
-        """Gets the timezone of this BetweenAgoDateRange.  # noqa: E501
+        """Gets the timezone of this LBetweenAgoDateRange.  # noqa: E501
 
         ISO Timezone, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :return: The timezone of this BetweenAgoDateRange.  # noqa: E501
+        :return: The timezone of this LBetweenAgoDateRange.  # noqa: E501
         :rtype: str
         """
         return self._timezone
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this BetweenAgoDateRange.
+        """Sets the timezone of this LBetweenAgoDateRange.
 
         ISO Timezone, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :param timezone: The timezone of this BetweenAgoDateRange.  # noqa: E501
+        :param timezone: The timezone of this LBetweenAgoDateRange.  # noqa: E501
         :type: str
         """
         if timezone is None:
@@ -75,21 +75,21 @@ class LBetweenAgoDateRange(object):
 
     @property
     def formats(self):
-        """Gets the formats of this BetweenAgoDateRange.  # noqa: E501
+        """Gets the formats of this LBetweenAgoDateRange.  # noqa: E501
 
 
-        :return: The formats of this BetweenAgoDateRange.  # noqa: E501
-        :rtype: AnyOfbetweenAgoDateRangeFormats
+        :return: The formats of this LBetweenAgoDateRange.  # noqa: E501
+        :rtype: LAnyOfbetweenAgoDateRangeFormats
         """
         return self._formats
 
     @formats.setter
     def formats(self, formats):
-        """Sets the formats of this BetweenAgoDateRange.
+        """Sets the formats of this LBetweenAgoDateRange.
 
 
-        :param formats: The formats of this BetweenAgoDateRange.  # noqa: E501
-        :type: AnyOfbetweenAgoDateRangeFormats
+        :param formats: The formats of this LBetweenAgoDateRange.  # noqa: E501
+        :type: LAnyOfbetweenAgoDateRangeFormats
         """
         if formats is None:
             raise ValueError("Invalid value for `formats`, must not be `None`")  # noqa: E501
@@ -98,22 +98,22 @@ class LBetweenAgoDateRange(object):
 
     @property
     def between_ago(self):
-        """Gets the between_ago of this BetweenAgoDateRange.  # noqa: E501
+        """Gets the between_ago of this LBetweenAgoDateRange.  # noqa: E501
 
         Date range that is defined by `between {from} and {to} {unit}s ago`. Eg. if unit is `week`, `from` is `3` and `to` is `1`, the date range is \"between 3 and 1 week ago\".  # noqa: E501
 
-        :return: The between_ago of this BetweenAgoDateRange.  # noqa: E501
+        :return: The between_ago of this LBetweenAgoDateRange.  # noqa: E501
         :rtype: object
         """
         return self._between_ago
 
     @between_ago.setter
     def between_ago(self, between_ago):
-        """Sets the between_ago of this BetweenAgoDateRange.
+        """Sets the between_ago of this LBetweenAgoDateRange.
 
         Date range that is defined by `between {from} and {to} {unit}s ago`. Eg. if unit is `week`, `from` is `3` and `to` is `1`, the date range is \"between 3 and 1 week ago\".  # noqa: E501
 
-        :param between_ago: The between_ago of this BetweenAgoDateRange.  # noqa: E501
+        :param between_ago: The between_ago of this LBetweenAgoDateRange.  # noqa: E501
         :type: object
         """
         if between_ago is None:
@@ -142,7 +142,7 @@ class LBetweenAgoDateRange(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(BetweenAgoDateRange, dict):
+        if issubclass(LBetweenAgoDateRange, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -158,7 +158,7 @@ class LBetweenAgoDateRange(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BetweenAgoDateRange):
+        if not isinstance(other, LBetweenAgoDateRange):
             return False
 
         return self.__dict__ == other.__dict__

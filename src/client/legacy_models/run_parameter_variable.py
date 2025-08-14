@@ -35,27 +35,27 @@ class LRunParameterVariable(object):
     }
 
     def __init__(self, variable=None):  # noqa: E501
-        """RunParameterVariable - a model defined in Swagger"""  # noqa: E501
+        """LRunParameterVariable - a model defined in Swagger"""  # noqa: E501
         self._variable = None
         self.discriminator = None
         self.variable = variable
 
     @property
     def variable(self):
-        """Gets the variable of this RunParameterVariable.  # noqa: E501
+        """Gets the variable of this LRunParameterVariable.  # noqa: E501
 
 
-        :return: The variable of this RunParameterVariable.  # noqa: E501
+        :return: The variable of this LRunParameterVariable.  # noqa: E501
         :rtype: object
         """
         return self._variable
 
     @variable.setter
     def variable(self, variable):
-        """Sets the variable of this RunParameterVariable.
+        """Sets the variable of this LRunParameterVariable.
 
 
-        :param variable: The variable of this RunParameterVariable.  # noqa: E501
+        :param variable: The variable of this LRunParameterVariable.  # noqa: E501
         :type: object
         """
         if variable is None:
@@ -84,7 +84,7 @@ class LRunParameterVariable(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunParameterVariable, dict):
+        if issubclass(LRunParameterVariable, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunParameterVariable(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunParameterVariable):
+        if not isinstance(other, LRunParameterVariable):
             return False
 
         return self.__dict__ == other.__dict__

@@ -59,7 +59,7 @@ class LDcmConnection(object):
     }
 
     def __init__(self, id=None, object_id=None, connection_id=None, connection_data=None, workspace_id=None, datasource=None, credentials=None, created_on=None, last_changed_on=None, deleted_on=None, person_id=None, created_at=None, updated_at=None):  # noqa: E501
-        """DcmConnection - a model defined in Swagger"""  # noqa: E501
+        """LDcmConnection - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._object_id = None
         self._connection_id = None
@@ -102,22 +102,22 @@ class LDcmConnection(object):
 
     @property
     def id(self):
-        """Gets the id of this DcmConnection.  # noqa: E501
+        """Gets the id of this LDcmConnection.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this DcmConnection.  # noqa: E501
+        :return: The id of this LDcmConnection.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DcmConnection.
+        """Sets the id of this LDcmConnection.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this DcmConnection.  # noqa: E501
+        :param id: The id of this LDcmConnection.  # noqa: E501
         :type: int
         """
 
@@ -125,22 +125,22 @@ class LDcmConnection(object):
 
     @property
     def object_id(self):
-        """Gets the object_id of this DcmConnection.  # noqa: E501
+        """Gets the object_id of this LDcmConnection.  # noqa: E501
 
         DCM Connection Object ID  # noqa: E501
 
-        :return: The object_id of this DcmConnection.  # noqa: E501
+        :return: The object_id of this LDcmConnection.  # noqa: E501
         :rtype: str
         """
         return self._object_id
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this DcmConnection.
+        """Sets the object_id of this LDcmConnection.
 
         DCM Connection Object ID  # noqa: E501
 
-        :param object_id: The object_id of this DcmConnection.  # noqa: E501
+        :param object_id: The object_id of this LDcmConnection.  # noqa: E501
         :type: str
         """
         if object_id is None:
@@ -150,22 +150,22 @@ class LDcmConnection(object):
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this DcmConnection.  # noqa: E501
+        """Gets the connection_id of this LDcmConnection.  # noqa: E501
 
         DCM Connection ID  # noqa: E501
 
-        :return: The connection_id of this DcmConnection.  # noqa: E501
+        :return: The connection_id of this LDcmConnection.  # noqa: E501
         :rtype: str
         """
         return self._connection_id
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this DcmConnection.
+        """Sets the connection_id of this LDcmConnection.
 
         DCM Connection ID  # noqa: E501
 
-        :param connection_id: The connection_id of this DcmConnection.  # noqa: E501
+        :param connection_id: The connection_id of this LDcmConnection.  # noqa: E501
         :type: str
         """
 
@@ -173,22 +173,22 @@ class LDcmConnection(object):
 
     @property
     def connection_data(self):
-        """Gets the connection_data of this DcmConnection.  # noqa: E501
+        """Gets the connection_data of this LDcmConnection.  # noqa: E501
 
         DCM Connection data  # noqa: E501
 
-        :return: The connection_data of this DcmConnection.  # noqa: E501
+        :return: The connection_data of this LDcmConnection.  # noqa: E501
         :rtype: object
         """
         return self._connection_data
 
     @connection_data.setter
     def connection_data(self, connection_data):
-        """Sets the connection_data of this DcmConnection.
+        """Sets the connection_data of this LDcmConnection.
 
         DCM Connection data  # noqa: E501
 
-        :param connection_data: The connection_data of this DcmConnection.  # noqa: E501
+        :param connection_data: The connection_data of this LDcmConnection.  # noqa: E501
         :type: object
         """
 
@@ -196,22 +196,22 @@ class LDcmConnection(object):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DcmConnection.  # noqa: E501
+        """Gets the workspace_id of this LDcmConnection.  # noqa: E501
 
         Workspace ID  # noqa: E501
 
-        :return: The workspace_id of this DcmConnection.  # noqa: E501
+        :return: The workspace_id of this LDcmConnection.  # noqa: E501
         :rtype: int
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DcmConnection.
+        """Sets the workspace_id of this LDcmConnection.
 
         Workspace ID  # noqa: E501
 
-        :param workspace_id: The workspace_id of this DcmConnection.  # noqa: E501
+        :param workspace_id: The workspace_id of this LDcmConnection.  # noqa: E501
         :type: int
         """
 
@@ -219,22 +219,22 @@ class LDcmConnection(object):
 
     @property
     def datasource(self):
-        """Gets the datasource of this DcmConnection.  # noqa: E501
+        """Gets the datasource of this LDcmConnection.  # noqa: E501
 
         DCM Datasource data  # noqa: E501
 
-        :return: The datasource of this DcmConnection.  # noqa: E501
+        :return: The datasource of this LDcmConnection.  # noqa: E501
         :rtype: object
         """
         return self._datasource
 
     @datasource.setter
     def datasource(self, datasource):
-        """Sets the datasource of this DcmConnection.
+        """Sets the datasource of this LDcmConnection.
 
         DCM Datasource data  # noqa: E501
 
-        :param datasource: The datasource of this DcmConnection.  # noqa: E501
+        :param datasource: The datasource of this LDcmConnection.  # noqa: E501
         :type: object
         """
 
@@ -242,22 +242,22 @@ class LDcmConnection(object):
 
     @property
     def credentials(self):
-        """Gets the credentials of this DcmConnection.  # noqa: E501
+        """Gets the credentials of this LDcmConnection.  # noqa: E501
 
         DCM Credentials data  # noqa: E501
 
-        :return: The credentials of this DcmConnection.  # noqa: E501
+        :return: The credentials of this LDcmConnection.  # noqa: E501
         :rtype: object
         """
         return self._credentials
 
     @credentials.setter
     def credentials(self, credentials):
-        """Sets the credentials of this DcmConnection.
+        """Sets the credentials of this LDcmConnection.
 
         DCM Credentials data  # noqa: E501
 
-        :param credentials: The credentials of this DcmConnection.  # noqa: E501
+        :param credentials: The credentials of this LDcmConnection.  # noqa: E501
         :type: object
         """
 
@@ -265,22 +265,22 @@ class LDcmConnection(object):
 
     @property
     def created_on(self):
-        """Gets the created_on of this DcmConnection.  # noqa: E501
+        """Gets the created_on of this LDcmConnection.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_on of this DcmConnection.  # noqa: E501
+        :return: The created_on of this LDcmConnection.  # noqa: E501
         :rtype: datetime
         """
         return self._created_on
 
     @created_on.setter
     def created_on(self, created_on):
-        """Sets the created_on of this DcmConnection.
+        """Sets the created_on of this LDcmConnection.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_on: The created_on of this DcmConnection.  # noqa: E501
+        :param created_on: The created_on of this LDcmConnection.  # noqa: E501
         :type: datetime
         """
 
@@ -288,22 +288,22 @@ class LDcmConnection(object):
 
     @property
     def last_changed_on(self):
-        """Gets the last_changed_on of this DcmConnection.  # noqa: E501
+        """Gets the last_changed_on of this LDcmConnection.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The last_changed_on of this DcmConnection.  # noqa: E501
+        :return: The last_changed_on of this LDcmConnection.  # noqa: E501
         :rtype: datetime
         """
         return self._last_changed_on
 
     @last_changed_on.setter
     def last_changed_on(self, last_changed_on):
-        """Sets the last_changed_on of this DcmConnection.
+        """Sets the last_changed_on of this LDcmConnection.
 
         The time this object was last updated.  # noqa: E501
 
-        :param last_changed_on: The last_changed_on of this DcmConnection.  # noqa: E501
+        :param last_changed_on: The last_changed_on of this LDcmConnection.  # noqa: E501
         :type: datetime
         """
 
@@ -311,22 +311,22 @@ class LDcmConnection(object):
 
     @property
     def deleted_on(self):
-        """Gets the deleted_on of this DcmConnection.  # noqa: E501
+        """Gets the deleted_on of this LDcmConnection.  # noqa: E501
 
         The time this object was deleted.  # noqa: E501
 
-        :return: The deleted_on of this DcmConnection.  # noqa: E501
+        :return: The deleted_on of this LDcmConnection.  # noqa: E501
         :rtype: datetime
         """
         return self._deleted_on
 
     @deleted_on.setter
     def deleted_on(self, deleted_on):
-        """Sets the deleted_on of this DcmConnection.
+        """Sets the deleted_on of this LDcmConnection.
 
         The time this object was deleted.  # noqa: E501
 
-        :param deleted_on: The deleted_on of this DcmConnection.  # noqa: E501
+        :param deleted_on: The deleted_on of this LDcmConnection.  # noqa: E501
         :type: datetime
         """
 
@@ -334,22 +334,22 @@ class LDcmConnection(object):
 
     @property
     def person_id(self):
-        """Gets the person_id of this DcmConnection.  # noqa: E501
+        """Gets the person_id of this LDcmConnection.  # noqa: E501
 
         Identifier of the user who created this object.  # noqa: E501
 
-        :return: The person_id of this DcmConnection.  # noqa: E501
+        :return: The person_id of this LDcmConnection.  # noqa: E501
         :rtype: int
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this DcmConnection.
+        """Sets the person_id of this LDcmConnection.
 
         Identifier of the user who created this object.  # noqa: E501
 
-        :param person_id: The person_id of this DcmConnection.  # noqa: E501
+        :param person_id: The person_id of this LDcmConnection.  # noqa: E501
         :type: int
         """
 
@@ -357,22 +357,22 @@ class LDcmConnection(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this DcmConnection.  # noqa: E501
+        """Gets the created_at of this LDcmConnection.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this DcmConnection.  # noqa: E501
+        :return: The created_at of this LDcmConnection.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this DcmConnection.
+        """Sets the created_at of this LDcmConnection.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this DcmConnection.  # noqa: E501
+        :param created_at: The created_at of this LDcmConnection.  # noqa: E501
         :type: datetime
         """
 
@@ -380,22 +380,22 @@ class LDcmConnection(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this DcmConnection.  # noqa: E501
+        """Gets the updated_at of this LDcmConnection.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this DcmConnection.  # noqa: E501
+        :return: The updated_at of this LDcmConnection.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this DcmConnection.
+        """Sets the updated_at of this LDcmConnection.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this DcmConnection.  # noqa: E501
+        :param updated_at: The updated_at of this LDcmConnection.  # noqa: E501
         :type: datetime
         """
 
@@ -422,7 +422,7 @@ class LDcmConnection(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DcmConnection, dict):
+        if issubclass(LDcmConnection, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -438,7 +438,7 @@ class LDcmConnection(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DcmConnection):
+        if not isinstance(other, LDcmConnection):
             return False
 
         return self.__dict__ == other.__dict__

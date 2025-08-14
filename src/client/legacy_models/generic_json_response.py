@@ -37,7 +37,7 @@ class LGenericJsonResponse(dict):
         attribute_map.update(dict.attribute_map)
 
     def __init__(self, *args, **kwargs):  # noqa: E501
-        """GenericJsonResponse - a model defined in Swagger"""  # noqa: E501
+        """LGenericJsonResponse - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
         dict.__init__(self, *args, **kwargs)
 
@@ -62,7 +62,7 @@ class LGenericJsonResponse(dict):
                 ))
             else:
                 result[attr] = value
-        if issubclass(GenericJsonResponse, dict):
+        if issubclass(LGenericJsonResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -78,7 +78,7 @@ class LGenericJsonResponse(dict):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, GenericJsonResponse):
+        if not isinstance(other, LGenericJsonResponse):
             return False
 
         return self.__dict__ == other.__dict__

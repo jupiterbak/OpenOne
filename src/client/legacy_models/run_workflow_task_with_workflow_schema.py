@@ -35,27 +35,27 @@ class LRunWorkflowTaskWithWorkflowSchema(object):
     }
 
     def __init__(self, run_workflow=None):  # noqa: E501
-        """RunWorkflowTaskWithWorkflowSchema - a model defined in Swagger"""  # noqa: E501
+        """LRunWorkflowTaskWithWorkflowSchema - a model defined in Swagger"""  # noqa: E501
         self._run_workflow = None
         self.discriminator = None
         self.run_workflow = run_workflow
 
     @property
     def run_workflow(self):
-        """Gets the run_workflow of this RunWorkflowTaskWithWorkflowSchema.  # noqa: E501
+        """Gets the run_workflow of this LRunWorkflowTaskWithWorkflowSchema.  # noqa: E501
 
 
-        :return: The run_workflow of this RunWorkflowTaskWithWorkflowSchema.  # noqa: E501
+        :return: The run_workflow of this LRunWorkflowTaskWithWorkflowSchema.  # noqa: E501
         :rtype: object
         """
         return self._run_workflow
 
     @run_workflow.setter
     def run_workflow(self, run_workflow):
-        """Sets the run_workflow of this RunWorkflowTaskWithWorkflowSchema.
+        """Sets the run_workflow of this LRunWorkflowTaskWithWorkflowSchema.
 
 
-        :param run_workflow: The run_workflow of this RunWorkflowTaskWithWorkflowSchema.  # noqa: E501
+        :param run_workflow: The run_workflow of this LRunWorkflowTaskWithWorkflowSchema.  # noqa: E501
         :type: object
         """
         if run_workflow is None:
@@ -84,7 +84,7 @@ class LRunWorkflowTaskWithWorkflowSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunWorkflowTaskWithWorkflowSchema, dict):
+        if issubclass(LRunWorkflowTaskWithWorkflowSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunWorkflowTaskWithWorkflowSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunWorkflowTaskWithWorkflowSchema):
+        if not isinstance(other, LRunWorkflowTaskWithWorkflowSchema):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,7 +27,7 @@ class LPlanWatcher(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfplanWatcherId',
+        'id': 'LAnyOfplanWatcherId',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'plan': 'object',
@@ -47,7 +47,7 @@ class LPlanWatcher(object):
     }
 
     def __init__(self, id=None, created_at=None, updated_at=None, plan=None, person=None, email=None, subscription_id=None):  # noqa: E501
-        """PlanWatcher - a model defined in Swagger"""  # noqa: E501
+        """LPlanWatcher - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._created_at = None
         self._updated_at = None
@@ -68,21 +68,21 @@ class LPlanWatcher(object):
 
     @property
     def id(self):
-        """Gets the id of this PlanWatcher.  # noqa: E501
+        """Gets the id of this LPlanWatcher.  # noqa: E501
 
 
-        :return: The id of this PlanWatcher.  # noqa: E501
-        :rtype: AnyOfplanWatcherId
+        :return: The id of this LPlanWatcher.  # noqa: E501
+        :rtype: LAnyOfplanWatcherId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PlanWatcher.
+        """Sets the id of this LPlanWatcher.
 
 
-        :param id: The id of this PlanWatcher.  # noqa: E501
-        :type: AnyOfplanWatcherId
+        :param id: The id of this LPlanWatcher.  # noqa: E501
+        :type: LAnyOfplanWatcherId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -91,22 +91,22 @@ class LPlanWatcher(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this PlanWatcher.  # noqa: E501
+        """Gets the created_at of this LPlanWatcher.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this PlanWatcher.  # noqa: E501
+        :return: The created_at of this LPlanWatcher.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this PlanWatcher.
+        """Sets the created_at of this LPlanWatcher.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this PlanWatcher.  # noqa: E501
+        :param created_at: The created_at of this LPlanWatcher.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -116,22 +116,22 @@ class LPlanWatcher(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this PlanWatcher.  # noqa: E501
+        """Gets the updated_at of this LPlanWatcher.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this PlanWatcher.  # noqa: E501
+        :return: The updated_at of this LPlanWatcher.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this PlanWatcher.
+        """Sets the updated_at of this LPlanWatcher.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this PlanWatcher.  # noqa: E501
+        :param updated_at: The updated_at of this LPlanWatcher.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -141,20 +141,20 @@ class LPlanWatcher(object):
 
     @property
     def plan(self):
-        """Gets the plan of this PlanWatcher.  # noqa: E501
+        """Gets the plan of this LPlanWatcher.  # noqa: E501
 
 
-        :return: The plan of this PlanWatcher.  # noqa: E501
+        :return: The plan of this LPlanWatcher.  # noqa: E501
         :rtype: object
         """
         return self._plan
 
     @plan.setter
     def plan(self, plan):
-        """Sets the plan of this PlanWatcher.
+        """Sets the plan of this LPlanWatcher.
 
 
-        :param plan: The plan of this PlanWatcher.  # noqa: E501
+        :param plan: The plan of this LPlanWatcher.  # noqa: E501
         :type: object
         """
         if plan is None:
@@ -164,20 +164,20 @@ class LPlanWatcher(object):
 
     @property
     def person(self):
-        """Gets the person of this PlanWatcher.  # noqa: E501
+        """Gets the person of this LPlanWatcher.  # noqa: E501
 
 
-        :return: The person of this PlanWatcher.  # noqa: E501
+        :return: The person of this LPlanWatcher.  # noqa: E501
         :rtype: object
         """
         return self._person
 
     @person.setter
     def person(self, person):
-        """Sets the person of this PlanWatcher.
+        """Sets the person of this LPlanWatcher.
 
 
-        :param person: The person of this PlanWatcher.  # noqa: E501
+        :param person: The person of this LPlanWatcher.  # noqa: E501
         :type: object
         """
 
@@ -185,20 +185,20 @@ class LPlanWatcher(object):
 
     @property
     def email(self):
-        """Gets the email of this PlanWatcher.  # noqa: E501
+        """Gets the email of this LPlanWatcher.  # noqa: E501
 
 
-        :return: The email of this PlanWatcher.  # noqa: E501
+        :return: The email of this LPlanWatcher.  # noqa: E501
         :rtype: str
         """
         return self._email
 
     @email.setter
     def email(self, email):
-        """Sets the email of this PlanWatcher.
+        """Sets the email of this LPlanWatcher.
 
 
-        :param email: The email of this PlanWatcher.  # noqa: E501
+        :param email: The email of this LPlanWatcher.  # noqa: E501
         :type: str
         """
 
@@ -206,20 +206,20 @@ class LPlanWatcher(object):
 
     @property
     def subscription_id(self):
-        """Gets the subscription_id of this PlanWatcher.  # noqa: E501
+        """Gets the subscription_id of this LPlanWatcher.  # noqa: E501
 
 
-        :return: The subscription_id of this PlanWatcher.  # noqa: E501
+        :return: The subscription_id of this LPlanWatcher.  # noqa: E501
         :rtype: str
         """
         return self._subscription_id
 
     @subscription_id.setter
     def subscription_id(self, subscription_id):
-        """Sets the subscription_id of this PlanWatcher.
+        """Sets the subscription_id of this LPlanWatcher.
 
 
-        :param subscription_id: The subscription_id of this PlanWatcher.  # noqa: E501
+        :param subscription_id: The subscription_id of this LPlanWatcher.  # noqa: E501
         :type: str
         """
         if subscription_id is None:
@@ -248,7 +248,7 @@ class LPlanWatcher(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanWatcher, dict):
+        if issubclass(LPlanWatcher, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -264,7 +264,7 @@ class LPlanWatcher(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanWatcher):
+        if not isinstance(other, LPlanWatcher):
             return False
 
         return self.__dict__ == other.__dict__

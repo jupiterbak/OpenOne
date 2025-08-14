@@ -27,7 +27,7 @@ class LWriteSettingList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[WriteSetting]',
+        'data': 'list[LWriteSetting]',
         'count': 'int'
     }
 
@@ -37,7 +37,7 @@ class LWriteSettingList(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """WriteSettingList - a model defined in Swagger"""  # noqa: E501
+        """LWriteSettingList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LWriteSettingList(object):
 
     @property
     def data(self):
-        """Gets the data of this WriteSettingList.  # noqa: E501
+        """Gets the data of this LWriteSettingList.  # noqa: E501
 
 
-        :return: The data of this WriteSettingList.  # noqa: E501
-        :rtype: list[WriteSetting]
+        :return: The data of this LWriteSettingList.  # noqa: E501
+        :rtype: list[LWriteSetting]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this WriteSettingList.
+        """Sets the data of this LWriteSettingList.
 
 
-        :param data: The data of this WriteSettingList.  # noqa: E501
-        :type: list[WriteSetting]
+        :param data: The data of this LWriteSettingList.  # noqa: E501
+        :type: list[LWriteSetting]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LWriteSettingList(object):
 
     @property
     def count(self):
-        """Gets the count of this WriteSettingList.  # noqa: E501
+        """Gets the count of this LWriteSettingList.  # noqa: E501
 
 
-        :return: The count of this WriteSettingList.  # noqa: E501
+        :return: The count of this LWriteSettingList.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this WriteSettingList.
+        """Sets the count of this LWriteSettingList.
 
 
-        :param count: The count of this WriteSettingList.  # noqa: E501
+        :param count: The count of this LWriteSettingList.  # noqa: E501
         :type: int
         """
 
@@ -110,7 +110,7 @@ class LWriteSettingList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WriteSettingList, dict):
+        if issubclass(LWriteSettingList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LWriteSettingList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WriteSettingList):
+        if not isinstance(other, LWriteSettingList):
             return False
 
         return self.__dict__ == other.__dict__

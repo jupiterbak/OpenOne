@@ -31,7 +31,7 @@ class LVfsNode(object):
         'name': 'str',
         'id': 'str',
         'child_count': 'int',
-        'children': 'list[VfsNode]',
+        'children': 'list[LVfsNode]',
         'size': 'int',
         'modification_time': 'datetime'
     }
@@ -47,7 +47,7 @@ class LVfsNode(object):
     }
 
     def __init__(self, type=None, name=None, id=None, child_count=None, children=None, size=None, modification_time=None):  # noqa: E501
-        """VfsNode - a model defined in Swagger"""  # noqa: E501
+        """LVfsNode - a model defined in Swagger"""  # noqa: E501
         self._type = None
         self._name = None
         self._id = None
@@ -70,20 +70,20 @@ class LVfsNode(object):
 
     @property
     def type(self):
-        """Gets the type of this VfsNode.  # noqa: E501
+        """Gets the type of this LVfsNode.  # noqa: E501
 
 
-        :return: The type of this VfsNode.  # noqa: E501
+        :return: The type of this LVfsNode.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VfsNode.
+        """Sets the type of this LVfsNode.
 
 
-        :param type: The type of this VfsNode.  # noqa: E501
+        :param type: The type of this LVfsNode.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -99,20 +99,20 @@ class LVfsNode(object):
 
     @property
     def name(self):
-        """Gets the name of this VfsNode.  # noqa: E501
+        """Gets the name of this LVfsNode.  # noqa: E501
 
 
-        :return: The name of this VfsNode.  # noqa: E501
+        :return: The name of this LVfsNode.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VfsNode.
+        """Sets the name of this LVfsNode.
 
 
-        :param name: The name of this VfsNode.  # noqa: E501
+        :param name: The name of this LVfsNode.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -122,20 +122,20 @@ class LVfsNode(object):
 
     @property
     def id(self):
-        """Gets the id of this VfsNode.  # noqa: E501
+        """Gets the id of this LVfsNode.  # noqa: E501
 
 
-        :return: The id of this VfsNode.  # noqa: E501
+        :return: The id of this LVfsNode.  # noqa: E501
         :rtype: str
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VfsNode.
+        """Sets the id of this LVfsNode.
 
 
-        :param id: The id of this VfsNode.  # noqa: E501
+        :param id: The id of this LVfsNode.  # noqa: E501
         :type: str
         """
         if id is None:
@@ -145,20 +145,20 @@ class LVfsNode(object):
 
     @property
     def child_count(self):
-        """Gets the child_count of this VfsNode.  # noqa: E501
+        """Gets the child_count of this LVfsNode.  # noqa: E501
 
 
-        :return: The child_count of this VfsNode.  # noqa: E501
+        :return: The child_count of this LVfsNode.  # noqa: E501
         :rtype: int
         """
         return self._child_count
 
     @child_count.setter
     def child_count(self, child_count):
-        """Sets the child_count of this VfsNode.
+        """Sets the child_count of this LVfsNode.
 
 
-        :param child_count: The child_count of this VfsNode.  # noqa: E501
+        :param child_count: The child_count of this LVfsNode.  # noqa: E501
         :type: int
         """
 
@@ -166,41 +166,41 @@ class LVfsNode(object):
 
     @property
     def children(self):
-        """Gets the children of this VfsNode.  # noqa: E501
+        """Gets the children of this LVfsNode.  # noqa: E501
 
 
-        :return: The children of this VfsNode.  # noqa: E501
-        :rtype: list[VfsNode]
+        :return: The children of this LVfsNode.  # noqa: E501
+        :rtype: list[LVfsNode]
         """
         return self._children
 
     @children.setter
     def children(self, children):
-        """Sets the children of this VfsNode.
+        """Sets the children of this LVfsNode.
 
 
-        :param children: The children of this VfsNode.  # noqa: E501
-        :type: list[VfsNode]
+        :param children: The children of this LVfsNode.  # noqa: E501
+        :type: list[LVfsNode]
         """
 
         self._children = children
 
     @property
     def size(self):
-        """Gets the size of this VfsNode.  # noqa: E501
+        """Gets the size of this LVfsNode.  # noqa: E501
 
 
-        :return: The size of this VfsNode.  # noqa: E501
+        :return: The size of this LVfsNode.  # noqa: E501
         :rtype: int
         """
         return self._size
 
     @size.setter
     def size(self, size):
-        """Sets the size of this VfsNode.
+        """Sets the size of this LVfsNode.
 
 
-        :param size: The size of this VfsNode.  # noqa: E501
+        :param size: The size of this LVfsNode.  # noqa: E501
         :type: int
         """
 
@@ -208,20 +208,20 @@ class LVfsNode(object):
 
     @property
     def modification_time(self):
-        """Gets the modification_time of this VfsNode.  # noqa: E501
+        """Gets the modification_time of this LVfsNode.  # noqa: E501
 
 
-        :return: The modification_time of this VfsNode.  # noqa: E501
+        :return: The modification_time of this LVfsNode.  # noqa: E501
         :rtype: datetime
         """
         return self._modification_time
 
     @modification_time.setter
     def modification_time(self, modification_time):
-        """Sets the modification_time of this VfsNode.
+        """Sets the modification_time of this LVfsNode.
 
 
-        :param modification_time: The modification_time of this VfsNode.  # noqa: E501
+        :param modification_time: The modification_time of this LVfsNode.  # noqa: E501
         :type: datetime
         """
 
@@ -248,7 +248,7 @@ class LVfsNode(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(VfsNode, dict):
+        if issubclass(LVfsNode, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -264,7 +264,7 @@ class LVfsNode(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, VfsNode):
+        if not isinstance(other, LVfsNode):
             return False
 
         return self.__dict__ == other.__dict__

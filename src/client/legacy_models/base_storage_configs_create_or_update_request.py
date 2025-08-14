@@ -41,7 +41,7 @@ class LBaseStorageConfigsCreateOrUpdateRequest(object):
     }
 
     def __init__(self, abfss=None, gs=None, tfs=None, s3=None):  # noqa: E501
-        """BaseStorageConfigsCreateOrUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LBaseStorageConfigsCreateOrUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._abfss = None
         self._gs = None
         self._tfs = None
@@ -58,20 +58,20 @@ class LBaseStorageConfigsCreateOrUpdateRequest(object):
 
     @property
     def abfss(self):
-        """Gets the abfss of this BaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
+        """Gets the abfss of this LBaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
 
 
-        :return: The abfss of this BaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
+        :return: The abfss of this LBaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
         :rtype: object
         """
         return self._abfss
 
     @abfss.setter
     def abfss(self, abfss):
-        """Sets the abfss of this BaseStorageConfigsCreateOrUpdateRequest.
+        """Sets the abfss of this LBaseStorageConfigsCreateOrUpdateRequest.
 
 
-        :param abfss: The abfss of this BaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
+        :param abfss: The abfss of this LBaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
         :type: object
         """
 
@@ -79,20 +79,20 @@ class LBaseStorageConfigsCreateOrUpdateRequest(object):
 
     @property
     def gs(self):
-        """Gets the gs of this BaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
+        """Gets the gs of this LBaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
 
 
-        :return: The gs of this BaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
+        :return: The gs of this LBaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
         :rtype: object
         """
         return self._gs
 
     @gs.setter
     def gs(self, gs):
-        """Sets the gs of this BaseStorageConfigsCreateOrUpdateRequest.
+        """Sets the gs of this LBaseStorageConfigsCreateOrUpdateRequest.
 
 
-        :param gs: The gs of this BaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
+        :param gs: The gs of this LBaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
         :type: object
         """
 
@@ -100,20 +100,20 @@ class LBaseStorageConfigsCreateOrUpdateRequest(object):
 
     @property
     def tfs(self):
-        """Gets the tfs of this BaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
+        """Gets the tfs of this LBaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
 
 
-        :return: The tfs of this BaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
+        :return: The tfs of this LBaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
         :rtype: object
         """
         return self._tfs
 
     @tfs.setter
     def tfs(self, tfs):
-        """Sets the tfs of this BaseStorageConfigsCreateOrUpdateRequest.
+        """Sets the tfs of this LBaseStorageConfigsCreateOrUpdateRequest.
 
 
-        :param tfs: The tfs of this BaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
+        :param tfs: The tfs of this LBaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
         :type: object
         """
 
@@ -121,20 +121,20 @@ class LBaseStorageConfigsCreateOrUpdateRequest(object):
 
     @property
     def s3(self):
-        """Gets the s3 of this BaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
+        """Gets the s3 of this LBaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
 
 
-        :return: The s3 of this BaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
+        :return: The s3 of this LBaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
         :rtype: object
         """
         return self._s3
 
     @s3.setter
     def s3(self, s3):
-        """Sets the s3 of this BaseStorageConfigsCreateOrUpdateRequest.
+        """Sets the s3 of this LBaseStorageConfigsCreateOrUpdateRequest.
 
 
-        :param s3: The s3 of this BaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
+        :param s3: The s3 of this LBaseStorageConfigsCreateOrUpdateRequest.  # noqa: E501
         :type: object
         """
 
@@ -161,7 +161,7 @@ class LBaseStorageConfigsCreateOrUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(BaseStorageConfigsCreateOrUpdateRequest, dict):
+        if issubclass(LBaseStorageConfigsCreateOrUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -177,7 +177,7 @@ class LBaseStorageConfigsCreateOrUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BaseStorageConfigsCreateOrUpdateRequest):
+        if not isinstance(other, LBaseStorageConfigsCreateOrUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

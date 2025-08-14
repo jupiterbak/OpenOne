@@ -27,14 +27,14 @@ class LPlanSnapshotRun(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfplanSnapshotRunId',
+        'id': 'LAnyOfplanSnapshotRunId',
         'status': 'str',
         'created_at': 'datetime',
         'finished_at': 'datetime',
         'started_at': 'datetime',
         'submitted_at': 'datetime',
         'updated_at': 'datetime',
-        'schedule_history_id': 'AnyOfplanSnapshotRunScheduleHistoryId',
+        'schedule_history_id': 'LAnyOfplanSnapshotRunScheduleHistoryId',
         'failed_to_cancel_some_jobs': 'bool',
         'plan': 'object',
         'next_run': 'object',
@@ -57,7 +57,7 @@ class LPlanSnapshotRun(object):
     }
 
     def __init__(self, id=None, status=None, created_at=None, finished_at=None, started_at=None, submitted_at=None, updated_at=None, schedule_history_id=None, failed_to_cancel_some_jobs=None, plan=None, next_run=None, previous_run=None):  # noqa: E501
-        """PlanSnapshotRun - a model defined in Swagger"""  # noqa: E501
+        """LPlanSnapshotRun - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._status = None
         self._created_at = None
@@ -94,21 +94,21 @@ class LPlanSnapshotRun(object):
 
     @property
     def id(self):
-        """Gets the id of this PlanSnapshotRun.  # noqa: E501
+        """Gets the id of this LPlanSnapshotRun.  # noqa: E501
 
 
-        :return: The id of this PlanSnapshotRun.  # noqa: E501
-        :rtype: AnyOfplanSnapshotRunId
+        :return: The id of this LPlanSnapshotRun.  # noqa: E501
+        :rtype: LAnyOfplanSnapshotRunId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PlanSnapshotRun.
+        """Sets the id of this LPlanSnapshotRun.
 
 
-        :param id: The id of this PlanSnapshotRun.  # noqa: E501
-        :type: AnyOfplanSnapshotRunId
+        :param id: The id of this LPlanSnapshotRun.  # noqa: E501
+        :type: LAnyOfplanSnapshotRunId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -117,20 +117,20 @@ class LPlanSnapshotRun(object):
 
     @property
     def status(self):
-        """Gets the status of this PlanSnapshotRun.  # noqa: E501
+        """Gets the status of this LPlanSnapshotRun.  # noqa: E501
 
 
-        :return: The status of this PlanSnapshotRun.  # noqa: E501
+        :return: The status of this LPlanSnapshotRun.  # noqa: E501
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PlanSnapshotRun.
+        """Sets the status of this LPlanSnapshotRun.
 
 
-        :param status: The status of this PlanSnapshotRun.  # noqa: E501
+        :param status: The status of this LPlanSnapshotRun.  # noqa: E501
         :type: str
         """
         if status is None:
@@ -146,22 +146,22 @@ class LPlanSnapshotRun(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this PlanSnapshotRun.  # noqa: E501
+        """Gets the created_at of this LPlanSnapshotRun.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this PlanSnapshotRun.  # noqa: E501
+        :return: The created_at of this LPlanSnapshotRun.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this PlanSnapshotRun.
+        """Sets the created_at of this LPlanSnapshotRun.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this PlanSnapshotRun.  # noqa: E501
+        :param created_at: The created_at of this LPlanSnapshotRun.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -171,22 +171,22 @@ class LPlanSnapshotRun(object):
 
     @property
     def finished_at(self):
-        """Gets the finished_at of this PlanSnapshotRun.  # noqa: E501
+        """Gets the finished_at of this LPlanSnapshotRun.  # noqa: E501
 
         The time the plan execution finished.  # noqa: E501
 
-        :return: The finished_at of this PlanSnapshotRun.  # noqa: E501
+        :return: The finished_at of this LPlanSnapshotRun.  # noqa: E501
         :rtype: datetime
         """
         return self._finished_at
 
     @finished_at.setter
     def finished_at(self, finished_at):
-        """Sets the finished_at of this PlanSnapshotRun.
+        """Sets the finished_at of this LPlanSnapshotRun.
 
         The time the plan execution finished.  # noqa: E501
 
-        :param finished_at: The finished_at of this PlanSnapshotRun.  # noqa: E501
+        :param finished_at: The finished_at of this LPlanSnapshotRun.  # noqa: E501
         :type: datetime
         """
 
@@ -194,22 +194,22 @@ class LPlanSnapshotRun(object):
 
     @property
     def started_at(self):
-        """Gets the started_at of this PlanSnapshotRun.  # noqa: E501
+        """Gets the started_at of this LPlanSnapshotRun.  # noqa: E501
 
         The time the plan execution started.  # noqa: E501
 
-        :return: The started_at of this PlanSnapshotRun.  # noqa: E501
+        :return: The started_at of this LPlanSnapshotRun.  # noqa: E501
         :rtype: datetime
         """
         return self._started_at
 
     @started_at.setter
     def started_at(self, started_at):
-        """Sets the started_at of this PlanSnapshotRun.
+        """Sets the started_at of this LPlanSnapshotRun.
 
         The time the plan execution started.  # noqa: E501
 
-        :param started_at: The started_at of this PlanSnapshotRun.  # noqa: E501
+        :param started_at: The started_at of this LPlanSnapshotRun.  # noqa: E501
         :type: datetime
         """
 
@@ -217,22 +217,22 @@ class LPlanSnapshotRun(object):
 
     @property
     def submitted_at(self):
-        """Gets the submitted_at of this PlanSnapshotRun.  # noqa: E501
+        """Gets the submitted_at of this LPlanSnapshotRun.  # noqa: E501
 
         The time the plan execution was submitted to the server.  # noqa: E501
 
-        :return: The submitted_at of this PlanSnapshotRun.  # noqa: E501
+        :return: The submitted_at of this LPlanSnapshotRun.  # noqa: E501
         :rtype: datetime
         """
         return self._submitted_at
 
     @submitted_at.setter
     def submitted_at(self, submitted_at):
-        """Sets the submitted_at of this PlanSnapshotRun.
+        """Sets the submitted_at of this LPlanSnapshotRun.
 
         The time the plan execution was submitted to the server.  # noqa: E501
 
-        :param submitted_at: The submitted_at of this PlanSnapshotRun.  # noqa: E501
+        :param submitted_at: The submitted_at of this LPlanSnapshotRun.  # noqa: E501
         :type: datetime
         """
 
@@ -240,22 +240,22 @@ class LPlanSnapshotRun(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this PlanSnapshotRun.  # noqa: E501
+        """Gets the updated_at of this LPlanSnapshotRun.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this PlanSnapshotRun.  # noqa: E501
+        :return: The updated_at of this LPlanSnapshotRun.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this PlanSnapshotRun.
+        """Sets the updated_at of this LPlanSnapshotRun.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this PlanSnapshotRun.  # noqa: E501
+        :param updated_at: The updated_at of this LPlanSnapshotRun.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -265,41 +265,41 @@ class LPlanSnapshotRun(object):
 
     @property
     def schedule_history_id(self):
-        """Gets the schedule_history_id of this PlanSnapshotRun.  # noqa: E501
+        """Gets the schedule_history_id of this LPlanSnapshotRun.  # noqa: E501
 
 
-        :return: The schedule_history_id of this PlanSnapshotRun.  # noqa: E501
-        :rtype: AnyOfplanSnapshotRunScheduleHistoryId
+        :return: The schedule_history_id of this LPlanSnapshotRun.  # noqa: E501
+        :rtype: LAnyOfplanSnapshotRunScheduleHistoryId
         """
         return self._schedule_history_id
 
     @schedule_history_id.setter
     def schedule_history_id(self, schedule_history_id):
-        """Sets the schedule_history_id of this PlanSnapshotRun.
+        """Sets the schedule_history_id of this LPlanSnapshotRun.
 
 
-        :param schedule_history_id: The schedule_history_id of this PlanSnapshotRun.  # noqa: E501
-        :type: AnyOfplanSnapshotRunScheduleHistoryId
+        :param schedule_history_id: The schedule_history_id of this LPlanSnapshotRun.  # noqa: E501
+        :type: LAnyOfplanSnapshotRunScheduleHistoryId
         """
 
         self._schedule_history_id = schedule_history_id
 
     @property
     def failed_to_cancel_some_jobs(self):
-        """Gets the failed_to_cancel_some_jobs of this PlanSnapshotRun.  # noqa: E501
+        """Gets the failed_to_cancel_some_jobs of this LPlanSnapshotRun.  # noqa: E501
 
 
-        :return: The failed_to_cancel_some_jobs of this PlanSnapshotRun.  # noqa: E501
+        :return: The failed_to_cancel_some_jobs of this LPlanSnapshotRun.  # noqa: E501
         :rtype: bool
         """
         return self._failed_to_cancel_some_jobs
 
     @failed_to_cancel_some_jobs.setter
     def failed_to_cancel_some_jobs(self, failed_to_cancel_some_jobs):
-        """Sets the failed_to_cancel_some_jobs of this PlanSnapshotRun.
+        """Sets the failed_to_cancel_some_jobs of this LPlanSnapshotRun.
 
 
-        :param failed_to_cancel_some_jobs: The failed_to_cancel_some_jobs of this PlanSnapshotRun.  # noqa: E501
+        :param failed_to_cancel_some_jobs: The failed_to_cancel_some_jobs of this LPlanSnapshotRun.  # noqa: E501
         :type: bool
         """
 
@@ -307,20 +307,20 @@ class LPlanSnapshotRun(object):
 
     @property
     def plan(self):
-        """Gets the plan of this PlanSnapshotRun.  # noqa: E501
+        """Gets the plan of this LPlanSnapshotRun.  # noqa: E501
 
 
-        :return: The plan of this PlanSnapshotRun.  # noqa: E501
+        :return: The plan of this LPlanSnapshotRun.  # noqa: E501
         :rtype: object
         """
         return self._plan
 
     @plan.setter
     def plan(self, plan):
-        """Sets the plan of this PlanSnapshotRun.
+        """Sets the plan of this LPlanSnapshotRun.
 
 
-        :param plan: The plan of this PlanSnapshotRun.  # noqa: E501
+        :param plan: The plan of this LPlanSnapshotRun.  # noqa: E501
         :type: object
         """
 
@@ -328,22 +328,22 @@ class LPlanSnapshotRun(object):
 
     @property
     def next_run(self):
-        """Gets the next_run of this PlanSnapshotRun.  # noqa: E501
+        """Gets the next_run of this LPlanSnapshotRun.  # noqa: E501
 
         id of the next plan snapshot run, ordered by execution time  # noqa: E501
 
-        :return: The next_run of this PlanSnapshotRun.  # noqa: E501
+        :return: The next_run of this LPlanSnapshotRun.  # noqa: E501
         :rtype: object
         """
         return self._next_run
 
     @next_run.setter
     def next_run(self, next_run):
-        """Sets the next_run of this PlanSnapshotRun.
+        """Sets the next_run of this LPlanSnapshotRun.
 
         id of the next plan snapshot run, ordered by execution time  # noqa: E501
 
-        :param next_run: The next_run of this PlanSnapshotRun.  # noqa: E501
+        :param next_run: The next_run of this LPlanSnapshotRun.  # noqa: E501
         :type: object
         """
 
@@ -351,22 +351,22 @@ class LPlanSnapshotRun(object):
 
     @property
     def previous_run(self):
-        """Gets the previous_run of this PlanSnapshotRun.  # noqa: E501
+        """Gets the previous_run of this LPlanSnapshotRun.  # noqa: E501
 
         id of the last plan snapshot run, ordered by execution time  # noqa: E501
 
-        :return: The previous_run of this PlanSnapshotRun.  # noqa: E501
+        :return: The previous_run of this LPlanSnapshotRun.  # noqa: E501
         :rtype: object
         """
         return self._previous_run
 
     @previous_run.setter
     def previous_run(self, previous_run):
-        """Sets the previous_run of this PlanSnapshotRun.
+        """Sets the previous_run of this LPlanSnapshotRun.
 
         id of the last plan snapshot run, ordered by execution time  # noqa: E501
 
-        :param previous_run: The previous_run of this PlanSnapshotRun.  # noqa: E501
+        :param previous_run: The previous_run of this LPlanSnapshotRun.  # noqa: E501
         :type: object
         """
 
@@ -393,7 +393,7 @@ class LPlanSnapshotRun(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanSnapshotRun, dict):
+        if issubclass(LPlanSnapshotRun, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -409,7 +409,7 @@ class LPlanSnapshotRun(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanSnapshotRun):
+        if not isinstance(other, LPlanSnapshotRun):
             return False
 
         return self.__dict__ == other.__dict__

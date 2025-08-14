@@ -27,7 +27,7 @@ class LRunParameterPattern(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'pattern': 'OneOfrunParameterPatternPattern'
+        'pattern': 'LOneOfrunParameterPatternPattern'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LRunParameterPattern(object):
     }
 
     def __init__(self, pattern=None):  # noqa: E501
-        """RunParameterPattern - a model defined in Swagger"""  # noqa: E501
+        """LRunParameterPattern - a model defined in Swagger"""  # noqa: E501
         self._pattern = None
         self.discriminator = None
         self.pattern = pattern
 
     @property
     def pattern(self):
-        """Gets the pattern of this RunParameterPattern.  # noqa: E501
+        """Gets the pattern of this LRunParameterPattern.  # noqa: E501
 
 
-        :return: The pattern of this RunParameterPattern.  # noqa: E501
-        :rtype: OneOfrunParameterPatternPattern
+        :return: The pattern of this LRunParameterPattern.  # noqa: E501
+        :rtype: LOneOfrunParameterPatternPattern
         """
         return self._pattern
 
     @pattern.setter
     def pattern(self, pattern):
-        """Sets the pattern of this RunParameterPattern.
+        """Sets the pattern of this LRunParameterPattern.
 
 
-        :param pattern: The pattern of this RunParameterPattern.  # noqa: E501
-        :type: OneOfrunParameterPatternPattern
+        :param pattern: The pattern of this LRunParameterPattern.  # noqa: E501
+        :type: LOneOfrunParameterPatternPattern
         """
         if pattern is None:
             raise ValueError("Invalid value for `pattern`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LRunParameterPattern(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunParameterPattern, dict):
+        if issubclass(LRunParameterPattern, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunParameterPattern(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunParameterPattern):
+        if not isinstance(other, LRunParameterPattern):
             return False
 
         return self.__dict__ == other.__dict__

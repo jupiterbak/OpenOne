@@ -35,15 +35,15 @@ class LGcpAccount(object):
     }
 
     attribute_map = {
-        'project_id': 'ProjectId',
-        'secret_key': 'SecretKey',
-        'region': 'Region',
-        'vpc_name': 'VpcName',
-        'control_plane_addr_range': 'ControlPlaneAddrRange'
+        'project_id': 'LProjectId',
+        'secret_key': 'LSecretKey',
+        'region': 'LRegion',
+        'vpc_name': 'LVpcName',
+        'control_plane_addr_range': 'LControlPlaneAddrRange'
     }
 
     def __init__(self, project_id=None, secret_key=None, region=None, vpc_name=None, control_plane_addr_range=None):  # noqa: E501
-        """GcpAccount - a model defined in Swagger"""  # noqa: E501
+        """LGcpAccount - a model defined in Swagger"""  # noqa: E501
         self._project_id = None
         self._secret_key = None
         self._region = None
@@ -59,20 +59,20 @@ class LGcpAccount(object):
 
     @property
     def project_id(self):
-        """Gets the project_id of this GcpAccount.  # noqa: E501
+        """Gets the project_id of this LGcpAccount.  # noqa: E501
 
 
-        :return: The project_id of this GcpAccount.  # noqa: E501
+        :return: The project_id of this LGcpAccount.  # noqa: E501
         :rtype: str
         """
         return self._project_id
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this GcpAccount.
+        """Sets the project_id of this LGcpAccount.
 
 
-        :param project_id: The project_id of this GcpAccount.  # noqa: E501
+        :param project_id: The project_id of this LGcpAccount.  # noqa: E501
         :type: str
         """
         if project_id is None:
@@ -82,20 +82,20 @@ class LGcpAccount(object):
 
     @property
     def secret_key(self):
-        """Gets the secret_key of this GcpAccount.  # noqa: E501
+        """Gets the secret_key of this LGcpAccount.  # noqa: E501
 
 
-        :return: The secret_key of this GcpAccount.  # noqa: E501
+        :return: The secret_key of this LGcpAccount.  # noqa: E501
         :rtype: str
         """
         return self._secret_key
 
     @secret_key.setter
     def secret_key(self, secret_key):
-        """Sets the secret_key of this GcpAccount.
+        """Sets the secret_key of this LGcpAccount.
 
 
-        :param secret_key: The secret_key of this GcpAccount.  # noqa: E501
+        :param secret_key: The secret_key of this LGcpAccount.  # noqa: E501
         :type: str
         """
 
@@ -103,20 +103,20 @@ class LGcpAccount(object):
 
     @property
     def region(self):
-        """Gets the region of this GcpAccount.  # noqa: E501
+        """Gets the region of this LGcpAccount.  # noqa: E501
 
 
-        :return: The region of this GcpAccount.  # noqa: E501
+        :return: The region of this LGcpAccount.  # noqa: E501
         :rtype: str
         """
         return self._region
 
     @region.setter
     def region(self, region):
-        """Sets the region of this GcpAccount.
+        """Sets the region of this LGcpAccount.
 
 
-        :param region: The region of this GcpAccount.  # noqa: E501
+        :param region: The region of this LGcpAccount.  # noqa: E501
         :type: str
         """
         if region is None:
@@ -126,20 +126,20 @@ class LGcpAccount(object):
 
     @property
     def vpc_name(self):
-        """Gets the vpc_name of this GcpAccount.  # noqa: E501
+        """Gets the vpc_name of this LGcpAccount.  # noqa: E501
 
 
-        :return: The vpc_name of this GcpAccount.  # noqa: E501
+        :return: The vpc_name of this LGcpAccount.  # noqa: E501
         :rtype: str
         """
         return self._vpc_name
 
     @vpc_name.setter
     def vpc_name(self, vpc_name):
-        """Sets the vpc_name of this GcpAccount.
+        """Sets the vpc_name of this LGcpAccount.
 
 
-        :param vpc_name: The vpc_name of this GcpAccount.  # noqa: E501
+        :param vpc_name: The vpc_name of this LGcpAccount.  # noqa: E501
         :type: str
         """
         if vpc_name is None:
@@ -149,20 +149,20 @@ class LGcpAccount(object):
 
     @property
     def control_plane_addr_range(self):
-        """Gets the control_plane_addr_range of this GcpAccount.  # noqa: E501
+        """Gets the control_plane_addr_range of this LGcpAccount.  # noqa: E501
 
 
-        :return: The control_plane_addr_range of this GcpAccount.  # noqa: E501
+        :return: The control_plane_addr_range of this LGcpAccount.  # noqa: E501
         :rtype: str
         """
         return self._control_plane_addr_range
 
     @control_plane_addr_range.setter
     def control_plane_addr_range(self, control_plane_addr_range):
-        """Sets the control_plane_addr_range of this GcpAccount.
+        """Sets the control_plane_addr_range of this LGcpAccount.
 
 
-        :param control_plane_addr_range: The control_plane_addr_range of this GcpAccount.  # noqa: E501
+        :param control_plane_addr_range: The control_plane_addr_range of this LGcpAccount.  # noqa: E501
         :type: str
         """
         if control_plane_addr_range is None:
@@ -191,7 +191,7 @@ class LGcpAccount(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(GcpAccount, dict):
+        if issubclass(LGcpAccount, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -207,7 +207,7 @@ class LGcpAccount(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, GcpAccount):
+        if not isinstance(other, LGcpAccount):
             return False
 
         return self.__dict__ == other.__dict__

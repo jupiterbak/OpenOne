@@ -27,8 +27,8 @@ class LAwsRoleUpdateRequest(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'person_id': 'AnyOfawsRoleUpdateRequestPersonId',
-        'workspace_id': 'AnyOfawsRoleUpdateRequestWorkspaceId',
+        'person_id': 'LAnyOfawsRoleUpdateRequestPersonId',
+        'workspace_id': 'LAnyOfawsRoleUpdateRequestWorkspaceId',
         'role': 'str',
         'created_from': 'str',
         'created_at': 'datetime',
@@ -47,7 +47,7 @@ class LAwsRoleUpdateRequest(object):
     }
 
     def __init__(self, person_id=None, workspace_id=None, role=None, created_from=None, created_at=None, updated_at=None, deleted_at=None):  # noqa: E501
-        """AwsRoleUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LAwsRoleUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._person_id = None
         self._workspace_id = None
         self._role = None
@@ -73,62 +73,62 @@ class LAwsRoleUpdateRequest(object):
 
     @property
     def person_id(self):
-        """Gets the person_id of this AwsRoleUpdateRequest.  # noqa: E501
+        """Gets the person_id of this LAwsRoleUpdateRequest.  # noqa: E501
 
 
-        :return: The person_id of this AwsRoleUpdateRequest.  # noqa: E501
-        :rtype: AnyOfawsRoleUpdateRequestPersonId
+        :return: The person_id of this LAwsRoleUpdateRequest.  # noqa: E501
+        :rtype: LAnyOfawsRoleUpdateRequestPersonId
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this AwsRoleUpdateRequest.
+        """Sets the person_id of this LAwsRoleUpdateRequest.
 
 
-        :param person_id: The person_id of this AwsRoleUpdateRequest.  # noqa: E501
-        :type: AnyOfawsRoleUpdateRequestPersonId
+        :param person_id: The person_id of this LAwsRoleUpdateRequest.  # noqa: E501
+        :type: LAnyOfawsRoleUpdateRequestPersonId
         """
 
         self._person_id = person_id
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this AwsRoleUpdateRequest.  # noqa: E501
+        """Gets the workspace_id of this LAwsRoleUpdateRequest.  # noqa: E501
 
 
-        :return: The workspace_id of this AwsRoleUpdateRequest.  # noqa: E501
-        :rtype: AnyOfawsRoleUpdateRequestWorkspaceId
+        :return: The workspace_id of this LAwsRoleUpdateRequest.  # noqa: E501
+        :rtype: LAnyOfawsRoleUpdateRequestWorkspaceId
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this AwsRoleUpdateRequest.
+        """Sets the workspace_id of this LAwsRoleUpdateRequest.
 
 
-        :param workspace_id: The workspace_id of this AwsRoleUpdateRequest.  # noqa: E501
-        :type: AnyOfawsRoleUpdateRequestWorkspaceId
+        :param workspace_id: The workspace_id of this LAwsRoleUpdateRequest.  # noqa: E501
+        :type: LAnyOfawsRoleUpdateRequestWorkspaceId
         """
 
         self._workspace_id = workspace_id
 
     @property
     def role(self):
-        """Gets the role of this AwsRoleUpdateRequest.  # noqa: E501
+        """Gets the role of this LAwsRoleUpdateRequest.  # noqa: E501
 
 
-        :return: The role of this AwsRoleUpdateRequest.  # noqa: E501
+        :return: The role of this LAwsRoleUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._role
 
     @role.setter
     def role(self, role):
-        """Sets the role of this AwsRoleUpdateRequest.
+        """Sets the role of this LAwsRoleUpdateRequest.
 
 
-        :param role: The role of this AwsRoleUpdateRequest.  # noqa: E501
+        :param role: The role of this LAwsRoleUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -136,22 +136,22 @@ class LAwsRoleUpdateRequest(object):
 
     @property
     def created_from(self):
-        """Gets the created_from of this AwsRoleUpdateRequest.  # noqa: E501
+        """Gets the created_from of this LAwsRoleUpdateRequest.  # noqa: E501
 
         shows which means created the role  # noqa: E501
 
-        :return: The created_from of this AwsRoleUpdateRequest.  # noqa: E501
+        :return: The created_from of this LAwsRoleUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._created_from
 
     @created_from.setter
     def created_from(self, created_from):
-        """Sets the created_from of this AwsRoleUpdateRequest.
+        """Sets the created_from of this LAwsRoleUpdateRequest.
 
         shows which means created the role  # noqa: E501
 
-        :param created_from: The created_from of this AwsRoleUpdateRequest.  # noqa: E501
+        :param created_from: The created_from of this LAwsRoleUpdateRequest.  # noqa: E501
         :type: str
         """
         allowed_values = ["api", "idp"]  # noqa: E501
@@ -165,22 +165,22 @@ class LAwsRoleUpdateRequest(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this AwsRoleUpdateRequest.  # noqa: E501
+        """Gets the created_at of this LAwsRoleUpdateRequest.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this AwsRoleUpdateRequest.  # noqa: E501
+        :return: The created_at of this LAwsRoleUpdateRequest.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AwsRoleUpdateRequest.
+        """Sets the created_at of this LAwsRoleUpdateRequest.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this AwsRoleUpdateRequest.  # noqa: E501
+        :param created_at: The created_at of this LAwsRoleUpdateRequest.  # noqa: E501
         :type: datetime
         """
 
@@ -188,22 +188,22 @@ class LAwsRoleUpdateRequest(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this AwsRoleUpdateRequest.  # noqa: E501
+        """Gets the updated_at of this LAwsRoleUpdateRequest.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this AwsRoleUpdateRequest.  # noqa: E501
+        :return: The updated_at of this LAwsRoleUpdateRequest.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this AwsRoleUpdateRequest.
+        """Sets the updated_at of this LAwsRoleUpdateRequest.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this AwsRoleUpdateRequest.  # noqa: E501
+        :param updated_at: The updated_at of this LAwsRoleUpdateRequest.  # noqa: E501
         :type: datetime
         """
 
@@ -211,22 +211,22 @@ class LAwsRoleUpdateRequest(object):
 
     @property
     def deleted_at(self):
-        """Gets the deleted_at of this AwsRoleUpdateRequest.  # noqa: E501
+        """Gets the deleted_at of this LAwsRoleUpdateRequest.  # noqa: E501
 
         The time this object was deleted.  # noqa: E501
 
-        :return: The deleted_at of this AwsRoleUpdateRequest.  # noqa: E501
+        :return: The deleted_at of this LAwsRoleUpdateRequest.  # noqa: E501
         :rtype: datetime
         """
         return self._deleted_at
 
     @deleted_at.setter
     def deleted_at(self, deleted_at):
-        """Sets the deleted_at of this AwsRoleUpdateRequest.
+        """Sets the deleted_at of this LAwsRoleUpdateRequest.
 
         The time this object was deleted.  # noqa: E501
 
-        :param deleted_at: The deleted_at of this AwsRoleUpdateRequest.  # noqa: E501
+        :param deleted_at: The deleted_at of this LAwsRoleUpdateRequest.  # noqa: E501
         :type: datetime
         """
 
@@ -253,7 +253,7 @@ class LAwsRoleUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AwsRoleUpdateRequest, dict):
+        if issubclass(LAwsRoleUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -269,7 +269,7 @@ class LAwsRoleUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AwsRoleUpdateRequest):
+        if not isinstance(other, LAwsRoleUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

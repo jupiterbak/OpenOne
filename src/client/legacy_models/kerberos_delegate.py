@@ -33,7 +33,7 @@ class LKerberosDelegate(object):
     }
 
     def __init__(self):  # noqa: E501
-        """KerberosDelegate - a model defined in Swagger"""  # noqa: E501
+        """LKerberosDelegate - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LKerberosDelegate(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(KerberosDelegate, dict):
+        if issubclass(LKerberosDelegate, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LKerberosDelegate(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, KerberosDelegate):
+        if not isinstance(other, LKerberosDelegate):
             return False
 
         return self.__dict__ == other.__dict__

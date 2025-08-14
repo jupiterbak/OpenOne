@@ -27,8 +27,8 @@ class LJobFilesAndTablesOutputListResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'files': 'list[OutputIoFileResponse]',
-        'tables': 'list[IoTableResponse]'
+        'files': 'list[LOutputIoFileResponse]',
+        'tables': 'list[LIoTableResponse]'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LJobFilesAndTablesOutputListResponse(object):
     }
 
     def __init__(self, files=None, tables=None):  # noqa: E501
-        """JobFilesAndTablesOutputListResponse - a model defined in Swagger"""  # noqa: E501
+        """LJobFilesAndTablesOutputListResponse - a model defined in Swagger"""  # noqa: E501
         self._files = None
         self._tables = None
         self.discriminator = None
@@ -46,21 +46,21 @@ class LJobFilesAndTablesOutputListResponse(object):
 
     @property
     def files(self):
-        """Gets the files of this JobFilesAndTablesOutputListResponse.  # noqa: E501
+        """Gets the files of this LJobFilesAndTablesOutputListResponse.  # noqa: E501
 
 
-        :return: The files of this JobFilesAndTablesOutputListResponse.  # noqa: E501
-        :rtype: list[OutputIoFileResponse]
+        :return: The files of this LJobFilesAndTablesOutputListResponse.  # noqa: E501
+        :rtype: list[LOutputIoFileResponse]
         """
         return self._files
 
     @files.setter
     def files(self, files):
-        """Sets the files of this JobFilesAndTablesOutputListResponse.
+        """Sets the files of this LJobFilesAndTablesOutputListResponse.
 
 
-        :param files: The files of this JobFilesAndTablesOutputListResponse.  # noqa: E501
-        :type: list[OutputIoFileResponse]
+        :param files: The files of this LJobFilesAndTablesOutputListResponse.  # noqa: E501
+        :type: list[LOutputIoFileResponse]
         """
         if files is None:
             raise ValueError("Invalid value for `files`, must not be `None`")  # noqa: E501
@@ -69,21 +69,21 @@ class LJobFilesAndTablesOutputListResponse(object):
 
     @property
     def tables(self):
-        """Gets the tables of this JobFilesAndTablesOutputListResponse.  # noqa: E501
+        """Gets the tables of this LJobFilesAndTablesOutputListResponse.  # noqa: E501
 
 
-        :return: The tables of this JobFilesAndTablesOutputListResponse.  # noqa: E501
-        :rtype: list[IoTableResponse]
+        :return: The tables of this LJobFilesAndTablesOutputListResponse.  # noqa: E501
+        :rtype: list[LIoTableResponse]
         """
         return self._tables
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this JobFilesAndTablesOutputListResponse.
+        """Sets the tables of this LJobFilesAndTablesOutputListResponse.
 
 
-        :param tables: The tables of this JobFilesAndTablesOutputListResponse.  # noqa: E501
-        :type: list[IoTableResponse]
+        :param tables: The tables of this LJobFilesAndTablesOutputListResponse.  # noqa: E501
+        :type: list[LIoTableResponse]
         """
         if tables is None:
             raise ValueError("Invalid value for `tables`, must not be `None`")  # noqa: E501
@@ -111,7 +111,7 @@ class LJobFilesAndTablesOutputListResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(JobFilesAndTablesOutputListResponse, dict):
+        if issubclass(LJobFilesAndTablesOutputListResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LJobFilesAndTablesOutputListResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, JobFilesAndTablesOutputListResponse):
+        if not isinstance(other, LJobFilesAndTablesOutputListResponse):
             return False
 
         return self.__dict__ == other.__dict__

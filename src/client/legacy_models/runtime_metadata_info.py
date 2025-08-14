@@ -27,7 +27,7 @@ class LRuntimeMetadataInfo(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'default_type_treatment': 'TypeClassificationInfo',
+        'default_type_treatment': 'LTypeClassificationInfo',
         'type_map': 'list[object]',
         'metadata_accessors': 'object',
         'path_metadata': 'object',
@@ -47,7 +47,7 @@ class LRuntimeMetadataInfo(object):
     }
 
     def __init__(self, default_type_treatment=None, type_map=None, metadata_accessors=None, path_metadata=None, limit=None, error_handlers=None, import_performance=None):  # noqa: E501
-        """RuntimeMetadataInfo - a model defined in Swagger"""  # noqa: E501
+        """LRuntimeMetadataInfo - a model defined in Swagger"""  # noqa: E501
         self._default_type_treatment = None
         self._type_map = None
         self._metadata_accessors = None
@@ -73,41 +73,41 @@ class LRuntimeMetadataInfo(object):
 
     @property
     def default_type_treatment(self):
-        """Gets the default_type_treatment of this RuntimeMetadataInfo.  # noqa: E501
+        """Gets the default_type_treatment of this LRuntimeMetadataInfo.  # noqa: E501
 
 
-        :return: The default_type_treatment of this RuntimeMetadataInfo.  # noqa: E501
-        :rtype: TypeClassificationInfo
+        :return: The default_type_treatment of this LRuntimeMetadataInfo.  # noqa: E501
+        :rtype: LTypeClassificationInfo
         """
         return self._default_type_treatment
 
     @default_type_treatment.setter
     def default_type_treatment(self, default_type_treatment):
-        """Sets the default_type_treatment of this RuntimeMetadataInfo.
+        """Sets the default_type_treatment of this LRuntimeMetadataInfo.
 
 
-        :param default_type_treatment: The default_type_treatment of this RuntimeMetadataInfo.  # noqa: E501
-        :type: TypeClassificationInfo
+        :param default_type_treatment: The default_type_treatment of this LRuntimeMetadataInfo.  # noqa: E501
+        :type: LTypeClassificationInfo
         """
 
         self._default_type_treatment = default_type_treatment
 
     @property
     def type_map(self):
-        """Gets the type_map of this RuntimeMetadataInfo.  # noqa: E501
+        """Gets the type_map of this LRuntimeMetadataInfo.  # noqa: E501
 
 
-        :return: The type_map of this RuntimeMetadataInfo.  # noqa: E501
+        :return: The type_map of this LRuntimeMetadataInfo.  # noqa: E501
         :rtype: list[object]
         """
         return self._type_map
 
     @type_map.setter
     def type_map(self, type_map):
-        """Sets the type_map of this RuntimeMetadataInfo.
+        """Sets the type_map of this LRuntimeMetadataInfo.
 
 
-        :param type_map: The type_map of this RuntimeMetadataInfo.  # noqa: E501
+        :param type_map: The type_map of this LRuntimeMetadataInfo.  # noqa: E501
         :type: list[object]
         """
 
@@ -115,20 +115,20 @@ class LRuntimeMetadataInfo(object):
 
     @property
     def metadata_accessors(self):
-        """Gets the metadata_accessors of this RuntimeMetadataInfo.  # noqa: E501
+        """Gets the metadata_accessors of this LRuntimeMetadataInfo.  # noqa: E501
 
 
-        :return: The metadata_accessors of this RuntimeMetadataInfo.  # noqa: E501
+        :return: The metadata_accessors of this LRuntimeMetadataInfo.  # noqa: E501
         :rtype: object
         """
         return self._metadata_accessors
 
     @metadata_accessors.setter
     def metadata_accessors(self, metadata_accessors):
-        """Sets the metadata_accessors of this RuntimeMetadataInfo.
+        """Sets the metadata_accessors of this LRuntimeMetadataInfo.
 
 
-        :param metadata_accessors: The metadata_accessors of this RuntimeMetadataInfo.  # noqa: E501
+        :param metadata_accessors: The metadata_accessors of this LRuntimeMetadataInfo.  # noqa: E501
         :type: object
         """
 
@@ -136,20 +136,20 @@ class LRuntimeMetadataInfo(object):
 
     @property
     def path_metadata(self):
-        """Gets the path_metadata of this RuntimeMetadataInfo.  # noqa: E501
+        """Gets the path_metadata of this LRuntimeMetadataInfo.  # noqa: E501
 
 
-        :return: The path_metadata of this RuntimeMetadataInfo.  # noqa: E501
+        :return: The path_metadata of this LRuntimeMetadataInfo.  # noqa: E501
         :rtype: object
         """
         return self._path_metadata
 
     @path_metadata.setter
     def path_metadata(self, path_metadata):
-        """Sets the path_metadata of this RuntimeMetadataInfo.
+        """Sets the path_metadata of this LRuntimeMetadataInfo.
 
 
-        :param path_metadata: The path_metadata of this RuntimeMetadataInfo.  # noqa: E501
+        :param path_metadata: The path_metadata of this LRuntimeMetadataInfo.  # noqa: E501
         :type: object
         """
 
@@ -157,20 +157,20 @@ class LRuntimeMetadataInfo(object):
 
     @property
     def limit(self):
-        """Gets the limit of this RuntimeMetadataInfo.  # noqa: E501
+        """Gets the limit of this LRuntimeMetadataInfo.  # noqa: E501
 
 
-        :return: The limit of this RuntimeMetadataInfo.  # noqa: E501
+        :return: The limit of this LRuntimeMetadataInfo.  # noqa: E501
         :rtype: object
         """
         return self._limit
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this RuntimeMetadataInfo.
+        """Sets the limit of this LRuntimeMetadataInfo.
 
 
-        :param limit: The limit of this RuntimeMetadataInfo.  # noqa: E501
+        :param limit: The limit of this LRuntimeMetadataInfo.  # noqa: E501
         :type: object
         """
 
@@ -178,20 +178,20 @@ class LRuntimeMetadataInfo(object):
 
     @property
     def error_handlers(self):
-        """Gets the error_handlers of this RuntimeMetadataInfo.  # noqa: E501
+        """Gets the error_handlers of this LRuntimeMetadataInfo.  # noqa: E501
 
 
-        :return: The error_handlers of this RuntimeMetadataInfo.  # noqa: E501
+        :return: The error_handlers of this LRuntimeMetadataInfo.  # noqa: E501
         :rtype: object
         """
         return self._error_handlers
 
     @error_handlers.setter
     def error_handlers(self, error_handlers):
-        """Sets the error_handlers of this RuntimeMetadataInfo.
+        """Sets the error_handlers of this LRuntimeMetadataInfo.
 
 
-        :param error_handlers: The error_handlers of this RuntimeMetadataInfo.  # noqa: E501
+        :param error_handlers: The error_handlers of this LRuntimeMetadataInfo.  # noqa: E501
         :type: object
         """
 
@@ -199,20 +199,20 @@ class LRuntimeMetadataInfo(object):
 
     @property
     def import_performance(self):
-        """Gets the import_performance of this RuntimeMetadataInfo.  # noqa: E501
+        """Gets the import_performance of this LRuntimeMetadataInfo.  # noqa: E501
 
 
-        :return: The import_performance of this RuntimeMetadataInfo.  # noqa: E501
+        :return: The import_performance of this LRuntimeMetadataInfo.  # noqa: E501
         :rtype: object
         """
         return self._import_performance
 
     @import_performance.setter
     def import_performance(self, import_performance):
-        """Sets the import_performance of this RuntimeMetadataInfo.
+        """Sets the import_performance of this LRuntimeMetadataInfo.
 
 
-        :param import_performance: The import_performance of this RuntimeMetadataInfo.  # noqa: E501
+        :param import_performance: The import_performance of this LRuntimeMetadataInfo.  # noqa: E501
         :type: object
         """
 
@@ -239,7 +239,7 @@ class LRuntimeMetadataInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RuntimeMetadataInfo, dict):
+        if issubclass(LRuntimeMetadataInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -255,7 +255,7 @@ class LRuntimeMetadataInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RuntimeMetadataInfo):
+        if not isinstance(other, LRuntimeMetadataInfo):
             return False
 
         return self.__dict__ == other.__dict__

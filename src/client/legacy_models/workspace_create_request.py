@@ -49,7 +49,7 @@ class LWorkspaceCreateRequest(object):
     }
 
     def __init__(self, name=None, tier=None, state=None, last_state_change=None, custom_url=None, max_user_number=None, emrcluster=None, emr_config_id=None):  # noqa: E501
-        """WorkspaceCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LWorkspaceCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._tier = None
         self._state = None
@@ -78,22 +78,22 @@ class LWorkspaceCreateRequest(object):
 
     @property
     def name(self):
-        """Gets the name of this WorkspaceCreateRequest.  # noqa: E501
+        """Gets the name of this LWorkspaceCreateRequest.  # noqa: E501
 
         Workspace name  # noqa: E501
 
-        :return: The name of this WorkspaceCreateRequest.  # noqa: E501
+        :return: The name of this LWorkspaceCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkspaceCreateRequest.
+        """Sets the name of this LWorkspaceCreateRequest.
 
         Workspace name  # noqa: E501
 
-        :param name: The name of this WorkspaceCreateRequest.  # noqa: E501
+        :param name: The name of this LWorkspaceCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -101,20 +101,20 @@ class LWorkspaceCreateRequest(object):
 
     @property
     def tier(self):
-        """Gets the tier of this WorkspaceCreateRequest.  # noqa: E501
+        """Gets the tier of this LWorkspaceCreateRequest.  # noqa: E501
 
 
-        :return: The tier of this WorkspaceCreateRequest.  # noqa: E501
+        :return: The tier of this LWorkspaceCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._tier
 
     @tier.setter
     def tier(self, tier):
-        """Sets the tier of this WorkspaceCreateRequest.
+        """Sets the tier of this LWorkspaceCreateRequest.
 
 
-        :param tier: The tier of this WorkspaceCreateRequest.  # noqa: E501
+        :param tier: The tier of this LWorkspaceCreateRequest.  # noqa: E501
         :type: str
         """
         allowed_values = ["free", "pro", "none", "legacy", "standard", "premium", "standard-free", "starter", "professional", "professional_trial", "enterprise_cloud", "enterprise_cloud_trial", "starter22", "professional22", "enterprise_cloud22", "enterprise_cloud22_trial", "looker_freemium", "platform_packaging"]  # noqa: E501
@@ -128,20 +128,20 @@ class LWorkspaceCreateRequest(object):
 
     @property
     def state(self):
-        """Gets the state of this WorkspaceCreateRequest.  # noqa: E501
+        """Gets the state of this LWorkspaceCreateRequest.  # noqa: E501
 
 
-        :return: The state of this WorkspaceCreateRequest.  # noqa: E501
+        :return: The state of this LWorkspaceCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._state
 
     @state.setter
     def state(self, state):
-        """Sets the state of this WorkspaceCreateRequest.
+        """Sets the state of this LWorkspaceCreateRequest.
 
 
-        :param state: The state of this WorkspaceCreateRequest.  # noqa: E501
+        :param state: The state of this LWorkspaceCreateRequest.  # noqa: E501
         :type: str
         """
         allowed_values = ["active", "hidden", "pending_purge"]  # noqa: E501
@@ -155,20 +155,20 @@ class LWorkspaceCreateRequest(object):
 
     @property
     def last_state_change(self):
-        """Gets the last_state_change of this WorkspaceCreateRequest.  # noqa: E501
+        """Gets the last_state_change of this LWorkspaceCreateRequest.  # noqa: E501
 
 
-        :return: The last_state_change of this WorkspaceCreateRequest.  # noqa: E501
+        :return: The last_state_change of this LWorkspaceCreateRequest.  # noqa: E501
         :rtype: datetime
         """
         return self._last_state_change
 
     @last_state_change.setter
     def last_state_change(self, last_state_change):
-        """Sets the last_state_change of this WorkspaceCreateRequest.
+        """Sets the last_state_change of this LWorkspaceCreateRequest.
 
 
-        :param last_state_change: The last_state_change of this WorkspaceCreateRequest.  # noqa: E501
+        :param last_state_change: The last_state_change of this LWorkspaceCreateRequest.  # noqa: E501
         :type: datetime
         """
 
@@ -176,22 +176,22 @@ class LWorkspaceCreateRequest(object):
 
     @property
     def custom_url(self):
-        """Gets the custom_url of this WorkspaceCreateRequest.  # noqa: E501
+        """Gets the custom_url of this LWorkspaceCreateRequest.  # noqa: E501
 
         Workspace URL  # noqa: E501
 
-        :return: The custom_url of this WorkspaceCreateRequest.  # noqa: E501
+        :return: The custom_url of this LWorkspaceCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._custom_url
 
     @custom_url.setter
     def custom_url(self, custom_url):
-        """Sets the custom_url of this WorkspaceCreateRequest.
+        """Sets the custom_url of this LWorkspaceCreateRequest.
 
         Workspace URL  # noqa: E501
 
-        :param custom_url: The custom_url of this WorkspaceCreateRequest.  # noqa: E501
+        :param custom_url: The custom_url of this LWorkspaceCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -199,22 +199,22 @@ class LWorkspaceCreateRequest(object):
 
     @property
     def max_user_number(self):
-        """Gets the max_user_number of this WorkspaceCreateRequest.  # noqa: E501
+        """Gets the max_user_number of this LWorkspaceCreateRequest.  # noqa: E501
 
         Maximum number of users for the workspace  # noqa: E501
 
-        :return: The max_user_number of this WorkspaceCreateRequest.  # noqa: E501
+        :return: The max_user_number of this LWorkspaceCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._max_user_number
 
     @max_user_number.setter
     def max_user_number(self, max_user_number):
-        """Sets the max_user_number of this WorkspaceCreateRequest.
+        """Sets the max_user_number of this LWorkspaceCreateRequest.
 
         Maximum number of users for the workspace  # noqa: E501
 
-        :param max_user_number: The max_user_number of this WorkspaceCreateRequest.  # noqa: E501
+        :param max_user_number: The max_user_number of this LWorkspaceCreateRequest.  # noqa: E501
         :type: int
         """
 
@@ -222,20 +222,20 @@ class LWorkspaceCreateRequest(object):
 
     @property
     def emrcluster(self):
-        """Gets the emrcluster of this WorkspaceCreateRequest.  # noqa: E501
+        """Gets the emrcluster of this LWorkspaceCreateRequest.  # noqa: E501
 
 
-        :return: The emrcluster of this WorkspaceCreateRequest.  # noqa: E501
+        :return: The emrcluster of this LWorkspaceCreateRequest.  # noqa: E501
         :rtype: object
         """
         return self._emrcluster
 
     @emrcluster.setter
     def emrcluster(self, emrcluster):
-        """Sets the emrcluster of this WorkspaceCreateRequest.
+        """Sets the emrcluster of this LWorkspaceCreateRequest.
 
 
-        :param emrcluster: The emrcluster of this WorkspaceCreateRequest.  # noqa: E501
+        :param emrcluster: The emrcluster of this LWorkspaceCreateRequest.  # noqa: E501
         :type: object
         """
 
@@ -243,20 +243,20 @@ class LWorkspaceCreateRequest(object):
 
     @property
     def emr_config_id(self):
-        """Gets the emr_config_id of this WorkspaceCreateRequest.  # noqa: E501
+        """Gets the emr_config_id of this LWorkspaceCreateRequest.  # noqa: E501
 
 
-        :return: The emr_config_id of this WorkspaceCreateRequest.  # noqa: E501
+        :return: The emr_config_id of this LWorkspaceCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._emr_config_id
 
     @emr_config_id.setter
     def emr_config_id(self, emr_config_id):
-        """Sets the emr_config_id of this WorkspaceCreateRequest.
+        """Sets the emr_config_id of this LWorkspaceCreateRequest.
 
 
-        :param emr_config_id: The emr_config_id of this WorkspaceCreateRequest.  # noqa: E501
+        :param emr_config_id: The emr_config_id of this LWorkspaceCreateRequest.  # noqa: E501
         :type: int
         """
 
@@ -283,7 +283,7 @@ class LWorkspaceCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WorkspaceCreateRequest, dict):
+        if issubclass(LWorkspaceCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -299,7 +299,7 @@ class LWorkspaceCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WorkspaceCreateRequest):
+        if not isinstance(other, LWorkspaceCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

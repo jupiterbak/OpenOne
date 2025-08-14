@@ -37,7 +37,7 @@ class LHistogramBucketValue(object):
     }
 
     def __init__(self, pos=None, b=None):  # noqa: E501
-        """HistogramBucketValue - a model defined in Swagger"""  # noqa: E501
+        """LHistogramBucketValue - a model defined in Swagger"""  # noqa: E501
         self._pos = None
         self._b = None
         self.discriminator = None
@@ -46,22 +46,22 @@ class LHistogramBucketValue(object):
 
     @property
     def pos(self):
-        """Gets the pos of this HistogramBucketValue.  # noqa: E501
+        """Gets the pos of this LHistogramBucketValue.  # noqa: E501
 
         Position of the bin  # noqa: E501
 
-        :return: The pos of this HistogramBucketValue.  # noqa: E501
+        :return: The pos of this LHistogramBucketValue.  # noqa: E501
         :rtype: int
         """
         return self._pos
 
     @pos.setter
     def pos(self, pos):
-        """Sets the pos of this HistogramBucketValue.
+        """Sets the pos of this LHistogramBucketValue.
 
         Position of the bin  # noqa: E501
 
-        :param pos: The pos of this HistogramBucketValue.  # noqa: E501
+        :param pos: The pos of this LHistogramBucketValue.  # noqa: E501
         :type: int
         """
         if pos is None:
@@ -71,22 +71,22 @@ class LHistogramBucketValue(object):
 
     @property
     def b(self):
-        """Gets the b of this HistogramBucketValue.  # noqa: E501
+        """Gets the b of this LHistogramBucketValue.  # noqa: E501
 
         Number of values in the bin  # noqa: E501
 
-        :return: The b of this HistogramBucketValue.  # noqa: E501
+        :return: The b of this LHistogramBucketValue.  # noqa: E501
         :rtype: int
         """
         return self._b
 
     @b.setter
     def b(self, b):
-        """Sets the b of this HistogramBucketValue.
+        """Sets the b of this LHistogramBucketValue.
 
         Number of values in the bin  # noqa: E501
 
-        :param b: The b of this HistogramBucketValue.  # noqa: E501
+        :param b: The b of this LHistogramBucketValue.  # noqa: E501
         :type: int
         """
         if b is None:
@@ -115,7 +115,7 @@ class LHistogramBucketValue(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(HistogramBucketValue, dict):
+        if issubclass(LHistogramBucketValue, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -131,7 +131,7 @@ class LHistogramBucketValue(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, HistogramBucketValue):
+        if not isinstance(other, LHistogramBucketValue):
             return False
 
         return self.__dict__ == other.__dict__

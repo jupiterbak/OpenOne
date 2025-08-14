@@ -43,7 +43,7 @@ class LGoogleCloudAuthConfigsResponseSchema(object):
     }
 
     def __init__(self, cloud_provider=None, workspace_id=None, enabled=None, client_id=None, client_secret=None):  # noqa: E501
-        """GoogleCloudAuthConfigsResponseSchema - a model defined in Swagger"""  # noqa: E501
+        """LGoogleCloudAuthConfigsResponseSchema - a model defined in Swagger"""  # noqa: E501
         self._cloud_provider = None
         self._workspace_id = None
         self._enabled = None
@@ -58,22 +58,22 @@ class LGoogleCloudAuthConfigsResponseSchema(object):
 
     @property
     def cloud_provider(self):
-        """Gets the cloud_provider of this GoogleCloudAuthConfigsResponseSchema.  # noqa: E501
+        """Gets the cloud_provider of this LGoogleCloudAuthConfigsResponseSchema.  # noqa: E501
 
         A string representing the cloud provider type. Cloud Provider includes azure and gcp.  # noqa: E501
 
-        :return: The cloud_provider of this GoogleCloudAuthConfigsResponseSchema.  # noqa: E501
+        :return: The cloud_provider of this LGoogleCloudAuthConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._cloud_provider
 
     @cloud_provider.setter
     def cloud_provider(self, cloud_provider):
-        """Sets the cloud_provider of this GoogleCloudAuthConfigsResponseSchema.
+        """Sets the cloud_provider of this LGoogleCloudAuthConfigsResponseSchema.
 
         A string representing the cloud provider type. Cloud Provider includes azure and gcp.  # noqa: E501
 
-        :param cloud_provider: The cloud_provider of this GoogleCloudAuthConfigsResponseSchema.  # noqa: E501
+        :param cloud_provider: The cloud_provider of this LGoogleCloudAuthConfigsResponseSchema.  # noqa: E501
         :type: str
         """
         if cloud_provider is None:
@@ -83,22 +83,22 @@ class LGoogleCloudAuthConfigsResponseSchema(object):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this GoogleCloudAuthConfigsResponseSchema.  # noqa: E501
+        """Gets the workspace_id of this LGoogleCloudAuthConfigsResponseSchema.  # noqa: E501
 
         A string representing Hashed workspace ID  # noqa: E501
 
-        :return: The workspace_id of this GoogleCloudAuthConfigsResponseSchema.  # noqa: E501
+        :return: The workspace_id of this LGoogleCloudAuthConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this GoogleCloudAuthConfigsResponseSchema.
+        """Sets the workspace_id of this LGoogleCloudAuthConfigsResponseSchema.
 
         A string representing Hashed workspace ID  # noqa: E501
 
-        :param workspace_id: The workspace_id of this GoogleCloudAuthConfigsResponseSchema.  # noqa: E501
+        :param workspace_id: The workspace_id of this LGoogleCloudAuthConfigsResponseSchema.  # noqa: E501
         :type: str
         """
         if workspace_id is None:
@@ -108,22 +108,22 @@ class LGoogleCloudAuthConfigsResponseSchema(object):
 
     @property
     def enabled(self):
-        """Gets the enabled of this GoogleCloudAuthConfigsResponseSchema.  # noqa: E501
+        """Gets the enabled of this LGoogleCloudAuthConfigsResponseSchema.  # noqa: E501
 
         A boolean representing if the cloud Auth is enabled  # noqa: E501
 
-        :return: The enabled of this GoogleCloudAuthConfigsResponseSchema.  # noqa: E501
+        :return: The enabled of this LGoogleCloudAuthConfigsResponseSchema.  # noqa: E501
         :rtype: bool
         """
         return self._enabled
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this GoogleCloudAuthConfigsResponseSchema.
+        """Sets the enabled of this LGoogleCloudAuthConfigsResponseSchema.
 
         A boolean representing if the cloud Auth is enabled  # noqa: E501
 
-        :param enabled: The enabled of this GoogleCloudAuthConfigsResponseSchema.  # noqa: E501
+        :param enabled: The enabled of this LGoogleCloudAuthConfigsResponseSchema.  # noqa: E501
         :type: bool
         """
         if enabled is None:
@@ -133,22 +133,22 @@ class LGoogleCloudAuthConfigsResponseSchema(object):
 
     @property
     def client_id(self):
-        """Gets the client_id of this GoogleCloudAuthConfigsResponseSchema.  # noqa: E501
+        """Gets the client_id of this LGoogleCloudAuthConfigsResponseSchema.  # noqa: E501
 
         A string that represents Client Id of Google Application  # noqa: E501
 
-        :return: The client_id of this GoogleCloudAuthConfigsResponseSchema.  # noqa: E501
+        :return: The client_id of this LGoogleCloudAuthConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._client_id
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this GoogleCloudAuthConfigsResponseSchema.
+        """Sets the client_id of this LGoogleCloudAuthConfigsResponseSchema.
 
         A string that represents Client Id of Google Application  # noqa: E501
 
-        :param client_id: The client_id of this GoogleCloudAuthConfigsResponseSchema.  # noqa: E501
+        :param client_id: The client_id of this LGoogleCloudAuthConfigsResponseSchema.  # noqa: E501
         :type: str
         """
         if client_id is None:
@@ -158,22 +158,22 @@ class LGoogleCloudAuthConfigsResponseSchema(object):
 
     @property
     def client_secret(self):
-        """Gets the client_secret of this GoogleCloudAuthConfigsResponseSchema.  # noqa: E501
+        """Gets the client_secret of this LGoogleCloudAuthConfigsResponseSchema.  # noqa: E501
 
         Google Client secret for oauth  # noqa: E501
 
-        :return: The client_secret of this GoogleCloudAuthConfigsResponseSchema.  # noqa: E501
+        :return: The client_secret of this LGoogleCloudAuthConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._client_secret
 
     @client_secret.setter
     def client_secret(self, client_secret):
-        """Sets the client_secret of this GoogleCloudAuthConfigsResponseSchema.
+        """Sets the client_secret of this LGoogleCloudAuthConfigsResponseSchema.
 
         Google Client secret for oauth  # noqa: E501
 
-        :param client_secret: The client_secret of this GoogleCloudAuthConfigsResponseSchema.  # noqa: E501
+        :param client_secret: The client_secret of this LGoogleCloudAuthConfigsResponseSchema.  # noqa: E501
         :type: str
         """
         if client_secret is None:
@@ -202,7 +202,7 @@ class LGoogleCloudAuthConfigsResponseSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(GoogleCloudAuthConfigsResponseSchema, dict):
+        if issubclass(LGoogleCloudAuthConfigsResponseSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -218,7 +218,7 @@ class LGoogleCloudAuthConfigsResponseSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, GoogleCloudAuthConfigsResponseSchema):
+        if not isinstance(other, LGoogleCloudAuthConfigsResponseSchema):
             return False
 
         return self.__dict__ == other.__dict__

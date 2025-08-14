@@ -27,7 +27,7 @@ class LNestedJobsUsageUnit(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'mapping': 'list[JobsUsageUnit]',
+        'mapping': 'list[LJobsUsageUnit]',
         'group_by': 'str',
         'ran_from': 'str',
         'workspace_name': 'str'
@@ -41,7 +41,7 @@ class LNestedJobsUsageUnit(object):
     }
 
     def __init__(self, mapping=None, group_by=None, ran_from=None, workspace_name=None):  # noqa: E501
-        """NestedJobsUsageUnit - a model defined in Swagger"""  # noqa: E501
+        """LNestedJobsUsageUnit - a model defined in Swagger"""  # noqa: E501
         self._mapping = None
         self._group_by = None
         self._ran_from = None
@@ -57,23 +57,23 @@ class LNestedJobsUsageUnit(object):
 
     @property
     def mapping(self):
-        """Gets the mapping of this NestedJobsUsageUnit.  # noqa: E501
+        """Gets the mapping of this LNestedJobsUsageUnit.  # noqa: E501
 
         Usage information for this grouping  # noqa: E501
 
-        :return: The mapping of this NestedJobsUsageUnit.  # noqa: E501
-        :rtype: list[JobsUsageUnit]
+        :return: The mapping of this LNestedJobsUsageUnit.  # noqa: E501
+        :rtype: list[LJobsUsageUnit]
         """
         return self._mapping
 
     @mapping.setter
     def mapping(self, mapping):
-        """Sets the mapping of this NestedJobsUsageUnit.
+        """Sets the mapping of this LNestedJobsUsageUnit.
 
         Usage information for this grouping  # noqa: E501
 
-        :param mapping: The mapping of this NestedJobsUsageUnit.  # noqa: E501
-        :type: list[JobsUsageUnit]
+        :param mapping: The mapping of this LNestedJobsUsageUnit.  # noqa: E501
+        :type: list[LJobsUsageUnit]
         """
         if mapping is None:
             raise ValueError("Invalid value for `mapping`, must not be `None`")  # noqa: E501
@@ -82,20 +82,20 @@ class LNestedJobsUsageUnit(object):
 
     @property
     def group_by(self):
-        """Gets the group_by of this NestedJobsUsageUnit.  # noqa: E501
+        """Gets the group_by of this LNestedJobsUsageUnit.  # noqa: E501
 
 
-        :return: The group_by of this NestedJobsUsageUnit.  # noqa: E501
+        :return: The group_by of this LNestedJobsUsageUnit.  # noqa: E501
         :rtype: str
         """
         return self._group_by
 
     @group_by.setter
     def group_by(self, group_by):
-        """Sets the group_by of this NestedJobsUsageUnit.
+        """Sets the group_by of this LNestedJobsUsageUnit.
 
 
-        :param group_by: The group_by of this NestedJobsUsageUnit.  # noqa: E501
+        :param group_by: The group_by of this LNestedJobsUsageUnit.  # noqa: E501
         :type: str
         """
         allowed_values = ["ranFrom"]  # noqa: E501
@@ -109,20 +109,20 @@ class LNestedJobsUsageUnit(object):
 
     @property
     def ran_from(self):
-        """Gets the ran_from of this NestedJobsUsageUnit.  # noqa: E501
+        """Gets the ran_from of this LNestedJobsUsageUnit.  # noqa: E501
 
 
-        :return: The ran_from of this NestedJobsUsageUnit.  # noqa: E501
+        :return: The ran_from of this LNestedJobsUsageUnit.  # noqa: E501
         :rtype: str
         """
         return self._ran_from
 
     @ran_from.setter
     def ran_from(self, ran_from):
-        """Sets the ran_from of this NestedJobsUsageUnit.
+        """Sets the ran_from of this LNestedJobsUsageUnit.
 
 
-        :param ran_from: The ran_from of this NestedJobsUsageUnit.  # noqa: E501
+        :param ran_from: The ran_from of this LNestedJobsUsageUnit.  # noqa: E501
         :type: str
         """
 
@@ -130,20 +130,20 @@ class LNestedJobsUsageUnit(object):
 
     @property
     def workspace_name(self):
-        """Gets the workspace_name of this NestedJobsUsageUnit.  # noqa: E501
+        """Gets the workspace_name of this LNestedJobsUsageUnit.  # noqa: E501
 
 
-        :return: The workspace_name of this NestedJobsUsageUnit.  # noqa: E501
+        :return: The workspace_name of this LNestedJobsUsageUnit.  # noqa: E501
         :rtype: str
         """
         return self._workspace_name
 
     @workspace_name.setter
     def workspace_name(self, workspace_name):
-        """Sets the workspace_name of this NestedJobsUsageUnit.
+        """Sets the workspace_name of this LNestedJobsUsageUnit.
 
 
-        :param workspace_name: The workspace_name of this NestedJobsUsageUnit.  # noqa: E501
+        :param workspace_name: The workspace_name of this LNestedJobsUsageUnit.  # noqa: E501
         :type: str
         """
 
@@ -170,7 +170,7 @@ class LNestedJobsUsageUnit(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(NestedJobsUsageUnit, dict):
+        if issubclass(LNestedJobsUsageUnit, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -186,7 +186,7 @@ class LNestedJobsUsageUnit(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, NestedJobsUsageUnit):
+        if not isinstance(other, LNestedJobsUsageUnit):
             return False
 
         return self.__dict__ == other.__dict__

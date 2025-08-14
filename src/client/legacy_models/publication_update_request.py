@@ -43,7 +43,7 @@ class LPublicationUpdateRequest(object):
     }
 
     def __init__(self, path=None, table_name=None, target_type=None, action=None, parameters=None):  # noqa: E501
-        """PublicationUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LPublicationUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._path = None
         self._table_name = None
         self._target_type = None
@@ -63,22 +63,22 @@ class LPublicationUpdateRequest(object):
 
     @property
     def path(self):
-        """Gets the path of this PublicationUpdateRequest.  # noqa: E501
+        """Gets the path of this LPublicationUpdateRequest.  # noqa: E501
 
         path to the location of the table/datasource.  # noqa: E501
 
-        :return: The path of this PublicationUpdateRequest.  # noqa: E501
+        :return: The path of this LPublicationUpdateRequest.  # noqa: E501
         :rtype: list[str]
         """
         return self._path
 
     @path.setter
     def path(self, path):
-        """Sets the path of this PublicationUpdateRequest.
+        """Sets the path of this LPublicationUpdateRequest.
 
         path to the location of the table/datasource.  # noqa: E501
 
-        :param path: The path of this PublicationUpdateRequest.  # noqa: E501
+        :param path: The path of this LPublicationUpdateRequest.  # noqa: E501
         :type: list[str]
         """
 
@@ -86,22 +86,22 @@ class LPublicationUpdateRequest(object):
 
     @property
     def table_name(self):
-        """Gets the table_name of this PublicationUpdateRequest.  # noqa: E501
+        """Gets the table_name of this LPublicationUpdateRequest.  # noqa: E501
 
         name of the table   # noqa: E501
 
-        :return: The table_name of this PublicationUpdateRequest.  # noqa: E501
+        :return: The table_name of this LPublicationUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._table_name
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this PublicationUpdateRequest.
+        """Sets the table_name of this LPublicationUpdateRequest.
 
         name of the table   # noqa: E501
 
-        :param table_name: The table_name of this PublicationUpdateRequest.  # noqa: E501
+        :param table_name: The table_name of this LPublicationUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -109,22 +109,22 @@ class LPublicationUpdateRequest(object):
 
     @property
     def target_type(self):
-        """Gets the target_type of this PublicationUpdateRequest.  # noqa: E501
+        """Gets the target_type of this LPublicationUpdateRequest.  # noqa: E501
 
         e.g. `databricks`, `hive`, `redshift`, `postgres`, `oracle`, `sqlserver`, `teradata`, `bigquery`, `tableau`, `sqldatawarehouse`, `synapse`, `snowflake`, `gsuser`, `glue`, `sftp`, `s3`, `s3user`, `gsheetsuser`, `jdbc_rest`, `onedrive`, `sharepoint_files` or `box`  # noqa: E501
 
-        :return: The target_type of this PublicationUpdateRequest.  # noqa: E501
+        :return: The target_type of this LPublicationUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._target_type
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this PublicationUpdateRequest.
+        """Sets the target_type of this LPublicationUpdateRequest.
 
         e.g. `databricks`, `hive`, `redshift`, `postgres`, `oracle`, `sqlserver`, `teradata`, `bigquery`, `tableau`, `sqldatawarehouse`, `synapse`, `snowflake`, `gsuser`, `glue`, `sftp`, `s3`, `s3user`, `gsheetsuser`, `jdbc_rest`, `onedrive`, `sharepoint_files` or `box`  # noqa: E501
 
-        :param target_type: The target_type of this PublicationUpdateRequest.  # noqa: E501
+        :param target_type: The target_type of this LPublicationUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -132,22 +132,22 @@ class LPublicationUpdateRequest(object):
 
     @property
     def action(self):
-        """Gets the action of this PublicationUpdateRequest.  # noqa: E501
+        """Gets the action of this LPublicationUpdateRequest.  # noqa: E501
 
         Type of writing action to perform with the results * `create` - Create a new table with each publication. This table is empty except for the schema, which is taken from the results. A new table receives a timestamp extension to its name. * `load` - Append a pre-existing table with the results of the data. The schema of the results and the table must match * `createAndLoad` - Create a new table with each publication and load it with the results data. A new table receives a timestamp extension to its name. * `truncateAndLoad` - Truncate a pre-existing table and load it with fresh data from the results. * `dropAndLoad` - Drop the target table and load a new table with the schema and data from the results. * `upsert` - Update matched records and insert new records in a pre-existing table with the results of the data. The schema of the results and the table must match  # noqa: E501
 
-        :return: The action of this PublicationUpdateRequest.  # noqa: E501
+        :return: The action of this LPublicationUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._action
 
     @action.setter
     def action(self, action):
-        """Sets the action of this PublicationUpdateRequest.
+        """Sets the action of this LPublicationUpdateRequest.
 
         Type of writing action to perform with the results * `create` - Create a new table with each publication. This table is empty except for the schema, which is taken from the results. A new table receives a timestamp extension to its name. * `load` - Append a pre-existing table with the results of the data. The schema of the results and the table must match * `createAndLoad` - Create a new table with each publication and load it with the results data. A new table receives a timestamp extension to its name. * `truncateAndLoad` - Truncate a pre-existing table and load it with fresh data from the results. * `dropAndLoad` - Drop the target table and load a new table with the schema and data from the results. * `upsert` - Update matched records and insert new records in a pre-existing table with the results of the data. The schema of the results and the table must match  # noqa: E501
 
-        :param action: The action of this PublicationUpdateRequest.  # noqa: E501
+        :param action: The action of this LPublicationUpdateRequest.  # noqa: E501
         :type: str
         """
         allowed_values = ["create", "load", "createAndLoad", "truncateAndLoad", "dropAndLoad", "upsert"]  # noqa: E501
@@ -161,22 +161,22 @@ class LPublicationUpdateRequest(object):
 
     @property
     def parameters(self):
-        """Gets the parameters of this PublicationUpdateRequest.  # noqa: E501
+        """Gets the parameters of this LPublicationUpdateRequest.  # noqa: E501
 
         Additional publication parameters specific to each JDBC data source. Example: isDeltaTable=true for Databricks connections to produce Delta Lake Tables  # noqa: E501
 
-        :return: The parameters of this PublicationUpdateRequest.  # noqa: E501
+        :return: The parameters of this LPublicationUpdateRequest.  # noqa: E501
         :rtype: dict(str, object)
         """
         return self._parameters
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this PublicationUpdateRequest.
+        """Sets the parameters of this LPublicationUpdateRequest.
 
         Additional publication parameters specific to each JDBC data source. Example: isDeltaTable=true for Databricks connections to produce Delta Lake Tables  # noqa: E501
 
-        :param parameters: The parameters of this PublicationUpdateRequest.  # noqa: E501
+        :param parameters: The parameters of this LPublicationUpdateRequest.  # noqa: E501
         :type: dict(str, object)
         """
 
@@ -203,7 +203,7 @@ class LPublicationUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PublicationUpdateRequest, dict):
+        if issubclass(LPublicationUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -219,7 +219,7 @@ class LPublicationUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PublicationUpdateRequest):
+        if not isinstance(other, LPublicationUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

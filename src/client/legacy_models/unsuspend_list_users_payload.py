@@ -27,7 +27,7 @@ class LUnsuspendListUsersPayload(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'person_ids': 'list[AnyOfunsuspendListUsersPayloadPersonIdsItems]'
+        'person_ids': 'list[LAnyOfunsuspendListUsersPayloadPersonIdsItems]'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LUnsuspendListUsersPayload(object):
     }
 
     def __init__(self, person_ids=None):  # noqa: E501
-        """UnsuspendListUsersPayload - a model defined in Swagger"""  # noqa: E501
+        """LUnsuspendListUsersPayload - a model defined in Swagger"""  # noqa: E501
         self._person_ids = None
         self.discriminator = None
         self.person_ids = person_ids
 
     @property
     def person_ids(self):
-        """Gets the person_ids of this UnsuspendListUsersPayload.  # noqa: E501
+        """Gets the person_ids of this LUnsuspendListUsersPayload.  # noqa: E501
 
 
-        :return: The person_ids of this UnsuspendListUsersPayload.  # noqa: E501
-        :rtype: list[AnyOfunsuspendListUsersPayloadPersonIdsItems]
+        :return: The person_ids of this LUnsuspendListUsersPayload.  # noqa: E501
+        :rtype: list[LAnyOfunsuspendListUsersPayloadPersonIdsItems]
         """
         return self._person_ids
 
     @person_ids.setter
     def person_ids(self, person_ids):
-        """Sets the person_ids of this UnsuspendListUsersPayload.
+        """Sets the person_ids of this LUnsuspendListUsersPayload.
 
 
-        :param person_ids: The person_ids of this UnsuspendListUsersPayload.  # noqa: E501
-        :type: list[AnyOfunsuspendListUsersPayloadPersonIdsItems]
+        :param person_ids: The person_ids of this LUnsuspendListUsersPayload.  # noqa: E501
+        :type: list[LAnyOfunsuspendListUsersPayloadPersonIdsItems]
         """
         if person_ids is None:
             raise ValueError("Invalid value for `person_ids`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LUnsuspendListUsersPayload(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(UnsuspendListUsersPayload, dict):
+        if issubclass(LUnsuspendListUsersPayload, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LUnsuspendListUsersPayload(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UnsuspendListUsersPayload):
+        if not isinstance(other, LUnsuspendListUsersPayload):
             return False
 
         return self.__dict__ == other.__dict__

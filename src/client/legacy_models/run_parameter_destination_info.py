@@ -30,7 +30,7 @@ class LRunParameterDestinationInfo(object):
         'type': 'str',
         'override_key': 'str',
         'insertion_indices': 'list[object]',
-        'value': 'RunParameterValueDestinationSchema'
+        'value': 'LRunParameterValueDestinationSchema'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class LRunParameterDestinationInfo(object):
     }
 
     def __init__(self, type=None, override_key=None, insertion_indices=None, value=None):  # noqa: E501
-        """RunParameterDestinationInfo - a model defined in Swagger"""  # noqa: E501
+        """LRunParameterDestinationInfo - a model defined in Swagger"""  # noqa: E501
         self._type = None
         self._override_key = None
         self._insertion_indices = None
@@ -56,20 +56,20 @@ class LRunParameterDestinationInfo(object):
 
     @property
     def type(self):
-        """Gets the type of this RunParameterDestinationInfo.  # noqa: E501
+        """Gets the type of this LRunParameterDestinationInfo.  # noqa: E501
 
 
-        :return: The type of this RunParameterDestinationInfo.  # noqa: E501
+        :return: The type of this LRunParameterDestinationInfo.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RunParameterDestinationInfo.
+        """Sets the type of this LRunParameterDestinationInfo.
 
 
-        :param type: The type of this RunParameterDestinationInfo.  # noqa: E501
+        :param type: The type of this LRunParameterDestinationInfo.  # noqa: E501
         :type: str
         """
         allowed_values = ["path", "bucket", "userinfo", "host"]  # noqa: E501
@@ -83,22 +83,22 @@ class LRunParameterDestinationInfo(object):
 
     @property
     def override_key(self):
-        """Gets the override_key of this RunParameterDestinationInfo.  # noqa: E501
+        """Gets the override_key of this LRunParameterDestinationInfo.  # noqa: E501
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :return: The override_key of this RunParameterDestinationInfo.  # noqa: E501
+        :return: The override_key of this LRunParameterDestinationInfo.  # noqa: E501
         :rtype: str
         """
         return self._override_key
 
     @override_key.setter
     def override_key(self, override_key):
-        """Sets the override_key of this RunParameterDestinationInfo.
+        """Sets the override_key of this LRunParameterDestinationInfo.
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :param override_key: The override_key of this RunParameterDestinationInfo.  # noqa: E501
+        :param override_key: The override_key of this LRunParameterDestinationInfo.  # noqa: E501
         :type: str
         """
 
@@ -106,20 +106,20 @@ class LRunParameterDestinationInfo(object):
 
     @property
     def insertion_indices(self):
-        """Gets the insertion_indices of this RunParameterDestinationInfo.  # noqa: E501
+        """Gets the insertion_indices of this LRunParameterDestinationInfo.  # noqa: E501
 
 
-        :return: The insertion_indices of this RunParameterDestinationInfo.  # noqa: E501
+        :return: The insertion_indices of this LRunParameterDestinationInfo.  # noqa: E501
         :rtype: list[object]
         """
         return self._insertion_indices
 
     @insertion_indices.setter
     def insertion_indices(self, insertion_indices):
-        """Sets the insertion_indices of this RunParameterDestinationInfo.
+        """Sets the insertion_indices of this LRunParameterDestinationInfo.
 
 
-        :param insertion_indices: The insertion_indices of this RunParameterDestinationInfo.  # noqa: E501
+        :param insertion_indices: The insertion_indices of this LRunParameterDestinationInfo.  # noqa: E501
         :type: list[object]
         """
         if insertion_indices is None:
@@ -129,21 +129,21 @@ class LRunParameterDestinationInfo(object):
 
     @property
     def value(self):
-        """Gets the value of this RunParameterDestinationInfo.  # noqa: E501
+        """Gets the value of this LRunParameterDestinationInfo.  # noqa: E501
 
 
-        :return: The value of this RunParameterDestinationInfo.  # noqa: E501
-        :rtype: RunParameterValueDestinationSchema
+        :return: The value of this LRunParameterDestinationInfo.  # noqa: E501
+        :rtype: LRunParameterValueDestinationSchema
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RunParameterDestinationInfo.
+        """Sets the value of this LRunParameterDestinationInfo.
 
 
-        :param value: The value of this RunParameterDestinationInfo.  # noqa: E501
-        :type: RunParameterValueDestinationSchema
+        :param value: The value of this LRunParameterDestinationInfo.  # noqa: E501
+        :type: LRunParameterValueDestinationSchema
         """
         if value is None:
             raise ValueError("Invalid value for `value`, must not be `None`")  # noqa: E501
@@ -171,7 +171,7 @@ class LRunParameterDestinationInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunParameterDestinationInfo, dict):
+        if issubclass(LRunParameterDestinationInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -187,7 +187,7 @@ class LRunParameterDestinationInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunParameterDestinationInfo):
+        if not isinstance(other, LRunParameterDestinationInfo):
             return False
 
         return self.__dict__ == other.__dict__

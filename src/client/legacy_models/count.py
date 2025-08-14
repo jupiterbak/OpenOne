@@ -35,27 +35,27 @@ class LCount(object):
     }
 
     def __init__(self, count=None):  # noqa: E501
-        """Count - a model defined in Swagger"""  # noqa: E501
+        """LCount - a model defined in Swagger"""  # noqa: E501
         self._count = None
         self.discriminator = None
         self.count = count
 
     @property
     def count(self):
-        """Gets the count of this Count.  # noqa: E501
+        """Gets the count of this LCount.  # noqa: E501
 
 
-        :return: The count of this Count.  # noqa: E501
+        :return: The count of this LCount.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this Count.
+        """Sets the count of this LCount.
 
 
-        :param count: The count of this Count.  # noqa: E501
+        :param count: The count of this LCount.  # noqa: E501
         :type: int
         """
         if count is None:
@@ -84,7 +84,7 @@ class LCount(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Count, dict):
+        if issubclass(LCount, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LCount(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Count):
+        if not isinstance(other, LCount):
             return False
 
         return self.__dict__ == other.__dict__

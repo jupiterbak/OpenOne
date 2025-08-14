@@ -47,7 +47,7 @@ class LFlowGraphVertexCreateRequest(object):
     }
 
     def __init__(self, object_type=None, object_id=None, x=None, y=None, width=None, height=None, flow_id=None):  # noqa: E501
-        """FlowGraphVertexCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LFlowGraphVertexCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._object_type = None
         self._object_id = None
         self._x = None
@@ -68,22 +68,22 @@ class LFlowGraphVertexCreateRequest(object):
 
     @property
     def object_type(self):
-        """Gets the object_type of this FlowGraphVertexCreateRequest.  # noqa: E501
+        """Gets the object_type of this LFlowGraphVertexCreateRequest.  # noqa: E501
 
         the type of object that exists in this vertex  # noqa: E501
 
-        :return: The object_type of this FlowGraphVertexCreateRequest.  # noqa: E501
+        :return: The object_type of this LFlowGraphVertexCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._object_type
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this FlowGraphVertexCreateRequest.
+        """Sets the object_type of this LFlowGraphVertexCreateRequest.
 
         the type of object that exists in this vertex  # noqa: E501
 
-        :param object_type: The object_type of this FlowGraphVertexCreateRequest.  # noqa: E501
+        :param object_type: The object_type of this LFlowGraphVertexCreateRequest.  # noqa: E501
         :type: str
         """
         if object_type is None:
@@ -93,22 +93,22 @@ class LFlowGraphVertexCreateRequest(object):
 
     @property
     def object_id(self):
-        """Gets the object_id of this FlowGraphVertexCreateRequest.  # noqa: E501
+        """Gets the object_id of this LFlowGraphVertexCreateRequest.  # noqa: E501
 
         the id of the object that exists in this vertex  # noqa: E501
 
-        :return: The object_id of this FlowGraphVertexCreateRequest.  # noqa: E501
+        :return: The object_id of this LFlowGraphVertexCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._object_id
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this FlowGraphVertexCreateRequest.
+        """Sets the object_id of this LFlowGraphVertexCreateRequest.
 
         the id of the object that exists in this vertex  # noqa: E501
 
-        :param object_id: The object_id of this FlowGraphVertexCreateRequest.  # noqa: E501
+        :param object_id: The object_id of this LFlowGraphVertexCreateRequest.  # noqa: E501
         :type: int
         """
         if object_id is None:
@@ -118,22 +118,22 @@ class LFlowGraphVertexCreateRequest(object):
 
     @property
     def x(self):
-        """Gets the x of this FlowGraphVertexCreateRequest.  # noqa: E501
+        """Gets the x of this LFlowGraphVertexCreateRequest.  # noqa: E501
 
         x coordinate of vertex  # noqa: E501
 
-        :return: The x of this FlowGraphVertexCreateRequest.  # noqa: E501
+        :return: The x of this LFlowGraphVertexCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._x
 
     @x.setter
     def x(self, x):
-        """Sets the x of this FlowGraphVertexCreateRequest.
+        """Sets the x of this LFlowGraphVertexCreateRequest.
 
         x coordinate of vertex  # noqa: E501
 
-        :param x: The x of this FlowGraphVertexCreateRequest.  # noqa: E501
+        :param x: The x of this LFlowGraphVertexCreateRequest.  # noqa: E501
         :type: int
         """
         if x is None:
@@ -143,22 +143,22 @@ class LFlowGraphVertexCreateRequest(object):
 
     @property
     def y(self):
-        """Gets the y of this FlowGraphVertexCreateRequest.  # noqa: E501
+        """Gets the y of this LFlowGraphVertexCreateRequest.  # noqa: E501
 
         y coordinate of vertex  # noqa: E501
 
-        :return: The y of this FlowGraphVertexCreateRequest.  # noqa: E501
+        :return: The y of this LFlowGraphVertexCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._y
 
     @y.setter
     def y(self, y):
-        """Sets the y of this FlowGraphVertexCreateRequest.
+        """Sets the y of this LFlowGraphVertexCreateRequest.
 
         y coordinate of vertex  # noqa: E501
 
-        :param y: The y of this FlowGraphVertexCreateRequest.  # noqa: E501
+        :param y: The y of this LFlowGraphVertexCreateRequest.  # noqa: E501
         :type: int
         """
         if y is None:
@@ -168,22 +168,22 @@ class LFlowGraphVertexCreateRequest(object):
 
     @property
     def width(self):
-        """Gets the width of this FlowGraphVertexCreateRequest.  # noqa: E501
+        """Gets the width of this LFlowGraphVertexCreateRequest.  # noqa: E501
 
         width of vertex  # noqa: E501
 
-        :return: The width of this FlowGraphVertexCreateRequest.  # noqa: E501
+        :return: The width of this LFlowGraphVertexCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._width
 
     @width.setter
     def width(self, width):
-        """Sets the width of this FlowGraphVertexCreateRequest.
+        """Sets the width of this LFlowGraphVertexCreateRequest.
 
         width of vertex  # noqa: E501
 
-        :param width: The width of this FlowGraphVertexCreateRequest.  # noqa: E501
+        :param width: The width of this LFlowGraphVertexCreateRequest.  # noqa: E501
         :type: int
         """
 
@@ -191,22 +191,22 @@ class LFlowGraphVertexCreateRequest(object):
 
     @property
     def height(self):
-        """Gets the height of this FlowGraphVertexCreateRequest.  # noqa: E501
+        """Gets the height of this LFlowGraphVertexCreateRequest.  # noqa: E501
 
         height of vertex  # noqa: E501
 
-        :return: The height of this FlowGraphVertexCreateRequest.  # noqa: E501
+        :return: The height of this LFlowGraphVertexCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._height
 
     @height.setter
     def height(self, height):
-        """Sets the height of this FlowGraphVertexCreateRequest.
+        """Sets the height of this LFlowGraphVertexCreateRequest.
 
         height of vertex  # noqa: E501
 
-        :param height: The height of this FlowGraphVertexCreateRequest.  # noqa: E501
+        :param height: The height of this LFlowGraphVertexCreateRequest.  # noqa: E501
         :type: int
         """
 
@@ -214,22 +214,22 @@ class LFlowGraphVertexCreateRequest(object):
 
     @property
     def flow_id(self):
-        """Gets the flow_id of this FlowGraphVertexCreateRequest.  # noqa: E501
+        """Gets the flow_id of this LFlowGraphVertexCreateRequest.  # noqa: E501
 
         id of the flow this vertex belongs to  # noqa: E501
 
-        :return: The flow_id of this FlowGraphVertexCreateRequest.  # noqa: E501
+        :return: The flow_id of this LFlowGraphVertexCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._flow_id
 
     @flow_id.setter
     def flow_id(self, flow_id):
-        """Sets the flow_id of this FlowGraphVertexCreateRequest.
+        """Sets the flow_id of this LFlowGraphVertexCreateRequest.
 
         id of the flow this vertex belongs to  # noqa: E501
 
-        :param flow_id: The flow_id of this FlowGraphVertexCreateRequest.  # noqa: E501
+        :param flow_id: The flow_id of this LFlowGraphVertexCreateRequest.  # noqa: E501
         :type: int
         """
         if flow_id is None:
@@ -258,7 +258,7 @@ class LFlowGraphVertexCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowGraphVertexCreateRequest, dict):
+        if issubclass(LFlowGraphVertexCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -274,7 +274,7 @@ class LFlowGraphVertexCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowGraphVertexCreateRequest):
+        if not isinstance(other, LFlowGraphVertexCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

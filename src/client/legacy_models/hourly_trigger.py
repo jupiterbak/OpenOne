@@ -37,7 +37,7 @@ class LHourlyTrigger(object):
     }
 
     def __init__(self, hourly=None, timezone=None):  # noqa: E501
-        """HourlyTrigger - a model defined in Swagger"""  # noqa: E501
+        """LHourlyTrigger - a model defined in Swagger"""  # noqa: E501
         self._hourly = None
         self._timezone = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LHourlyTrigger(object):
 
     @property
     def hourly(self):
-        """Gets the hourly of this HourlyTrigger.  # noqa: E501
+        """Gets the hourly of this LHourlyTrigger.  # noqa: E501
 
 
-        :return: The hourly of this HourlyTrigger.  # noqa: E501
+        :return: The hourly of this LHourlyTrigger.  # noqa: E501
         :rtype: object
         """
         return self._hourly
 
     @hourly.setter
     def hourly(self, hourly):
-        """Sets the hourly of this HourlyTrigger.
+        """Sets the hourly of this LHourlyTrigger.
 
 
-        :param hourly: The hourly of this HourlyTrigger.  # noqa: E501
+        :param hourly: The hourly of this LHourlyTrigger.  # noqa: E501
         :type: object
         """
         if hourly is None:
@@ -69,22 +69,22 @@ class LHourlyTrigger(object):
 
     @property
     def timezone(self):
-        """Gets the timezone of this HourlyTrigger.  # noqa: E501
+        """Gets the timezone of this LHourlyTrigger.  # noqa: E501
 
         timezone for this trigger, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :return: The timezone of this HourlyTrigger.  # noqa: E501
+        :return: The timezone of this LHourlyTrigger.  # noqa: E501
         :rtype: str
         """
         return self._timezone
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this HourlyTrigger.
+        """Sets the timezone of this LHourlyTrigger.
 
         timezone for this trigger, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :param timezone: The timezone of this HourlyTrigger.  # noqa: E501
+        :param timezone: The timezone of this LHourlyTrigger.  # noqa: E501
         :type: str
         """
         if timezone is None:
@@ -113,7 +113,7 @@ class LHourlyTrigger(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(HourlyTrigger, dict):
+        if issubclass(LHourlyTrigger, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LHourlyTrigger(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, HourlyTrigger):
+        if not isinstance(other, LHourlyTrigger):
             return False
 
         return self.__dict__ == other.__dict__

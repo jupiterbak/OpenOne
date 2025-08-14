@@ -35,27 +35,27 @@ class LHdfsFsAuthData(object):
     }
 
     def __init__(self, hdfs=None):  # noqa: E501
-        """HdfsFsAuthData - a model defined in Swagger"""  # noqa: E501
+        """LHdfsFsAuthData - a model defined in Swagger"""  # noqa: E501
         self._hdfs = None
         self.discriminator = None
         self.hdfs = hdfs
 
     @property
     def hdfs(self):
-        """Gets the hdfs of this HdfsFsAuthData.  # noqa: E501
+        """Gets the hdfs of this LHdfsFsAuthData.  # noqa: E501
 
 
-        :return: The hdfs of this HdfsFsAuthData.  # noqa: E501
+        :return: The hdfs of this LHdfsFsAuthData.  # noqa: E501
         :rtype: object
         """
         return self._hdfs
 
     @hdfs.setter
     def hdfs(self, hdfs):
-        """Sets the hdfs of this HdfsFsAuthData.
+        """Sets the hdfs of this LHdfsFsAuthData.
 
 
-        :param hdfs: The hdfs of this HdfsFsAuthData.  # noqa: E501
+        :param hdfs: The hdfs of this LHdfsFsAuthData.  # noqa: E501
         :type: object
         """
         if hdfs is None:
@@ -84,7 +84,7 @@ class LHdfsFsAuthData(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(HdfsFsAuthData, dict):
+        if issubclass(LHdfsFsAuthData, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LHdfsFsAuthData(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, HdfsFsAuthData):
+        if not isinstance(other, LHdfsFsAuthData):
             return False
 
         return self.__dict__ == other.__dict__

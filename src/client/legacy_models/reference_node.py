@@ -41,7 +41,7 @@ class LReferenceNode(object):
     }
 
     def __init__(self, flow=None, referenced_flow_node=None, active_sample=None, wrangled=None):  # noqa: E501
-        """ReferenceNode - a model defined in Swagger"""  # noqa: E501
+        """LReferenceNode - a model defined in Swagger"""  # noqa: E501
         self._flow = None
         self._referenced_flow_node = None
         self._active_sample = None
@@ -55,20 +55,20 @@ class LReferenceNode(object):
 
     @property
     def flow(self):
-        """Gets the flow of this ReferenceNode.  # noqa: E501
+        """Gets the flow of this LReferenceNode.  # noqa: E501
 
 
-        :return: The flow of this ReferenceNode.  # noqa: E501
+        :return: The flow of this LReferenceNode.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this ReferenceNode.
+        """Sets the flow of this LReferenceNode.
 
 
-        :param flow: The flow of this ReferenceNode.  # noqa: E501
+        :param flow: The flow of this LReferenceNode.  # noqa: E501
         :type: object
         """
         if flow is None:
@@ -78,20 +78,20 @@ class LReferenceNode(object):
 
     @property
     def referenced_flow_node(self):
-        """Gets the referenced_flow_node of this ReferenceNode.  # noqa: E501
+        """Gets the referenced_flow_node of this LReferenceNode.  # noqa: E501
 
 
-        :return: The referenced_flow_node of this ReferenceNode.  # noqa: E501
+        :return: The referenced_flow_node of this LReferenceNode.  # noqa: E501
         :rtype: object
         """
         return self._referenced_flow_node
 
     @referenced_flow_node.setter
     def referenced_flow_node(self, referenced_flow_node):
-        """Sets the referenced_flow_node of this ReferenceNode.
+        """Sets the referenced_flow_node of this LReferenceNode.
 
 
-        :param referenced_flow_node: The referenced_flow_node of this ReferenceNode.  # noqa: E501
+        :param referenced_flow_node: The referenced_flow_node of this LReferenceNode.  # noqa: E501
         :type: object
         """
         if referenced_flow_node is None:
@@ -101,20 +101,20 @@ class LReferenceNode(object):
 
     @property
     def active_sample(self):
-        """Gets the active_sample of this ReferenceNode.  # noqa: E501
+        """Gets the active_sample of this LReferenceNode.  # noqa: E501
 
 
-        :return: The active_sample of this ReferenceNode.  # noqa: E501
+        :return: The active_sample of this LReferenceNode.  # noqa: E501
         :rtype: object
         """
         return self._active_sample
 
     @active_sample.setter
     def active_sample(self, active_sample):
-        """Sets the active_sample of this ReferenceNode.
+        """Sets the active_sample of this LReferenceNode.
 
 
-        :param active_sample: The active_sample of this ReferenceNode.  # noqa: E501
+        :param active_sample: The active_sample of this LReferenceNode.  # noqa: E501
         :type: object
         """
 
@@ -122,22 +122,22 @@ class LReferenceNode(object):
 
     @property
     def wrangled(self):
-        """Gets the wrangled of this ReferenceNode.  # noqa: E501
+        """Gets the wrangled of this LReferenceNode.  # noqa: E501
 
         If false, this is an input dataset (i.e. an imported dataset or a reference dataset). If true, this flowNode contains a recipe that can be edited by the user.  # noqa: E501
 
-        :return: The wrangled of this ReferenceNode.  # noqa: E501
+        :return: The wrangled of this LReferenceNode.  # noqa: E501
         :rtype: bool
         """
         return self._wrangled
 
     @wrangled.setter
     def wrangled(self, wrangled):
-        """Sets the wrangled of this ReferenceNode.
+        """Sets the wrangled of this LReferenceNode.
 
         If false, this is an input dataset (i.e. an imported dataset or a reference dataset). If true, this flowNode contains a recipe that can be edited by the user.  # noqa: E501
 
-        :param wrangled: The wrangled of this ReferenceNode.  # noqa: E501
+        :param wrangled: The wrangled of this LReferenceNode.  # noqa: E501
         :type: bool
         """
         if wrangled is None:
@@ -166,7 +166,7 @@ class LReferenceNode(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ReferenceNode, dict):
+        if issubclass(LReferenceNode, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -182,7 +182,7 @@ class LReferenceNode(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ReferenceNode):
+        if not isinstance(other, LReferenceNode):
             return False
 
         return self.__dict__ == other.__dict__

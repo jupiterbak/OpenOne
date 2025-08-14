@@ -35,29 +35,29 @@ class LRunParameterWildcardPattern(object):
     }
 
     def __init__(self, wildcard=None):  # noqa: E501
-        """RunParameterWildcardPattern - a model defined in Swagger"""  # noqa: E501
+        """LRunParameterWildcardPattern - a model defined in Swagger"""  # noqa: E501
         self._wildcard = None
         self.discriminator = None
         self.wildcard = wildcard
 
     @property
     def wildcard(self):
-        """Gets the wildcard of this RunParameterWildcardPattern.  # noqa: E501
+        """Gets the wildcard of this LRunParameterWildcardPattern.  # noqa: E501
 
         Empty object  # noqa: E501
 
-        :return: The wildcard of this RunParameterWildcardPattern.  # noqa: E501
+        :return: The wildcard of this LRunParameterWildcardPattern.  # noqa: E501
         :rtype: object
         """
         return self._wildcard
 
     @wildcard.setter
     def wildcard(self, wildcard):
-        """Sets the wildcard of this RunParameterWildcardPattern.
+        """Sets the wildcard of this LRunParameterWildcardPattern.
 
         Empty object  # noqa: E501
 
-        :param wildcard: The wildcard of this RunParameterWildcardPattern.  # noqa: E501
+        :param wildcard: The wildcard of this LRunParameterWildcardPattern.  # noqa: E501
         :type: object
         """
         if wildcard is None:
@@ -86,7 +86,7 @@ class LRunParameterWildcardPattern(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunParameterWildcardPattern, dict):
+        if issubclass(LRunParameterWildcardPattern, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -102,7 +102,7 @@ class LRunParameterWildcardPattern(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunParameterWildcardPattern):
+        if not isinstance(other, LRunParameterWildcardPattern):
             return False
 
         return self.__dict__ == other.__dict__

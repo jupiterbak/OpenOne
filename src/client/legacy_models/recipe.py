@@ -33,7 +33,7 @@ class LRecipe(object):
         'next_port_id': 'int',
         'current_edit': 'object',
         'redo_leaf_edit': 'object',
-        'id': 'AnyOfrecipeId',
+        'id': 'LAnyOfrecipeId',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'creator': 'object',
@@ -55,7 +55,7 @@ class LRecipe(object):
     }
 
     def __init__(self, name=None, description=None, active=None, next_port_id=None, current_edit=None, redo_leaf_edit=None, id=None, created_at=None, updated_at=None, creator=None, updater=None):  # noqa: E501
-        """Recipe - a model defined in Swagger"""  # noqa: E501
+        """LRecipe - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._description = None
         self._active = None
@@ -90,22 +90,22 @@ class LRecipe(object):
 
     @property
     def name(self):
-        """Gets the name of this Recipe.  # noqa: E501
+        """Gets the name of this LRecipe.  # noqa: E501
 
         Display name of the recipe.  # noqa: E501
 
-        :return: The name of this Recipe.  # noqa: E501
+        :return: The name of this LRecipe.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Recipe.
+        """Sets the name of this LRecipe.
 
         Display name of the recipe.  # noqa: E501
 
-        :param name: The name of this Recipe.  # noqa: E501
+        :param name: The name of this LRecipe.  # noqa: E501
         :type: str
         """
 
@@ -113,20 +113,20 @@ class LRecipe(object):
 
     @property
     def description(self):
-        """Gets the description of this Recipe.  # noqa: E501
+        """Gets the description of this LRecipe.  # noqa: E501
 
 
-        :return: The description of this Recipe.  # noqa: E501
+        :return: The description of this LRecipe.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Recipe.
+        """Sets the description of this LRecipe.
 
 
-        :param description: The description of this Recipe.  # noqa: E501
+        :param description: The description of this LRecipe.  # noqa: E501
         :type: str
         """
 
@@ -134,20 +134,20 @@ class LRecipe(object):
 
     @property
     def active(self):
-        """Gets the active of this Recipe.  # noqa: E501
+        """Gets the active of this LRecipe.  # noqa: E501
 
 
-        :return: The active of this Recipe.  # noqa: E501
+        :return: The active of this LRecipe.  # noqa: E501
         :rtype: bool
         """
         return self._active
 
     @active.setter
     def active(self, active):
-        """Sets the active of this Recipe.
+        """Sets the active of this LRecipe.
 
 
-        :param active: The active of this Recipe.  # noqa: E501
+        :param active: The active of this LRecipe.  # noqa: E501
         :type: bool
         """
 
@@ -155,20 +155,20 @@ class LRecipe(object):
 
     @property
     def next_port_id(self):
-        """Gets the next_port_id of this Recipe.  # noqa: E501
+        """Gets the next_port_id of this LRecipe.  # noqa: E501
 
 
-        :return: The next_port_id of this Recipe.  # noqa: E501
+        :return: The next_port_id of this LRecipe.  # noqa: E501
         :rtype: int
         """
         return self._next_port_id
 
     @next_port_id.setter
     def next_port_id(self, next_port_id):
-        """Sets the next_port_id of this Recipe.
+        """Sets the next_port_id of this LRecipe.
 
 
-        :param next_port_id: The next_port_id of this Recipe.  # noqa: E501
+        :param next_port_id: The next_port_id of this LRecipe.  # noqa: E501
         :type: int
         """
 
@@ -176,20 +176,20 @@ class LRecipe(object):
 
     @property
     def current_edit(self):
-        """Gets the current_edit of this Recipe.  # noqa: E501
+        """Gets the current_edit of this LRecipe.  # noqa: E501
 
 
-        :return: The current_edit of this Recipe.  # noqa: E501
+        :return: The current_edit of this LRecipe.  # noqa: E501
         :rtype: object
         """
         return self._current_edit
 
     @current_edit.setter
     def current_edit(self, current_edit):
-        """Sets the current_edit of this Recipe.
+        """Sets the current_edit of this LRecipe.
 
 
-        :param current_edit: The current_edit of this Recipe.  # noqa: E501
+        :param current_edit: The current_edit of this LRecipe.  # noqa: E501
         :type: object
         """
 
@@ -197,20 +197,20 @@ class LRecipe(object):
 
     @property
     def redo_leaf_edit(self):
-        """Gets the redo_leaf_edit of this Recipe.  # noqa: E501
+        """Gets the redo_leaf_edit of this LRecipe.  # noqa: E501
 
 
-        :return: The redo_leaf_edit of this Recipe.  # noqa: E501
+        :return: The redo_leaf_edit of this LRecipe.  # noqa: E501
         :rtype: object
         """
         return self._redo_leaf_edit
 
     @redo_leaf_edit.setter
     def redo_leaf_edit(self, redo_leaf_edit):
-        """Sets the redo_leaf_edit of this Recipe.
+        """Sets the redo_leaf_edit of this LRecipe.
 
 
-        :param redo_leaf_edit: The redo_leaf_edit of this Recipe.  # noqa: E501
+        :param redo_leaf_edit: The redo_leaf_edit of this LRecipe.  # noqa: E501
         :type: object
         """
 
@@ -218,21 +218,21 @@ class LRecipe(object):
 
     @property
     def id(self):
-        """Gets the id of this Recipe.  # noqa: E501
+        """Gets the id of this LRecipe.  # noqa: E501
 
 
-        :return: The id of this Recipe.  # noqa: E501
-        :rtype: AnyOfrecipeId
+        :return: The id of this LRecipe.  # noqa: E501
+        :rtype: LAnyOfrecipeId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Recipe.
+        """Sets the id of this LRecipe.
 
 
-        :param id: The id of this Recipe.  # noqa: E501
-        :type: AnyOfrecipeId
+        :param id: The id of this LRecipe.  # noqa: E501
+        :type: LAnyOfrecipeId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -241,22 +241,22 @@ class LRecipe(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this Recipe.  # noqa: E501
+        """Gets the created_at of this LRecipe.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this Recipe.  # noqa: E501
+        :return: The created_at of this LRecipe.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Recipe.
+        """Sets the created_at of this LRecipe.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this Recipe.  # noqa: E501
+        :param created_at: The created_at of this LRecipe.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -266,22 +266,22 @@ class LRecipe(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Recipe.  # noqa: E501
+        """Gets the updated_at of this LRecipe.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this Recipe.  # noqa: E501
+        :return: The updated_at of this LRecipe.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Recipe.
+        """Sets the updated_at of this LRecipe.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this Recipe.  # noqa: E501
+        :param updated_at: The updated_at of this LRecipe.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -291,20 +291,20 @@ class LRecipe(object):
 
     @property
     def creator(self):
-        """Gets the creator of this Recipe.  # noqa: E501
+        """Gets the creator of this LRecipe.  # noqa: E501
 
 
-        :return: The creator of this Recipe.  # noqa: E501
+        :return: The creator of this LRecipe.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this Recipe.
+        """Sets the creator of this LRecipe.
 
 
-        :param creator: The creator of this Recipe.  # noqa: E501
+        :param creator: The creator of this LRecipe.  # noqa: E501
         :type: object
         """
 
@@ -312,20 +312,20 @@ class LRecipe(object):
 
     @property
     def updater(self):
-        """Gets the updater of this Recipe.  # noqa: E501
+        """Gets the updater of this LRecipe.  # noqa: E501
 
 
-        :return: The updater of this Recipe.  # noqa: E501
+        :return: The updater of this LRecipe.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this Recipe.
+        """Sets the updater of this LRecipe.
 
 
-        :param updater: The updater of this Recipe.  # noqa: E501
+        :param updater: The updater of this LRecipe.  # noqa: E501
         :type: object
         """
 
@@ -352,7 +352,7 @@ class LRecipe(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Recipe, dict):
+        if issubclass(LRecipe, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -368,7 +368,7 @@ class LRecipe(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Recipe):
+        if not isinstance(other, LRecipe):
             return False
 
         return self.__dict__ == other.__dict__

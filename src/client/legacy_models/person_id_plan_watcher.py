@@ -27,7 +27,7 @@ class LPersonIdPlanWatcher(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'person_id': 'AnyOfpersonIdPlanWatcherPersonId'
+        'person_id': 'LAnyOfpersonIdPlanWatcherPersonId'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LPersonIdPlanWatcher(object):
     }
 
     def __init__(self, person_id=None):  # noqa: E501
-        """PersonIdPlanWatcher - a model defined in Swagger"""  # noqa: E501
+        """LPersonIdPlanWatcher - a model defined in Swagger"""  # noqa: E501
         self._person_id = None
         self.discriminator = None
         self.person_id = person_id
 
     @property
     def person_id(self):
-        """Gets the person_id of this PersonIdPlanWatcher.  # noqa: E501
+        """Gets the person_id of this LPersonIdPlanWatcher.  # noqa: E501
 
 
-        :return: The person_id of this PersonIdPlanWatcher.  # noqa: E501
-        :rtype: AnyOfpersonIdPlanWatcherPersonId
+        :return: The person_id of this LPersonIdPlanWatcher.  # noqa: E501
+        :rtype: LAnyOfpersonIdPlanWatcherPersonId
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this PersonIdPlanWatcher.
+        """Sets the person_id of this LPersonIdPlanWatcher.
 
 
-        :param person_id: The person_id of this PersonIdPlanWatcher.  # noqa: E501
-        :type: AnyOfpersonIdPlanWatcherPersonId
+        :param person_id: The person_id of this LPersonIdPlanWatcher.  # noqa: E501
+        :type: LAnyOfpersonIdPlanWatcherPersonId
         """
         if person_id is None:
             raise ValueError("Invalid value for `person_id`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LPersonIdPlanWatcher(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PersonIdPlanWatcher, dict):
+        if issubclass(LPersonIdPlanWatcher, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LPersonIdPlanWatcher(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PersonIdPlanWatcher):
+        if not isinstance(other, LPersonIdPlanWatcher):
             return False
 
         return self.__dict__ == other.__dict__

@@ -63,7 +63,7 @@ class LJobGroup(object):
     }
 
     def __init__(self, name=None, description=None, ranfrom=None, ranfor=None, status=None, profiling_enabled=None, run_parameter_reference_date=None, snapshot=None, wrangled_dataset=None, flowrun=None, id=None, created_at=None, updated_at=None, creator=None, updater=None):  # noqa: E501
-        """JobGroup - a model defined in Swagger"""  # noqa: E501
+        """LJobGroup - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._description = None
         self._ranfrom = None
@@ -110,22 +110,22 @@ class LJobGroup(object):
 
     @property
     def name(self):
-        """Gets the name of this JobGroup.  # noqa: E501
+        """Gets the name of this LJobGroup.  # noqa: E501
 
         Display name of the job group.  # noqa: E501
 
-        :return: The name of this JobGroup.  # noqa: E501
+        :return: The name of this LJobGroup.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobGroup.
+        """Sets the name of this LJobGroup.
 
         Display name of the job group.  # noqa: E501
 
-        :param name: The name of this JobGroup.  # noqa: E501
+        :param name: The name of this LJobGroup.  # noqa: E501
         :type: str
         """
 
@@ -133,22 +133,22 @@ class LJobGroup(object):
 
     @property
     def description(self):
-        """Gets the description of this JobGroup.  # noqa: E501
+        """Gets the description of this LJobGroup.  # noqa: E501
 
         User-friendly description for the job group.  # noqa: E501
 
-        :return: The description of this JobGroup.  # noqa: E501
+        :return: The description of this LJobGroup.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this JobGroup.
+        """Sets the description of this LJobGroup.
 
         User-friendly description for the job group.  # noqa: E501
 
-        :param description: The description of this JobGroup.  # noqa: E501
+        :param description: The description of this LJobGroup.  # noqa: E501
         :type: str
         """
 
@@ -156,22 +156,22 @@ class LJobGroup(object):
 
     @property
     def ranfrom(self):
-        """Gets the ranfrom of this JobGroup.  # noqa: E501
+        """Gets the ranfrom of this LJobGroup.  # noqa: E501
 
         Where the job group was executed from.  * `ui` - Alteryx Analytics Cloud application * `schedule` - Scheduled * `api` - the API (using an API token)  # noqa: E501
 
-        :return: The ranfrom of this JobGroup.  # noqa: E501
+        :return: The ranfrom of this LJobGroup.  # noqa: E501
         :rtype: str
         """
         return self._ranfrom
 
     @ranfrom.setter
     def ranfrom(self, ranfrom):
-        """Sets the ranfrom of this JobGroup.
+        """Sets the ranfrom of this LJobGroup.
 
         Where the job group was executed from.  * `ui` - Alteryx Analytics Cloud application * `schedule` - Scheduled * `api` - the API (using an API token)  # noqa: E501
 
-        :param ranfrom: The ranfrom of this JobGroup.  # noqa: E501
+        :param ranfrom: The ranfrom of this LJobGroup.  # noqa: E501
         :type: str
         """
         allowed_values = ["ui", "schedule", "api"]  # noqa: E501
@@ -185,22 +185,22 @@ class LJobGroup(object):
 
     @property
     def ranfor(self):
-        """Gets the ranfor of this JobGroup.  # noqa: E501
+        """Gets the ranfor of this LJobGroup.  # noqa: E501
 
         Description of the object for which the job group was run. * `recipe` - Recipe in a flow * `sampling` - Sampling job for a dataset * `pendingDatasource` - Job for the purpose of imported dataset conversion, such as importing a Microsoft Excel workbook. * `plan` - Plan * `extract` - Extract * `profile` - Profile * `publish` - Publish * `refresh` - For sample refresh  # noqa: E501
 
-        :return: The ranfor of this JobGroup.  # noqa: E501
+        :return: The ranfor of this LJobGroup.  # noqa: E501
         :rtype: str
         """
         return self._ranfor
 
     @ranfor.setter
     def ranfor(self, ranfor):
-        """Sets the ranfor of this JobGroup.
+        """Sets the ranfor of this LJobGroup.
 
         Description of the object for which the job group was run. * `recipe` - Recipe in a flow * `sampling` - Sampling job for a dataset * `pendingDatasource` - Job for the purpose of imported dataset conversion, such as importing a Microsoft Excel workbook. * `plan` - Plan * `extract` - Extract * `profile` - Profile * `publish` - Publish * `refresh` - For sample refresh  # noqa: E501
 
-        :param ranfor: The ranfor of this JobGroup.  # noqa: E501
+        :param ranfor: The ranfor of this LJobGroup.  # noqa: E501
         :type: str
         """
         allowed_values = ["recipe", "sampling", "pendingDatasource", "plan", "extract", "profile", "publish", "refresh"]  # noqa: E501
@@ -214,22 +214,22 @@ class LJobGroup(object):
 
     @property
     def status(self):
-        """Gets the status of this JobGroup.  # noqa: E501
+        """Gets the status of this LJobGroup.  # noqa: E501
 
         Current status of the job group * `Created` - Created based on the current action * `InProgress` - Currently running * `Complete` - Completed successfully * `Failed` - Failed * `Canceled` - Canceled by the user  # noqa: E501
 
-        :return: The status of this JobGroup.  # noqa: E501
+        :return: The status of this LJobGroup.  # noqa: E501
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobGroup.
+        """Sets the status of this LJobGroup.
 
         Current status of the job group * `Created` - Created based on the current action * `InProgress` - Currently running * `Complete` - Completed successfully * `Failed` - Failed * `Canceled` - Canceled by the user  # noqa: E501
 
-        :param status: The status of this JobGroup.  # noqa: E501
+        :param status: The status of this LJobGroup.  # noqa: E501
         :type: str
         """
         allowed_values = ["Created", "InProgress", "Complete", "Failed", "Canceled"]  # noqa: E501
@@ -243,22 +243,22 @@ class LJobGroup(object):
 
     @property
     def profiling_enabled(self):
-        """Gets the profiling_enabled of this JobGroup.  # noqa: E501
+        """Gets the profiling_enabled of this LJobGroup.  # noqa: E501
 
         When true, a profiling job is executed as part of this job group.  # noqa: E501
 
-        :return: The profiling_enabled of this JobGroup.  # noqa: E501
+        :return: The profiling_enabled of this LJobGroup.  # noqa: E501
         :rtype: bool
         """
         return self._profiling_enabled
 
     @profiling_enabled.setter
     def profiling_enabled(self, profiling_enabled):
-        """Sets the profiling_enabled of this JobGroup.
+        """Sets the profiling_enabled of this LJobGroup.
 
         When true, a profiling job is executed as part of this job group.  # noqa: E501
 
-        :param profiling_enabled: The profiling_enabled of this JobGroup.  # noqa: E501
+        :param profiling_enabled: The profiling_enabled of this LJobGroup.  # noqa: E501
         :type: bool
         """
 
@@ -266,22 +266,22 @@ class LJobGroup(object):
 
     @property
     def run_parameter_reference_date(self):
-        """Gets the run_parameter_reference_date of this JobGroup.  # noqa: E501
+        """Gets the run_parameter_reference_date of this LJobGroup.  # noqa: E501
 
         When a recipe is executed with dynamic parameters, this parameter is stored with the timestamp at the time of execution. It can be used in debugging execution issues. Do not modify this value.  # noqa: E501
 
-        :return: The run_parameter_reference_date of this JobGroup.  # noqa: E501
+        :return: The run_parameter_reference_date of this LJobGroup.  # noqa: E501
         :rtype: datetime
         """
         return self._run_parameter_reference_date
 
     @run_parameter_reference_date.setter
     def run_parameter_reference_date(self, run_parameter_reference_date):
-        """Sets the run_parameter_reference_date of this JobGroup.
+        """Sets the run_parameter_reference_date of this LJobGroup.
 
         When a recipe is executed with dynamic parameters, this parameter is stored with the timestamp at the time of execution. It can be used in debugging execution issues. Do not modify this value.  # noqa: E501
 
-        :param run_parameter_reference_date: The run_parameter_reference_date of this JobGroup.  # noqa: E501
+        :param run_parameter_reference_date: The run_parameter_reference_date of this LJobGroup.  # noqa: E501
         :type: datetime
         """
 
@@ -289,20 +289,20 @@ class LJobGroup(object):
 
     @property
     def snapshot(self):
-        """Gets the snapshot of this JobGroup.  # noqa: E501
+        """Gets the snapshot of this LJobGroup.  # noqa: E501
 
 
-        :return: The snapshot of this JobGroup.  # noqa: E501
+        :return: The snapshot of this LJobGroup.  # noqa: E501
         :rtype: object
         """
         return self._snapshot
 
     @snapshot.setter
     def snapshot(self, snapshot):
-        """Sets the snapshot of this JobGroup.
+        """Sets the snapshot of this LJobGroup.
 
 
-        :param snapshot: The snapshot of this JobGroup.  # noqa: E501
+        :param snapshot: The snapshot of this LJobGroup.  # noqa: E501
         :type: object
         """
 
@@ -310,20 +310,20 @@ class LJobGroup(object):
 
     @property
     def wrangled_dataset(self):
-        """Gets the wrangled_dataset of this JobGroup.  # noqa: E501
+        """Gets the wrangled_dataset of this LJobGroup.  # noqa: E501
 
 
-        :return: The wrangled_dataset of this JobGroup.  # noqa: E501
+        :return: The wrangled_dataset of this LJobGroup.  # noqa: E501
         :rtype: object
         """
         return self._wrangled_dataset
 
     @wrangled_dataset.setter
     def wrangled_dataset(self, wrangled_dataset):
-        """Sets the wrangled_dataset of this JobGroup.
+        """Sets the wrangled_dataset of this LJobGroup.
 
 
-        :param wrangled_dataset: The wrangled_dataset of this JobGroup.  # noqa: E501
+        :param wrangled_dataset: The wrangled_dataset of this LJobGroup.  # noqa: E501
         :type: object
         """
 
@@ -331,20 +331,20 @@ class LJobGroup(object):
 
     @property
     def flowrun(self):
-        """Gets the flowrun of this JobGroup.  # noqa: E501
+        """Gets the flowrun of this LJobGroup.  # noqa: E501
 
 
-        :return: The flowrun of this JobGroup.  # noqa: E501
+        :return: The flowrun of this LJobGroup.  # noqa: E501
         :rtype: object
         """
         return self._flowrun
 
     @flowrun.setter
     def flowrun(self, flowrun):
-        """Sets the flowrun of this JobGroup.
+        """Sets the flowrun of this LJobGroup.
 
 
-        :param flowrun: The flowrun of this JobGroup.  # noqa: E501
+        :param flowrun: The flowrun of this LJobGroup.  # noqa: E501
         :type: object
         """
 
@@ -352,22 +352,22 @@ class LJobGroup(object):
 
     @property
     def id(self):
-        """Gets the id of this JobGroup.  # noqa: E501
+        """Gets the id of this LJobGroup.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this JobGroup.  # noqa: E501
+        :return: The id of this LJobGroup.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this JobGroup.
+        """Sets the id of this LJobGroup.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this JobGroup.  # noqa: E501
+        :param id: The id of this LJobGroup.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -377,22 +377,22 @@ class LJobGroup(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this JobGroup.  # noqa: E501
+        """Gets the created_at of this LJobGroup.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this JobGroup.  # noqa: E501
+        :return: The created_at of this LJobGroup.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this JobGroup.
+        """Sets the created_at of this LJobGroup.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this JobGroup.  # noqa: E501
+        :param created_at: The created_at of this LJobGroup.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -402,22 +402,22 @@ class LJobGroup(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this JobGroup.  # noqa: E501
+        """Gets the updated_at of this LJobGroup.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this JobGroup.  # noqa: E501
+        :return: The updated_at of this LJobGroup.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this JobGroup.
+        """Sets the updated_at of this LJobGroup.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this JobGroup.  # noqa: E501
+        :param updated_at: The updated_at of this LJobGroup.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -427,20 +427,20 @@ class LJobGroup(object):
 
     @property
     def creator(self):
-        """Gets the creator of this JobGroup.  # noqa: E501
+        """Gets the creator of this LJobGroup.  # noqa: E501
 
 
-        :return: The creator of this JobGroup.  # noqa: E501
+        :return: The creator of this LJobGroup.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this JobGroup.
+        """Sets the creator of this LJobGroup.
 
 
-        :param creator: The creator of this JobGroup.  # noqa: E501
+        :param creator: The creator of this LJobGroup.  # noqa: E501
         :type: object
         """
 
@@ -448,20 +448,20 @@ class LJobGroup(object):
 
     @property
     def updater(self):
-        """Gets the updater of this JobGroup.  # noqa: E501
+        """Gets the updater of this LJobGroup.  # noqa: E501
 
 
-        :return: The updater of this JobGroup.  # noqa: E501
+        :return: The updater of this LJobGroup.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this JobGroup.
+        """Sets the updater of this LJobGroup.
 
 
-        :param updater: The updater of this JobGroup.  # noqa: E501
+        :param updater: The updater of this LJobGroup.  # noqa: E501
         :type: object
         """
 
@@ -488,7 +488,7 @@ class LJobGroup(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(JobGroup, dict):
+        if issubclass(LJobGroup, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -504,7 +504,7 @@ class LJobGroup(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, JobGroup):
+        if not isinstance(other, LJobGroup):
             return False
 
         return self.__dict__ == other.__dict__

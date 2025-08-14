@@ -51,7 +51,7 @@ class LImportedDatasetRequestWithUri(object):
         'encoding': 'str',
         'sanitize_column_names': 'bool',
         'ensure_header': 'bool',
-        'run_parameters': 'list[RunParameterFileBasedInfo]',
+        'run_parameters': 'list[LRunParameterFileBasedInfo]',
         'uri': 'str'
     }
 
@@ -85,7 +85,7 @@ class LImportedDatasetRequestWithUri(object):
     }
 
     def __init__(self, id=None, job_status=None, jobgroup_id=None, visible=None, is_pending=None, num_flows=None, bucket_name=None, dynamic_bucket=None, dynamic_host=None, dynamic_user_info=None, name=None, description=None, disable_type_inference=None, type=None, is_converted=None, is_dynamic=False, host=None, userinfo=None, mime_type=None, detect_structure=False, dynamic_path=None, encoding='UTF-8', sanitize_column_names=False, ensure_header=None, run_parameters=None, uri=None):  # noqa: E501
-        """ImportedDatasetRequestWithUri - a model defined in Swagger"""  # noqa: E501
+        """LImportedDatasetRequestWithUri - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._job_status = None
         self._jobgroup_id = None
@@ -166,22 +166,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def id(self):
-        """Gets the id of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the id of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The id of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImportedDatasetRequestWithUri.
+        """Sets the id of this LImportedDatasetRequestWithUri.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param id: The id of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: int
         """
 
@@ -189,20 +189,20 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def job_status(self):
-        """Gets the job_status of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the job_status of this LImportedDatasetRequestWithUri.  # noqa: E501
 
 
-        :return: The job_status of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The job_status of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: str
         """
         return self._job_status
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this ImportedDatasetRequestWithUri.
+        """Sets the job_status of this LImportedDatasetRequestWithUri.
 
 
-        :param job_status: The job_status of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param job_status: The job_status of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: str
         """
 
@@ -210,20 +210,20 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def jobgroup_id(self):
-        """Gets the jobgroup_id of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the jobgroup_id of this LImportedDatasetRequestWithUri.  # noqa: E501
 
 
-        :return: The jobgroup_id of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The jobgroup_id of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: str
         """
         return self._jobgroup_id
 
     @jobgroup_id.setter
     def jobgroup_id(self, jobgroup_id):
-        """Sets the jobgroup_id of this ImportedDatasetRequestWithUri.
+        """Sets the jobgroup_id of this LImportedDatasetRequestWithUri.
 
 
-        :param jobgroup_id: The jobgroup_id of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param jobgroup_id: The jobgroup_id of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: str
         """
 
@@ -231,20 +231,20 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def visible(self):
-        """Gets the visible of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the visible of this LImportedDatasetRequestWithUri.  # noqa: E501
 
 
-        :return: The visible of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The visible of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: bool
         """
         return self._visible
 
     @visible.setter
     def visible(self, visible):
-        """Sets the visible of this ImportedDatasetRequestWithUri.
+        """Sets the visible of this LImportedDatasetRequestWithUri.
 
 
-        :param visible: The visible of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param visible: The visible of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: bool
         """
 
@@ -252,20 +252,20 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def is_pending(self):
-        """Gets the is_pending of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the is_pending of this LImportedDatasetRequestWithUri.  # noqa: E501
 
 
-        :return: The is_pending of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The is_pending of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: bool
         """
         return self._is_pending
 
     @is_pending.setter
     def is_pending(self, is_pending):
-        """Sets the is_pending of this ImportedDatasetRequestWithUri.
+        """Sets the is_pending of this LImportedDatasetRequestWithUri.
 
 
-        :param is_pending: The is_pending of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param is_pending: The is_pending of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: bool
         """
 
@@ -273,20 +273,20 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def num_flows(self):
-        """Gets the num_flows of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the num_flows of this LImportedDatasetRequestWithUri.  # noqa: E501
 
 
-        :return: The num_flows of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The num_flows of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: int
         """
         return self._num_flows
 
     @num_flows.setter
     def num_flows(self, num_flows):
-        """Sets the num_flows of this ImportedDatasetRequestWithUri.
+        """Sets the num_flows of this LImportedDatasetRequestWithUri.
 
 
-        :param num_flows: The num_flows of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param num_flows: The num_flows of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: int
         """
 
@@ -294,20 +294,20 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the bucket_name of this LImportedDatasetRequestWithUri.  # noqa: E501
 
 
-        :return: The bucket_name of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The bucket_name of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: str
         """
         return self._bucket_name
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this ImportedDatasetRequestWithUri.
+        """Sets the bucket_name of this LImportedDatasetRequestWithUri.
 
 
-        :param bucket_name: The bucket_name of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param bucket_name: The bucket_name of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: str
         """
 
@@ -315,22 +315,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def dynamic_bucket(self):
-        """Gets the dynamic_bucket of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the dynamic_bucket of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         Bucket used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :return: The dynamic_bucket of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The dynamic_bucket of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: str
         """
         return self._dynamic_bucket
 
     @dynamic_bucket.setter
     def dynamic_bucket(self, dynamic_bucket):
-        """Sets the dynamic_bucket of this ImportedDatasetRequestWithUri.
+        """Sets the dynamic_bucket of this LImportedDatasetRequestWithUri.
 
         Bucket used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :param dynamic_bucket: The dynamic_bucket of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param dynamic_bucket: The dynamic_bucket of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: str
         """
 
@@ -338,22 +338,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def dynamic_host(self):
-        """Gets the dynamic_host of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the dynamic_host of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         Host used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :return: The dynamic_host of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The dynamic_host of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: str
         """
         return self._dynamic_host
 
     @dynamic_host.setter
     def dynamic_host(self, dynamic_host):
-        """Sets the dynamic_host of this ImportedDatasetRequestWithUri.
+        """Sets the dynamic_host of this LImportedDatasetRequestWithUri.
 
         Host used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :param dynamic_host: The dynamic_host of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param dynamic_host: The dynamic_host of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: str
         """
 
@@ -361,22 +361,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def dynamic_user_info(self):
-        """Gets the dynamic_user_info of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the dynamic_user_info of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         User used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :return: The dynamic_user_info of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The dynamic_user_info of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: str
         """
         return self._dynamic_user_info
 
     @dynamic_user_info.setter
     def dynamic_user_info(self, dynamic_user_info):
-        """Sets the dynamic_user_info of this ImportedDatasetRequestWithUri.
+        """Sets the dynamic_user_info of this LImportedDatasetRequestWithUri.
 
         User used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :param dynamic_user_info: The dynamic_user_info of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param dynamic_user_info: The dynamic_user_info of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: str
         """
 
@@ -384,22 +384,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def name(self):
-        """Gets the name of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the name of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         Display name of the imported dataset.  # noqa: E501
 
-        :return: The name of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The name of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ImportedDatasetRequestWithUri.
+        """Sets the name of this LImportedDatasetRequestWithUri.
 
         Display name of the imported dataset.  # noqa: E501
 
-        :param name: The name of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param name: The name of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -409,22 +409,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def description(self):
-        """Gets the description of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the description of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         User-friendly description for the imported dataset.  # noqa: E501
 
-        :return: The description of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The description of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ImportedDatasetRequestWithUri.
+        """Sets the description of this LImportedDatasetRequestWithUri.
 
         User-friendly description for the imported dataset.  # noqa: E501
 
-        :param description: The description of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param description: The description of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: str
         """
 
@@ -432,22 +432,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def disable_type_inference(self):
-        """Gets the disable_type_inference of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the disable_type_inference of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         Only applicable to relational sources (database tables/views for e.g.). Prevent Alteryx Analytics Cloud type inference from running and inferring types by looking at the first rows of the dataset.  # noqa: E501
 
-        :return: The disable_type_inference of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The disable_type_inference of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: bool
         """
         return self._disable_type_inference
 
     @disable_type_inference.setter
     def disable_type_inference(self, disable_type_inference):
-        """Sets the disable_type_inference of this ImportedDatasetRequestWithUri.
+        """Sets the disable_type_inference of this LImportedDatasetRequestWithUri.
 
         Only applicable to relational sources (database tables/views for e.g.). Prevent Alteryx Analytics Cloud type inference from running and inferring types by looking at the first rows of the dataset.  # noqa: E501
 
-        :param disable_type_inference: The disable_type_inference of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param disable_type_inference: The disable_type_inference of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: bool
         """
 
@@ -455,22 +455,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def type(self):
-        """Gets the type of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the type of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         Indicate the type of dataset. If not specified, the default storage protocol is used.  # noqa: E501
 
-        :return: The type of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The type of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ImportedDatasetRequestWithUri.
+        """Sets the type of this LImportedDatasetRequestWithUri.
 
         Indicate the type of dataset. If not specified, the default storage protocol is used.  # noqa: E501
 
-        :param type: The type of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param type: The type of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: str
         """
 
@@ -478,22 +478,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def is_converted(self):
-        """Gets the is_converted of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the is_converted of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         Indicate if the imported dataset is converted. This is the case for Microsoft Excel Dataset for e.g.  # noqa: E501
 
-        :return: The is_converted of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The is_converted of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: bool
         """
         return self._is_converted
 
     @is_converted.setter
     def is_converted(self, is_converted):
-        """Sets the is_converted of this ImportedDatasetRequestWithUri.
+        """Sets the is_converted of this LImportedDatasetRequestWithUri.
 
         Indicate if the imported dataset is converted. This is the case for Microsoft Excel Dataset for e.g.  # noqa: E501
 
-        :param is_converted: The is_converted of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param is_converted: The is_converted of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: bool
         """
 
@@ -501,22 +501,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def is_dynamic(self):
-        """Gets the is_dynamic of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the is_dynamic of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         indicate if the datasource is parameterized. In that case, a `dynamicPath` should be passed.  # noqa: E501
 
-        :return: The is_dynamic of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The is_dynamic of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: bool
         """
         return self._is_dynamic
 
     @is_dynamic.setter
     def is_dynamic(self, is_dynamic):
-        """Sets the is_dynamic of this ImportedDatasetRequestWithUri.
+        """Sets the is_dynamic of this LImportedDatasetRequestWithUri.
 
         indicate if the datasource is parameterized. In that case, a `dynamicPath` should be passed.  # noqa: E501
 
-        :param is_dynamic: The is_dynamic of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param is_dynamic: The is_dynamic of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: bool
         """
 
@@ -524,22 +524,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def host(self):
-        """Gets the host of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the host of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         Host for the dataset  # noqa: E501
 
-        :return: The host of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The host of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: str
         """
         return self._host
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ImportedDatasetRequestWithUri.
+        """Sets the host of this LImportedDatasetRequestWithUri.
 
         Host for the dataset  # noqa: E501
 
-        :param host: The host of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param host: The host of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: str
         """
 
@@ -547,22 +547,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def userinfo(self):
-        """Gets the userinfo of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the userinfo of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         User info for the dataset  # noqa: E501
 
-        :return: The userinfo of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The userinfo of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: str
         """
         return self._userinfo
 
     @userinfo.setter
     def userinfo(self, userinfo):
-        """Sets the userinfo of this ImportedDatasetRequestWithUri.
+        """Sets the userinfo of this LImportedDatasetRequestWithUri.
 
         User info for the dataset  # noqa: E501
 
-        :param userinfo: The userinfo of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param userinfo: The userinfo of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: str
         """
 
@@ -570,22 +570,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def mime_type(self):
-        """Gets the mime_type of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the mime_type of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         Should be set to \"application/vnd.google-apps.spreadsheet\" when importing Google sheets  # noqa: E501
 
-        :return: The mime_type of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The mime_type of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: str
         """
         return self._mime_type
 
     @mime_type.setter
     def mime_type(self, mime_type):
-        """Sets the mime_type of this ImportedDatasetRequestWithUri.
+        """Sets the mime_type of this LImportedDatasetRequestWithUri.
 
         Should be set to \"application/vnd.google-apps.spreadsheet\" when importing Google sheets  # noqa: E501
 
-        :param mime_type: The mime_type of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param mime_type: The mime_type of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: str
         """
 
@@ -593,22 +593,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def detect_structure(self):
-        """Gets the detect_structure of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the detect_structure of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         Indicate if a parsing script should be inferred when importing the dataset. By default, the dataset is imported `unstructured`.  # noqa: E501
 
-        :return: The detect_structure of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The detect_structure of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: bool
         """
         return self._detect_structure
 
     @detect_structure.setter
     def detect_structure(self, detect_structure):
-        """Sets the detect_structure of this ImportedDatasetRequestWithUri.
+        """Sets the detect_structure of this LImportedDatasetRequestWithUri.
 
         Indicate if a parsing script should be inferred when importing the dataset. By default, the dataset is imported `unstructured`.  # noqa: E501
 
-        :param detect_structure: The detect_structure of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param detect_structure: The detect_structure of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: bool
         """
 
@@ -616,22 +616,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def dynamic_path(self):
-        """Gets the dynamic_path of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the dynamic_path of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         Path used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :return: The dynamic_path of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The dynamic_path of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: str
         """
         return self._dynamic_path
 
     @dynamic_path.setter
     def dynamic_path(self, dynamic_path):
-        """Sets the dynamic_path of this ImportedDatasetRequestWithUri.
+        """Sets the dynamic_path of this LImportedDatasetRequestWithUri.
 
         Path used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :param dynamic_path: The dynamic_path of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param dynamic_path: The dynamic_path of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: str
         """
 
@@ -639,22 +639,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def encoding(self):
-        """Gets the encoding of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the encoding of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         Optional dataset encoding.   # noqa: E501
 
-        :return: The encoding of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The encoding of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: str
         """
         return self._encoding
 
     @encoding.setter
     def encoding(self, encoding):
-        """Sets the encoding of this ImportedDatasetRequestWithUri.
+        """Sets the encoding of this LImportedDatasetRequestWithUri.
 
         Optional dataset encoding.   # noqa: E501
 
-        :param encoding: The encoding of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param encoding: The encoding of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: str
         """
 
@@ -662,22 +662,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def sanitize_column_names(self):
-        """Gets the sanitize_column_names of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the sanitize_column_names of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         Indicate whether the column names in the imported file should be sanitized  # noqa: E501
 
-        :return: The sanitize_column_names of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The sanitize_column_names of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: bool
         """
         return self._sanitize_column_names
 
     @sanitize_column_names.setter
     def sanitize_column_names(self, sanitize_column_names):
-        """Sets the sanitize_column_names of this ImportedDatasetRequestWithUri.
+        """Sets the sanitize_column_names of this LImportedDatasetRequestWithUri.
 
         Indicate whether the column names in the imported file should be sanitized  # noqa: E501
 
-        :param sanitize_column_names: The sanitize_column_names of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param sanitize_column_names: The sanitize_column_names of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: bool
         """
 
@@ -685,22 +685,22 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def ensure_header(self):
-        """Gets the ensure_header of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the ensure_header of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         If provided, forces first row header toggle  # noqa: E501
 
-        :return: The ensure_header of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The ensure_header of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: bool
         """
         return self._ensure_header
 
     @ensure_header.setter
     def ensure_header(self, ensure_header):
-        """Sets the ensure_header of this ImportedDatasetRequestWithUri.
+        """Sets the ensure_header of this LImportedDatasetRequestWithUri.
 
         If provided, forces first row header toggle  # noqa: E501
 
-        :param ensure_header: The ensure_header of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param ensure_header: The ensure_header of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: bool
         """
 
@@ -708,45 +708,45 @@ class LImportedDatasetRequestWithUri(object):
 
     @property
     def run_parameters(self):
-        """Gets the run_parameters of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the run_parameters of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         Description of the dataset parameters if the dataset is parameterized. `isDynamic` should be set to `true` in that case.  # noqa: E501
 
-        :return: The run_parameters of this ImportedDatasetRequestWithUri.  # noqa: E501
-        :rtype: list[RunParameterFileBasedInfo]
+        :return: The run_parameters of this LImportedDatasetRequestWithUri.  # noqa: E501
+        :rtype: list[LRunParameterFileBasedInfo]
         """
         return self._run_parameters
 
     @run_parameters.setter
     def run_parameters(self, run_parameters):
-        """Sets the run_parameters of this ImportedDatasetRequestWithUri.
+        """Sets the run_parameters of this LImportedDatasetRequestWithUri.
 
         Description of the dataset parameters if the dataset is parameterized. `isDynamic` should be set to `true` in that case.  # noqa: E501
 
-        :param run_parameters: The run_parameters of this ImportedDatasetRequestWithUri.  # noqa: E501
-        :type: list[RunParameterFileBasedInfo]
+        :param run_parameters: The run_parameters of this LImportedDatasetRequestWithUri.  # noqa: E501
+        :type: list[LRunParameterFileBasedInfo]
         """
 
         self._run_parameters = run_parameters
 
     @property
     def uri(self):
-        """Gets the uri of this ImportedDatasetRequestWithUri.  # noqa: E501
+        """Gets the uri of this LImportedDatasetRequestWithUri.  # noqa: E501
 
         Dataset URI  # noqa: E501
 
-        :return: The uri of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :return: The uri of this LImportedDatasetRequestWithUri.  # noqa: E501
         :rtype: str
         """
         return self._uri
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this ImportedDatasetRequestWithUri.
+        """Sets the uri of this LImportedDatasetRequestWithUri.
 
         Dataset URI  # noqa: E501
 
-        :param uri: The uri of this ImportedDatasetRequestWithUri.  # noqa: E501
+        :param uri: The uri of this LImportedDatasetRequestWithUri.  # noqa: E501
         :type: str
         """
         if uri is None:
@@ -775,7 +775,7 @@ class LImportedDatasetRequestWithUri(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ImportedDatasetRequestWithUri, dict):
+        if issubclass(LImportedDatasetRequestWithUri, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -791,7 +791,7 @@ class LImportedDatasetRequestWithUri(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImportedDatasetRequestWithUri):
+        if not isinstance(other, LImportedDatasetRequestWithUri):
             return False
 
         return self.__dict__ == other.__dict__

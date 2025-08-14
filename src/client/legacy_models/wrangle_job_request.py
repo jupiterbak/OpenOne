@@ -39,7 +39,7 @@ class LWrangleJobRequest(object):
     }
 
     def __init__(self, cp_job_id=None, execution_language=None, emr_spark_info=None):  # noqa: E501
-        """WrangleJobRequest - a model defined in Swagger"""  # noqa: E501
+        """LWrangleJobRequest - a model defined in Swagger"""  # noqa: E501
         self._cp_job_id = None
         self._execution_language = None
         self._emr_spark_info = None
@@ -53,20 +53,20 @@ class LWrangleJobRequest(object):
 
     @property
     def cp_job_id(self):
-        """Gets the cp_job_id of this WrangleJobRequest.  # noqa: E501
+        """Gets the cp_job_id of this LWrangleJobRequest.  # noqa: E501
 
 
-        :return: The cp_job_id of this WrangleJobRequest.  # noqa: E501
+        :return: The cp_job_id of this LWrangleJobRequest.  # noqa: E501
         :rtype: str
         """
         return self._cp_job_id
 
     @cp_job_id.setter
     def cp_job_id(self, cp_job_id):
-        """Sets the cp_job_id of this WrangleJobRequest.
+        """Sets the cp_job_id of this LWrangleJobRequest.
 
 
-        :param cp_job_id: The cp_job_id of this WrangleJobRequest.  # noqa: E501
+        :param cp_job_id: The cp_job_id of this LWrangleJobRequest.  # noqa: E501
         :type: str
         """
 
@@ -74,22 +74,22 @@ class LWrangleJobRequest(object):
 
     @property
     def execution_language(self):
-        """Gets the execution_language of this WrangleJobRequest.  # noqa: E501
+        """Gets the execution_language of this LWrangleJobRequest.  # noqa: E501
 
         Execution language. Indicate on which engine the job was executed.   Can be null/missing for scheduled jobs that fail during the validation phase.  * `photon` - Photon engine. High performance embedded engine designed for small datasets (up to 1GB).       Not available for all product editions. * `amp` - Amp engine. * `xml-amp` - XML-AMP engine. Only available for standard workflows.    * `emrSpark` - Spark engine running on EMR       # noqa: E501
 
-        :return: The execution_language of this WrangleJobRequest.  # noqa: E501
+        :return: The execution_language of this LWrangleJobRequest.  # noqa: E501
         :rtype: str
         """
         return self._execution_language
 
     @execution_language.setter
     def execution_language(self, execution_language):
-        """Sets the execution_language of this WrangleJobRequest.
+        """Sets the execution_language of this LWrangleJobRequest.
 
         Execution language. Indicate on which engine the job was executed.   Can be null/missing for scheduled jobs that fail during the validation phase.  * `photon` - Photon engine. High performance embedded engine designed for small datasets (up to 1GB).       Not available for all product editions. * `amp` - Amp engine. * `xml-amp` - XML-AMP engine. Only available for standard workflows.    * `emrSpark` - Spark engine running on EMR       # noqa: E501
 
-        :param execution_language: The execution_language of this WrangleJobRequest.  # noqa: E501
+        :param execution_language: The execution_language of this LWrangleJobRequest.  # noqa: E501
         :type: str
         """
         allowed_values = ["photon", "amp", "xml-amp", "emrSpark"]  # noqa: E501
@@ -103,20 +103,20 @@ class LWrangleJobRequest(object):
 
     @property
     def emr_spark_info(self):
-        """Gets the emr_spark_info of this WrangleJobRequest.  # noqa: E501
+        """Gets the emr_spark_info of this LWrangleJobRequest.  # noqa: E501
 
 
-        :return: The emr_spark_info of this WrangleJobRequest.  # noqa: E501
+        :return: The emr_spark_info of this LWrangleJobRequest.  # noqa: E501
         :rtype: object
         """
         return self._emr_spark_info
 
     @emr_spark_info.setter
     def emr_spark_info(self, emr_spark_info):
-        """Sets the emr_spark_info of this WrangleJobRequest.
+        """Sets the emr_spark_info of this LWrangleJobRequest.
 
 
-        :param emr_spark_info: The emr_spark_info of this WrangleJobRequest.  # noqa: E501
+        :param emr_spark_info: The emr_spark_info of this LWrangleJobRequest.  # noqa: E501
         :type: object
         """
 
@@ -143,7 +143,7 @@ class LWrangleJobRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WrangleJobRequest, dict):
+        if issubclass(LWrangleJobRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -159,7 +159,7 @@ class LWrangleJobRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WrangleJobRequest):
+        if not isinstance(other, LWrangleJobRequest):
             return False
 
         return self.__dict__ == other.__dict__

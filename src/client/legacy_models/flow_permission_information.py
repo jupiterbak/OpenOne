@@ -27,7 +27,7 @@ class LFlowPermissionInformation(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'flow_permission': 'FlowPermission'
+        'flow_permission': 'LFlowPermission'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LFlowPermissionInformation(object):
     }
 
     def __init__(self, flow_permission=None):  # noqa: E501
-        """FlowPermissionInformation - a model defined in Swagger"""  # noqa: E501
+        """LFlowPermissionInformation - a model defined in Swagger"""  # noqa: E501
         self._flow_permission = None
         self.discriminator = None
         self.flow_permission = flow_permission
 
     @property
     def flow_permission(self):
-        """Gets the flow_permission of this FlowPermissionInformation.  # noqa: E501
+        """Gets the flow_permission of this LFlowPermissionInformation.  # noqa: E501
 
 
-        :return: The flow_permission of this FlowPermissionInformation.  # noqa: E501
-        :rtype: FlowPermission
+        :return: The flow_permission of this LFlowPermissionInformation.  # noqa: E501
+        :rtype: LFlowPermission
         """
         return self._flow_permission
 
     @flow_permission.setter
     def flow_permission(self, flow_permission):
-        """Sets the flow_permission of this FlowPermissionInformation.
+        """Sets the flow_permission of this LFlowPermissionInformation.
 
 
-        :param flow_permission: The flow_permission of this FlowPermissionInformation.  # noqa: E501
-        :type: FlowPermission
+        :param flow_permission: The flow_permission of this LFlowPermissionInformation.  # noqa: E501
+        :type: LFlowPermission
         """
         if flow_permission is None:
             raise ValueError("Invalid value for `flow_permission`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LFlowPermissionInformation(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowPermissionInformation, dict):
+        if issubclass(LFlowPermissionInformation, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LFlowPermissionInformation(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowPermissionInformation):
+        if not isinstance(other, LFlowPermissionInformation):
             return False
 
         return self.__dict__ == other.__dict__

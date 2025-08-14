@@ -37,7 +37,7 @@ class LWeeklyTrigger(object):
     }
 
     def __init__(self, weekly=None, timezone=None):  # noqa: E501
-        """WeeklyTrigger - a model defined in Swagger"""  # noqa: E501
+        """LWeeklyTrigger - a model defined in Swagger"""  # noqa: E501
         self._weekly = None
         self._timezone = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LWeeklyTrigger(object):
 
     @property
     def weekly(self):
-        """Gets the weekly of this WeeklyTrigger.  # noqa: E501
+        """Gets the weekly of this LWeeklyTrigger.  # noqa: E501
 
 
-        :return: The weekly of this WeeklyTrigger.  # noqa: E501
+        :return: The weekly of this LWeeklyTrigger.  # noqa: E501
         :rtype: object
         """
         return self._weekly
 
     @weekly.setter
     def weekly(self, weekly):
-        """Sets the weekly of this WeeklyTrigger.
+        """Sets the weekly of this LWeeklyTrigger.
 
 
-        :param weekly: The weekly of this WeeklyTrigger.  # noqa: E501
+        :param weekly: The weekly of this LWeeklyTrigger.  # noqa: E501
         :type: object
         """
         if weekly is None:
@@ -69,22 +69,22 @@ class LWeeklyTrigger(object):
 
     @property
     def timezone(self):
-        """Gets the timezone of this WeeklyTrigger.  # noqa: E501
+        """Gets the timezone of this LWeeklyTrigger.  # noqa: E501
 
         timezone for this trigger, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :return: The timezone of this WeeklyTrigger.  # noqa: E501
+        :return: The timezone of this LWeeklyTrigger.  # noqa: E501
         :rtype: str
         """
         return self._timezone
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this WeeklyTrigger.
+        """Sets the timezone of this LWeeklyTrigger.
 
         timezone for this trigger, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :param timezone: The timezone of this WeeklyTrigger.  # noqa: E501
+        :param timezone: The timezone of this LWeeklyTrigger.  # noqa: E501
         :type: str
         """
         if timezone is None:
@@ -113,7 +113,7 @@ class LWeeklyTrigger(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WeeklyTrigger, dict):
+        if issubclass(LWeeklyTrigger, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LWeeklyTrigger(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WeeklyTrigger):
+        if not isinstance(other, LWeeklyTrigger):
             return False
 
         return self.__dict__ == other.__dict__

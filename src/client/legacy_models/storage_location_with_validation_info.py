@@ -39,7 +39,7 @@ class LStorageLocationWithValidationInfo(object):
     }
 
     def __init__(self, location=None, valid=None, error=None):  # noqa: E501
-        """StorageLocationWithValidationInfo - a model defined in Swagger"""  # noqa: E501
+        """LStorageLocationWithValidationInfo - a model defined in Swagger"""  # noqa: E501
         self._location = None
         self._valid = None
         self._error = None
@@ -52,22 +52,22 @@ class LStorageLocationWithValidationInfo(object):
 
     @property
     def location(self):
-        """Gets the location of this StorageLocationWithValidationInfo.  # noqa: E501
+        """Gets the location of this LStorageLocationWithValidationInfo.  # noqa: E501
 
         Storage location uri  # noqa: E501
 
-        :return: The location of this StorageLocationWithValidationInfo.  # noqa: E501
+        :return: The location of this LStorageLocationWithValidationInfo.  # noqa: E501
         :rtype: str
         """
         return self._location
 
     @location.setter
     def location(self, location):
-        """Sets the location of this StorageLocationWithValidationInfo.
+        """Sets the location of this LStorageLocationWithValidationInfo.
 
         Storage location uri  # noqa: E501
 
-        :param location: The location of this StorageLocationWithValidationInfo.  # noqa: E501
+        :param location: The location of this LStorageLocationWithValidationInfo.  # noqa: E501
         :type: str
         """
         if location is None:
@@ -77,22 +77,22 @@ class LStorageLocationWithValidationInfo(object):
 
     @property
     def valid(self):
-        """Gets the valid of this StorageLocationWithValidationInfo.  # noqa: E501
+        """Gets the valid of this LStorageLocationWithValidationInfo.  # noqa: E501
 
         True if the validation passed  # noqa: E501
 
-        :return: The valid of this StorageLocationWithValidationInfo.  # noqa: E501
+        :return: The valid of this LStorageLocationWithValidationInfo.  # noqa: E501
         :rtype: bool
         """
         return self._valid
 
     @valid.setter
     def valid(self, valid):
-        """Sets the valid of this StorageLocationWithValidationInfo.
+        """Sets the valid of this LStorageLocationWithValidationInfo.
 
         True if the validation passed  # noqa: E501
 
-        :param valid: The valid of this StorageLocationWithValidationInfo.  # noqa: E501
+        :param valid: The valid of this LStorageLocationWithValidationInfo.  # noqa: E501
         :type: bool
         """
 
@@ -100,20 +100,20 @@ class LStorageLocationWithValidationInfo(object):
 
     @property
     def error(self):
-        """Gets the error of this StorageLocationWithValidationInfo.  # noqa: E501
+        """Gets the error of this LStorageLocationWithValidationInfo.  # noqa: E501
 
 
-        :return: The error of this StorageLocationWithValidationInfo.  # noqa: E501
+        :return: The error of this LStorageLocationWithValidationInfo.  # noqa: E501
         :rtype: object
         """
         return self._error
 
     @error.setter
     def error(self, error):
-        """Sets the error of this StorageLocationWithValidationInfo.
+        """Sets the error of this LStorageLocationWithValidationInfo.
 
 
-        :param error: The error of this StorageLocationWithValidationInfo.  # noqa: E501
+        :param error: The error of this LStorageLocationWithValidationInfo.  # noqa: E501
         :type: object
         """
 
@@ -140,7 +140,7 @@ class LStorageLocationWithValidationInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(StorageLocationWithValidationInfo, dict):
+        if issubclass(LStorageLocationWithValidationInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -156,7 +156,7 @@ class LStorageLocationWithValidationInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, StorageLocationWithValidationInfo):
+        if not isinstance(other, LStorageLocationWithValidationInfo):
             return False
 
         return self.__dict__ == other.__dict__

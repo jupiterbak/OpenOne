@@ -33,7 +33,7 @@ class LAnyOftransferUserAssetsPayloadWithIdToPersonId(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOftransferUserAssetsPayloadWithIdToPersonId - a model defined in Swagger"""  # noqa: E501
+        """LAnyOftransferUserAssetsPayloadWithIdToPersonId - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOftransferUserAssetsPayloadWithIdToPersonId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOftransferUserAssetsPayloadWithIdToPersonId, dict):
+        if issubclass(LAnyOftransferUserAssetsPayloadWithIdToPersonId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOftransferUserAssetsPayloadWithIdToPersonId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOftransferUserAssetsPayloadWithIdToPersonId):
+        if not isinstance(other, LAnyOftransferUserAssetsPayloadWithIdToPersonId):
             return False
 
         return self.__dict__ == other.__dict__

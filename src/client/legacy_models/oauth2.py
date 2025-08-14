@@ -35,27 +35,27 @@ class LOauth2(object):
     }
 
     def __init__(self, oauth2_client_id=None):  # noqa: E501
-        """Oauth2 - a model defined in Swagger"""  # noqa: E501
+        """LOauth2 - a model defined in Swagger"""  # noqa: E501
         self._oauth2_client_id = None
         self.discriminator = None
         self.oauth2_client_id = oauth2_client_id
 
     @property
     def oauth2_client_id(self):
-        """Gets the oauth2_client_id of this Oauth2.  # noqa: E501
+        """Gets the oauth2_client_id of this LOauth2.  # noqa: E501
 
 
-        :return: The oauth2_client_id of this Oauth2.  # noqa: E501
+        :return: The oauth2_client_id of this LOauth2.  # noqa: E501
         :rtype: str
         """
         return self._oauth2_client_id
 
     @oauth2_client_id.setter
     def oauth2_client_id(self, oauth2_client_id):
-        """Sets the oauth2_client_id of this Oauth2.
+        """Sets the oauth2_client_id of this LOauth2.
 
 
-        :param oauth2_client_id: The oauth2_client_id of this Oauth2.  # noqa: E501
+        :param oauth2_client_id: The oauth2_client_id of this LOauth2.  # noqa: E501
         :type: str
         """
         if oauth2_client_id is None:
@@ -84,7 +84,7 @@ class LOauth2(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Oauth2, dict):
+        if issubclass(LOauth2, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LOauth2(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Oauth2):
+        if not isinstance(other, LOauth2):
             return False
 
         return self.__dict__ == other.__dict__

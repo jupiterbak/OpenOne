@@ -43,7 +43,7 @@ class LSamplingParams(object):
     }
 
     def __init__(self, sample_type=None, scan_type=None, sample_size=None, seed=None, name=None):  # noqa: E501
-        """SamplingParams - a model defined in Swagger"""  # noqa: E501
+        """LSamplingParams - a model defined in Swagger"""  # noqa: E501
         self._sample_type = None
         self._scan_type = None
         self._sample_size = None
@@ -61,22 +61,22 @@ class LSamplingParams(object):
 
     @property
     def sample_type(self):
-        """Gets the sample_type of this SamplingParams.  # noqa: E501
+        """Gets the sample_type of this LSamplingParams.  # noqa: E501
 
         Allowed sampling types * `initial` -  * `head` -  * `random` -  * `filter` -  * `stratified` -  * `cluster` -  * `anomaly` -   # noqa: E501
 
-        :return: The sample_type of this SamplingParams.  # noqa: E501
+        :return: The sample_type of this LSamplingParams.  # noqa: E501
         :rtype: str
         """
         return self._sample_type
 
     @sample_type.setter
     def sample_type(self, sample_type):
-        """Sets the sample_type of this SamplingParams.
+        """Sets the sample_type of this LSamplingParams.
 
         Allowed sampling types * `initial` -  * `head` -  * `random` -  * `filter` -  * `stratified` -  * `cluster` -  * `anomaly` -   # noqa: E501
 
-        :param sample_type: The sample_type of this SamplingParams.  # noqa: E501
+        :param sample_type: The sample_type of this LSamplingParams.  # noqa: E501
         :type: str
         """
         if sample_type is None:
@@ -92,22 +92,22 @@ class LSamplingParams(object):
 
     @property
     def scan_type(self):
-        """Gets the scan_type of this SamplingParams.  # noqa: E501
+        """Gets the scan_type of this LSamplingParams.  # noqa: E501
 
         Allowed scan types * `quick` -  * `full` -   # noqa: E501
 
-        :return: The scan_type of this SamplingParams.  # noqa: E501
+        :return: The scan_type of this LSamplingParams.  # noqa: E501
         :rtype: str
         """
         return self._scan_type
 
     @scan_type.setter
     def scan_type(self, scan_type):
-        """Sets the scan_type of this SamplingParams.
+        """Sets the scan_type of this LSamplingParams.
 
         Allowed scan types * `quick` -  * `full` -   # noqa: E501
 
-        :param scan_type: The scan_type of this SamplingParams.  # noqa: E501
+        :param scan_type: The scan_type of this LSamplingParams.  # noqa: E501
         :type: str
         """
         if scan_type is None:
@@ -123,20 +123,20 @@ class LSamplingParams(object):
 
     @property
     def sample_size(self):
-        """Gets the sample_size of this SamplingParams.  # noqa: E501
+        """Gets the sample_size of this LSamplingParams.  # noqa: E501
 
 
-        :return: The sample_size of this SamplingParams.  # noqa: E501
+        :return: The sample_size of this LSamplingParams.  # noqa: E501
         :rtype: int
         """
         return self._sample_size
 
     @sample_size.setter
     def sample_size(self, sample_size):
-        """Sets the sample_size of this SamplingParams.
+        """Sets the sample_size of this LSamplingParams.
 
 
-        :param sample_size: The sample_size of this SamplingParams.  # noqa: E501
+        :param sample_size: The sample_size of this LSamplingParams.  # noqa: E501
         :type: int
         """
 
@@ -144,20 +144,20 @@ class LSamplingParams(object):
 
     @property
     def seed(self):
-        """Gets the seed of this SamplingParams.  # noqa: E501
+        """Gets the seed of this LSamplingParams.  # noqa: E501
 
 
-        :return: The seed of this SamplingParams.  # noqa: E501
+        :return: The seed of this LSamplingParams.  # noqa: E501
         :rtype: int
         """
         return self._seed
 
     @seed.setter
     def seed(self, seed):
-        """Sets the seed of this SamplingParams.
+        """Sets the seed of this LSamplingParams.
 
 
-        :param seed: The seed of this SamplingParams.  # noqa: E501
+        :param seed: The seed of this LSamplingParams.  # noqa: E501
         :type: int
         """
 
@@ -165,20 +165,20 @@ class LSamplingParams(object):
 
     @property
     def name(self):
-        """Gets the name of this SamplingParams.  # noqa: E501
+        """Gets the name of this LSamplingParams.  # noqa: E501
 
 
-        :return: The name of this SamplingParams.  # noqa: E501
+        :return: The name of this LSamplingParams.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SamplingParams.
+        """Sets the name of this LSamplingParams.
 
 
-        :param name: The name of this SamplingParams.  # noqa: E501
+        :param name: The name of this LSamplingParams.  # noqa: E501
         :type: str
         """
 
@@ -205,7 +205,7 @@ class LSamplingParams(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(SamplingParams, dict):
+        if issubclass(LSamplingParams, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -221,7 +221,7 @@ class LSamplingParams(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SamplingParams):
+        if not isinstance(other, LSamplingParams):
             return False
 
         return self.__dict__ == other.__dict__

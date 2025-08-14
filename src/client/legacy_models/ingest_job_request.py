@@ -41,7 +41,7 @@ class LIngestJobRequest(object):
     }
 
     def __init__(self, location=None, force_cache_update=None, cache_action=None, datasource_id=None):  # noqa: E501
-        """IngestJobRequest - a model defined in Swagger"""  # noqa: E501
+        """LIngestJobRequest - a model defined in Swagger"""  # noqa: E501
         self._location = None
         self._force_cache_update = None
         self._cache_action = None
@@ -58,20 +58,20 @@ class LIngestJobRequest(object):
 
     @property
     def location(self):
-        """Gets the location of this IngestJobRequest.  # noqa: E501
+        """Gets the location of this LIngestJobRequest.  # noqa: E501
 
 
-        :return: The location of this IngestJobRequest.  # noqa: E501
+        :return: The location of this LIngestJobRequest.  # noqa: E501
         :rtype: str
         """
         return self._location
 
     @location.setter
     def location(self, location):
-        """Sets the location of this IngestJobRequest.
+        """Sets the location of this LIngestJobRequest.
 
 
-        :param location: The location of this IngestJobRequest.  # noqa: E501
+        :param location: The location of this LIngestJobRequest.  # noqa: E501
         :type: str
         """
 
@@ -79,20 +79,20 @@ class LIngestJobRequest(object):
 
     @property
     def force_cache_update(self):
-        """Gets the force_cache_update of this IngestJobRequest.  # noqa: E501
+        """Gets the force_cache_update of this LIngestJobRequest.  # noqa: E501
 
 
-        :return: The force_cache_update of this IngestJobRequest.  # noqa: E501
+        :return: The force_cache_update of this LIngestJobRequest.  # noqa: E501
         :rtype: bool
         """
         return self._force_cache_update
 
     @force_cache_update.setter
     def force_cache_update(self, force_cache_update):
-        """Sets the force_cache_update of this IngestJobRequest.
+        """Sets the force_cache_update of this LIngestJobRequest.
 
 
-        :param force_cache_update: The force_cache_update of this IngestJobRequest.  # noqa: E501
+        :param force_cache_update: The force_cache_update of this LIngestJobRequest.  # noqa: E501
         :type: bool
         """
 
@@ -100,20 +100,20 @@ class LIngestJobRequest(object):
 
     @property
     def cache_action(self):
-        """Gets the cache_action of this IngestJobRequest.  # noqa: E501
+        """Gets the cache_action of this LIngestJobRequest.  # noqa: E501
 
 
-        :return: The cache_action of this IngestJobRequest.  # noqa: E501
+        :return: The cache_action of this LIngestJobRequest.  # noqa: E501
         :rtype: str
         """
         return self._cache_action
 
     @cache_action.setter
     def cache_action(self, cache_action):
-        """Sets the cache_action of this IngestJobRequest.
+        """Sets the cache_action of this LIngestJobRequest.
 
 
-        :param cache_action: The cache_action of this IngestJobRequest.  # noqa: E501
+        :param cache_action: The cache_action of this LIngestJobRequest.  # noqa: E501
         :type: str
         """
         allowed_values = ["NOOP", "WRITE", "READ", "WRITE_FAILURE"]  # noqa: E501
@@ -127,20 +127,20 @@ class LIngestJobRequest(object):
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this IngestJobRequest.  # noqa: E501
+        """Gets the datasource_id of this LIngestJobRequest.  # noqa: E501
 
 
-        :return: The datasource_id of this IngestJobRequest.  # noqa: E501
+        :return: The datasource_id of this LIngestJobRequest.  # noqa: E501
         :rtype: int
         """
         return self._datasource_id
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this IngestJobRequest.
+        """Sets the datasource_id of this LIngestJobRequest.
 
 
-        :param datasource_id: The datasource_id of this IngestJobRequest.  # noqa: E501
+        :param datasource_id: The datasource_id of this LIngestJobRequest.  # noqa: E501
         :type: int
         """
 
@@ -167,7 +167,7 @@ class LIngestJobRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(IngestJobRequest, dict):
+        if issubclass(LIngestJobRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -183,7 +183,7 @@ class LIngestJobRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, IngestJobRequest):
+        if not isinstance(other, LIngestJobRequest):
             return False
 
         return self.__dict__ == other.__dict__

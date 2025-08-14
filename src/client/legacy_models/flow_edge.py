@@ -53,7 +53,7 @@ class LFlowEdge(object):
     }
 
     def __init__(self, in_port_id=None, out_port_id=None, input_flow_node=None, output_flow_node=None, flow=None, id=None, created_at=None, updated_at=None, creator=None, updater=None):  # noqa: E501
-        """FlowEdge - a model defined in Swagger"""  # noqa: E501
+        """LFlowEdge - a model defined in Swagger"""  # noqa: E501
         self._in_port_id = None
         self._out_port_id = None
         self._input_flow_node = None
@@ -85,20 +85,20 @@ class LFlowEdge(object):
 
     @property
     def in_port_id(self):
-        """Gets the in_port_id of this FlowEdge.  # noqa: E501
+        """Gets the in_port_id of this LFlowEdge.  # noqa: E501
 
 
-        :return: The in_port_id of this FlowEdge.  # noqa: E501
+        :return: The in_port_id of this LFlowEdge.  # noqa: E501
         :rtype: int
         """
         return self._in_port_id
 
     @in_port_id.setter
     def in_port_id(self, in_port_id):
-        """Sets the in_port_id of this FlowEdge.
+        """Sets the in_port_id of this LFlowEdge.
 
 
-        :param in_port_id: The in_port_id of this FlowEdge.  # noqa: E501
+        :param in_port_id: The in_port_id of this LFlowEdge.  # noqa: E501
         :type: int
         """
 
@@ -106,20 +106,20 @@ class LFlowEdge(object):
 
     @property
     def out_port_id(self):
-        """Gets the out_port_id of this FlowEdge.  # noqa: E501
+        """Gets the out_port_id of this LFlowEdge.  # noqa: E501
 
 
-        :return: The out_port_id of this FlowEdge.  # noqa: E501
+        :return: The out_port_id of this LFlowEdge.  # noqa: E501
         :rtype: int
         """
         return self._out_port_id
 
     @out_port_id.setter
     def out_port_id(self, out_port_id):
-        """Sets the out_port_id of this FlowEdge.
+        """Sets the out_port_id of this LFlowEdge.
 
 
-        :param out_port_id: The out_port_id of this FlowEdge.  # noqa: E501
+        :param out_port_id: The out_port_id of this LFlowEdge.  # noqa: E501
         :type: int
         """
 
@@ -127,20 +127,20 @@ class LFlowEdge(object):
 
     @property
     def input_flow_node(self):
-        """Gets the input_flow_node of this FlowEdge.  # noqa: E501
+        """Gets the input_flow_node of this LFlowEdge.  # noqa: E501
 
 
-        :return: The input_flow_node of this FlowEdge.  # noqa: E501
+        :return: The input_flow_node of this LFlowEdge.  # noqa: E501
         :rtype: object
         """
         return self._input_flow_node
 
     @input_flow_node.setter
     def input_flow_node(self, input_flow_node):
-        """Sets the input_flow_node of this FlowEdge.
+        """Sets the input_flow_node of this LFlowEdge.
 
 
-        :param input_flow_node: The input_flow_node of this FlowEdge.  # noqa: E501
+        :param input_flow_node: The input_flow_node of this LFlowEdge.  # noqa: E501
         :type: object
         """
 
@@ -148,20 +148,20 @@ class LFlowEdge(object):
 
     @property
     def output_flow_node(self):
-        """Gets the output_flow_node of this FlowEdge.  # noqa: E501
+        """Gets the output_flow_node of this LFlowEdge.  # noqa: E501
 
 
-        :return: The output_flow_node of this FlowEdge.  # noqa: E501
+        :return: The output_flow_node of this LFlowEdge.  # noqa: E501
         :rtype: object
         """
         return self._output_flow_node
 
     @output_flow_node.setter
     def output_flow_node(self, output_flow_node):
-        """Sets the output_flow_node of this FlowEdge.
+        """Sets the output_flow_node of this LFlowEdge.
 
 
-        :param output_flow_node: The output_flow_node of this FlowEdge.  # noqa: E501
+        :param output_flow_node: The output_flow_node of this LFlowEdge.  # noqa: E501
         :type: object
         """
 
@@ -169,20 +169,20 @@ class LFlowEdge(object):
 
     @property
     def flow(self):
-        """Gets the flow of this FlowEdge.  # noqa: E501
+        """Gets the flow of this LFlowEdge.  # noqa: E501
 
 
-        :return: The flow of this FlowEdge.  # noqa: E501
+        :return: The flow of this LFlowEdge.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this FlowEdge.
+        """Sets the flow of this LFlowEdge.
 
 
-        :param flow: The flow of this FlowEdge.  # noqa: E501
+        :param flow: The flow of this LFlowEdge.  # noqa: E501
         :type: object
         """
 
@@ -190,22 +190,22 @@ class LFlowEdge(object):
 
     @property
     def id(self):
-        """Gets the id of this FlowEdge.  # noqa: E501
+        """Gets the id of this LFlowEdge.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this FlowEdge.  # noqa: E501
+        :return: The id of this LFlowEdge.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FlowEdge.
+        """Sets the id of this LFlowEdge.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this FlowEdge.  # noqa: E501
+        :param id: The id of this LFlowEdge.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -215,22 +215,22 @@ class LFlowEdge(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this FlowEdge.  # noqa: E501
+        """Gets the created_at of this LFlowEdge.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this FlowEdge.  # noqa: E501
+        :return: The created_at of this LFlowEdge.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this FlowEdge.
+        """Sets the created_at of this LFlowEdge.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this FlowEdge.  # noqa: E501
+        :param created_at: The created_at of this LFlowEdge.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -240,22 +240,22 @@ class LFlowEdge(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this FlowEdge.  # noqa: E501
+        """Gets the updated_at of this LFlowEdge.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this FlowEdge.  # noqa: E501
+        :return: The updated_at of this LFlowEdge.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this FlowEdge.
+        """Sets the updated_at of this LFlowEdge.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this FlowEdge.  # noqa: E501
+        :param updated_at: The updated_at of this LFlowEdge.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -265,20 +265,20 @@ class LFlowEdge(object):
 
     @property
     def creator(self):
-        """Gets the creator of this FlowEdge.  # noqa: E501
+        """Gets the creator of this LFlowEdge.  # noqa: E501
 
 
-        :return: The creator of this FlowEdge.  # noqa: E501
+        :return: The creator of this LFlowEdge.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this FlowEdge.
+        """Sets the creator of this LFlowEdge.
 
 
-        :param creator: The creator of this FlowEdge.  # noqa: E501
+        :param creator: The creator of this LFlowEdge.  # noqa: E501
         :type: object
         """
 
@@ -286,20 +286,20 @@ class LFlowEdge(object):
 
     @property
     def updater(self):
-        """Gets the updater of this FlowEdge.  # noqa: E501
+        """Gets the updater of this LFlowEdge.  # noqa: E501
 
 
-        :return: The updater of this FlowEdge.  # noqa: E501
+        :return: The updater of this LFlowEdge.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this FlowEdge.
+        """Sets the updater of this LFlowEdge.
 
 
-        :param updater: The updater of this FlowEdge.  # noqa: E501
+        :param updater: The updater of this LFlowEdge.  # noqa: E501
         :type: object
         """
 
@@ -326,7 +326,7 @@ class LFlowEdge(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowEdge, dict):
+        if issubclass(LFlowEdge, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -342,7 +342,7 @@ class LFlowEdge(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowEdge):
+        if not isinstance(other, LFlowEdge):
             return False
 
         return self.__dict__ == other.__dict__

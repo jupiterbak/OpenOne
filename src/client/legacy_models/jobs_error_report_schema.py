@@ -33,7 +33,7 @@ class LJobsErrorReportSchema(object):
     }
 
     def __init__(self):  # noqa: E501
-        """JobsErrorReportSchema - a model defined in Swagger"""  # noqa: E501
+        """LJobsErrorReportSchema - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LJobsErrorReportSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(JobsErrorReportSchema, dict):
+        if issubclass(LJobsErrorReportSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LJobsErrorReportSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, JobsErrorReportSchema):
+        if not isinstance(other, LJobsErrorReportSchema):
             return False
 
         return self.__dict__ == other.__dict__

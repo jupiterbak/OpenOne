@@ -37,7 +37,7 @@ class LInviteUsersToAccountWorkspaceRequest(object):
     }
 
     def __init__(self, emails=None, skip_inviter_email=None):  # noqa: E501
-        """InviteUsersToAccountWorkspaceRequest - a model defined in Swagger"""  # noqa: E501
+        """LInviteUsersToAccountWorkspaceRequest - a model defined in Swagger"""  # noqa: E501
         self._emails = None
         self._skip_inviter_email = None
         self.discriminator = None
@@ -47,20 +47,20 @@ class LInviteUsersToAccountWorkspaceRequest(object):
 
     @property
     def emails(self):
-        """Gets the emails of this InviteUsersToAccountWorkspaceRequest.  # noqa: E501
+        """Gets the emails of this LInviteUsersToAccountWorkspaceRequest.  # noqa: E501
 
 
-        :return: The emails of this InviteUsersToAccountWorkspaceRequest.  # noqa: E501
+        :return: The emails of this LInviteUsersToAccountWorkspaceRequest.  # noqa: E501
         :rtype: list[str]
         """
         return self._emails
 
     @emails.setter
     def emails(self, emails):
-        """Sets the emails of this InviteUsersToAccountWorkspaceRequest.
+        """Sets the emails of this LInviteUsersToAccountWorkspaceRequest.
 
 
-        :param emails: The emails of this InviteUsersToAccountWorkspaceRequest.  # noqa: E501
+        :param emails: The emails of this LInviteUsersToAccountWorkspaceRequest.  # noqa: E501
         :type: list[str]
         """
         if emails is None:
@@ -70,22 +70,22 @@ class LInviteUsersToAccountWorkspaceRequest(object):
 
     @property
     def skip_inviter_email(self):
-        """Gets the skip_inviter_email of this InviteUsersToAccountWorkspaceRequest.  # noqa: E501
+        """Gets the skip_inviter_email of this LInviteUsersToAccountWorkspaceRequest.  # noqa: E501
 
         set to false if you want to send the invitation email to the inviter  # noqa: E501
 
-        :return: The skip_inviter_email of this InviteUsersToAccountWorkspaceRequest.  # noqa: E501
+        :return: The skip_inviter_email of this LInviteUsersToAccountWorkspaceRequest.  # noqa: E501
         :rtype: bool
         """
         return self._skip_inviter_email
 
     @skip_inviter_email.setter
     def skip_inviter_email(self, skip_inviter_email):
-        """Sets the skip_inviter_email of this InviteUsersToAccountWorkspaceRequest.
+        """Sets the skip_inviter_email of this LInviteUsersToAccountWorkspaceRequest.
 
         set to false if you want to send the invitation email to the inviter  # noqa: E501
 
-        :param skip_inviter_email: The skip_inviter_email of this InviteUsersToAccountWorkspaceRequest.  # noqa: E501
+        :param skip_inviter_email: The skip_inviter_email of this LInviteUsersToAccountWorkspaceRequest.  # noqa: E501
         :type: bool
         """
 
@@ -112,7 +112,7 @@ class LInviteUsersToAccountWorkspaceRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(InviteUsersToAccountWorkspaceRequest, dict):
+        if issubclass(LInviteUsersToAccountWorkspaceRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -128,7 +128,7 @@ class LInviteUsersToAccountWorkspaceRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, InviteUsersToAccountWorkspaceRequest):
+        if not isinstance(other, LInviteUsersToAccountWorkspaceRequest):
             return False
 
         return self.__dict__ == other.__dict__

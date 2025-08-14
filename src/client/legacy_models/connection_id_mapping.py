@@ -37,7 +37,7 @@ class LConnectionIdMapping(object):
     }
 
     def __init__(self, connection_uuid=None, mapped_connection_uuid=None):  # noqa: E501
-        """ConnectionIdMapping - a model defined in Swagger"""  # noqa: E501
+        """LConnectionIdMapping - a model defined in Swagger"""  # noqa: E501
         self._connection_uuid = None
         self._mapped_connection_uuid = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LConnectionIdMapping(object):
 
     @property
     def connection_uuid(self):
-        """Gets the connection_uuid of this ConnectionIdMapping.  # noqa: E501
+        """Gets the connection_uuid of this LConnectionIdMapping.  # noqa: E501
 
 
-        :return: The connection_uuid of this ConnectionIdMapping.  # noqa: E501
+        :return: The connection_uuid of this LConnectionIdMapping.  # noqa: E501
         :rtype: str
         """
         return self._connection_uuid
 
     @connection_uuid.setter
     def connection_uuid(self, connection_uuid):
-        """Sets the connection_uuid of this ConnectionIdMapping.
+        """Sets the connection_uuid of this LConnectionIdMapping.
 
 
-        :param connection_uuid: The connection_uuid of this ConnectionIdMapping.  # noqa: E501
+        :param connection_uuid: The connection_uuid of this LConnectionIdMapping.  # noqa: E501
         :type: str
         """
         if connection_uuid is None:
@@ -69,20 +69,20 @@ class LConnectionIdMapping(object):
 
     @property
     def mapped_connection_uuid(self):
-        """Gets the mapped_connection_uuid of this ConnectionIdMapping.  # noqa: E501
+        """Gets the mapped_connection_uuid of this LConnectionIdMapping.  # noqa: E501
 
 
-        :return: The mapped_connection_uuid of this ConnectionIdMapping.  # noqa: E501
+        :return: The mapped_connection_uuid of this LConnectionIdMapping.  # noqa: E501
         :rtype: str
         """
         return self._mapped_connection_uuid
 
     @mapped_connection_uuid.setter
     def mapped_connection_uuid(self, mapped_connection_uuid):
-        """Sets the mapped_connection_uuid of this ConnectionIdMapping.
+        """Sets the mapped_connection_uuid of this LConnectionIdMapping.
 
 
-        :param mapped_connection_uuid: The mapped_connection_uuid of this ConnectionIdMapping.  # noqa: E501
+        :param mapped_connection_uuid: The mapped_connection_uuid of this LConnectionIdMapping.  # noqa: E501
         :type: str
         """
         if mapped_connection_uuid is None:
@@ -111,7 +111,7 @@ class LConnectionIdMapping(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConnectionIdMapping, dict):
+        if issubclass(LConnectionIdMapping, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LConnectionIdMapping(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConnectionIdMapping):
+        if not isinstance(other, LConnectionIdMapping):
             return False
 
         return self.__dict__ == other.__dict__

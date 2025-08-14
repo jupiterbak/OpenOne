@@ -39,7 +39,7 @@ class LSecurityToken(object):
     }
 
     def __init__(self, username=None, password=None, security_token=None):  # noqa: E501
-        """SecurityToken - a model defined in Swagger"""  # noqa: E501
+        """LSecurityToken - a model defined in Swagger"""  # noqa: E501
         self._username = None
         self._password = None
         self._security_token = None
@@ -50,20 +50,20 @@ class LSecurityToken(object):
 
     @property
     def username(self):
-        """Gets the username of this SecurityToken.  # noqa: E501
+        """Gets the username of this LSecurityToken.  # noqa: E501
 
 
-        :return: The username of this SecurityToken.  # noqa: E501
+        :return: The username of this LSecurityToken.  # noqa: E501
         :rtype: str
         """
         return self._username
 
     @username.setter
     def username(self, username):
-        """Sets the username of this SecurityToken.
+        """Sets the username of this LSecurityToken.
 
 
-        :param username: The username of this SecurityToken.  # noqa: E501
+        :param username: The username of this LSecurityToken.  # noqa: E501
         :type: str
         """
         if username is None:
@@ -73,20 +73,20 @@ class LSecurityToken(object):
 
     @property
     def password(self):
-        """Gets the password of this SecurityToken.  # noqa: E501
+        """Gets the password of this LSecurityToken.  # noqa: E501
 
 
-        :return: The password of this SecurityToken.  # noqa: E501
+        :return: The password of this LSecurityToken.  # noqa: E501
         :rtype: str
         """
         return self._password
 
     @password.setter
     def password(self, password):
-        """Sets the password of this SecurityToken.
+        """Sets the password of this LSecurityToken.
 
 
-        :param password: The password of this SecurityToken.  # noqa: E501
+        :param password: The password of this LSecurityToken.  # noqa: E501
         :type: str
         """
         if password is None:
@@ -96,20 +96,20 @@ class LSecurityToken(object):
 
     @property
     def security_token(self):
-        """Gets the security_token of this SecurityToken.  # noqa: E501
+        """Gets the security_token of this LSecurityToken.  # noqa: E501
 
 
-        :return: The security_token of this SecurityToken.  # noqa: E501
+        :return: The security_token of this LSecurityToken.  # noqa: E501
         :rtype: str
         """
         return self._security_token
 
     @security_token.setter
     def security_token(self, security_token):
-        """Sets the security_token of this SecurityToken.
+        """Sets the security_token of this LSecurityToken.
 
 
-        :param security_token: The security_token of this SecurityToken.  # noqa: E501
+        :param security_token: The security_token of this LSecurityToken.  # noqa: E501
         :type: str
         """
         if security_token is None:
@@ -138,7 +138,7 @@ class LSecurityToken(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(SecurityToken, dict):
+        if issubclass(LSecurityToken, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -154,7 +154,7 @@ class LSecurityToken(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SecurityToken):
+        if not isinstance(other, LSecurityToken):
             return False
 
         return self.__dict__ == other.__dict__

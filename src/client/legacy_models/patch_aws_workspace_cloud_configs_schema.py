@@ -35,27 +35,27 @@ class LPatchAwsWorkspaceCloudConfigsSchema(object):
     }
 
     def __init__(self, aws=None):  # noqa: E501
-        """PatchAwsWorkspaceCloudConfigsSchema - a model defined in Swagger"""  # noqa: E501
+        """LPatchAwsWorkspaceCloudConfigsSchema - a model defined in Swagger"""  # noqa: E501
         self._aws = None
         self.discriminator = None
         self.aws = aws
 
     @property
     def aws(self):
-        """Gets the aws of this PatchAwsWorkspaceCloudConfigsSchema.  # noqa: E501
+        """Gets the aws of this LPatchAwsWorkspaceCloudConfigsSchema.  # noqa: E501
 
 
-        :return: The aws of this PatchAwsWorkspaceCloudConfigsSchema.  # noqa: E501
+        :return: The aws of this LPatchAwsWorkspaceCloudConfigsSchema.  # noqa: E501
         :rtype: object
         """
         return self._aws
 
     @aws.setter
     def aws(self, aws):
-        """Sets the aws of this PatchAwsWorkspaceCloudConfigsSchema.
+        """Sets the aws of this LPatchAwsWorkspaceCloudConfigsSchema.
 
 
-        :param aws: The aws of this PatchAwsWorkspaceCloudConfigsSchema.  # noqa: E501
+        :param aws: The aws of this LPatchAwsWorkspaceCloudConfigsSchema.  # noqa: E501
         :type: object
         """
         if aws is None:
@@ -84,7 +84,7 @@ class LPatchAwsWorkspaceCloudConfigsSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PatchAwsWorkspaceCloudConfigsSchema, dict):
+        if issubclass(LPatchAwsWorkspaceCloudConfigsSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LPatchAwsWorkspaceCloudConfigsSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PatchAwsWorkspaceCloudConfigsSchema):
+        if not isinstance(other, LPatchAwsWorkspaceCloudConfigsSchema):
             return False
 
         return self.__dict__ == other.__dict__

@@ -35,27 +35,27 @@ class LCommitEdgesPayload(object):
     }
 
     def __init__(self, update_info=None):  # noqa: E501
-        """CommitEdgesPayload - a model defined in Swagger"""  # noqa: E501
+        """LCommitEdgesPayload - a model defined in Swagger"""  # noqa: E501
         self._update_info = None
         self.discriminator = None
         self.update_info = update_info
 
     @property
     def update_info(self):
-        """Gets the update_info of this CommitEdgesPayload.  # noqa: E501
+        """Gets the update_info of this LCommitEdgesPayload.  # noqa: E501
 
 
-        :return: The update_info of this CommitEdgesPayload.  # noqa: E501
+        :return: The update_info of this LCommitEdgesPayload.  # noqa: E501
         :rtype: object
         """
         return self._update_info
 
     @update_info.setter
     def update_info(self, update_info):
-        """Sets the update_info of this CommitEdgesPayload.
+        """Sets the update_info of this LCommitEdgesPayload.
 
 
-        :param update_info: The update_info of this CommitEdgesPayload.  # noqa: E501
+        :param update_info: The update_info of this LCommitEdgesPayload.  # noqa: E501
         :type: object
         """
         if update_info is None:
@@ -84,7 +84,7 @@ class LCommitEdgesPayload(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(CommitEdgesPayload, dict):
+        if issubclass(LCommitEdgesPayload, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LCommitEdgesPayload(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CommitEdgesPayload):
+        if not isinstance(other, LCommitEdgesPayload):
             return False
 
         return self.__dict__ == other.__dict__

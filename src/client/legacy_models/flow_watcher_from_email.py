@@ -27,7 +27,7 @@ class LFlowWatcherFromEmail(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'flow_id': 'AnyOfflowWatcherFromEmailFlowId',
+        'flow_id': 'LAnyOfflowWatcherFromEmailFlowId',
         'email': 'str'
     }
 
@@ -37,7 +37,7 @@ class LFlowWatcherFromEmail(object):
     }
 
     def __init__(self, flow_id=None, email=None):  # noqa: E501
-        """FlowWatcherFromEmail - a model defined in Swagger"""  # noqa: E501
+        """LFlowWatcherFromEmail - a model defined in Swagger"""  # noqa: E501
         self._flow_id = None
         self._email = None
         self.discriminator = None
@@ -46,21 +46,21 @@ class LFlowWatcherFromEmail(object):
 
     @property
     def flow_id(self):
-        """Gets the flow_id of this FlowWatcherFromEmail.  # noqa: E501
+        """Gets the flow_id of this LFlowWatcherFromEmail.  # noqa: E501
 
 
-        :return: The flow_id of this FlowWatcherFromEmail.  # noqa: E501
-        :rtype: AnyOfflowWatcherFromEmailFlowId
+        :return: The flow_id of this LFlowWatcherFromEmail.  # noqa: E501
+        :rtype: LAnyOfflowWatcherFromEmailFlowId
         """
         return self._flow_id
 
     @flow_id.setter
     def flow_id(self, flow_id):
-        """Sets the flow_id of this FlowWatcherFromEmail.
+        """Sets the flow_id of this LFlowWatcherFromEmail.
 
 
-        :param flow_id: The flow_id of this FlowWatcherFromEmail.  # noqa: E501
-        :type: AnyOfflowWatcherFromEmailFlowId
+        :param flow_id: The flow_id of this LFlowWatcherFromEmail.  # noqa: E501
+        :type: LAnyOfflowWatcherFromEmailFlowId
         """
         if flow_id is None:
             raise ValueError("Invalid value for `flow_id`, must not be `None`")  # noqa: E501
@@ -69,20 +69,20 @@ class LFlowWatcherFromEmail(object):
 
     @property
     def email(self):
-        """Gets the email of this FlowWatcherFromEmail.  # noqa: E501
+        """Gets the email of this LFlowWatcherFromEmail.  # noqa: E501
 
 
-        :return: The email of this FlowWatcherFromEmail.  # noqa: E501
+        :return: The email of this LFlowWatcherFromEmail.  # noqa: E501
         :rtype: str
         """
         return self._email
 
     @email.setter
     def email(self, email):
-        """Sets the email of this FlowWatcherFromEmail.
+        """Sets the email of this LFlowWatcherFromEmail.
 
 
-        :param email: The email of this FlowWatcherFromEmail.  # noqa: E501
+        :param email: The email of this LFlowWatcherFromEmail.  # noqa: E501
         :type: str
         """
         if email is None:
@@ -111,7 +111,7 @@ class LFlowWatcherFromEmail(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowWatcherFromEmail, dict):
+        if issubclass(LFlowWatcherFromEmail, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LFlowWatcherFromEmail(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowWatcherFromEmail):
+        if not isinstance(other, LFlowWatcherFromEmail):
             return False
 
         return self.__dict__ == other.__dict__

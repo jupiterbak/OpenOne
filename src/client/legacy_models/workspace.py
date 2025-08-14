@@ -34,11 +34,11 @@ class LWorkspace(object):
         'custom_url': 'str',
         'max_user_number': 'int',
         'emrcluster': 'object',
-        'id': 'AnyOfworkspaceId',
+        'id': 'LAnyOfworkspaceId',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'user_count': 'int',
-        'workspacetiers': 'AnyOfworkspaceWorkspacetiers',
+        'workspacetiers': 'LAnyOfworkspaceWorkspacetiers',
         'gid': 'str'
     }
 
@@ -59,7 +59,7 @@ class LWorkspace(object):
     }
 
     def __init__(self, name=None, tier=None, state=None, last_state_change=None, custom_url=None, max_user_number=None, emrcluster=None, id=None, created_at=None, updated_at=None, user_count=None, workspacetiers=None, gid=None):  # noqa: E501
-        """Workspace - a model defined in Swagger"""  # noqa: E501
+        """LWorkspace - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._tier = None
         self._state = None
@@ -102,22 +102,22 @@ class LWorkspace(object):
 
     @property
     def name(self):
-        """Gets the name of this Workspace.  # noqa: E501
+        """Gets the name of this LWorkspace.  # noqa: E501
 
         Workspace name  # noqa: E501
 
-        :return: The name of this Workspace.  # noqa: E501
+        :return: The name of this LWorkspace.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Workspace.
+        """Sets the name of this LWorkspace.
 
         Workspace name  # noqa: E501
 
-        :param name: The name of this Workspace.  # noqa: E501
+        :param name: The name of this LWorkspace.  # noqa: E501
         :type: str
         """
 
@@ -125,20 +125,20 @@ class LWorkspace(object):
 
     @property
     def tier(self):
-        """Gets the tier of this Workspace.  # noqa: E501
+        """Gets the tier of this LWorkspace.  # noqa: E501
 
 
-        :return: The tier of this Workspace.  # noqa: E501
+        :return: The tier of this LWorkspace.  # noqa: E501
         :rtype: str
         """
         return self._tier
 
     @tier.setter
     def tier(self, tier):
-        """Sets the tier of this Workspace.
+        """Sets the tier of this LWorkspace.
 
 
-        :param tier: The tier of this Workspace.  # noqa: E501
+        :param tier: The tier of this LWorkspace.  # noqa: E501
         :type: str
         """
         allowed_values = ["free", "pro", "none", "legacy", "standard", "premium", "standard-free", "starter", "professional", "professional_trial", "enterprise_cloud", "enterprise_cloud_trial", "starter22", "professional22", "enterprise_cloud22", "enterprise_cloud22_trial", "looker_freemium", "platform_packaging"]  # noqa: E501
@@ -152,20 +152,20 @@ class LWorkspace(object):
 
     @property
     def state(self):
-        """Gets the state of this Workspace.  # noqa: E501
+        """Gets the state of this LWorkspace.  # noqa: E501
 
 
-        :return: The state of this Workspace.  # noqa: E501
+        :return: The state of this LWorkspace.  # noqa: E501
         :rtype: str
         """
         return self._state
 
     @state.setter
     def state(self, state):
-        """Sets the state of this Workspace.
+        """Sets the state of this LWorkspace.
 
 
-        :param state: The state of this Workspace.  # noqa: E501
+        :param state: The state of this LWorkspace.  # noqa: E501
         :type: str
         """
         allowed_values = ["active", "hidden", "pending_purge"]  # noqa: E501
@@ -179,20 +179,20 @@ class LWorkspace(object):
 
     @property
     def last_state_change(self):
-        """Gets the last_state_change of this Workspace.  # noqa: E501
+        """Gets the last_state_change of this LWorkspace.  # noqa: E501
 
 
-        :return: The last_state_change of this Workspace.  # noqa: E501
+        :return: The last_state_change of this LWorkspace.  # noqa: E501
         :rtype: datetime
         """
         return self._last_state_change
 
     @last_state_change.setter
     def last_state_change(self, last_state_change):
-        """Sets the last_state_change of this Workspace.
+        """Sets the last_state_change of this LWorkspace.
 
 
-        :param last_state_change: The last_state_change of this Workspace.  # noqa: E501
+        :param last_state_change: The last_state_change of this LWorkspace.  # noqa: E501
         :type: datetime
         """
 
@@ -200,22 +200,22 @@ class LWorkspace(object):
 
     @property
     def custom_url(self):
-        """Gets the custom_url of this Workspace.  # noqa: E501
+        """Gets the custom_url of this LWorkspace.  # noqa: E501
 
         Workspace URL  # noqa: E501
 
-        :return: The custom_url of this Workspace.  # noqa: E501
+        :return: The custom_url of this LWorkspace.  # noqa: E501
         :rtype: str
         """
         return self._custom_url
 
     @custom_url.setter
     def custom_url(self, custom_url):
-        """Sets the custom_url of this Workspace.
+        """Sets the custom_url of this LWorkspace.
 
         Workspace URL  # noqa: E501
 
-        :param custom_url: The custom_url of this Workspace.  # noqa: E501
+        :param custom_url: The custom_url of this LWorkspace.  # noqa: E501
         :type: str
         """
 
@@ -223,22 +223,22 @@ class LWorkspace(object):
 
     @property
     def max_user_number(self):
-        """Gets the max_user_number of this Workspace.  # noqa: E501
+        """Gets the max_user_number of this LWorkspace.  # noqa: E501
 
         Maximum number of users for the workspace  # noqa: E501
 
-        :return: The max_user_number of this Workspace.  # noqa: E501
+        :return: The max_user_number of this LWorkspace.  # noqa: E501
         :rtype: int
         """
         return self._max_user_number
 
     @max_user_number.setter
     def max_user_number(self, max_user_number):
-        """Sets the max_user_number of this Workspace.
+        """Sets the max_user_number of this LWorkspace.
 
         Maximum number of users for the workspace  # noqa: E501
 
-        :param max_user_number: The max_user_number of this Workspace.  # noqa: E501
+        :param max_user_number: The max_user_number of this LWorkspace.  # noqa: E501
         :type: int
         """
 
@@ -246,20 +246,20 @@ class LWorkspace(object):
 
     @property
     def emrcluster(self):
-        """Gets the emrcluster of this Workspace.  # noqa: E501
+        """Gets the emrcluster of this LWorkspace.  # noqa: E501
 
 
-        :return: The emrcluster of this Workspace.  # noqa: E501
+        :return: The emrcluster of this LWorkspace.  # noqa: E501
         :rtype: object
         """
         return self._emrcluster
 
     @emrcluster.setter
     def emrcluster(self, emrcluster):
-        """Sets the emrcluster of this Workspace.
+        """Sets the emrcluster of this LWorkspace.
 
 
-        :param emrcluster: The emrcluster of this Workspace.  # noqa: E501
+        :param emrcluster: The emrcluster of this LWorkspace.  # noqa: E501
         :type: object
         """
 
@@ -267,21 +267,21 @@ class LWorkspace(object):
 
     @property
     def id(self):
-        """Gets the id of this Workspace.  # noqa: E501
+        """Gets the id of this LWorkspace.  # noqa: E501
 
 
-        :return: The id of this Workspace.  # noqa: E501
-        :rtype: AnyOfworkspaceId
+        :return: The id of this LWorkspace.  # noqa: E501
+        :rtype: LAnyOfworkspaceId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Workspace.
+        """Sets the id of this LWorkspace.
 
 
-        :param id: The id of this Workspace.  # noqa: E501
-        :type: AnyOfworkspaceId
+        :param id: The id of this LWorkspace.  # noqa: E501
+        :type: LAnyOfworkspaceId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -290,22 +290,22 @@ class LWorkspace(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this Workspace.  # noqa: E501
+        """Gets the created_at of this LWorkspace.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this Workspace.  # noqa: E501
+        :return: The created_at of this LWorkspace.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Workspace.
+        """Sets the created_at of this LWorkspace.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this Workspace.  # noqa: E501
+        :param created_at: The created_at of this LWorkspace.  # noqa: E501
         :type: datetime
         """
 
@@ -313,22 +313,22 @@ class LWorkspace(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Workspace.  # noqa: E501
+        """Gets the updated_at of this LWorkspace.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this Workspace.  # noqa: E501
+        :return: The updated_at of this LWorkspace.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Workspace.
+        """Sets the updated_at of this LWorkspace.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this Workspace.  # noqa: E501
+        :param updated_at: The updated_at of this LWorkspace.  # noqa: E501
         :type: datetime
         """
 
@@ -336,20 +336,20 @@ class LWorkspace(object):
 
     @property
     def user_count(self):
-        """Gets the user_count of this Workspace.  # noqa: E501
+        """Gets the user_count of this LWorkspace.  # noqa: E501
 
 
-        :return: The user_count of this Workspace.  # noqa: E501
+        :return: The user_count of this LWorkspace.  # noqa: E501
         :rtype: int
         """
         return self._user_count
 
     @user_count.setter
     def user_count(self, user_count):
-        """Sets the user_count of this Workspace.
+        """Sets the user_count of this LWorkspace.
 
 
-        :param user_count: The user_count of this Workspace.  # noqa: E501
+        :param user_count: The user_count of this LWorkspace.  # noqa: E501
         :type: int
         """
 
@@ -357,43 +357,43 @@ class LWorkspace(object):
 
     @property
     def workspacetiers(self):
-        """Gets the workspacetiers of this Workspace.  # noqa: E501
+        """Gets the workspacetiers of this LWorkspace.  # noqa: E501
 
 
-        :return: The workspacetiers of this Workspace.  # noqa: E501
-        :rtype: AnyOfworkspaceWorkspacetiers
+        :return: The workspacetiers of this LWorkspace.  # noqa: E501
+        :rtype: LAnyOfworkspaceWorkspacetiers
         """
         return self._workspacetiers
 
     @workspacetiers.setter
     def workspacetiers(self, workspacetiers):
-        """Sets the workspacetiers of this Workspace.
+        """Sets the workspacetiers of this LWorkspace.
 
 
-        :param workspacetiers: The workspacetiers of this Workspace.  # noqa: E501
-        :type: AnyOfworkspaceWorkspacetiers
+        :param workspacetiers: The workspacetiers of this LWorkspace.  # noqa: E501
+        :type: LAnyOfworkspaceWorkspacetiers
         """
 
         self._workspacetiers = workspacetiers
 
     @property
     def gid(self):
-        """Gets the gid of this Workspace.  # noqa: E501
+        """Gets the gid of this LWorkspace.  # noqa: E501
 
         Workspace ULID  # noqa: E501
 
-        :return: The gid of this Workspace.  # noqa: E501
+        :return: The gid of this LWorkspace.  # noqa: E501
         :rtype: str
         """
         return self._gid
 
     @gid.setter
     def gid(self, gid):
-        """Sets the gid of this Workspace.
+        """Sets the gid of this LWorkspace.
 
         Workspace ULID  # noqa: E501
 
-        :param gid: The gid of this Workspace.  # noqa: E501
+        :param gid: The gid of this LWorkspace.  # noqa: E501
         :type: str
         """
 
@@ -420,7 +420,7 @@ class LWorkspace(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Workspace, dict):
+        if issubclass(LWorkspace, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -436,7 +436,7 @@ class LWorkspace(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Workspace):
+        if not isinstance(other, LWorkspace):
             return False
 
         return self.__dict__ == other.__dict__

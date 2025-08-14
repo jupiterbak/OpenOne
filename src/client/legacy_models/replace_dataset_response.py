@@ -28,7 +28,7 @@ class LReplaceDatasetResponse(object):
     """
     swagger_types = {
         'new_input_node': 'object',
-        'output_node_edges': 'list[OutputNodeEdges]'
+        'output_node_edges': 'list[LOutputNodeEdges]'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LReplaceDatasetResponse(object):
     }
 
     def __init__(self, new_input_node=None, output_node_edges=None):  # noqa: E501
-        """ReplaceDatasetResponse - a model defined in Swagger"""  # noqa: E501
+        """LReplaceDatasetResponse - a model defined in Swagger"""  # noqa: E501
         self._new_input_node = None
         self._output_node_edges = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LReplaceDatasetResponse(object):
 
     @property
     def new_input_node(self):
-        """Gets the new_input_node of this ReplaceDatasetResponse.  # noqa: E501
+        """Gets the new_input_node of this LReplaceDatasetResponse.  # noqa: E501
 
 
-        :return: The new_input_node of this ReplaceDatasetResponse.  # noqa: E501
+        :return: The new_input_node of this LReplaceDatasetResponse.  # noqa: E501
         :rtype: object
         """
         return self._new_input_node
 
     @new_input_node.setter
     def new_input_node(self, new_input_node):
-        """Sets the new_input_node of this ReplaceDatasetResponse.
+        """Sets the new_input_node of this LReplaceDatasetResponse.
 
 
-        :param new_input_node: The new_input_node of this ReplaceDatasetResponse.  # noqa: E501
+        :param new_input_node: The new_input_node of this LReplaceDatasetResponse.  # noqa: E501
         :type: object
         """
         if new_input_node is None:
@@ -69,21 +69,21 @@ class LReplaceDatasetResponse(object):
 
     @property
     def output_node_edges(self):
-        """Gets the output_node_edges of this ReplaceDatasetResponse.  # noqa: E501
+        """Gets the output_node_edges of this LReplaceDatasetResponse.  # noqa: E501
 
 
-        :return: The output_node_edges of this ReplaceDatasetResponse.  # noqa: E501
-        :rtype: list[OutputNodeEdges]
+        :return: The output_node_edges of this LReplaceDatasetResponse.  # noqa: E501
+        :rtype: list[LOutputNodeEdges]
         """
         return self._output_node_edges
 
     @output_node_edges.setter
     def output_node_edges(self, output_node_edges):
-        """Sets the output_node_edges of this ReplaceDatasetResponse.
+        """Sets the output_node_edges of this LReplaceDatasetResponse.
 
 
-        :param output_node_edges: The output_node_edges of this ReplaceDatasetResponse.  # noqa: E501
-        :type: list[OutputNodeEdges]
+        :param output_node_edges: The output_node_edges of this LReplaceDatasetResponse.  # noqa: E501
+        :type: list[LOutputNodeEdges]
         """
         if output_node_edges is None:
             raise ValueError("Invalid value for `output_node_edges`, must not be `None`")  # noqa: E501
@@ -111,7 +111,7 @@ class LReplaceDatasetResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ReplaceDatasetResponse, dict):
+        if issubclass(LReplaceDatasetResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LReplaceDatasetResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ReplaceDatasetResponse):
+        if not isinstance(other, LReplaceDatasetResponse):
             return False
 
         return self.__dict__ == other.__dict__

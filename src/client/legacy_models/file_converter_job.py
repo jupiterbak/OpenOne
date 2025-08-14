@@ -43,7 +43,7 @@ class LFileConverterJob(object):
     }
 
     def __init__(self, input_uri=None, input_format=None, output_format=None, convertedsource=None, id=None):  # noqa: E501
-        """FileConverterJob - a model defined in Swagger"""  # noqa: E501
+        """LFileConverterJob - a model defined in Swagger"""  # noqa: E501
         self._input_uri = None
         self._input_format = None
         self._output_format = None
@@ -59,20 +59,20 @@ class LFileConverterJob(object):
 
     @property
     def input_uri(self):
-        """Gets the input_uri of this FileConverterJob.  # noqa: E501
+        """Gets the input_uri of this LFileConverterJob.  # noqa: E501
 
 
-        :return: The input_uri of this FileConverterJob.  # noqa: E501
+        :return: The input_uri of this LFileConverterJob.  # noqa: E501
         :rtype: str
         """
         return self._input_uri
 
     @input_uri.setter
     def input_uri(self, input_uri):
-        """Sets the input_uri of this FileConverterJob.
+        """Sets the input_uri of this LFileConverterJob.
 
 
-        :param input_uri: The input_uri of this FileConverterJob.  # noqa: E501
+        :param input_uri: The input_uri of this LFileConverterJob.  # noqa: E501
         :type: str
         """
         if input_uri is None:
@@ -82,20 +82,20 @@ class LFileConverterJob(object):
 
     @property
     def input_format(self):
-        """Gets the input_format of this FileConverterJob.  # noqa: E501
+        """Gets the input_format of this LFileConverterJob.  # noqa: E501
 
 
-        :return: The input_format of this FileConverterJob.  # noqa: E501
+        :return: The input_format of this LFileConverterJob.  # noqa: E501
         :rtype: str
         """
         return self._input_format
 
     @input_format.setter
     def input_format(self, input_format):
-        """Sets the input_format of this FileConverterJob.
+        """Sets the input_format of this LFileConverterJob.
 
 
-        :param input_format: The input_format of this FileConverterJob.  # noqa: E501
+        :param input_format: The input_format of this LFileConverterJob.  # noqa: E501
         :type: str
         """
         if input_format is None:
@@ -105,20 +105,20 @@ class LFileConverterJob(object):
 
     @property
     def output_format(self):
-        """Gets the output_format of this FileConverterJob.  # noqa: E501
+        """Gets the output_format of this LFileConverterJob.  # noqa: E501
 
 
-        :return: The output_format of this FileConverterJob.  # noqa: E501
+        :return: The output_format of this LFileConverterJob.  # noqa: E501
         :rtype: str
         """
         return self._output_format
 
     @output_format.setter
     def output_format(self, output_format):
-        """Sets the output_format of this FileConverterJob.
+        """Sets the output_format of this LFileConverterJob.
 
 
-        :param output_format: The output_format of this FileConverterJob.  # noqa: E501
+        :param output_format: The output_format of this LFileConverterJob.  # noqa: E501
         :type: str
         """
         if output_format is None:
@@ -128,20 +128,20 @@ class LFileConverterJob(object):
 
     @property
     def convertedsource(self):
-        """Gets the convertedsource of this FileConverterJob.  # noqa: E501
+        """Gets the convertedsource of this LFileConverterJob.  # noqa: E501
 
 
-        :return: The convertedsource of this FileConverterJob.  # noqa: E501
+        :return: The convertedsource of this LFileConverterJob.  # noqa: E501
         :rtype: object
         """
         return self._convertedsource
 
     @convertedsource.setter
     def convertedsource(self, convertedsource):
-        """Sets the convertedsource of this FileConverterJob.
+        """Sets the convertedsource of this LFileConverterJob.
 
 
-        :param convertedsource: The convertedsource of this FileConverterJob.  # noqa: E501
+        :param convertedsource: The convertedsource of this LFileConverterJob.  # noqa: E501
         :type: object
         """
 
@@ -149,22 +149,22 @@ class LFileConverterJob(object):
 
     @property
     def id(self):
-        """Gets the id of this FileConverterJob.  # noqa: E501
+        """Gets the id of this LFileConverterJob.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this FileConverterJob.  # noqa: E501
+        :return: The id of this LFileConverterJob.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FileConverterJob.
+        """Sets the id of this LFileConverterJob.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this FileConverterJob.  # noqa: E501
+        :param id: The id of this LFileConverterJob.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -193,7 +193,7 @@ class LFileConverterJob(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FileConverterJob, dict):
+        if issubclass(LFileConverterJob, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -209,7 +209,7 @@ class LFileConverterJob(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FileConverterJob):
+        if not isinstance(other, LFileConverterJob):
             return False
 
         return self.__dict__ == other.__dict__

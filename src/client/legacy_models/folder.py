@@ -29,7 +29,7 @@ class LFolder(object):
     swagger_types = {
         'name': 'str',
         'description': 'str',
-        'id': 'AnyOffolderId',
+        'id': 'LAnyOffolderId',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'creator': 'object',
@@ -49,7 +49,7 @@ class LFolder(object):
     }
 
     def __init__(self, name=None, description=None, id=None, created_at=None, updated_at=None, creator=None, updater=None, workspace=None):  # noqa: E501
-        """Folder - a model defined in Swagger"""  # noqa: E501
+        """LFolder - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._description = None
         self._id = None
@@ -75,22 +75,22 @@ class LFolder(object):
 
     @property
     def name(self):
-        """Gets the name of this Folder.  # noqa: E501
+        """Gets the name of this LFolder.  # noqa: E501
 
         Display name of the folder.  # noqa: E501
 
-        :return: The name of this Folder.  # noqa: E501
+        :return: The name of this LFolder.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Folder.
+        """Sets the name of this LFolder.
 
         Display name of the folder.  # noqa: E501
 
-        :param name: The name of this Folder.  # noqa: E501
+        :param name: The name of this LFolder.  # noqa: E501
         :type: str
         """
 
@@ -98,22 +98,22 @@ class LFolder(object):
 
     @property
     def description(self):
-        """Gets the description of this Folder.  # noqa: E501
+        """Gets the description of this LFolder.  # noqa: E501
 
         User-friendly description for the folder.  # noqa: E501
 
-        :return: The description of this Folder.  # noqa: E501
+        :return: The description of this LFolder.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Folder.
+        """Sets the description of this LFolder.
 
         User-friendly description for the folder.  # noqa: E501
 
-        :param description: The description of this Folder.  # noqa: E501
+        :param description: The description of this LFolder.  # noqa: E501
         :type: str
         """
 
@@ -121,21 +121,21 @@ class LFolder(object):
 
     @property
     def id(self):
-        """Gets the id of this Folder.  # noqa: E501
+        """Gets the id of this LFolder.  # noqa: E501
 
 
-        :return: The id of this Folder.  # noqa: E501
-        :rtype: AnyOffolderId
+        :return: The id of this LFolder.  # noqa: E501
+        :rtype: LAnyOffolderId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Folder.
+        """Sets the id of this LFolder.
 
 
-        :param id: The id of this Folder.  # noqa: E501
-        :type: AnyOffolderId
+        :param id: The id of this LFolder.  # noqa: E501
+        :type: LAnyOffolderId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -144,22 +144,22 @@ class LFolder(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this Folder.  # noqa: E501
+        """Gets the created_at of this LFolder.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this Folder.  # noqa: E501
+        :return: The created_at of this LFolder.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Folder.
+        """Sets the created_at of this LFolder.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this Folder.  # noqa: E501
+        :param created_at: The created_at of this LFolder.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -169,22 +169,22 @@ class LFolder(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Folder.  # noqa: E501
+        """Gets the updated_at of this LFolder.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this Folder.  # noqa: E501
+        :return: The updated_at of this LFolder.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Folder.
+        """Sets the updated_at of this LFolder.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this Folder.  # noqa: E501
+        :param updated_at: The updated_at of this LFolder.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -194,20 +194,20 @@ class LFolder(object):
 
     @property
     def creator(self):
-        """Gets the creator of this Folder.  # noqa: E501
+        """Gets the creator of this LFolder.  # noqa: E501
 
 
-        :return: The creator of this Folder.  # noqa: E501
+        :return: The creator of this LFolder.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this Folder.
+        """Sets the creator of this LFolder.
 
 
-        :param creator: The creator of this Folder.  # noqa: E501
+        :param creator: The creator of this LFolder.  # noqa: E501
         :type: object
         """
 
@@ -215,20 +215,20 @@ class LFolder(object):
 
     @property
     def updater(self):
-        """Gets the updater of this Folder.  # noqa: E501
+        """Gets the updater of this LFolder.  # noqa: E501
 
 
-        :return: The updater of this Folder.  # noqa: E501
+        :return: The updater of this LFolder.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this Folder.
+        """Sets the updater of this LFolder.
 
 
-        :param updater: The updater of this Folder.  # noqa: E501
+        :param updater: The updater of this LFolder.  # noqa: E501
         :type: object
         """
 
@@ -236,20 +236,20 @@ class LFolder(object):
 
     @property
     def workspace(self):
-        """Gets the workspace of this Folder.  # noqa: E501
+        """Gets the workspace of this LFolder.  # noqa: E501
 
 
-        :return: The workspace of this Folder.  # noqa: E501
+        :return: The workspace of this LFolder.  # noqa: E501
         :rtype: object
         """
         return self._workspace
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this Folder.
+        """Sets the workspace of this LFolder.
 
 
-        :param workspace: The workspace of this Folder.  # noqa: E501
+        :param workspace: The workspace of this LFolder.  # noqa: E501
         :type: object
         """
 
@@ -276,7 +276,7 @@ class LFolder(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Folder, dict):
+        if issubclass(LFolder, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -292,7 +292,7 @@ class LFolder(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Folder):
+        if not isinstance(other, LFolder):
             return False
 
         return self.__dict__ == other.__dict__

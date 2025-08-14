@@ -47,7 +47,7 @@ class LEmrCluster(object):
     }
 
     def __init__(self, emr_cluster_id=None, resource_bucket=None, _resource_path=None, region=None, id=None, created_at=None, updated_at=None):  # noqa: E501
-        """EmrCluster - a model defined in Swagger"""  # noqa: E501
+        """LEmrCluster - a model defined in Swagger"""  # noqa: E501
         self._emr_cluster_id = None
         self._resource_bucket = None
         self.__resource_path = None
@@ -70,22 +70,22 @@ class LEmrCluster(object):
 
     @property
     def emr_cluster_id(self):
-        """Gets the emr_cluster_id of this EmrCluster.  # noqa: E501
+        """Gets the emr_cluster_id of this LEmrCluster.  # noqa: E501
 
         The identifier for the EMR Cluster  # noqa: E501
 
-        :return: The emr_cluster_id of this EmrCluster.  # noqa: E501
+        :return: The emr_cluster_id of this LEmrCluster.  # noqa: E501
         :rtype: str
         """
         return self._emr_cluster_id
 
     @emr_cluster_id.setter
     def emr_cluster_id(self, emr_cluster_id):
-        """Sets the emr_cluster_id of this EmrCluster.
+        """Sets the emr_cluster_id of this LEmrCluster.
 
         The identifier for the EMR Cluster  # noqa: E501
 
-        :param emr_cluster_id: The emr_cluster_id of this EmrCluster.  # noqa: E501
+        :param emr_cluster_id: The emr_cluster_id of this LEmrCluster.  # noqa: E501
         :type: str
         """
 
@@ -93,22 +93,22 @@ class LEmrCluster(object):
 
     @property
     def resource_bucket(self):
-        """Gets the resource_bucket of this EmrCluster.  # noqa: E501
+        """Gets the resource_bucket of this LEmrCluster.  # noqa: E501
 
         S3 bucket to store Trifacta's libraries, external libraries,   and any other resources for Spark execution  # noqa: E501
 
-        :return: The resource_bucket of this EmrCluster.  # noqa: E501
+        :return: The resource_bucket of this LEmrCluster.  # noqa: E501
         :rtype: str
         """
         return self._resource_bucket
 
     @resource_bucket.setter
     def resource_bucket(self, resource_bucket):
-        """Sets the resource_bucket of this EmrCluster.
+        """Sets the resource_bucket of this LEmrCluster.
 
         S3 bucket to store Trifacta's libraries, external libraries,   and any other resources for Spark execution  # noqa: E501
 
-        :param resource_bucket: The resource_bucket of this EmrCluster.  # noqa: E501
+        :param resource_bucket: The resource_bucket of this LEmrCluster.  # noqa: E501
         :type: str
         """
 
@@ -116,22 +116,22 @@ class LEmrCluster(object):
 
     @property
     def _resource_path(self):
-        """Gets the _resource_path of this EmrCluster.  # noqa: E501
+        """Gets the _resource_path of this LEmrCluster.  # noqa: E501
 
         Path on S3 bucket to store resources for execution on EMR  # noqa: E501
 
-        :return: The _resource_path of this EmrCluster.  # noqa: E501
+        :return: The _resource_path of this LEmrCluster.  # noqa: E501
         :rtype: str
         """
         return self.__resource_path
 
     @_resource_path.setter
     def _resource_path(self, _resource_path):
-        """Sets the _resource_path of this EmrCluster.
+        """Sets the _resource_path of this LEmrCluster.
 
         Path on S3 bucket to store resources for execution on EMR  # noqa: E501
 
-        :param _resource_path: The _resource_path of this EmrCluster.  # noqa: E501
+        :param _resource_path: The _resource_path of this LEmrCluster.  # noqa: E501
         :type: str
         """
 
@@ -139,22 +139,22 @@ class LEmrCluster(object):
 
     @property
     def region(self):
-        """Gets the region of this EmrCluster.  # noqa: E501
+        """Gets the region of this LEmrCluster.  # noqa: E501
 
         The region where the EMR Cluster runs at  # noqa: E501
 
-        :return: The region of this EmrCluster.  # noqa: E501
+        :return: The region of this LEmrCluster.  # noqa: E501
         :rtype: str
         """
         return self._region
 
     @region.setter
     def region(self, region):
-        """Sets the region of this EmrCluster.
+        """Sets the region of this LEmrCluster.
 
         The region where the EMR Cluster runs at  # noqa: E501
 
-        :param region: The region of this EmrCluster.  # noqa: E501
+        :param region: The region of this LEmrCluster.  # noqa: E501
         :type: str
         """
 
@@ -162,22 +162,22 @@ class LEmrCluster(object):
 
     @property
     def id(self):
-        """Gets the id of this EmrCluster.  # noqa: E501
+        """Gets the id of this LEmrCluster.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this EmrCluster.  # noqa: E501
+        :return: The id of this LEmrCluster.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EmrCluster.
+        """Sets the id of this LEmrCluster.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this EmrCluster.  # noqa: E501
+        :param id: The id of this LEmrCluster.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -187,22 +187,22 @@ class LEmrCluster(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this EmrCluster.  # noqa: E501
+        """Gets the created_at of this LEmrCluster.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this EmrCluster.  # noqa: E501
+        :return: The created_at of this LEmrCluster.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EmrCluster.
+        """Sets the created_at of this LEmrCluster.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this EmrCluster.  # noqa: E501
+        :param created_at: The created_at of this LEmrCluster.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -212,22 +212,22 @@ class LEmrCluster(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EmrCluster.  # noqa: E501
+        """Gets the updated_at of this LEmrCluster.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this EmrCluster.  # noqa: E501
+        :return: The updated_at of this LEmrCluster.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EmrCluster.
+        """Sets the updated_at of this LEmrCluster.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this EmrCluster.  # noqa: E501
+        :param updated_at: The updated_at of this LEmrCluster.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -256,7 +256,7 @@ class LEmrCluster(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(EmrCluster, dict):
+        if issubclass(LEmrCluster, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -272,7 +272,7 @@ class LEmrCluster(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, EmrCluster):
+        if not isinstance(other, LEmrCluster):
             return False
 
         return self.__dict__ == other.__dict__

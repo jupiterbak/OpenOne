@@ -43,20 +43,20 @@ class LJob(object):
             'artifactstaging'.lower(): '#/components/schemas/artifactStagingJobResponse',
             'sqlexecution'.lower(): '#/components/schemas/sqlExecutionJobResponse',
             'schemadrift'.lower(): '#/components/schemas/schemaDriftJobResponse',
-            'WrangleJobResponse'.lower(): 'wrangle',
-            'FilereaderJobResponse'.lower(): 'filereader',
-            'IngestJobResponse'.lower(): 'ingest',
-            'ProfileJobResponse'.lower(): 'profile',
-            'PublishJobResponse'.lower(): 'publish',
-            'ArtifactStagingJobResponse'.lower(): 'artifactstaging',
-            'FileWriterJobResponse'.lower(): 'filewriter',
-            'SchemaDriftJobResponse'.lower(): 'schemadrift',
-            'SqlExecutionJobResponse'.lower(): 'sqlexecution',
-            'FileConverterJobResponse'.lower(): 'fileconverter',
+            'LWrangleJobResponse'.lower(): 'wrangle',
+            'LFilereaderJobResponse'.lower(): 'filereader',
+            'LIngestJobResponse'.lower(): 'ingest',
+            'LProfileJobResponse'.lower(): 'profile',
+            'LPublishJobResponse'.lower(): 'publish',
+            'LArtifactStagingJobResponse'.lower(): 'artifactstaging',
+            'LFileWriterJobResponse'.lower(): 'filewriter',
+            'LSchemaDriftJobResponse'.lower(): 'schemadrift',
+            'LSqlExecutionJobResponse'.lower(): 'sqlexecution',
+            'LFileConverterJobResponse'.lower(): 'fileconverter',
     }
 
     def __init__(self):  # noqa: E501
-        """Job - a model defined in Swagger"""  # noqa: E501
+        """LJob - a model defined in Swagger"""  # noqa: E501
         self.discriminator = 'job_type'
 
     def get_real_child_model(self, data):
@@ -85,7 +85,7 @@ class LJob(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Job, dict):
+        if issubclass(LJob, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -101,7 +101,7 @@ class LJob(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Job):
+        if not isinstance(other, LJob):
             return False
 
         return self.__dict__ == other.__dict__

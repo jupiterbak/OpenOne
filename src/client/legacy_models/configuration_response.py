@@ -37,7 +37,7 @@ class LConfigurationResponse(dict):
         attribute_map.update(dict.attribute_map)
 
     def __init__(self, *args, **kwargs):  # noqa: E501
-        """ConfigurationResponse - a model defined in Swagger"""  # noqa: E501
+        """LConfigurationResponse - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
         dict.__init__(self, *args, **kwargs)
 
@@ -62,7 +62,7 @@ class LConfigurationResponse(dict):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConfigurationResponse, dict):
+        if issubclass(LConfigurationResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -78,7 +78,7 @@ class LConfigurationResponse(dict):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConfigurationResponse):
+        if not isinstance(other, LConfigurationResponse):
             return False
 
         return self.__dict__ == other.__dict__

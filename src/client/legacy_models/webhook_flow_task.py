@@ -27,14 +27,14 @@ class LWebhookFlowTask(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfwebhookFlowTaskId',
+        'id': 'LAnyOfwebhookFlowTaskId',
         'name': 'str',
         'flow': 'object',
         'url': 'str',
         'method': 'str',
         'trigger_event': 'str',
         'trigger_object': 'str',
-        'flow_node_ids': 'list[AnyOfwebhookFlowTaskFlowNodeIdsItems]',
+        'flow_node_ids': 'list[LAnyOfwebhookFlowTaskFlowNodeIdsItems]',
         'body': 'str',
         'headers': 'dict(str, str)',
         'secret_key': 'str',
@@ -67,7 +67,7 @@ class LWebhookFlowTask(object):
     }
 
     def __init__(self, id=None, name=None, flow=None, url=None, method=None, trigger_event=None, trigger_object=None, flow_node_ids=None, body=None, headers=None, secret_key=None, ssl_verification=None, retry_on_failure=None, creator=None, updater=None, created_at=None, updated_at=None):  # noqa: E501
-        """WebhookFlowTask - a model defined in Swagger"""  # noqa: E501
+        """LWebhookFlowTask - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._name = None
         self._flow = None
@@ -110,21 +110,21 @@ class LWebhookFlowTask(object):
 
     @property
     def id(self):
-        """Gets the id of this WebhookFlowTask.  # noqa: E501
+        """Gets the id of this LWebhookFlowTask.  # noqa: E501
 
 
-        :return: The id of this WebhookFlowTask.  # noqa: E501
-        :rtype: AnyOfwebhookFlowTaskId
+        :return: The id of this LWebhookFlowTask.  # noqa: E501
+        :rtype: LAnyOfwebhookFlowTaskId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WebhookFlowTask.
+        """Sets the id of this LWebhookFlowTask.
 
 
-        :param id: The id of this WebhookFlowTask.  # noqa: E501
-        :type: AnyOfwebhookFlowTaskId
+        :param id: The id of this LWebhookFlowTask.  # noqa: E501
+        :type: LAnyOfwebhookFlowTaskId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -133,22 +133,22 @@ class LWebhookFlowTask(object):
 
     @property
     def name(self):
-        """Gets the name of this WebhookFlowTask.  # noqa: E501
+        """Gets the name of this LWebhookFlowTask.  # noqa: E501
 
         Webhook name  # noqa: E501
 
-        :return: The name of this WebhookFlowTask.  # noqa: E501
+        :return: The name of this LWebhookFlowTask.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WebhookFlowTask.
+        """Sets the name of this LWebhookFlowTask.
 
         Webhook name  # noqa: E501
 
-        :param name: The name of this WebhookFlowTask.  # noqa: E501
+        :param name: The name of this LWebhookFlowTask.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -158,20 +158,20 @@ class LWebhookFlowTask(object):
 
     @property
     def flow(self):
-        """Gets the flow of this WebhookFlowTask.  # noqa: E501
+        """Gets the flow of this LWebhookFlowTask.  # noqa: E501
 
 
-        :return: The flow of this WebhookFlowTask.  # noqa: E501
+        :return: The flow of this LWebhookFlowTask.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this WebhookFlowTask.
+        """Sets the flow of this LWebhookFlowTask.
 
 
-        :param flow: The flow of this WebhookFlowTask.  # noqa: E501
+        :param flow: The flow of this LWebhookFlowTask.  # noqa: E501
         :type: object
         """
         if flow is None:
@@ -181,22 +181,22 @@ class LWebhookFlowTask(object):
 
     @property
     def url(self):
-        """Gets the url of this WebhookFlowTask.  # noqa: E501
+        """Gets the url of this LWebhookFlowTask.  # noqa: E501
 
         Webhook url  # noqa: E501
 
-        :return: The url of this WebhookFlowTask.  # noqa: E501
+        :return: The url of this LWebhookFlowTask.  # noqa: E501
         :rtype: str
         """
         return self._url
 
     @url.setter
     def url(self, url):
-        """Sets the url of this WebhookFlowTask.
+        """Sets the url of this LWebhookFlowTask.
 
         Webhook url  # noqa: E501
 
-        :param url: The url of this WebhookFlowTask.  # noqa: E501
+        :param url: The url of this LWebhookFlowTask.  # noqa: E501
         :type: str
         """
         if url is None:
@@ -206,22 +206,22 @@ class LWebhookFlowTask(object):
 
     @property
     def method(self):
-        """Gets the method of this WebhookFlowTask.  # noqa: E501
+        """Gets the method of this LWebhookFlowTask.  # noqa: E501
 
         HTTP method  # noqa: E501
 
-        :return: The method of this WebhookFlowTask.  # noqa: E501
+        :return: The method of this LWebhookFlowTask.  # noqa: E501
         :rtype: str
         """
         return self._method
 
     @method.setter
     def method(self, method):
-        """Sets the method of this WebhookFlowTask.
+        """Sets the method of this LWebhookFlowTask.
 
         HTTP method  # noqa: E501
 
-        :param method: The method of this WebhookFlowTask.  # noqa: E501
+        :param method: The method of this LWebhookFlowTask.  # noqa: E501
         :type: str
         """
         if method is None:
@@ -237,22 +237,22 @@ class LWebhookFlowTask(object):
 
     @property
     def trigger_event(self):
-        """Gets the trigger_event of this WebhookFlowTask.  # noqa: E501
+        """Gets the trigger_event of this LWebhookFlowTask.  # noqa: E501
 
         Event that will trigger the webhook  # noqa: E501
 
-        :return: The trigger_event of this WebhookFlowTask.  # noqa: E501
+        :return: The trigger_event of this LWebhookFlowTask.  # noqa: E501
         :rtype: str
         """
         return self._trigger_event
 
     @trigger_event.setter
     def trigger_event(self, trigger_event):
-        """Sets the trigger_event of this WebhookFlowTask.
+        """Sets the trigger_event of this LWebhookFlowTask.
 
         Event that will trigger the webhook  # noqa: E501
 
-        :param trigger_event: The trigger_event of this WebhookFlowTask.  # noqa: E501
+        :param trigger_event: The trigger_event of this LWebhookFlowTask.  # noqa: E501
         :type: str
         """
         if trigger_event is None:
@@ -268,22 +268,22 @@ class LWebhookFlowTask(object):
 
     @property
     def trigger_object(self):
-        """Gets the trigger_object of this WebhookFlowTask.  # noqa: E501
+        """Gets the trigger_object of this LWebhookFlowTask.  # noqa: E501
 
         Indicate which objects will trigger the webhooks  # noqa: E501
 
-        :return: The trigger_object of this WebhookFlowTask.  # noqa: E501
+        :return: The trigger_object of this LWebhookFlowTask.  # noqa: E501
         :rtype: str
         """
         return self._trigger_object
 
     @trigger_object.setter
     def trigger_object(self, trigger_object):
-        """Sets the trigger_object of this WebhookFlowTask.
+        """Sets the trigger_object of this LWebhookFlowTask.
 
         Indicate which objects will trigger the webhooks  # noqa: E501
 
-        :param trigger_object: The trigger_object of this WebhookFlowTask.  # noqa: E501
+        :param trigger_object: The trigger_object of this LWebhookFlowTask.  # noqa: E501
         :type: str
         """
         if trigger_object is None:
@@ -299,45 +299,45 @@ class LWebhookFlowTask(object):
 
     @property
     def flow_node_ids(self):
-        """Gets the flow_node_ids of this WebhookFlowTask.  # noqa: E501
+        """Gets the flow_node_ids of this LWebhookFlowTask.  # noqa: E501
 
         List of output flow nodes that can trigger the webhook.  # noqa: E501
 
-        :return: The flow_node_ids of this WebhookFlowTask.  # noqa: E501
-        :rtype: list[AnyOfwebhookFlowTaskFlowNodeIdsItems]
+        :return: The flow_node_ids of this LWebhookFlowTask.  # noqa: E501
+        :rtype: list[LAnyOfwebhookFlowTaskFlowNodeIdsItems]
         """
         return self._flow_node_ids
 
     @flow_node_ids.setter
     def flow_node_ids(self, flow_node_ids):
-        """Sets the flow_node_ids of this WebhookFlowTask.
+        """Sets the flow_node_ids of this LWebhookFlowTask.
 
         List of output flow nodes that can trigger the webhook.  # noqa: E501
 
-        :param flow_node_ids: The flow_node_ids of this WebhookFlowTask.  # noqa: E501
-        :type: list[AnyOfwebhookFlowTaskFlowNodeIdsItems]
+        :param flow_node_ids: The flow_node_ids of this LWebhookFlowTask.  # noqa: E501
+        :type: list[LAnyOfwebhookFlowTaskFlowNodeIdsItems]
         """
 
         self._flow_node_ids = flow_node_ids
 
     @property
     def body(self):
-        """Gets the body of this WebhookFlowTask.  # noqa: E501
+        """Gets the body of this LWebhookFlowTask.  # noqa: E501
 
         Webhook body  # noqa: E501
 
-        :return: The body of this WebhookFlowTask.  # noqa: E501
+        :return: The body of this LWebhookFlowTask.  # noqa: E501
         :rtype: str
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this WebhookFlowTask.
+        """Sets the body of this LWebhookFlowTask.
 
         Webhook body  # noqa: E501
 
-        :param body: The body of this WebhookFlowTask.  # noqa: E501
+        :param body: The body of this LWebhookFlowTask.  # noqa: E501
         :type: str
         """
 
@@ -345,22 +345,22 @@ class LWebhookFlowTask(object):
 
     @property
     def headers(self):
-        """Gets the headers of this WebhookFlowTask.  # noqa: E501
+        """Gets the headers of this LWebhookFlowTask.  # noqa: E501
 
         Webhook HTTP headers  # noqa: E501
 
-        :return: The headers of this WebhookFlowTask.  # noqa: E501
+        :return: The headers of this LWebhookFlowTask.  # noqa: E501
         :rtype: dict(str, str)
         """
         return self._headers
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this WebhookFlowTask.
+        """Sets the headers of this LWebhookFlowTask.
 
         Webhook HTTP headers  # noqa: E501
 
-        :param headers: The headers of this WebhookFlowTask.  # noqa: E501
+        :param headers: The headers of this LWebhookFlowTask.  # noqa: E501
         :type: dict(str, str)
         """
 
@@ -368,22 +368,22 @@ class LWebhookFlowTask(object):
 
     @property
     def secret_key(self):
-        """Gets the secret_key of this WebhookFlowTask.  # noqa: E501
+        """Gets the secret_key of this LWebhookFlowTask.  # noqa: E501
 
         Optional secret key used to sign the webhook  # noqa: E501
 
-        :return: The secret_key of this WebhookFlowTask.  # noqa: E501
+        :return: The secret_key of this LWebhookFlowTask.  # noqa: E501
         :rtype: str
         """
         return self._secret_key
 
     @secret_key.setter
     def secret_key(self, secret_key):
-        """Sets the secret_key of this WebhookFlowTask.
+        """Sets the secret_key of this LWebhookFlowTask.
 
         Optional secret key used to sign the webhook  # noqa: E501
 
-        :param secret_key: The secret_key of this WebhookFlowTask.  # noqa: E501
+        :param secret_key: The secret_key of this LWebhookFlowTask.  # noqa: E501
         :type: str
         """
 
@@ -391,22 +391,22 @@ class LWebhookFlowTask(object):
 
     @property
     def ssl_verification(self):
-        """Gets the ssl_verification of this WebhookFlowTask.  # noqa: E501
+        """Gets the ssl_verification of this LWebhookFlowTask.  # noqa: E501
 
         Enable SSL verification  # noqa: E501
 
-        :return: The ssl_verification of this WebhookFlowTask.  # noqa: E501
+        :return: The ssl_verification of this LWebhookFlowTask.  # noqa: E501
         :rtype: bool
         """
         return self._ssl_verification
 
     @ssl_verification.setter
     def ssl_verification(self, ssl_verification):
-        """Sets the ssl_verification of this WebhookFlowTask.
+        """Sets the ssl_verification of this LWebhookFlowTask.
 
         Enable SSL verification  # noqa: E501
 
-        :param ssl_verification: The ssl_verification of this WebhookFlowTask.  # noqa: E501
+        :param ssl_verification: The ssl_verification of this LWebhookFlowTask.  # noqa: E501
         :type: bool
         """
         if ssl_verification is None:
@@ -416,22 +416,22 @@ class LWebhookFlowTask(object):
 
     @property
     def retry_on_failure(self):
-        """Gets the retry_on_failure of this WebhookFlowTask.  # noqa: E501
+        """Gets the retry_on_failure of this LWebhookFlowTask.  # noqa: E501
 
         Retry if the status code is not in the 200-299 range  # noqa: E501
 
-        :return: The retry_on_failure of this WebhookFlowTask.  # noqa: E501
+        :return: The retry_on_failure of this LWebhookFlowTask.  # noqa: E501
         :rtype: bool
         """
         return self._retry_on_failure
 
     @retry_on_failure.setter
     def retry_on_failure(self, retry_on_failure):
-        """Sets the retry_on_failure of this WebhookFlowTask.
+        """Sets the retry_on_failure of this LWebhookFlowTask.
 
         Retry if the status code is not in the 200-299 range  # noqa: E501
 
-        :param retry_on_failure: The retry_on_failure of this WebhookFlowTask.  # noqa: E501
+        :param retry_on_failure: The retry_on_failure of this LWebhookFlowTask.  # noqa: E501
         :type: bool
         """
         if retry_on_failure is None:
@@ -441,20 +441,20 @@ class LWebhookFlowTask(object):
 
     @property
     def creator(self):
-        """Gets the creator of this WebhookFlowTask.  # noqa: E501
+        """Gets the creator of this LWebhookFlowTask.  # noqa: E501
 
 
-        :return: The creator of this WebhookFlowTask.  # noqa: E501
+        :return: The creator of this LWebhookFlowTask.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this WebhookFlowTask.
+        """Sets the creator of this LWebhookFlowTask.
 
 
-        :param creator: The creator of this WebhookFlowTask.  # noqa: E501
+        :param creator: The creator of this LWebhookFlowTask.  # noqa: E501
         :type: object
         """
         if creator is None:
@@ -464,20 +464,20 @@ class LWebhookFlowTask(object):
 
     @property
     def updater(self):
-        """Gets the updater of this WebhookFlowTask.  # noqa: E501
+        """Gets the updater of this LWebhookFlowTask.  # noqa: E501
 
 
-        :return: The updater of this WebhookFlowTask.  # noqa: E501
+        :return: The updater of this LWebhookFlowTask.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this WebhookFlowTask.
+        """Sets the updater of this LWebhookFlowTask.
 
 
-        :param updater: The updater of this WebhookFlowTask.  # noqa: E501
+        :param updater: The updater of this LWebhookFlowTask.  # noqa: E501
         :type: object
         """
         if updater is None:
@@ -487,22 +487,22 @@ class LWebhookFlowTask(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this WebhookFlowTask.  # noqa: E501
+        """Gets the created_at of this LWebhookFlowTask.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this WebhookFlowTask.  # noqa: E501
+        :return: The created_at of this LWebhookFlowTask.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this WebhookFlowTask.
+        """Sets the created_at of this LWebhookFlowTask.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this WebhookFlowTask.  # noqa: E501
+        :param created_at: The created_at of this LWebhookFlowTask.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -512,22 +512,22 @@ class LWebhookFlowTask(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this WebhookFlowTask.  # noqa: E501
+        """Gets the updated_at of this LWebhookFlowTask.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this WebhookFlowTask.  # noqa: E501
+        :return: The updated_at of this LWebhookFlowTask.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this WebhookFlowTask.
+        """Sets the updated_at of this LWebhookFlowTask.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this WebhookFlowTask.  # noqa: E501
+        :param updated_at: The updated_at of this LWebhookFlowTask.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -556,7 +556,7 @@ class LWebhookFlowTask(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WebhookFlowTask, dict):
+        if issubclass(LWebhookFlowTask, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -572,7 +572,7 @@ class LWebhookFlowTask(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WebhookFlowTask):
+        if not isinstance(other, LWebhookFlowTask):
             return False
 
         return self.__dict__ == other.__dict__

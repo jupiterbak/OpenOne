@@ -28,7 +28,7 @@ class LJobGroupInput(object):
     """
     swagger_types = {
         'name': 'str',
-        'inputs': 'list[FileOrTableInput]'
+        'inputs': 'list[LFileOrTableInput]'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LJobGroupInput(object):
     }
 
     def __init__(self, name=None, inputs=None):  # noqa: E501
-        """JobGroupInput - a model defined in Swagger"""  # noqa: E501
+        """LJobGroupInput - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._inputs = None
         self.discriminator = None
@@ -46,22 +46,22 @@ class LJobGroupInput(object):
 
     @property
     def name(self):
-        """Gets the name of this JobGroupInput.  # noqa: E501
+        """Gets the name of this LJobGroupInput.  # noqa: E501
 
         Dataset name  # noqa: E501
 
-        :return: The name of this JobGroupInput.  # noqa: E501
+        :return: The name of this LJobGroupInput.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobGroupInput.
+        """Sets the name of this LJobGroupInput.
 
         Dataset name  # noqa: E501
 
-        :param name: The name of this JobGroupInput.  # noqa: E501
+        :param name: The name of this LJobGroupInput.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -71,21 +71,21 @@ class LJobGroupInput(object):
 
     @property
     def inputs(self):
-        """Gets the inputs of this JobGroupInput.  # noqa: E501
+        """Gets the inputs of this LJobGroupInput.  # noqa: E501
 
 
-        :return: The inputs of this JobGroupInput.  # noqa: E501
-        :rtype: list[FileOrTableInput]
+        :return: The inputs of this LJobGroupInput.  # noqa: E501
+        :rtype: list[LFileOrTableInput]
         """
         return self._inputs
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this JobGroupInput.
+        """Sets the inputs of this LJobGroupInput.
 
 
-        :param inputs: The inputs of this JobGroupInput.  # noqa: E501
-        :type: list[FileOrTableInput]
+        :param inputs: The inputs of this LJobGroupInput.  # noqa: E501
+        :type: list[LFileOrTableInput]
         """
         if inputs is None:
             raise ValueError("Invalid value for `inputs`, must not be `None`")  # noqa: E501
@@ -113,7 +113,7 @@ class LJobGroupInput(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(JobGroupInput, dict):
+        if issubclass(LJobGroupInput, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LJobGroupInput(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, JobGroupInput):
+        if not isinstance(other, LJobGroupInput):
             return False
 
         return self.__dict__ == other.__dict__

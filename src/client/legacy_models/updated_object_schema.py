@@ -27,7 +27,7 @@ class LUpdatedObjectSchema(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfupdatedObjectSchemaId',
+        'id': 'LAnyOfupdatedObjectSchemaId',
         'updater': 'object',
         'created_at': 'datetime',
         'updated_at': 'datetime'
@@ -41,7 +41,7 @@ class LUpdatedObjectSchema(object):
     }
 
     def __init__(self, id=None, updater=None, created_at=None, updated_at=None):  # noqa: E501
-        """UpdatedObjectSchema - a model defined in Swagger"""  # noqa: E501
+        """LUpdatedObjectSchema - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._updater = None
         self._created_at = None
@@ -58,41 +58,41 @@ class LUpdatedObjectSchema(object):
 
     @property
     def id(self):
-        """Gets the id of this UpdatedObjectSchema.  # noqa: E501
+        """Gets the id of this LUpdatedObjectSchema.  # noqa: E501
 
 
-        :return: The id of this UpdatedObjectSchema.  # noqa: E501
-        :rtype: AnyOfupdatedObjectSchemaId
+        :return: The id of this LUpdatedObjectSchema.  # noqa: E501
+        :rtype: LAnyOfupdatedObjectSchemaId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdatedObjectSchema.
+        """Sets the id of this LUpdatedObjectSchema.
 
 
-        :param id: The id of this UpdatedObjectSchema.  # noqa: E501
-        :type: AnyOfupdatedObjectSchemaId
+        :param id: The id of this LUpdatedObjectSchema.  # noqa: E501
+        :type: LAnyOfupdatedObjectSchemaId
         """
 
         self._id = id
 
     @property
     def updater(self):
-        """Gets the updater of this UpdatedObjectSchema.  # noqa: E501
+        """Gets the updater of this LUpdatedObjectSchema.  # noqa: E501
 
 
-        :return: The updater of this UpdatedObjectSchema.  # noqa: E501
+        :return: The updater of this LUpdatedObjectSchema.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this UpdatedObjectSchema.
+        """Sets the updater of this LUpdatedObjectSchema.
 
 
-        :param updater: The updater of this UpdatedObjectSchema.  # noqa: E501
+        :param updater: The updater of this LUpdatedObjectSchema.  # noqa: E501
         :type: object
         """
 
@@ -100,22 +100,22 @@ class LUpdatedObjectSchema(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdatedObjectSchema.  # noqa: E501
+        """Gets the created_at of this LUpdatedObjectSchema.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this UpdatedObjectSchema.  # noqa: E501
+        :return: The created_at of this LUpdatedObjectSchema.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdatedObjectSchema.
+        """Sets the created_at of this LUpdatedObjectSchema.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this UpdatedObjectSchema.  # noqa: E501
+        :param created_at: The created_at of this LUpdatedObjectSchema.  # noqa: E501
         :type: datetime
         """
 
@@ -123,22 +123,22 @@ class LUpdatedObjectSchema(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdatedObjectSchema.  # noqa: E501
+        """Gets the updated_at of this LUpdatedObjectSchema.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this UpdatedObjectSchema.  # noqa: E501
+        :return: The updated_at of this LUpdatedObjectSchema.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdatedObjectSchema.
+        """Sets the updated_at of this LUpdatedObjectSchema.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this UpdatedObjectSchema.  # noqa: E501
+        :param updated_at: The updated_at of this LUpdatedObjectSchema.  # noqa: E501
         :type: datetime
         """
 
@@ -165,7 +165,7 @@ class LUpdatedObjectSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(UpdatedObjectSchema, dict):
+        if issubclass(LUpdatedObjectSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -181,7 +181,7 @@ class LUpdatedObjectSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdatedObjectSchema):
+        if not isinstance(other, LUpdatedObjectSchema):
             return False
 
         return self.__dict__ == other.__dict__

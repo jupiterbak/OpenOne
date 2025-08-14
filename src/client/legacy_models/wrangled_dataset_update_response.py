@@ -27,7 +27,7 @@ class LWrangledDatasetUpdateResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfwrangledDatasetUpdateResponseId',
+        'id': 'LAnyOfwrangledDatasetUpdateResponseId',
         'updater': 'object',
         'updated_at': 'datetime'
     }
@@ -39,7 +39,7 @@ class LWrangledDatasetUpdateResponse(object):
     }
 
     def __init__(self, id=None, updater=None, updated_at=None):  # noqa: E501
-        """WrangledDatasetUpdateResponse - a model defined in Swagger"""  # noqa: E501
+        """LWrangledDatasetUpdateResponse - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._updater = None
         self._updated_at = None
@@ -50,21 +50,21 @@ class LWrangledDatasetUpdateResponse(object):
 
     @property
     def id(self):
-        """Gets the id of this WrangledDatasetUpdateResponse.  # noqa: E501
+        """Gets the id of this LWrangledDatasetUpdateResponse.  # noqa: E501
 
 
-        :return: The id of this WrangledDatasetUpdateResponse.  # noqa: E501
-        :rtype: AnyOfwrangledDatasetUpdateResponseId
+        :return: The id of this LWrangledDatasetUpdateResponse.  # noqa: E501
+        :rtype: LAnyOfwrangledDatasetUpdateResponseId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WrangledDatasetUpdateResponse.
+        """Sets the id of this LWrangledDatasetUpdateResponse.
 
 
-        :param id: The id of this WrangledDatasetUpdateResponse.  # noqa: E501
-        :type: AnyOfwrangledDatasetUpdateResponseId
+        :param id: The id of this LWrangledDatasetUpdateResponse.  # noqa: E501
+        :type: LAnyOfwrangledDatasetUpdateResponseId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -73,20 +73,20 @@ class LWrangledDatasetUpdateResponse(object):
 
     @property
     def updater(self):
-        """Gets the updater of this WrangledDatasetUpdateResponse.  # noqa: E501
+        """Gets the updater of this LWrangledDatasetUpdateResponse.  # noqa: E501
 
 
-        :return: The updater of this WrangledDatasetUpdateResponse.  # noqa: E501
+        :return: The updater of this LWrangledDatasetUpdateResponse.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this WrangledDatasetUpdateResponse.
+        """Sets the updater of this LWrangledDatasetUpdateResponse.
 
 
-        :param updater: The updater of this WrangledDatasetUpdateResponse.  # noqa: E501
+        :param updater: The updater of this LWrangledDatasetUpdateResponse.  # noqa: E501
         :type: object
         """
         if updater is None:
@@ -96,22 +96,22 @@ class LWrangledDatasetUpdateResponse(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this WrangledDatasetUpdateResponse.  # noqa: E501
+        """Gets the updated_at of this LWrangledDatasetUpdateResponse.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this WrangledDatasetUpdateResponse.  # noqa: E501
+        :return: The updated_at of this LWrangledDatasetUpdateResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this WrangledDatasetUpdateResponse.
+        """Sets the updated_at of this LWrangledDatasetUpdateResponse.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this WrangledDatasetUpdateResponse.  # noqa: E501
+        :param updated_at: The updated_at of this LWrangledDatasetUpdateResponse.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -140,7 +140,7 @@ class LWrangledDatasetUpdateResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WrangledDatasetUpdateResponse, dict):
+        if issubclass(LWrangledDatasetUpdateResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -156,7 +156,7 @@ class LWrangledDatasetUpdateResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WrangledDatasetUpdateResponse):
+        if not isinstance(other, LWrangledDatasetUpdateResponse):
             return False
 
         return self.__dict__ == other.__dict__

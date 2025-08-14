@@ -37,7 +37,7 @@ class LDailyTrigger(object):
     }
 
     def __init__(self, daily=None, timezone=None):  # noqa: E501
-        """DailyTrigger - a model defined in Swagger"""  # noqa: E501
+        """LDailyTrigger - a model defined in Swagger"""  # noqa: E501
         self._daily = None
         self._timezone = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LDailyTrigger(object):
 
     @property
     def daily(self):
-        """Gets the daily of this DailyTrigger.  # noqa: E501
+        """Gets the daily of this LDailyTrigger.  # noqa: E501
 
 
-        :return: The daily of this DailyTrigger.  # noqa: E501
+        :return: The daily of this LDailyTrigger.  # noqa: E501
         :rtype: object
         """
         return self._daily
 
     @daily.setter
     def daily(self, daily):
-        """Sets the daily of this DailyTrigger.
+        """Sets the daily of this LDailyTrigger.
 
 
-        :param daily: The daily of this DailyTrigger.  # noqa: E501
+        :param daily: The daily of this LDailyTrigger.  # noqa: E501
         :type: object
         """
         if daily is None:
@@ -69,22 +69,22 @@ class LDailyTrigger(object):
 
     @property
     def timezone(self):
-        """Gets the timezone of this DailyTrigger.  # noqa: E501
+        """Gets the timezone of this LDailyTrigger.  # noqa: E501
 
         timezone for this trigger, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :return: The timezone of this DailyTrigger.  # noqa: E501
+        :return: The timezone of this LDailyTrigger.  # noqa: E501
         :rtype: str
         """
         return self._timezone
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this DailyTrigger.
+        """Sets the timezone of this LDailyTrigger.
 
         timezone for this trigger, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :param timezone: The timezone of this DailyTrigger.  # noqa: E501
+        :param timezone: The timezone of this LDailyTrigger.  # noqa: E501
         :type: str
         """
         if timezone is None:
@@ -113,7 +113,7 @@ class LDailyTrigger(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DailyTrigger, dict):
+        if issubclass(LDailyTrigger, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LDailyTrigger(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DailyTrigger):
+        if not isinstance(other, LDailyTrigger):
             return False
 
         return self.__dict__ == other.__dict__

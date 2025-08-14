@@ -47,7 +47,7 @@ class LTaskSchema(object):
     }
 
     def __init__(self, id=None, type=None, execution_engine=None, spec=None, external_resource_id=None, task_options=None, context=None):  # noqa: E501
-        """TaskSchema - a model defined in Swagger"""  # noqa: E501
+        """LTaskSchema - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._type = None
         self._execution_engine = None
@@ -70,22 +70,22 @@ class LTaskSchema(object):
 
     @property
     def id(self):
-        """Gets the id of this TaskSchema.  # noqa: E501
+        """Gets the id of this LTaskSchema.  # noqa: E501
 
         Unique identifier of the task, if present  # noqa: E501
 
-        :return: The id of this TaskSchema.  # noqa: E501
+        :return: The id of this LTaskSchema.  # noqa: E501
         :rtype: str
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TaskSchema.
+        """Sets the id of this LTaskSchema.
 
         Unique identifier of the task, if present  # noqa: E501
 
-        :param id: The id of this TaskSchema.  # noqa: E501
+        :param id: The id of this LTaskSchema.  # noqa: E501
         :type: str
         """
         if id is None:
@@ -95,22 +95,22 @@ class LTaskSchema(object):
 
     @property
     def type(self):
-        """Gets the type of this TaskSchema.  # noqa: E501
+        """Gets the type of this LTaskSchema.  # noqa: E501
 
         Task type * `CDF` -  * `SQL` -  * `YXMD_JSON` -   # noqa: E501
 
-        :return: The type of this TaskSchema.  # noqa: E501
+        :return: The type of this LTaskSchema.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TaskSchema.
+        """Sets the type of this LTaskSchema.
 
         Task type * `CDF` -  * `SQL` -  * `YXMD_JSON` -   # noqa: E501
 
-        :param type: The type of this TaskSchema.  # noqa: E501
+        :param type: The type of this LTaskSchema.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -126,22 +126,22 @@ class LTaskSchema(object):
 
     @property
     def execution_engine(self):
-        """Gets the execution_engine of this TaskSchema.  # noqa: E501
+        """Gets the execution_engine of this LTaskSchema.  # noqa: E501
 
         Execution engine * `amp` -  * `photon` -  * `emrSpark` -  * `snowflake` -  * `databricksSpark` -  * `dataprocSpark` -  * `bigquery` -  * `xml-amp` -  * `databricksSql` -   # noqa: E501
 
-        :return: The execution_engine of this TaskSchema.  # noqa: E501
+        :return: The execution_engine of this LTaskSchema.  # noqa: E501
         :rtype: str
         """
         return self._execution_engine
 
     @execution_engine.setter
     def execution_engine(self, execution_engine):
-        """Sets the execution_engine of this TaskSchema.
+        """Sets the execution_engine of this LTaskSchema.
 
         Execution engine * `amp` -  * `photon` -  * `emrSpark` -  * `snowflake` -  * `databricksSpark` -  * `dataprocSpark` -  * `bigquery` -  * `xml-amp` -  * `databricksSql` -   # noqa: E501
 
-        :param execution_engine: The execution_engine of this TaskSchema.  # noqa: E501
+        :param execution_engine: The execution_engine of this LTaskSchema.  # noqa: E501
         :type: str
         """
         allowed_values = ["amp", "photon", "emrSpark", "snowflake", "databricksSpark", "dataprocSpark", "bigquery", "xml-amp", "databricksSql"]  # noqa: E501
@@ -155,22 +155,22 @@ class LTaskSchema(object):
 
     @property
     def spec(self):
-        """Gets the spec of this TaskSchema.  # noqa: E501
+        """Gets the spec of this LTaskSchema.  # noqa: E501
 
         Spec of the task, could be cdf or any value for now  # noqa: E501
 
-        :return: The spec of this TaskSchema.  # noqa: E501
+        :return: The spec of this LTaskSchema.  # noqa: E501
         :rtype: str
         """
         return self._spec
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this TaskSchema.
+        """Sets the spec of this LTaskSchema.
 
         Spec of the task, could be cdf or any value for now  # noqa: E501
 
-        :param spec: The spec of this TaskSchema.  # noqa: E501
+        :param spec: The spec of this LTaskSchema.  # noqa: E501
         :type: str
         """
         if spec is None:
@@ -180,22 +180,22 @@ class LTaskSchema(object):
 
     @property
     def external_resource_id(self):
-        """Gets the external_resource_id of this TaskSchema.  # noqa: E501
+        """Gets the external_resource_id of this LTaskSchema.  # noqa: E501
 
         external resource id of the task for reference  # noqa: E501
 
-        :return: The external_resource_id of this TaskSchema.  # noqa: E501
+        :return: The external_resource_id of this LTaskSchema.  # noqa: E501
         :rtype: str
         """
         return self._external_resource_id
 
     @external_resource_id.setter
     def external_resource_id(self, external_resource_id):
-        """Sets the external_resource_id of this TaskSchema.
+        """Sets the external_resource_id of this LTaskSchema.
 
         external resource id of the task for reference  # noqa: E501
 
-        :param external_resource_id: The external_resource_id of this TaskSchema.  # noqa: E501
+        :param external_resource_id: The external_resource_id of this LTaskSchema.  # noqa: E501
         :type: str
         """
 
@@ -203,20 +203,20 @@ class LTaskSchema(object):
 
     @property
     def task_options(self):
-        """Gets the task_options of this TaskSchema.  # noqa: E501
+        """Gets the task_options of this LTaskSchema.  # noqa: E501
 
 
-        :return: The task_options of this TaskSchema.  # noqa: E501
+        :return: The task_options of this LTaskSchema.  # noqa: E501
         :rtype: object
         """
         return self._task_options
 
     @task_options.setter
     def task_options(self, task_options):
-        """Sets the task_options of this TaskSchema.
+        """Sets the task_options of this LTaskSchema.
 
 
-        :param task_options: The task_options of this TaskSchema.  # noqa: E501
+        :param task_options: The task_options of this LTaskSchema.  # noqa: E501
         :type: object
         """
 
@@ -224,20 +224,20 @@ class LTaskSchema(object):
 
     @property
     def context(self):
-        """Gets the context of this TaskSchema.  # noqa: E501
+        """Gets the context of this LTaskSchema.  # noqa: E501
 
 
-        :return: The context of this TaskSchema.  # noqa: E501
+        :return: The context of this LTaskSchema.  # noqa: E501
         :rtype: object
         """
         return self._context
 
     @context.setter
     def context(self, context):
-        """Sets the context of this TaskSchema.
+        """Sets the context of this LTaskSchema.
 
 
-        :param context: The context of this TaskSchema.  # noqa: E501
+        :param context: The context of this LTaskSchema.  # noqa: E501
         :type: object
         """
 
@@ -264,7 +264,7 @@ class LTaskSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(TaskSchema, dict):
+        if issubclass(LTaskSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -280,7 +280,7 @@ class LTaskSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TaskSchema):
+        if not isinstance(other, LTaskSchema):
             return False
 
         return self.__dict__ == other.__dict__

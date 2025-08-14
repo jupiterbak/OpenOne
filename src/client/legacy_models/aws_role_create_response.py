@@ -47,7 +47,7 @@ class LAwsRoleCreateResponse(object):
     }
 
     def __init__(self, id=None, aws_config_id=None, role=None, created_from=None, created_at=None, updated_at=None, deleted_at=None):  # noqa: E501
-        """AwsRoleCreateResponse - a model defined in Swagger"""  # noqa: E501
+        """LAwsRoleCreateResponse - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._aws_config_id = None
         self._role = None
@@ -67,22 +67,22 @@ class LAwsRoleCreateResponse(object):
 
     @property
     def id(self):
-        """Gets the id of this AwsRoleCreateResponse.  # noqa: E501
+        """Gets the id of this LAwsRoleCreateResponse.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this AwsRoleCreateResponse.  # noqa: E501
+        :return: The id of this LAwsRoleCreateResponse.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AwsRoleCreateResponse.
+        """Sets the id of this LAwsRoleCreateResponse.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this AwsRoleCreateResponse.  # noqa: E501
+        :param id: The id of this LAwsRoleCreateResponse.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -92,20 +92,20 @@ class LAwsRoleCreateResponse(object):
 
     @property
     def aws_config_id(self):
-        """Gets the aws_config_id of this AwsRoleCreateResponse.  # noqa: E501
+        """Gets the aws_config_id of this LAwsRoleCreateResponse.  # noqa: E501
 
 
-        :return: The aws_config_id of this AwsRoleCreateResponse.  # noqa: E501
+        :return: The aws_config_id of this LAwsRoleCreateResponse.  # noqa: E501
         :rtype: int
         """
         return self._aws_config_id
 
     @aws_config_id.setter
     def aws_config_id(self, aws_config_id):
-        """Sets the aws_config_id of this AwsRoleCreateResponse.
+        """Sets the aws_config_id of this LAwsRoleCreateResponse.
 
 
-        :param aws_config_id: The aws_config_id of this AwsRoleCreateResponse.  # noqa: E501
+        :param aws_config_id: The aws_config_id of this LAwsRoleCreateResponse.  # noqa: E501
         :type: int
         """
         if aws_config_id is None:
@@ -115,20 +115,20 @@ class LAwsRoleCreateResponse(object):
 
     @property
     def role(self):
-        """Gets the role of this AwsRoleCreateResponse.  # noqa: E501
+        """Gets the role of this LAwsRoleCreateResponse.  # noqa: E501
 
 
-        :return: The role of this AwsRoleCreateResponse.  # noqa: E501
+        :return: The role of this LAwsRoleCreateResponse.  # noqa: E501
         :rtype: str
         """
         return self._role
 
     @role.setter
     def role(self, role):
-        """Sets the role of this AwsRoleCreateResponse.
+        """Sets the role of this LAwsRoleCreateResponse.
 
 
-        :param role: The role of this AwsRoleCreateResponse.  # noqa: E501
+        :param role: The role of this LAwsRoleCreateResponse.  # noqa: E501
         :type: str
         """
         if role is None:
@@ -138,22 +138,22 @@ class LAwsRoleCreateResponse(object):
 
     @property
     def created_from(self):
-        """Gets the created_from of this AwsRoleCreateResponse.  # noqa: E501
+        """Gets the created_from of this LAwsRoleCreateResponse.  # noqa: E501
 
         shows which means created the role  # noqa: E501
 
-        :return: The created_from of this AwsRoleCreateResponse.  # noqa: E501
+        :return: The created_from of this LAwsRoleCreateResponse.  # noqa: E501
         :rtype: str
         """
         return self._created_from
 
     @created_from.setter
     def created_from(self, created_from):
-        """Sets the created_from of this AwsRoleCreateResponse.
+        """Sets the created_from of this LAwsRoleCreateResponse.
 
         shows which means created the role  # noqa: E501
 
-        :param created_from: The created_from of this AwsRoleCreateResponse.  # noqa: E501
+        :param created_from: The created_from of this LAwsRoleCreateResponse.  # noqa: E501
         :type: str
         """
         if created_from is None:
@@ -169,22 +169,22 @@ class LAwsRoleCreateResponse(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this AwsRoleCreateResponse.  # noqa: E501
+        """Gets the created_at of this LAwsRoleCreateResponse.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this AwsRoleCreateResponse.  # noqa: E501
+        :return: The created_at of this LAwsRoleCreateResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AwsRoleCreateResponse.
+        """Sets the created_at of this LAwsRoleCreateResponse.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this AwsRoleCreateResponse.  # noqa: E501
+        :param created_at: The created_at of this LAwsRoleCreateResponse.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -194,22 +194,22 @@ class LAwsRoleCreateResponse(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this AwsRoleCreateResponse.  # noqa: E501
+        """Gets the updated_at of this LAwsRoleCreateResponse.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this AwsRoleCreateResponse.  # noqa: E501
+        :return: The updated_at of this LAwsRoleCreateResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this AwsRoleCreateResponse.
+        """Sets the updated_at of this LAwsRoleCreateResponse.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this AwsRoleCreateResponse.  # noqa: E501
+        :param updated_at: The updated_at of this LAwsRoleCreateResponse.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -219,22 +219,22 @@ class LAwsRoleCreateResponse(object):
 
     @property
     def deleted_at(self):
-        """Gets the deleted_at of this AwsRoleCreateResponse.  # noqa: E501
+        """Gets the deleted_at of this LAwsRoleCreateResponse.  # noqa: E501
 
         The time this object was deleted.  # noqa: E501
 
-        :return: The deleted_at of this AwsRoleCreateResponse.  # noqa: E501
+        :return: The deleted_at of this LAwsRoleCreateResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._deleted_at
 
     @deleted_at.setter
     def deleted_at(self, deleted_at):
-        """Sets the deleted_at of this AwsRoleCreateResponse.
+        """Sets the deleted_at of this LAwsRoleCreateResponse.
 
         The time this object was deleted.  # noqa: E501
 
-        :param deleted_at: The deleted_at of this AwsRoleCreateResponse.  # noqa: E501
+        :param deleted_at: The deleted_at of this LAwsRoleCreateResponse.  # noqa: E501
         :type: datetime
         """
 
@@ -261,7 +261,7 @@ class LAwsRoleCreateResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AwsRoleCreateResponse, dict):
+        if issubclass(LAwsRoleCreateResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -277,7 +277,7 @@ class LAwsRoleCreateResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AwsRoleCreateResponse):
+        if not isinstance(other, LAwsRoleCreateResponse):
             return False
 
         return self.__dict__ == other.__dict__

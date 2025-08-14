@@ -41,7 +41,7 @@ class LTokenAuth(object):
     }
 
     def __init__(self, ta_client_id=None, ta_client_secret=None, ta_token_id=None, ta_token_secret=None):  # noqa: E501
-        """TokenAuth - a model defined in Swagger"""  # noqa: E501
+        """LTokenAuth - a model defined in Swagger"""  # noqa: E501
         self._ta_client_id = None
         self._ta_client_secret = None
         self._ta_token_id = None
@@ -54,20 +54,20 @@ class LTokenAuth(object):
 
     @property
     def ta_client_id(self):
-        """Gets the ta_client_id of this TokenAuth.  # noqa: E501
+        """Gets the ta_client_id of this LTokenAuth.  # noqa: E501
 
 
-        :return: The ta_client_id of this TokenAuth.  # noqa: E501
+        :return: The ta_client_id of this LTokenAuth.  # noqa: E501
         :rtype: str
         """
         return self._ta_client_id
 
     @ta_client_id.setter
     def ta_client_id(self, ta_client_id):
-        """Sets the ta_client_id of this TokenAuth.
+        """Sets the ta_client_id of this LTokenAuth.
 
 
-        :param ta_client_id: The ta_client_id of this TokenAuth.  # noqa: E501
+        :param ta_client_id: The ta_client_id of this LTokenAuth.  # noqa: E501
         :type: str
         """
         if ta_client_id is None:
@@ -77,20 +77,20 @@ class LTokenAuth(object):
 
     @property
     def ta_client_secret(self):
-        """Gets the ta_client_secret of this TokenAuth.  # noqa: E501
+        """Gets the ta_client_secret of this LTokenAuth.  # noqa: E501
 
 
-        :return: The ta_client_secret of this TokenAuth.  # noqa: E501
+        :return: The ta_client_secret of this LTokenAuth.  # noqa: E501
         :rtype: str
         """
         return self._ta_client_secret
 
     @ta_client_secret.setter
     def ta_client_secret(self, ta_client_secret):
-        """Sets the ta_client_secret of this TokenAuth.
+        """Sets the ta_client_secret of this LTokenAuth.
 
 
-        :param ta_client_secret: The ta_client_secret of this TokenAuth.  # noqa: E501
+        :param ta_client_secret: The ta_client_secret of this LTokenAuth.  # noqa: E501
         :type: str
         """
         if ta_client_secret is None:
@@ -100,20 +100,20 @@ class LTokenAuth(object):
 
     @property
     def ta_token_id(self):
-        """Gets the ta_token_id of this TokenAuth.  # noqa: E501
+        """Gets the ta_token_id of this LTokenAuth.  # noqa: E501
 
 
-        :return: The ta_token_id of this TokenAuth.  # noqa: E501
+        :return: The ta_token_id of this LTokenAuth.  # noqa: E501
         :rtype: str
         """
         return self._ta_token_id
 
     @ta_token_id.setter
     def ta_token_id(self, ta_token_id):
-        """Sets the ta_token_id of this TokenAuth.
+        """Sets the ta_token_id of this LTokenAuth.
 
 
-        :param ta_token_id: The ta_token_id of this TokenAuth.  # noqa: E501
+        :param ta_token_id: The ta_token_id of this LTokenAuth.  # noqa: E501
         :type: str
         """
         if ta_token_id is None:
@@ -123,20 +123,20 @@ class LTokenAuth(object):
 
     @property
     def ta_token_secret(self):
-        """Gets the ta_token_secret of this TokenAuth.  # noqa: E501
+        """Gets the ta_token_secret of this LTokenAuth.  # noqa: E501
 
 
-        :return: The ta_token_secret of this TokenAuth.  # noqa: E501
+        :return: The ta_token_secret of this LTokenAuth.  # noqa: E501
         :rtype: str
         """
         return self._ta_token_secret
 
     @ta_token_secret.setter
     def ta_token_secret(self, ta_token_secret):
-        """Sets the ta_token_secret of this TokenAuth.
+        """Sets the ta_token_secret of this LTokenAuth.
 
 
-        :param ta_token_secret: The ta_token_secret of this TokenAuth.  # noqa: E501
+        :param ta_token_secret: The ta_token_secret of this LTokenAuth.  # noqa: E501
         :type: str
         """
         if ta_token_secret is None:
@@ -165,7 +165,7 @@ class LTokenAuth(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(TokenAuth, dict):
+        if issubclass(LTokenAuth, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -181,7 +181,7 @@ class LTokenAuth(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TokenAuth):
+        if not isinstance(other, LTokenAuth):
             return False
 
         return self.__dict__ == other.__dict__

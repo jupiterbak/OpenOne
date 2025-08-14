@@ -28,7 +28,7 @@ class LAzurePlatformCredentialsSchema(object):
     """
     swagger_types = {
         'platform': 'str',
-        'platform_credentials': 'AzurePlatformCredentials'
+        'platform_credentials': 'LAzurePlatformCredentials'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LAzurePlatformCredentialsSchema(object):
     }
 
     def __init__(self, platform=None, platform_credentials=None):  # noqa: E501
-        """AzurePlatformCredentialsSchema - a model defined in Swagger"""  # noqa: E501
+        """LAzurePlatformCredentialsSchema - a model defined in Swagger"""  # noqa: E501
         self._platform = None
         self._platform_credentials = None
         self.discriminator = None
@@ -46,22 +46,22 @@ class LAzurePlatformCredentialsSchema(object):
 
     @property
     def platform(self):
-        """Gets the platform of this AzurePlatformCredentialsSchema.  # noqa: E501
+        """Gets the platform of this LAzurePlatformCredentialsSchema.  # noqa: E501
 
          * `gcp` - GCP platform credentials * `aws` - AWS platform credentials * `azure` - Azure platform credentials  # noqa: E501
 
-        :return: The platform of this AzurePlatformCredentialsSchema.  # noqa: E501
+        :return: The platform of this LAzurePlatformCredentialsSchema.  # noqa: E501
         :rtype: str
         """
         return self._platform
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this AzurePlatformCredentialsSchema.
+        """Sets the platform of this LAzurePlatformCredentialsSchema.
 
          * `gcp` - GCP platform credentials * `aws` - AWS platform credentials * `azure` - Azure platform credentials  # noqa: E501
 
-        :param platform: The platform of this AzurePlatformCredentialsSchema.  # noqa: E501
+        :param platform: The platform of this LAzurePlatformCredentialsSchema.  # noqa: E501
         :type: str
         """
         if platform is None:
@@ -77,21 +77,21 @@ class LAzurePlatformCredentialsSchema(object):
 
     @property
     def platform_credentials(self):
-        """Gets the platform_credentials of this AzurePlatformCredentialsSchema.  # noqa: E501
+        """Gets the platform_credentials of this LAzurePlatformCredentialsSchema.  # noqa: E501
 
 
-        :return: The platform_credentials of this AzurePlatformCredentialsSchema.  # noqa: E501
-        :rtype: AzurePlatformCredentials
+        :return: The platform_credentials of this LAzurePlatformCredentialsSchema.  # noqa: E501
+        :rtype: LAzurePlatformCredentials
         """
         return self._platform_credentials
 
     @platform_credentials.setter
     def platform_credentials(self, platform_credentials):
-        """Sets the platform_credentials of this AzurePlatformCredentialsSchema.
+        """Sets the platform_credentials of this LAzurePlatformCredentialsSchema.
 
 
-        :param platform_credentials: The platform_credentials of this AzurePlatformCredentialsSchema.  # noqa: E501
-        :type: AzurePlatformCredentials
+        :param platform_credentials: The platform_credentials of this LAzurePlatformCredentialsSchema.  # noqa: E501
+        :type: LAzurePlatformCredentials
         """
         if platform_credentials is None:
             raise ValueError("Invalid value for `platform_credentials`, must not be `None`")  # noqa: E501
@@ -119,7 +119,7 @@ class LAzurePlatformCredentialsSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AzurePlatformCredentialsSchema, dict):
+        if issubclass(LAzurePlatformCredentialsSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -135,7 +135,7 @@ class LAzurePlatformCredentialsSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AzurePlatformCredentialsSchema):
+        if not isinstance(other, LAzurePlatformCredentialsSchema):
             return False
 
         return self.__dict__ == other.__dict__

@@ -35,27 +35,27 @@ class LGcsFsAuthData(object):
     }
 
     def __init__(self, gcs=None):  # noqa: E501
-        """GcsFsAuthData - a model defined in Swagger"""  # noqa: E501
+        """LGcsFsAuthData - a model defined in Swagger"""  # noqa: E501
         self._gcs = None
         self.discriminator = None
         self.gcs = gcs
 
     @property
     def gcs(self):
-        """Gets the gcs of this GcsFsAuthData.  # noqa: E501
+        """Gets the gcs of this LGcsFsAuthData.  # noqa: E501
 
 
-        :return: The gcs of this GcsFsAuthData.  # noqa: E501
+        :return: The gcs of this LGcsFsAuthData.  # noqa: E501
         :rtype: object
         """
         return self._gcs
 
     @gcs.setter
     def gcs(self, gcs):
-        """Sets the gcs of this GcsFsAuthData.
+        """Sets the gcs of this LGcsFsAuthData.
 
 
-        :param gcs: The gcs of this GcsFsAuthData.  # noqa: E501
+        :param gcs: The gcs of this LGcsFsAuthData.  # noqa: E501
         :type: object
         """
         if gcs is None:
@@ -84,7 +84,7 @@ class LGcsFsAuthData(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(GcsFsAuthData, dict):
+        if issubclass(LGcsFsAuthData, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LGcsFsAuthData(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, GcsFsAuthData):
+        if not isinstance(other, LGcsFsAuthData):
             return False
 
         return self.__dict__ == other.__dict__

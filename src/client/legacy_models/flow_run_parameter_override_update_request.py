@@ -28,7 +28,7 @@ class LFlowRunParameterOverrideUpdateRequest(object):
     """
     swagger_types = {
         'override_key': 'str',
-        'value': 'OneOfflowRunParameterOverrideUpdateRequestValue'
+        'value': 'LOneOfflowRunParameterOverrideUpdateRequestValue'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LFlowRunParameterOverrideUpdateRequest(object):
     }
 
     def __init__(self, override_key=None, value=None):  # noqa: E501
-        """FlowRunParameterOverrideUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LFlowRunParameterOverrideUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._override_key = None
         self._value = None
         self.discriminator = None
@@ -48,22 +48,22 @@ class LFlowRunParameterOverrideUpdateRequest(object):
 
     @property
     def override_key(self):
-        """Gets the override_key of this FlowRunParameterOverrideUpdateRequest.  # noqa: E501
+        """Gets the override_key of this LFlowRunParameterOverrideUpdateRequest.  # noqa: E501
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :return: The override_key of this FlowRunParameterOverrideUpdateRequest.  # noqa: E501
+        :return: The override_key of this LFlowRunParameterOverrideUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._override_key
 
     @override_key.setter
     def override_key(self, override_key):
-        """Sets the override_key of this FlowRunParameterOverrideUpdateRequest.
+        """Sets the override_key of this LFlowRunParameterOverrideUpdateRequest.
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :param override_key: The override_key of this FlowRunParameterOverrideUpdateRequest.  # noqa: E501
+        :param override_key: The override_key of this LFlowRunParameterOverrideUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -71,21 +71,21 @@ class LFlowRunParameterOverrideUpdateRequest(object):
 
     @property
     def value(self):
-        """Gets the value of this FlowRunParameterOverrideUpdateRequest.  # noqa: E501
+        """Gets the value of this LFlowRunParameterOverrideUpdateRequest.  # noqa: E501
 
 
-        :return: The value of this FlowRunParameterOverrideUpdateRequest.  # noqa: E501
-        :rtype: OneOfflowRunParameterOverrideUpdateRequestValue
+        :return: The value of this LFlowRunParameterOverrideUpdateRequest.  # noqa: E501
+        :rtype: LOneOfflowRunParameterOverrideUpdateRequestValue
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this FlowRunParameterOverrideUpdateRequest.
+        """Sets the value of this LFlowRunParameterOverrideUpdateRequest.
 
 
-        :param value: The value of this FlowRunParameterOverrideUpdateRequest.  # noqa: E501
-        :type: OneOfflowRunParameterOverrideUpdateRequestValue
+        :param value: The value of this LFlowRunParameterOverrideUpdateRequest.  # noqa: E501
+        :type: LOneOfflowRunParameterOverrideUpdateRequestValue
         """
 
         self._value = value
@@ -111,7 +111,7 @@ class LFlowRunParameterOverrideUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowRunParameterOverrideUpdateRequest, dict):
+        if issubclass(LFlowRunParameterOverrideUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LFlowRunParameterOverrideUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowRunParameterOverrideUpdateRequest):
+        if not isinstance(other, LFlowRunParameterOverrideUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

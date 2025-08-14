@@ -43,7 +43,7 @@ class LSimpleConnectionQueryResult(object):
     }
 
     def __init__(self, name=None, type=None, type_term=None, child_count=None, has_credentials=None):  # noqa: E501
-        """SimpleConnectionQueryResult - a model defined in Swagger"""  # noqa: E501
+        """LSimpleConnectionQueryResult - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._type = None
         self._type_term = None
@@ -60,20 +60,20 @@ class LSimpleConnectionQueryResult(object):
 
     @property
     def name(self):
-        """Gets the name of this SimpleConnectionQueryResult.  # noqa: E501
+        """Gets the name of this LSimpleConnectionQueryResult.  # noqa: E501
 
 
-        :return: The name of this SimpleConnectionQueryResult.  # noqa: E501
+        :return: The name of this LSimpleConnectionQueryResult.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SimpleConnectionQueryResult.
+        """Sets the name of this LSimpleConnectionQueryResult.
 
 
-        :param name: The name of this SimpleConnectionQueryResult.  # noqa: E501
+        :param name: The name of this LSimpleConnectionQueryResult.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -83,20 +83,20 @@ class LSimpleConnectionQueryResult(object):
 
     @property
     def type(self):
-        """Gets the type of this SimpleConnectionQueryResult.  # noqa: E501
+        """Gets the type of this LSimpleConnectionQueryResult.  # noqa: E501
 
 
-        :return: The type of this SimpleConnectionQueryResult.  # noqa: E501
+        :return: The type of this LSimpleConnectionQueryResult.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SimpleConnectionQueryResult.
+        """Sets the type of this LSimpleConnectionQueryResult.
 
 
-        :param type: The type of this SimpleConnectionQueryResult.  # noqa: E501
+        :param type: The type of this LSimpleConnectionQueryResult.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -112,20 +112,20 @@ class LSimpleConnectionQueryResult(object):
 
     @property
     def type_term(self):
-        """Gets the type_term of this SimpleConnectionQueryResult.  # noqa: E501
+        """Gets the type_term of this LSimpleConnectionQueryResult.  # noqa: E501
 
 
-        :return: The type_term of this SimpleConnectionQueryResult.  # noqa: E501
+        :return: The type_term of this LSimpleConnectionQueryResult.  # noqa: E501
         :rtype: str
         """
         return self._type_term
 
     @type_term.setter
     def type_term(self, type_term):
-        """Sets the type_term of this SimpleConnectionQueryResult.
+        """Sets the type_term of this LSimpleConnectionQueryResult.
 
 
-        :param type_term: The type_term of this SimpleConnectionQueryResult.  # noqa: E501
+        :param type_term: The type_term of this LSimpleConnectionQueryResult.  # noqa: E501
         :type: str
         """
         if type_term is None:
@@ -135,20 +135,20 @@ class LSimpleConnectionQueryResult(object):
 
     @property
     def child_count(self):
-        """Gets the child_count of this SimpleConnectionQueryResult.  # noqa: E501
+        """Gets the child_count of this LSimpleConnectionQueryResult.  # noqa: E501
 
 
-        :return: The child_count of this SimpleConnectionQueryResult.  # noqa: E501
+        :return: The child_count of this LSimpleConnectionQueryResult.  # noqa: E501
         :rtype: int
         """
         return self._child_count
 
     @child_count.setter
     def child_count(self, child_count):
-        """Sets the child_count of this SimpleConnectionQueryResult.
+        """Sets the child_count of this LSimpleConnectionQueryResult.
 
 
-        :param child_count: The child_count of this SimpleConnectionQueryResult.  # noqa: E501
+        :param child_count: The child_count of this LSimpleConnectionQueryResult.  # noqa: E501
         :type: int
         """
 
@@ -156,20 +156,20 @@ class LSimpleConnectionQueryResult(object):
 
     @property
     def has_credentials(self):
-        """Gets the has_credentials of this SimpleConnectionQueryResult.  # noqa: E501
+        """Gets the has_credentials of this LSimpleConnectionQueryResult.  # noqa: E501
 
 
-        :return: The has_credentials of this SimpleConnectionQueryResult.  # noqa: E501
+        :return: The has_credentials of this LSimpleConnectionQueryResult.  # noqa: E501
         :rtype: bool
         """
         return self._has_credentials
 
     @has_credentials.setter
     def has_credentials(self, has_credentials):
-        """Sets the has_credentials of this SimpleConnectionQueryResult.
+        """Sets the has_credentials of this LSimpleConnectionQueryResult.
 
 
-        :param has_credentials: The has_credentials of this SimpleConnectionQueryResult.  # noqa: E501
+        :param has_credentials: The has_credentials of this LSimpleConnectionQueryResult.  # noqa: E501
         :type: bool
         """
 
@@ -196,7 +196,7 @@ class LSimpleConnectionQueryResult(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(SimpleConnectionQueryResult, dict):
+        if issubclass(LSimpleConnectionQueryResult, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -212,7 +212,7 @@ class LSimpleConnectionQueryResult(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SimpleConnectionQueryResult):
+        if not isinstance(other, LSimpleConnectionQueryResult):
             return False
 
         return self.__dict__ == other.__dict__

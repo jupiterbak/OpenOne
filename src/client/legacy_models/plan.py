@@ -27,7 +27,7 @@ class LPlan(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfplanId',
+        'id': 'LAnyOfplanId',
         'name': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime',
@@ -35,7 +35,7 @@ class LPlan(object):
         'updater': 'object',
         'workspace': 'object',
         'snapshotted': 'bool',
-        'original_plan_id': 'AnyOfplanOriginalPlanId',
+        'original_plan_id': 'LAnyOfplanOriginalPlanId',
         'description': 'str',
         'plan_snapshot_run_count': 'int',
         'notifications_enabled': 'bool',
@@ -63,7 +63,7 @@ class LPlan(object):
     }
 
     def __init__(self, id=None, name=None, created_at=None, updated_at=None, creator=None, updater=None, workspace=None, snapshotted=None, original_plan_id=None, description=None, plan_snapshot_run_count=None, notifications_enabled=None, latest_plan_snapshot=None, latest_plan_snapshot_run=None, plan_nodes=None):  # noqa: E501
-        """Plan - a model defined in Swagger"""  # noqa: E501
+        """LPlan - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._name = None
         self._created_at = None
@@ -109,21 +109,21 @@ class LPlan(object):
 
     @property
     def id(self):
-        """Gets the id of this Plan.  # noqa: E501
+        """Gets the id of this LPlan.  # noqa: E501
 
 
-        :return: The id of this Plan.  # noqa: E501
-        :rtype: AnyOfplanId
+        :return: The id of this LPlan.  # noqa: E501
+        :rtype: LAnyOfplanId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Plan.
+        """Sets the id of this LPlan.
 
 
-        :param id: The id of this Plan.  # noqa: E501
-        :type: AnyOfplanId
+        :param id: The id of this LPlan.  # noqa: E501
+        :type: LAnyOfplanId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -132,22 +132,22 @@ class LPlan(object):
 
     @property
     def name(self):
-        """Gets the name of this Plan.  # noqa: E501
+        """Gets the name of this LPlan.  # noqa: E501
 
         Display name of the plan.  # noqa: E501
 
-        :return: The name of this Plan.  # noqa: E501
+        :return: The name of this LPlan.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Plan.
+        """Sets the name of this LPlan.
 
         Display name of the plan.  # noqa: E501
 
-        :param name: The name of this Plan.  # noqa: E501
+        :param name: The name of this LPlan.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -157,22 +157,22 @@ class LPlan(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this Plan.  # noqa: E501
+        """Gets the created_at of this LPlan.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this Plan.  # noqa: E501
+        :return: The created_at of this LPlan.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Plan.
+        """Sets the created_at of this LPlan.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this Plan.  # noqa: E501
+        :param created_at: The created_at of this LPlan.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -182,22 +182,22 @@ class LPlan(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Plan.  # noqa: E501
+        """Gets the updated_at of this LPlan.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this Plan.  # noqa: E501
+        :return: The updated_at of this LPlan.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Plan.
+        """Sets the updated_at of this LPlan.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this Plan.  # noqa: E501
+        :param updated_at: The updated_at of this LPlan.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -207,20 +207,20 @@ class LPlan(object):
 
     @property
     def creator(self):
-        """Gets the creator of this Plan.  # noqa: E501
+        """Gets the creator of this LPlan.  # noqa: E501
 
 
-        :return: The creator of this Plan.  # noqa: E501
+        :return: The creator of this LPlan.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this Plan.
+        """Sets the creator of this LPlan.
 
 
-        :param creator: The creator of this Plan.  # noqa: E501
+        :param creator: The creator of this LPlan.  # noqa: E501
         :type: object
         """
 
@@ -228,20 +228,20 @@ class LPlan(object):
 
     @property
     def updater(self):
-        """Gets the updater of this Plan.  # noqa: E501
+        """Gets the updater of this LPlan.  # noqa: E501
 
 
-        :return: The updater of this Plan.  # noqa: E501
+        :return: The updater of this LPlan.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this Plan.
+        """Sets the updater of this LPlan.
 
 
-        :param updater: The updater of this Plan.  # noqa: E501
+        :param updater: The updater of this LPlan.  # noqa: E501
         :type: object
         """
 
@@ -249,20 +249,20 @@ class LPlan(object):
 
     @property
     def workspace(self):
-        """Gets the workspace of this Plan.  # noqa: E501
+        """Gets the workspace of this LPlan.  # noqa: E501
 
 
-        :return: The workspace of this Plan.  # noqa: E501
+        :return: The workspace of this LPlan.  # noqa: E501
         :rtype: object
         """
         return self._workspace
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this Plan.
+        """Sets the workspace of this LPlan.
 
 
-        :param workspace: The workspace of this Plan.  # noqa: E501
+        :param workspace: The workspace of this LPlan.  # noqa: E501
         :type: object
         """
 
@@ -270,20 +270,20 @@ class LPlan(object):
 
     @property
     def snapshotted(self):
-        """Gets the snapshotted of this Plan.  # noqa: E501
+        """Gets the snapshotted of this LPlan.  # noqa: E501
 
 
-        :return: The snapshotted of this Plan.  # noqa: E501
+        :return: The snapshotted of this LPlan.  # noqa: E501
         :rtype: bool
         """
         return self._snapshotted
 
     @snapshotted.setter
     def snapshotted(self, snapshotted):
-        """Sets the snapshotted of this Plan.
+        """Sets the snapshotted of this LPlan.
 
 
-        :param snapshotted: The snapshotted of this Plan.  # noqa: E501
+        :param snapshotted: The snapshotted of this LPlan.  # noqa: E501
         :type: bool
         """
 
@@ -291,43 +291,43 @@ class LPlan(object):
 
     @property
     def original_plan_id(self):
-        """Gets the original_plan_id of this Plan.  # noqa: E501
+        """Gets the original_plan_id of this LPlan.  # noqa: E501
 
 
-        :return: The original_plan_id of this Plan.  # noqa: E501
-        :rtype: AnyOfplanOriginalPlanId
+        :return: The original_plan_id of this LPlan.  # noqa: E501
+        :rtype: LAnyOfplanOriginalPlanId
         """
         return self._original_plan_id
 
     @original_plan_id.setter
     def original_plan_id(self, original_plan_id):
-        """Sets the original_plan_id of this Plan.
+        """Sets the original_plan_id of this LPlan.
 
 
-        :param original_plan_id: The original_plan_id of this Plan.  # noqa: E501
-        :type: AnyOfplanOriginalPlanId
+        :param original_plan_id: The original_plan_id of this LPlan.  # noqa: E501
+        :type: LAnyOfplanOriginalPlanId
         """
 
         self._original_plan_id = original_plan_id
 
     @property
     def description(self):
-        """Gets the description of this Plan.  # noqa: E501
+        """Gets the description of this LPlan.  # noqa: E501
 
         User-friendly description for the plan.  # noqa: E501
 
-        :return: The description of this Plan.  # noqa: E501
+        :return: The description of this LPlan.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Plan.
+        """Sets the description of this LPlan.
 
         User-friendly description for the plan.  # noqa: E501
 
-        :param description: The description of this Plan.  # noqa: E501
+        :param description: The description of this LPlan.  # noqa: E501
         :type: str
         """
 
@@ -335,20 +335,20 @@ class LPlan(object):
 
     @property
     def plan_snapshot_run_count(self):
-        """Gets the plan_snapshot_run_count of this Plan.  # noqa: E501
+        """Gets the plan_snapshot_run_count of this LPlan.  # noqa: E501
 
 
-        :return: The plan_snapshot_run_count of this Plan.  # noqa: E501
+        :return: The plan_snapshot_run_count of this LPlan.  # noqa: E501
         :rtype: int
         """
         return self._plan_snapshot_run_count
 
     @plan_snapshot_run_count.setter
     def plan_snapshot_run_count(self, plan_snapshot_run_count):
-        """Sets the plan_snapshot_run_count of this Plan.
+        """Sets the plan_snapshot_run_count of this LPlan.
 
 
-        :param plan_snapshot_run_count: The plan_snapshot_run_count of this Plan.  # noqa: E501
+        :param plan_snapshot_run_count: The plan_snapshot_run_count of this LPlan.  # noqa: E501
         :type: int
         """
 
@@ -356,22 +356,22 @@ class LPlan(object):
 
     @property
     def notifications_enabled(self):
-        """Gets the notifications_enabled of this Plan.  # noqa: E501
+        """Gets the notifications_enabled of this LPlan.  # noqa: E501
 
         Indicate if notification will be sent for this plan  # noqa: E501
 
-        :return: The notifications_enabled of this Plan.  # noqa: E501
+        :return: The notifications_enabled of this LPlan.  # noqa: E501
         :rtype: bool
         """
         return self._notifications_enabled
 
     @notifications_enabled.setter
     def notifications_enabled(self, notifications_enabled):
-        """Sets the notifications_enabled of this Plan.
+        """Sets the notifications_enabled of this LPlan.
 
         Indicate if notification will be sent for this plan  # noqa: E501
 
-        :param notifications_enabled: The notifications_enabled of this Plan.  # noqa: E501
+        :param notifications_enabled: The notifications_enabled of this LPlan.  # noqa: E501
         :type: bool
         """
 
@@ -379,22 +379,22 @@ class LPlan(object):
 
     @property
     def latest_plan_snapshot(self):
-        """Gets the latest_plan_snapshot of this Plan.  # noqa: E501
+        """Gets the latest_plan_snapshot of this LPlan.  # noqa: E501
 
         Latest plan snapshot that is attached to this plan.  # noqa: E501
 
-        :return: The latest_plan_snapshot of this Plan.  # noqa: E501
+        :return: The latest_plan_snapshot of this LPlan.  # noqa: E501
         :rtype: object
         """
         return self._latest_plan_snapshot
 
     @latest_plan_snapshot.setter
     def latest_plan_snapshot(self, latest_plan_snapshot):
-        """Sets the latest_plan_snapshot of this Plan.
+        """Sets the latest_plan_snapshot of this LPlan.
 
         Latest plan snapshot that is attached to this plan.  # noqa: E501
 
-        :param latest_plan_snapshot: The latest_plan_snapshot of this Plan.  # noqa: E501
+        :param latest_plan_snapshot: The latest_plan_snapshot of this LPlan.  # noqa: E501
         :type: object
         """
 
@@ -402,22 +402,22 @@ class LPlan(object):
 
     @property
     def latest_plan_snapshot_run(self):
-        """Gets the latest_plan_snapshot_run of this Plan.  # noqa: E501
+        """Gets the latest_plan_snapshot_run of this LPlan.  # noqa: E501
 
         Last snapshot of this plan that ran.  # noqa: E501
 
-        :return: The latest_plan_snapshot_run of this Plan.  # noqa: E501
+        :return: The latest_plan_snapshot_run of this LPlan.  # noqa: E501
         :rtype: object
         """
         return self._latest_plan_snapshot_run
 
     @latest_plan_snapshot_run.setter
     def latest_plan_snapshot_run(self, latest_plan_snapshot_run):
-        """Sets the latest_plan_snapshot_run of this Plan.
+        """Sets the latest_plan_snapshot_run of this LPlan.
 
         Last snapshot of this plan that ran.  # noqa: E501
 
-        :param latest_plan_snapshot_run: The latest_plan_snapshot_run of this Plan.  # noqa: E501
+        :param latest_plan_snapshot_run: The latest_plan_snapshot_run of this LPlan.  # noqa: E501
         :type: object
         """
 
@@ -425,20 +425,20 @@ class LPlan(object):
 
     @property
     def plan_nodes(self):
-        """Gets the plan_nodes of this Plan.  # noqa: E501
+        """Gets the plan_nodes of this LPlan.  # noqa: E501
 
 
-        :return: The plan_nodes of this Plan.  # noqa: E501
+        :return: The plan_nodes of this LPlan.  # noqa: E501
         :rtype: object
         """
         return self._plan_nodes
 
     @plan_nodes.setter
     def plan_nodes(self, plan_nodes):
-        """Sets the plan_nodes of this Plan.
+        """Sets the plan_nodes of this LPlan.
 
 
-        :param plan_nodes: The plan_nodes of this Plan.  # noqa: E501
+        :param plan_nodes: The plan_nodes of this LPlan.  # noqa: E501
         :type: object
         """
 
@@ -465,7 +465,7 @@ class LPlan(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Plan, dict):
+        if issubclass(LPlan, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -481,7 +481,7 @@ class LPlan(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Plan):
+        if not isinstance(other, LPlan):
             return False
 
         return self.__dict__ == other.__dict__

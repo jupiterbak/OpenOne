@@ -28,7 +28,7 @@ class LInTheLastDateRange(object):
     """
     swagger_types = {
         'timezone': 'str',
-        'formats': 'AnyOfinTheLastDateRangeFormats',
+        'formats': 'LAnyOfinTheLastDateRangeFormats',
         'in_the_last': 'object'
     }
 
@@ -39,7 +39,7 @@ class LInTheLastDateRange(object):
     }
 
     def __init__(self, timezone=None, formats=None, in_the_last=None):  # noqa: E501
-        """InTheLastDateRange - a model defined in Swagger"""  # noqa: E501
+        """LInTheLastDateRange - a model defined in Swagger"""  # noqa: E501
         self._timezone = None
         self._formats = None
         self._in_the_last = None
@@ -50,22 +50,22 @@ class LInTheLastDateRange(object):
 
     @property
     def timezone(self):
-        """Gets the timezone of this InTheLastDateRange.  # noqa: E501
+        """Gets the timezone of this LInTheLastDateRange.  # noqa: E501
 
         ISO Timezone, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :return: The timezone of this InTheLastDateRange.  # noqa: E501
+        :return: The timezone of this LInTheLastDateRange.  # noqa: E501
         :rtype: str
         """
         return self._timezone
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this InTheLastDateRange.
+        """Sets the timezone of this LInTheLastDateRange.
 
         ISO Timezone, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :param timezone: The timezone of this InTheLastDateRange.  # noqa: E501
+        :param timezone: The timezone of this LInTheLastDateRange.  # noqa: E501
         :type: str
         """
         if timezone is None:
@@ -75,21 +75,21 @@ class LInTheLastDateRange(object):
 
     @property
     def formats(self):
-        """Gets the formats of this InTheLastDateRange.  # noqa: E501
+        """Gets the formats of this LInTheLastDateRange.  # noqa: E501
 
 
-        :return: The formats of this InTheLastDateRange.  # noqa: E501
-        :rtype: AnyOfinTheLastDateRangeFormats
+        :return: The formats of this LInTheLastDateRange.  # noqa: E501
+        :rtype: LAnyOfinTheLastDateRangeFormats
         """
         return self._formats
 
     @formats.setter
     def formats(self, formats):
-        """Sets the formats of this InTheLastDateRange.
+        """Sets the formats of this LInTheLastDateRange.
 
 
-        :param formats: The formats of this InTheLastDateRange.  # noqa: E501
-        :type: AnyOfinTheLastDateRangeFormats
+        :param formats: The formats of this LInTheLastDateRange.  # noqa: E501
+        :type: LAnyOfinTheLastDateRangeFormats
         """
         if formats is None:
             raise ValueError("Invalid value for `formats`, must not be `None`")  # noqa: E501
@@ -98,22 +98,22 @@ class LInTheLastDateRange(object):
 
     @property
     def in_the_last(self):
-        """Gets the in_the_last of this InTheLastDateRange.  # noqa: E501
+        """Gets the in_the_last of this LInTheLastDateRange.  # noqa: E501
 
         Date range that includes everything in last `number` of `unit`. The current `unit` (eg. `week`) is included.  # noqa: E501
 
-        :return: The in_the_last of this InTheLastDateRange.  # noqa: E501
+        :return: The in_the_last of this LInTheLastDateRange.  # noqa: E501
         :rtype: object
         """
         return self._in_the_last
 
     @in_the_last.setter
     def in_the_last(self, in_the_last):
-        """Sets the in_the_last of this InTheLastDateRange.
+        """Sets the in_the_last of this LInTheLastDateRange.
 
         Date range that includes everything in last `number` of `unit`. The current `unit` (eg. `week`) is included.  # noqa: E501
 
-        :param in_the_last: The in_the_last of this InTheLastDateRange.  # noqa: E501
+        :param in_the_last: The in_the_last of this LInTheLastDateRange.  # noqa: E501
         :type: object
         """
         if in_the_last is None:
@@ -142,7 +142,7 @@ class LInTheLastDateRange(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(InTheLastDateRange, dict):
+        if issubclass(LInTheLastDateRange, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -158,7 +158,7 @@ class LInTheLastDateRange(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, InTheLastDateRange):
+        if not isinstance(other, LInTheLastDateRange):
             return False
 
         return self.__dict__ == other.__dict__

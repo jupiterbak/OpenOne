@@ -39,7 +39,7 @@ class LScriptLineIdResponse(object):
     }
 
     def __init__(self, id=None, port_id=None, edit_script_line=None):  # noqa: E501
-        """ScriptLineIdResponse - a model defined in Swagger"""  # noqa: E501
+        """LScriptLineIdResponse - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._port_id = None
         self._edit_script_line = None
@@ -51,20 +51,20 @@ class LScriptLineIdResponse(object):
 
     @property
     def id(self):
-        """Gets the id of this ScriptLineIdResponse.  # noqa: E501
+        """Gets the id of this LScriptLineIdResponse.  # noqa: E501
 
 
-        :return: The id of this ScriptLineIdResponse.  # noqa: E501
+        :return: The id of this LScriptLineIdResponse.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScriptLineIdResponse.
+        """Sets the id of this LScriptLineIdResponse.
 
 
-        :param id: The id of this ScriptLineIdResponse.  # noqa: E501
+        :param id: The id of this LScriptLineIdResponse.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -74,22 +74,22 @@ class LScriptLineIdResponse(object):
 
     @property
     def port_id(self):
-        """Gets the port_id of this ScriptLineIdResponse.  # noqa: E501
+        """Gets the port_id of this LScriptLineIdResponse.  # noqa: E501
 
         Internal identifier used for uniquely identifying where in a recipe to pull in data from other recipes. This is used for Load script lines associated MDS operations like Join and Union, but should typically be null for all other lines.  # noqa: E501
 
-        :return: The port_id of this ScriptLineIdResponse.  # noqa: E501
+        :return: The port_id of this LScriptLineIdResponse.  # noqa: E501
         :rtype: int
         """
         return self._port_id
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this ScriptLineIdResponse.
+        """Sets the port_id of this LScriptLineIdResponse.
 
         Internal identifier used for uniquely identifying where in a recipe to pull in data from other recipes. This is used for Load script lines associated MDS operations like Join and Union, but should typically be null for all other lines.  # noqa: E501
 
-        :param port_id: The port_id of this ScriptLineIdResponse.  # noqa: E501
+        :param port_id: The port_id of this LScriptLineIdResponse.  # noqa: E501
         :type: int
         """
 
@@ -97,20 +97,20 @@ class LScriptLineIdResponse(object):
 
     @property
     def edit_script_line(self):
-        """Gets the edit_script_line of this ScriptLineIdResponse.  # noqa: E501
+        """Gets the edit_script_line of this LScriptLineIdResponse.  # noqa: E501
 
 
-        :return: The edit_script_line of this ScriptLineIdResponse.  # noqa: E501
+        :return: The edit_script_line of this LScriptLineIdResponse.  # noqa: E501
         :rtype: object
         """
         return self._edit_script_line
 
     @edit_script_line.setter
     def edit_script_line(self, edit_script_line):
-        """Sets the edit_script_line of this ScriptLineIdResponse.
+        """Sets the edit_script_line of this LScriptLineIdResponse.
 
 
-        :param edit_script_line: The edit_script_line of this ScriptLineIdResponse.  # noqa: E501
+        :param edit_script_line: The edit_script_line of this LScriptLineIdResponse.  # noqa: E501
         :type: object
         """
         if edit_script_line is None:
@@ -139,7 +139,7 @@ class LScriptLineIdResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ScriptLineIdResponse, dict):
+        if issubclass(LScriptLineIdResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -155,7 +155,7 @@ class LScriptLineIdResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ScriptLineIdResponse):
+        if not isinstance(other, LScriptLineIdResponse):
             return False
 
         return self.__dict__ == other.__dict__

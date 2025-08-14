@@ -35,27 +35,27 @@ class LDatasetPermissionWithEmailRequest(object):
     }
 
     def __init__(self, email=None):  # noqa: E501
-        """DatasetPermissionWithEmailRequest - a model defined in Swagger"""  # noqa: E501
+        """LDatasetPermissionWithEmailRequest - a model defined in Swagger"""  # noqa: E501
         self._email = None
         self.discriminator = None
         self.email = email
 
     @property
     def email(self):
-        """Gets the email of this DatasetPermissionWithEmailRequest.  # noqa: E501
+        """Gets the email of this LDatasetPermissionWithEmailRequest.  # noqa: E501
 
 
-        :return: The email of this DatasetPermissionWithEmailRequest.  # noqa: E501
+        :return: The email of this LDatasetPermissionWithEmailRequest.  # noqa: E501
         :rtype: str
         """
         return self._email
 
     @email.setter
     def email(self, email):
-        """Sets the email of this DatasetPermissionWithEmailRequest.
+        """Sets the email of this LDatasetPermissionWithEmailRequest.
 
 
-        :param email: The email of this DatasetPermissionWithEmailRequest.  # noqa: E501
+        :param email: The email of this LDatasetPermissionWithEmailRequest.  # noqa: E501
         :type: str
         """
         if email is None:
@@ -84,7 +84,7 @@ class LDatasetPermissionWithEmailRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DatasetPermissionWithEmailRequest, dict):
+        if issubclass(LDatasetPermissionWithEmailRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LDatasetPermissionWithEmailRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DatasetPermissionWithEmailRequest):
+        if not isinstance(other, LDatasetPermissionWithEmailRequest):
             return False
 
         return self.__dict__ == other.__dict__

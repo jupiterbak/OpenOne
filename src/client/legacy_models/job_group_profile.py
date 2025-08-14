@@ -33,7 +33,7 @@ class LJobGroupProfile(object):
     }
 
     def __init__(self):  # noqa: E501
-        """JobGroupProfile - a model defined in Swagger"""  # noqa: E501
+        """LJobGroupProfile - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LJobGroupProfile(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(JobGroupProfile, dict):
+        if issubclass(LJobGroupProfile, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LJobGroupProfile(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, JobGroupProfile):
+        if not isinstance(other, LJobGroupProfile):
             return False
 
         return self.__dict__ == other.__dict__

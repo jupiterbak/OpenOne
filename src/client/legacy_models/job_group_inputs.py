@@ -27,7 +27,7 @@ class LJobGroupInputs(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[JobGroupInput]'
+        'data': 'list[LJobGroupInput]'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LJobGroupInputs(object):
     }
 
     def __init__(self, data=None):  # noqa: E501
-        """JobGroupInputs - a model defined in Swagger"""  # noqa: E501
+        """LJobGroupInputs - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self.discriminator = None
         self.data = data
 
     @property
     def data(self):
-        """Gets the data of this JobGroupInputs.  # noqa: E501
+        """Gets the data of this LJobGroupInputs.  # noqa: E501
 
 
-        :return: The data of this JobGroupInputs.  # noqa: E501
-        :rtype: list[JobGroupInput]
+        :return: The data of this LJobGroupInputs.  # noqa: E501
+        :rtype: list[LJobGroupInput]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this JobGroupInputs.
+        """Sets the data of this LJobGroupInputs.
 
 
-        :param data: The data of this JobGroupInputs.  # noqa: E501
-        :type: list[JobGroupInput]
+        :param data: The data of this LJobGroupInputs.  # noqa: E501
+        :type: list[LJobGroupInput]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LJobGroupInputs(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(JobGroupInputs, dict):
+        if issubclass(LJobGroupInputs, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LJobGroupInputs(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, JobGroupInputs):
+        if not isinstance(other, LJobGroupInputs):
             return False
 
         return self.__dict__ == other.__dict__

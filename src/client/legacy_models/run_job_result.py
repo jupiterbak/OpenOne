@@ -45,7 +45,7 @@ class LRunJobResult(object):
     }
 
     def __init__(self, id=None, flow_run=None, jobs=None, job_graph=None, reason=None, session_id=None):  # noqa: E501
-        """RunJobResult - a model defined in Swagger"""  # noqa: E501
+        """LRunJobResult - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._flow_run = None
         self._jobs = None
@@ -67,20 +67,20 @@ class LRunJobResult(object):
 
     @property
     def id(self):
-        """Gets the id of this RunJobResult.  # noqa: E501
+        """Gets the id of this LRunJobResult.  # noqa: E501
 
 
-        :return: The id of this RunJobResult.  # noqa: E501
+        :return: The id of this LRunJobResult.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RunJobResult.
+        """Sets the id of this LRunJobResult.
 
 
-        :param id: The id of this RunJobResult.  # noqa: E501
+        :param id: The id of this LRunJobResult.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -90,22 +90,22 @@ class LRunJobResult(object):
 
     @property
     def flow_run(self):
-        """Gets the flow_run of this RunJobResult.  # noqa: E501
+        """Gets the flow_run of this LRunJobResult.  # noqa: E501
 
         This attribute is only present if the job was run with a flow.  # noqa: E501
 
-        :return: The flow_run of this RunJobResult.  # noqa: E501
+        :return: The flow_run of this LRunJobResult.  # noqa: E501
         :rtype: object
         """
         return self._flow_run
 
     @flow_run.setter
     def flow_run(self, flow_run):
-        """Sets the flow_run of this RunJobResult.
+        """Sets the flow_run of this LRunJobResult.
 
         This attribute is only present if the job was run with a flow.  # noqa: E501
 
-        :param flow_run: The flow_run of this RunJobResult.  # noqa: E501
+        :param flow_run: The flow_run of this LRunJobResult.  # noqa: E501
         :type: object
         """
 
@@ -113,22 +113,22 @@ class LRunJobResult(object):
 
     @property
     def jobs(self):
-        """Gets the jobs of this RunJobResult.  # noqa: E501
+        """Gets the jobs of this LRunJobResult.  # noqa: E501
 
         Internal identifiers of the jobs within the job group that were executed as part of this run. Jobs are listed in order of execution.  # noqa: E501
 
-        :return: The jobs of this RunJobResult.  # noqa: E501
+        :return: The jobs of this LRunJobResult.  # noqa: E501
         :rtype: object
         """
         return self._jobs
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this RunJobResult.
+        """Sets the jobs of this LRunJobResult.
 
         Internal identifiers of the jobs within the job group that were executed as part of this run. Jobs are listed in order of execution.  # noqa: E501
 
-        :param jobs: The jobs of this RunJobResult.  # noqa: E501
+        :param jobs: The jobs of this LRunJobResult.  # noqa: E501
         :type: object
         """
 
@@ -136,22 +136,22 @@ class LRunJobResult(object):
 
     @property
     def job_graph(self):
-        """Gets the job_graph of this RunJobResult.  # noqa: E501
+        """Gets the job_graph of this LRunJobResult.  # noqa: E501
 
         Internal identifiers of the internal objects executed for the job.  # noqa: E501
 
-        :return: The job_graph of this RunJobResult.  # noqa: E501
+        :return: The job_graph of this LRunJobResult.  # noqa: E501
         :rtype: object
         """
         return self._job_graph
 
     @job_graph.setter
     def job_graph(self, job_graph):
-        """Sets the job_graph of this RunJobResult.
+        """Sets the job_graph of this LRunJobResult.
 
         Internal identifiers of the internal objects executed for the job.  # noqa: E501
 
-        :param job_graph: The job_graph of this RunJobResult.  # noqa: E501
+        :param job_graph: The job_graph of this LRunJobResult.  # noqa: E501
         :type: object
         """
 
@@ -159,22 +159,22 @@ class LRunJobResult(object):
 
     @property
     def reason(self):
-        """Gets the reason of this RunJobResult.  # noqa: E501
+        """Gets the reason of this LRunJobResult.  # noqa: E501
 
         Current state of the job group at time of API call. Since this call creates the job group, this value is always Job started in the response to this call.  # noqa: E501
 
-        :return: The reason of this RunJobResult.  # noqa: E501
+        :return: The reason of this LRunJobResult.  # noqa: E501
         :rtype: str
         """
         return self._reason
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this RunJobResult.
+        """Sets the reason of this LRunJobResult.
 
         Current state of the job group at time of API call. Since this call creates the job group, this value is always Job started in the response to this call.  # noqa: E501
 
-        :param reason: The reason of this RunJobResult.  # noqa: E501
+        :param reason: The reason of this LRunJobResult.  # noqa: E501
         :type: str
         """
 
@@ -182,22 +182,22 @@ class LRunJobResult(object):
 
     @property
     def session_id(self):
-        """Gets the session_id of this RunJobResult.  # noqa: E501
+        """Gets the session_id of this LRunJobResult.  # noqa: E501
 
         Session identifier for the job group. (Internal)  # noqa: E501
 
-        :return: The session_id of this RunJobResult.  # noqa: E501
+        :return: The session_id of this LRunJobResult.  # noqa: E501
         :rtype: str
         """
         return self._session_id
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this RunJobResult.
+        """Sets the session_id of this LRunJobResult.
 
         Session identifier for the job group. (Internal)  # noqa: E501
 
-        :param session_id: The session_id of this RunJobResult.  # noqa: E501
+        :param session_id: The session_id of this LRunJobResult.  # noqa: E501
         :type: str
         """
 
@@ -224,7 +224,7 @@ class LRunJobResult(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunJobResult, dict):
+        if issubclass(LRunJobResult, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -240,7 +240,7 @@ class LRunJobResult(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunJobResult):
+        if not isinstance(other, LRunJobResult):
             return False
 
         return self.__dict__ == other.__dict__

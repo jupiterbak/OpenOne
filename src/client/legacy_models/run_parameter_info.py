@@ -30,7 +30,7 @@ class LRunParameterInfo(object):
         'type': 'str',
         'override_key': 'str',
         'insertion_indices': 'list[object]',
-        'value': 'RunParameterValueSchema'
+        'value': 'LRunParameterValueSchema'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class LRunParameterInfo(object):
     }
 
     def __init__(self, type=None, override_key=None, insertion_indices=None, value=None):  # noqa: E501
-        """RunParameterInfo - a model defined in Swagger"""  # noqa: E501
+        """LRunParameterInfo - a model defined in Swagger"""  # noqa: E501
         self._type = None
         self._override_key = None
         self._insertion_indices = None
@@ -56,20 +56,20 @@ class LRunParameterInfo(object):
 
     @property
     def type(self):
-        """Gets the type of this RunParameterInfo.  # noqa: E501
+        """Gets the type of this LRunParameterInfo.  # noqa: E501
 
 
-        :return: The type of this RunParameterInfo.  # noqa: E501
+        :return: The type of this LRunParameterInfo.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RunParameterInfo.
+        """Sets the type of this LRunParameterInfo.
 
 
-        :param type: The type of this RunParameterInfo.  # noqa: E501
+        :param type: The type of this LRunParameterInfo.  # noqa: E501
         :type: str
         """
         allowed_values = ["path", "sql", "bucket", "userinfo", "host"]  # noqa: E501
@@ -83,22 +83,22 @@ class LRunParameterInfo(object):
 
     @property
     def override_key(self):
-        """Gets the override_key of this RunParameterInfo.  # noqa: E501
+        """Gets the override_key of this LRunParameterInfo.  # noqa: E501
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :return: The override_key of this RunParameterInfo.  # noqa: E501
+        :return: The override_key of this LRunParameterInfo.  # noqa: E501
         :rtype: str
         """
         return self._override_key
 
     @override_key.setter
     def override_key(self, override_key):
-        """Sets the override_key of this RunParameterInfo.
+        """Sets the override_key of this LRunParameterInfo.
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :param override_key: The override_key of this RunParameterInfo.  # noqa: E501
+        :param override_key: The override_key of this LRunParameterInfo.  # noqa: E501
         :type: str
         """
 
@@ -106,20 +106,20 @@ class LRunParameterInfo(object):
 
     @property
     def insertion_indices(self):
-        """Gets the insertion_indices of this RunParameterInfo.  # noqa: E501
+        """Gets the insertion_indices of this LRunParameterInfo.  # noqa: E501
 
 
-        :return: The insertion_indices of this RunParameterInfo.  # noqa: E501
+        :return: The insertion_indices of this LRunParameterInfo.  # noqa: E501
         :rtype: list[object]
         """
         return self._insertion_indices
 
     @insertion_indices.setter
     def insertion_indices(self, insertion_indices):
-        """Sets the insertion_indices of this RunParameterInfo.
+        """Sets the insertion_indices of this LRunParameterInfo.
 
 
-        :param insertion_indices: The insertion_indices of this RunParameterInfo.  # noqa: E501
+        :param insertion_indices: The insertion_indices of this LRunParameterInfo.  # noqa: E501
         :type: list[object]
         """
         if insertion_indices is None:
@@ -129,21 +129,21 @@ class LRunParameterInfo(object):
 
     @property
     def value(self):
-        """Gets the value of this RunParameterInfo.  # noqa: E501
+        """Gets the value of this LRunParameterInfo.  # noqa: E501
 
 
-        :return: The value of this RunParameterInfo.  # noqa: E501
-        :rtype: RunParameterValueSchema
+        :return: The value of this LRunParameterInfo.  # noqa: E501
+        :rtype: LRunParameterValueSchema
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RunParameterInfo.
+        """Sets the value of this LRunParameterInfo.
 
 
-        :param value: The value of this RunParameterInfo.  # noqa: E501
-        :type: RunParameterValueSchema
+        :param value: The value of this LRunParameterInfo.  # noqa: E501
+        :type: LRunParameterValueSchema
         """
         if value is None:
             raise ValueError("Invalid value for `value`, must not be `None`")  # noqa: E501
@@ -171,7 +171,7 @@ class LRunParameterInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunParameterInfo, dict):
+        if issubclass(LRunParameterInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -187,7 +187,7 @@ class LRunParameterInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunParameterInfo):
+        if not isinstance(other, LRunParameterInfo):
             return False
 
         return self.__dict__ == other.__dict__

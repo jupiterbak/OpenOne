@@ -27,7 +27,7 @@ class LCommitEdgesResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[FlowEdge]'
+        'data': 'list[LFlowEdge]'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LCommitEdgesResponse(object):
     }
 
     def __init__(self, data=None):  # noqa: E501
-        """CommitEdgesResponse - a model defined in Swagger"""  # noqa: E501
+        """LCommitEdgesResponse - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self.discriminator = None
         self.data = data
 
     @property
     def data(self):
-        """Gets the data of this CommitEdgesResponse.  # noqa: E501
+        """Gets the data of this LCommitEdgesResponse.  # noqa: E501
 
 
-        :return: The data of this CommitEdgesResponse.  # noqa: E501
-        :rtype: list[FlowEdge]
+        :return: The data of this LCommitEdgesResponse.  # noqa: E501
+        :rtype: list[LFlowEdge]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CommitEdgesResponse.
+        """Sets the data of this LCommitEdgesResponse.
 
 
-        :param data: The data of this CommitEdgesResponse.  # noqa: E501
-        :type: list[FlowEdge]
+        :param data: The data of this LCommitEdgesResponse.  # noqa: E501
+        :type: list[LFlowEdge]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LCommitEdgesResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(CommitEdgesResponse, dict):
+        if issubclass(LCommitEdgesResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LCommitEdgesResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CommitEdgesResponse):
+        if not isinstance(other, LCommitEdgesResponse):
             return False
 
         return self.__dict__ == other.__dict__

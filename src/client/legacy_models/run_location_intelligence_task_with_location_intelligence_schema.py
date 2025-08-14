@@ -35,27 +35,27 @@ class LRunLocationIntelligenceTaskWithLocationIntelligenceSchema(object):
     }
 
     def __init__(self, run_location_intelligence=None):  # noqa: E501
-        """RunLocationIntelligenceTaskWithLocationIntelligenceSchema - a model defined in Swagger"""  # noqa: E501
+        """LRunLocationIntelligenceTaskWithLocationIntelligenceSchema - a model defined in Swagger"""  # noqa: E501
         self._run_location_intelligence = None
         self.discriminator = None
         self.run_location_intelligence = run_location_intelligence
 
     @property
     def run_location_intelligence(self):
-        """Gets the run_location_intelligence of this RunLocationIntelligenceTaskWithLocationIntelligenceSchema.  # noqa: E501
+        """Gets the run_location_intelligence of this LRunLocationIntelligenceTaskWithLocationIntelligenceSchema.  # noqa: E501
 
 
-        :return: The run_location_intelligence of this RunLocationIntelligenceTaskWithLocationIntelligenceSchema.  # noqa: E501
+        :return: The run_location_intelligence of this LRunLocationIntelligenceTaskWithLocationIntelligenceSchema.  # noqa: E501
         :rtype: object
         """
         return self._run_location_intelligence
 
     @run_location_intelligence.setter
     def run_location_intelligence(self, run_location_intelligence):
-        """Sets the run_location_intelligence of this RunLocationIntelligenceTaskWithLocationIntelligenceSchema.
+        """Sets the run_location_intelligence of this LRunLocationIntelligenceTaskWithLocationIntelligenceSchema.
 
 
-        :param run_location_intelligence: The run_location_intelligence of this RunLocationIntelligenceTaskWithLocationIntelligenceSchema.  # noqa: E501
+        :param run_location_intelligence: The run_location_intelligence of this LRunLocationIntelligenceTaskWithLocationIntelligenceSchema.  # noqa: E501
         :type: object
         """
         if run_location_intelligence is None:
@@ -84,7 +84,7 @@ class LRunLocationIntelligenceTaskWithLocationIntelligenceSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunLocationIntelligenceTaskWithLocationIntelligenceSchema, dict):
+        if issubclass(LRunLocationIntelligenceTaskWithLocationIntelligenceSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunLocationIntelligenceTaskWithLocationIntelligenceSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunLocationIntelligenceTaskWithLocationIntelligenceSchema):
+        if not isinstance(other, LRunLocationIntelligenceTaskWithLocationIntelligenceSchema):
             return False
 
         return self.__dict__ == other.__dict__

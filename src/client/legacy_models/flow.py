@@ -30,7 +30,7 @@ class LFlow(object):
         'name': 'str',
         'description': 'str',
         'folder': 'object',
-        'id': 'AnyOfflowId',
+        'id': 'LAnyOfflowId',
         'default_output_dir': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime',
@@ -38,7 +38,7 @@ class LFlow(object):
         'updater': 'object',
         'settings': 'object',
         'workspace': 'object',
-        'flow_state': 'FlowState'
+        'flow_state': 'LFlowState'
     }
 
     attribute_map = {
@@ -57,7 +57,7 @@ class LFlow(object):
     }
 
     def __init__(self, name=None, description=None, folder=None, id=None, default_output_dir=None, created_at=None, updated_at=None, creator=None, updater=None, settings=None, workspace=None, flow_state=None):  # noqa: E501
-        """Flow - a model defined in Swagger"""  # noqa: E501
+        """LFlow - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._description = None
         self._folder = None
@@ -95,22 +95,22 @@ class LFlow(object):
 
     @property
     def name(self):
-        """Gets the name of this Flow.  # noqa: E501
+        """Gets the name of this LFlow.  # noqa: E501
 
         Display name of the flow.  # noqa: E501
 
-        :return: The name of this Flow.  # noqa: E501
+        :return: The name of this LFlow.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Flow.
+        """Sets the name of this LFlow.
 
         Display name of the flow.  # noqa: E501
 
-        :param name: The name of this Flow.  # noqa: E501
+        :param name: The name of this LFlow.  # noqa: E501
         :type: str
         """
 
@@ -118,22 +118,22 @@ class LFlow(object):
 
     @property
     def description(self):
-        """Gets the description of this Flow.  # noqa: E501
+        """Gets the description of this LFlow.  # noqa: E501
 
         User-friendly description for the flow.  # noqa: E501
 
-        :return: The description of this Flow.  # noqa: E501
+        :return: The description of this LFlow.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Flow.
+        """Sets the description of this LFlow.
 
         User-friendly description for the flow.  # noqa: E501
 
-        :param description: The description of this Flow.  # noqa: E501
+        :param description: The description of this LFlow.  # noqa: E501
         :type: str
         """
 
@@ -141,20 +141,20 @@ class LFlow(object):
 
     @property
     def folder(self):
-        """Gets the folder of this Flow.  # noqa: E501
+        """Gets the folder of this LFlow.  # noqa: E501
 
 
-        :return: The folder of this Flow.  # noqa: E501
+        :return: The folder of this LFlow.  # noqa: E501
         :rtype: object
         """
         return self._folder
 
     @folder.setter
     def folder(self, folder):
-        """Sets the folder of this Flow.
+        """Sets the folder of this LFlow.
 
 
-        :param folder: The folder of this Flow.  # noqa: E501
+        :param folder: The folder of this LFlow.  # noqa: E501
         :type: object
         """
 
@@ -162,21 +162,21 @@ class LFlow(object):
 
     @property
     def id(self):
-        """Gets the id of this Flow.  # noqa: E501
+        """Gets the id of this LFlow.  # noqa: E501
 
 
-        :return: The id of this Flow.  # noqa: E501
-        :rtype: AnyOfflowId
+        :return: The id of this LFlow.  # noqa: E501
+        :rtype: LAnyOfflowId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Flow.
+        """Sets the id of this LFlow.
 
 
-        :param id: The id of this Flow.  # noqa: E501
-        :type: AnyOfflowId
+        :param id: The id of this LFlow.  # noqa: E501
+        :type: LAnyOfflowId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -185,22 +185,22 @@ class LFlow(object):
 
     @property
     def default_output_dir(self):
-        """Gets the default_output_dir of this Flow.  # noqa: E501
+        """Gets the default_output_dir of this LFlow.  # noqa: E501
 
         output directory location for the flow.  # noqa: E501
 
-        :return: The default_output_dir of this Flow.  # noqa: E501
+        :return: The default_output_dir of this LFlow.  # noqa: E501
         :rtype: str
         """
         return self._default_output_dir
 
     @default_output_dir.setter
     def default_output_dir(self, default_output_dir):
-        """Sets the default_output_dir of this Flow.
+        """Sets the default_output_dir of this LFlow.
 
         output directory location for the flow.  # noqa: E501
 
-        :param default_output_dir: The default_output_dir of this Flow.  # noqa: E501
+        :param default_output_dir: The default_output_dir of this LFlow.  # noqa: E501
         :type: str
         """
 
@@ -208,22 +208,22 @@ class LFlow(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this Flow.  # noqa: E501
+        """Gets the created_at of this LFlow.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this Flow.  # noqa: E501
+        :return: The created_at of this LFlow.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Flow.
+        """Sets the created_at of this LFlow.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this Flow.  # noqa: E501
+        :param created_at: The created_at of this LFlow.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -233,22 +233,22 @@ class LFlow(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Flow.  # noqa: E501
+        """Gets the updated_at of this LFlow.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this Flow.  # noqa: E501
+        :return: The updated_at of this LFlow.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Flow.
+        """Sets the updated_at of this LFlow.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this Flow.  # noqa: E501
+        :param updated_at: The updated_at of this LFlow.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -258,20 +258,20 @@ class LFlow(object):
 
     @property
     def creator(self):
-        """Gets the creator of this Flow.  # noqa: E501
+        """Gets the creator of this LFlow.  # noqa: E501
 
 
-        :return: The creator of this Flow.  # noqa: E501
+        :return: The creator of this LFlow.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this Flow.
+        """Sets the creator of this LFlow.
 
 
-        :param creator: The creator of this Flow.  # noqa: E501
+        :param creator: The creator of this LFlow.  # noqa: E501
         :type: object
         """
 
@@ -279,20 +279,20 @@ class LFlow(object):
 
     @property
     def updater(self):
-        """Gets the updater of this Flow.  # noqa: E501
+        """Gets the updater of this LFlow.  # noqa: E501
 
 
-        :return: The updater of this Flow.  # noqa: E501
+        :return: The updater of this LFlow.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this Flow.
+        """Sets the updater of this LFlow.
 
 
-        :param updater: The updater of this Flow.  # noqa: E501
+        :param updater: The updater of this LFlow.  # noqa: E501
         :type: object
         """
 
@@ -300,22 +300,22 @@ class LFlow(object):
 
     @property
     def settings(self):
-        """Gets the settings of this Flow.  # noqa: E501
+        """Gets the settings of this LFlow.  # noqa: E501
 
         Settings for the flow.  # noqa: E501
 
-        :return: The settings of this Flow.  # noqa: E501
+        :return: The settings of this LFlow.  # noqa: E501
         :rtype: object
         """
         return self._settings
 
     @settings.setter
     def settings(self, settings):
-        """Sets the settings of this Flow.
+        """Sets the settings of this LFlow.
 
         Settings for the flow.  # noqa: E501
 
-        :param settings: The settings of this Flow.  # noqa: E501
+        :param settings: The settings of this LFlow.  # noqa: E501
         :type: object
         """
 
@@ -323,20 +323,20 @@ class LFlow(object):
 
     @property
     def workspace(self):
-        """Gets the workspace of this Flow.  # noqa: E501
+        """Gets the workspace of this LFlow.  # noqa: E501
 
 
-        :return: The workspace of this Flow.  # noqa: E501
+        :return: The workspace of this LFlow.  # noqa: E501
         :rtype: object
         """
         return self._workspace
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this Flow.
+        """Sets the workspace of this LFlow.
 
 
-        :param workspace: The workspace of this Flow.  # noqa: E501
+        :param workspace: The workspace of this LFlow.  # noqa: E501
         :type: object
         """
 
@@ -344,21 +344,21 @@ class LFlow(object):
 
     @property
     def flow_state(self):
-        """Gets the flow_state of this Flow.  # noqa: E501
+        """Gets the flow_state of this LFlow.  # noqa: E501
 
 
-        :return: The flow_state of this Flow.  # noqa: E501
-        :rtype: FlowState
+        :return: The flow_state of this LFlow.  # noqa: E501
+        :rtype: LFlowState
         """
         return self._flow_state
 
     @flow_state.setter
     def flow_state(self, flow_state):
-        """Sets the flow_state of this Flow.
+        """Sets the flow_state of this LFlow.
 
 
-        :param flow_state: The flow_state of this Flow.  # noqa: E501
-        :type: FlowState
+        :param flow_state: The flow_state of this LFlow.  # noqa: E501
+        :type: LFlowState
         """
 
         self._flow_state = flow_state
@@ -384,7 +384,7 @@ class LFlow(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Flow, dict):
+        if issubclass(LFlow, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -400,7 +400,7 @@ class LFlow(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Flow):
+        if not isinstance(other, LFlow):
             return False
 
         return self.__dict__ == other.__dict__

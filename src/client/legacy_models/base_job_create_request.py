@@ -43,7 +43,7 @@ class LBaseJobCreateRequest(object):
     }
 
     def __init__(self, status=None, job_type=None, sample_size=None, percent_complete=None, jobgroup_id=None):  # noqa: E501
-        """BaseJobCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LBaseJobCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._status = None
         self._job_type = None
         self._sample_size = None
@@ -61,22 +61,22 @@ class LBaseJobCreateRequest(object):
 
     @property
     def status(self):
-        """Gets the status of this BaseJobCreateRequest.  # noqa: E501
+        """Gets the status of this LBaseJobCreateRequest.  # noqa: E501
 
         Current status of the job group * `Created` - Created based on the current action * `InProgress` - Currently running * `Complete` - Completed successfully * `Failed` - Failed * `Canceled` - Canceled by the user  # noqa: E501
 
-        :return: The status of this BaseJobCreateRequest.  # noqa: E501
+        :return: The status of this LBaseJobCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BaseJobCreateRequest.
+        """Sets the status of this LBaseJobCreateRequest.
 
         Current status of the job group * `Created` - Created based on the current action * `InProgress` - Currently running * `Complete` - Completed successfully * `Failed` - Failed * `Canceled` - Canceled by the user  # noqa: E501
 
-        :param status: The status of this BaseJobCreateRequest.  # noqa: E501
+        :param status: The status of this LBaseJobCreateRequest.  # noqa: E501
         :type: str
         """
         allowed_values = ["Created", "InProgress", "Complete", "Failed", "Canceled"]  # noqa: E501
@@ -90,22 +90,22 @@ class LBaseJobCreateRequest(object):
 
     @property
     def job_type(self):
-        """Gets the job_type of this BaseJobCreateRequest.  # noqa: E501
+        """Gets the job_type of this LBaseJobCreateRequest.  # noqa: E501
 
          * `wrangle` - main transform job that executes the recipe logic * `profile` - job responsible for producing the profiling results * `publish` - job responsible for publishing to a Database table or an external source. * `filewriter` - job responsible for writing to a file system * `filereader` - job responsible for reading from a file system * `fileconverter` - job responsible for converting input data sources in a format that can be used for the execution (e.g. Excel to CSV) * `ingest` - job responsible for ingesting data from a Database or an external source to a file system that is supported by the execution engine * `artifactstaging` - job responsible for copying artifacts used in transform by examples or standardization to a file system * `sqlexecution` - job responsible for executing arbitrary SQL either before ingest job or after publish job * `schemadrift` - job responsible for executing schema validation against the original datasource schema  # noqa: E501
 
-        :return: The job_type of this BaseJobCreateRequest.  # noqa: E501
+        :return: The job_type of this LBaseJobCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._job_type
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this BaseJobCreateRequest.
+        """Sets the job_type of this LBaseJobCreateRequest.
 
          * `wrangle` - main transform job that executes the recipe logic * `profile` - job responsible for producing the profiling results * `publish` - job responsible for publishing to a Database table or an external source. * `filewriter` - job responsible for writing to a file system * `filereader` - job responsible for reading from a file system * `fileconverter` - job responsible for converting input data sources in a format that can be used for the execution (e.g. Excel to CSV) * `ingest` - job responsible for ingesting data from a Database or an external source to a file system that is supported by the execution engine * `artifactstaging` - job responsible for copying artifacts used in transform by examples or standardization to a file system * `sqlexecution` - job responsible for executing arbitrary SQL either before ingest job or after publish job * `schemadrift` - job responsible for executing schema validation against the original datasource schema  # noqa: E501
 
-        :param job_type: The job_type of this BaseJobCreateRequest.  # noqa: E501
+        :param job_type: The job_type of this LBaseJobCreateRequest.  # noqa: E501
         :type: str
         """
         if job_type is None:
@@ -121,20 +121,20 @@ class LBaseJobCreateRequest(object):
 
     @property
     def sample_size(self):
-        """Gets the sample_size of this BaseJobCreateRequest.  # noqa: E501
+        """Gets the sample_size of this LBaseJobCreateRequest.  # noqa: E501
 
 
-        :return: The sample_size of this BaseJobCreateRequest.  # noqa: E501
+        :return: The sample_size of this LBaseJobCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._sample_size
 
     @sample_size.setter
     def sample_size(self, sample_size):
-        """Sets the sample_size of this BaseJobCreateRequest.
+        """Sets the sample_size of this LBaseJobCreateRequest.
 
 
-        :param sample_size: The sample_size of this BaseJobCreateRequest.  # noqa: E501
+        :param sample_size: The sample_size of this LBaseJobCreateRequest.  # noqa: E501
         :type: int
         """
 
@@ -142,20 +142,20 @@ class LBaseJobCreateRequest(object):
 
     @property
     def percent_complete(self):
-        """Gets the percent_complete of this BaseJobCreateRequest.  # noqa: E501
+        """Gets the percent_complete of this LBaseJobCreateRequest.  # noqa: E501
 
 
-        :return: The percent_complete of this BaseJobCreateRequest.  # noqa: E501
+        :return: The percent_complete of this LBaseJobCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._percent_complete
 
     @percent_complete.setter
     def percent_complete(self, percent_complete):
-        """Sets the percent_complete of this BaseJobCreateRequest.
+        """Sets the percent_complete of this LBaseJobCreateRequest.
 
 
-        :param percent_complete: The percent_complete of this BaseJobCreateRequest.  # noqa: E501
+        :param percent_complete: The percent_complete of this LBaseJobCreateRequest.  # noqa: E501
         :type: int
         """
 
@@ -163,20 +163,20 @@ class LBaseJobCreateRequest(object):
 
     @property
     def jobgroup_id(self):
-        """Gets the jobgroup_id of this BaseJobCreateRequest.  # noqa: E501
+        """Gets the jobgroup_id of this LBaseJobCreateRequest.  # noqa: E501
 
 
-        :return: The jobgroup_id of this BaseJobCreateRequest.  # noqa: E501
+        :return: The jobgroup_id of this LBaseJobCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._jobgroup_id
 
     @jobgroup_id.setter
     def jobgroup_id(self, jobgroup_id):
-        """Sets the jobgroup_id of this BaseJobCreateRequest.
+        """Sets the jobgroup_id of this LBaseJobCreateRequest.
 
 
-        :param jobgroup_id: The jobgroup_id of this BaseJobCreateRequest.  # noqa: E501
+        :param jobgroup_id: The jobgroup_id of this LBaseJobCreateRequest.  # noqa: E501
         :type: int
         """
         if jobgroup_id is None:
@@ -205,7 +205,7 @@ class LBaseJobCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(BaseJobCreateRequest, dict):
+        if issubclass(LBaseJobCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -221,7 +221,7 @@ class LBaseJobCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BaseJobCreateRequest):
+        if not isinstance(other, LBaseJobCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -49,7 +49,7 @@ class LImportMacroPackageResponse(object):
     }
 
     def __init__(self, id=None, name=None, description=None, created_by=None, updated_by=None, created_at=None, updated_at=None, workspace_id=None):  # noqa: E501
-        """ImportMacroPackageResponse - a model defined in Swagger"""  # noqa: E501
+        """LImportMacroPackageResponse - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._name = None
         self._description = None
@@ -70,22 +70,22 @@ class LImportMacroPackageResponse(object):
 
     @property
     def id(self):
-        """Gets the id of this ImportMacroPackageResponse.  # noqa: E501
+        """Gets the id of this LImportMacroPackageResponse.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this ImportMacroPackageResponse.  # noqa: E501
+        :return: The id of this LImportMacroPackageResponse.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImportMacroPackageResponse.
+        """Sets the id of this LImportMacroPackageResponse.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this ImportMacroPackageResponse.  # noqa: E501
+        :param id: The id of this LImportMacroPackageResponse.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -95,22 +95,22 @@ class LImportMacroPackageResponse(object):
 
     @property
     def name(self):
-        """Gets the name of this ImportMacroPackageResponse.  # noqa: E501
+        """Gets the name of this LImportMacroPackageResponse.  # noqa: E501
 
         Display name of the macro.  # noqa: E501
 
-        :return: The name of this ImportMacroPackageResponse.  # noqa: E501
+        :return: The name of this LImportMacroPackageResponse.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ImportMacroPackageResponse.
+        """Sets the name of this LImportMacroPackageResponse.
 
         Display name of the macro.  # noqa: E501
 
-        :param name: The name of this ImportMacroPackageResponse.  # noqa: E501
+        :param name: The name of this LImportMacroPackageResponse.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -120,22 +120,22 @@ class LImportMacroPackageResponse(object):
 
     @property
     def description(self):
-        """Gets the description of this ImportMacroPackageResponse.  # noqa: E501
+        """Gets the description of this LImportMacroPackageResponse.  # noqa: E501
 
         User-friendly description for the macro.  # noqa: E501
 
-        :return: The description of this ImportMacroPackageResponse.  # noqa: E501
+        :return: The description of this LImportMacroPackageResponse.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ImportMacroPackageResponse.
+        """Sets the description of this LImportMacroPackageResponse.
 
         User-friendly description for the macro.  # noqa: E501
 
-        :param description: The description of this ImportMacroPackageResponse.  # noqa: E501
+        :param description: The description of this LImportMacroPackageResponse.  # noqa: E501
         :type: str
         """
         if description is None:
@@ -145,22 +145,22 @@ class LImportMacroPackageResponse(object):
 
     @property
     def created_by(self):
-        """Gets the created_by of this ImportMacroPackageResponse.  # noqa: E501
+        """Gets the created_by of this LImportMacroPackageResponse.  # noqa: E501
 
         Identifier of the user who created this object.  # noqa: E501
 
-        :return: The created_by of this ImportMacroPackageResponse.  # noqa: E501
+        :return: The created_by of this LImportMacroPackageResponse.  # noqa: E501
         :rtype: int
         """
         return self._created_by
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this ImportMacroPackageResponse.
+        """Sets the created_by of this LImportMacroPackageResponse.
 
         Identifier of the user who created this object.  # noqa: E501
 
-        :param created_by: The created_by of this ImportMacroPackageResponse.  # noqa: E501
+        :param created_by: The created_by of this LImportMacroPackageResponse.  # noqa: E501
         :type: int
         """
         if created_by is None:
@@ -170,22 +170,22 @@ class LImportMacroPackageResponse(object):
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this ImportMacroPackageResponse.  # noqa: E501
+        """Gets the updated_by of this LImportMacroPackageResponse.  # noqa: E501
 
         Identifier of the user who updated this object.  # noqa: E501
 
-        :return: The updated_by of this ImportMacroPackageResponse.  # noqa: E501
+        :return: The updated_by of this LImportMacroPackageResponse.  # noqa: E501
         :rtype: int
         """
         return self._updated_by
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this ImportMacroPackageResponse.
+        """Sets the updated_by of this LImportMacroPackageResponse.
 
         Identifier of the user who updated this object.  # noqa: E501
 
-        :param updated_by: The updated_by of this ImportMacroPackageResponse.  # noqa: E501
+        :param updated_by: The updated_by of this LImportMacroPackageResponse.  # noqa: E501
         :type: int
         """
         if updated_by is None:
@@ -195,22 +195,22 @@ class LImportMacroPackageResponse(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ImportMacroPackageResponse.  # noqa: E501
+        """Gets the created_at of this LImportMacroPackageResponse.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this ImportMacroPackageResponse.  # noqa: E501
+        :return: The created_at of this LImportMacroPackageResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ImportMacroPackageResponse.
+        """Sets the created_at of this LImportMacroPackageResponse.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this ImportMacroPackageResponse.  # noqa: E501
+        :param created_at: The created_at of this LImportMacroPackageResponse.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -220,22 +220,22 @@ class LImportMacroPackageResponse(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ImportMacroPackageResponse.  # noqa: E501
+        """Gets the updated_at of this LImportMacroPackageResponse.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this ImportMacroPackageResponse.  # noqa: E501
+        :return: The updated_at of this LImportMacroPackageResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ImportMacroPackageResponse.
+        """Sets the updated_at of this LImportMacroPackageResponse.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this ImportMacroPackageResponse.  # noqa: E501
+        :param updated_at: The updated_at of this LImportMacroPackageResponse.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -245,22 +245,22 @@ class LImportMacroPackageResponse(object):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ImportMacroPackageResponse.  # noqa: E501
+        """Gets the workspace_id of this LImportMacroPackageResponse.  # noqa: E501
 
         internal identifier of the workspace  # noqa: E501
 
-        :return: The workspace_id of this ImportMacroPackageResponse.  # noqa: E501
+        :return: The workspace_id of this LImportMacroPackageResponse.  # noqa: E501
         :rtype: int
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ImportMacroPackageResponse.
+        """Sets the workspace_id of this LImportMacroPackageResponse.
 
         internal identifier of the workspace  # noqa: E501
 
-        :param workspace_id: The workspace_id of this ImportMacroPackageResponse.  # noqa: E501
+        :param workspace_id: The workspace_id of this LImportMacroPackageResponse.  # noqa: E501
         :type: int
         """
         if workspace_id is None:
@@ -289,7 +289,7 @@ class LImportMacroPackageResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ImportMacroPackageResponse, dict):
+        if issubclass(LImportMacroPackageResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -305,7 +305,7 @@ class LImportMacroPackageResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImportMacroPackageResponse):
+        if not isinstance(other, LImportMacroPackageResponse):
             return False
 
         return self.__dict__ == other.__dict__

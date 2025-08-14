@@ -33,7 +33,7 @@ class LAnyOfwebhookFlowTaskId(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfwebhookFlowTaskId - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfwebhookFlowTaskId - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfwebhookFlowTaskId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfwebhookFlowTaskId, dict):
+        if issubclass(LAnyOfwebhookFlowTaskId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfwebhookFlowTaskId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfwebhookFlowTaskId):
+        if not isinstance(other, LAnyOfwebhookFlowTaskId):
             return False
 
         return self.__dict__ == other.__dict__

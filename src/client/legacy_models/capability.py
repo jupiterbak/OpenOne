@@ -43,7 +43,7 @@ class LCapability(object):
     }
 
     def __init__(self, capability_id=None, capability_name=None, capability_group=None, product_code=None, product_id=None):  # noqa: E501
-        """Capability - a model defined in Swagger"""  # noqa: E501
+        """LCapability - a model defined in Swagger"""  # noqa: E501
         self._capability_id = None
         self._capability_name = None
         self._capability_group = None
@@ -59,20 +59,20 @@ class LCapability(object):
 
     @property
     def capability_id(self):
-        """Gets the capability_id of this Capability.  # noqa: E501
+        """Gets the capability_id of this LCapability.  # noqa: E501
 
 
-        :return: The capability_id of this Capability.  # noqa: E501
+        :return: The capability_id of this LCapability.  # noqa: E501
         :rtype: str
         """
         return self._capability_id
 
     @capability_id.setter
     def capability_id(self, capability_id):
-        """Sets the capability_id of this Capability.
+        """Sets the capability_id of this LCapability.
 
 
-        :param capability_id: The capability_id of this Capability.  # noqa: E501
+        :param capability_id: The capability_id of this LCapability.  # noqa: E501
         :type: str
         """
         if capability_id is None:
@@ -82,20 +82,20 @@ class LCapability(object):
 
     @property
     def capability_name(self):
-        """Gets the capability_name of this Capability.  # noqa: E501
+        """Gets the capability_name of this LCapability.  # noqa: E501
 
 
-        :return: The capability_name of this Capability.  # noqa: E501
+        :return: The capability_name of this LCapability.  # noqa: E501
         :rtype: str
         """
         return self._capability_name
 
     @capability_name.setter
     def capability_name(self, capability_name):
-        """Sets the capability_name of this Capability.
+        """Sets the capability_name of this LCapability.
 
 
-        :param capability_name: The capability_name of this Capability.  # noqa: E501
+        :param capability_name: The capability_name of this LCapability.  # noqa: E501
         :type: str
         """
         if capability_name is None:
@@ -105,20 +105,20 @@ class LCapability(object):
 
     @property
     def capability_group(self):
-        """Gets the capability_group of this Capability.  # noqa: E501
+        """Gets the capability_group of this LCapability.  # noqa: E501
 
 
-        :return: The capability_group of this Capability.  # noqa: E501
+        :return: The capability_group of this LCapability.  # noqa: E501
         :rtype: str
         """
         return self._capability_group
 
     @capability_group.setter
     def capability_group(self, capability_group):
-        """Sets the capability_group of this Capability.
+        """Sets the capability_group of this LCapability.
 
 
-        :param capability_group: The capability_group of this Capability.  # noqa: E501
+        :param capability_group: The capability_group of this LCapability.  # noqa: E501
         :type: str
         """
 
@@ -126,20 +126,20 @@ class LCapability(object):
 
     @property
     def product_code(self):
-        """Gets the product_code of this Capability.  # noqa: E501
+        """Gets the product_code of this LCapability.  # noqa: E501
 
 
-        :return: The product_code of this Capability.  # noqa: E501
+        :return: The product_code of this LCapability.  # noqa: E501
         :rtype: str
         """
         return self._product_code
 
     @product_code.setter
     def product_code(self, product_code):
-        """Sets the product_code of this Capability.
+        """Sets the product_code of this LCapability.
 
 
-        :param product_code: The product_code of this Capability.  # noqa: E501
+        :param product_code: The product_code of this LCapability.  # noqa: E501
         :type: str
         """
         if product_code is None:
@@ -155,20 +155,20 @@ class LCapability(object):
 
     @property
     def product_id(self):
-        """Gets the product_id of this Capability.  # noqa: E501
+        """Gets the product_id of this LCapability.  # noqa: E501
 
 
-        :return: The product_id of this Capability.  # noqa: E501
+        :return: The product_id of this LCapability.  # noqa: E501
         :rtype: str
         """
         return self._product_id
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this Capability.
+        """Sets the product_id of this LCapability.
 
 
-        :param product_id: The product_id of this Capability.  # noqa: E501
+        :param product_id: The product_id of this LCapability.  # noqa: E501
         :type: str
         """
         if product_id is None:
@@ -197,7 +197,7 @@ class LCapability(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Capability, dict):
+        if issubclass(LCapability, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -213,7 +213,7 @@ class LCapability(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Capability):
+        if not isinstance(other, LCapability):
             return False
 
         return self.__dict__ == other.__dict__

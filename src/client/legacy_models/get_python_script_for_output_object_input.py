@@ -35,29 +35,29 @@ class LGetPythonScriptForOutputObjectInput(object):
     }
 
     def __init__(self, python_script=None):  # noqa: E501
-        """GetPythonScriptForOutputObjectInput - a model defined in Swagger"""  # noqa: E501
+        """LGetPythonScriptForOutputObjectInput - a model defined in Swagger"""  # noqa: E501
         self._python_script = None
         self.discriminator = None
         self.python_script = python_script
 
     @property
     def python_script(self):
-        """Gets the python_script of this GetPythonScriptForOutputObjectInput.  # noqa: E501
+        """Gets the python_script of this LGetPythonScriptForOutputObjectInput.  # noqa: E501
 
         Generated Python Script  # noqa: E501
 
-        :return: The python_script of this GetPythonScriptForOutputObjectInput.  # noqa: E501
+        :return: The python_script of this LGetPythonScriptForOutputObjectInput.  # noqa: E501
         :rtype: str
         """
         return self._python_script
 
     @python_script.setter
     def python_script(self, python_script):
-        """Sets the python_script of this GetPythonScriptForOutputObjectInput.
+        """Sets the python_script of this LGetPythonScriptForOutputObjectInput.
 
         Generated Python Script  # noqa: E501
 
-        :param python_script: The python_script of this GetPythonScriptForOutputObjectInput.  # noqa: E501
+        :param python_script: The python_script of this LGetPythonScriptForOutputObjectInput.  # noqa: E501
         :type: str
         """
         if python_script is None:
@@ -86,7 +86,7 @@ class LGetPythonScriptForOutputObjectInput(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(GetPythonScriptForOutputObjectInput, dict):
+        if issubclass(LGetPythonScriptForOutputObjectInput, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -102,7 +102,7 @@ class LGetPythonScriptForOutputObjectInput(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, GetPythonScriptForOutputObjectInput):
+        if not isinstance(other, LGetPythonScriptForOutputObjectInput):
             return False
 
         return self.__dict__ == other.__dict__

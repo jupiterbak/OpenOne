@@ -37,7 +37,7 @@ class LAsyncRunJobResult(object):
     }
 
     def __init__(self, id=None, reason=None):  # noqa: E501
-        """AsyncRunJobResult - a model defined in Swagger"""  # noqa: E501
+        """LAsyncRunJobResult - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._reason = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LAsyncRunJobResult(object):
 
     @property
     def id(self):
-        """Gets the id of this AsyncRunJobResult.  # noqa: E501
+        """Gets the id of this LAsyncRunJobResult.  # noqa: E501
 
 
-        :return: The id of this AsyncRunJobResult.  # noqa: E501
+        :return: The id of this LAsyncRunJobResult.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AsyncRunJobResult.
+        """Sets the id of this LAsyncRunJobResult.
 
 
-        :param id: The id of this AsyncRunJobResult.  # noqa: E501
+        :param id: The id of this LAsyncRunJobResult.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -69,20 +69,20 @@ class LAsyncRunJobResult(object):
 
     @property
     def reason(self):
-        """Gets the reason of this AsyncRunJobResult.  # noqa: E501
+        """Gets the reason of this LAsyncRunJobResult.  # noqa: E501
 
 
-        :return: The reason of this AsyncRunJobResult.  # noqa: E501
+        :return: The reason of this LAsyncRunJobResult.  # noqa: E501
         :rtype: str
         """
         return self._reason
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this AsyncRunJobResult.
+        """Sets the reason of this LAsyncRunJobResult.
 
 
-        :param reason: The reason of this AsyncRunJobResult.  # noqa: E501
+        :param reason: The reason of this LAsyncRunJobResult.  # noqa: E501
         :type: str
         """
         if reason is None:
@@ -111,7 +111,7 @@ class LAsyncRunJobResult(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AsyncRunJobResult, dict):
+        if issubclass(LAsyncRunJobResult, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LAsyncRunJobResult(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AsyncRunJobResult):
+        if not isinstance(other, LAsyncRunJobResult):
             return False
 
         return self.__dict__ == other.__dict__

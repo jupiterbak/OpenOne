@@ -41,7 +41,7 @@ class LPageNumberPagination(object):
     }
 
     def __init__(self, pagination_type=None, pagenumberparam=None, pagesizeparam=None, pagesize=None):  # noqa: E501
-        """PageNumberPagination - a model defined in Swagger"""  # noqa: E501
+        """LPageNumberPagination - a model defined in Swagger"""  # noqa: E501
         self._pagination_type = None
         self._pagenumberparam = None
         self._pagesizeparam = None
@@ -54,22 +54,22 @@ class LPageNumberPagination(object):
 
     @property
     def pagination_type(self):
-        """Gets the pagination_type of this PageNumberPagination.  # noqa: E501
+        """Gets the pagination_type of this LPageNumberPagination.  # noqa: E501
 
         pageNumber pagination type.  # noqa: E501
 
-        :return: The pagination_type of this PageNumberPagination.  # noqa: E501
+        :return: The pagination_type of this LPageNumberPagination.  # noqa: E501
         :rtype: str
         """
         return self._pagination_type
 
     @pagination_type.setter
     def pagination_type(self, pagination_type):
-        """Sets the pagination_type of this PageNumberPagination.
+        """Sets the pagination_type of this LPageNumberPagination.
 
         pageNumber pagination type.  # noqa: E501
 
-        :param pagination_type: The pagination_type of this PageNumberPagination.  # noqa: E501
+        :param pagination_type: The pagination_type of this LPageNumberPagination.  # noqa: E501
         :type: str
         """
         if pagination_type is None:
@@ -79,22 +79,22 @@ class LPageNumberPagination(object):
 
     @property
     def pagenumberparam(self):
-        """Gets the pagenumberparam of this PageNumberPagination.  # noqa: E501
+        """Gets the pagenumberparam of this LPageNumberPagination.  # noqa: E501
 
         Page number param.  # noqa: E501
 
-        :return: The pagenumberparam of this PageNumberPagination.  # noqa: E501
+        :return: The pagenumberparam of this LPageNumberPagination.  # noqa: E501
         :rtype: str
         """
         return self._pagenumberparam
 
     @pagenumberparam.setter
     def pagenumberparam(self, pagenumberparam):
-        """Sets the pagenumberparam of this PageNumberPagination.
+        """Sets the pagenumberparam of this LPageNumberPagination.
 
         Page number param.  # noqa: E501
 
-        :param pagenumberparam: The pagenumberparam of this PageNumberPagination.  # noqa: E501
+        :param pagenumberparam: The pagenumberparam of this LPageNumberPagination.  # noqa: E501
         :type: str
         """
         if pagenumberparam is None:
@@ -104,22 +104,22 @@ class LPageNumberPagination(object):
 
     @property
     def pagesizeparam(self):
-        """Gets the pagesizeparam of this PageNumberPagination.  # noqa: E501
+        """Gets the pagesizeparam of this LPageNumberPagination.  # noqa: E501
 
         Page size param.  # noqa: E501
 
-        :return: The pagesizeparam of this PageNumberPagination.  # noqa: E501
+        :return: The pagesizeparam of this LPageNumberPagination.  # noqa: E501
         :rtype: str
         """
         return self._pagesizeparam
 
     @pagesizeparam.setter
     def pagesizeparam(self, pagesizeparam):
-        """Sets the pagesizeparam of this PageNumberPagination.
+        """Sets the pagesizeparam of this LPageNumberPagination.
 
         Page size param.  # noqa: E501
 
-        :param pagesizeparam: The pagesizeparam of this PageNumberPagination.  # noqa: E501
+        :param pagesizeparam: The pagesizeparam of this LPageNumberPagination.  # noqa: E501
         :type: str
         """
         if pagesizeparam is None:
@@ -129,22 +129,22 @@ class LPageNumberPagination(object):
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this PageNumberPagination.  # noqa: E501
+        """Gets the pagesize of this LPageNumberPagination.  # noqa: E501
 
         Page size.  # noqa: E501
 
-        :return: The pagesize of this PageNumberPagination.  # noqa: E501
+        :return: The pagesize of this LPageNumberPagination.  # noqa: E501
         :rtype: int
         """
         return self._pagesize
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this PageNumberPagination.
+        """Sets the pagesize of this LPageNumberPagination.
 
         Page size.  # noqa: E501
 
-        :param pagesize: The pagesize of this PageNumberPagination.  # noqa: E501
+        :param pagesize: The pagesize of this LPageNumberPagination.  # noqa: E501
         :type: int
         """
         if pagesize is None:
@@ -173,7 +173,7 @@ class LPageNumberPagination(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PageNumberPagination, dict):
+        if issubclass(LPageNumberPagination, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -189,7 +189,7 @@ class LPageNumberPagination(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PageNumberPagination):
+        if not isinstance(other, LPageNumberPagination):
             return False
 
         return self.__dict__ == other.__dict__

@@ -35,27 +35,27 @@ class LStartTaskSuccessResponse(object):
     }
 
     def __init__(self, task=None):  # noqa: E501
-        """StartTaskSuccessResponse - a model defined in Swagger"""  # noqa: E501
+        """LStartTaskSuccessResponse - a model defined in Swagger"""  # noqa: E501
         self._task = None
         self.discriminator = None
         self.task = task
 
     @property
     def task(self):
-        """Gets the task of this StartTaskSuccessResponse.  # noqa: E501
+        """Gets the task of this LStartTaskSuccessResponse.  # noqa: E501
 
 
-        :return: The task of this StartTaskSuccessResponse.  # noqa: E501
+        :return: The task of this LStartTaskSuccessResponse.  # noqa: E501
         :rtype: object
         """
         return self._task
 
     @task.setter
     def task(self, task):
-        """Sets the task of this StartTaskSuccessResponse.
+        """Sets the task of this LStartTaskSuccessResponse.
 
 
-        :param task: The task of this StartTaskSuccessResponse.  # noqa: E501
+        :param task: The task of this LStartTaskSuccessResponse.  # noqa: E501
         :type: object
         """
         if task is None:
@@ -84,7 +84,7 @@ class LStartTaskSuccessResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(StartTaskSuccessResponse, dict):
+        if issubclass(LStartTaskSuccessResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LStartTaskSuccessResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, StartTaskSuccessResponse):
+        if not isinstance(other, LStartTaskSuccessResponse):
             return False
 
         return self.__dict__ == other.__dict__

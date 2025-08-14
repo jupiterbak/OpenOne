@@ -27,7 +27,7 @@ class LPublicationList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[Publication]',
+        'data': 'list[LPublication]',
         'count': 'int'
     }
 
@@ -37,7 +37,7 @@ class LPublicationList(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """PublicationList - a model defined in Swagger"""  # noqa: E501
+        """LPublicationList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LPublicationList(object):
 
     @property
     def data(self):
-        """Gets the data of this PublicationList.  # noqa: E501
+        """Gets the data of this LPublicationList.  # noqa: E501
 
 
-        :return: The data of this PublicationList.  # noqa: E501
-        :rtype: list[Publication]
+        :return: The data of this LPublicationList.  # noqa: E501
+        :rtype: list[LPublication]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this PublicationList.
+        """Sets the data of this LPublicationList.
 
 
-        :param data: The data of this PublicationList.  # noqa: E501
-        :type: list[Publication]
+        :param data: The data of this LPublicationList.  # noqa: E501
+        :type: list[LPublication]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LPublicationList(object):
 
     @property
     def count(self):
-        """Gets the count of this PublicationList.  # noqa: E501
+        """Gets the count of this LPublicationList.  # noqa: E501
 
 
-        :return: The count of this PublicationList.  # noqa: E501
+        :return: The count of this LPublicationList.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this PublicationList.
+        """Sets the count of this LPublicationList.
 
 
-        :param count: The count of this PublicationList.  # noqa: E501
+        :param count: The count of this LPublicationList.  # noqa: E501
         :type: int
         """
 
@@ -110,7 +110,7 @@ class LPublicationList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PublicationList, dict):
+        if issubclass(LPublicationList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LPublicationList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PublicationList):
+        if not isinstance(other, LPublicationList):
             return False
 
         return self.__dict__ == other.__dict__

@@ -55,7 +55,7 @@ class LOutputObjectDataflowOptionsUpdateRequest(object):
     }
 
     def __init__(self, region=None, zone=None, machine_type=None, network=None, subnetwork=None, autoscaling_algorithm=None, service_account=None, num_workers=None, max_num_workers=None, use_public_ips=None, labels=None):  # noqa: E501
-        """OutputObjectDataflowOptionsUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LOutputObjectDataflowOptionsUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._region = None
         self._zone = None
         self._machine_type = None
@@ -93,22 +93,22 @@ class LOutputObjectDataflowOptionsUpdateRequest(object):
 
     @property
     def region(self):
-        """Gets the region of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        """Gets the region of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
 
         Regional endpoint for executing Dataflow jobs  # noqa: E501
 
-        :return: The region of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :return: The region of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._region
 
     @region.setter
     def region(self, region):
-        """Sets the region of this OutputObjectDataflowOptionsUpdateRequest.
+        """Sets the region of this LOutputObjectDataflowOptionsUpdateRequest.
 
         Regional endpoint for executing Dataflow jobs  # noqa: E501
 
-        :param region: The region of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :param region: The region of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -116,22 +116,22 @@ class LOutputObjectDataflowOptionsUpdateRequest(object):
 
     @property
     def zone(self):
-        """Gets the zone of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        """Gets the zone of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
 
         The Compute Engine zone for launching worker instances to run your pipeline  # noqa: E501
 
-        :return: The zone of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :return: The zone of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._zone
 
     @zone.setter
     def zone(self, zone):
-        """Sets the zone of this OutputObjectDataflowOptionsUpdateRequest.
+        """Sets the zone of this LOutputObjectDataflowOptionsUpdateRequest.
 
         The Compute Engine zone for launching worker instances to run your pipeline  # noqa: E501
 
-        :param zone: The zone of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :param zone: The zone of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -139,22 +139,22 @@ class LOutputObjectDataflowOptionsUpdateRequest(object):
 
     @property
     def machine_type(self):
-        """Gets the machine_type of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        """Gets the machine_type of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
 
         The Compute Engine machine type that Dataflow uses when starting worker VMs  # noqa: E501
 
-        :return: The machine_type of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :return: The machine_type of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._machine_type
 
     @machine_type.setter
     def machine_type(self, machine_type):
-        """Sets the machine_type of this OutputObjectDataflowOptionsUpdateRequest.
+        """Sets the machine_type of this LOutputObjectDataflowOptionsUpdateRequest.
 
         The Compute Engine machine type that Dataflow uses when starting worker VMs  # noqa: E501
 
-        :param machine_type: The machine_type of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :param machine_type: The machine_type of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -162,22 +162,22 @@ class LOutputObjectDataflowOptionsUpdateRequest(object):
 
     @property
     def network(self):
-        """Gets the network of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        """Gets the network of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
 
         The Compute Engine network for launching Compute Engine instances to run your pipeline  # noqa: E501
 
-        :return: The network of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :return: The network of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._network
 
     @network.setter
     def network(self, network):
-        """Sets the network of this OutputObjectDataflowOptionsUpdateRequest.
+        """Sets the network of this LOutputObjectDataflowOptionsUpdateRequest.
 
         The Compute Engine network for launching Compute Engine instances to run your pipeline  # noqa: E501
 
-        :param network: The network of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :param network: The network of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -185,22 +185,22 @@ class LOutputObjectDataflowOptionsUpdateRequest(object):
 
     @property
     def subnetwork(self):
-        """Gets the subnetwork of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        """Gets the subnetwork of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
 
         The Compute Engine subnetwork for launching Compute Engine instances to run your pipeline > ℹ️ **NOTE**: You can specify a subnetwork using a url. For more details read [Subnetwork parameter](https://cloud.google.com/dataflow/docs/guides/specifying-networks#subnetwork_parameter)  # noqa: E501
 
-        :return: The subnetwork of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :return: The subnetwork of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._subnetwork
 
     @subnetwork.setter
     def subnetwork(self, subnetwork):
-        """Sets the subnetwork of this OutputObjectDataflowOptionsUpdateRequest.
+        """Sets the subnetwork of this LOutputObjectDataflowOptionsUpdateRequest.
 
         The Compute Engine subnetwork for launching Compute Engine instances to run your pipeline > ℹ️ **NOTE**: You can specify a subnetwork using a url. For more details read [Subnetwork parameter](https://cloud.google.com/dataflow/docs/guides/specifying-networks#subnetwork_parameter)  # noqa: E501
 
-        :param subnetwork: The subnetwork of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :param subnetwork: The subnetwork of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -208,22 +208,22 @@ class LOutputObjectDataflowOptionsUpdateRequest(object):
 
     @property
     def autoscaling_algorithm(self):
-        """Gets the autoscaling_algorithm of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        """Gets the autoscaling_algorithm of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
 
         The autoscaling mode for your Dataflow job  # noqa: E501
 
-        :return: The autoscaling_algorithm of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :return: The autoscaling_algorithm of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._autoscaling_algorithm
 
     @autoscaling_algorithm.setter
     def autoscaling_algorithm(self, autoscaling_algorithm):
-        """Sets the autoscaling_algorithm of this OutputObjectDataflowOptionsUpdateRequest.
+        """Sets the autoscaling_algorithm of this LOutputObjectDataflowOptionsUpdateRequest.
 
         The autoscaling mode for your Dataflow job  # noqa: E501
 
-        :param autoscaling_algorithm: The autoscaling_algorithm of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :param autoscaling_algorithm: The autoscaling_algorithm of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -231,22 +231,22 @@ class LOutputObjectDataflowOptionsUpdateRequest(object):
 
     @property
     def service_account(self):
-        """Gets the service_account of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        """Gets the service_account of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
 
         Specifies a user-managed controller service account  # noqa: E501
 
-        :return: The service_account of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :return: The service_account of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._service_account
 
     @service_account.setter
     def service_account(self, service_account):
-        """Sets the service_account of this OutputObjectDataflowOptionsUpdateRequest.
+        """Sets the service_account of this LOutputObjectDataflowOptionsUpdateRequest.
 
         Specifies a user-managed controller service account  # noqa: E501
 
-        :param service_account: The service_account of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :param service_account: The service_account of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -254,22 +254,22 @@ class LOutputObjectDataflowOptionsUpdateRequest(object):
 
     @property
     def num_workers(self):
-        """Gets the num_workers of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        """Gets the num_workers of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
 
         The initial number of Google Compute Engine instances to use when executing your pipeline  # noqa: E501
 
-        :return: The num_workers of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :return: The num_workers of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._num_workers
 
     @num_workers.setter
     def num_workers(self, num_workers):
-        """Sets the num_workers of this OutputObjectDataflowOptionsUpdateRequest.
+        """Sets the num_workers of this LOutputObjectDataflowOptionsUpdateRequest.
 
         The initial number of Google Compute Engine instances to use when executing your pipeline  # noqa: E501
 
-        :param num_workers: The num_workers of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :param num_workers: The num_workers of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -277,22 +277,22 @@ class LOutputObjectDataflowOptionsUpdateRequest(object):
 
     @property
     def max_num_workers(self):
-        """Gets the max_num_workers of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        """Gets the max_num_workers of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
 
         The maximum number of Compute Engine instances to be made available to your pipeline during execution  # noqa: E501
 
-        :return: The max_num_workers of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :return: The max_num_workers of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._max_num_workers
 
     @max_num_workers.setter
     def max_num_workers(self, max_num_workers):
-        """Sets the max_num_workers of this OutputObjectDataflowOptionsUpdateRequest.
+        """Sets the max_num_workers of this LOutputObjectDataflowOptionsUpdateRequest.
 
         The maximum number of Compute Engine instances to be made available to your pipeline during execution  # noqa: E501
 
-        :param max_num_workers: The max_num_workers of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :param max_num_workers: The max_num_workers of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -300,22 +300,22 @@ class LOutputObjectDataflowOptionsUpdateRequest(object):
 
     @property
     def use_public_ips(self):
-        """Gets the use_public_ips of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        """Gets the use_public_ips of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
 
         Specifies whether Dataflow workers use public IP addresses  # noqa: E501
 
-        :return: The use_public_ips of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :return: The use_public_ips of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._use_public_ips
 
     @use_public_ips.setter
     def use_public_ips(self, use_public_ips):
-        """Sets the use_public_ips of this OutputObjectDataflowOptionsUpdateRequest.
+        """Sets the use_public_ips of this LOutputObjectDataflowOptionsUpdateRequest.
 
         Specifies whether Dataflow workers use public IP addresses  # noqa: E501
 
-        :param use_public_ips: The use_public_ips of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :param use_public_ips: The use_public_ips of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -323,20 +323,20 @@ class LOutputObjectDataflowOptionsUpdateRequest(object):
 
     @property
     def labels(self):
-        """Gets the labels of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        """Gets the labels of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
 
 
-        :return: The labels of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :return: The labels of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :rtype: list[object]
         """
         return self._labels
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this OutputObjectDataflowOptionsUpdateRequest.
+        """Sets the labels of this LOutputObjectDataflowOptionsUpdateRequest.
 
 
-        :param labels: The labels of this OutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
+        :param labels: The labels of this LOutputObjectDataflowOptionsUpdateRequest.  # noqa: E501
         :type: list[object]
         """
 
@@ -363,7 +363,7 @@ class LOutputObjectDataflowOptionsUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OutputObjectDataflowOptionsUpdateRequest, dict):
+        if issubclass(LOutputObjectDataflowOptionsUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -379,7 +379,7 @@ class LOutputObjectDataflowOptionsUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OutputObjectDataflowOptionsUpdateRequest):
+        if not isinstance(other, LOutputObjectDataflowOptionsUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

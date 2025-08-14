@@ -35,27 +35,27 @@ class LPersonalAccessToken(object):
     }
 
     def __init__(self, personal_access_token=None):  # noqa: E501
-        """PersonalAccessToken - a model defined in Swagger"""  # noqa: E501
+        """LPersonalAccessToken - a model defined in Swagger"""  # noqa: E501
         self._personal_access_token = None
         self.discriminator = None
         self.personal_access_token = personal_access_token
 
     @property
     def personal_access_token(self):
-        """Gets the personal_access_token of this PersonalAccessToken.  # noqa: E501
+        """Gets the personal_access_token of this LPersonalAccessToken.  # noqa: E501
 
 
-        :return: The personal_access_token of this PersonalAccessToken.  # noqa: E501
+        :return: The personal_access_token of this LPersonalAccessToken.  # noqa: E501
         :rtype: str
         """
         return self._personal_access_token
 
     @personal_access_token.setter
     def personal_access_token(self, personal_access_token):
-        """Sets the personal_access_token of this PersonalAccessToken.
+        """Sets the personal_access_token of this LPersonalAccessToken.
 
 
-        :param personal_access_token: The personal_access_token of this PersonalAccessToken.  # noqa: E501
+        :param personal_access_token: The personal_access_token of this LPersonalAccessToken.  # noqa: E501
         :type: str
         """
         if personal_access_token is None:
@@ -84,7 +84,7 @@ class LPersonalAccessToken(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PersonalAccessToken, dict):
+        if issubclass(LPersonalAccessToken, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LPersonalAccessToken(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PersonalAccessToken):
+        if not isinstance(other, LPersonalAccessToken):
             return False
 
         return self.__dict__ == other.__dict__

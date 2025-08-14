@@ -27,7 +27,7 @@ class LStaticRoleSchema(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfstaticRoleSchemaId',
+        'id': 'LAnyOfstaticRoleSchemaId',
         'role': 'str'
     }
 
@@ -37,7 +37,7 @@ class LStaticRoleSchema(object):
     }
 
     def __init__(self, id=None, role=None):  # noqa: E501
-        """StaticRoleSchema - a model defined in Swagger"""  # noqa: E501
+        """LStaticRoleSchema - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._role = None
         self.discriminator = None
@@ -46,21 +46,21 @@ class LStaticRoleSchema(object):
 
     @property
     def id(self):
-        """Gets the id of this StaticRoleSchema.  # noqa: E501
+        """Gets the id of this LStaticRoleSchema.  # noqa: E501
 
 
-        :return: The id of this StaticRoleSchema.  # noqa: E501
-        :rtype: AnyOfstaticRoleSchemaId
+        :return: The id of this LStaticRoleSchema.  # noqa: E501
+        :rtype: LAnyOfstaticRoleSchemaId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StaticRoleSchema.
+        """Sets the id of this LStaticRoleSchema.
 
 
-        :param id: The id of this StaticRoleSchema.  # noqa: E501
-        :type: AnyOfstaticRoleSchemaId
+        :param id: The id of this LStaticRoleSchema.  # noqa: E501
+        :type: LAnyOfstaticRoleSchemaId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -69,20 +69,20 @@ class LStaticRoleSchema(object):
 
     @property
     def role(self):
-        """Gets the role of this StaticRoleSchema.  # noqa: E501
+        """Gets the role of this LStaticRoleSchema.  # noqa: E501
 
 
-        :return: The role of this StaticRoleSchema.  # noqa: E501
+        :return: The role of this LStaticRoleSchema.  # noqa: E501
         :rtype: str
         """
         return self._role
 
     @role.setter
     def role(self, role):
-        """Sets the role of this StaticRoleSchema.
+        """Sets the role of this LStaticRoleSchema.
 
 
-        :param role: The role of this StaticRoleSchema.  # noqa: E501
+        :param role: The role of this LStaticRoleSchema.  # noqa: E501
         :type: str
         """
         if role is None:
@@ -117,7 +117,7 @@ class LStaticRoleSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(StaticRoleSchema, dict):
+        if issubclass(LStaticRoleSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -133,7 +133,7 @@ class LStaticRoleSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, StaticRoleSchema):
+        if not isinstance(other, LStaticRoleSchema):
             return False
 
         return self.__dict__ == other.__dict__

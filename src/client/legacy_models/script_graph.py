@@ -28,7 +28,7 @@ class LScriptGraph(object):
     """
     swagger_types = {
         'node_ids': 'list[int]',
-        'node_to_lines': 'dict(str, list[ScriptLine])',
+        'node_to_lines': 'dict(str, list[LScriptLine])',
         'node_load_limit': 'object',
         'node_info': 'object'
     }
@@ -41,7 +41,7 @@ class LScriptGraph(object):
     }
 
     def __init__(self, node_ids=None, node_to_lines=None, node_load_limit=None, node_info=None):  # noqa: E501
-        """ScriptGraph - a model defined in Swagger"""  # noqa: E501
+        """LScriptGraph - a model defined in Swagger"""  # noqa: E501
         self._node_ids = None
         self._node_to_lines = None
         self._node_load_limit = None
@@ -54,20 +54,20 @@ class LScriptGraph(object):
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this ScriptGraph.  # noqa: E501
+        """Gets the node_ids of this LScriptGraph.  # noqa: E501
 
 
-        :return: The node_ids of this ScriptGraph.  # noqa: E501
+        :return: The node_ids of this LScriptGraph.  # noqa: E501
         :rtype: list[int]
         """
         return self._node_ids
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this ScriptGraph.
+        """Sets the node_ids of this LScriptGraph.
 
 
-        :param node_ids: The node_ids of this ScriptGraph.  # noqa: E501
+        :param node_ids: The node_ids of this LScriptGraph.  # noqa: E501
         :type: list[int]
         """
         if node_ids is None:
@@ -77,21 +77,21 @@ class LScriptGraph(object):
 
     @property
     def node_to_lines(self):
-        """Gets the node_to_lines of this ScriptGraph.  # noqa: E501
+        """Gets the node_to_lines of this LScriptGraph.  # noqa: E501
 
 
-        :return: The node_to_lines of this ScriptGraph.  # noqa: E501
-        :rtype: dict(str, list[ScriptLine])
+        :return: The node_to_lines of this LScriptGraph.  # noqa: E501
+        :rtype: dict(str, list[LScriptLine])
         """
         return self._node_to_lines
 
     @node_to_lines.setter
     def node_to_lines(self, node_to_lines):
-        """Sets the node_to_lines of this ScriptGraph.
+        """Sets the node_to_lines of this LScriptGraph.
 
 
-        :param node_to_lines: The node_to_lines of this ScriptGraph.  # noqa: E501
-        :type: dict(str, list[ScriptLine])
+        :param node_to_lines: The node_to_lines of this LScriptGraph.  # noqa: E501
+        :type: dict(str, list[LScriptLine])
         """
         if node_to_lines is None:
             raise ValueError("Invalid value for `node_to_lines`, must not be `None`")  # noqa: E501
@@ -100,22 +100,22 @@ class LScriptGraph(object):
 
     @property
     def node_load_limit(self):
-        """Gets the node_load_limit of this ScriptGraph.  # noqa: E501
+        """Gets the node_load_limit of this LScriptGraph.  # noqa: E501
 
         map of nodeIds and sample load limit that should  be used in the client when loading samples as part of that node  # noqa: E501
 
-        :return: The node_load_limit of this ScriptGraph.  # noqa: E501
+        :return: The node_load_limit of this LScriptGraph.  # noqa: E501
         :rtype: object
         """
         return self._node_load_limit
 
     @node_load_limit.setter
     def node_load_limit(self, node_load_limit):
-        """Sets the node_load_limit of this ScriptGraph.
+        """Sets the node_load_limit of this LScriptGraph.
 
         map of nodeIds and sample load limit that should  be used in the client when loading samples as part of that node  # noqa: E501
 
-        :param node_load_limit: The node_load_limit of this ScriptGraph.  # noqa: E501
+        :param node_load_limit: The node_load_limit of this LScriptGraph.  # noqa: E501
         :type: object
         """
         if node_load_limit is None:
@@ -125,22 +125,22 @@ class LScriptGraph(object):
 
     @property
     def node_info(self):
-        """Gets the node_info of this ScriptGraph.  # noqa: E501
+        """Gets the node_info of this LScriptGraph.  # noqa: E501
 
         map of nodeIds and recipe, flow name and ids that client can use for constructing script validation errors  # noqa: E501
 
-        :return: The node_info of this ScriptGraph.  # noqa: E501
+        :return: The node_info of this LScriptGraph.  # noqa: E501
         :rtype: object
         """
         return self._node_info
 
     @node_info.setter
     def node_info(self, node_info):
-        """Sets the node_info of this ScriptGraph.
+        """Sets the node_info of this LScriptGraph.
 
         map of nodeIds and recipe, flow name and ids that client can use for constructing script validation errors  # noqa: E501
 
-        :param node_info: The node_info of this ScriptGraph.  # noqa: E501
+        :param node_info: The node_info of this LScriptGraph.  # noqa: E501
         :type: object
         """
         if node_info is None:
@@ -169,7 +169,7 @@ class LScriptGraph(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ScriptGraph, dict):
+        if issubclass(LScriptGraph, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -185,7 +185,7 @@ class LScriptGraph(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ScriptGraph):
+        if not isinstance(other, LScriptGraph):
             return False
 
         return self.__dict__ == other.__dict__

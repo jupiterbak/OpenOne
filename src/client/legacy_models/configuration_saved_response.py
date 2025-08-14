@@ -33,7 +33,7 @@ class LConfigurationSavedResponse(object):
     }
 
     def __init__(self):  # noqa: E501
-        """ConfigurationSavedResponse - a model defined in Swagger"""  # noqa: E501
+        """LConfigurationSavedResponse - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LConfigurationSavedResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConfigurationSavedResponse, dict):
+        if issubclass(LConfigurationSavedResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LConfigurationSavedResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConfigurationSavedResponse):
+        if not isinstance(other, LConfigurationSavedResponse):
             return False
 
         return self.__dict__ == other.__dict__

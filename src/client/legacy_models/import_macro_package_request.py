@@ -43,7 +43,7 @@ class LImportMacroPackageRequest(object):
     }
 
     def __init__(self, type=None, kind=None, hash=None, data=None, metadata=None):  # noqa: E501
-        """ImportMacroPackageRequest - a model defined in Swagger"""  # noqa: E501
+        """LImportMacroPackageRequest - a model defined in Swagger"""  # noqa: E501
         self._type = None
         self._kind = None
         self._hash = None
@@ -58,22 +58,22 @@ class LImportMacroPackageRequest(object):
 
     @property
     def type(self):
-        """Gets the type of this ImportMacroPackageRequest.  # noqa: E501
+        """Gets the type of this LImportMacroPackageRequest.  # noqa: E501
 
         Type of artifact. This value is always `macro` for this endpoint.  # noqa: E501
 
-        :return: The type of this ImportMacroPackageRequest.  # noqa: E501
+        :return: The type of this LImportMacroPackageRequest.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ImportMacroPackageRequest.
+        """Sets the type of this LImportMacroPackageRequest.
 
         Type of artifact. This value is always `macro` for this endpoint.  # noqa: E501
 
-        :param type: The type of this ImportMacroPackageRequest.  # noqa: E501
+        :param type: The type of this LImportMacroPackageRequest.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -83,22 +83,22 @@ class LImportMacroPackageRequest(object):
 
     @property
     def kind(self):
-        """Gets the kind of this ImportMacroPackageRequest.  # noqa: E501
+        """Gets the kind of this LImportMacroPackageRequest.  # noqa: E501
 
         This value is `artifact`  # noqa: E501
 
-        :return: The kind of this ImportMacroPackageRequest.  # noqa: E501
+        :return: The kind of this LImportMacroPackageRequest.  # noqa: E501
         :rtype: str
         """
         return self._kind
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ImportMacroPackageRequest.
+        """Sets the kind of this LImportMacroPackageRequest.
 
         This value is `artifact`  # noqa: E501
 
-        :param kind: The kind of this ImportMacroPackageRequest.  # noqa: E501
+        :param kind: The kind of this LImportMacroPackageRequest.  # noqa: E501
         :type: str
         """
         if kind is None:
@@ -108,22 +108,22 @@ class LImportMacroPackageRequest(object):
 
     @property
     def hash(self):
-        """Gets the hash of this ImportMacroPackageRequest.  # noqa: E501
+        """Gets the hash of this LImportMacroPackageRequest.  # noqa: E501
 
         Hash value used to verify the internal integrity of the macro definition.  # noqa: E501
 
-        :return: The hash of this ImportMacroPackageRequest.  # noqa: E501
+        :return: The hash of this LImportMacroPackageRequest.  # noqa: E501
         :rtype: str
         """
         return self._hash
 
     @hash.setter
     def hash(self, hash):
-        """Sets the hash of this ImportMacroPackageRequest.
+        """Sets the hash of this LImportMacroPackageRequest.
 
         Hash value used to verify the internal integrity of the macro definition.  # noqa: E501
 
-        :param hash: The hash of this ImportMacroPackageRequest.  # noqa: E501
+        :param hash: The hash of this LImportMacroPackageRequest.  # noqa: E501
         :type: str
         """
         if hash is None:
@@ -133,20 +133,20 @@ class LImportMacroPackageRequest(object):
 
     @property
     def data(self):
-        """Gets the data of this ImportMacroPackageRequest.  # noqa: E501
+        """Gets the data of this LImportMacroPackageRequest.  # noqa: E501
 
 
-        :return: The data of this ImportMacroPackageRequest.  # noqa: E501
+        :return: The data of this LImportMacroPackageRequest.  # noqa: E501
         :rtype: object
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ImportMacroPackageRequest.
+        """Sets the data of this LImportMacroPackageRequest.
 
 
-        :param data: The data of this ImportMacroPackageRequest.  # noqa: E501
+        :param data: The data of this LImportMacroPackageRequest.  # noqa: E501
         :type: object
         """
         if data is None:
@@ -156,20 +156,20 @@ class LImportMacroPackageRequest(object):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ImportMacroPackageRequest.  # noqa: E501
+        """Gets the metadata of this LImportMacroPackageRequest.  # noqa: E501
 
 
-        :return: The metadata of this ImportMacroPackageRequest.  # noqa: E501
+        :return: The metadata of this LImportMacroPackageRequest.  # noqa: E501
         :rtype: object
         """
         return self._metadata
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ImportMacroPackageRequest.
+        """Sets the metadata of this LImportMacroPackageRequest.
 
 
-        :param metadata: The metadata of this ImportMacroPackageRequest.  # noqa: E501
+        :param metadata: The metadata of this LImportMacroPackageRequest.  # noqa: E501
         :type: object
         """
         if metadata is None:
@@ -198,7 +198,7 @@ class LImportMacroPackageRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ImportMacroPackageRequest, dict):
+        if issubclass(LImportMacroPackageRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -214,7 +214,7 @@ class LImportMacroPackageRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImportMacroPackageRequest):
+        if not isinstance(other, LImportMacroPackageRequest):
             return False
 
         return self.__dict__ == other.__dict__

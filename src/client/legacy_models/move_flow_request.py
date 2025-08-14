@@ -27,7 +27,7 @@ class LMoveFlowRequest(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'folder_id': 'AnyOfmoveFlowRequestFolderId'
+        'folder_id': 'LAnyOfmoveFlowRequestFolderId'
     }
 
     attribute_map = {
@@ -35,7 +35,7 @@ class LMoveFlowRequest(object):
     }
 
     def __init__(self, folder_id=None):  # noqa: E501
-        """MoveFlowRequest - a model defined in Swagger"""  # noqa: E501
+        """LMoveFlowRequest - a model defined in Swagger"""  # noqa: E501
         self._folder_id = None
         self.discriminator = None
         if folder_id is not None:
@@ -43,21 +43,21 @@ class LMoveFlowRequest(object):
 
     @property
     def folder_id(self):
-        """Gets the folder_id of this MoveFlowRequest.  # noqa: E501
+        """Gets the folder_id of this LMoveFlowRequest.  # noqa: E501
 
 
-        :return: The folder_id of this MoveFlowRequest.  # noqa: E501
-        :rtype: AnyOfmoveFlowRequestFolderId
+        :return: The folder_id of this LMoveFlowRequest.  # noqa: E501
+        :rtype: LAnyOfmoveFlowRequestFolderId
         """
         return self._folder_id
 
     @folder_id.setter
     def folder_id(self, folder_id):
-        """Sets the folder_id of this MoveFlowRequest.
+        """Sets the folder_id of this LMoveFlowRequest.
 
 
-        :param folder_id: The folder_id of this MoveFlowRequest.  # noqa: E501
-        :type: AnyOfmoveFlowRequestFolderId
+        :param folder_id: The folder_id of this LMoveFlowRequest.  # noqa: E501
+        :type: LAnyOfmoveFlowRequestFolderId
         """
 
         self._folder_id = folder_id
@@ -83,7 +83,7 @@ class LMoveFlowRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(MoveFlowRequest, dict):
+        if issubclass(LMoveFlowRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -99,7 +99,7 @@ class LMoveFlowRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, MoveFlowRequest):
+        if not isinstance(other, LMoveFlowRequest):
             return False
 
         return self.__dict__ == other.__dict__

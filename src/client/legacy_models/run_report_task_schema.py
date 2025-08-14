@@ -35,27 +35,27 @@ class LRunReportTaskSchema(object):
     }
 
     def __init__(self, run_report=None):  # noqa: E501
-        """RunReportTaskSchema - a model defined in Swagger"""  # noqa: E501
+        """LRunReportTaskSchema - a model defined in Swagger"""  # noqa: E501
         self._run_report = None
         self.discriminator = None
         self.run_report = run_report
 
     @property
     def run_report(self):
-        """Gets the run_report of this RunReportTaskSchema.  # noqa: E501
+        """Gets the run_report of this LRunReportTaskSchema.  # noqa: E501
 
 
-        :return: The run_report of this RunReportTaskSchema.  # noqa: E501
+        :return: The run_report of this LRunReportTaskSchema.  # noqa: E501
         :rtype: object
         """
         return self._run_report
 
     @run_report.setter
     def run_report(self, run_report):
-        """Sets the run_report of this RunReportTaskSchema.
+        """Sets the run_report of this LRunReportTaskSchema.
 
 
-        :param run_report: The run_report of this RunReportTaskSchema.  # noqa: E501
+        :param run_report: The run_report of this LRunReportTaskSchema.  # noqa: E501
         :type: object
         """
         if run_report is None:
@@ -84,7 +84,7 @@ class LRunReportTaskSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunReportTaskSchema, dict):
+        if issubclass(LRunReportTaskSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunReportTaskSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunReportTaskSchema):
+        if not isinstance(other, LRunReportTaskSchema):
             return False
 
         return self.__dict__ == other.__dict__

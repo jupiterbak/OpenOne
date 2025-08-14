@@ -39,7 +39,7 @@ class LWorkloadErrorSchema(object):
     }
 
     def __init__(self, name=None, message=None, details=None):  # noqa: E501
-        """WorkloadErrorSchema - a model defined in Swagger"""  # noqa: E501
+        """LWorkloadErrorSchema - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._message = None
         self._details = None
@@ -50,20 +50,20 @@ class LWorkloadErrorSchema(object):
 
     @property
     def name(self):
-        """Gets the name of this WorkloadErrorSchema.  # noqa: E501
+        """Gets the name of this LWorkloadErrorSchema.  # noqa: E501
 
 
-        :return: The name of this WorkloadErrorSchema.  # noqa: E501
+        :return: The name of this LWorkloadErrorSchema.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkloadErrorSchema.
+        """Sets the name of this LWorkloadErrorSchema.
 
 
-        :param name: The name of this WorkloadErrorSchema.  # noqa: E501
+        :param name: The name of this LWorkloadErrorSchema.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -73,20 +73,20 @@ class LWorkloadErrorSchema(object):
 
     @property
     def message(self):
-        """Gets the message of this WorkloadErrorSchema.  # noqa: E501
+        """Gets the message of this LWorkloadErrorSchema.  # noqa: E501
 
 
-        :return: The message of this WorkloadErrorSchema.  # noqa: E501
+        :return: The message of this LWorkloadErrorSchema.  # noqa: E501
         :rtype: str
         """
         return self._message
 
     @message.setter
     def message(self, message):
-        """Sets the message of this WorkloadErrorSchema.
+        """Sets the message of this LWorkloadErrorSchema.
 
 
-        :param message: The message of this WorkloadErrorSchema.  # noqa: E501
+        :param message: The message of this LWorkloadErrorSchema.  # noqa: E501
         :type: str
         """
         if message is None:
@@ -96,20 +96,20 @@ class LWorkloadErrorSchema(object):
 
     @property
     def details(self):
-        """Gets the details of this WorkloadErrorSchema.  # noqa: E501
+        """Gets the details of this LWorkloadErrorSchema.  # noqa: E501
 
 
-        :return: The details of this WorkloadErrorSchema.  # noqa: E501
+        :return: The details of this LWorkloadErrorSchema.  # noqa: E501
         :rtype: object
         """
         return self._details
 
     @details.setter
     def details(self, details):
-        """Sets the details of this WorkloadErrorSchema.
+        """Sets the details of this LWorkloadErrorSchema.
 
 
-        :param details: The details of this WorkloadErrorSchema.  # noqa: E501
+        :param details: The details of this LWorkloadErrorSchema.  # noqa: E501
         :type: object
         """
         if details is None:
@@ -138,7 +138,7 @@ class LWorkloadErrorSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WorkloadErrorSchema, dict):
+        if issubclass(LWorkloadErrorSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -154,7 +154,7 @@ class LWorkloadErrorSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WorkloadErrorSchema):
+        if not isinstance(other, LWorkloadErrorSchema):
             return False
 
         return self.__dict__ == other.__dict__

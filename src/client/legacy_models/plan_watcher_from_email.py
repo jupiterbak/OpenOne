@@ -27,7 +27,7 @@ class LPlanWatcherFromEmail(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'plan_id': 'AnyOfplanWatcherFromEmailPlanId',
+        'plan_id': 'LAnyOfplanWatcherFromEmailPlanId',
         'email': 'str'
     }
 
@@ -37,7 +37,7 @@ class LPlanWatcherFromEmail(object):
     }
 
     def __init__(self, plan_id=None, email=None):  # noqa: E501
-        """PlanWatcherFromEmail - a model defined in Swagger"""  # noqa: E501
+        """LPlanWatcherFromEmail - a model defined in Swagger"""  # noqa: E501
         self._plan_id = None
         self._email = None
         self.discriminator = None
@@ -46,21 +46,21 @@ class LPlanWatcherFromEmail(object):
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this PlanWatcherFromEmail.  # noqa: E501
+        """Gets the plan_id of this LPlanWatcherFromEmail.  # noqa: E501
 
 
-        :return: The plan_id of this PlanWatcherFromEmail.  # noqa: E501
-        :rtype: AnyOfplanWatcherFromEmailPlanId
+        :return: The plan_id of this LPlanWatcherFromEmail.  # noqa: E501
+        :rtype: LAnyOfplanWatcherFromEmailPlanId
         """
         return self._plan_id
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this PlanWatcherFromEmail.
+        """Sets the plan_id of this LPlanWatcherFromEmail.
 
 
-        :param plan_id: The plan_id of this PlanWatcherFromEmail.  # noqa: E501
-        :type: AnyOfplanWatcherFromEmailPlanId
+        :param plan_id: The plan_id of this LPlanWatcherFromEmail.  # noqa: E501
+        :type: LAnyOfplanWatcherFromEmailPlanId
         """
         if plan_id is None:
             raise ValueError("Invalid value for `plan_id`, must not be `None`")  # noqa: E501
@@ -69,20 +69,20 @@ class LPlanWatcherFromEmail(object):
 
     @property
     def email(self):
-        """Gets the email of this PlanWatcherFromEmail.  # noqa: E501
+        """Gets the email of this LPlanWatcherFromEmail.  # noqa: E501
 
 
-        :return: The email of this PlanWatcherFromEmail.  # noqa: E501
+        :return: The email of this LPlanWatcherFromEmail.  # noqa: E501
         :rtype: str
         """
         return self._email
 
     @email.setter
     def email(self, email):
-        """Sets the email of this PlanWatcherFromEmail.
+        """Sets the email of this LPlanWatcherFromEmail.
 
 
-        :param email: The email of this PlanWatcherFromEmail.  # noqa: E501
+        :param email: The email of this LPlanWatcherFromEmail.  # noqa: E501
         :type: str
         """
         if email is None:
@@ -111,7 +111,7 @@ class LPlanWatcherFromEmail(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanWatcherFromEmail, dict):
+        if issubclass(LPlanWatcherFromEmail, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LPlanWatcherFromEmail(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanWatcherFromEmail):
+        if not isinstance(other, LPlanWatcherFromEmail):
             return False
 
         return self.__dict__ == other.__dict__

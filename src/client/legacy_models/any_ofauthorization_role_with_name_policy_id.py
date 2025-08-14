@@ -33,7 +33,7 @@ class LAnyOfauthorizationRoleWithNamePolicyId(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfauthorizationRoleWithNamePolicyId - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfauthorizationRoleWithNamePolicyId - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfauthorizationRoleWithNamePolicyId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfauthorizationRoleWithNamePolicyId, dict):
+        if issubclass(LAnyOfauthorizationRoleWithNamePolicyId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfauthorizationRoleWithNamePolicyId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfauthorizationRoleWithNamePolicyId):
+        if not isinstance(other, LAnyOfauthorizationRoleWithNamePolicyId):
             return False
 
         return self.__dict__ == other.__dict__

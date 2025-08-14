@@ -35,29 +35,29 @@ class LFlowValidateResponse(object):
     }
 
     def __init__(self, data=None):  # noqa: E501
-        """FlowValidateResponse - a model defined in Swagger"""  # noqa: E501
+        """LFlowValidateResponse - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self.discriminator = None
         self.data = data
 
     @property
     def data(self):
-        """Gets the data of this FlowValidateResponse.  # noqa: E501
+        """Gets the data of this LFlowValidateResponse.  # noqa: E501
 
         Array containing all recipes that were validated. The recipes are sorted in topological order: recipes which have the least dependencies are returned first and recipes which have the most dependencies are returned last  # noqa: E501
 
-        :return: The data of this FlowValidateResponse.  # noqa: E501
+        :return: The data of this LFlowValidateResponse.  # noqa: E501
         :rtype: list[object]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this FlowValidateResponse.
+        """Sets the data of this LFlowValidateResponse.
 
         Array containing all recipes that were validated. The recipes are sorted in topological order: recipes which have the least dependencies are returned first and recipes which have the most dependencies are returned last  # noqa: E501
 
-        :param data: The data of this FlowValidateResponse.  # noqa: E501
+        :param data: The data of this LFlowValidateResponse.  # noqa: E501
         :type: list[object]
         """
         if data is None:
@@ -86,7 +86,7 @@ class LFlowValidateResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowValidateResponse, dict):
+        if issubclass(LFlowValidateResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -102,7 +102,7 @@ class LFlowValidateResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowValidateResponse):
+        if not isinstance(other, LFlowValidateResponse):
             return False
 
         return self.__dict__ == other.__dict__

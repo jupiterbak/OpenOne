@@ -27,7 +27,7 @@ class LPersonPublicInfo(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfpersonPublicInfoId',
+        'id': 'LAnyOfpersonPublicInfoId',
         'email': 'str',
         'name': 'str'
     }
@@ -39,7 +39,7 @@ class LPersonPublicInfo(object):
     }
 
     def __init__(self, id=None, email=None, name=None):  # noqa: E501
-        """PersonPublicInfo - a model defined in Swagger"""  # noqa: E501
+        """LPersonPublicInfo - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._email = None
         self._name = None
@@ -51,21 +51,21 @@ class LPersonPublicInfo(object):
 
     @property
     def id(self):
-        """Gets the id of this PersonPublicInfo.  # noqa: E501
+        """Gets the id of this LPersonPublicInfo.  # noqa: E501
 
 
-        :return: The id of this PersonPublicInfo.  # noqa: E501
-        :rtype: AnyOfpersonPublicInfoId
+        :return: The id of this LPersonPublicInfo.  # noqa: E501
+        :rtype: LAnyOfpersonPublicInfoId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PersonPublicInfo.
+        """Sets the id of this LPersonPublicInfo.
 
 
-        :param id: The id of this PersonPublicInfo.  # noqa: E501
-        :type: AnyOfpersonPublicInfoId
+        :param id: The id of this LPersonPublicInfo.  # noqa: E501
+        :type: LAnyOfpersonPublicInfoId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -74,20 +74,20 @@ class LPersonPublicInfo(object):
 
     @property
     def email(self):
-        """Gets the email of this PersonPublicInfo.  # noqa: E501
+        """Gets the email of this LPersonPublicInfo.  # noqa: E501
 
 
-        :return: The email of this PersonPublicInfo.  # noqa: E501
+        :return: The email of this LPersonPublicInfo.  # noqa: E501
         :rtype: str
         """
         return self._email
 
     @email.setter
     def email(self, email):
-        """Sets the email of this PersonPublicInfo.
+        """Sets the email of this LPersonPublicInfo.
 
 
-        :param email: The email of this PersonPublicInfo.  # noqa: E501
+        :param email: The email of this LPersonPublicInfo.  # noqa: E501
         :type: str
         """
         if email is None:
@@ -97,22 +97,22 @@ class LPersonPublicInfo(object):
 
     @property
     def name(self):
-        """Gets the name of this PersonPublicInfo.  # noqa: E501
+        """Gets the name of this LPersonPublicInfo.  # noqa: E501
 
         name of the user  # noqa: E501
 
-        :return: The name of this PersonPublicInfo.  # noqa: E501
+        :return: The name of this LPersonPublicInfo.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PersonPublicInfo.
+        """Sets the name of this LPersonPublicInfo.
 
         name of the user  # noqa: E501
 
-        :param name: The name of this PersonPublicInfo.  # noqa: E501
+        :param name: The name of this LPersonPublicInfo.  # noqa: E501
         :type: str
         """
 
@@ -139,7 +139,7 @@ class LPersonPublicInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PersonPublicInfo, dict):
+        if issubclass(LPersonPublicInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -155,7 +155,7 @@ class LPersonPublicInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PersonPublicInfo):
+        if not isinstance(other, LPersonPublicInfo):
             return False
 
         return self.__dict__ == other.__dict__

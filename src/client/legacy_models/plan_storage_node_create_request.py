@@ -28,12 +28,12 @@ class LPlanStorageNodeCreateRequest(object):
     """
     swagger_types = {
         'coordinates': 'object',
-        'plan_id': 'AnyOfplanStorageNodeCreateRequestPlanId',
+        'plan_id': 'LAnyOfplanStorageNodeCreateRequestPlanId',
         'task_type': 'str',
-        'task': 'PlanStorageTaskCreateRequest',
+        'task': 'LPlanStorageTaskCreateRequest',
         'name': 'str',
-        'in_plan_node_ids': 'list[AnyOfplanStorageNodeCreateRequestInPlanNodeIdsItems]',
-        'out_plan_node_ids': 'list[AnyOfplanStorageNodeCreateRequestOutPlanNodeIdsItems]'
+        'in_plan_node_ids': 'list[LAnyOfplanStorageNodeCreateRequestInPlanNodeIdsItems]',
+        'out_plan_node_ids': 'list[LAnyOfplanStorageNodeCreateRequestOutPlanNodeIdsItems]'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class LPlanStorageNodeCreateRequest(object):
     }
 
     def __init__(self, coordinates=None, plan_id=None, task_type=None, task=None, name=None, in_plan_node_ids=None, out_plan_node_ids=None):  # noqa: E501
-        """PlanStorageNodeCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LPlanStorageNodeCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._coordinates = None
         self._plan_id = None
         self._task_type = None
@@ -70,22 +70,22 @@ class LPlanStorageNodeCreateRequest(object):
 
     @property
     def coordinates(self):
-        """Gets the coordinates of this PlanStorageNodeCreateRequest.  # noqa: E501
+        """Gets the coordinates of this LPlanStorageNodeCreateRequest.  # noqa: E501
 
         Location of the plan node  # noqa: E501
 
-        :return: The coordinates of this PlanStorageNodeCreateRequest.  # noqa: E501
+        :return: The coordinates of this LPlanStorageNodeCreateRequest.  # noqa: E501
         :rtype: object
         """
         return self._coordinates
 
     @coordinates.setter
     def coordinates(self, coordinates):
-        """Sets the coordinates of this PlanStorageNodeCreateRequest.
+        """Sets the coordinates of this LPlanStorageNodeCreateRequest.
 
         Location of the plan node  # noqa: E501
 
-        :param coordinates: The coordinates of this PlanStorageNodeCreateRequest.  # noqa: E501
+        :param coordinates: The coordinates of this LPlanStorageNodeCreateRequest.  # noqa: E501
         :type: object
         """
 
@@ -93,21 +93,21 @@ class LPlanStorageNodeCreateRequest(object):
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this PlanStorageNodeCreateRequest.  # noqa: E501
+        """Gets the plan_id of this LPlanStorageNodeCreateRequest.  # noqa: E501
 
 
-        :return: The plan_id of this PlanStorageNodeCreateRequest.  # noqa: E501
-        :rtype: AnyOfplanStorageNodeCreateRequestPlanId
+        :return: The plan_id of this LPlanStorageNodeCreateRequest.  # noqa: E501
+        :rtype: LAnyOfplanStorageNodeCreateRequestPlanId
         """
         return self._plan_id
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this PlanStorageNodeCreateRequest.
+        """Sets the plan_id of this LPlanStorageNodeCreateRequest.
 
 
-        :param plan_id: The plan_id of this PlanStorageNodeCreateRequest.  # noqa: E501
-        :type: AnyOfplanStorageNodeCreateRequestPlanId
+        :param plan_id: The plan_id of this LPlanStorageNodeCreateRequest.  # noqa: E501
+        :type: LAnyOfplanStorageNodeCreateRequestPlanId
         """
         if plan_id is None:
             raise ValueError("Invalid value for `plan_id`, must not be `None`")  # noqa: E501
@@ -116,20 +116,20 @@ class LPlanStorageNodeCreateRequest(object):
 
     @property
     def task_type(self):
-        """Gets the task_type of this PlanStorageNodeCreateRequest.  # noqa: E501
+        """Gets the task_type of this LPlanStorageNodeCreateRequest.  # noqa: E501
 
 
-        :return: The task_type of this PlanStorageNodeCreateRequest.  # noqa: E501
+        :return: The task_type of this LPlanStorageNodeCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._task_type
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this PlanStorageNodeCreateRequest.
+        """Sets the task_type of this LPlanStorageNodeCreateRequest.
 
 
-        :param task_type: The task_type of this PlanStorageNodeCreateRequest.  # noqa: E501
+        :param task_type: The task_type of this LPlanStorageNodeCreateRequest.  # noqa: E501
         :type: str
         """
         if task_type is None:
@@ -145,41 +145,41 @@ class LPlanStorageNodeCreateRequest(object):
 
     @property
     def task(self):
-        """Gets the task of this PlanStorageNodeCreateRequest.  # noqa: E501
+        """Gets the task of this LPlanStorageNodeCreateRequest.  # noqa: E501
 
 
-        :return: The task of this PlanStorageNodeCreateRequest.  # noqa: E501
-        :rtype: PlanStorageTaskCreateRequest
+        :return: The task of this LPlanStorageNodeCreateRequest.  # noqa: E501
+        :rtype: LPlanStorageTaskCreateRequest
         """
         return self._task
 
     @task.setter
     def task(self, task):
-        """Sets the task of this PlanStorageNodeCreateRequest.
+        """Sets the task of this LPlanStorageNodeCreateRequest.
 
 
-        :param task: The task of this PlanStorageNodeCreateRequest.  # noqa: E501
-        :type: PlanStorageTaskCreateRequest
+        :param task: The task of this LPlanStorageNodeCreateRequest.  # noqa: E501
+        :type: LPlanStorageTaskCreateRequest
         """
 
         self._task = task
 
     @property
     def name(self):
-        """Gets the name of this PlanStorageNodeCreateRequest.  # noqa: E501
+        """Gets the name of this LPlanStorageNodeCreateRequest.  # noqa: E501
 
 
-        :return: The name of this PlanStorageNodeCreateRequest.  # noqa: E501
+        :return: The name of this LPlanStorageNodeCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PlanStorageNodeCreateRequest.
+        """Sets the name of this LPlanStorageNodeCreateRequest.
 
 
-        :param name: The name of this PlanStorageNodeCreateRequest.  # noqa: E501
+        :param name: The name of this LPlanStorageNodeCreateRequest.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -189,42 +189,42 @@ class LPlanStorageNodeCreateRequest(object):
 
     @property
     def in_plan_node_ids(self):
-        """Gets the in_plan_node_ids of this PlanStorageNodeCreateRequest.  # noqa: E501
+        """Gets the in_plan_node_ids of this LPlanStorageNodeCreateRequest.  # noqa: E501
 
 
-        :return: The in_plan_node_ids of this PlanStorageNodeCreateRequest.  # noqa: E501
-        :rtype: list[AnyOfplanStorageNodeCreateRequestInPlanNodeIdsItems]
+        :return: The in_plan_node_ids of this LPlanStorageNodeCreateRequest.  # noqa: E501
+        :rtype: list[LAnyOfplanStorageNodeCreateRequestInPlanNodeIdsItems]
         """
         return self._in_plan_node_ids
 
     @in_plan_node_ids.setter
     def in_plan_node_ids(self, in_plan_node_ids):
-        """Sets the in_plan_node_ids of this PlanStorageNodeCreateRequest.
+        """Sets the in_plan_node_ids of this LPlanStorageNodeCreateRequest.
 
 
-        :param in_plan_node_ids: The in_plan_node_ids of this PlanStorageNodeCreateRequest.  # noqa: E501
-        :type: list[AnyOfplanStorageNodeCreateRequestInPlanNodeIdsItems]
+        :param in_plan_node_ids: The in_plan_node_ids of this LPlanStorageNodeCreateRequest.  # noqa: E501
+        :type: list[LAnyOfplanStorageNodeCreateRequestInPlanNodeIdsItems]
         """
 
         self._in_plan_node_ids = in_plan_node_ids
 
     @property
     def out_plan_node_ids(self):
-        """Gets the out_plan_node_ids of this PlanStorageNodeCreateRequest.  # noqa: E501
+        """Gets the out_plan_node_ids of this LPlanStorageNodeCreateRequest.  # noqa: E501
 
 
-        :return: The out_plan_node_ids of this PlanStorageNodeCreateRequest.  # noqa: E501
-        :rtype: list[AnyOfplanStorageNodeCreateRequestOutPlanNodeIdsItems]
+        :return: The out_plan_node_ids of this LPlanStorageNodeCreateRequest.  # noqa: E501
+        :rtype: list[LAnyOfplanStorageNodeCreateRequestOutPlanNodeIdsItems]
         """
         return self._out_plan_node_ids
 
     @out_plan_node_ids.setter
     def out_plan_node_ids(self, out_plan_node_ids):
-        """Sets the out_plan_node_ids of this PlanStorageNodeCreateRequest.
+        """Sets the out_plan_node_ids of this LPlanStorageNodeCreateRequest.
 
 
-        :param out_plan_node_ids: The out_plan_node_ids of this PlanStorageNodeCreateRequest.  # noqa: E501
-        :type: list[AnyOfplanStorageNodeCreateRequestOutPlanNodeIdsItems]
+        :param out_plan_node_ids: The out_plan_node_ids of this LPlanStorageNodeCreateRequest.  # noqa: E501
+        :type: list[LAnyOfplanStorageNodeCreateRequestOutPlanNodeIdsItems]
         """
 
         self._out_plan_node_ids = out_plan_node_ids
@@ -250,7 +250,7 @@ class LPlanStorageNodeCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanStorageNodeCreateRequest, dict):
+        if issubclass(LPlanStorageNodeCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -266,7 +266,7 @@ class LPlanStorageNodeCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanStorageNodeCreateRequest):
+        if not isinstance(other, LPlanStorageNodeCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

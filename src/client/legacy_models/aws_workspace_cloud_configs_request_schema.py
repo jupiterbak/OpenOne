@@ -35,27 +35,27 @@ class LAwsWorkspaceCloudConfigsRequestSchema(object):
     }
 
     def __init__(self, aws=None):  # noqa: E501
-        """AwsWorkspaceCloudConfigsRequestSchema - a model defined in Swagger"""  # noqa: E501
+        """LAwsWorkspaceCloudConfigsRequestSchema - a model defined in Swagger"""  # noqa: E501
         self._aws = None
         self.discriminator = None
         self.aws = aws
 
     @property
     def aws(self):
-        """Gets the aws of this AwsWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        """Gets the aws of this LAwsWorkspaceCloudConfigsRequestSchema.  # noqa: E501
 
 
-        :return: The aws of this AwsWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        :return: The aws of this LAwsWorkspaceCloudConfigsRequestSchema.  # noqa: E501
         :rtype: object
         """
         return self._aws
 
     @aws.setter
     def aws(self, aws):
-        """Sets the aws of this AwsWorkspaceCloudConfigsRequestSchema.
+        """Sets the aws of this LAwsWorkspaceCloudConfigsRequestSchema.
 
 
-        :param aws: The aws of this AwsWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        :param aws: The aws of this LAwsWorkspaceCloudConfigsRequestSchema.  # noqa: E501
         :type: object
         """
         if aws is None:
@@ -84,7 +84,7 @@ class LAwsWorkspaceCloudConfigsRequestSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AwsWorkspaceCloudConfigsRequestSchema, dict):
+        if issubclass(LAwsWorkspaceCloudConfigsRequestSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LAwsWorkspaceCloudConfigsRequestSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AwsWorkspaceCloudConfigsRequestSchema):
+        if not isinstance(other, LAwsWorkspaceCloudConfigsRequestSchema):
             return False
 
         return self.__dict__ == other.__dict__

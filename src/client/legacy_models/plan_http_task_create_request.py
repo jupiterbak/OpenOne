@@ -55,7 +55,7 @@ class LPlanHTTPTaskCreateRequest(object):
     }
 
     def __init__(self, type=None, method=None, url=None, body=None, headers=None, ssl_verification=None, secret_key=None, max_retries=None, sample_response_body=None, sample_response_headers=None, should_update_sample_response=None):  # noqa: E501
-        """PlanHTTPTaskCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LPlanHTTPTaskCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._type = None
         self._method = None
         self._url = None
@@ -93,20 +93,20 @@ class LPlanHTTPTaskCreateRequest(object):
 
     @property
     def type(self):
-        """Gets the type of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        """Gets the type of this LPlanHTTPTaskCreateRequest.  # noqa: E501
 
 
-        :return: The type of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :return: The type of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PlanHTTPTaskCreateRequest.
+        """Sets the type of this LPlanHTTPTaskCreateRequest.
 
 
-        :param type: The type of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :param type: The type of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -114,20 +114,20 @@ class LPlanHTTPTaskCreateRequest(object):
 
     @property
     def method(self):
-        """Gets the method of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        """Gets the method of this LPlanHTTPTaskCreateRequest.  # noqa: E501
 
 
-        :return: The method of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :return: The method of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._method
 
     @method.setter
     def method(self, method):
-        """Sets the method of this PlanHTTPTaskCreateRequest.
+        """Sets the method of this LPlanHTTPTaskCreateRequest.
 
 
-        :param method: The method of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :param method: The method of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -135,20 +135,20 @@ class LPlanHTTPTaskCreateRequest(object):
 
     @property
     def url(self):
-        """Gets the url of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        """Gets the url of this LPlanHTTPTaskCreateRequest.  # noqa: E501
 
 
-        :return: The url of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :return: The url of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._url
 
     @url.setter
     def url(self, url):
-        """Sets the url of this PlanHTTPTaskCreateRequest.
+        """Sets the url of this LPlanHTTPTaskCreateRequest.
 
 
-        :param url: The url of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :param url: The url of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -156,20 +156,20 @@ class LPlanHTTPTaskCreateRequest(object):
 
     @property
     def body(self):
-        """Gets the body of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        """Gets the body of this LPlanHTTPTaskCreateRequest.  # noqa: E501
 
 
-        :return: The body of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :return: The body of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PlanHTTPTaskCreateRequest.
+        """Sets the body of this LPlanHTTPTaskCreateRequest.
 
 
-        :param body: The body of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :param body: The body of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -177,20 +177,20 @@ class LPlanHTTPTaskCreateRequest(object):
 
     @property
     def headers(self):
-        """Gets the headers of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        """Gets the headers of this LPlanHTTPTaskCreateRequest.  # noqa: E501
 
 
-        :return: The headers of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :return: The headers of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :rtype: object
         """
         return self._headers
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this PlanHTTPTaskCreateRequest.
+        """Sets the headers of this LPlanHTTPTaskCreateRequest.
 
 
-        :param headers: The headers of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :param headers: The headers of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :type: object
         """
 
@@ -198,20 +198,20 @@ class LPlanHTTPTaskCreateRequest(object):
 
     @property
     def ssl_verification(self):
-        """Gets the ssl_verification of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        """Gets the ssl_verification of this LPlanHTTPTaskCreateRequest.  # noqa: E501
 
 
-        :return: The ssl_verification of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :return: The ssl_verification of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._ssl_verification
 
     @ssl_verification.setter
     def ssl_verification(self, ssl_verification):
-        """Sets the ssl_verification of this PlanHTTPTaskCreateRequest.
+        """Sets the ssl_verification of this LPlanHTTPTaskCreateRequest.
 
 
-        :param ssl_verification: The ssl_verification of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :param ssl_verification: The ssl_verification of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -219,20 +219,20 @@ class LPlanHTTPTaskCreateRequest(object):
 
     @property
     def secret_key(self):
-        """Gets the secret_key of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        """Gets the secret_key of this LPlanHTTPTaskCreateRequest.  # noqa: E501
 
 
-        :return: The secret_key of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :return: The secret_key of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._secret_key
 
     @secret_key.setter
     def secret_key(self, secret_key):
-        """Sets the secret_key of this PlanHTTPTaskCreateRequest.
+        """Sets the secret_key of this LPlanHTTPTaskCreateRequest.
 
 
-        :param secret_key: The secret_key of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :param secret_key: The secret_key of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -240,20 +240,20 @@ class LPlanHTTPTaskCreateRequest(object):
 
     @property
     def max_retries(self):
-        """Gets the max_retries of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        """Gets the max_retries of this LPlanHTTPTaskCreateRequest.  # noqa: E501
 
 
-        :return: The max_retries of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :return: The max_retries of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._max_retries
 
     @max_retries.setter
     def max_retries(self, max_retries):
-        """Sets the max_retries of this PlanHTTPTaskCreateRequest.
+        """Sets the max_retries of this LPlanHTTPTaskCreateRequest.
 
 
-        :param max_retries: The max_retries of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :param max_retries: The max_retries of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :type: int
         """
 
@@ -261,20 +261,20 @@ class LPlanHTTPTaskCreateRequest(object):
 
     @property
     def sample_response_body(self):
-        """Gets the sample_response_body of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        """Gets the sample_response_body of this LPlanHTTPTaskCreateRequest.  # noqa: E501
 
 
-        :return: The sample_response_body of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :return: The sample_response_body of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._sample_response_body
 
     @sample_response_body.setter
     def sample_response_body(self, sample_response_body):
-        """Sets the sample_response_body of this PlanHTTPTaskCreateRequest.
+        """Sets the sample_response_body of this LPlanHTTPTaskCreateRequest.
 
 
-        :param sample_response_body: The sample_response_body of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :param sample_response_body: The sample_response_body of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -282,20 +282,20 @@ class LPlanHTTPTaskCreateRequest(object):
 
     @property
     def sample_response_headers(self):
-        """Gets the sample_response_headers of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        """Gets the sample_response_headers of this LPlanHTTPTaskCreateRequest.  # noqa: E501
 
 
-        :return: The sample_response_headers of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :return: The sample_response_headers of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :rtype: object
         """
         return self._sample_response_headers
 
     @sample_response_headers.setter
     def sample_response_headers(self, sample_response_headers):
-        """Sets the sample_response_headers of this PlanHTTPTaskCreateRequest.
+        """Sets the sample_response_headers of this LPlanHTTPTaskCreateRequest.
 
 
-        :param sample_response_headers: The sample_response_headers of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :param sample_response_headers: The sample_response_headers of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :type: object
         """
 
@@ -303,20 +303,20 @@ class LPlanHTTPTaskCreateRequest(object):
 
     @property
     def should_update_sample_response(self):
-        """Gets the should_update_sample_response of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        """Gets the should_update_sample_response of this LPlanHTTPTaskCreateRequest.  # noqa: E501
 
 
-        :return: The should_update_sample_response of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :return: The should_update_sample_response of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._should_update_sample_response
 
     @should_update_sample_response.setter
     def should_update_sample_response(self, should_update_sample_response):
-        """Sets the should_update_sample_response of this PlanHTTPTaskCreateRequest.
+        """Sets the should_update_sample_response of this LPlanHTTPTaskCreateRequest.
 
 
-        :param should_update_sample_response: The should_update_sample_response of this PlanHTTPTaskCreateRequest.  # noqa: E501
+        :param should_update_sample_response: The should_update_sample_response of this LPlanHTTPTaskCreateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -343,7 +343,7 @@ class LPlanHTTPTaskCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanHTTPTaskCreateRequest, dict):
+        if issubclass(LPlanHTTPTaskCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -359,7 +359,7 @@ class LPlanHTTPTaskCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanHTTPTaskCreateRequest):
+        if not isinstance(other, LPlanHTTPTaskCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

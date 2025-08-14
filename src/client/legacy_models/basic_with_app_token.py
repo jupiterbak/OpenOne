@@ -39,7 +39,7 @@ class LBasicWithAppToken(object):
     }
 
     def __init__(self, user=None, password=None, application_token=None):  # noqa: E501
-        """BasicWithAppToken - a model defined in Swagger"""  # noqa: E501
+        """LBasicWithAppToken - a model defined in Swagger"""  # noqa: E501
         self._user = None
         self._password = None
         self._application_token = None
@@ -50,20 +50,20 @@ class LBasicWithAppToken(object):
 
     @property
     def user(self):
-        """Gets the user of this BasicWithAppToken.  # noqa: E501
+        """Gets the user of this LBasicWithAppToken.  # noqa: E501
 
 
-        :return: The user of this BasicWithAppToken.  # noqa: E501
+        :return: The user of this LBasicWithAppToken.  # noqa: E501
         :rtype: str
         """
         return self._user
 
     @user.setter
     def user(self, user):
-        """Sets the user of this BasicWithAppToken.
+        """Sets the user of this LBasicWithAppToken.
 
 
-        :param user: The user of this BasicWithAppToken.  # noqa: E501
+        :param user: The user of this LBasicWithAppToken.  # noqa: E501
         :type: str
         """
         if user is None:
@@ -73,20 +73,20 @@ class LBasicWithAppToken(object):
 
     @property
     def password(self):
-        """Gets the password of this BasicWithAppToken.  # noqa: E501
+        """Gets the password of this LBasicWithAppToken.  # noqa: E501
 
 
-        :return: The password of this BasicWithAppToken.  # noqa: E501
+        :return: The password of this LBasicWithAppToken.  # noqa: E501
         :rtype: str
         """
         return self._password
 
     @password.setter
     def password(self, password):
-        """Sets the password of this BasicWithAppToken.
+        """Sets the password of this LBasicWithAppToken.
 
 
-        :param password: The password of this BasicWithAppToken.  # noqa: E501
+        :param password: The password of this LBasicWithAppToken.  # noqa: E501
         :type: str
         """
         if password is None:
@@ -96,20 +96,20 @@ class LBasicWithAppToken(object):
 
     @property
     def application_token(self):
-        """Gets the application_token of this BasicWithAppToken.  # noqa: E501
+        """Gets the application_token of this LBasicWithAppToken.  # noqa: E501
 
 
-        :return: The application_token of this BasicWithAppToken.  # noqa: E501
+        :return: The application_token of this LBasicWithAppToken.  # noqa: E501
         :rtype: str
         """
         return self._application_token
 
     @application_token.setter
     def application_token(self, application_token):
-        """Sets the application_token of this BasicWithAppToken.
+        """Sets the application_token of this LBasicWithAppToken.
 
 
-        :param application_token: The application_token of this BasicWithAppToken.  # noqa: E501
+        :param application_token: The application_token of this LBasicWithAppToken.  # noqa: E501
         :type: str
         """
         if application_token is None:
@@ -138,7 +138,7 @@ class LBasicWithAppToken(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(BasicWithAppToken, dict):
+        if issubclass(LBasicWithAppToken, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -154,7 +154,7 @@ class LBasicWithAppToken(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BasicWithAppToken):
+        if not isinstance(other, LBasicWithAppToken):
             return False
 
         return self.__dict__ == other.__dict__

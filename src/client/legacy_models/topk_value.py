@@ -37,7 +37,7 @@ class LTopkValue(object):
     }
 
     def __init__(self, key=None, count=None):  # noqa: E501
-        """TopkValue - a model defined in Swagger"""  # noqa: E501
+        """LTopkValue - a model defined in Swagger"""  # noqa: E501
         self._key = None
         self._count = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LTopkValue(object):
 
     @property
     def key(self):
-        """Gets the key of this TopkValue.  # noqa: E501
+        """Gets the key of this LTopkValue.  # noqa: E501
 
 
-        :return: The key of this TopkValue.  # noqa: E501
+        :return: The key of this LTopkValue.  # noqa: E501
         :rtype: str
         """
         return self._key
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TopkValue.
+        """Sets the key of this LTopkValue.
 
 
-        :param key: The key of this TopkValue.  # noqa: E501
+        :param key: The key of this LTopkValue.  # noqa: E501
         :type: str
         """
         if key is None:
@@ -69,22 +69,22 @@ class LTopkValue(object):
 
     @property
     def count(self):
-        """Gets the count of this TopkValue.  # noqa: E501
+        """Gets the count of this LTopkValue.  # noqa: E501
 
         Number of values for that key  # noqa: E501
 
-        :return: The count of this TopkValue.  # noqa: E501
+        :return: The count of this LTopkValue.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this TopkValue.
+        """Sets the count of this LTopkValue.
 
         Number of values for that key  # noqa: E501
 
-        :param count: The count of this TopkValue.  # noqa: E501
+        :param count: The count of this LTopkValue.  # noqa: E501
         :type: int
         """
         if count is None:
@@ -113,7 +113,7 @@ class LTopkValue(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(TopkValue, dict):
+        if issubclass(LTopkValue, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LTopkValue(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TopkValue):
+        if not isinstance(other, LTopkValue):
             return False
 
         return self.__dict__ == other.__dict__

@@ -39,7 +39,7 @@ class LDependencyUpdateRequest(object):
     }
 
     def __init__(self, name=None, description=None, approved_dependency=None):  # noqa: E501
-        """DependencyUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LDependencyUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._description = None
         self._approved_dependency = None
@@ -53,20 +53,20 @@ class LDependencyUpdateRequest(object):
 
     @property
     def name(self):
-        """Gets the name of this DependencyUpdateRequest.  # noqa: E501
+        """Gets the name of this LDependencyUpdateRequest.  # noqa: E501
 
 
-        :return: The name of this DependencyUpdateRequest.  # noqa: E501
+        :return: The name of this LDependencyUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DependencyUpdateRequest.
+        """Sets the name of this LDependencyUpdateRequest.
 
 
-        :param name: The name of this DependencyUpdateRequest.  # noqa: E501
+        :param name: The name of this LDependencyUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -74,20 +74,20 @@ class LDependencyUpdateRequest(object):
 
     @property
     def description(self):
-        """Gets the description of this DependencyUpdateRequest.  # noqa: E501
+        """Gets the description of this LDependencyUpdateRequest.  # noqa: E501
 
 
-        :return: The description of this DependencyUpdateRequest.  # noqa: E501
+        :return: The description of this LDependencyUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DependencyUpdateRequest.
+        """Sets the description of this LDependencyUpdateRequest.
 
 
-        :param description: The description of this DependencyUpdateRequest.  # noqa: E501
+        :param description: The description of this LDependencyUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -95,20 +95,20 @@ class LDependencyUpdateRequest(object):
 
     @property
     def approved_dependency(self):
-        """Gets the approved_dependency of this DependencyUpdateRequest.  # noqa: E501
+        """Gets the approved_dependency of this LDependencyUpdateRequest.  # noqa: E501
 
 
-        :return: The approved_dependency of this DependencyUpdateRequest.  # noqa: E501
+        :return: The approved_dependency of this LDependencyUpdateRequest.  # noqa: E501
         :rtype: object
         """
         return self._approved_dependency
 
     @approved_dependency.setter
     def approved_dependency(self, approved_dependency):
-        """Sets the approved_dependency of this DependencyUpdateRequest.
+        """Sets the approved_dependency of this LDependencyUpdateRequest.
 
 
-        :param approved_dependency: The approved_dependency of this DependencyUpdateRequest.  # noqa: E501
+        :param approved_dependency: The approved_dependency of this LDependencyUpdateRequest.  # noqa: E501
         :type: object
         """
 
@@ -135,7 +135,7 @@ class LDependencyUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DependencyUpdateRequest, dict):
+        if issubclass(LDependencyUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -151,7 +151,7 @@ class LDependencyUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DependencyUpdateRequest):
+        if not isinstance(other, LDependencyUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

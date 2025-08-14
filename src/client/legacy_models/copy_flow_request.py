@@ -39,7 +39,7 @@ class LCopyFlowRequest(object):
     }
 
     def __init__(self, name=None, description=None, copy_datasources=False):  # noqa: E501
-        """CopyFlowRequest - a model defined in Swagger"""  # noqa: E501
+        """LCopyFlowRequest - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._description = None
         self._copy_datasources = None
@@ -53,22 +53,22 @@ class LCopyFlowRequest(object):
 
     @property
     def name(self):
-        """Gets the name of this CopyFlowRequest.  # noqa: E501
+        """Gets the name of this LCopyFlowRequest.  # noqa: E501
 
         name of the new copied flow.  # noqa: E501
 
-        :return: The name of this CopyFlowRequest.  # noqa: E501
+        :return: The name of this LCopyFlowRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CopyFlowRequest.
+        """Sets the name of this LCopyFlowRequest.
 
         name of the new copied flow.  # noqa: E501
 
-        :param name: The name of this CopyFlowRequest.  # noqa: E501
+        :param name: The name of this LCopyFlowRequest.  # noqa: E501
         :type: str
         """
 
@@ -76,22 +76,22 @@ class LCopyFlowRequest(object):
 
     @property
     def description(self):
-        """Gets the description of this CopyFlowRequest.  # noqa: E501
+        """Gets the description of this LCopyFlowRequest.  # noqa: E501
 
         description of the new copied flow.  # noqa: E501
 
-        :return: The description of this CopyFlowRequest.  # noqa: E501
+        :return: The description of this LCopyFlowRequest.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CopyFlowRequest.
+        """Sets the description of this LCopyFlowRequest.
 
         description of the new copied flow.  # noqa: E501
 
-        :param description: The description of this CopyFlowRequest.  # noqa: E501
+        :param description: The description of this LCopyFlowRequest.  # noqa: E501
         :type: str
         """
 
@@ -99,22 +99,22 @@ class LCopyFlowRequest(object):
 
     @property
     def copy_datasources(self):
-        """Gets the copy_datasources of this CopyFlowRequest.  # noqa: E501
+        """Gets the copy_datasources of this LCopyFlowRequest.  # noqa: E501
 
         If true, Data sources will be copied (i.e. new imported datasets will be created, no data is copied on the file system). Otherwise, the existing imported datasets are reused.  # noqa: E501
 
-        :return: The copy_datasources of this CopyFlowRequest.  # noqa: E501
+        :return: The copy_datasources of this LCopyFlowRequest.  # noqa: E501
         :rtype: bool
         """
         return self._copy_datasources
 
     @copy_datasources.setter
     def copy_datasources(self, copy_datasources):
-        """Sets the copy_datasources of this CopyFlowRequest.
+        """Sets the copy_datasources of this LCopyFlowRequest.
 
         If true, Data sources will be copied (i.e. new imported datasets will be created, no data is copied on the file system). Otherwise, the existing imported datasets are reused.  # noqa: E501
 
-        :param copy_datasources: The copy_datasources of this CopyFlowRequest.  # noqa: E501
+        :param copy_datasources: The copy_datasources of this LCopyFlowRequest.  # noqa: E501
         :type: bool
         """
 
@@ -141,7 +141,7 @@ class LCopyFlowRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(CopyFlowRequest, dict):
+        if issubclass(LCopyFlowRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -157,7 +157,7 @@ class LCopyFlowRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CopyFlowRequest):
+        if not isinstance(other, LCopyFlowRequest):
             return False
 
         return self.__dict__ == other.__dict__

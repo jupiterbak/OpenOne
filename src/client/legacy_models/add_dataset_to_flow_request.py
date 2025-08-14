@@ -35,29 +35,29 @@ class LAddDatasetToFlowRequest(object):
     }
 
     def __init__(self, flow=None):  # noqa: E501
-        """AddDatasetToFlowRequest - a model defined in Swagger"""  # noqa: E501
+        """LAddDatasetToFlowRequest - a model defined in Swagger"""  # noqa: E501
         self._flow = None
         self.discriminator = None
         self.flow = flow
 
     @property
     def flow(self):
-        """Gets the flow of this AddDatasetToFlowRequest.  # noqa: E501
+        """Gets the flow of this LAddDatasetToFlowRequest.  # noqa: E501
 
         The flow to add this dataset to.  # noqa: E501
 
-        :return: The flow of this AddDatasetToFlowRequest.  # noqa: E501
+        :return: The flow of this LAddDatasetToFlowRequest.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this AddDatasetToFlowRequest.
+        """Sets the flow of this LAddDatasetToFlowRequest.
 
         The flow to add this dataset to.  # noqa: E501
 
-        :param flow: The flow of this AddDatasetToFlowRequest.  # noqa: E501
+        :param flow: The flow of this LAddDatasetToFlowRequest.  # noqa: E501
         :type: object
         """
         if flow is None:
@@ -86,7 +86,7 @@ class LAddDatasetToFlowRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AddDatasetToFlowRequest, dict):
+        if issubclass(LAddDatasetToFlowRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -102,7 +102,7 @@ class LAddDatasetToFlowRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AddDatasetToFlowRequest):
+        if not isinstance(other, LAddDatasetToFlowRequest):
             return False
 
         return self.__dict__ == other.__dict__

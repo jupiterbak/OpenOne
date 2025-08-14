@@ -29,7 +29,7 @@ class LEnvironmentParameter(object):
     swagger_types = {
         'id': 'int',
         'override_key': 'str',
-        'value': 'OneOfenvironmentParameterValue',
+        'value': 'LOneOfenvironmentParameterValue',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'deleted_at': 'datetime',
@@ -47,7 +47,7 @@ class LEnvironmentParameter(object):
     }
 
     def __init__(self, id=None, override_key=None, value=None, created_at=None, updated_at=None, deleted_at=None, usage_info=None):  # noqa: E501
-        """EnvironmentParameter - a model defined in Swagger"""  # noqa: E501
+        """LEnvironmentParameter - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._override_key = None
         self._value = None
@@ -70,22 +70,22 @@ class LEnvironmentParameter(object):
 
     @property
     def id(self):
-        """Gets the id of this EnvironmentParameter.  # noqa: E501
+        """Gets the id of this LEnvironmentParameter.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this EnvironmentParameter.  # noqa: E501
+        :return: The id of this LEnvironmentParameter.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EnvironmentParameter.
+        """Sets the id of this LEnvironmentParameter.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this EnvironmentParameter.  # noqa: E501
+        :param id: The id of this LEnvironmentParameter.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -95,22 +95,22 @@ class LEnvironmentParameter(object):
 
     @property
     def override_key(self):
-        """Gets the override_key of this EnvironmentParameter.  # noqa: E501
+        """Gets the override_key of this LEnvironmentParameter.  # noqa: E501
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :return: The override_key of this EnvironmentParameter.  # noqa: E501
+        :return: The override_key of this LEnvironmentParameter.  # noqa: E501
         :rtype: str
         """
         return self._override_key
 
     @override_key.setter
     def override_key(self, override_key):
-        """Sets the override_key of this EnvironmentParameter.
+        """Sets the override_key of this LEnvironmentParameter.
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :param override_key: The override_key of this EnvironmentParameter.  # noqa: E501
+        :param override_key: The override_key of this LEnvironmentParameter.  # noqa: E501
         :type: str
         """
 
@@ -118,43 +118,43 @@ class LEnvironmentParameter(object):
 
     @property
     def value(self):
-        """Gets the value of this EnvironmentParameter.  # noqa: E501
+        """Gets the value of this LEnvironmentParameter.  # noqa: E501
 
 
-        :return: The value of this EnvironmentParameter.  # noqa: E501
-        :rtype: OneOfenvironmentParameterValue
+        :return: The value of this LEnvironmentParameter.  # noqa: E501
+        :rtype: LOneOfenvironmentParameterValue
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this EnvironmentParameter.
+        """Sets the value of this LEnvironmentParameter.
 
 
-        :param value: The value of this EnvironmentParameter.  # noqa: E501
-        :type: OneOfenvironmentParameterValue
+        :param value: The value of this LEnvironmentParameter.  # noqa: E501
+        :type: LOneOfenvironmentParameterValue
         """
 
         self._value = value
 
     @property
     def created_at(self):
-        """Gets the created_at of this EnvironmentParameter.  # noqa: E501
+        """Gets the created_at of this LEnvironmentParameter.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this EnvironmentParameter.  # noqa: E501
+        :return: The created_at of this LEnvironmentParameter.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EnvironmentParameter.
+        """Sets the created_at of this LEnvironmentParameter.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this EnvironmentParameter.  # noqa: E501
+        :param created_at: The created_at of this LEnvironmentParameter.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -164,22 +164,22 @@ class LEnvironmentParameter(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EnvironmentParameter.  # noqa: E501
+        """Gets the updated_at of this LEnvironmentParameter.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this EnvironmentParameter.  # noqa: E501
+        :return: The updated_at of this LEnvironmentParameter.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EnvironmentParameter.
+        """Sets the updated_at of this LEnvironmentParameter.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this EnvironmentParameter.  # noqa: E501
+        :param updated_at: The updated_at of this LEnvironmentParameter.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -189,22 +189,22 @@ class LEnvironmentParameter(object):
 
     @property
     def deleted_at(self):
-        """Gets the deleted_at of this EnvironmentParameter.  # noqa: E501
+        """Gets the deleted_at of this LEnvironmentParameter.  # noqa: E501
 
         The time this object was deleted.  # noqa: E501
 
-        :return: The deleted_at of this EnvironmentParameter.  # noqa: E501
+        :return: The deleted_at of this LEnvironmentParameter.  # noqa: E501
         :rtype: datetime
         """
         return self._deleted_at
 
     @deleted_at.setter
     def deleted_at(self, deleted_at):
-        """Sets the deleted_at of this EnvironmentParameter.
+        """Sets the deleted_at of this LEnvironmentParameter.
 
         The time this object was deleted.  # noqa: E501
 
-        :param deleted_at: The deleted_at of this EnvironmentParameter.  # noqa: E501
+        :param deleted_at: The deleted_at of this LEnvironmentParameter.  # noqa: E501
         :type: datetime
         """
 
@@ -212,20 +212,20 @@ class LEnvironmentParameter(object):
 
     @property
     def usage_info(self):
-        """Gets the usage_info of this EnvironmentParameter.  # noqa: E501
+        """Gets the usage_info of this LEnvironmentParameter.  # noqa: E501
 
 
-        :return: The usage_info of this EnvironmentParameter.  # noqa: E501
+        :return: The usage_info of this LEnvironmentParameter.  # noqa: E501
         :rtype: object
         """
         return self._usage_info
 
     @usage_info.setter
     def usage_info(self, usage_info):
-        """Sets the usage_info of this EnvironmentParameter.
+        """Sets the usage_info of this LEnvironmentParameter.
 
 
-        :param usage_info: The usage_info of this EnvironmentParameter.  # noqa: E501
+        :param usage_info: The usage_info of this LEnvironmentParameter.  # noqa: E501
         :type: object
         """
 
@@ -252,7 +252,7 @@ class LEnvironmentParameter(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(EnvironmentParameter, dict):
+        if issubclass(LEnvironmentParameter, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -268,7 +268,7 @@ class LEnvironmentParameter(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, EnvironmentParameter):
+        if not isinstance(other, LEnvironmentParameter):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,7 +27,7 @@ class LFlowPermissionRequest(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[AnyOfflowPermissionRequestDataItems]'
+        'data': 'list[LAnyOfflowPermissionRequestDataItems]'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LFlowPermissionRequest(object):
     }
 
     def __init__(self, data=None):  # noqa: E501
-        """FlowPermissionRequest - a model defined in Swagger"""  # noqa: E501
+        """LFlowPermissionRequest - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self.discriminator = None
         self.data = data
 
     @property
     def data(self):
-        """Gets the data of this FlowPermissionRequest.  # noqa: E501
+        """Gets the data of this LFlowPermissionRequest.  # noqa: E501
 
 
-        :return: The data of this FlowPermissionRequest.  # noqa: E501
-        :rtype: list[AnyOfflowPermissionRequestDataItems]
+        :return: The data of this LFlowPermissionRequest.  # noqa: E501
+        :rtype: list[LAnyOfflowPermissionRequestDataItems]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this FlowPermissionRequest.
+        """Sets the data of this LFlowPermissionRequest.
 
 
-        :param data: The data of this FlowPermissionRequest.  # noqa: E501
-        :type: list[AnyOfflowPermissionRequestDataItems]
+        :param data: The data of this LFlowPermissionRequest.  # noqa: E501
+        :type: list[LAnyOfflowPermissionRequestDataItems]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LFlowPermissionRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowPermissionRequest, dict):
+        if issubclass(LFlowPermissionRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LFlowPermissionRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowPermissionRequest):
+        if not isinstance(other, LFlowPermissionRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,8 +27,8 @@ class LReplaceFlowNodeWithImportedDataset(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'flow_node_id': 'AnyOfreplaceFlowNodeWithImportedDatasetFlowNodeId',
-        'new_imported_dataset_id': 'AnyOfreplaceFlowNodeWithImportedDatasetNewImportedDatasetId'
+        'flow_node_id': 'LAnyOfreplaceFlowNodeWithImportedDatasetFlowNodeId',
+        'new_imported_dataset_id': 'LAnyOfreplaceFlowNodeWithImportedDatasetNewImportedDatasetId'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LReplaceFlowNodeWithImportedDataset(object):
     }
 
     def __init__(self, flow_node_id=None, new_imported_dataset_id=None):  # noqa: E501
-        """ReplaceFlowNodeWithImportedDataset - a model defined in Swagger"""  # noqa: E501
+        """LReplaceFlowNodeWithImportedDataset - a model defined in Swagger"""  # noqa: E501
         self._flow_node_id = None
         self._new_imported_dataset_id = None
         self.discriminator = None
@@ -46,21 +46,21 @@ class LReplaceFlowNodeWithImportedDataset(object):
 
     @property
     def flow_node_id(self):
-        """Gets the flow_node_id of this ReplaceFlowNodeWithImportedDataset.  # noqa: E501
+        """Gets the flow_node_id of this LReplaceFlowNodeWithImportedDataset.  # noqa: E501
 
 
-        :return: The flow_node_id of this ReplaceFlowNodeWithImportedDataset.  # noqa: E501
-        :rtype: AnyOfreplaceFlowNodeWithImportedDatasetFlowNodeId
+        :return: The flow_node_id of this LReplaceFlowNodeWithImportedDataset.  # noqa: E501
+        :rtype: LAnyOfreplaceFlowNodeWithImportedDatasetFlowNodeId
         """
         return self._flow_node_id
 
     @flow_node_id.setter
     def flow_node_id(self, flow_node_id):
-        """Sets the flow_node_id of this ReplaceFlowNodeWithImportedDataset.
+        """Sets the flow_node_id of this LReplaceFlowNodeWithImportedDataset.
 
 
-        :param flow_node_id: The flow_node_id of this ReplaceFlowNodeWithImportedDataset.  # noqa: E501
-        :type: AnyOfreplaceFlowNodeWithImportedDatasetFlowNodeId
+        :param flow_node_id: The flow_node_id of this LReplaceFlowNodeWithImportedDataset.  # noqa: E501
+        :type: LAnyOfreplaceFlowNodeWithImportedDatasetFlowNodeId
         """
         if flow_node_id is None:
             raise ValueError("Invalid value for `flow_node_id`, must not be `None`")  # noqa: E501
@@ -69,21 +69,21 @@ class LReplaceFlowNodeWithImportedDataset(object):
 
     @property
     def new_imported_dataset_id(self):
-        """Gets the new_imported_dataset_id of this ReplaceFlowNodeWithImportedDataset.  # noqa: E501
+        """Gets the new_imported_dataset_id of this LReplaceFlowNodeWithImportedDataset.  # noqa: E501
 
 
-        :return: The new_imported_dataset_id of this ReplaceFlowNodeWithImportedDataset.  # noqa: E501
-        :rtype: AnyOfreplaceFlowNodeWithImportedDatasetNewImportedDatasetId
+        :return: The new_imported_dataset_id of this LReplaceFlowNodeWithImportedDataset.  # noqa: E501
+        :rtype: LAnyOfreplaceFlowNodeWithImportedDatasetNewImportedDatasetId
         """
         return self._new_imported_dataset_id
 
     @new_imported_dataset_id.setter
     def new_imported_dataset_id(self, new_imported_dataset_id):
-        """Sets the new_imported_dataset_id of this ReplaceFlowNodeWithImportedDataset.
+        """Sets the new_imported_dataset_id of this LReplaceFlowNodeWithImportedDataset.
 
 
-        :param new_imported_dataset_id: The new_imported_dataset_id of this ReplaceFlowNodeWithImportedDataset.  # noqa: E501
-        :type: AnyOfreplaceFlowNodeWithImportedDatasetNewImportedDatasetId
+        :param new_imported_dataset_id: The new_imported_dataset_id of this LReplaceFlowNodeWithImportedDataset.  # noqa: E501
+        :type: LAnyOfreplaceFlowNodeWithImportedDatasetNewImportedDatasetId
         """
         if new_imported_dataset_id is None:
             raise ValueError("Invalid value for `new_imported_dataset_id`, must not be `None`")  # noqa: E501
@@ -111,7 +111,7 @@ class LReplaceFlowNodeWithImportedDataset(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ReplaceFlowNodeWithImportedDataset, dict):
+        if issubclass(LReplaceFlowNodeWithImportedDataset, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LReplaceFlowNodeWithImportedDataset(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ReplaceFlowNodeWithImportedDataset):
+        if not isinstance(other, LReplaceFlowNodeWithImportedDataset):
             return False
 
         return self.__dict__ == other.__dict__

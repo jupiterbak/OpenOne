@@ -27,16 +27,16 @@ class LAuthorizationRoleWithTag(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'policy_id': 'AnyOfauthorizationRoleWithTagPolicyId',
-        'workspace_id': 'AnyOfauthorizationRoleWithTagWorkspaceId',
+        'policy_id': 'LAnyOfauthorizationRoleWithTagPolicyId',
+        'workspace_id': 'LAnyOfauthorizationRoleWithTagWorkspaceId',
         'product_policy_id': 'str',
-        'resource_operations': 'list[ResourceOperation]',
+        'resource_operations': 'list[LResourceOperation]',
         'updated_at': 'datetime',
         'created_at': 'datetime',
         'user_count': 'int',
         'name_locked': 'bool',
         'privilege_locked': 'bool',
-        'capabilities': 'list[Capability]',
+        'capabilities': 'list[LCapability]',
         'tag': 'str'
     }
 
@@ -55,7 +55,7 @@ class LAuthorizationRoleWithTag(object):
     }
 
     def __init__(self, policy_id=None, workspace_id=None, product_policy_id=None, resource_operations=None, updated_at=None, created_at=None, user_count=None, name_locked=None, privilege_locked=None, capabilities=None, tag=None):  # noqa: E501
-        """AuthorizationRoleWithTag - a model defined in Swagger"""  # noqa: E501
+        """LAuthorizationRoleWithTag - a model defined in Swagger"""  # noqa: E501
         self._policy_id = None
         self._workspace_id = None
         self._product_policy_id = None
@@ -85,21 +85,21 @@ class LAuthorizationRoleWithTag(object):
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this AuthorizationRoleWithTag.  # noqa: E501
+        """Gets the policy_id of this LAuthorizationRoleWithTag.  # noqa: E501
 
 
-        :return: The policy_id of this AuthorizationRoleWithTag.  # noqa: E501
-        :rtype: AnyOfauthorizationRoleWithTagPolicyId
+        :return: The policy_id of this LAuthorizationRoleWithTag.  # noqa: E501
+        :rtype: LAnyOfauthorizationRoleWithTagPolicyId
         """
         return self._policy_id
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this AuthorizationRoleWithTag.
+        """Sets the policy_id of this LAuthorizationRoleWithTag.
 
 
-        :param policy_id: The policy_id of this AuthorizationRoleWithTag.  # noqa: E501
-        :type: AnyOfauthorizationRoleWithTagPolicyId
+        :param policy_id: The policy_id of this LAuthorizationRoleWithTag.  # noqa: E501
+        :type: LAnyOfauthorizationRoleWithTagPolicyId
         """
         if policy_id is None:
             raise ValueError("Invalid value for `policy_id`, must not be `None`")  # noqa: E501
@@ -108,21 +108,21 @@ class LAuthorizationRoleWithTag(object):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this AuthorizationRoleWithTag.  # noqa: E501
+        """Gets the workspace_id of this LAuthorizationRoleWithTag.  # noqa: E501
 
 
-        :return: The workspace_id of this AuthorizationRoleWithTag.  # noqa: E501
-        :rtype: AnyOfauthorizationRoleWithTagWorkspaceId
+        :return: The workspace_id of this LAuthorizationRoleWithTag.  # noqa: E501
+        :rtype: LAnyOfauthorizationRoleWithTagWorkspaceId
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this AuthorizationRoleWithTag.
+        """Sets the workspace_id of this LAuthorizationRoleWithTag.
 
 
-        :param workspace_id: The workspace_id of this AuthorizationRoleWithTag.  # noqa: E501
-        :type: AnyOfauthorizationRoleWithTagWorkspaceId
+        :param workspace_id: The workspace_id of this LAuthorizationRoleWithTag.  # noqa: E501
+        :type: LAnyOfauthorizationRoleWithTagWorkspaceId
         """
         if workspace_id is None:
             raise ValueError("Invalid value for `workspace_id`, must not be `None`")  # noqa: E501
@@ -131,20 +131,20 @@ class LAuthorizationRoleWithTag(object):
 
     @property
     def product_policy_id(self):
-        """Gets the product_policy_id of this AuthorizationRoleWithTag.  # noqa: E501
+        """Gets the product_policy_id of this LAuthorizationRoleWithTag.  # noqa: E501
 
 
-        :return: The product_policy_id of this AuthorizationRoleWithTag.  # noqa: E501
+        :return: The product_policy_id of this LAuthorizationRoleWithTag.  # noqa: E501
         :rtype: str
         """
         return self._product_policy_id
 
     @product_policy_id.setter
     def product_policy_id(self, product_policy_id):
-        """Sets the product_policy_id of this AuthorizationRoleWithTag.
+        """Sets the product_policy_id of this LAuthorizationRoleWithTag.
 
 
-        :param product_policy_id: The product_policy_id of this AuthorizationRoleWithTag.  # noqa: E501
+        :param product_policy_id: The product_policy_id of this LAuthorizationRoleWithTag.  # noqa: E501
         :type: str
         """
 
@@ -152,21 +152,21 @@ class LAuthorizationRoleWithTag(object):
 
     @property
     def resource_operations(self):
-        """Gets the resource_operations of this AuthorizationRoleWithTag.  # noqa: E501
+        """Gets the resource_operations of this LAuthorizationRoleWithTag.  # noqa: E501
 
 
-        :return: The resource_operations of this AuthorizationRoleWithTag.  # noqa: E501
-        :rtype: list[ResourceOperation]
+        :return: The resource_operations of this LAuthorizationRoleWithTag.  # noqa: E501
+        :rtype: list[LResourceOperation]
         """
         return self._resource_operations
 
     @resource_operations.setter
     def resource_operations(self, resource_operations):
-        """Sets the resource_operations of this AuthorizationRoleWithTag.
+        """Sets the resource_operations of this LAuthorizationRoleWithTag.
 
 
-        :param resource_operations: The resource_operations of this AuthorizationRoleWithTag.  # noqa: E501
-        :type: list[ResourceOperation]
+        :param resource_operations: The resource_operations of this LAuthorizationRoleWithTag.  # noqa: E501
+        :type: list[LResourceOperation]
         """
         if resource_operations is None:
             raise ValueError("Invalid value for `resource_operations`, must not be `None`")  # noqa: E501
@@ -175,22 +175,22 @@ class LAuthorizationRoleWithTag(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this AuthorizationRoleWithTag.  # noqa: E501
+        """Gets the updated_at of this LAuthorizationRoleWithTag.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this AuthorizationRoleWithTag.  # noqa: E501
+        :return: The updated_at of this LAuthorizationRoleWithTag.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this AuthorizationRoleWithTag.
+        """Sets the updated_at of this LAuthorizationRoleWithTag.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this AuthorizationRoleWithTag.  # noqa: E501
+        :param updated_at: The updated_at of this LAuthorizationRoleWithTag.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -200,22 +200,22 @@ class LAuthorizationRoleWithTag(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this AuthorizationRoleWithTag.  # noqa: E501
+        """Gets the created_at of this LAuthorizationRoleWithTag.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this AuthorizationRoleWithTag.  # noqa: E501
+        :return: The created_at of this LAuthorizationRoleWithTag.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AuthorizationRoleWithTag.
+        """Sets the created_at of this LAuthorizationRoleWithTag.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this AuthorizationRoleWithTag.  # noqa: E501
+        :param created_at: The created_at of this LAuthorizationRoleWithTag.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -225,20 +225,20 @@ class LAuthorizationRoleWithTag(object):
 
     @property
     def user_count(self):
-        """Gets the user_count of this AuthorizationRoleWithTag.  # noqa: E501
+        """Gets the user_count of this LAuthorizationRoleWithTag.  # noqa: E501
 
 
-        :return: The user_count of this AuthorizationRoleWithTag.  # noqa: E501
+        :return: The user_count of this LAuthorizationRoleWithTag.  # noqa: E501
         :rtype: int
         """
         return self._user_count
 
     @user_count.setter
     def user_count(self, user_count):
-        """Sets the user_count of this AuthorizationRoleWithTag.
+        """Sets the user_count of this LAuthorizationRoleWithTag.
 
 
-        :param user_count: The user_count of this AuthorizationRoleWithTag.  # noqa: E501
+        :param user_count: The user_count of this LAuthorizationRoleWithTag.  # noqa: E501
         :type: int
         """
 
@@ -246,20 +246,20 @@ class LAuthorizationRoleWithTag(object):
 
     @property
     def name_locked(self):
-        """Gets the name_locked of this AuthorizationRoleWithTag.  # noqa: E501
+        """Gets the name_locked of this LAuthorizationRoleWithTag.  # noqa: E501
 
 
-        :return: The name_locked of this AuthorizationRoleWithTag.  # noqa: E501
+        :return: The name_locked of this LAuthorizationRoleWithTag.  # noqa: E501
         :rtype: bool
         """
         return self._name_locked
 
     @name_locked.setter
     def name_locked(self, name_locked):
-        """Sets the name_locked of this AuthorizationRoleWithTag.
+        """Sets the name_locked of this LAuthorizationRoleWithTag.
 
 
-        :param name_locked: The name_locked of this AuthorizationRoleWithTag.  # noqa: E501
+        :param name_locked: The name_locked of this LAuthorizationRoleWithTag.  # noqa: E501
         :type: bool
         """
         if name_locked is None:
@@ -269,20 +269,20 @@ class LAuthorizationRoleWithTag(object):
 
     @property
     def privilege_locked(self):
-        """Gets the privilege_locked of this AuthorizationRoleWithTag.  # noqa: E501
+        """Gets the privilege_locked of this LAuthorizationRoleWithTag.  # noqa: E501
 
 
-        :return: The privilege_locked of this AuthorizationRoleWithTag.  # noqa: E501
+        :return: The privilege_locked of this LAuthorizationRoleWithTag.  # noqa: E501
         :rtype: bool
         """
         return self._privilege_locked
 
     @privilege_locked.setter
     def privilege_locked(self, privilege_locked):
-        """Sets the privilege_locked of this AuthorizationRoleWithTag.
+        """Sets the privilege_locked of this LAuthorizationRoleWithTag.
 
 
-        :param privilege_locked: The privilege_locked of this AuthorizationRoleWithTag.  # noqa: E501
+        :param privilege_locked: The privilege_locked of this LAuthorizationRoleWithTag.  # noqa: E501
         :type: bool
         """
         if privilege_locked is None:
@@ -292,41 +292,41 @@ class LAuthorizationRoleWithTag(object):
 
     @property
     def capabilities(self):
-        """Gets the capabilities of this AuthorizationRoleWithTag.  # noqa: E501
+        """Gets the capabilities of this LAuthorizationRoleWithTag.  # noqa: E501
 
 
-        :return: The capabilities of this AuthorizationRoleWithTag.  # noqa: E501
-        :rtype: list[Capability]
+        :return: The capabilities of this LAuthorizationRoleWithTag.  # noqa: E501
+        :rtype: list[LCapability]
         """
         return self._capabilities
 
     @capabilities.setter
     def capabilities(self, capabilities):
-        """Sets the capabilities of this AuthorizationRoleWithTag.
+        """Sets the capabilities of this LAuthorizationRoleWithTag.
 
 
-        :param capabilities: The capabilities of this AuthorizationRoleWithTag.  # noqa: E501
-        :type: list[Capability]
+        :param capabilities: The capabilities of this LAuthorizationRoleWithTag.  # noqa: E501
+        :type: list[LCapability]
         """
 
         self._capabilities = capabilities
 
     @property
     def tag(self):
-        """Gets the tag of this AuthorizationRoleWithTag.  # noqa: E501
+        """Gets the tag of this LAuthorizationRoleWithTag.  # noqa: E501
 
 
-        :return: The tag of this AuthorizationRoleWithTag.  # noqa: E501
+        :return: The tag of this LAuthorizationRoleWithTag.  # noqa: E501
         :rtype: str
         """
         return self._tag
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this AuthorizationRoleWithTag.
+        """Sets the tag of this LAuthorizationRoleWithTag.
 
 
-        :param tag: The tag of this AuthorizationRoleWithTag.  # noqa: E501
+        :param tag: The tag of this LAuthorizationRoleWithTag.  # noqa: E501
         :type: str
         """
         if tag is None:
@@ -355,7 +355,7 @@ class LAuthorizationRoleWithTag(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AuthorizationRoleWithTag, dict):
+        if issubclass(LAuthorizationRoleWithTag, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -371,7 +371,7 @@ class LAuthorizationRoleWithTag(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AuthorizationRoleWithTag):
+        if not isinstance(other, LAuthorizationRoleWithTag):
             return False
 
         return self.__dict__ == other.__dict__

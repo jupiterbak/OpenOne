@@ -27,7 +27,7 @@ class LImportEnvironmentParameterPackageResponseForConfirmation(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'environment_parameters_package': 'list[EnvironmentParameterCreateRequest]'
+        'environment_parameters_package': 'list[LEnvironmentParameterCreateRequest]'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LImportEnvironmentParameterPackageResponseForConfirmation(object):
     }
 
     def __init__(self, environment_parameters_package=None):  # noqa: E501
-        """ImportEnvironmentParameterPackageResponseForConfirmation - a model defined in Swagger"""  # noqa: E501
+        """LImportEnvironmentParameterPackageResponseForConfirmation - a model defined in Swagger"""  # noqa: E501
         self._environment_parameters_package = None
         self.discriminator = None
         self.environment_parameters_package = environment_parameters_package
 
     @property
     def environment_parameters_package(self):
-        """Gets the environment_parameters_package of this ImportEnvironmentParameterPackageResponseForConfirmation.  # noqa: E501
+        """Gets the environment_parameters_package of this LImportEnvironmentParameterPackageResponseForConfirmation.  # noqa: E501
 
 
-        :return: The environment_parameters_package of this ImportEnvironmentParameterPackageResponseForConfirmation.  # noqa: E501
-        :rtype: list[EnvironmentParameterCreateRequest]
+        :return: The environment_parameters_package of this LImportEnvironmentParameterPackageResponseForConfirmation.  # noqa: E501
+        :rtype: list[LEnvironmentParameterCreateRequest]
         """
         return self._environment_parameters_package
 
     @environment_parameters_package.setter
     def environment_parameters_package(self, environment_parameters_package):
-        """Sets the environment_parameters_package of this ImportEnvironmentParameterPackageResponseForConfirmation.
+        """Sets the environment_parameters_package of this LImportEnvironmentParameterPackageResponseForConfirmation.
 
 
-        :param environment_parameters_package: The environment_parameters_package of this ImportEnvironmentParameterPackageResponseForConfirmation.  # noqa: E501
-        :type: list[EnvironmentParameterCreateRequest]
+        :param environment_parameters_package: The environment_parameters_package of this LImportEnvironmentParameterPackageResponseForConfirmation.  # noqa: E501
+        :type: list[LEnvironmentParameterCreateRequest]
         """
         if environment_parameters_package is None:
             raise ValueError("Invalid value for `environment_parameters_package`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LImportEnvironmentParameterPackageResponseForConfirmation(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ImportEnvironmentParameterPackageResponseForConfirmation, dict):
+        if issubclass(LImportEnvironmentParameterPackageResponseForConfirmation, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LImportEnvironmentParameterPackageResponseForConfirmation(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImportEnvironmentParameterPackageResponseForConfirmation):
+        if not isinstance(other, LImportEnvironmentParameterPackageResponseForConfirmation):
             return False
 
         return self.__dict__ == other.__dict__

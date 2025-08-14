@@ -27,7 +27,7 @@ class LNestedComputeUsageUnit(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'mapping': 'list[ComputeUsageUnit]',
+        'mapping': 'list[LComputeUsageUnit]',
         'group_by': 'str',
         'execution_language': 'str'
     }
@@ -39,7 +39,7 @@ class LNestedComputeUsageUnit(object):
     }
 
     def __init__(self, mapping=None, group_by=None, execution_language=None):  # noqa: E501
-        """NestedComputeUsageUnit - a model defined in Swagger"""  # noqa: E501
+        """LNestedComputeUsageUnit - a model defined in Swagger"""  # noqa: E501
         self._mapping = None
         self._group_by = None
         self._execution_language = None
@@ -52,23 +52,23 @@ class LNestedComputeUsageUnit(object):
 
     @property
     def mapping(self):
-        """Gets the mapping of this NestedComputeUsageUnit.  # noqa: E501
+        """Gets the mapping of this LNestedComputeUsageUnit.  # noqa: E501
 
         Usage information for this grouping  # noqa: E501
 
-        :return: The mapping of this NestedComputeUsageUnit.  # noqa: E501
-        :rtype: list[ComputeUsageUnit]
+        :return: The mapping of this LNestedComputeUsageUnit.  # noqa: E501
+        :rtype: list[LComputeUsageUnit]
         """
         return self._mapping
 
     @mapping.setter
     def mapping(self, mapping):
-        """Sets the mapping of this NestedComputeUsageUnit.
+        """Sets the mapping of this LNestedComputeUsageUnit.
 
         Usage information for this grouping  # noqa: E501
 
-        :param mapping: The mapping of this NestedComputeUsageUnit.  # noqa: E501
-        :type: list[ComputeUsageUnit]
+        :param mapping: The mapping of this LNestedComputeUsageUnit.  # noqa: E501
+        :type: list[LComputeUsageUnit]
         """
         if mapping is None:
             raise ValueError("Invalid value for `mapping`, must not be `None`")  # noqa: E501
@@ -77,20 +77,20 @@ class LNestedComputeUsageUnit(object):
 
     @property
     def group_by(self):
-        """Gets the group_by of this NestedComputeUsageUnit.  # noqa: E501
+        """Gets the group_by of this LNestedComputeUsageUnit.  # noqa: E501
 
 
-        :return: The group_by of this NestedComputeUsageUnit.  # noqa: E501
+        :return: The group_by of this LNestedComputeUsageUnit.  # noqa: E501
         :rtype: str
         """
         return self._group_by
 
     @group_by.setter
     def group_by(self, group_by):
-        """Sets the group_by of this NestedComputeUsageUnit.
+        """Sets the group_by of this LNestedComputeUsageUnit.
 
 
-        :param group_by: The group_by of this NestedComputeUsageUnit.  # noqa: E501
+        :param group_by: The group_by of this LNestedComputeUsageUnit.  # noqa: E501
         :type: str
         """
         allowed_values = ["executionLanguage"]  # noqa: E501
@@ -104,20 +104,20 @@ class LNestedComputeUsageUnit(object):
 
     @property
     def execution_language(self):
-        """Gets the execution_language of this NestedComputeUsageUnit.  # noqa: E501
+        """Gets the execution_language of this LNestedComputeUsageUnit.  # noqa: E501
 
 
-        :return: The execution_language of this NestedComputeUsageUnit.  # noqa: E501
+        :return: The execution_language of this LNestedComputeUsageUnit.  # noqa: E501
         :rtype: str
         """
         return self._execution_language
 
     @execution_language.setter
     def execution_language(self, execution_language):
-        """Sets the execution_language of this NestedComputeUsageUnit.
+        """Sets the execution_language of this LNestedComputeUsageUnit.
 
 
-        :param execution_language: The execution_language of this NestedComputeUsageUnit.  # noqa: E501
+        :param execution_language: The execution_language of this LNestedComputeUsageUnit.  # noqa: E501
         :type: str
         """
 
@@ -144,7 +144,7 @@ class LNestedComputeUsageUnit(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(NestedComputeUsageUnit, dict):
+        if issubclass(LNestedComputeUsageUnit, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -160,7 +160,7 @@ class LNestedComputeUsageUnit(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, NestedComputeUsageUnit):
+        if not isinstance(other, LNestedComputeUsageUnit):
             return False
 
         return self.__dict__ == other.__dict__

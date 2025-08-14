@@ -49,7 +49,7 @@ class LAzureCloudAuthConfigsResponseSchema(object):
     }
 
     def __init__(self, cloud_provider=None, workspace_id=None, enabled=None, client_id=None, tenant_id=None, client_secret_name=None, key_vault_url=None, environment=None):  # noqa: E501
-        """AzureCloudAuthConfigsResponseSchema - a model defined in Swagger"""  # noqa: E501
+        """LAzureCloudAuthConfigsResponseSchema - a model defined in Swagger"""  # noqa: E501
         self._cloud_provider = None
         self._workspace_id = None
         self._enabled = None
@@ -70,22 +70,22 @@ class LAzureCloudAuthConfigsResponseSchema(object):
 
     @property
     def cloud_provider(self):
-        """Gets the cloud_provider of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        """Gets the cloud_provider of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
 
         A string representing the cloud provider type. Cloud Provider includes azure and gcp.  # noqa: E501
 
-        :return: The cloud_provider of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        :return: The cloud_provider of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._cloud_provider
 
     @cloud_provider.setter
     def cloud_provider(self, cloud_provider):
-        """Sets the cloud_provider of this AzureCloudAuthConfigsResponseSchema.
+        """Sets the cloud_provider of this LAzureCloudAuthConfigsResponseSchema.
 
         A string representing the cloud provider type. Cloud Provider includes azure and gcp.  # noqa: E501
 
-        :param cloud_provider: The cloud_provider of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        :param cloud_provider: The cloud_provider of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
         :type: str
         """
         if cloud_provider is None:
@@ -95,22 +95,22 @@ class LAzureCloudAuthConfigsResponseSchema(object):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        """Gets the workspace_id of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
 
         A string representing Hashed workspace ID  # noqa: E501
 
-        :return: The workspace_id of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        :return: The workspace_id of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this AzureCloudAuthConfigsResponseSchema.
+        """Sets the workspace_id of this LAzureCloudAuthConfigsResponseSchema.
 
         A string representing Hashed workspace ID  # noqa: E501
 
-        :param workspace_id: The workspace_id of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        :param workspace_id: The workspace_id of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
         :type: str
         """
         if workspace_id is None:
@@ -120,22 +120,22 @@ class LAzureCloudAuthConfigsResponseSchema(object):
 
     @property
     def enabled(self):
-        """Gets the enabled of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        """Gets the enabled of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
 
         A boolean representing if the cloud Auth is enabled  # noqa: E501
 
-        :return: The enabled of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        :return: The enabled of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
         :rtype: bool
         """
         return self._enabled
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this AzureCloudAuthConfigsResponseSchema.
+        """Sets the enabled of this LAzureCloudAuthConfigsResponseSchema.
 
         A boolean representing if the cloud Auth is enabled  # noqa: E501
 
-        :param enabled: The enabled of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        :param enabled: The enabled of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
         :type: bool
         """
         if enabled is None:
@@ -145,22 +145,22 @@ class LAzureCloudAuthConfigsResponseSchema(object):
 
     @property
     def client_id(self):
-        """Gets the client_id of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        """Gets the client_id of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
 
         A string that represents Client Id of Azure AD Application  # noqa: E501
 
-        :return: The client_id of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        :return: The client_id of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._client_id
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this AzureCloudAuthConfigsResponseSchema.
+        """Sets the client_id of this LAzureCloudAuthConfigsResponseSchema.
 
         A string that represents Client Id of Azure AD Application  # noqa: E501
 
-        :param client_id: The client_id of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        :param client_id: The client_id of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
         :type: str
         """
         if client_id is None:
@@ -170,22 +170,22 @@ class LAzureCloudAuthConfigsResponseSchema(object):
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        """Gets the tenant_id of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
 
         A string that represents Tenant Id of Azure AD Application  # noqa: E501
 
-        :return: The tenant_id of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        :return: The tenant_id of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._tenant_id
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this AzureCloudAuthConfigsResponseSchema.
+        """Sets the tenant_id of this LAzureCloudAuthConfigsResponseSchema.
 
         A string that represents Tenant Id of Azure AD Application  # noqa: E501
 
-        :param tenant_id: The tenant_id of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        :param tenant_id: The tenant_id of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
         :type: str
         """
         if tenant_id is None:
@@ -195,22 +195,22 @@ class LAzureCloudAuthConfigsResponseSchema(object):
 
     @property
     def client_secret_name(self):
-        """Gets the client_secret_name of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        """Gets the client_secret_name of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
 
         A string that represents key vault secret name where Azure AD Application secret is stored  # noqa: E501
 
-        :return: The client_secret_name of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        :return: The client_secret_name of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._client_secret_name
 
     @client_secret_name.setter
     def client_secret_name(self, client_secret_name):
-        """Sets the client_secret_name of this AzureCloudAuthConfigsResponseSchema.
+        """Sets the client_secret_name of this LAzureCloudAuthConfigsResponseSchema.
 
         A string that represents key vault secret name where Azure AD Application secret is stored  # noqa: E501
 
-        :param client_secret_name: The client_secret_name of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        :param client_secret_name: The client_secret_name of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
         :type: str
         """
         if client_secret_name is None:
@@ -220,22 +220,22 @@ class LAzureCloudAuthConfigsResponseSchema(object):
 
     @property
     def key_vault_url(self):
-        """Gets the key_vault_url of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        """Gets the key_vault_url of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
 
         Azure customer key vault URL where tokens are stored  # noqa: E501
 
-        :return: The key_vault_url of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        :return: The key_vault_url of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._key_vault_url
 
     @key_vault_url.setter
     def key_vault_url(self, key_vault_url):
-        """Sets the key_vault_url of this AzureCloudAuthConfigsResponseSchema.
+        """Sets the key_vault_url of this LAzureCloudAuthConfigsResponseSchema.
 
         Azure customer key vault URL where tokens are stored  # noqa: E501
 
-        :param key_vault_url: The key_vault_url of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        :param key_vault_url: The key_vault_url of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
         :type: str
         """
         if key_vault_url is None:
@@ -245,22 +245,22 @@ class LAzureCloudAuthConfigsResponseSchema(object):
 
     @property
     def environment(self):
-        """Gets the environment of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        """Gets the environment of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
 
         Represents the Azure environment. Environment types include AZURE, AZURE_US_GOVERNMENT, AZURE_CHINA, and AZURE_GERMANY  # noqa: E501
 
-        :return: The environment of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        :return: The environment of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._environment
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this AzureCloudAuthConfigsResponseSchema.
+        """Sets the environment of this LAzureCloudAuthConfigsResponseSchema.
 
         Represents the Azure environment. Environment types include AZURE, AZURE_US_GOVERNMENT, AZURE_CHINA, and AZURE_GERMANY  # noqa: E501
 
-        :param environment: The environment of this AzureCloudAuthConfigsResponseSchema.  # noqa: E501
+        :param environment: The environment of this LAzureCloudAuthConfigsResponseSchema.  # noqa: E501
         :type: str
         """
         if environment is None:
@@ -289,7 +289,7 @@ class LAzureCloudAuthConfigsResponseSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AzureCloudAuthConfigsResponseSchema, dict):
+        if issubclass(LAzureCloudAuthConfigsResponseSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -305,7 +305,7 @@ class LAzureCloudAuthConfigsResponseSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AzureCloudAuthConfigsResponseSchema):
+        if not isinstance(other, LAzureCloudAuthConfigsResponseSchema):
             return False
 
         return self.__dict__ == other.__dict__

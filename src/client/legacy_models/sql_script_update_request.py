@@ -30,7 +30,7 @@ class LSqlScriptUpdateRequest(object):
         'sql_script': 'str',
         'type': 'str',
         'vendor': 'str',
-        'connection_id': 'ConnectionIdInfo'
+        'connection_id': 'LConnectionIdInfo'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class LSqlScriptUpdateRequest(object):
     }
 
     def __init__(self, sql_script=None, type=None, vendor=None, connection_id=None):  # noqa: E501
-        """SqlScriptUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LSqlScriptUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._sql_script = None
         self._type = None
         self._vendor = None
@@ -58,22 +58,22 @@ class LSqlScriptUpdateRequest(object):
 
     @property
     def sql_script(self):
-        """Gets the sql_script of this SqlScriptUpdateRequest.  # noqa: E501
+        """Gets the sql_script of this LSqlScriptUpdateRequest.  # noqa: E501
 
         String of SQL queries to be executed.  # noqa: E501
 
-        :return: The sql_script of this SqlScriptUpdateRequest.  # noqa: E501
+        :return: The sql_script of this LSqlScriptUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._sql_script
 
     @sql_script.setter
     def sql_script(self, sql_script):
-        """Sets the sql_script of this SqlScriptUpdateRequest.
+        """Sets the sql_script of this LSqlScriptUpdateRequest.
 
         String of SQL queries to be executed.  # noqa: E501
 
-        :param sql_script: The sql_script of this SqlScriptUpdateRequest.  # noqa: E501
+        :param sql_script: The sql_script of this LSqlScriptUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -81,22 +81,22 @@ class LSqlScriptUpdateRequest(object):
 
     @property
     def type(self):
-        """Gets the type of this SqlScriptUpdateRequest.  # noqa: E501
+        """Gets the type of this LSqlScriptUpdateRequest.  # noqa: E501
 
         Identifier to decide if the SQLs will be executed before or after a job.  # noqa: E501
 
-        :return: The type of this SqlScriptUpdateRequest.  # noqa: E501
+        :return: The type of this LSqlScriptUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SqlScriptUpdateRequest.
+        """Sets the type of this LSqlScriptUpdateRequest.
 
         Identifier to decide if the SQLs will be executed before or after a job.  # noqa: E501
 
-        :param type: The type of this SqlScriptUpdateRequest.  # noqa: E501
+        :param type: The type of this LSqlScriptUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -104,22 +104,22 @@ class LSqlScriptUpdateRequest(object):
 
     @property
     def vendor(self):
-        """Gets the vendor of this SqlScriptUpdateRequest.  # noqa: E501
+        """Gets the vendor of this LSqlScriptUpdateRequest.  # noqa: E501
 
         e.g. `databricks`, `hive`, `redshift`, `postgres`, `oracle`, `sqlserver`, `teradata`, `bigquery`, `tableau`, `sqldatawarehouse`, `synapse`, `snowflake`, `gsuser`, `glue`, `sftp`, `s3`, `s3user`, `gsheetsuser`, `jdbc_rest`, `onedrive`, `sharepoint_files` or `box`  # noqa: E501
 
-        :return: The vendor of this SqlScriptUpdateRequest.  # noqa: E501
+        :return: The vendor of this LSqlScriptUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._vendor
 
     @vendor.setter
     def vendor(self, vendor):
-        """Sets the vendor of this SqlScriptUpdateRequest.
+        """Sets the vendor of this LSqlScriptUpdateRequest.
 
         e.g. `databricks`, `hive`, `redshift`, `postgres`, `oracle`, `sqlserver`, `teradata`, `bigquery`, `tableau`, `sqldatawarehouse`, `synapse`, `snowflake`, `gsuser`, `glue`, `sftp`, `s3`, `s3user`, `gsheetsuser`, `jdbc_rest`, `onedrive`, `sharepoint_files` or `box`  # noqa: E501
 
-        :param vendor: The vendor of this SqlScriptUpdateRequest.  # noqa: E501
+        :param vendor: The vendor of this LSqlScriptUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -127,21 +127,21 @@ class LSqlScriptUpdateRequest(object):
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this SqlScriptUpdateRequest.  # noqa: E501
+        """Gets the connection_id of this LSqlScriptUpdateRequest.  # noqa: E501
 
 
-        :return: The connection_id of this SqlScriptUpdateRequest.  # noqa: E501
-        :rtype: ConnectionIdInfo
+        :return: The connection_id of this LSqlScriptUpdateRequest.  # noqa: E501
+        :rtype: LConnectionIdInfo
         """
         return self._connection_id
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this SqlScriptUpdateRequest.
+        """Sets the connection_id of this LSqlScriptUpdateRequest.
 
 
-        :param connection_id: The connection_id of this SqlScriptUpdateRequest.  # noqa: E501
-        :type: ConnectionIdInfo
+        :param connection_id: The connection_id of this LSqlScriptUpdateRequest.  # noqa: E501
+        :type: LConnectionIdInfo
         """
 
         self._connection_id = connection_id
@@ -167,7 +167,7 @@ class LSqlScriptUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(SqlScriptUpdateRequest, dict):
+        if issubclass(LSqlScriptUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -183,7 +183,7 @@ class LSqlScriptUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SqlScriptUpdateRequest):
+        if not isinstance(other, LSqlScriptUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

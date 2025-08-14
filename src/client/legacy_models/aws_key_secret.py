@@ -37,7 +37,7 @@ class LAwsKeySecret(object):
     }
 
     def __init__(self, aws_access_key=None, aws_secret_key=None):  # noqa: E501
-        """AwsKeySecret - a model defined in Swagger"""  # noqa: E501
+        """LAwsKeySecret - a model defined in Swagger"""  # noqa: E501
         self._aws_access_key = None
         self._aws_secret_key = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LAwsKeySecret(object):
 
     @property
     def aws_access_key(self):
-        """Gets the aws_access_key of this AwsKeySecret.  # noqa: E501
+        """Gets the aws_access_key of this LAwsKeySecret.  # noqa: E501
 
 
-        :return: The aws_access_key of this AwsKeySecret.  # noqa: E501
+        :return: The aws_access_key of this LAwsKeySecret.  # noqa: E501
         :rtype: str
         """
         return self._aws_access_key
 
     @aws_access_key.setter
     def aws_access_key(self, aws_access_key):
-        """Sets the aws_access_key of this AwsKeySecret.
+        """Sets the aws_access_key of this LAwsKeySecret.
 
 
-        :param aws_access_key: The aws_access_key of this AwsKeySecret.  # noqa: E501
+        :param aws_access_key: The aws_access_key of this LAwsKeySecret.  # noqa: E501
         :type: str
         """
         if aws_access_key is None:
@@ -69,20 +69,20 @@ class LAwsKeySecret(object):
 
     @property
     def aws_secret_key(self):
-        """Gets the aws_secret_key of this AwsKeySecret.  # noqa: E501
+        """Gets the aws_secret_key of this LAwsKeySecret.  # noqa: E501
 
 
-        :return: The aws_secret_key of this AwsKeySecret.  # noqa: E501
+        :return: The aws_secret_key of this LAwsKeySecret.  # noqa: E501
         :rtype: str
         """
         return self._aws_secret_key
 
     @aws_secret_key.setter
     def aws_secret_key(self, aws_secret_key):
-        """Sets the aws_secret_key of this AwsKeySecret.
+        """Sets the aws_secret_key of this LAwsKeySecret.
 
 
-        :param aws_secret_key: The aws_secret_key of this AwsKeySecret.  # noqa: E501
+        :param aws_secret_key: The aws_secret_key of this LAwsKeySecret.  # noqa: E501
         :type: str
         """
         if aws_secret_key is None:
@@ -111,7 +111,7 @@ class LAwsKeySecret(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AwsKeySecret, dict):
+        if issubclass(LAwsKeySecret, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LAwsKeySecret(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AwsKeySecret):
+        if not isinstance(other, LAwsKeySecret):
             return False
 
         return self.__dict__ == other.__dict__

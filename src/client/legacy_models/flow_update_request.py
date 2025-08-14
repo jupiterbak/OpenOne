@@ -41,7 +41,7 @@ class LFlowUpdateRequest(object):
     }
 
     def __init__(self, name=None, description=None, settings=None, folder_id=None):  # noqa: E501
-        """FlowUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LFlowUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._description = None
         self._settings = None
@@ -58,22 +58,22 @@ class LFlowUpdateRequest(object):
 
     @property
     def name(self):
-        """Gets the name of this FlowUpdateRequest.  # noqa: E501
+        """Gets the name of this LFlowUpdateRequest.  # noqa: E501
 
         Display name of the flow.  # noqa: E501
 
-        :return: The name of this FlowUpdateRequest.  # noqa: E501
+        :return: The name of this LFlowUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FlowUpdateRequest.
+        """Sets the name of this LFlowUpdateRequest.
 
         Display name of the flow.  # noqa: E501
 
-        :param name: The name of this FlowUpdateRequest.  # noqa: E501
+        :param name: The name of this LFlowUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -81,22 +81,22 @@ class LFlowUpdateRequest(object):
 
     @property
     def description(self):
-        """Gets the description of this FlowUpdateRequest.  # noqa: E501
+        """Gets the description of this LFlowUpdateRequest.  # noqa: E501
 
         User-friendly description for the flow.  # noqa: E501
 
-        :return: The description of this FlowUpdateRequest.  # noqa: E501
+        :return: The description of this LFlowUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FlowUpdateRequest.
+        """Sets the description of this LFlowUpdateRequest.
 
         User-friendly description for the flow.  # noqa: E501
 
-        :param description: The description of this FlowUpdateRequest.  # noqa: E501
+        :param description: The description of this LFlowUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -104,22 +104,22 @@ class LFlowUpdateRequest(object):
 
     @property
     def settings(self):
-        """Gets the settings of this FlowUpdateRequest.  # noqa: E501
+        """Gets the settings of this LFlowUpdateRequest.  # noqa: E501
 
         Settings for the flow.  # noqa: E501
 
-        :return: The settings of this FlowUpdateRequest.  # noqa: E501
+        :return: The settings of this LFlowUpdateRequest.  # noqa: E501
         :rtype: object
         """
         return self._settings
 
     @settings.setter
     def settings(self, settings):
-        """Sets the settings of this FlowUpdateRequest.
+        """Sets the settings of this LFlowUpdateRequest.
 
         Settings for the flow.  # noqa: E501
 
-        :param settings: The settings of this FlowUpdateRequest.  # noqa: E501
+        :param settings: The settings of this LFlowUpdateRequest.  # noqa: E501
         :type: object
         """
 
@@ -127,22 +127,22 @@ class LFlowUpdateRequest(object):
 
     @property
     def folder_id(self):
-        """Gets the folder_id of this FlowUpdateRequest.  # noqa: E501
+        """Gets the folder_id of this LFlowUpdateRequest.  # noqa: E501
 
         Internal identifier for a Flow [folder](#tag/Folder).  # noqa: E501
 
-        :return: The folder_id of this FlowUpdateRequest.  # noqa: E501
+        :return: The folder_id of this LFlowUpdateRequest.  # noqa: E501
         :rtype: int
         """
         return self._folder_id
 
     @folder_id.setter
     def folder_id(self, folder_id):
-        """Sets the folder_id of this FlowUpdateRequest.
+        """Sets the folder_id of this LFlowUpdateRequest.
 
         Internal identifier for a Flow [folder](#tag/Folder).  # noqa: E501
 
-        :param folder_id: The folder_id of this FlowUpdateRequest.  # noqa: E501
+        :param folder_id: The folder_id of this LFlowUpdateRequest.  # noqa: E501
         :type: int
         """
 
@@ -169,7 +169,7 @@ class LFlowUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowUpdateRequest, dict):
+        if issubclass(LFlowUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -185,7 +185,7 @@ class LFlowUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowUpdateRequest):
+        if not isinstance(other, LFlowUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

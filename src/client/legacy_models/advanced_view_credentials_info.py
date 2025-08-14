@@ -33,7 +33,7 @@ class LAdvancedViewCredentialsInfo(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AdvancedViewCredentialsInfo - a model defined in Swagger"""  # noqa: E501
+        """LAdvancedViewCredentialsInfo - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAdvancedViewCredentialsInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AdvancedViewCredentialsInfo, dict):
+        if issubclass(LAdvancedViewCredentialsInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAdvancedViewCredentialsInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AdvancedViewCredentialsInfo):
+        if not isinstance(other, LAdvancedViewCredentialsInfo):
             return False
 
         return self.__dict__ == other.__dict__

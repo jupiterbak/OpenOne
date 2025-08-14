@@ -27,8 +27,8 @@ class LImportPlanPackageSuccessfulResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'flow_packages': 'list[ImportFlowPackageResponse]',
-        'plan_package': 'Plan',
+        'flow_packages': 'list[LImportFlowPackageResponse]',
+        'plan_package': 'LPlan',
         'task_count': 'int'
     }
 
@@ -39,7 +39,7 @@ class LImportPlanPackageSuccessfulResponse(object):
     }
 
     def __init__(self, flow_packages=None, plan_package=None, task_count=None):  # noqa: E501
-        """ImportPlanPackageSuccessfulResponse - a model defined in Swagger"""  # noqa: E501
+        """LImportPlanPackageSuccessfulResponse - a model defined in Swagger"""  # noqa: E501
         self._flow_packages = None
         self._plan_package = None
         self._task_count = None
@@ -50,21 +50,21 @@ class LImportPlanPackageSuccessfulResponse(object):
 
     @property
     def flow_packages(self):
-        """Gets the flow_packages of this ImportPlanPackageSuccessfulResponse.  # noqa: E501
+        """Gets the flow_packages of this LImportPlanPackageSuccessfulResponse.  # noqa: E501
 
 
-        :return: The flow_packages of this ImportPlanPackageSuccessfulResponse.  # noqa: E501
-        :rtype: list[ImportFlowPackageResponse]
+        :return: The flow_packages of this LImportPlanPackageSuccessfulResponse.  # noqa: E501
+        :rtype: list[LImportFlowPackageResponse]
         """
         return self._flow_packages
 
     @flow_packages.setter
     def flow_packages(self, flow_packages):
-        """Sets the flow_packages of this ImportPlanPackageSuccessfulResponse.
+        """Sets the flow_packages of this LImportPlanPackageSuccessfulResponse.
 
 
-        :param flow_packages: The flow_packages of this ImportPlanPackageSuccessfulResponse.  # noqa: E501
-        :type: list[ImportFlowPackageResponse]
+        :param flow_packages: The flow_packages of this LImportPlanPackageSuccessfulResponse.  # noqa: E501
+        :type: list[LImportFlowPackageResponse]
         """
         if flow_packages is None:
             raise ValueError("Invalid value for `flow_packages`, must not be `None`")  # noqa: E501
@@ -73,21 +73,21 @@ class LImportPlanPackageSuccessfulResponse(object):
 
     @property
     def plan_package(self):
-        """Gets the plan_package of this ImportPlanPackageSuccessfulResponse.  # noqa: E501
+        """Gets the plan_package of this LImportPlanPackageSuccessfulResponse.  # noqa: E501
 
 
-        :return: The plan_package of this ImportPlanPackageSuccessfulResponse.  # noqa: E501
-        :rtype: Plan
+        :return: The plan_package of this LImportPlanPackageSuccessfulResponse.  # noqa: E501
+        :rtype: LPlan
         """
         return self._plan_package
 
     @plan_package.setter
     def plan_package(self, plan_package):
-        """Sets the plan_package of this ImportPlanPackageSuccessfulResponse.
+        """Sets the plan_package of this LImportPlanPackageSuccessfulResponse.
 
 
-        :param plan_package: The plan_package of this ImportPlanPackageSuccessfulResponse.  # noqa: E501
-        :type: Plan
+        :param plan_package: The plan_package of this LImportPlanPackageSuccessfulResponse.  # noqa: E501
+        :type: LPlan
         """
         if plan_package is None:
             raise ValueError("Invalid value for `plan_package`, must not be `None`")  # noqa: E501
@@ -96,20 +96,20 @@ class LImportPlanPackageSuccessfulResponse(object):
 
     @property
     def task_count(self):
-        """Gets the task_count of this ImportPlanPackageSuccessfulResponse.  # noqa: E501
+        """Gets the task_count of this LImportPlanPackageSuccessfulResponse.  # noqa: E501
 
 
-        :return: The task_count of this ImportPlanPackageSuccessfulResponse.  # noqa: E501
+        :return: The task_count of this LImportPlanPackageSuccessfulResponse.  # noqa: E501
         :rtype: int
         """
         return self._task_count
 
     @task_count.setter
     def task_count(self, task_count):
-        """Sets the task_count of this ImportPlanPackageSuccessfulResponse.
+        """Sets the task_count of this LImportPlanPackageSuccessfulResponse.
 
 
-        :param task_count: The task_count of this ImportPlanPackageSuccessfulResponse.  # noqa: E501
+        :param task_count: The task_count of this LImportPlanPackageSuccessfulResponse.  # noqa: E501
         :type: int
         """
         if task_count is None:
@@ -138,7 +138,7 @@ class LImportPlanPackageSuccessfulResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ImportPlanPackageSuccessfulResponse, dict):
+        if issubclass(LImportPlanPackageSuccessfulResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -154,7 +154,7 @@ class LImportPlanPackageSuccessfulResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImportPlanPackageSuccessfulResponse):
+        if not isinstance(other, LImportPlanPackageSuccessfulResponse):
             return False
 
         return self.__dict__ == other.__dict__

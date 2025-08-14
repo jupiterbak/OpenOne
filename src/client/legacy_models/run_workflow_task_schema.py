@@ -35,27 +35,27 @@ class LRunWorkflowTaskSchema(object):
     }
 
     def __init__(self, run_workflow=None):  # noqa: E501
-        """RunWorkflowTaskSchema - a model defined in Swagger"""  # noqa: E501
+        """LRunWorkflowTaskSchema - a model defined in Swagger"""  # noqa: E501
         self._run_workflow = None
         self.discriminator = None
         self.run_workflow = run_workflow
 
     @property
     def run_workflow(self):
-        """Gets the run_workflow of this RunWorkflowTaskSchema.  # noqa: E501
+        """Gets the run_workflow of this LRunWorkflowTaskSchema.  # noqa: E501
 
 
-        :return: The run_workflow of this RunWorkflowTaskSchema.  # noqa: E501
+        :return: The run_workflow of this LRunWorkflowTaskSchema.  # noqa: E501
         :rtype: object
         """
         return self._run_workflow
 
     @run_workflow.setter
     def run_workflow(self, run_workflow):
-        """Sets the run_workflow of this RunWorkflowTaskSchema.
+        """Sets the run_workflow of this LRunWorkflowTaskSchema.
 
 
-        :param run_workflow: The run_workflow of this RunWorkflowTaskSchema.  # noqa: E501
+        :param run_workflow: The run_workflow of this LRunWorkflowTaskSchema.  # noqa: E501
         :type: object
         """
         if run_workflow is None:
@@ -84,7 +84,7 @@ class LRunWorkflowTaskSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunWorkflowTaskSchema, dict):
+        if issubclass(LRunWorkflowTaskSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunWorkflowTaskSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunWorkflowTaskSchema):
+        if not isinstance(other, LRunWorkflowTaskSchema):
             return False
 
         return self.__dict__ == other.__dict__

@@ -29,7 +29,7 @@ class LSchemaDriftJob(object):
     swagger_types = {
         'datasource': 'object',
         'location': 'str',
-        'id': 'AnyOfschemaDriftJobId'
+        'id': 'LAnyOfschemaDriftJobId'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class LSchemaDriftJob(object):
     }
 
     def __init__(self, datasource=None, location=None, id=None):  # noqa: E501
-        """SchemaDriftJob - a model defined in Swagger"""  # noqa: E501
+        """LSchemaDriftJob - a model defined in Swagger"""  # noqa: E501
         self._datasource = None
         self._location = None
         self._id = None
@@ -51,20 +51,20 @@ class LSchemaDriftJob(object):
 
     @property
     def datasource(self):
-        """Gets the datasource of this SchemaDriftJob.  # noqa: E501
+        """Gets the datasource of this LSchemaDriftJob.  # noqa: E501
 
 
-        :return: The datasource of this SchemaDriftJob.  # noqa: E501
+        :return: The datasource of this LSchemaDriftJob.  # noqa: E501
         :rtype: object
         """
         return self._datasource
 
     @datasource.setter
     def datasource(self, datasource):
-        """Sets the datasource of this SchemaDriftJob.
+        """Sets the datasource of this LSchemaDriftJob.
 
 
-        :param datasource: The datasource of this SchemaDriftJob.  # noqa: E501
+        :param datasource: The datasource of this LSchemaDriftJob.  # noqa: E501
         :type: object
         """
         if datasource is None:
@@ -74,20 +74,20 @@ class LSchemaDriftJob(object):
 
     @property
     def location(self):
-        """Gets the location of this SchemaDriftJob.  # noqa: E501
+        """Gets the location of this LSchemaDriftJob.  # noqa: E501
 
 
-        :return: The location of this SchemaDriftJob.  # noqa: E501
+        :return: The location of this LSchemaDriftJob.  # noqa: E501
         :rtype: str
         """
         return self._location
 
     @location.setter
     def location(self, location):
-        """Sets the location of this SchemaDriftJob.
+        """Sets the location of this LSchemaDriftJob.
 
 
-        :param location: The location of this SchemaDriftJob.  # noqa: E501
+        :param location: The location of this LSchemaDriftJob.  # noqa: E501
         :type: str
         """
 
@@ -95,21 +95,21 @@ class LSchemaDriftJob(object):
 
     @property
     def id(self):
-        """Gets the id of this SchemaDriftJob.  # noqa: E501
+        """Gets the id of this LSchemaDriftJob.  # noqa: E501
 
 
-        :return: The id of this SchemaDriftJob.  # noqa: E501
-        :rtype: AnyOfschemaDriftJobId
+        :return: The id of this LSchemaDriftJob.  # noqa: E501
+        :rtype: LAnyOfschemaDriftJobId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SchemaDriftJob.
+        """Sets the id of this LSchemaDriftJob.
 
 
-        :param id: The id of this SchemaDriftJob.  # noqa: E501
-        :type: AnyOfschemaDriftJobId
+        :param id: The id of this LSchemaDriftJob.  # noqa: E501
+        :type: LAnyOfschemaDriftJobId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -137,7 +137,7 @@ class LSchemaDriftJob(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(SchemaDriftJob, dict):
+        if issubclass(LSchemaDriftJob, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -153,7 +153,7 @@ class LSchemaDriftJob(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SchemaDriftJob):
+        if not isinstance(other, LSchemaDriftJob):
             return False
 
         return self.__dict__ == other.__dict__

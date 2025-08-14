@@ -55,6 +55,8 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
         """Constructor"""
         # Default Base url
         self.host = os.getenv("ALTERYX_AACP_API_BASE_URL", "https://api.us1.alteryxcloud.com")
+        # Default Legacy Base url which is the host api without 'api.'
+        self.legacy_host = self.host.replace("api.", "")
         self.token_endpoint = os.getenv("ALTERYX_AACP_TOKEN_ENDPOINT", "https://pingauth.alteryxcloud.com/as")
         self.refresh_endpoint = self.token_endpoint + "/token"
         self.project_id = os.getenv("ALTERYX_AACP_PROJECT_ID", "Your Project ID")

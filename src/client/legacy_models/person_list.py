@@ -27,7 +27,7 @@ class LPersonList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[Person]',
+        'data': 'list[LPerson]',
         'count': 'int'
     }
 
@@ -37,7 +37,7 @@ class LPersonList(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """PersonList - a model defined in Swagger"""  # noqa: E501
+        """LPersonList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LPersonList(object):
 
     @property
     def data(self):
-        """Gets the data of this PersonList.  # noqa: E501
+        """Gets the data of this LPersonList.  # noqa: E501
 
 
-        :return: The data of this PersonList.  # noqa: E501
-        :rtype: list[Person]
+        :return: The data of this LPersonList.  # noqa: E501
+        :rtype: list[LPerson]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this PersonList.
+        """Sets the data of this LPersonList.
 
 
-        :param data: The data of this PersonList.  # noqa: E501
-        :type: list[Person]
+        :param data: The data of this LPersonList.  # noqa: E501
+        :type: list[LPerson]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LPersonList(object):
 
     @property
     def count(self):
-        """Gets the count of this PersonList.  # noqa: E501
+        """Gets the count of this LPersonList.  # noqa: E501
 
 
-        :return: The count of this PersonList.  # noqa: E501
+        :return: The count of this LPersonList.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this PersonList.
+        """Sets the count of this LPersonList.
 
 
-        :param count: The count of this PersonList.  # noqa: E501
+        :param count: The count of this LPersonList.  # noqa: E501
         :type: int
         """
 
@@ -110,7 +110,7 @@ class LPersonList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PersonList, dict):
+        if issubclass(LPersonList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LPersonList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PersonList):
+        if not isinstance(other, LPersonList):
             return False
 
         return self.__dict__ == other.__dict__

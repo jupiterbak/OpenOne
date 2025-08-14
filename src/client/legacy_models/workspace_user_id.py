@@ -33,7 +33,7 @@ class LWorkspaceUserId(object):
     }
 
     def __init__(self):  # noqa: E501
-        """WorkspaceUserId - a model defined in Swagger"""  # noqa: E501
+        """LWorkspaceUserId - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LWorkspaceUserId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WorkspaceUserId, dict):
+        if issubclass(LWorkspaceUserId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LWorkspaceUserId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WorkspaceUserId):
+        if not isinstance(other, LWorkspaceUserId):
             return False
 
         return self.__dict__ == other.__dict__

@@ -30,7 +30,7 @@ class LSnapshot(object):
         'terminal_index': 'int',
         'flow': 'object',
         'terminal_flow_node': 'object',
-        'id': 'AnyOfsnapshotId',
+        'id': 'LAnyOfsnapshotId',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'creator': 'object',
@@ -49,7 +49,7 @@ class LSnapshot(object):
     }
 
     def __init__(self, terminal_index=None, flow=None, terminal_flow_node=None, id=None, created_at=None, updated_at=None, creator=None, updater=None):  # noqa: E501
-        """Snapshot - a model defined in Swagger"""  # noqa: E501
+        """LSnapshot - a model defined in Swagger"""  # noqa: E501
         self._terminal_index = None
         self._flow = None
         self._terminal_flow_node = None
@@ -75,22 +75,22 @@ class LSnapshot(object):
 
     @property
     def terminal_index(self):
-        """Gets the terminal_index of this Snapshot.  # noqa: E501
+        """Gets the terminal_index of this LSnapshot.  # noqa: E501
 
         The index in the recipe of the final node at which the snapshot should terminate.  # noqa: E501
 
-        :return: The terminal_index of this Snapshot.  # noqa: E501
+        :return: The terminal_index of this LSnapshot.  # noqa: E501
         :rtype: int
         """
         return self._terminal_index
 
     @terminal_index.setter
     def terminal_index(self, terminal_index):
-        """Sets the terminal_index of this Snapshot.
+        """Sets the terminal_index of this LSnapshot.
 
         The index in the recipe of the final node at which the snapshot should terminate.  # noqa: E501
 
-        :param terminal_index: The terminal_index of this Snapshot.  # noqa: E501
+        :param terminal_index: The terminal_index of this LSnapshot.  # noqa: E501
         :type: int
         """
 
@@ -98,20 +98,20 @@ class LSnapshot(object):
 
     @property
     def flow(self):
-        """Gets the flow of this Snapshot.  # noqa: E501
+        """Gets the flow of this LSnapshot.  # noqa: E501
 
 
-        :return: The flow of this Snapshot.  # noqa: E501
+        :return: The flow of this LSnapshot.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this Snapshot.
+        """Sets the flow of this LSnapshot.
 
 
-        :param flow: The flow of this Snapshot.  # noqa: E501
+        :param flow: The flow of this LSnapshot.  # noqa: E501
         :type: object
         """
 
@@ -119,20 +119,20 @@ class LSnapshot(object):
 
     @property
     def terminal_flow_node(self):
-        """Gets the terminal_flow_node of this Snapshot.  # noqa: E501
+        """Gets the terminal_flow_node of this LSnapshot.  # noqa: E501
 
 
-        :return: The terminal_flow_node of this Snapshot.  # noqa: E501
+        :return: The terminal_flow_node of this LSnapshot.  # noqa: E501
         :rtype: object
         """
         return self._terminal_flow_node
 
     @terminal_flow_node.setter
     def terminal_flow_node(self, terminal_flow_node):
-        """Sets the terminal_flow_node of this Snapshot.
+        """Sets the terminal_flow_node of this LSnapshot.
 
 
-        :param terminal_flow_node: The terminal_flow_node of this Snapshot.  # noqa: E501
+        :param terminal_flow_node: The terminal_flow_node of this LSnapshot.  # noqa: E501
         :type: object
         """
 
@@ -140,21 +140,21 @@ class LSnapshot(object):
 
     @property
     def id(self):
-        """Gets the id of this Snapshot.  # noqa: E501
+        """Gets the id of this LSnapshot.  # noqa: E501
 
 
-        :return: The id of this Snapshot.  # noqa: E501
-        :rtype: AnyOfsnapshotId
+        :return: The id of this LSnapshot.  # noqa: E501
+        :rtype: LAnyOfsnapshotId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Snapshot.
+        """Sets the id of this LSnapshot.
 
 
-        :param id: The id of this Snapshot.  # noqa: E501
-        :type: AnyOfsnapshotId
+        :param id: The id of this LSnapshot.  # noqa: E501
+        :type: LAnyOfsnapshotId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -163,22 +163,22 @@ class LSnapshot(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this Snapshot.  # noqa: E501
+        """Gets the created_at of this LSnapshot.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this Snapshot.  # noqa: E501
+        :return: The created_at of this LSnapshot.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Snapshot.
+        """Sets the created_at of this LSnapshot.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this Snapshot.  # noqa: E501
+        :param created_at: The created_at of this LSnapshot.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -188,22 +188,22 @@ class LSnapshot(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Snapshot.  # noqa: E501
+        """Gets the updated_at of this LSnapshot.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this Snapshot.  # noqa: E501
+        :return: The updated_at of this LSnapshot.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Snapshot.
+        """Sets the updated_at of this LSnapshot.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this Snapshot.  # noqa: E501
+        :param updated_at: The updated_at of this LSnapshot.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -213,20 +213,20 @@ class LSnapshot(object):
 
     @property
     def creator(self):
-        """Gets the creator of this Snapshot.  # noqa: E501
+        """Gets the creator of this LSnapshot.  # noqa: E501
 
 
-        :return: The creator of this Snapshot.  # noqa: E501
+        :return: The creator of this LSnapshot.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this Snapshot.
+        """Sets the creator of this LSnapshot.
 
 
-        :param creator: The creator of this Snapshot.  # noqa: E501
+        :param creator: The creator of this LSnapshot.  # noqa: E501
         :type: object
         """
 
@@ -234,20 +234,20 @@ class LSnapshot(object):
 
     @property
     def updater(self):
-        """Gets the updater of this Snapshot.  # noqa: E501
+        """Gets the updater of this LSnapshot.  # noqa: E501
 
 
-        :return: The updater of this Snapshot.  # noqa: E501
+        :return: The updater of this LSnapshot.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this Snapshot.
+        """Sets the updater of this LSnapshot.
 
 
-        :param updater: The updater of this Snapshot.  # noqa: E501
+        :param updater: The updater of this LSnapshot.  # noqa: E501
         :type: object
         """
 
@@ -274,7 +274,7 @@ class LSnapshot(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Snapshot, dict):
+        if issubclass(LSnapshot, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -290,7 +290,7 @@ class LSnapshot(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Snapshot):
+        if not isinstance(other, LSnapshot):
             return False
 
         return self.__dict__ == other.__dict__

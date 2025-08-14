@@ -29,7 +29,7 @@ class LFlowPermissionWithPersonIdRequest(object):
     swagger_types = {
         'role': 'str',
         'policy': 'str',
-        'person_id': 'AnyOfflowPermissionWithPersonIdRequestPersonId'
+        'person_id': 'LAnyOfflowPermissionWithPersonIdRequestPersonId'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class LFlowPermissionWithPersonIdRequest(object):
     }
 
     def __init__(self, role=None, policy=None, person_id=None):  # noqa: E501
-        """FlowPermissionWithPersonIdRequest - a model defined in Swagger"""  # noqa: E501
+        """LFlowPermissionWithPersonIdRequest - a model defined in Swagger"""  # noqa: E501
         self._role = None
         self._policy = None
         self._person_id = None
@@ -51,22 +51,22 @@ class LFlowPermissionWithPersonIdRequest(object):
 
     @property
     def role(self):
-        """Gets the role of this FlowPermissionWithPersonIdRequest.  # noqa: E501
+        """Gets the role of this LFlowPermissionWithPersonIdRequest.  # noqa: E501
 
         Role * `collaborator` - Flow collaborator, can see and edit recipes in the flow. * `readOnly` - Read only user. Can see recipes in the flow.  # noqa: E501
 
-        :return: The role of this FlowPermissionWithPersonIdRequest.  # noqa: E501
+        :return: The role of this LFlowPermissionWithPersonIdRequest.  # noqa: E501
         :rtype: str
         """
         return self._role
 
     @role.setter
     def role(self, role):
-        """Sets the role of this FlowPermissionWithPersonIdRequest.
+        """Sets the role of this LFlowPermissionWithPersonIdRequest.
 
         Role * `collaborator` - Flow collaborator, can see and edit recipes in the flow. * `readOnly` - Read only user. Can see recipes in the flow.  # noqa: E501
 
-        :param role: The role of this FlowPermissionWithPersonIdRequest.  # noqa: E501
+        :param role: The role of this LFlowPermissionWithPersonIdRequest.  # noqa: E501
         :type: str
         """
         if role is None:
@@ -82,20 +82,20 @@ class LFlowPermissionWithPersonIdRequest(object):
 
     @property
     def policy(self):
-        """Gets the policy of this FlowPermissionWithPersonIdRequest.  # noqa: E501
+        """Gets the policy of this LFlowPermissionWithPersonIdRequest.  # noqa: E501
 
 
-        :return: The policy of this FlowPermissionWithPersonIdRequest.  # noqa: E501
+        :return: The policy of this LFlowPermissionWithPersonIdRequest.  # noqa: E501
         :rtype: str
         """
         return self._policy
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this FlowPermissionWithPersonIdRequest.
+        """Sets the policy of this LFlowPermissionWithPersonIdRequest.
 
 
-        :param policy: The policy of this FlowPermissionWithPersonIdRequest.  # noqa: E501
+        :param policy: The policy of this LFlowPermissionWithPersonIdRequest.  # noqa: E501
         :type: str
         """
 
@@ -103,21 +103,21 @@ class LFlowPermissionWithPersonIdRequest(object):
 
     @property
     def person_id(self):
-        """Gets the person_id of this FlowPermissionWithPersonIdRequest.  # noqa: E501
+        """Gets the person_id of this LFlowPermissionWithPersonIdRequest.  # noqa: E501
 
 
-        :return: The person_id of this FlowPermissionWithPersonIdRequest.  # noqa: E501
-        :rtype: AnyOfflowPermissionWithPersonIdRequestPersonId
+        :return: The person_id of this LFlowPermissionWithPersonIdRequest.  # noqa: E501
+        :rtype: LAnyOfflowPermissionWithPersonIdRequestPersonId
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this FlowPermissionWithPersonIdRequest.
+        """Sets the person_id of this LFlowPermissionWithPersonIdRequest.
 
 
-        :param person_id: The person_id of this FlowPermissionWithPersonIdRequest.  # noqa: E501
-        :type: AnyOfflowPermissionWithPersonIdRequestPersonId
+        :param person_id: The person_id of this LFlowPermissionWithPersonIdRequest.  # noqa: E501
+        :type: LAnyOfflowPermissionWithPersonIdRequestPersonId
         """
         if person_id is None:
             raise ValueError("Invalid value for `person_id`, must not be `None`")  # noqa: E501
@@ -145,7 +145,7 @@ class LFlowPermissionWithPersonIdRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowPermissionWithPersonIdRequest, dict):
+        if issubclass(LFlowPermissionWithPersonIdRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -161,7 +161,7 @@ class LFlowPermissionWithPersonIdRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowPermissionWithPersonIdRequest):
+        if not isinstance(other, LFlowPermissionWithPersonIdRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,7 +27,7 @@ class LFlowList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[Flow]',
+        'data': 'list[LFlow]',
         'count': 'int'
     }
 
@@ -37,7 +37,7 @@ class LFlowList(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """FlowList - a model defined in Swagger"""  # noqa: E501
+        """LFlowList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LFlowList(object):
 
     @property
     def data(self):
-        """Gets the data of this FlowList.  # noqa: E501
+        """Gets the data of this LFlowList.  # noqa: E501
 
 
-        :return: The data of this FlowList.  # noqa: E501
-        :rtype: list[Flow]
+        :return: The data of this LFlowList.  # noqa: E501
+        :rtype: list[LFlow]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this FlowList.
+        """Sets the data of this LFlowList.
 
 
-        :param data: The data of this FlowList.  # noqa: E501
-        :type: list[Flow]
+        :param data: The data of this LFlowList.  # noqa: E501
+        :type: list[LFlow]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LFlowList(object):
 
     @property
     def count(self):
-        """Gets the count of this FlowList.  # noqa: E501
+        """Gets the count of this LFlowList.  # noqa: E501
 
 
-        :return: The count of this FlowList.  # noqa: E501
+        :return: The count of this LFlowList.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this FlowList.
+        """Sets the count of this LFlowList.
 
 
-        :param count: The count of this FlowList.  # noqa: E501
+        :param count: The count of this LFlowList.  # noqa: E501
         :type: int
         """
 
@@ -110,7 +110,7 @@ class LFlowList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowList, dict):
+        if issubclass(LFlowList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LFlowList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowList):
+        if not isinstance(other, LFlowList):
             return False
 
         return self.__dict__ == other.__dict__

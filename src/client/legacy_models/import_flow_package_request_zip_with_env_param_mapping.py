@@ -27,19 +27,19 @@ class LImportFlowPackageRequestZipWithEnvParamMapping(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'file': 'ImportFlowPackageRequestZip',
-        'environment_parameter_mapping': 'list[EnvironmentParameterMapping]',
-        'connection_id_mapping': 'list[ConnectionIdMapping]'
+        'file': 'LImportFlowPackageRequestZip',
+        'environment_parameter_mapping': 'list[LEnvironmentParameterMapping]',
+        'connection_id_mapping': 'list[LConnectionIdMapping]'
     }
 
     attribute_map = {
-        'file': 'File',
+        'file': 'LFile',
         'environment_parameter_mapping': 'environmentParameterMapping',
         'connection_id_mapping': 'connectionIdMapping'
     }
 
     def __init__(self, file=None, environment_parameter_mapping=None, connection_id_mapping=None):  # noqa: E501
-        """ImportFlowPackageRequestZipWithEnvParamMapping - a model defined in Swagger"""  # noqa: E501
+        """LImportFlowPackageRequestZipWithEnvParamMapping - a model defined in Swagger"""  # noqa: E501
         self._file = None
         self._environment_parameter_mapping = None
         self._connection_id_mapping = None
@@ -52,21 +52,21 @@ class LImportFlowPackageRequestZipWithEnvParamMapping(object):
 
     @property
     def file(self):
-        """Gets the file of this ImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
+        """Gets the file of this LImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
 
 
-        :return: The file of this ImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
-        :rtype: ImportFlowPackageRequestZip
+        :return: The file of this LImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
+        :rtype: LImportFlowPackageRequestZip
         """
         return self._file
 
     @file.setter
     def file(self, file):
-        """Sets the file of this ImportFlowPackageRequestZipWithEnvParamMapping.
+        """Sets the file of this LImportFlowPackageRequestZipWithEnvParamMapping.
 
 
-        :param file: The file of this ImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
-        :type: ImportFlowPackageRequestZip
+        :param file: The file of this LImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
+        :type: LImportFlowPackageRequestZip
         """
         if file is None:
             raise ValueError("Invalid value for `file`, must not be `None`")  # noqa: E501
@@ -75,42 +75,42 @@ class LImportFlowPackageRequestZipWithEnvParamMapping(object):
 
     @property
     def environment_parameter_mapping(self):
-        """Gets the environment_parameter_mapping of this ImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
+        """Gets the environment_parameter_mapping of this LImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
 
 
-        :return: The environment_parameter_mapping of this ImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
-        :rtype: list[EnvironmentParameterMapping]
+        :return: The environment_parameter_mapping of this LImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
+        :rtype: list[LEnvironmentParameterMapping]
         """
         return self._environment_parameter_mapping
 
     @environment_parameter_mapping.setter
     def environment_parameter_mapping(self, environment_parameter_mapping):
-        """Sets the environment_parameter_mapping of this ImportFlowPackageRequestZipWithEnvParamMapping.
+        """Sets the environment_parameter_mapping of this LImportFlowPackageRequestZipWithEnvParamMapping.
 
 
-        :param environment_parameter_mapping: The environment_parameter_mapping of this ImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
-        :type: list[EnvironmentParameterMapping]
+        :param environment_parameter_mapping: The environment_parameter_mapping of this LImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
+        :type: list[LEnvironmentParameterMapping]
         """
 
         self._environment_parameter_mapping = environment_parameter_mapping
 
     @property
     def connection_id_mapping(self):
-        """Gets the connection_id_mapping of this ImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
+        """Gets the connection_id_mapping of this LImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
 
 
-        :return: The connection_id_mapping of this ImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
-        :rtype: list[ConnectionIdMapping]
+        :return: The connection_id_mapping of this LImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
+        :rtype: list[LConnectionIdMapping]
         """
         return self._connection_id_mapping
 
     @connection_id_mapping.setter
     def connection_id_mapping(self, connection_id_mapping):
-        """Sets the connection_id_mapping of this ImportFlowPackageRequestZipWithEnvParamMapping.
+        """Sets the connection_id_mapping of this LImportFlowPackageRequestZipWithEnvParamMapping.
 
 
-        :param connection_id_mapping: The connection_id_mapping of this ImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
-        :type: list[ConnectionIdMapping]
+        :param connection_id_mapping: The connection_id_mapping of this LImportFlowPackageRequestZipWithEnvParamMapping.  # noqa: E501
+        :type: list[LConnectionIdMapping]
         """
 
         self._connection_id_mapping = connection_id_mapping
@@ -136,7 +136,7 @@ class LImportFlowPackageRequestZipWithEnvParamMapping(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ImportFlowPackageRequestZipWithEnvParamMapping, dict):
+        if issubclass(LImportFlowPackageRequestZipWithEnvParamMapping, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -152,7 +152,7 @@ class LImportFlowPackageRequestZipWithEnvParamMapping(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImportFlowPackageRequestZipWithEnvParamMapping):
+        if not isinstance(other, LImportFlowPackageRequestZipWithEnvParamMapping):
             return False
 
         return self.__dict__ == other.__dict__

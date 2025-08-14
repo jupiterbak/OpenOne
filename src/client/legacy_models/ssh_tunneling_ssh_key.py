@@ -37,7 +37,7 @@ class LSshTunnelingSshKey(object):
     }
 
     def __init__(self, ssh_tunneling_username=None, ssh_tunneling_ssh_key=None):  # noqa: E501
-        """SshTunnelingSshKey - a model defined in Swagger"""  # noqa: E501
+        """LSshTunnelingSshKey - a model defined in Swagger"""  # noqa: E501
         self._ssh_tunneling_username = None
         self._ssh_tunneling_ssh_key = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LSshTunnelingSshKey(object):
 
     @property
     def ssh_tunneling_username(self):
-        """Gets the ssh_tunneling_username of this SshTunnelingSshKey.  # noqa: E501
+        """Gets the ssh_tunneling_username of this LSshTunnelingSshKey.  # noqa: E501
 
 
-        :return: The ssh_tunneling_username of this SshTunnelingSshKey.  # noqa: E501
+        :return: The ssh_tunneling_username of this LSshTunnelingSshKey.  # noqa: E501
         :rtype: str
         """
         return self._ssh_tunneling_username
 
     @ssh_tunneling_username.setter
     def ssh_tunneling_username(self, ssh_tunneling_username):
-        """Sets the ssh_tunneling_username of this SshTunnelingSshKey.
+        """Sets the ssh_tunneling_username of this LSshTunnelingSshKey.
 
 
-        :param ssh_tunneling_username: The ssh_tunneling_username of this SshTunnelingSshKey.  # noqa: E501
+        :param ssh_tunneling_username: The ssh_tunneling_username of this LSshTunnelingSshKey.  # noqa: E501
         :type: str
         """
         if ssh_tunneling_username is None:
@@ -69,20 +69,20 @@ class LSshTunnelingSshKey(object):
 
     @property
     def ssh_tunneling_ssh_key(self):
-        """Gets the ssh_tunneling_ssh_key of this SshTunnelingSshKey.  # noqa: E501
+        """Gets the ssh_tunneling_ssh_key of this LSshTunnelingSshKey.  # noqa: E501
 
 
-        :return: The ssh_tunneling_ssh_key of this SshTunnelingSshKey.  # noqa: E501
+        :return: The ssh_tunneling_ssh_key of this LSshTunnelingSshKey.  # noqa: E501
         :rtype: str
         """
         return self._ssh_tunneling_ssh_key
 
     @ssh_tunneling_ssh_key.setter
     def ssh_tunneling_ssh_key(self, ssh_tunneling_ssh_key):
-        """Sets the ssh_tunneling_ssh_key of this SshTunnelingSshKey.
+        """Sets the ssh_tunneling_ssh_key of this LSshTunnelingSshKey.
 
 
-        :param ssh_tunneling_ssh_key: The ssh_tunneling_ssh_key of this SshTunnelingSshKey.  # noqa: E501
+        :param ssh_tunneling_ssh_key: The ssh_tunneling_ssh_key of this LSshTunnelingSshKey.  # noqa: E501
         :type: str
         """
         if ssh_tunneling_ssh_key is None:
@@ -111,7 +111,7 @@ class LSshTunnelingSshKey(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(SshTunnelingSshKey, dict):
+        if issubclass(LSshTunnelingSshKey, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LSshTunnelingSshKey(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SshTunnelingSshKey):
+        if not isinstance(other, LSshTunnelingSshKey):
             return False
 
         return self.__dict__ == other.__dict__

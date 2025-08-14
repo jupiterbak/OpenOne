@@ -41,7 +41,7 @@ class LParsingNode(object):
     }
 
     def __init__(self, flow=None, recipe=None, active_sample=None, wrangled=None):  # noqa: E501
-        """ParsingNode - a model defined in Swagger"""  # noqa: E501
+        """LParsingNode - a model defined in Swagger"""  # noqa: E501
         self._flow = None
         self._recipe = None
         self._active_sample = None
@@ -55,20 +55,20 @@ class LParsingNode(object):
 
     @property
     def flow(self):
-        """Gets the flow of this ParsingNode.  # noqa: E501
+        """Gets the flow of this LParsingNode.  # noqa: E501
 
 
-        :return: The flow of this ParsingNode.  # noqa: E501
+        :return: The flow of this LParsingNode.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this ParsingNode.
+        """Sets the flow of this LParsingNode.
 
 
-        :param flow: The flow of this ParsingNode.  # noqa: E501
+        :param flow: The flow of this LParsingNode.  # noqa: E501
         :type: object
         """
         if flow is None:
@@ -78,20 +78,20 @@ class LParsingNode(object):
 
     @property
     def recipe(self):
-        """Gets the recipe of this ParsingNode.  # noqa: E501
+        """Gets the recipe of this LParsingNode.  # noqa: E501
 
 
-        :return: The recipe of this ParsingNode.  # noqa: E501
+        :return: The recipe of this LParsingNode.  # noqa: E501
         :rtype: object
         """
         return self._recipe
 
     @recipe.setter
     def recipe(self, recipe):
-        """Sets the recipe of this ParsingNode.
+        """Sets the recipe of this LParsingNode.
 
 
-        :param recipe: The recipe of this ParsingNode.  # noqa: E501
+        :param recipe: The recipe of this LParsingNode.  # noqa: E501
         :type: object
         """
         if recipe is None:
@@ -101,20 +101,20 @@ class LParsingNode(object):
 
     @property
     def active_sample(self):
-        """Gets the active_sample of this ParsingNode.  # noqa: E501
+        """Gets the active_sample of this LParsingNode.  # noqa: E501
 
 
-        :return: The active_sample of this ParsingNode.  # noqa: E501
+        :return: The active_sample of this LParsingNode.  # noqa: E501
         :rtype: object
         """
         return self._active_sample
 
     @active_sample.setter
     def active_sample(self, active_sample):
-        """Sets the active_sample of this ParsingNode.
+        """Sets the active_sample of this LParsingNode.
 
 
-        :param active_sample: The active_sample of this ParsingNode.  # noqa: E501
+        :param active_sample: The active_sample of this LParsingNode.  # noqa: E501
         :type: object
         """
 
@@ -122,22 +122,22 @@ class LParsingNode(object):
 
     @property
     def wrangled(self):
-        """Gets the wrangled of this ParsingNode.  # noqa: E501
+        """Gets the wrangled of this LParsingNode.  # noqa: E501
 
         If false, this is an input dataset (i.e. an imported dataset or a reference dataset). If true, this flowNode contains a recipe that can be edited by the user.  # noqa: E501
 
-        :return: The wrangled of this ParsingNode.  # noqa: E501
+        :return: The wrangled of this LParsingNode.  # noqa: E501
         :rtype: bool
         """
         return self._wrangled
 
     @wrangled.setter
     def wrangled(self, wrangled):
-        """Sets the wrangled of this ParsingNode.
+        """Sets the wrangled of this LParsingNode.
 
         If false, this is an input dataset (i.e. an imported dataset or a reference dataset). If true, this flowNode contains a recipe that can be edited by the user.  # noqa: E501
 
-        :param wrangled: The wrangled of this ParsingNode.  # noqa: E501
+        :param wrangled: The wrangled of this LParsingNode.  # noqa: E501
         :type: bool
         """
         if wrangled is None:
@@ -166,7 +166,7 @@ class LParsingNode(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ParsingNode, dict):
+        if issubclass(LParsingNode, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -182,7 +182,7 @@ class LParsingNode(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ParsingNode):
+        if not isinstance(other, LParsingNode):
             return False
 
         return self.__dict__ == other.__dict__

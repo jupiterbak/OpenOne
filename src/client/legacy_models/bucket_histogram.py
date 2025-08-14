@@ -31,7 +31,7 @@ class LBucketHistogram(object):
         'max': 'float',
         'round_min': 'float',
         'round_max': 'float',
-        'buckets': 'list[HistogramBucketValue]',
+        'buckets': 'list[LHistogramBucketValue]',
         'quartiles': 'object'
     }
 
@@ -45,7 +45,7 @@ class LBucketHistogram(object):
     }
 
     def __init__(self, min=None, max=None, round_min=None, round_max=None, buckets=None, quartiles=None):  # noqa: E501
-        """BucketHistogram - a model defined in Swagger"""  # noqa: E501
+        """LBucketHistogram - a model defined in Swagger"""  # noqa: E501
         self._min = None
         self._max = None
         self._round_min = None
@@ -62,20 +62,20 @@ class LBucketHistogram(object):
 
     @property
     def min(self):
-        """Gets the min of this BucketHistogram.  # noqa: E501
+        """Gets the min of this LBucketHistogram.  # noqa: E501
 
 
-        :return: The min of this BucketHistogram.  # noqa: E501
+        :return: The min of this LBucketHistogram.  # noqa: E501
         :rtype: float
         """
         return self._min
 
     @min.setter
     def min(self, min):
-        """Sets the min of this BucketHistogram.
+        """Sets the min of this LBucketHistogram.
 
 
-        :param min: The min of this BucketHistogram.  # noqa: E501
+        :param min: The min of this LBucketHistogram.  # noqa: E501
         :type: float
         """
         if min is None:
@@ -85,20 +85,20 @@ class LBucketHistogram(object):
 
     @property
     def max(self):
-        """Gets the max of this BucketHistogram.  # noqa: E501
+        """Gets the max of this LBucketHistogram.  # noqa: E501
 
 
-        :return: The max of this BucketHistogram.  # noqa: E501
+        :return: The max of this LBucketHistogram.  # noqa: E501
         :rtype: float
         """
         return self._max
 
     @max.setter
     def max(self, max):
-        """Sets the max of this BucketHistogram.
+        """Sets the max of this LBucketHistogram.
 
 
-        :param max: The max of this BucketHistogram.  # noqa: E501
+        :param max: The max of this LBucketHistogram.  # noqa: E501
         :type: float
         """
         if max is None:
@@ -108,20 +108,20 @@ class LBucketHistogram(object):
 
     @property
     def round_min(self):
-        """Gets the round_min of this BucketHistogram.  # noqa: E501
+        """Gets the round_min of this LBucketHistogram.  # noqa: E501
 
 
-        :return: The round_min of this BucketHistogram.  # noqa: E501
+        :return: The round_min of this LBucketHistogram.  # noqa: E501
         :rtype: float
         """
         return self._round_min
 
     @round_min.setter
     def round_min(self, round_min):
-        """Sets the round_min of this BucketHistogram.
+        """Sets the round_min of this LBucketHistogram.
 
 
-        :param round_min: The round_min of this BucketHistogram.  # noqa: E501
+        :param round_min: The round_min of this LBucketHistogram.  # noqa: E501
         :type: float
         """
         if round_min is None:
@@ -131,20 +131,20 @@ class LBucketHistogram(object):
 
     @property
     def round_max(self):
-        """Gets the round_max of this BucketHistogram.  # noqa: E501
+        """Gets the round_max of this LBucketHistogram.  # noqa: E501
 
 
-        :return: The round_max of this BucketHistogram.  # noqa: E501
+        :return: The round_max of this LBucketHistogram.  # noqa: E501
         :rtype: float
         """
         return self._round_max
 
     @round_max.setter
     def round_max(self, round_max):
-        """Sets the round_max of this BucketHistogram.
+        """Sets the round_max of this LBucketHistogram.
 
 
-        :param round_max: The round_max of this BucketHistogram.  # noqa: E501
+        :param round_max: The round_max of this LBucketHistogram.  # noqa: E501
         :type: float
         """
         if round_max is None:
@@ -154,21 +154,21 @@ class LBucketHistogram(object):
 
     @property
     def buckets(self):
-        """Gets the buckets of this BucketHistogram.  # noqa: E501
+        """Gets the buckets of this LBucketHistogram.  # noqa: E501
 
 
-        :return: The buckets of this BucketHistogram.  # noqa: E501
-        :rtype: list[HistogramBucketValue]
+        :return: The buckets of this LBucketHistogram.  # noqa: E501
+        :rtype: list[LHistogramBucketValue]
         """
         return self._buckets
 
     @buckets.setter
     def buckets(self, buckets):
-        """Sets the buckets of this BucketHistogram.
+        """Sets the buckets of this LBucketHistogram.
 
 
-        :param buckets: The buckets of this BucketHistogram.  # noqa: E501
-        :type: list[HistogramBucketValue]
+        :param buckets: The buckets of this LBucketHistogram.  # noqa: E501
+        :type: list[LHistogramBucketValue]
         """
         if buckets is None:
             raise ValueError("Invalid value for `buckets`, must not be `None`")  # noqa: E501
@@ -177,20 +177,20 @@ class LBucketHistogram(object):
 
     @property
     def quartiles(self):
-        """Gets the quartiles of this BucketHistogram.  # noqa: E501
+        """Gets the quartiles of this LBucketHistogram.  # noqa: E501
 
 
-        :return: The quartiles of this BucketHistogram.  # noqa: E501
+        :return: The quartiles of this LBucketHistogram.  # noqa: E501
         :rtype: object
         """
         return self._quartiles
 
     @quartiles.setter
     def quartiles(self, quartiles):
-        """Sets the quartiles of this BucketHistogram.
+        """Sets the quartiles of this LBucketHistogram.
 
 
-        :param quartiles: The quartiles of this BucketHistogram.  # noqa: E501
+        :param quartiles: The quartiles of this LBucketHistogram.  # noqa: E501
         :type: object
         """
         if quartiles is None:
@@ -219,7 +219,7 @@ class LBucketHistogram(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(BucketHistogram, dict):
+        if issubclass(LBucketHistogram, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -235,7 +235,7 @@ class LBucketHistogram(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BucketHistogram):
+        if not isinstance(other, LBucketHistogram):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,7 +27,7 @@ class LEnvironmentParametersList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[EnvironmentParameter]'
+        'data': 'list[LEnvironmentParameter]'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LEnvironmentParametersList(object):
     }
 
     def __init__(self, data=None):  # noqa: E501
-        """EnvironmentParametersList - a model defined in Swagger"""  # noqa: E501
+        """LEnvironmentParametersList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self.discriminator = None
         self.data = data
 
     @property
     def data(self):
-        """Gets the data of this EnvironmentParametersList.  # noqa: E501
+        """Gets the data of this LEnvironmentParametersList.  # noqa: E501
 
 
-        :return: The data of this EnvironmentParametersList.  # noqa: E501
-        :rtype: list[EnvironmentParameter]
+        :return: The data of this LEnvironmentParametersList.  # noqa: E501
+        :rtype: list[LEnvironmentParameter]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this EnvironmentParametersList.
+        """Sets the data of this LEnvironmentParametersList.
 
 
-        :param data: The data of this EnvironmentParametersList.  # noqa: E501
-        :type: list[EnvironmentParameter]
+        :param data: The data of this LEnvironmentParametersList.  # noqa: E501
+        :type: list[LEnvironmentParameter]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LEnvironmentParametersList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(EnvironmentParametersList, dict):
+        if issubclass(LEnvironmentParametersList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LEnvironmentParametersList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, EnvironmentParametersList):
+        if not isinstance(other, LEnvironmentParametersList):
             return False
 
         return self.__dict__ == other.__dict__

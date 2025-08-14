@@ -27,7 +27,7 @@ class LRunPlanBody(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'plan_node_overrides': 'list[PlanNodeOverride]'
+        'plan_node_overrides': 'list[LPlanNodeOverride]'
     }
 
     attribute_map = {
@@ -35,7 +35,7 @@ class LRunPlanBody(object):
     }
 
     def __init__(self, plan_node_overrides=None):  # noqa: E501
-        """RunPlanBody - a model defined in Swagger"""  # noqa: E501
+        """LRunPlanBody - a model defined in Swagger"""  # noqa: E501
         self._plan_node_overrides = None
         self.discriminator = None
         if plan_node_overrides is not None:
@@ -43,23 +43,23 @@ class LRunPlanBody(object):
 
     @property
     def plan_node_overrides(self):
-        """Gets the plan_node_overrides of this RunPlanBody.  # noqa: E501
+        """Gets the plan_node_overrides of this LRunPlanBody.  # noqa: E501
 
         Collection of run parameter overrides that should be applied to flow run parameters of the respective plan node.  # noqa: E501
 
-        :return: The plan_node_overrides of this RunPlanBody.  # noqa: E501
-        :rtype: list[PlanNodeOverride]
+        :return: The plan_node_overrides of this LRunPlanBody.  # noqa: E501
+        :rtype: list[LPlanNodeOverride]
         """
         return self._plan_node_overrides
 
     @plan_node_overrides.setter
     def plan_node_overrides(self, plan_node_overrides):
-        """Sets the plan_node_overrides of this RunPlanBody.
+        """Sets the plan_node_overrides of this LRunPlanBody.
 
         Collection of run parameter overrides that should be applied to flow run parameters of the respective plan node.  # noqa: E501
 
-        :param plan_node_overrides: The plan_node_overrides of this RunPlanBody.  # noqa: E501
-        :type: list[PlanNodeOverride]
+        :param plan_node_overrides: The plan_node_overrides of this LRunPlanBody.  # noqa: E501
+        :type: list[LPlanNodeOverride]
         """
 
         self._plan_node_overrides = plan_node_overrides
@@ -85,7 +85,7 @@ class LRunPlanBody(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunPlanBody, dict):
+        if issubclass(LRunPlanBody, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -101,7 +101,7 @@ class LRunPlanBody(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunPlanBody):
+        if not isinstance(other, LRunPlanBody):
             return False
 
         return self.__dict__ == other.__dict__

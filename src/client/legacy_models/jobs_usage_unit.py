@@ -45,7 +45,7 @@ class LJobsUsageUnit(object):
     }
 
     def __init__(self, _from=None, to=None, job_count=None, ran_from=None, workspace_id=None, workspace_name=None):  # noqa: E501
-        """JobsUsageUnit - a model defined in Swagger"""  # noqa: E501
+        """LJobsUsageUnit - a model defined in Swagger"""  # noqa: E501
         self.__from = None
         self._to = None
         self._job_count = None
@@ -65,22 +65,22 @@ class LJobsUsageUnit(object):
 
     @property
     def _from(self):
-        """Gets the _from of this JobsUsageUnit.  # noqa: E501
+        """Gets the _from of this LJobsUsageUnit.  # noqa: E501
 
         milliseconds since Unix epoch  # noqa: E501
 
-        :return: The _from of this JobsUsageUnit.  # noqa: E501
+        :return: The _from of this LJobsUsageUnit.  # noqa: E501
         :rtype: int
         """
         return self.__from
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this JobsUsageUnit.
+        """Sets the _from of this LJobsUsageUnit.
 
         milliseconds since Unix epoch  # noqa: E501
 
-        :param _from: The _from of this JobsUsageUnit.  # noqa: E501
+        :param _from: The _from of this LJobsUsageUnit.  # noqa: E501
         :type: int
         """
         if _from is None:
@@ -90,22 +90,22 @@ class LJobsUsageUnit(object):
 
     @property
     def to(self):
-        """Gets the to of this JobsUsageUnit.  # noqa: E501
+        """Gets the to of this LJobsUsageUnit.  # noqa: E501
 
         milliseconds since Unix epoch  # noqa: E501
 
-        :return: The to of this JobsUsageUnit.  # noqa: E501
+        :return: The to of this LJobsUsageUnit.  # noqa: E501
         :rtype: int
         """
         return self._to
 
     @to.setter
     def to(self, to):
-        """Sets the to of this JobsUsageUnit.
+        """Sets the to of this LJobsUsageUnit.
 
         milliseconds since Unix epoch  # noqa: E501
 
-        :param to: The to of this JobsUsageUnit.  # noqa: E501
+        :param to: The to of this LJobsUsageUnit.  # noqa: E501
         :type: int
         """
         if to is None:
@@ -115,20 +115,20 @@ class LJobsUsageUnit(object):
 
     @property
     def job_count(self):
-        """Gets the job_count of this JobsUsageUnit.  # noqa: E501
+        """Gets the job_count of this LJobsUsageUnit.  # noqa: E501
 
 
-        :return: The job_count of this JobsUsageUnit.  # noqa: E501
+        :return: The job_count of this LJobsUsageUnit.  # noqa: E501
         :rtype: int
         """
         return self._job_count
 
     @job_count.setter
     def job_count(self, job_count):
-        """Sets the job_count of this JobsUsageUnit.
+        """Sets the job_count of this LJobsUsageUnit.
 
 
-        :param job_count: The job_count of this JobsUsageUnit.  # noqa: E501
+        :param job_count: The job_count of this LJobsUsageUnit.  # noqa: E501
         :type: int
         """
         if job_count is None:
@@ -138,20 +138,20 @@ class LJobsUsageUnit(object):
 
     @property
     def ran_from(self):
-        """Gets the ran_from of this JobsUsageUnit.  # noqa: E501
+        """Gets the ran_from of this LJobsUsageUnit.  # noqa: E501
 
 
-        :return: The ran_from of this JobsUsageUnit.  # noqa: E501
+        :return: The ran_from of this LJobsUsageUnit.  # noqa: E501
         :rtype: str
         """
         return self._ran_from
 
     @ran_from.setter
     def ran_from(self, ran_from):
-        """Sets the ran_from of this JobsUsageUnit.
+        """Sets the ran_from of this LJobsUsageUnit.
 
 
-        :param ran_from: The ran_from of this JobsUsageUnit.  # noqa: E501
+        :param ran_from: The ran_from of this LJobsUsageUnit.  # noqa: E501
         :type: str
         """
 
@@ -159,20 +159,20 @@ class LJobsUsageUnit(object):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this JobsUsageUnit.  # noqa: E501
+        """Gets the workspace_id of this LJobsUsageUnit.  # noqa: E501
 
 
-        :return: The workspace_id of this JobsUsageUnit.  # noqa: E501
+        :return: The workspace_id of this LJobsUsageUnit.  # noqa: E501
         :rtype: int
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this JobsUsageUnit.
+        """Sets the workspace_id of this LJobsUsageUnit.
 
 
-        :param workspace_id: The workspace_id of this JobsUsageUnit.  # noqa: E501
+        :param workspace_id: The workspace_id of this LJobsUsageUnit.  # noqa: E501
         :type: int
         """
 
@@ -180,20 +180,20 @@ class LJobsUsageUnit(object):
 
     @property
     def workspace_name(self):
-        """Gets the workspace_name of this JobsUsageUnit.  # noqa: E501
+        """Gets the workspace_name of this LJobsUsageUnit.  # noqa: E501
 
 
-        :return: The workspace_name of this JobsUsageUnit.  # noqa: E501
+        :return: The workspace_name of this LJobsUsageUnit.  # noqa: E501
         :rtype: str
         """
         return self._workspace_name
 
     @workspace_name.setter
     def workspace_name(self, workspace_name):
-        """Sets the workspace_name of this JobsUsageUnit.
+        """Sets the workspace_name of this LJobsUsageUnit.
 
 
-        :param workspace_name: The workspace_name of this JobsUsageUnit.  # noqa: E501
+        :param workspace_name: The workspace_name of this LJobsUsageUnit.  # noqa: E501
         :type: str
         """
 
@@ -220,7 +220,7 @@ class LJobsUsageUnit(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(JobsUsageUnit, dict):
+        if issubclass(LJobsUsageUnit, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -236,7 +236,7 @@ class LJobsUsageUnit(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, JobsUsageUnit):
+        if not isinstance(other, LJobsUsageUnit):
             return False
 
         return self.__dict__ == other.__dict__

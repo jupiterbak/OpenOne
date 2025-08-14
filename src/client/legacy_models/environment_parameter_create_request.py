@@ -28,7 +28,7 @@ class LEnvironmentParameterCreateRequest(object):
     """
     swagger_types = {
         'override_key': 'str',
-        'value': 'OneOfenvironmentParameterCreateRequestValue'
+        'value': 'LOneOfenvironmentParameterCreateRequestValue'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LEnvironmentParameterCreateRequest(object):
     }
 
     def __init__(self, override_key=None, value=None):  # noqa: E501
-        """EnvironmentParameterCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LEnvironmentParameterCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._override_key = None
         self._value = None
         self.discriminator = None
@@ -46,22 +46,22 @@ class LEnvironmentParameterCreateRequest(object):
 
     @property
     def override_key(self):
-        """Gets the override_key of this EnvironmentParameterCreateRequest.  # noqa: E501
+        """Gets the override_key of this LEnvironmentParameterCreateRequest.  # noqa: E501
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :return: The override_key of this EnvironmentParameterCreateRequest.  # noqa: E501
+        :return: The override_key of this LEnvironmentParameterCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._override_key
 
     @override_key.setter
     def override_key(self, override_key):
-        """Sets the override_key of this EnvironmentParameterCreateRequest.
+        """Sets the override_key of this LEnvironmentParameterCreateRequest.
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :param override_key: The override_key of this EnvironmentParameterCreateRequest.  # noqa: E501
+        :param override_key: The override_key of this LEnvironmentParameterCreateRequest.  # noqa: E501
         :type: str
         """
         if override_key is None:
@@ -71,21 +71,21 @@ class LEnvironmentParameterCreateRequest(object):
 
     @property
     def value(self):
-        """Gets the value of this EnvironmentParameterCreateRequest.  # noqa: E501
+        """Gets the value of this LEnvironmentParameterCreateRequest.  # noqa: E501
 
 
-        :return: The value of this EnvironmentParameterCreateRequest.  # noqa: E501
-        :rtype: OneOfenvironmentParameterCreateRequestValue
+        :return: The value of this LEnvironmentParameterCreateRequest.  # noqa: E501
+        :rtype: LOneOfenvironmentParameterCreateRequestValue
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this EnvironmentParameterCreateRequest.
+        """Sets the value of this LEnvironmentParameterCreateRequest.
 
 
-        :param value: The value of this EnvironmentParameterCreateRequest.  # noqa: E501
-        :type: OneOfenvironmentParameterCreateRequestValue
+        :param value: The value of this LEnvironmentParameterCreateRequest.  # noqa: E501
+        :type: LOneOfenvironmentParameterCreateRequestValue
         """
         if value is None:
             raise ValueError("Invalid value for `value`, must not be `None`")  # noqa: E501
@@ -113,7 +113,7 @@ class LEnvironmentParameterCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(EnvironmentParameterCreateRequest, dict):
+        if issubclass(LEnvironmentParameterCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LEnvironmentParameterCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, EnvironmentParameterCreateRequest):
+        if not isinstance(other, LEnvironmentParameterCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

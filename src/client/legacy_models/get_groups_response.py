@@ -37,7 +37,7 @@ class LGetGroupsResponse(object):
     }
 
     def __init__(self, groups=None, count=None):  # noqa: E501
-        """GetGroupsResponse - a model defined in Swagger"""  # noqa: E501
+        """LGetGroupsResponse - a model defined in Swagger"""  # noqa: E501
         self._groups = None
         self._count = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LGetGroupsResponse(object):
 
     @property
     def groups(self):
-        """Gets the groups of this GetGroupsResponse.  # noqa: E501
+        """Gets the groups of this LGetGroupsResponse.  # noqa: E501
 
 
-        :return: The groups of this GetGroupsResponse.  # noqa: E501
+        :return: The groups of this LGetGroupsResponse.  # noqa: E501
         :rtype: list[object]
         """
         return self._groups
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this GetGroupsResponse.
+        """Sets the groups of this LGetGroupsResponse.
 
 
-        :param groups: The groups of this GetGroupsResponse.  # noqa: E501
+        :param groups: The groups of this LGetGroupsResponse.  # noqa: E501
         :type: list[object]
         """
         if groups is None:
@@ -69,20 +69,20 @@ class LGetGroupsResponse(object):
 
     @property
     def count(self):
-        """Gets the count of this GetGroupsResponse.  # noqa: E501
+        """Gets the count of this LGetGroupsResponse.  # noqa: E501
 
 
-        :return: The count of this GetGroupsResponse.  # noqa: E501
+        :return: The count of this LGetGroupsResponse.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this GetGroupsResponse.
+        """Sets the count of this LGetGroupsResponse.
 
 
-        :param count: The count of this GetGroupsResponse.  # noqa: E501
+        :param count: The count of this LGetGroupsResponse.  # noqa: E501
         :type: int
         """
         if count is None:
@@ -111,7 +111,7 @@ class LGetGroupsResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(GetGroupsResponse, dict):
+        if issubclass(LGetGroupsResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LGetGroupsResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, GetGroupsResponse):
+        if not isinstance(other, LGetGroupsResponse):
             return False
 
         return self.__dict__ == other.__dict__

@@ -28,7 +28,7 @@ class LNow(object):
     """
     swagger_types = {
         'timezone': 'str',
-        'formats': 'AnyOfnowFormats',
+        'formats': 'LAnyOfnowFormats',
         'now': 'object'
     }
 
@@ -39,7 +39,7 @@ class LNow(object):
     }
 
     def __init__(self, timezone=None, formats=None, now=None):  # noqa: E501
-        """Now - a model defined in Swagger"""  # noqa: E501
+        """LNow - a model defined in Swagger"""  # noqa: E501
         self._timezone = None
         self._formats = None
         self._now = None
@@ -50,22 +50,22 @@ class LNow(object):
 
     @property
     def timezone(self):
-        """Gets the timezone of this Now.  # noqa: E501
+        """Gets the timezone of this LNow.  # noqa: E501
 
         ISO Timezone, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :return: The timezone of this Now.  # noqa: E501
+        :return: The timezone of this LNow.  # noqa: E501
         :rtype: str
         """
         return self._timezone
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this Now.
+        """Sets the timezone of this LNow.
 
         ISO Timezone, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :param timezone: The timezone of this Now.  # noqa: E501
+        :param timezone: The timezone of this LNow.  # noqa: E501
         :type: str
         """
         if timezone is None:
@@ -75,21 +75,21 @@ class LNow(object):
 
     @property
     def formats(self):
-        """Gets the formats of this Now.  # noqa: E501
+        """Gets the formats of this LNow.  # noqa: E501
 
 
-        :return: The formats of this Now.  # noqa: E501
-        :rtype: AnyOfnowFormats
+        :return: The formats of this LNow.  # noqa: E501
+        :rtype: LAnyOfnowFormats
         """
         return self._formats
 
     @formats.setter
     def formats(self, formats):
-        """Sets the formats of this Now.
+        """Sets the formats of this LNow.
 
 
-        :param formats: The formats of this Now.  # noqa: E501
-        :type: AnyOfnowFormats
+        :param formats: The formats of this LNow.  # noqa: E501
+        :type: LAnyOfnowFormats
         """
         if formats is None:
             raise ValueError("Invalid value for `formats`, must not be `None`")  # noqa: E501
@@ -98,22 +98,22 @@ class LNow(object):
 
     @property
     def now(self):
-        """Gets the now of this Now.  # noqa: E501
+        """Gets the now of this LNow.  # noqa: E501
 
         Resolves to now.  # noqa: E501
 
-        :return: The now of this Now.  # noqa: E501
+        :return: The now of this LNow.  # noqa: E501
         :rtype: object
         """
         return self._now
 
     @now.setter
     def now(self, now):
-        """Sets the now of this Now.
+        """Sets the now of this LNow.
 
         Resolves to now.  # noqa: E501
 
-        :param now: The now of this Now.  # noqa: E501
+        :param now: The now of this LNow.  # noqa: E501
         :type: object
         """
         if now is None:
@@ -142,7 +142,7 @@ class LNow(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Now, dict):
+        if issubclass(LNow, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -158,7 +158,7 @@ class LNow(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Now):
+        if not isinstance(other, LNow):
             return False
 
         return self.__dict__ == other.__dict__

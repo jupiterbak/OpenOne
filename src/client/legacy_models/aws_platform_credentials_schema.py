@@ -28,7 +28,7 @@ class LAwsPlatformCredentialsSchema(object):
     """
     swagger_types = {
         'platform': 'str',
-        'platform_credentials': 'AwsPlatformCredentials'
+        'platform_credentials': 'LAwsPlatformCredentials'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LAwsPlatformCredentialsSchema(object):
     }
 
     def __init__(self, platform=None, platform_credentials=None):  # noqa: E501
-        """AwsPlatformCredentialsSchema - a model defined in Swagger"""  # noqa: E501
+        """LAwsPlatformCredentialsSchema - a model defined in Swagger"""  # noqa: E501
         self._platform = None
         self._platform_credentials = None
         self.discriminator = None
@@ -46,22 +46,22 @@ class LAwsPlatformCredentialsSchema(object):
 
     @property
     def platform(self):
-        """Gets the platform of this AwsPlatformCredentialsSchema.  # noqa: E501
+        """Gets the platform of this LAwsPlatformCredentialsSchema.  # noqa: E501
 
          * `gcp` - GCP platform credentials * `aws` - AWS platform credentials * `azure` - Azure platform credentials  # noqa: E501
 
-        :return: The platform of this AwsPlatformCredentialsSchema.  # noqa: E501
+        :return: The platform of this LAwsPlatformCredentialsSchema.  # noqa: E501
         :rtype: str
         """
         return self._platform
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this AwsPlatformCredentialsSchema.
+        """Sets the platform of this LAwsPlatformCredentialsSchema.
 
          * `gcp` - GCP platform credentials * `aws` - AWS platform credentials * `azure` - Azure platform credentials  # noqa: E501
 
-        :param platform: The platform of this AwsPlatformCredentialsSchema.  # noqa: E501
+        :param platform: The platform of this LAwsPlatformCredentialsSchema.  # noqa: E501
         :type: str
         """
         if platform is None:
@@ -77,21 +77,21 @@ class LAwsPlatformCredentialsSchema(object):
 
     @property
     def platform_credentials(self):
-        """Gets the platform_credentials of this AwsPlatformCredentialsSchema.  # noqa: E501
+        """Gets the platform_credentials of this LAwsPlatformCredentialsSchema.  # noqa: E501
 
 
-        :return: The platform_credentials of this AwsPlatformCredentialsSchema.  # noqa: E501
-        :rtype: AwsPlatformCredentials
+        :return: The platform_credentials of this LAwsPlatformCredentialsSchema.  # noqa: E501
+        :rtype: LAwsPlatformCredentials
         """
         return self._platform_credentials
 
     @platform_credentials.setter
     def platform_credentials(self, platform_credentials):
-        """Sets the platform_credentials of this AwsPlatformCredentialsSchema.
+        """Sets the platform_credentials of this LAwsPlatformCredentialsSchema.
 
 
-        :param platform_credentials: The platform_credentials of this AwsPlatformCredentialsSchema.  # noqa: E501
-        :type: AwsPlatformCredentials
+        :param platform_credentials: The platform_credentials of this LAwsPlatformCredentialsSchema.  # noqa: E501
+        :type: LAwsPlatformCredentials
         """
         if platform_credentials is None:
             raise ValueError("Invalid value for `platform_credentials`, must not be `None`")  # noqa: E501
@@ -119,7 +119,7 @@ class LAwsPlatformCredentialsSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AwsPlatformCredentialsSchema, dict):
+        if issubclass(LAwsPlatformCredentialsSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -135,7 +135,7 @@ class LAwsPlatformCredentialsSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AwsPlatformCredentialsSchema):
+        if not isinstance(other, LAwsPlatformCredentialsSchema):
             return False
 
         return self.__dict__ == other.__dict__

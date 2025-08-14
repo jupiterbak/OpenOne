@@ -33,7 +33,7 @@ class LRunParameterValueDestinationSchema(object):
     }
 
     def __init__(self):  # noqa: E501
-        """RunParameterValueDestinationSchema - a model defined in Swagger"""  # noqa: E501
+        """LRunParameterValueDestinationSchema - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LRunParameterValueDestinationSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunParameterValueDestinationSchema, dict):
+        if issubclass(LRunParameterValueDestinationSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LRunParameterValueDestinationSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunParameterValueDestinationSchema):
+        if not isinstance(other, LRunParameterValueDestinationSchema):
             return False
 
         return self.__dict__ == other.__dict__

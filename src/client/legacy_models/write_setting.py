@@ -36,7 +36,7 @@ class LWriteSetting(object):
         'delim': 'str',
         'has_quotes': 'bool',
         'include_mismatches': 'bool',
-        'id': 'AnyOfwriteSettingId',
+        'id': 'LAnyOfwriteSettingId',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'creator': 'object',
@@ -63,7 +63,7 @@ class LWriteSetting(object):
     }
 
     def __init__(self, path=None, action=None, format=None, compression=None, header=None, as_single_file=None, delim=None, has_quotes=None, include_mismatches=None, id=None, created_at=None, updated_at=None, creator=None, updater=None, connection_id=None):  # noqa: E501
-        """WriteSetting - a model defined in Swagger"""  # noqa: E501
+        """LWriteSetting - a model defined in Swagger"""  # noqa: E501
         self._path = None
         self._action = None
         self._format = None
@@ -112,22 +112,22 @@ class LWriteSetting(object):
 
     @property
     def path(self):
-        """Gets the path of this WriteSetting.  # noqa: E501
+        """Gets the path of this LWriteSetting.  # noqa: E501
 
         The fully qualified path to the output location where to write the results.  # noqa: E501
 
-        :return: The path of this WriteSetting.  # noqa: E501
+        :return: The path of this LWriteSetting.  # noqa: E501
         :rtype: str
         """
         return self._path
 
     @path.setter
     def path(self, path):
-        """Sets the path of this WriteSetting.
+        """Sets the path of this LWriteSetting.
 
         The fully qualified path to the output location where to write the results.  # noqa: E501
 
-        :param path: The path of this WriteSetting.  # noqa: E501
+        :param path: The path of this LWriteSetting.  # noqa: E501
         :type: str
         """
 
@@ -135,22 +135,22 @@ class LWriteSetting(object):
 
     @property
     def action(self):
-        """Gets the action of this WriteSetting.  # noqa: E501
+        """Gets the action of this LWriteSetting.  # noqa: E501
 
         If the output file or directory exists,   you can specify one of the following actions * `create` - Create a new, parallel location, preserving the old results. * `append` - Add the new results to the old results. * `overwrite` - Replace the old results with the new results.  # noqa: E501
 
-        :return: The action of this WriteSetting.  # noqa: E501
+        :return: The action of this LWriteSetting.  # noqa: E501
         :rtype: str
         """
         return self._action
 
     @action.setter
     def action(self, action):
-        """Sets the action of this WriteSetting.
+        """Sets the action of this LWriteSetting.
 
         If the output file or directory exists,   you can specify one of the following actions * `create` - Create a new, parallel location, preserving the old results. * `append` - Add the new results to the old results. * `overwrite` - Replace the old results with the new results.  # noqa: E501
 
-        :param action: The action of this WriteSetting.  # noqa: E501
+        :param action: The action of this LWriteSetting.  # noqa: E501
         :type: str
         """
         allowed_values = ["create", "append", "overwrite"]  # noqa: E501
@@ -164,22 +164,22 @@ class LWriteSetting(object):
 
     @property
     def format(self):
-        """Gets the format of this WriteSetting.  # noqa: E501
+        """Gets the format of this LWriteSetting.  # noqa: E501
 
         Output format for the results. Specify one of the supported values. * `csv` - CSV format. When using `csv`, you can specify a custom delimiter using the `delim` parameter. * `json` - JSON format * `avro` - Avro format * `pqt` - Parquet format * `hyper` - Tableau Hyper format  # noqa: E501
 
-        :return: The format of this WriteSetting.  # noqa: E501
+        :return: The format of this LWriteSetting.  # noqa: E501
         :rtype: str
         """
         return self._format
 
     @format.setter
     def format(self, format):
-        """Sets the format of this WriteSetting.
+        """Sets the format of this LWriteSetting.
 
         Output format for the results. Specify one of the supported values. * `csv` - CSV format. When using `csv`, you can specify a custom delimiter using the `delim` parameter. * `json` - JSON format * `avro` - Avro format * `pqt` - Parquet format * `hyper` - Tableau Hyper format  # noqa: E501
 
-        :param format: The format of this WriteSetting.  # noqa: E501
+        :param format: The format of this LWriteSetting.  # noqa: E501
         :type: str
         """
         allowed_values = ["csv", "json", "avro", "pqt", "hyper"]  # noqa: E501
@@ -193,22 +193,22 @@ class LWriteSetting(object):
 
     @property
     def compression(self):
-        """Gets the compression of this WriteSetting.  # noqa: E501
+        """Gets the compression of this LWriteSetting.  # noqa: E501
 
         For csv and json results, you can optionally compress them using `bzip2` or `gzip` compression. Default is none. > ℹ️ **NOTE**: If compression is applied, the filename in the `path` value must end with the appropriate extension for the type of compression: `.gz` for *gzip* and `.bz2` for *bzip2* * `none` - No compression * `gzip` - Use `gzip` compression * `bzip2` - Use `bzip2` compression * `snappy` - Use `snappy` compression  # noqa: E501
 
-        :return: The compression of this WriteSetting.  # noqa: E501
+        :return: The compression of this LWriteSetting.  # noqa: E501
         :rtype: str
         """
         return self._compression
 
     @compression.setter
     def compression(self, compression):
-        """Sets the compression of this WriteSetting.
+        """Sets the compression of this LWriteSetting.
 
         For csv and json results, you can optionally compress them using `bzip2` or `gzip` compression. Default is none. > ℹ️ **NOTE**: If compression is applied, the filename in the `path` value must end with the appropriate extension for the type of compression: `.gz` for *gzip* and `.bz2` for *bzip2* * `none` - No compression * `gzip` - Use `gzip` compression * `bzip2` - Use `bzip2` compression * `snappy` - Use `snappy` compression  # noqa: E501
 
-        :param compression: The compression of this WriteSetting.  # noqa: E501
+        :param compression: The compression of this LWriteSetting.  # noqa: E501
         :type: str
         """
         allowed_values = ["none", "gzip", "bzip2", "snappy"]  # noqa: E501
@@ -222,22 +222,22 @@ class LWriteSetting(object):
 
     @property
     def header(self):
-        """Gets the header of this WriteSetting.  # noqa: E501
+        """Gets the header of this LWriteSetting.  # noqa: E501
 
         For csv results with action set to `create` or `append`, this value determines if a header row with column names is inserted at the top of the results. Default is `false`.  # noqa: E501
 
-        :return: The header of this WriteSetting.  # noqa: E501
+        :return: The header of this LWriteSetting.  # noqa: E501
         :rtype: bool
         """
         return self._header
 
     @header.setter
     def header(self, header):
-        """Sets the header of this WriteSetting.
+        """Sets the header of this LWriteSetting.
 
         For csv results with action set to `create` or `append`, this value determines if a header row with column names is inserted at the top of the results. Default is `false`.  # noqa: E501
 
-        :param header: The header of this WriteSetting.  # noqa: E501
+        :param header: The header of this LWriteSetting.  # noqa: E501
         :type: bool
         """
 
@@ -245,22 +245,22 @@ class LWriteSetting(object):
 
     @property
     def as_single_file(self):
-        """Gets the as_single_file of this WriteSetting.  # noqa: E501
+        """Gets the as_single_file of this LWriteSetting.  # noqa: E501
 
         For `csv` and `json` results, this value determines if the results are concatenated into a single file or stored as multiple files. Default is `false`.  # noqa: E501
 
-        :return: The as_single_file of this WriteSetting.  # noqa: E501
+        :return: The as_single_file of this LWriteSetting.  # noqa: E501
         :rtype: bool
         """
         return self._as_single_file
 
     @as_single_file.setter
     def as_single_file(self, as_single_file):
-        """Sets the as_single_file of this WriteSetting.
+        """Sets the as_single_file of this LWriteSetting.
 
         For `csv` and `json` results, this value determines if the results are concatenated into a single file or stored as multiple files. Default is `false`.  # noqa: E501
 
-        :param as_single_file: The as_single_file of this WriteSetting.  # noqa: E501
+        :param as_single_file: The as_single_file of this LWriteSetting.  # noqa: E501
         :type: bool
         """
 
@@ -268,22 +268,22 @@ class LWriteSetting(object):
 
     @property
     def delim(self):
-        """Gets the delim of this WriteSetting.  # noqa: E501
+        """Gets the delim of this LWriteSetting.  # noqa: E501
 
         The delimiter between field values in an output row. Only relevant if the chosen `format` is `csv`  # noqa: E501
 
-        :return: The delim of this WriteSetting.  # noqa: E501
+        :return: The delim of this LWriteSetting.  # noqa: E501
         :rtype: str
         """
         return self._delim
 
     @delim.setter
     def delim(self, delim):
-        """Sets the delim of this WriteSetting.
+        """Sets the delim of this LWriteSetting.
 
         The delimiter between field values in an output row. Only relevant if the chosen `format` is `csv`  # noqa: E501
 
-        :param delim: The delim of this WriteSetting.  # noqa: E501
+        :param delim: The delim of this LWriteSetting.  # noqa: E501
         :type: str
         """
 
@@ -291,22 +291,22 @@ class LWriteSetting(object):
 
     @property
     def has_quotes(self):
-        """Gets the has_quotes of this WriteSetting.  # noqa: E501
+        """Gets the has_quotes of this LWriteSetting.  # noqa: E501
 
         If true, each field in the output is wrapped in double-quotes.  # noqa: E501
 
-        :return: The has_quotes of this WriteSetting.  # noqa: E501
+        :return: The has_quotes of this LWriteSetting.  # noqa: E501
         :rtype: bool
         """
         return self._has_quotes
 
     @has_quotes.setter
     def has_quotes(self, has_quotes):
-        """Sets the has_quotes of this WriteSetting.
+        """Sets the has_quotes of this LWriteSetting.
 
         If true, each field in the output is wrapped in double-quotes.  # noqa: E501
 
-        :param has_quotes: The has_quotes of this WriteSetting.  # noqa: E501
+        :param has_quotes: The has_quotes of this LWriteSetting.  # noqa: E501
         :type: bool
         """
 
@@ -314,22 +314,22 @@ class LWriteSetting(object):
 
     @property
     def include_mismatches(self):
-        """Gets the include_mismatches of this WriteSetting.  # noqa: E501
+        """Gets the include_mismatches of this LWriteSetting.  # noqa: E501
 
         If true, write out mismatched values as a string.  # noqa: E501
 
-        :return: The include_mismatches of this WriteSetting.  # noqa: E501
+        :return: The include_mismatches of this LWriteSetting.  # noqa: E501
         :rtype: bool
         """
         return self._include_mismatches
 
     @include_mismatches.setter
     def include_mismatches(self, include_mismatches):
-        """Sets the include_mismatches of this WriteSetting.
+        """Sets the include_mismatches of this LWriteSetting.
 
         If true, write out mismatched values as a string.  # noqa: E501
 
-        :param include_mismatches: The include_mismatches of this WriteSetting.  # noqa: E501
+        :param include_mismatches: The include_mismatches of this LWriteSetting.  # noqa: E501
         :type: bool
         """
 
@@ -337,21 +337,21 @@ class LWriteSetting(object):
 
     @property
     def id(self):
-        """Gets the id of this WriteSetting.  # noqa: E501
+        """Gets the id of this LWriteSetting.  # noqa: E501
 
 
-        :return: The id of this WriteSetting.  # noqa: E501
-        :rtype: AnyOfwriteSettingId
+        :return: The id of this LWriteSetting.  # noqa: E501
+        :rtype: LAnyOfwriteSettingId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WriteSetting.
+        """Sets the id of this LWriteSetting.
 
 
-        :param id: The id of this WriteSetting.  # noqa: E501
-        :type: AnyOfwriteSettingId
+        :param id: The id of this LWriteSetting.  # noqa: E501
+        :type: LAnyOfwriteSettingId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -360,22 +360,22 @@ class LWriteSetting(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this WriteSetting.  # noqa: E501
+        """Gets the created_at of this LWriteSetting.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this WriteSetting.  # noqa: E501
+        :return: The created_at of this LWriteSetting.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this WriteSetting.
+        """Sets the created_at of this LWriteSetting.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this WriteSetting.  # noqa: E501
+        :param created_at: The created_at of this LWriteSetting.  # noqa: E501
         :type: datetime
         """
 
@@ -383,22 +383,22 @@ class LWriteSetting(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this WriteSetting.  # noqa: E501
+        """Gets the updated_at of this LWriteSetting.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this WriteSetting.  # noqa: E501
+        :return: The updated_at of this LWriteSetting.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this WriteSetting.
+        """Sets the updated_at of this LWriteSetting.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this WriteSetting.  # noqa: E501
+        :param updated_at: The updated_at of this LWriteSetting.  # noqa: E501
         :type: datetime
         """
 
@@ -406,20 +406,20 @@ class LWriteSetting(object):
 
     @property
     def creator(self):
-        """Gets the creator of this WriteSetting.  # noqa: E501
+        """Gets the creator of this LWriteSetting.  # noqa: E501
 
 
-        :return: The creator of this WriteSetting.  # noqa: E501
+        :return: The creator of this LWriteSetting.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this WriteSetting.
+        """Sets the creator of this LWriteSetting.
 
 
-        :param creator: The creator of this WriteSetting.  # noqa: E501
+        :param creator: The creator of this LWriteSetting.  # noqa: E501
         :type: object
         """
 
@@ -427,20 +427,20 @@ class LWriteSetting(object):
 
     @property
     def updater(self):
-        """Gets the updater of this WriteSetting.  # noqa: E501
+        """Gets the updater of this LWriteSetting.  # noqa: E501
 
 
-        :return: The updater of this WriteSetting.  # noqa: E501
+        :return: The updater of this LWriteSetting.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this WriteSetting.
+        """Sets the updater of this LWriteSetting.
 
 
-        :param updater: The updater of this WriteSetting.  # noqa: E501
+        :param updater: The updater of this LWriteSetting.  # noqa: E501
         :type: object
         """
 
@@ -448,22 +448,22 @@ class LWriteSetting(object):
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this WriteSetting.  # noqa: E501
+        """Gets the connection_id of this LWriteSetting.  # noqa: E501
 
         Internal identifier of the connection to use when writing to a SFTP destination.  # noqa: E501
 
-        :return: The connection_id of this WriteSetting.  # noqa: E501
+        :return: The connection_id of this LWriteSetting.  # noqa: E501
         :rtype: str
         """
         return self._connection_id
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this WriteSetting.
+        """Sets the connection_id of this LWriteSetting.
 
         Internal identifier of the connection to use when writing to a SFTP destination.  # noqa: E501
 
-        :param connection_id: The connection_id of this WriteSetting.  # noqa: E501
+        :param connection_id: The connection_id of this LWriteSetting.  # noqa: E501
         :type: str
         """
 
@@ -490,7 +490,7 @@ class LWriteSetting(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WriteSetting, dict):
+        if issubclass(LWriteSetting, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -506,7 +506,7 @@ class LWriteSetting(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WriteSetting):
+        if not isinstance(other, LWriteSetting):
             return False
 
         return self.__dict__ == other.__dict__

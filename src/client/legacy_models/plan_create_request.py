@@ -29,7 +29,7 @@ class LPlanCreateRequest(object):
     swagger_types = {
         'name': 'str',
         'description': 'str',
-        'original_plan_id': 'AnyOfplanCreateRequestOriginalPlanId'
+        'original_plan_id': 'LAnyOfplanCreateRequestOriginalPlanId'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class LPlanCreateRequest(object):
     }
 
     def __init__(self, name=None, description=None, original_plan_id=None):  # noqa: E501
-        """PlanCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LPlanCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._description = None
         self._original_plan_id = None
@@ -52,22 +52,22 @@ class LPlanCreateRequest(object):
 
     @property
     def name(self):
-        """Gets the name of this PlanCreateRequest.  # noqa: E501
+        """Gets the name of this LPlanCreateRequest.  # noqa: E501
 
         Display name of the plan.  # noqa: E501
 
-        :return: The name of this PlanCreateRequest.  # noqa: E501
+        :return: The name of this LPlanCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PlanCreateRequest.
+        """Sets the name of this LPlanCreateRequest.
 
         Display name of the plan.  # noqa: E501
 
-        :param name: The name of this PlanCreateRequest.  # noqa: E501
+        :param name: The name of this LPlanCreateRequest.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -77,22 +77,22 @@ class LPlanCreateRequest(object):
 
     @property
     def description(self):
-        """Gets the description of this PlanCreateRequest.  # noqa: E501
+        """Gets the description of this LPlanCreateRequest.  # noqa: E501
 
         User-friendly description for the plan.  # noqa: E501
 
-        :return: The description of this PlanCreateRequest.  # noqa: E501
+        :return: The description of this LPlanCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PlanCreateRequest.
+        """Sets the description of this LPlanCreateRequest.
 
         User-friendly description for the plan.  # noqa: E501
 
-        :param description: The description of this PlanCreateRequest.  # noqa: E501
+        :param description: The description of this LPlanCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -100,21 +100,21 @@ class LPlanCreateRequest(object):
 
     @property
     def original_plan_id(self):
-        """Gets the original_plan_id of this PlanCreateRequest.  # noqa: E501
+        """Gets the original_plan_id of this LPlanCreateRequest.  # noqa: E501
 
 
-        :return: The original_plan_id of this PlanCreateRequest.  # noqa: E501
-        :rtype: AnyOfplanCreateRequestOriginalPlanId
+        :return: The original_plan_id of this LPlanCreateRequest.  # noqa: E501
+        :rtype: LAnyOfplanCreateRequestOriginalPlanId
         """
         return self._original_plan_id
 
     @original_plan_id.setter
     def original_plan_id(self, original_plan_id):
-        """Sets the original_plan_id of this PlanCreateRequest.
+        """Sets the original_plan_id of this LPlanCreateRequest.
 
 
-        :param original_plan_id: The original_plan_id of this PlanCreateRequest.  # noqa: E501
-        :type: AnyOfplanCreateRequestOriginalPlanId
+        :param original_plan_id: The original_plan_id of this LPlanCreateRequest.  # noqa: E501
+        :type: LAnyOfplanCreateRequestOriginalPlanId
         """
 
         self._original_plan_id = original_plan_id
@@ -140,7 +140,7 @@ class LPlanCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanCreateRequest, dict):
+        if issubclass(LPlanCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -156,7 +156,7 @@ class LPlanCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanCreateRequest):
+        if not isinstance(other, LPlanCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

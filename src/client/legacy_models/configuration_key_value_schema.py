@@ -37,7 +37,7 @@ class LConfigurationKeyValueSchema(object):
     }
 
     def __init__(self, key=None, value=None):  # noqa: E501
-        """ConfigurationKeyValueSchema - a model defined in Swagger"""  # noqa: E501
+        """LConfigurationKeyValueSchema - a model defined in Swagger"""  # noqa: E501
         self._key = None
         self._value = None
         self.discriminator = None
@@ -46,22 +46,22 @@ class LConfigurationKeyValueSchema(object):
 
     @property
     def key(self):
-        """Gets the key of this ConfigurationKeyValueSchema.  # noqa: E501
+        """Gets the key of this LConfigurationKeyValueSchema.  # noqa: E501
 
         Configuration key  # noqa: E501
 
-        :return: The key of this ConfigurationKeyValueSchema.  # noqa: E501
+        :return: The key of this LConfigurationKeyValueSchema.  # noqa: E501
         :rtype: str
         """
         return self._key
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ConfigurationKeyValueSchema.
+        """Sets the key of this LConfigurationKeyValueSchema.
 
         Configuration key  # noqa: E501
 
-        :param key: The key of this ConfigurationKeyValueSchema.  # noqa: E501
+        :param key: The key of this LConfigurationKeyValueSchema.  # noqa: E501
         :type: str
         """
         if key is None:
@@ -71,20 +71,20 @@ class LConfigurationKeyValueSchema(object):
 
     @property
     def value(self):
-        """Gets the value of this ConfigurationKeyValueSchema.  # noqa: E501
+        """Gets the value of this LConfigurationKeyValueSchema.  # noqa: E501
 
 
-        :return: The value of this ConfigurationKeyValueSchema.  # noqa: E501
+        :return: The value of this LConfigurationKeyValueSchema.  # noqa: E501
         :rtype: object
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ConfigurationKeyValueSchema.
+        """Sets the value of this LConfigurationKeyValueSchema.
 
 
-        :param value: The value of this ConfigurationKeyValueSchema.  # noqa: E501
+        :param value: The value of this LConfigurationKeyValueSchema.  # noqa: E501
         :type: object
         """
         if value is None:
@@ -113,7 +113,7 @@ class LConfigurationKeyValueSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConfigurationKeyValueSchema, dict):
+        if issubclass(LConfigurationKeyValueSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LConfigurationKeyValueSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConfigurationKeyValueSchema):
+        if not isinstance(other, LConfigurationKeyValueSchema):
             return False
 
         return self.__dict__ == other.__dict__

@@ -33,7 +33,7 @@ class LString(object):
     }
 
     def __init__(self):  # noqa: E501
-        """String - a model defined in Swagger"""  # noqa: E501
+        """LString - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LString(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(String, dict):
+        if issubclass(LString, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LString(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, String):
+        if not isinstance(other, LString):
             return False
 
         return self.__dict__ == other.__dict__

@@ -29,7 +29,7 @@ class LPlanNodeOverride(object):
     swagger_types = {
         'handle': 'str',
         'override_key': 'str',
-        'value': 'OneOfplanNodeOverrideValue'
+        'value': 'LOneOfplanNodeOverrideValue'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class LPlanNodeOverride(object):
     }
 
     def __init__(self, handle=None, override_key=None, value=None):  # noqa: E501
-        """PlanNodeOverride - a model defined in Swagger"""  # noqa: E501
+        """LPlanNodeOverride - a model defined in Swagger"""  # noqa: E501
         self._handle = None
         self._override_key = None
         self._value = None
@@ -50,22 +50,22 @@ class LPlanNodeOverride(object):
 
     @property
     def handle(self):
-        """Gets the handle of this PlanNodeOverride.  # noqa: E501
+        """Gets the handle of this LPlanNodeOverride.  # noqa: E501
 
         The parameter override will be attached to the plan node with this handle.  # noqa: E501
 
-        :return: The handle of this PlanNodeOverride.  # noqa: E501
+        :return: The handle of this LPlanNodeOverride.  # noqa: E501
         :rtype: str
         """
         return self._handle
 
     @handle.setter
     def handle(self, handle):
-        """Sets the handle of this PlanNodeOverride.
+        """Sets the handle of this LPlanNodeOverride.
 
         The parameter override will be attached to the plan node with this handle.  # noqa: E501
 
-        :param handle: The handle of this PlanNodeOverride.  # noqa: E501
+        :param handle: The handle of this LPlanNodeOverride.  # noqa: E501
         :type: str
         """
         if handle is None:
@@ -75,22 +75,22 @@ class LPlanNodeOverride(object):
 
     @property
     def override_key(self):
-        """Gets the override_key of this PlanNodeOverride.  # noqa: E501
+        """Gets the override_key of this LPlanNodeOverride.  # noqa: E501
 
         OverrideKey of the run parameter to override.  # noqa: E501
 
-        :return: The override_key of this PlanNodeOverride.  # noqa: E501
+        :return: The override_key of this LPlanNodeOverride.  # noqa: E501
         :rtype: str
         """
         return self._override_key
 
     @override_key.setter
     def override_key(self, override_key):
-        """Sets the override_key of this PlanNodeOverride.
+        """Sets the override_key of this LPlanNodeOverride.
 
         OverrideKey of the run parameter to override.  # noqa: E501
 
-        :param override_key: The override_key of this PlanNodeOverride.  # noqa: E501
+        :param override_key: The override_key of this LPlanNodeOverride.  # noqa: E501
         :type: str
         """
         if override_key is None:
@@ -100,21 +100,21 @@ class LPlanNodeOverride(object):
 
     @property
     def value(self):
-        """Gets the value of this PlanNodeOverride.  # noqa: E501
+        """Gets the value of this LPlanNodeOverride.  # noqa: E501
 
 
-        :return: The value of this PlanNodeOverride.  # noqa: E501
-        :rtype: OneOfplanNodeOverrideValue
+        :return: The value of this LPlanNodeOverride.  # noqa: E501
+        :rtype: LOneOfplanNodeOverrideValue
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PlanNodeOverride.
+        """Sets the value of this LPlanNodeOverride.
 
 
-        :param value: The value of this PlanNodeOverride.  # noqa: E501
-        :type: OneOfplanNodeOverrideValue
+        :param value: The value of this LPlanNodeOverride.  # noqa: E501
+        :type: LOneOfplanNodeOverrideValue
         """
         if value is None:
             raise ValueError("Invalid value for `value`, must not be `None`")  # noqa: E501
@@ -142,7 +142,7 @@ class LPlanNodeOverride(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanNodeOverride, dict):
+        if issubclass(LPlanNodeOverride, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -158,7 +158,7 @@ class LPlanNodeOverride(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanNodeOverride):
+        if not isinstance(other, LPlanNodeOverride):
             return False
 
         return self.__dict__ == other.__dict__

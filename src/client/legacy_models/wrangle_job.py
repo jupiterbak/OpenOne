@@ -43,7 +43,7 @@ class LWrangleJob(object):
     }
 
     def __init__(self, execution_language=None, cp_job_id=None, wranglescript=None, emrcluster=None, id=None):  # noqa: E501
-        """WrangleJob - a model defined in Swagger"""  # noqa: E501
+        """LWrangleJob - a model defined in Swagger"""  # noqa: E501
         self._execution_language = None
         self._cp_job_id = None
         self._wranglescript = None
@@ -62,22 +62,22 @@ class LWrangleJob(object):
 
     @property
     def execution_language(self):
-        """Gets the execution_language of this WrangleJob.  # noqa: E501
+        """Gets the execution_language of this LWrangleJob.  # noqa: E501
 
         Execution language. Indicate on which engine the job was executed.   Can be null/missing for scheduled jobs that fail during the validation phase.  * `photon` - Photon engine. High performance embedded engine designed for small datasets (up to 1GB).       Not available for all product editions. * `amp` - Amp engine. * `xml-amp` - XML-AMP engine. Only available for standard workflows.    * `emrSpark` - Spark engine running on EMR       # noqa: E501
 
-        :return: The execution_language of this WrangleJob.  # noqa: E501
+        :return: The execution_language of this LWrangleJob.  # noqa: E501
         :rtype: str
         """
         return self._execution_language
 
     @execution_language.setter
     def execution_language(self, execution_language):
-        """Sets the execution_language of this WrangleJob.
+        """Sets the execution_language of this LWrangleJob.
 
         Execution language. Indicate on which engine the job was executed.   Can be null/missing for scheduled jobs that fail during the validation phase.  * `photon` - Photon engine. High performance embedded engine designed for small datasets (up to 1GB).       Not available for all product editions. * `amp` - Amp engine. * `xml-amp` - XML-AMP engine. Only available for standard workflows.    * `emrSpark` - Spark engine running on EMR       # noqa: E501
 
-        :param execution_language: The execution_language of this WrangleJob.  # noqa: E501
+        :param execution_language: The execution_language of this LWrangleJob.  # noqa: E501
         :type: str
         """
         allowed_values = ["photon", "amp", "xml-amp", "emrSpark"]  # noqa: E501
@@ -91,20 +91,20 @@ class LWrangleJob(object):
 
     @property
     def cp_job_id(self):
-        """Gets the cp_job_id of this WrangleJob.  # noqa: E501
+        """Gets the cp_job_id of this LWrangleJob.  # noqa: E501
 
 
-        :return: The cp_job_id of this WrangleJob.  # noqa: E501
+        :return: The cp_job_id of this LWrangleJob.  # noqa: E501
         :rtype: str
         """
         return self._cp_job_id
 
     @cp_job_id.setter
     def cp_job_id(self, cp_job_id):
-        """Sets the cp_job_id of this WrangleJob.
+        """Sets the cp_job_id of this LWrangleJob.
 
 
-        :param cp_job_id: The cp_job_id of this WrangleJob.  # noqa: E501
+        :param cp_job_id: The cp_job_id of this LWrangleJob.  # noqa: E501
         :type: str
         """
 
@@ -112,20 +112,20 @@ class LWrangleJob(object):
 
     @property
     def wranglescript(self):
-        """Gets the wranglescript of this WrangleJob.  # noqa: E501
+        """Gets the wranglescript of this LWrangleJob.  # noqa: E501
 
 
-        :return: The wranglescript of this WrangleJob.  # noqa: E501
+        :return: The wranglescript of this LWrangleJob.  # noqa: E501
         :rtype: object
         """
         return self._wranglescript
 
     @wranglescript.setter
     def wranglescript(self, wranglescript):
-        """Sets the wranglescript of this WrangleJob.
+        """Sets the wranglescript of this LWrangleJob.
 
 
-        :param wranglescript: The wranglescript of this WrangleJob.  # noqa: E501
+        :param wranglescript: The wranglescript of this LWrangleJob.  # noqa: E501
         :type: object
         """
 
@@ -133,20 +133,20 @@ class LWrangleJob(object):
 
     @property
     def emrcluster(self):
-        """Gets the emrcluster of this WrangleJob.  # noqa: E501
+        """Gets the emrcluster of this LWrangleJob.  # noqa: E501
 
 
-        :return: The emrcluster of this WrangleJob.  # noqa: E501
+        :return: The emrcluster of this LWrangleJob.  # noqa: E501
         :rtype: object
         """
         return self._emrcluster
 
     @emrcluster.setter
     def emrcluster(self, emrcluster):
-        """Sets the emrcluster of this WrangleJob.
+        """Sets the emrcluster of this LWrangleJob.
 
 
-        :param emrcluster: The emrcluster of this WrangleJob.  # noqa: E501
+        :param emrcluster: The emrcluster of this LWrangleJob.  # noqa: E501
         :type: object
         """
 
@@ -154,22 +154,22 @@ class LWrangleJob(object):
 
     @property
     def id(self):
-        """Gets the id of this WrangleJob.  # noqa: E501
+        """Gets the id of this LWrangleJob.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this WrangleJob.  # noqa: E501
+        :return: The id of this LWrangleJob.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WrangleJob.
+        """Sets the id of this LWrangleJob.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this WrangleJob.  # noqa: E501
+        :param id: The id of this LWrangleJob.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -198,7 +198,7 @@ class LWrangleJob(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WrangleJob, dict):
+        if issubclass(LWrangleJob, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -214,7 +214,7 @@ class LWrangleJob(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WrangleJob):
+        if not isinstance(other, LWrangleJob):
             return False
 
         return self.__dict__ == other.__dict__

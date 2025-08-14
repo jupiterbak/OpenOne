@@ -45,7 +45,7 @@ class LIoTableResponse(object):
     }
 
     def __init__(self, vendor=None, database_connect_string=None, relational_path=None, table=None, action=None, query=None):  # noqa: E501
-        """IoTableResponse - a model defined in Swagger"""  # noqa: E501
+        """LIoTableResponse - a model defined in Swagger"""  # noqa: E501
         self._vendor = None
         self._database_connect_string = None
         self._relational_path = None
@@ -64,20 +64,20 @@ class LIoTableResponse(object):
 
     @property
     def vendor(self):
-        """Gets the vendor of this IoTableResponse.  # noqa: E501
+        """Gets the vendor of this LIoTableResponse.  # noqa: E501
 
 
-        :return: The vendor of this IoTableResponse.  # noqa: E501
+        :return: The vendor of this LIoTableResponse.  # noqa: E501
         :rtype: str
         """
         return self._vendor
 
     @vendor.setter
     def vendor(self, vendor):
-        """Sets the vendor of this IoTableResponse.
+        """Sets the vendor of this LIoTableResponse.
 
 
-        :param vendor: The vendor of this IoTableResponse.  # noqa: E501
+        :param vendor: The vendor of this LIoTableResponse.  # noqa: E501
         :type: str
         """
         if vendor is None:
@@ -87,20 +87,20 @@ class LIoTableResponse(object):
 
     @property
     def database_connect_string(self):
-        """Gets the database_connect_string of this IoTableResponse.  # noqa: E501
+        """Gets the database_connect_string of this LIoTableResponse.  # noqa: E501
 
 
-        :return: The database_connect_string of this IoTableResponse.  # noqa: E501
+        :return: The database_connect_string of this LIoTableResponse.  # noqa: E501
         :rtype: str
         """
         return self._database_connect_string
 
     @database_connect_string.setter
     def database_connect_string(self, database_connect_string):
-        """Sets the database_connect_string of this IoTableResponse.
+        """Sets the database_connect_string of this LIoTableResponse.
 
 
-        :param database_connect_string: The database_connect_string of this IoTableResponse.  # noqa: E501
+        :param database_connect_string: The database_connect_string of this LIoTableResponse.  # noqa: E501
         :type: str
         """
         if database_connect_string is None:
@@ -110,20 +110,20 @@ class LIoTableResponse(object):
 
     @property
     def relational_path(self):
-        """Gets the relational_path of this IoTableResponse.  # noqa: E501
+        """Gets the relational_path of this LIoTableResponse.  # noqa: E501
 
 
-        :return: The relational_path of this IoTableResponse.  # noqa: E501
+        :return: The relational_path of this LIoTableResponse.  # noqa: E501
         :rtype: list[str]
         """
         return self._relational_path
 
     @relational_path.setter
     def relational_path(self, relational_path):
-        """Sets the relational_path of this IoTableResponse.
+        """Sets the relational_path of this LIoTableResponse.
 
 
-        :param relational_path: The relational_path of this IoTableResponse.  # noqa: E501
+        :param relational_path: The relational_path of this LIoTableResponse.  # noqa: E501
         :type: list[str]
         """
         if relational_path is None:
@@ -133,20 +133,20 @@ class LIoTableResponse(object):
 
     @property
     def table(self):
-        """Gets the table of this IoTableResponse.  # noqa: E501
+        """Gets the table of this LIoTableResponse.  # noqa: E501
 
 
-        :return: The table of this IoTableResponse.  # noqa: E501
+        :return: The table of this LIoTableResponse.  # noqa: E501
         :rtype: str
         """
         return self._table
 
     @table.setter
     def table(self, table):
-        """Sets the table of this IoTableResponse.
+        """Sets the table of this LIoTableResponse.
 
 
-        :param table: The table of this IoTableResponse.  # noqa: E501
+        :param table: The table of this LIoTableResponse.  # noqa: E501
         :type: str
         """
 
@@ -154,20 +154,20 @@ class LIoTableResponse(object):
 
     @property
     def action(self):
-        """Gets the action of this IoTableResponse.  # noqa: E501
+        """Gets the action of this LIoTableResponse.  # noqa: E501
 
 
-        :return: The action of this IoTableResponse.  # noqa: E501
+        :return: The action of this LIoTableResponse.  # noqa: E501
         :rtype: str
         """
         return self._action
 
     @action.setter
     def action(self, action):
-        """Sets the action of this IoTableResponse.
+        """Sets the action of this LIoTableResponse.
 
 
-        :param action: The action of this IoTableResponse.  # noqa: E501
+        :param action: The action of this LIoTableResponse.  # noqa: E501
         :type: str
         """
         if action is None:
@@ -177,22 +177,22 @@ class LIoTableResponse(object):
 
     @property
     def query(self):
-        """Gets the query of this IoTableResponse.  # noqa: E501
+        """Gets the query of this LIoTableResponse.  # noqa: E501
 
         For a datasource with a SQL snapshot, the query used to derive the table. If this field is non-null, it is assumed that relationalPath will be [] and table will be null, since both are determined by the query's contents  # noqa: E501
 
-        :return: The query of this IoTableResponse.  # noqa: E501
+        :return: The query of this LIoTableResponse.  # noqa: E501
         :rtype: list[str]
         """
         return self._query
 
     @query.setter
     def query(self, query):
-        """Sets the query of this IoTableResponse.
+        """Sets the query of this LIoTableResponse.
 
         For a datasource with a SQL snapshot, the query used to derive the table. If this field is non-null, it is assumed that relationalPath will be [] and table will be null, since both are determined by the query's contents  # noqa: E501
 
-        :param query: The query of this IoTableResponse.  # noqa: E501
+        :param query: The query of this LIoTableResponse.  # noqa: E501
         :type: list[str]
         """
 
@@ -219,7 +219,7 @@ class LIoTableResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(IoTableResponse, dict):
+        if issubclass(LIoTableResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -235,7 +235,7 @@ class LIoTableResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, IoTableResponse):
+        if not isinstance(other, LIoTableResponse):
             return False
 
         return self.__dict__ == other.__dict__

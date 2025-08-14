@@ -65,7 +65,7 @@ class LDataSource(object):
     }
 
     def __init__(self, dynamic_path=None, is_schematized=None, is_dynamic=None, is_converted=None, disable_type_inference=None, has_structuring=None, has_schema_errors=None, parsing_script=None, storage_location=None, connection=None, id=None, created_at=None, updated_at=None, creator=None, updater=None, workspace=None):  # noqa: E501
-        """DataSource - a model defined in Swagger"""  # noqa: E501
+        """LDataSource - a model defined in Swagger"""  # noqa: E501
         self._dynamic_path = None
         self._is_schematized = None
         self._is_dynamic = None
@@ -115,20 +115,20 @@ class LDataSource(object):
 
     @property
     def dynamic_path(self):
-        """Gets the dynamic_path of this DataSource.  # noqa: E501
+        """Gets the dynamic_path of this LDataSource.  # noqa: E501
 
 
-        :return: The dynamic_path of this DataSource.  # noqa: E501
+        :return: The dynamic_path of this LDataSource.  # noqa: E501
         :rtype: str
         """
         return self._dynamic_path
 
     @dynamic_path.setter
     def dynamic_path(self, dynamic_path):
-        """Sets the dynamic_path of this DataSource.
+        """Sets the dynamic_path of this LDataSource.
 
 
-        :param dynamic_path: The dynamic_path of this DataSource.  # noqa: E501
+        :param dynamic_path: The dynamic_path of this LDataSource.  # noqa: E501
         :type: str
         """
 
@@ -136,20 +136,20 @@ class LDataSource(object):
 
     @property
     def is_schematized(self):
-        """Gets the is_schematized of this DataSource.  # noqa: E501
+        """Gets the is_schematized of this LDataSource.  # noqa: E501
 
 
-        :return: The is_schematized of this DataSource.  # noqa: E501
+        :return: The is_schematized of this LDataSource.  # noqa: E501
         :rtype: bool
         """
         return self._is_schematized
 
     @is_schematized.setter
     def is_schematized(self, is_schematized):
-        """Sets the is_schematized of this DataSource.
+        """Sets the is_schematized of this LDataSource.
 
 
-        :param is_schematized: The is_schematized of this DataSource.  # noqa: E501
+        :param is_schematized: The is_schematized of this LDataSource.  # noqa: E501
         :type: bool
         """
 
@@ -157,20 +157,20 @@ class LDataSource(object):
 
     @property
     def is_dynamic(self):
-        """Gets the is_dynamic of this DataSource.  # noqa: E501
+        """Gets the is_dynamic of this LDataSource.  # noqa: E501
 
 
-        :return: The is_dynamic of this DataSource.  # noqa: E501
+        :return: The is_dynamic of this LDataSource.  # noqa: E501
         :rtype: bool
         """
         return self._is_dynamic
 
     @is_dynamic.setter
     def is_dynamic(self, is_dynamic):
-        """Sets the is_dynamic of this DataSource.
+        """Sets the is_dynamic of this LDataSource.
 
 
-        :param is_dynamic: The is_dynamic of this DataSource.  # noqa: E501
+        :param is_dynamic: The is_dynamic of this LDataSource.  # noqa: E501
         :type: bool
         """
 
@@ -178,20 +178,20 @@ class LDataSource(object):
 
     @property
     def is_converted(self):
-        """Gets the is_converted of this DataSource.  # noqa: E501
+        """Gets the is_converted of this LDataSource.  # noqa: E501
 
 
-        :return: The is_converted of this DataSource.  # noqa: E501
+        :return: The is_converted of this LDataSource.  # noqa: E501
         :rtype: bool
         """
         return self._is_converted
 
     @is_converted.setter
     def is_converted(self, is_converted):
-        """Sets the is_converted of this DataSource.
+        """Sets the is_converted of this LDataSource.
 
 
-        :param is_converted: The is_converted of this DataSource.  # noqa: E501
+        :param is_converted: The is_converted of this LDataSource.  # noqa: E501
         :type: bool
         """
 
@@ -199,20 +199,20 @@ class LDataSource(object):
 
     @property
     def disable_type_inference(self):
-        """Gets the disable_type_inference of this DataSource.  # noqa: E501
+        """Gets the disable_type_inference of this LDataSource.  # noqa: E501
 
 
-        :return: The disable_type_inference of this DataSource.  # noqa: E501
+        :return: The disable_type_inference of this LDataSource.  # noqa: E501
         :rtype: bool
         """
         return self._disable_type_inference
 
     @disable_type_inference.setter
     def disable_type_inference(self, disable_type_inference):
-        """Sets the disable_type_inference of this DataSource.
+        """Sets the disable_type_inference of this LDataSource.
 
 
-        :param disable_type_inference: The disable_type_inference of this DataSource.  # noqa: E501
+        :param disable_type_inference: The disable_type_inference of this LDataSource.  # noqa: E501
         :type: bool
         """
 
@@ -220,20 +220,20 @@ class LDataSource(object):
 
     @property
     def has_structuring(self):
-        """Gets the has_structuring of this DataSource.  # noqa: E501
+        """Gets the has_structuring of this LDataSource.  # noqa: E501
 
 
-        :return: The has_structuring of this DataSource.  # noqa: E501
+        :return: The has_structuring of this LDataSource.  # noqa: E501
         :rtype: bool
         """
         return self._has_structuring
 
     @has_structuring.setter
     def has_structuring(self, has_structuring):
-        """Sets the has_structuring of this DataSource.
+        """Sets the has_structuring of this LDataSource.
 
 
-        :param has_structuring: The has_structuring of this DataSource.  # noqa: E501
+        :param has_structuring: The has_structuring of this LDataSource.  # noqa: E501
         :type: bool
         """
 
@@ -241,20 +241,20 @@ class LDataSource(object):
 
     @property
     def has_schema_errors(self):
-        """Gets the has_schema_errors of this DataSource.  # noqa: E501
+        """Gets the has_schema_errors of this LDataSource.  # noqa: E501
 
 
-        :return: The has_schema_errors of this DataSource.  # noqa: E501
+        :return: The has_schema_errors of this LDataSource.  # noqa: E501
         :rtype: bool
         """
         return self._has_schema_errors
 
     @has_schema_errors.setter
     def has_schema_errors(self, has_schema_errors):
-        """Sets the has_schema_errors of this DataSource.
+        """Sets the has_schema_errors of this LDataSource.
 
 
-        :param has_schema_errors: The has_schema_errors of this DataSource.  # noqa: E501
+        :param has_schema_errors: The has_schema_errors of this LDataSource.  # noqa: E501
         :type: bool
         """
 
@@ -262,20 +262,20 @@ class LDataSource(object):
 
     @property
     def parsing_script(self):
-        """Gets the parsing_script of this DataSource.  # noqa: E501
+        """Gets the parsing_script of this LDataSource.  # noqa: E501
 
 
-        :return: The parsing_script of this DataSource.  # noqa: E501
+        :return: The parsing_script of this LDataSource.  # noqa: E501
         :rtype: object
         """
         return self._parsing_script
 
     @parsing_script.setter
     def parsing_script(self, parsing_script):
-        """Sets the parsing_script of this DataSource.
+        """Sets the parsing_script of this LDataSource.
 
 
-        :param parsing_script: The parsing_script of this DataSource.  # noqa: E501
+        :param parsing_script: The parsing_script of this LDataSource.  # noqa: E501
         :type: object
         """
 
@@ -283,20 +283,20 @@ class LDataSource(object):
 
     @property
     def storage_location(self):
-        """Gets the storage_location of this DataSource.  # noqa: E501
+        """Gets the storage_location of this LDataSource.  # noqa: E501
 
 
-        :return: The storage_location of this DataSource.  # noqa: E501
+        :return: The storage_location of this LDataSource.  # noqa: E501
         :rtype: object
         """
         return self._storage_location
 
     @storage_location.setter
     def storage_location(self, storage_location):
-        """Sets the storage_location of this DataSource.
+        """Sets the storage_location of this LDataSource.
 
 
-        :param storage_location: The storage_location of this DataSource.  # noqa: E501
+        :param storage_location: The storage_location of this LDataSource.  # noqa: E501
         :type: object
         """
 
@@ -304,20 +304,20 @@ class LDataSource(object):
 
     @property
     def connection(self):
-        """Gets the connection of this DataSource.  # noqa: E501
+        """Gets the connection of this LDataSource.  # noqa: E501
 
 
-        :return: The connection of this DataSource.  # noqa: E501
+        :return: The connection of this LDataSource.  # noqa: E501
         :rtype: object
         """
         return self._connection
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this DataSource.
+        """Sets the connection of this LDataSource.
 
 
-        :param connection: The connection of this DataSource.  # noqa: E501
+        :param connection: The connection of this LDataSource.  # noqa: E501
         :type: object
         """
 
@@ -325,22 +325,22 @@ class LDataSource(object):
 
     @property
     def id(self):
-        """Gets the id of this DataSource.  # noqa: E501
+        """Gets the id of this LDataSource.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this DataSource.  # noqa: E501
+        :return: The id of this LDataSource.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DataSource.
+        """Sets the id of this LDataSource.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this DataSource.  # noqa: E501
+        :param id: The id of this LDataSource.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -350,22 +350,22 @@ class LDataSource(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this DataSource.  # noqa: E501
+        """Gets the created_at of this LDataSource.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this DataSource.  # noqa: E501
+        :return: The created_at of this LDataSource.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this DataSource.
+        """Sets the created_at of this LDataSource.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this DataSource.  # noqa: E501
+        :param created_at: The created_at of this LDataSource.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -375,22 +375,22 @@ class LDataSource(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this DataSource.  # noqa: E501
+        """Gets the updated_at of this LDataSource.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this DataSource.  # noqa: E501
+        :return: The updated_at of this LDataSource.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this DataSource.
+        """Sets the updated_at of this LDataSource.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this DataSource.  # noqa: E501
+        :param updated_at: The updated_at of this LDataSource.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -400,20 +400,20 @@ class LDataSource(object):
 
     @property
     def creator(self):
-        """Gets the creator of this DataSource.  # noqa: E501
+        """Gets the creator of this LDataSource.  # noqa: E501
 
 
-        :return: The creator of this DataSource.  # noqa: E501
+        :return: The creator of this LDataSource.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this DataSource.
+        """Sets the creator of this LDataSource.
 
 
-        :param creator: The creator of this DataSource.  # noqa: E501
+        :param creator: The creator of this LDataSource.  # noqa: E501
         :type: object
         """
 
@@ -421,20 +421,20 @@ class LDataSource(object):
 
     @property
     def updater(self):
-        """Gets the updater of this DataSource.  # noqa: E501
+        """Gets the updater of this LDataSource.  # noqa: E501
 
 
-        :return: The updater of this DataSource.  # noqa: E501
+        :return: The updater of this LDataSource.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this DataSource.
+        """Sets the updater of this LDataSource.
 
 
-        :param updater: The updater of this DataSource.  # noqa: E501
+        :param updater: The updater of this LDataSource.  # noqa: E501
         :type: object
         """
 
@@ -442,20 +442,20 @@ class LDataSource(object):
 
     @property
     def workspace(self):
-        """Gets the workspace of this DataSource.  # noqa: E501
+        """Gets the workspace of this LDataSource.  # noqa: E501
 
 
-        :return: The workspace of this DataSource.  # noqa: E501
+        :return: The workspace of this LDataSource.  # noqa: E501
         :rtype: object
         """
         return self._workspace
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DataSource.
+        """Sets the workspace of this LDataSource.
 
 
-        :param workspace: The workspace of this DataSource.  # noqa: E501
+        :param workspace: The workspace of this LDataSource.  # noqa: E501
         :type: object
         """
 
@@ -482,7 +482,7 @@ class LDataSource(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DataSource, dict):
+        if issubclass(LDataSource, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -498,7 +498,7 @@ class LDataSource(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DataSource):
+        if not isinstance(other, LDataSource):
             return False
 
         return self.__dict__ == other.__dict__

@@ -28,7 +28,7 @@ class LExactlyDateRange(object):
     """
     swagger_types = {
         'timezone': 'str',
-        'formats': 'AnyOfexactlyDateRangeFormats',
+        'formats': 'LAnyOfexactlyDateRangeFormats',
         'exactly': 'object'
     }
 
@@ -39,7 +39,7 @@ class LExactlyDateRange(object):
     }
 
     def __init__(self, timezone=None, formats=None, exactly=None):  # noqa: E501
-        """ExactlyDateRange - a model defined in Swagger"""  # noqa: E501
+        """LExactlyDateRange - a model defined in Swagger"""  # noqa: E501
         self._timezone = None
         self._formats = None
         self._exactly = None
@@ -50,22 +50,22 @@ class LExactlyDateRange(object):
 
     @property
     def timezone(self):
-        """Gets the timezone of this ExactlyDateRange.  # noqa: E501
+        """Gets the timezone of this LExactlyDateRange.  # noqa: E501
 
         ISO Timezone, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :return: The timezone of this ExactlyDateRange.  # noqa: E501
+        :return: The timezone of this LExactlyDateRange.  # noqa: E501
         :rtype: str
         """
         return self._timezone
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this ExactlyDateRange.
+        """Sets the timezone of this LExactlyDateRange.
 
         ISO Timezone, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :param timezone: The timezone of this ExactlyDateRange.  # noqa: E501
+        :param timezone: The timezone of this LExactlyDateRange.  # noqa: E501
         :type: str
         """
         if timezone is None:
@@ -75,21 +75,21 @@ class LExactlyDateRange(object):
 
     @property
     def formats(self):
-        """Gets the formats of this ExactlyDateRange.  # noqa: E501
+        """Gets the formats of this LExactlyDateRange.  # noqa: E501
 
 
-        :return: The formats of this ExactlyDateRange.  # noqa: E501
-        :rtype: AnyOfexactlyDateRangeFormats
+        :return: The formats of this LExactlyDateRange.  # noqa: E501
+        :rtype: LAnyOfexactlyDateRangeFormats
         """
         return self._formats
 
     @formats.setter
     def formats(self, formats):
-        """Sets the formats of this ExactlyDateRange.
+        """Sets the formats of this LExactlyDateRange.
 
 
-        :param formats: The formats of this ExactlyDateRange.  # noqa: E501
-        :type: AnyOfexactlyDateRangeFormats
+        :param formats: The formats of this LExactlyDateRange.  # noqa: E501
+        :type: LAnyOfexactlyDateRangeFormats
         """
         if formats is None:
             raise ValueError("Invalid value for `formats`, must not be `None`")  # noqa: E501
@@ -98,22 +98,22 @@ class LExactlyDateRange(object):
 
     @property
     def exactly(self):
-        """Gets the exactly of this ExactlyDateRange.  # noqa: E501
+        """Gets the exactly of this LExactlyDateRange.  # noqa: E501
 
         Date range that is defined by `{now} - ({amount} * {unit})` ago. Eg. if unit is `week` and `amount` is `2`, the date range is \"2 weeks ago\". The size of the range depends on the `format` passed to the date range.  # noqa: E501
 
-        :return: The exactly of this ExactlyDateRange.  # noqa: E501
+        :return: The exactly of this LExactlyDateRange.  # noqa: E501
         :rtype: object
         """
         return self._exactly
 
     @exactly.setter
     def exactly(self, exactly):
-        """Sets the exactly of this ExactlyDateRange.
+        """Sets the exactly of this LExactlyDateRange.
 
         Date range that is defined by `{now} - ({amount} * {unit})` ago. Eg. if unit is `week` and `amount` is `2`, the date range is \"2 weeks ago\". The size of the range depends on the `format` passed to the date range.  # noqa: E501
 
-        :param exactly: The exactly of this ExactlyDateRange.  # noqa: E501
+        :param exactly: The exactly of this LExactlyDateRange.  # noqa: E501
         :type: object
         """
         if exactly is None:
@@ -142,7 +142,7 @@ class LExactlyDateRange(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ExactlyDateRange, dict):
+        if issubclass(LExactlyDateRange, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -158,7 +158,7 @@ class LExactlyDateRange(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ExactlyDateRange):
+        if not isinstance(other, LExactlyDateRange):
             return False
 
         return self.__dict__ == other.__dict__

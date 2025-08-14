@@ -35,27 +35,27 @@ class LRunParameterTrifactaPattern(object):
     }
 
     def __init__(self, trifacta_pattern=None):  # noqa: E501
-        """RunParameterTrifactaPattern - a model defined in Swagger"""  # noqa: E501
+        """LRunParameterTrifactaPattern - a model defined in Swagger"""  # noqa: E501
         self._trifacta_pattern = None
         self.discriminator = None
         self.trifacta_pattern = trifacta_pattern
 
     @property
     def trifacta_pattern(self):
-        """Gets the trifacta_pattern of this RunParameterTrifactaPattern.  # noqa: E501
+        """Gets the trifacta_pattern of this LRunParameterTrifactaPattern.  # noqa: E501
 
 
-        :return: The trifacta_pattern of this RunParameterTrifactaPattern.  # noqa: E501
+        :return: The trifacta_pattern of this LRunParameterTrifactaPattern.  # noqa: E501
         :rtype: object
         """
         return self._trifacta_pattern
 
     @trifacta_pattern.setter
     def trifacta_pattern(self, trifacta_pattern):
-        """Sets the trifacta_pattern of this RunParameterTrifactaPattern.
+        """Sets the trifacta_pattern of this LRunParameterTrifactaPattern.
 
 
-        :param trifacta_pattern: The trifacta_pattern of this RunParameterTrifactaPattern.  # noqa: E501
+        :param trifacta_pattern: The trifacta_pattern of this LRunParameterTrifactaPattern.  # noqa: E501
         :type: object
         """
         if trifacta_pattern is None:
@@ -84,7 +84,7 @@ class LRunParameterTrifactaPattern(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunParameterTrifactaPattern, dict):
+        if issubclass(LRunParameterTrifactaPattern, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunParameterTrifactaPattern(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunParameterTrifactaPattern):
+        if not isinstance(other, LRunParameterTrifactaPattern):
             return False
 
         return self.__dict__ == other.__dict__

@@ -39,7 +39,7 @@ class LPersonObjectWithRole(object):
     }
 
     def __init__(self, person=None, role=None, policy=None):  # noqa: E501
-        """PersonObjectWithRole - a model defined in Swagger"""  # noqa: E501
+        """LPersonObjectWithRole - a model defined in Swagger"""  # noqa: E501
         self._person = None
         self._role = None
         self._policy = None
@@ -51,20 +51,20 @@ class LPersonObjectWithRole(object):
 
     @property
     def person(self):
-        """Gets the person of this PersonObjectWithRole.  # noqa: E501
+        """Gets the person of this LPersonObjectWithRole.  # noqa: E501
 
 
-        :return: The person of this PersonObjectWithRole.  # noqa: E501
+        :return: The person of this LPersonObjectWithRole.  # noqa: E501
         :rtype: object
         """
         return self._person
 
     @person.setter
     def person(self, person):
-        """Sets the person of this PersonObjectWithRole.
+        """Sets the person of this LPersonObjectWithRole.
 
 
-        :param person: The person of this PersonObjectWithRole.  # noqa: E501
+        :param person: The person of this LPersonObjectWithRole.  # noqa: E501
         :type: object
         """
         if person is None:
@@ -74,20 +74,20 @@ class LPersonObjectWithRole(object):
 
     @property
     def role(self):
-        """Gets the role of this PersonObjectWithRole.  # noqa: E501
+        """Gets the role of this LPersonObjectWithRole.  # noqa: E501
 
 
-        :return: The role of this PersonObjectWithRole.  # noqa: E501
+        :return: The role of this LPersonObjectWithRole.  # noqa: E501
         :rtype: str
         """
         return self._role
 
     @role.setter
     def role(self, role):
-        """Sets the role of this PersonObjectWithRole.
+        """Sets the role of this LPersonObjectWithRole.
 
 
-        :param role: The role of this PersonObjectWithRole.  # noqa: E501
+        :param role: The role of this LPersonObjectWithRole.  # noqa: E501
         :type: str
         """
         if role is None:
@@ -103,20 +103,20 @@ class LPersonObjectWithRole(object):
 
     @property
     def policy(self):
-        """Gets the policy of this PersonObjectWithRole.  # noqa: E501
+        """Gets the policy of this LPersonObjectWithRole.  # noqa: E501
 
 
-        :return: The policy of this PersonObjectWithRole.  # noqa: E501
+        :return: The policy of this LPersonObjectWithRole.  # noqa: E501
         :rtype: str
         """
         return self._policy
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this PersonObjectWithRole.
+        """Sets the policy of this LPersonObjectWithRole.
 
 
-        :param policy: The policy of this PersonObjectWithRole.  # noqa: E501
+        :param policy: The policy of this LPersonObjectWithRole.  # noqa: E501
         :type: str
         """
 
@@ -143,7 +143,7 @@ class LPersonObjectWithRole(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PersonObjectWithRole, dict):
+        if issubclass(LPersonObjectWithRole, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -159,7 +159,7 @@ class LPersonObjectWithRole(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PersonObjectWithRole):
+        if not isinstance(other, LPersonObjectWithRole):
             return False
 
         return self.__dict__ == other.__dict__

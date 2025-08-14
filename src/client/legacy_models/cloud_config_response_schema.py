@@ -27,9 +27,9 @@ class LCloudConfigResponseSchema(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'aws': 'AwsCloudConfigsResponseSchema',
-        'azure': 'AzureCloudConfigsResponseSchema',
-        'gcp': 'GcpCloudConfigResponseSchema'
+        'aws': 'LAwsCloudConfigsResponseSchema',
+        'azure': 'LAzureCloudConfigsResponseSchema',
+        'gcp': 'LGcpCloudConfigResponseSchema'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class LCloudConfigResponseSchema(object):
     }
 
     def __init__(self, aws=None, azure=None, gcp=None):  # noqa: E501
-        """CloudConfigResponseSchema - a model defined in Swagger"""  # noqa: E501
+        """LCloudConfigResponseSchema - a model defined in Swagger"""  # noqa: E501
         self._aws = None
         self._azure = None
         self._gcp = None
@@ -53,63 +53,63 @@ class LCloudConfigResponseSchema(object):
 
     @property
     def aws(self):
-        """Gets the aws of this CloudConfigResponseSchema.  # noqa: E501
+        """Gets the aws of this LCloudConfigResponseSchema.  # noqa: E501
 
 
-        :return: The aws of this CloudConfigResponseSchema.  # noqa: E501
-        :rtype: AwsCloudConfigsResponseSchema
+        :return: The aws of this LCloudConfigResponseSchema.  # noqa: E501
+        :rtype: LAwsCloudConfigsResponseSchema
         """
         return self._aws
 
     @aws.setter
     def aws(self, aws):
-        """Sets the aws of this CloudConfigResponseSchema.
+        """Sets the aws of this LCloudConfigResponseSchema.
 
 
-        :param aws: The aws of this CloudConfigResponseSchema.  # noqa: E501
-        :type: AwsCloudConfigsResponseSchema
+        :param aws: The aws of this LCloudConfigResponseSchema.  # noqa: E501
+        :type: LAwsCloudConfigsResponseSchema
         """
 
         self._aws = aws
 
     @property
     def azure(self):
-        """Gets the azure of this CloudConfigResponseSchema.  # noqa: E501
+        """Gets the azure of this LCloudConfigResponseSchema.  # noqa: E501
 
 
-        :return: The azure of this CloudConfigResponseSchema.  # noqa: E501
-        :rtype: AzureCloudConfigsResponseSchema
+        :return: The azure of this LCloudConfigResponseSchema.  # noqa: E501
+        :rtype: LAzureCloudConfigsResponseSchema
         """
         return self._azure
 
     @azure.setter
     def azure(self, azure):
-        """Sets the azure of this CloudConfigResponseSchema.
+        """Sets the azure of this LCloudConfigResponseSchema.
 
 
-        :param azure: The azure of this CloudConfigResponseSchema.  # noqa: E501
-        :type: AzureCloudConfigsResponseSchema
+        :param azure: The azure of this LCloudConfigResponseSchema.  # noqa: E501
+        :type: LAzureCloudConfigsResponseSchema
         """
 
         self._azure = azure
 
     @property
     def gcp(self):
-        """Gets the gcp of this CloudConfigResponseSchema.  # noqa: E501
+        """Gets the gcp of this LCloudConfigResponseSchema.  # noqa: E501
 
 
-        :return: The gcp of this CloudConfigResponseSchema.  # noqa: E501
-        :rtype: GcpCloudConfigResponseSchema
+        :return: The gcp of this LCloudConfigResponseSchema.  # noqa: E501
+        :rtype: LGcpCloudConfigResponseSchema
         """
         return self._gcp
 
     @gcp.setter
     def gcp(self, gcp):
-        """Sets the gcp of this CloudConfigResponseSchema.
+        """Sets the gcp of this LCloudConfigResponseSchema.
 
 
-        :param gcp: The gcp of this CloudConfigResponseSchema.  # noqa: E501
-        :type: GcpCloudConfigResponseSchema
+        :param gcp: The gcp of this LCloudConfigResponseSchema.  # noqa: E501
+        :type: LGcpCloudConfigResponseSchema
         """
 
         self._gcp = gcp
@@ -135,7 +135,7 @@ class LCloudConfigResponseSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(CloudConfigResponseSchema, dict):
+        if issubclass(LCloudConfigResponseSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -151,7 +151,7 @@ class LCloudConfigResponseSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CloudConfigResponseSchema):
+        if not isinstance(other, LCloudConfigResponseSchema):
             return False
 
         return self.__dict__ == other.__dict__

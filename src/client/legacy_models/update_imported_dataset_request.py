@@ -49,7 +49,7 @@ class LUpdateImportedDatasetRequest(object):
         'raw': 'str',
         'path': 'str',
         'dynamic_path': 'str',
-        'run_parameters': 'list[RunParameterInfo]',
+        'run_parameters': 'list[LRunParameterInfo]',
         'is_hidden': 'bool',
         'table_name': 'str',
         'relational_path': 'list[str]',
@@ -87,7 +87,7 @@ class LUpdateImportedDatasetRequest(object):
     }
 
     def __init__(self, id=None, job_status=None, jobgroup_id=None, visible=None, is_pending=None, num_flows=None, bucket_name=None, dynamic_bucket=None, dynamic_host=None, dynamic_user_info=None, name=None, description=None, disable_type_inference=None, type=None, is_converted=None, is_dynamic=False, host=None, userinfo=None, bucket=None, raw=None, path=None, dynamic_path=None, run_parameters=None, is_hidden=None, table_name=None, relational_path=None, columns=None):  # noqa: E501
-        """UpdateImportedDatasetRequest - a model defined in Swagger"""  # noqa: E501
+        """LUpdateImportedDatasetRequest - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._job_status = None
         self._jobgroup_id = None
@@ -173,22 +173,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def id(self):
-        """Gets the id of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the id of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The id of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateImportedDatasetRequest.
+        """Sets the id of this LUpdateImportedDatasetRequest.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param id: The id of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: int
         """
 
@@ -196,20 +196,20 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def job_status(self):
-        """Gets the job_status of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the job_status of this LUpdateImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The job_status of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The job_status of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._job_status
 
     @job_status.setter
     def job_status(self, job_status):
-        """Sets the job_status of this UpdateImportedDatasetRequest.
+        """Sets the job_status of this LUpdateImportedDatasetRequest.
 
 
-        :param job_status: The job_status of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param job_status: The job_status of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -217,20 +217,20 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def jobgroup_id(self):
-        """Gets the jobgroup_id of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the jobgroup_id of this LUpdateImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The jobgroup_id of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The jobgroup_id of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._jobgroup_id
 
     @jobgroup_id.setter
     def jobgroup_id(self, jobgroup_id):
-        """Sets the jobgroup_id of this UpdateImportedDatasetRequest.
+        """Sets the jobgroup_id of this LUpdateImportedDatasetRequest.
 
 
-        :param jobgroup_id: The jobgroup_id of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param jobgroup_id: The jobgroup_id of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -238,20 +238,20 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def visible(self):
-        """Gets the visible of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the visible of this LUpdateImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The visible of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The visible of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: bool
         """
         return self._visible
 
     @visible.setter
     def visible(self, visible):
-        """Sets the visible of this UpdateImportedDatasetRequest.
+        """Sets the visible of this LUpdateImportedDatasetRequest.
 
 
-        :param visible: The visible of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param visible: The visible of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: bool
         """
 
@@ -259,20 +259,20 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def is_pending(self):
-        """Gets the is_pending of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the is_pending of this LUpdateImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The is_pending of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The is_pending of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: bool
         """
         return self._is_pending
 
     @is_pending.setter
     def is_pending(self, is_pending):
-        """Sets the is_pending of this UpdateImportedDatasetRequest.
+        """Sets the is_pending of this LUpdateImportedDatasetRequest.
 
 
-        :param is_pending: The is_pending of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param is_pending: The is_pending of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: bool
         """
 
@@ -280,20 +280,20 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def num_flows(self):
-        """Gets the num_flows of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the num_flows of this LUpdateImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The num_flows of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The num_flows of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: int
         """
         return self._num_flows
 
     @num_flows.setter
     def num_flows(self, num_flows):
-        """Sets the num_flows of this UpdateImportedDatasetRequest.
+        """Sets the num_flows of this LUpdateImportedDatasetRequest.
 
 
-        :param num_flows: The num_flows of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param num_flows: The num_flows of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: int
         """
 
@@ -301,20 +301,20 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the bucket_name of this LUpdateImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The bucket_name of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The bucket_name of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._bucket_name
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this UpdateImportedDatasetRequest.
+        """Sets the bucket_name of this LUpdateImportedDatasetRequest.
 
 
-        :param bucket_name: The bucket_name of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param bucket_name: The bucket_name of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -322,22 +322,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def dynamic_bucket(self):
-        """Gets the dynamic_bucket of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the dynamic_bucket of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         Bucket used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :return: The dynamic_bucket of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The dynamic_bucket of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._dynamic_bucket
 
     @dynamic_bucket.setter
     def dynamic_bucket(self, dynamic_bucket):
-        """Sets the dynamic_bucket of this UpdateImportedDatasetRequest.
+        """Sets the dynamic_bucket of this LUpdateImportedDatasetRequest.
 
         Bucket used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :param dynamic_bucket: The dynamic_bucket of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param dynamic_bucket: The dynamic_bucket of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -345,22 +345,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def dynamic_host(self):
-        """Gets the dynamic_host of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the dynamic_host of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         Host used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :return: The dynamic_host of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The dynamic_host of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._dynamic_host
 
     @dynamic_host.setter
     def dynamic_host(self, dynamic_host):
-        """Sets the dynamic_host of this UpdateImportedDatasetRequest.
+        """Sets the dynamic_host of this LUpdateImportedDatasetRequest.
 
         Host used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :param dynamic_host: The dynamic_host of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param dynamic_host: The dynamic_host of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -368,22 +368,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def dynamic_user_info(self):
-        """Gets the dynamic_user_info of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the dynamic_user_info of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         User used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :return: The dynamic_user_info of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The dynamic_user_info of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._dynamic_user_info
 
     @dynamic_user_info.setter
     def dynamic_user_info(self, dynamic_user_info):
-        """Sets the dynamic_user_info of this UpdateImportedDatasetRequest.
+        """Sets the dynamic_user_info of this LUpdateImportedDatasetRequest.
 
         User used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :param dynamic_user_info: The dynamic_user_info of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param dynamic_user_info: The dynamic_user_info of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -391,22 +391,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def name(self):
-        """Gets the name of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the name of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         Display name of the imported dataset.  # noqa: E501
 
-        :return: The name of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The name of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateImportedDatasetRequest.
+        """Sets the name of this LUpdateImportedDatasetRequest.
 
         Display name of the imported dataset.  # noqa: E501
 
-        :param name: The name of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param name: The name of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -414,22 +414,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def description(self):
-        """Gets the description of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the description of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         User-friendly description for the imported dataset.  # noqa: E501
 
-        :return: The description of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The description of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateImportedDatasetRequest.
+        """Sets the description of this LUpdateImportedDatasetRequest.
 
         User-friendly description for the imported dataset.  # noqa: E501
 
-        :param description: The description of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param description: The description of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -437,22 +437,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def disable_type_inference(self):
-        """Gets the disable_type_inference of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the disable_type_inference of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         Only applicable to relational sources (database tables/views for e.g.). Prevent Alteryx Analytics Cloud type inference from running and inferring types by looking at the first rows of the dataset.  # noqa: E501
 
-        :return: The disable_type_inference of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The disable_type_inference of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: bool
         """
         return self._disable_type_inference
 
     @disable_type_inference.setter
     def disable_type_inference(self, disable_type_inference):
-        """Sets the disable_type_inference of this UpdateImportedDatasetRequest.
+        """Sets the disable_type_inference of this LUpdateImportedDatasetRequest.
 
         Only applicable to relational sources (database tables/views for e.g.). Prevent Alteryx Analytics Cloud type inference from running and inferring types by looking at the first rows of the dataset.  # noqa: E501
 
-        :param disable_type_inference: The disable_type_inference of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param disable_type_inference: The disable_type_inference of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: bool
         """
 
@@ -460,22 +460,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def type(self):
-        """Gets the type of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the type of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         Indicate the type of dataset. If not specified, the default storage protocol is used.  # noqa: E501
 
-        :return: The type of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The type of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateImportedDatasetRequest.
+        """Sets the type of this LUpdateImportedDatasetRequest.
 
         Indicate the type of dataset. If not specified, the default storage protocol is used.  # noqa: E501
 
-        :param type: The type of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param type: The type of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -483,22 +483,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def is_converted(self):
-        """Gets the is_converted of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the is_converted of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         Indicate if the imported dataset is converted. This is the case for Microsoft Excel Dataset for e.g.  # noqa: E501
 
-        :return: The is_converted of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The is_converted of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: bool
         """
         return self._is_converted
 
     @is_converted.setter
     def is_converted(self, is_converted):
-        """Sets the is_converted of this UpdateImportedDatasetRequest.
+        """Sets the is_converted of this LUpdateImportedDatasetRequest.
 
         Indicate if the imported dataset is converted. This is the case for Microsoft Excel Dataset for e.g.  # noqa: E501
 
-        :param is_converted: The is_converted of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param is_converted: The is_converted of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: bool
         """
 
@@ -506,22 +506,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def is_dynamic(self):
-        """Gets the is_dynamic of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the is_dynamic of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         indicate if the datasource is parameterized. In that case, a `dynamicPath` should be passed.  # noqa: E501
 
-        :return: The is_dynamic of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The is_dynamic of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: bool
         """
         return self._is_dynamic
 
     @is_dynamic.setter
     def is_dynamic(self, is_dynamic):
-        """Sets the is_dynamic of this UpdateImportedDatasetRequest.
+        """Sets the is_dynamic of this LUpdateImportedDatasetRequest.
 
         indicate if the datasource is parameterized. In that case, a `dynamicPath` should be passed.  # noqa: E501
 
-        :param is_dynamic: The is_dynamic of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param is_dynamic: The is_dynamic of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: bool
         """
 
@@ -529,22 +529,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def host(self):
-        """Gets the host of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the host of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         Host for the dataset  # noqa: E501
 
-        :return: The host of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The host of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._host
 
     @host.setter
     def host(self, host):
-        """Sets the host of this UpdateImportedDatasetRequest.
+        """Sets the host of this LUpdateImportedDatasetRequest.
 
         Host for the dataset  # noqa: E501
 
-        :param host: The host of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param host: The host of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -552,22 +552,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def userinfo(self):
-        """Gets the userinfo of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the userinfo of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         User info for the dataset  # noqa: E501
 
-        :return: The userinfo of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The userinfo of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._userinfo
 
     @userinfo.setter
     def userinfo(self, userinfo):
-        """Sets the userinfo of this UpdateImportedDatasetRequest.
+        """Sets the userinfo of this LUpdateImportedDatasetRequest.
 
         User info for the dataset  # noqa: E501
 
-        :param userinfo: The userinfo of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param userinfo: The userinfo of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -575,22 +575,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def bucket(self):
-        """Gets the bucket of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the bucket of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         The bucket is required if the datasource is stored in a bucket file system.  # noqa: E501
 
-        :return: The bucket of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The bucket of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._bucket
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this UpdateImportedDatasetRequest.
+        """Sets the bucket of this LUpdateImportedDatasetRequest.
 
         The bucket is required if the datasource is stored in a bucket file system.  # noqa: E501
 
-        :param bucket: The bucket of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param bucket: The bucket of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -598,22 +598,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def raw(self):
-        """Gets the raw of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the raw of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         Raw SQL query  # noqa: E501
 
-        :return: The raw of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The raw of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._raw
 
     @raw.setter
     def raw(self, raw):
-        """Sets the raw of this UpdateImportedDatasetRequest.
+        """Sets the raw of this LUpdateImportedDatasetRequest.
 
         Raw SQL query  # noqa: E501
 
-        :param raw: The raw of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param raw: The raw of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -621,20 +621,20 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def path(self):
-        """Gets the path of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the path of this LUpdateImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The path of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The path of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._path
 
     @path.setter
     def path(self, path):
-        """Sets the path of this UpdateImportedDatasetRequest.
+        """Sets the path of this LUpdateImportedDatasetRequest.
 
 
-        :param path: The path of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param path: The path of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -642,22 +642,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def dynamic_path(self):
-        """Gets the dynamic_path of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the dynamic_path of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         Path used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :return: The dynamic_path of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The dynamic_path of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._dynamic_path
 
     @dynamic_path.setter
     def dynamic_path(self, dynamic_path):
-        """Sets the dynamic_path of this UpdateImportedDatasetRequest.
+        """Sets the dynamic_path of this LUpdateImportedDatasetRequest.
 
         Path used when resolving the parameters. It is used when running a job or collecting a sample. It is different from the one used as a storage location which corresponds to the first match. The latter is used when doing a fast preview in the UI.  # noqa: E501
 
-        :param dynamic_path: The dynamic_path of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param dynamic_path: The dynamic_path of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -665,41 +665,41 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def run_parameters(self):
-        """Gets the run_parameters of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the run_parameters of this LUpdateImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The run_parameters of this UpdateImportedDatasetRequest.  # noqa: E501
-        :rtype: list[RunParameterInfo]
+        :return: The run_parameters of this LUpdateImportedDatasetRequest.  # noqa: E501
+        :rtype: list[LRunParameterInfo]
         """
         return self._run_parameters
 
     @run_parameters.setter
     def run_parameters(self, run_parameters):
-        """Sets the run_parameters of this UpdateImportedDatasetRequest.
+        """Sets the run_parameters of this LUpdateImportedDatasetRequest.
 
 
-        :param run_parameters: The run_parameters of this UpdateImportedDatasetRequest.  # noqa: E501
-        :type: list[RunParameterInfo]
+        :param run_parameters: The run_parameters of this LUpdateImportedDatasetRequest.  # noqa: E501
+        :type: list[LRunParameterInfo]
         """
 
         self._run_parameters = run_parameters
 
     @property
     def is_hidden(self):
-        """Gets the is_hidden of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the is_hidden of this LUpdateImportedDatasetRequest.  # noqa: E501
 
 
-        :return: The is_hidden of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The is_hidden of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: bool
         """
         return self._is_hidden
 
     @is_hidden.setter
     def is_hidden(self, is_hidden):
-        """Sets the is_hidden of this UpdateImportedDatasetRequest.
+        """Sets the is_hidden of this LUpdateImportedDatasetRequest.
 
 
-        :param is_hidden: The is_hidden of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param is_hidden: The is_hidden of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: bool
         """
 
@@ -707,22 +707,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def table_name(self):
-        """Gets the table_name of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the table_name of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         The name of the database table for this datasource. Used when updating a relational source.  # noqa: E501
 
-        :return: The table_name of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The table_name of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._table_name
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this UpdateImportedDatasetRequest.
+        """Sets the table_name of this LUpdateImportedDatasetRequest.
 
         The name of the database table for this datasource. Used when updating a relational source.  # noqa: E501
 
-        :param table_name: The table_name of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param table_name: The table_name of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -730,22 +730,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def relational_path(self):
-        """Gets the relational_path of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the relational_path of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         The path to the table. Used when updating a relational source.  # noqa: E501
 
-        :return: The relational_path of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The relational_path of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: list[str]
         """
         return self._relational_path
 
     @relational_path.setter
     def relational_path(self, relational_path):
-        """Sets the relational_path of this UpdateImportedDatasetRequest.
+        """Sets the relational_path of this LUpdateImportedDatasetRequest.
 
         The path to the table. Used when updating a relational source.  # noqa: E501
 
-        :param relational_path: The relational_path of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param relational_path: The relational_path of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: list[str]
         """
 
@@ -753,22 +753,22 @@ class LUpdateImportedDatasetRequest(object):
 
     @property
     def columns(self):
-        """Gets the columns of this UpdateImportedDatasetRequest.  # noqa: E501
+        """Gets the columns of this LUpdateImportedDatasetRequest.  # noqa: E501
 
         List of column names to use for the datasource. Used when updating a relational source.  # noqa: E501
 
-        :return: The columns of this UpdateImportedDatasetRequest.  # noqa: E501
+        :return: The columns of this LUpdateImportedDatasetRequest.  # noqa: E501
         :rtype: list[str]
         """
         return self._columns
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this UpdateImportedDatasetRequest.
+        """Sets the columns of this LUpdateImportedDatasetRequest.
 
         List of column names to use for the datasource. Used when updating a relational source.  # noqa: E501
 
-        :param columns: The columns of this UpdateImportedDatasetRequest.  # noqa: E501
+        :param columns: The columns of this LUpdateImportedDatasetRequest.  # noqa: E501
         :type: list[str]
         """
 
@@ -795,7 +795,7 @@ class LUpdateImportedDatasetRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(UpdateImportedDatasetRequest, dict):
+        if issubclass(LUpdateImportedDatasetRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -811,7 +811,7 @@ class LUpdateImportedDatasetRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UpdateImportedDatasetRequest):
+        if not isinstance(other, LUpdateImportedDatasetRequest):
             return False
 
         return self.__dict__ == other.__dict__

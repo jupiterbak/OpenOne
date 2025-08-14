@@ -39,7 +39,7 @@ class LPlanWorkflowTaskExecMetadataSchema(object):
     }
 
     def __init__(self, workflow_id=None, inputs=None, outputs=None):  # noqa: E501
-        """PlanWorkflowTaskExecMetadataSchema - a model defined in Swagger"""  # noqa: E501
+        """LPlanWorkflowTaskExecMetadataSchema - a model defined in Swagger"""  # noqa: E501
         self._workflow_id = None
         self._inputs = None
         self._outputs = None
@@ -52,20 +52,20 @@ class LPlanWorkflowTaskExecMetadataSchema(object):
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this PlanWorkflowTaskExecMetadataSchema.  # noqa: E501
+        """Gets the workflow_id of this LPlanWorkflowTaskExecMetadataSchema.  # noqa: E501
 
 
-        :return: The workflow_id of this PlanWorkflowTaskExecMetadataSchema.  # noqa: E501
+        :return: The workflow_id of this LPlanWorkflowTaskExecMetadataSchema.  # noqa: E501
         :rtype: str
         """
         return self._workflow_id
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this PlanWorkflowTaskExecMetadataSchema.
+        """Sets the workflow_id of this LPlanWorkflowTaskExecMetadataSchema.
 
 
-        :param workflow_id: The workflow_id of this PlanWorkflowTaskExecMetadataSchema.  # noqa: E501
+        :param workflow_id: The workflow_id of this LPlanWorkflowTaskExecMetadataSchema.  # noqa: E501
         :type: str
         """
         if workflow_id is None:
@@ -75,22 +75,22 @@ class LPlanWorkflowTaskExecMetadataSchema(object):
 
     @property
     def inputs(self):
-        """Gets the inputs of this PlanWorkflowTaskExecMetadataSchema.  # noqa: E501
+        """Gets the inputs of this LPlanWorkflowTaskExecMetadataSchema.  # noqa: E501
 
         Number of workflow data inputs  # noqa: E501
 
-        :return: The inputs of this PlanWorkflowTaskExecMetadataSchema.  # noqa: E501
+        :return: The inputs of this LPlanWorkflowTaskExecMetadataSchema.  # noqa: E501
         :rtype: int
         """
         return self._inputs
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this PlanWorkflowTaskExecMetadataSchema.
+        """Sets the inputs of this LPlanWorkflowTaskExecMetadataSchema.
 
         Number of workflow data inputs  # noqa: E501
 
-        :param inputs: The inputs of this PlanWorkflowTaskExecMetadataSchema.  # noqa: E501
+        :param inputs: The inputs of this LPlanWorkflowTaskExecMetadataSchema.  # noqa: E501
         :type: int
         """
 
@@ -98,22 +98,22 @@ class LPlanWorkflowTaskExecMetadataSchema(object):
 
     @property
     def outputs(self):
-        """Gets the outputs of this PlanWorkflowTaskExecMetadataSchema.  # noqa: E501
+        """Gets the outputs of this LPlanWorkflowTaskExecMetadataSchema.  # noqa: E501
 
         Number of workflow data outputs  # noqa: E501
 
-        :return: The outputs of this PlanWorkflowTaskExecMetadataSchema.  # noqa: E501
+        :return: The outputs of this LPlanWorkflowTaskExecMetadataSchema.  # noqa: E501
         :rtype: int
         """
         return self._outputs
 
     @outputs.setter
     def outputs(self, outputs):
-        """Sets the outputs of this PlanWorkflowTaskExecMetadataSchema.
+        """Sets the outputs of this LPlanWorkflowTaskExecMetadataSchema.
 
         Number of workflow data outputs  # noqa: E501
 
-        :param outputs: The outputs of this PlanWorkflowTaskExecMetadataSchema.  # noqa: E501
+        :param outputs: The outputs of this LPlanWorkflowTaskExecMetadataSchema.  # noqa: E501
         :type: int
         """
 
@@ -140,7 +140,7 @@ class LPlanWorkflowTaskExecMetadataSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanWorkflowTaskExecMetadataSchema, dict):
+        if issubclass(LPlanWorkflowTaskExecMetadataSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -156,7 +156,7 @@ class LPlanWorkflowTaskExecMetadataSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanWorkflowTaskExecMetadataSchema):
+        if not isinstance(other, LPlanWorkflowTaskExecMetadataSchema):
             return False
 
         return self.__dict__ == other.__dict__

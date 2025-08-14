@@ -33,7 +33,7 @@ class LAnyOfawsConfigUpdateRequestWorkspaceId(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfawsConfigUpdateRequestWorkspaceId - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfawsConfigUpdateRequestWorkspaceId - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfawsConfigUpdateRequestWorkspaceId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfawsConfigUpdateRequestWorkspaceId, dict):
+        if issubclass(LAnyOfawsConfigUpdateRequestWorkspaceId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfawsConfigUpdateRequestWorkspaceId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfawsConfigUpdateRequestWorkspaceId):
+        if not isinstance(other, LAnyOfawsConfigUpdateRequestWorkspaceId):
             return False
 
         return self.__dict__ == other.__dict__

@@ -27,10 +27,10 @@ class LWorkspaceTiersInfo(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfworkspaceTiersInfoId',
+        'id': 'LAnyOfworkspaceTiersInfoId',
         'is_single_user': 'bool',
         'name': 'str',
-        'workspace_id': 'AnyOfworkspaceTiersInfoWorkspaceId'
+        'workspace_id': 'LAnyOfworkspaceTiersInfoWorkspaceId'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class LWorkspaceTiersInfo(object):
     }
 
     def __init__(self, id=None, is_single_user=None, name=None, workspace_id=None):  # noqa: E501
-        """WorkspaceTiersInfo - a model defined in Swagger"""  # noqa: E501
+        """LWorkspaceTiersInfo - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._is_single_user = None
         self._name = None
@@ -55,21 +55,21 @@ class LWorkspaceTiersInfo(object):
 
     @property
     def id(self):
-        """Gets the id of this WorkspaceTiersInfo.  # noqa: E501
+        """Gets the id of this LWorkspaceTiersInfo.  # noqa: E501
 
 
-        :return: The id of this WorkspaceTiersInfo.  # noqa: E501
-        :rtype: AnyOfworkspaceTiersInfoId
+        :return: The id of this LWorkspaceTiersInfo.  # noqa: E501
+        :rtype: LAnyOfworkspaceTiersInfoId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkspaceTiersInfo.
+        """Sets the id of this LWorkspaceTiersInfo.
 
 
-        :param id: The id of this WorkspaceTiersInfo.  # noqa: E501
-        :type: AnyOfworkspaceTiersInfoId
+        :param id: The id of this LWorkspaceTiersInfo.  # noqa: E501
+        :type: LAnyOfworkspaceTiersInfoId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -78,20 +78,20 @@ class LWorkspaceTiersInfo(object):
 
     @property
     def is_single_user(self):
-        """Gets the is_single_user of this WorkspaceTiersInfo.  # noqa: E501
+        """Gets the is_single_user of this LWorkspaceTiersInfo.  # noqa: E501
 
 
-        :return: The is_single_user of this WorkspaceTiersInfo.  # noqa: E501
+        :return: The is_single_user of this LWorkspaceTiersInfo.  # noqa: E501
         :rtype: bool
         """
         return self._is_single_user
 
     @is_single_user.setter
     def is_single_user(self, is_single_user):
-        """Sets the is_single_user of this WorkspaceTiersInfo.
+        """Sets the is_single_user of this LWorkspaceTiersInfo.
 
 
-        :param is_single_user: The is_single_user of this WorkspaceTiersInfo.  # noqa: E501
+        :param is_single_user: The is_single_user of this LWorkspaceTiersInfo.  # noqa: E501
         :type: bool
         """
         if is_single_user is None:
@@ -101,20 +101,20 @@ class LWorkspaceTiersInfo(object):
 
     @property
     def name(self):
-        """Gets the name of this WorkspaceTiersInfo.  # noqa: E501
+        """Gets the name of this LWorkspaceTiersInfo.  # noqa: E501
 
 
-        :return: The name of this WorkspaceTiersInfo.  # noqa: E501
+        :return: The name of this LWorkspaceTiersInfo.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkspaceTiersInfo.
+        """Sets the name of this LWorkspaceTiersInfo.
 
 
-        :param name: The name of this WorkspaceTiersInfo.  # noqa: E501
+        :param name: The name of this LWorkspaceTiersInfo.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -130,21 +130,21 @@ class LWorkspaceTiersInfo(object):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this WorkspaceTiersInfo.  # noqa: E501
+        """Gets the workspace_id of this LWorkspaceTiersInfo.  # noqa: E501
 
 
-        :return: The workspace_id of this WorkspaceTiersInfo.  # noqa: E501
-        :rtype: AnyOfworkspaceTiersInfoWorkspaceId
+        :return: The workspace_id of this LWorkspaceTiersInfo.  # noqa: E501
+        :rtype: LAnyOfworkspaceTiersInfoWorkspaceId
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this WorkspaceTiersInfo.
+        """Sets the workspace_id of this LWorkspaceTiersInfo.
 
 
-        :param workspace_id: The workspace_id of this WorkspaceTiersInfo.  # noqa: E501
-        :type: AnyOfworkspaceTiersInfoWorkspaceId
+        :param workspace_id: The workspace_id of this LWorkspaceTiersInfo.  # noqa: E501
+        :type: LAnyOfworkspaceTiersInfoWorkspaceId
         """
 
         self._workspace_id = workspace_id
@@ -170,7 +170,7 @@ class LWorkspaceTiersInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WorkspaceTiersInfo, dict):
+        if issubclass(LWorkspaceTiersInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -186,7 +186,7 @@ class LWorkspaceTiersInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WorkspaceTiersInfo):
+        if not isinstance(other, LWorkspaceTiersInfo):
             return False
 
         return self.__dict__ == other.__dict__

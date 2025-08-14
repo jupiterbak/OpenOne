@@ -37,7 +37,7 @@ class LConnectionQueryPostResponseWithColumns(object):
     }
 
     def __init__(self, name=None, schema_spec=None):  # noqa: E501
-        """ConnectionQueryPostResponseWithColumns - a model defined in Swagger"""  # noqa: E501
+        """LConnectionQueryPostResponseWithColumns - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._schema_spec = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LConnectionQueryPostResponseWithColumns(object):
 
     @property
     def name(self):
-        """Gets the name of this ConnectionQueryPostResponseWithColumns.  # noqa: E501
+        """Gets the name of this LConnectionQueryPostResponseWithColumns.  # noqa: E501
 
 
-        :return: The name of this ConnectionQueryPostResponseWithColumns.  # noqa: E501
+        :return: The name of this LConnectionQueryPostResponseWithColumns.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConnectionQueryPostResponseWithColumns.
+        """Sets the name of this LConnectionQueryPostResponseWithColumns.
 
 
-        :param name: The name of this ConnectionQueryPostResponseWithColumns.  # noqa: E501
+        :param name: The name of this LConnectionQueryPostResponseWithColumns.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -69,20 +69,20 @@ class LConnectionQueryPostResponseWithColumns(object):
 
     @property
     def schema_spec(self):
-        """Gets the schema_spec of this ConnectionQueryPostResponseWithColumns.  # noqa: E501
+        """Gets the schema_spec of this LConnectionQueryPostResponseWithColumns.  # noqa: E501
 
 
-        :return: The schema_spec of this ConnectionQueryPostResponseWithColumns.  # noqa: E501
+        :return: The schema_spec of this LConnectionQueryPostResponseWithColumns.  # noqa: E501
         :rtype: object
         """
         return self._schema_spec
 
     @schema_spec.setter
     def schema_spec(self, schema_spec):
-        """Sets the schema_spec of this ConnectionQueryPostResponseWithColumns.
+        """Sets the schema_spec of this LConnectionQueryPostResponseWithColumns.
 
 
-        :param schema_spec: The schema_spec of this ConnectionQueryPostResponseWithColumns.  # noqa: E501
+        :param schema_spec: The schema_spec of this LConnectionQueryPostResponseWithColumns.  # noqa: E501
         :type: object
         """
         if schema_spec is None:
@@ -111,7 +111,7 @@ class LConnectionQueryPostResponseWithColumns(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConnectionQueryPostResponseWithColumns, dict):
+        if issubclass(LConnectionQueryPostResponseWithColumns, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LConnectionQueryPostResponseWithColumns(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConnectionQueryPostResponseWithColumns):
+        if not isinstance(other, LConnectionQueryPostResponseWithColumns):
             return False
 
         return self.__dict__ == other.__dict__

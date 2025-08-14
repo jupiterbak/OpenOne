@@ -35,27 +35,27 @@ class LPlanRunParameterSelectorSchema(object):
     }
 
     def __init__(self, selector=None):  # noqa: E501
-        """PlanRunParameterSelectorSchema - a model defined in Swagger"""  # noqa: E501
+        """LPlanRunParameterSelectorSchema - a model defined in Swagger"""  # noqa: E501
         self._selector = None
         self.discriminator = None
         self.selector = selector
 
     @property
     def selector(self):
-        """Gets the selector of this PlanRunParameterSelectorSchema.  # noqa: E501
+        """Gets the selector of this LPlanRunParameterSelectorSchema.  # noqa: E501
 
 
-        :return: The selector of this PlanRunParameterSelectorSchema.  # noqa: E501
+        :return: The selector of this LPlanRunParameterSelectorSchema.  # noqa: E501
         :rtype: object
         """
         return self._selector
 
     @selector.setter
     def selector(self, selector):
-        """Sets the selector of this PlanRunParameterSelectorSchema.
+        """Sets the selector of this LPlanRunParameterSelectorSchema.
 
 
-        :param selector: The selector of this PlanRunParameterSelectorSchema.  # noqa: E501
+        :param selector: The selector of this LPlanRunParameterSelectorSchema.  # noqa: E501
         :type: object
         """
         if selector is None:
@@ -84,7 +84,7 @@ class LPlanRunParameterSelectorSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanRunParameterSelectorSchema, dict):
+        if issubclass(LPlanRunParameterSelectorSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LPlanRunParameterSelectorSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanRunParameterSelectorSchema):
+        if not isinstance(other, LPlanRunParameterSelectorSchema):
             return False
 
         return self.__dict__ == other.__dict__

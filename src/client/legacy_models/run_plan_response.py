@@ -28,7 +28,7 @@ class LRunPlanResponse(object):
     """
     swagger_types = {
         'validation_status': 'str',
-        'plan_snapshot_run_id': 'AnyOfrunPlanResponsePlanSnapshotRunId'
+        'plan_snapshot_run_id': 'LAnyOfrunPlanResponsePlanSnapshotRunId'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LRunPlanResponse(object):
     }
 
     def __init__(self, validation_status=None, plan_snapshot_run_id=None):  # noqa: E501
-        """RunPlanResponse - a model defined in Swagger"""  # noqa: E501
+        """LRunPlanResponse - a model defined in Swagger"""  # noqa: E501
         self._validation_status = None
         self._plan_snapshot_run_id = None
         self.discriminator = None
@@ -46,22 +46,22 @@ class LRunPlanResponse(object):
 
     @property
     def validation_status(self):
-        """Gets the validation_status of this RunPlanResponse.  # noqa: E501
+        """Gets the validation_status of this LRunPlanResponse.  # noqa: E501
 
         Response from activate plan * `Valid` - All plan tasks are valid. * `MissingFlowReferences` - Some plan tasks are empty  # noqa: E501
 
-        :return: The validation_status of this RunPlanResponse.  # noqa: E501
+        :return: The validation_status of this LRunPlanResponse.  # noqa: E501
         :rtype: str
         """
         return self._validation_status
 
     @validation_status.setter
     def validation_status(self, validation_status):
-        """Sets the validation_status of this RunPlanResponse.
+        """Sets the validation_status of this LRunPlanResponse.
 
         Response from activate plan * `Valid` - All plan tasks are valid. * `MissingFlowReferences` - Some plan tasks are empty  # noqa: E501
 
-        :param validation_status: The validation_status of this RunPlanResponse.  # noqa: E501
+        :param validation_status: The validation_status of this LRunPlanResponse.  # noqa: E501
         :type: str
         """
         if validation_status is None:
@@ -77,21 +77,21 @@ class LRunPlanResponse(object):
 
     @property
     def plan_snapshot_run_id(self):
-        """Gets the plan_snapshot_run_id of this RunPlanResponse.  # noqa: E501
+        """Gets the plan_snapshot_run_id of this LRunPlanResponse.  # noqa: E501
 
 
-        :return: The plan_snapshot_run_id of this RunPlanResponse.  # noqa: E501
-        :rtype: AnyOfrunPlanResponsePlanSnapshotRunId
+        :return: The plan_snapshot_run_id of this LRunPlanResponse.  # noqa: E501
+        :rtype: LAnyOfrunPlanResponsePlanSnapshotRunId
         """
         return self._plan_snapshot_run_id
 
     @plan_snapshot_run_id.setter
     def plan_snapshot_run_id(self, plan_snapshot_run_id):
-        """Sets the plan_snapshot_run_id of this RunPlanResponse.
+        """Sets the plan_snapshot_run_id of this LRunPlanResponse.
 
 
-        :param plan_snapshot_run_id: The plan_snapshot_run_id of this RunPlanResponse.  # noqa: E501
-        :type: AnyOfrunPlanResponsePlanSnapshotRunId
+        :param plan_snapshot_run_id: The plan_snapshot_run_id of this LRunPlanResponse.  # noqa: E501
+        :type: LAnyOfrunPlanResponsePlanSnapshotRunId
         """
         if plan_snapshot_run_id is None:
             raise ValueError("Invalid value for `plan_snapshot_run_id`, must not be `None`")  # noqa: E501
@@ -119,7 +119,7 @@ class LRunPlanResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunPlanResponse, dict):
+        if issubclass(LRunPlanResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -135,7 +135,7 @@ class LRunPlanResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunPlanResponse):
+        if not isinstance(other, LRunPlanResponse):
             return False
 
         return self.__dict__ == other.__dict__

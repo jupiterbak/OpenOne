@@ -28,8 +28,8 @@ class LAwsRoleCreateRequest(object):
     """
     swagger_types = {
         'role': 'str',
-        'person_id': 'AnyOfawsRoleCreateRequestPersonId',
-        'workspace_id': 'AnyOfawsRoleCreateRequestWorkspaceId'
+        'person_id': 'LAnyOfawsRoleCreateRequestPersonId',
+        'workspace_id': 'LAnyOfawsRoleCreateRequestWorkspaceId'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class LAwsRoleCreateRequest(object):
     }
 
     def __init__(self, role=None, person_id=None, workspace_id=None):  # noqa: E501
-        """AwsRoleCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LAwsRoleCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._role = None
         self._person_id = None
         self._workspace_id = None
@@ -52,20 +52,20 @@ class LAwsRoleCreateRequest(object):
 
     @property
     def role(self):
-        """Gets the role of this AwsRoleCreateRequest.  # noqa: E501
+        """Gets the role of this LAwsRoleCreateRequest.  # noqa: E501
 
 
-        :return: The role of this AwsRoleCreateRequest.  # noqa: E501
+        :return: The role of this LAwsRoleCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._role
 
     @role.setter
     def role(self, role):
-        """Sets the role of this AwsRoleCreateRequest.
+        """Sets the role of this LAwsRoleCreateRequest.
 
 
-        :param role: The role of this AwsRoleCreateRequest.  # noqa: E501
+        :param role: The role of this LAwsRoleCreateRequest.  # noqa: E501
         :type: str
         """
         if role is None:
@@ -75,42 +75,42 @@ class LAwsRoleCreateRequest(object):
 
     @property
     def person_id(self):
-        """Gets the person_id of this AwsRoleCreateRequest.  # noqa: E501
+        """Gets the person_id of this LAwsRoleCreateRequest.  # noqa: E501
 
 
-        :return: The person_id of this AwsRoleCreateRequest.  # noqa: E501
-        :rtype: AnyOfawsRoleCreateRequestPersonId
+        :return: The person_id of this LAwsRoleCreateRequest.  # noqa: E501
+        :rtype: LAnyOfawsRoleCreateRequestPersonId
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this AwsRoleCreateRequest.
+        """Sets the person_id of this LAwsRoleCreateRequest.
 
 
-        :param person_id: The person_id of this AwsRoleCreateRequest.  # noqa: E501
-        :type: AnyOfawsRoleCreateRequestPersonId
+        :param person_id: The person_id of this LAwsRoleCreateRequest.  # noqa: E501
+        :type: LAnyOfawsRoleCreateRequestPersonId
         """
 
         self._person_id = person_id
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this AwsRoleCreateRequest.  # noqa: E501
+        """Gets the workspace_id of this LAwsRoleCreateRequest.  # noqa: E501
 
 
-        :return: The workspace_id of this AwsRoleCreateRequest.  # noqa: E501
-        :rtype: AnyOfawsRoleCreateRequestWorkspaceId
+        :return: The workspace_id of this LAwsRoleCreateRequest.  # noqa: E501
+        :rtype: LAnyOfawsRoleCreateRequestWorkspaceId
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this AwsRoleCreateRequest.
+        """Sets the workspace_id of this LAwsRoleCreateRequest.
 
 
-        :param workspace_id: The workspace_id of this AwsRoleCreateRequest.  # noqa: E501
-        :type: AnyOfawsRoleCreateRequestWorkspaceId
+        :param workspace_id: The workspace_id of this LAwsRoleCreateRequest.  # noqa: E501
+        :type: LAnyOfawsRoleCreateRequestWorkspaceId
         """
 
         self._workspace_id = workspace_id
@@ -136,7 +136,7 @@ class LAwsRoleCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AwsRoleCreateRequest, dict):
+        if issubclass(LAwsRoleCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -152,7 +152,7 @@ class LAwsRoleCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AwsRoleCreateRequest):
+        if not isinstance(other, LAwsRoleCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

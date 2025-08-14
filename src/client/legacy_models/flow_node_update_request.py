@@ -41,7 +41,7 @@ class LFlowNodeUpdateRequest(object):
     }
 
     def __init__(self, activesample_id=None, reference_id=None, sample_load_limit=None, deleted_at=None):  # noqa: E501
-        """FlowNodeUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LFlowNodeUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._activesample_id = None
         self._reference_id = None
         self._sample_load_limit = None
@@ -58,22 +58,22 @@ class LFlowNodeUpdateRequest(object):
 
     @property
     def activesample_id(self):
-        """Gets the activesample_id of this FlowNodeUpdateRequest.  # noqa: E501
+        """Gets the activesample_id of this LFlowNodeUpdateRequest.  # noqa: E501
 
         Internal identifier of the currently active `sample` for this dataset.  # noqa: E501
 
-        :return: The activesample_id of this FlowNodeUpdateRequest.  # noqa: E501
+        :return: The activesample_id of this LFlowNodeUpdateRequest.  # noqa: E501
         :rtype: int
         """
         return self._activesample_id
 
     @activesample_id.setter
     def activesample_id(self, activesample_id):
-        """Sets the activesample_id of this FlowNodeUpdateRequest.
+        """Sets the activesample_id of this LFlowNodeUpdateRequest.
 
         Internal identifier of the currently active `sample` for this dataset.  # noqa: E501
 
-        :param activesample_id: The activesample_id of this FlowNodeUpdateRequest.  # noqa: E501
+        :param activesample_id: The activesample_id of this LFlowNodeUpdateRequest.  # noqa: E501
         :type: int
         """
 
@@ -81,22 +81,22 @@ class LFlowNodeUpdateRequest(object):
 
     @property
     def reference_id(self):
-        """Gets the reference_id of this FlowNodeUpdateRequest.  # noqa: E501
+        """Gets the reference_id of this LFlowNodeUpdateRequest.  # noqa: E501
 
         Internal identifier for referenceInfo, which contains the name and description of the reference object associated with this flow node. This is how the reference dataset will appear when used in other flows.  # noqa: E501
 
-        :return: The reference_id of this FlowNodeUpdateRequest.  # noqa: E501
+        :return: The reference_id of this LFlowNodeUpdateRequest.  # noqa: E501
         :rtype: int
         """
         return self._reference_id
 
     @reference_id.setter
     def reference_id(self, reference_id):
-        """Sets the reference_id of this FlowNodeUpdateRequest.
+        """Sets the reference_id of this LFlowNodeUpdateRequest.
 
         Internal identifier for referenceInfo, which contains the name and description of the reference object associated with this flow node. This is how the reference dataset will appear when used in other flows.  # noqa: E501
 
-        :param reference_id: The reference_id of this FlowNodeUpdateRequest.  # noqa: E501
+        :param reference_id: The reference_id of this LFlowNodeUpdateRequest.  # noqa: E501
         :type: int
         """
 
@@ -104,22 +104,22 @@ class LFlowNodeUpdateRequest(object):
 
     @property
     def sample_load_limit(self):
-        """Gets the sample_load_limit of this FlowNodeUpdateRequest.  # noqa: E501
+        """Gets the sample_load_limit of this LFlowNodeUpdateRequest.  # noqa: E501
 
         If not null, stores user selected sample size in MBs  # noqa: E501
 
-        :return: The sample_load_limit of this FlowNodeUpdateRequest.  # noqa: E501
+        :return: The sample_load_limit of this LFlowNodeUpdateRequest.  # noqa: E501
         :rtype: int
         """
         return self._sample_load_limit
 
     @sample_load_limit.setter
     def sample_load_limit(self, sample_load_limit):
-        """Sets the sample_load_limit of this FlowNodeUpdateRequest.
+        """Sets the sample_load_limit of this LFlowNodeUpdateRequest.
 
         If not null, stores user selected sample size in MBs  # noqa: E501
 
-        :param sample_load_limit: The sample_load_limit of this FlowNodeUpdateRequest.  # noqa: E501
+        :param sample_load_limit: The sample_load_limit of this LFlowNodeUpdateRequest.  # noqa: E501
         :type: int
         """
 
@@ -127,22 +127,22 @@ class LFlowNodeUpdateRequest(object):
 
     @property
     def deleted_at(self):
-        """Gets the deleted_at of this FlowNodeUpdateRequest.  # noqa: E501
+        """Gets the deleted_at of this LFlowNodeUpdateRequest.  # noqa: E501
 
         The time this object was deleted.  # noqa: E501
 
-        :return: The deleted_at of this FlowNodeUpdateRequest.  # noqa: E501
+        :return: The deleted_at of this LFlowNodeUpdateRequest.  # noqa: E501
         :rtype: datetime
         """
         return self._deleted_at
 
     @deleted_at.setter
     def deleted_at(self, deleted_at):
-        """Sets the deleted_at of this FlowNodeUpdateRequest.
+        """Sets the deleted_at of this LFlowNodeUpdateRequest.
 
         The time this object was deleted.  # noqa: E501
 
-        :param deleted_at: The deleted_at of this FlowNodeUpdateRequest.  # noqa: E501
+        :param deleted_at: The deleted_at of this LFlowNodeUpdateRequest.  # noqa: E501
         :type: datetime
         """
 
@@ -169,7 +169,7 @@ class LFlowNodeUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowNodeUpdateRequest, dict):
+        if issubclass(LFlowNodeUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -185,7 +185,7 @@ class LFlowNodeUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowNodeUpdateRequest):
+        if not isinstance(other, LFlowNodeUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

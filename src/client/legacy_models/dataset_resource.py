@@ -37,7 +37,7 @@ class LDatasetResource(object):
     }
 
     def __init__(self, id=None, type=None):  # noqa: E501
-        """DatasetResource - a model defined in Swagger"""  # noqa: E501
+        """LDatasetResource - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._type = None
         self.discriminator = None
@@ -46,22 +46,22 @@ class LDatasetResource(object):
 
     @property
     def id(self):
-        """Gets the id of this DatasetResource.  # noqa: E501
+        """Gets the id of this LDatasetResource.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this DatasetResource.  # noqa: E501
+        :return: The id of this LDatasetResource.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DatasetResource.
+        """Sets the id of this LDatasetResource.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this DatasetResource.  # noqa: E501
+        :param id: The id of this LDatasetResource.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -71,22 +71,22 @@ class LDatasetResource(object):
 
     @property
     def type(self):
-        """Gets the type of this DatasetResource.  # noqa: E501
+        """Gets the type of this LDatasetResource.  # noqa: E501
 
         type * `datasource` - DataSource type of dataset. * `reference` - Reference type of dataset.  # noqa: E501
 
-        :return: The type of this DatasetResource.  # noqa: E501
+        :return: The type of this LDatasetResource.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DatasetResource.
+        """Sets the type of this LDatasetResource.
 
         type * `datasource` - DataSource type of dataset. * `reference` - Reference type of dataset.  # noqa: E501
 
-        :param type: The type of this DatasetResource.  # noqa: E501
+        :param type: The type of this LDatasetResource.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -121,7 +121,7 @@ class LDatasetResource(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DatasetResource, dict):
+        if issubclass(LDatasetResource, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -137,7 +137,7 @@ class LDatasetResource(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DatasetResource):
+        if not isinstance(other, LDatasetResource):
             return False
 
         return self.__dict__ == other.__dict__

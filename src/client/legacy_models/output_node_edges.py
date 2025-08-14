@@ -27,10 +27,10 @@ class LOutputNodeEdges(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfoutputNodeEdgesId',
-        'flow_id': 'AnyOfoutputNodeEdgesFlowId',
-        'in_flow_node_id': 'AnyOfoutputNodeEdgesInFlowNodeId',
-        'out_flow_node_id': 'AnyOfoutputNodeEdgesOutFlowNodeId'
+        'id': 'LAnyOfoutputNodeEdgesId',
+        'flow_id': 'LAnyOfoutputNodeEdgesFlowId',
+        'in_flow_node_id': 'LAnyOfoutputNodeEdgesInFlowNodeId',
+        'out_flow_node_id': 'LAnyOfoutputNodeEdgesOutFlowNodeId'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class LOutputNodeEdges(object):
     }
 
     def __init__(self, id=None, flow_id=None, in_flow_node_id=None, out_flow_node_id=None):  # noqa: E501
-        """OutputNodeEdges - a model defined in Swagger"""  # noqa: E501
+        """LOutputNodeEdges - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._flow_id = None
         self._in_flow_node_id = None
@@ -54,21 +54,21 @@ class LOutputNodeEdges(object):
 
     @property
     def id(self):
-        """Gets the id of this OutputNodeEdges.  # noqa: E501
+        """Gets the id of this LOutputNodeEdges.  # noqa: E501
 
 
-        :return: The id of this OutputNodeEdges.  # noqa: E501
-        :rtype: AnyOfoutputNodeEdgesId
+        :return: The id of this LOutputNodeEdges.  # noqa: E501
+        :rtype: LAnyOfoutputNodeEdgesId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OutputNodeEdges.
+        """Sets the id of this LOutputNodeEdges.
 
 
-        :param id: The id of this OutputNodeEdges.  # noqa: E501
-        :type: AnyOfoutputNodeEdgesId
+        :param id: The id of this LOutputNodeEdges.  # noqa: E501
+        :type: LAnyOfoutputNodeEdgesId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -77,21 +77,21 @@ class LOutputNodeEdges(object):
 
     @property
     def flow_id(self):
-        """Gets the flow_id of this OutputNodeEdges.  # noqa: E501
+        """Gets the flow_id of this LOutputNodeEdges.  # noqa: E501
 
 
-        :return: The flow_id of this OutputNodeEdges.  # noqa: E501
-        :rtype: AnyOfoutputNodeEdgesFlowId
+        :return: The flow_id of this LOutputNodeEdges.  # noqa: E501
+        :rtype: LAnyOfoutputNodeEdgesFlowId
         """
         return self._flow_id
 
     @flow_id.setter
     def flow_id(self, flow_id):
-        """Sets the flow_id of this OutputNodeEdges.
+        """Sets the flow_id of this LOutputNodeEdges.
 
 
-        :param flow_id: The flow_id of this OutputNodeEdges.  # noqa: E501
-        :type: AnyOfoutputNodeEdgesFlowId
+        :param flow_id: The flow_id of this LOutputNodeEdges.  # noqa: E501
+        :type: LAnyOfoutputNodeEdgesFlowId
         """
         if flow_id is None:
             raise ValueError("Invalid value for `flow_id`, must not be `None`")  # noqa: E501
@@ -100,21 +100,21 @@ class LOutputNodeEdges(object):
 
     @property
     def in_flow_node_id(self):
-        """Gets the in_flow_node_id of this OutputNodeEdges.  # noqa: E501
+        """Gets the in_flow_node_id of this LOutputNodeEdges.  # noqa: E501
 
 
-        :return: The in_flow_node_id of this OutputNodeEdges.  # noqa: E501
-        :rtype: AnyOfoutputNodeEdgesInFlowNodeId
+        :return: The in_flow_node_id of this LOutputNodeEdges.  # noqa: E501
+        :rtype: LAnyOfoutputNodeEdgesInFlowNodeId
         """
         return self._in_flow_node_id
 
     @in_flow_node_id.setter
     def in_flow_node_id(self, in_flow_node_id):
-        """Sets the in_flow_node_id of this OutputNodeEdges.
+        """Sets the in_flow_node_id of this LOutputNodeEdges.
 
 
-        :param in_flow_node_id: The in_flow_node_id of this OutputNodeEdges.  # noqa: E501
-        :type: AnyOfoutputNodeEdgesInFlowNodeId
+        :param in_flow_node_id: The in_flow_node_id of this LOutputNodeEdges.  # noqa: E501
+        :type: LAnyOfoutputNodeEdgesInFlowNodeId
         """
         if in_flow_node_id is None:
             raise ValueError("Invalid value for `in_flow_node_id`, must not be `None`")  # noqa: E501
@@ -123,21 +123,21 @@ class LOutputNodeEdges(object):
 
     @property
     def out_flow_node_id(self):
-        """Gets the out_flow_node_id of this OutputNodeEdges.  # noqa: E501
+        """Gets the out_flow_node_id of this LOutputNodeEdges.  # noqa: E501
 
 
-        :return: The out_flow_node_id of this OutputNodeEdges.  # noqa: E501
-        :rtype: AnyOfoutputNodeEdgesOutFlowNodeId
+        :return: The out_flow_node_id of this LOutputNodeEdges.  # noqa: E501
+        :rtype: LAnyOfoutputNodeEdgesOutFlowNodeId
         """
         return self._out_flow_node_id
 
     @out_flow_node_id.setter
     def out_flow_node_id(self, out_flow_node_id):
-        """Sets the out_flow_node_id of this OutputNodeEdges.
+        """Sets the out_flow_node_id of this LOutputNodeEdges.
 
 
-        :param out_flow_node_id: The out_flow_node_id of this OutputNodeEdges.  # noqa: E501
-        :type: AnyOfoutputNodeEdgesOutFlowNodeId
+        :param out_flow_node_id: The out_flow_node_id of this LOutputNodeEdges.  # noqa: E501
+        :type: LAnyOfoutputNodeEdgesOutFlowNodeId
         """
         if out_flow_node_id is None:
             raise ValueError("Invalid value for `out_flow_node_id`, must not be `None`")  # noqa: E501
@@ -165,7 +165,7 @@ class LOutputNodeEdges(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OutputNodeEdges, dict):
+        if issubclass(LOutputNodeEdges, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -181,7 +181,7 @@ class LOutputNodeEdges(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OutputNodeEdges):
+        if not isinstance(other, LOutputNodeEdges):
             return False
 
         return self.__dict__ == other.__dict__

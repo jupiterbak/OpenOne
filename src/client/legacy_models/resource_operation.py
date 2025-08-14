@@ -39,7 +39,7 @@ class LResourceOperation(object):
     }
 
     def __init__(self, operations=None, resource_type=None, policy_tag=None):  # noqa: E501
-        """ResourceOperation - a model defined in Swagger"""  # noqa: E501
+        """LResourceOperation - a model defined in Swagger"""  # noqa: E501
         self._operations = None
         self._resource_type = None
         self._policy_tag = None
@@ -51,20 +51,20 @@ class LResourceOperation(object):
 
     @property
     def operations(self):
-        """Gets the operations of this ResourceOperation.  # noqa: E501
+        """Gets the operations of this LResourceOperation.  # noqa: E501
 
 
-        :return: The operations of this ResourceOperation.  # noqa: E501
+        :return: The operations of this LResourceOperation.  # noqa: E501
         :rtype: list[str]
         """
         return self._operations
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this ResourceOperation.
+        """Sets the operations of this LResourceOperation.
 
 
-        :param operations: The operations of this ResourceOperation.  # noqa: E501
+        :param operations: The operations of this LResourceOperation.  # noqa: E501
         :type: list[str]
         """
         if operations is None:
@@ -81,20 +81,20 @@ class LResourceOperation(object):
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ResourceOperation.  # noqa: E501
+        """Gets the resource_type of this LResourceOperation.  # noqa: E501
 
 
-        :return: The resource_type of this ResourceOperation.  # noqa: E501
+        :return: The resource_type of this LResourceOperation.  # noqa: E501
         :rtype: str
         """
         return self._resource_type
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ResourceOperation.
+        """Sets the resource_type of this LResourceOperation.
 
 
-        :param resource_type: The resource_type of this ResourceOperation.  # noqa: E501
+        :param resource_type: The resource_type of this LResourceOperation.  # noqa: E501
         :type: str
         """
         if resource_type is None:
@@ -110,20 +110,20 @@ class LResourceOperation(object):
 
     @property
     def policy_tag(self):
-        """Gets the policy_tag of this ResourceOperation.  # noqa: E501
+        """Gets the policy_tag of this LResourceOperation.  # noqa: E501
 
 
-        :return: The policy_tag of this ResourceOperation.  # noqa: E501
+        :return: The policy_tag of this LResourceOperation.  # noqa: E501
         :rtype: str
         """
         return self._policy_tag
 
     @policy_tag.setter
     def policy_tag(self, policy_tag):
-        """Sets the policy_tag of this ResourceOperation.
+        """Sets the policy_tag of this LResourceOperation.
 
 
-        :param policy_tag: The policy_tag of this ResourceOperation.  # noqa: E501
+        :param policy_tag: The policy_tag of this LResourceOperation.  # noqa: E501
         :type: str
         """
         allowed_values = ["flow_author", "flow_editor", "flow_viewer", "flow_vieweradmin", "flow_owner", "flow_none", "flow_admin", "workspace_admin", "connection_author", "connection_editor", "connection_viewer", "connection_vieweradmin", "connection_owner", "connection_none", "plan_author", "plan_admin", "plan_vieweradmin", "plan_owner", "plan_editor", "plan_viewer", "plan_vieweradmin", "plan_none", "datasource_author", "datasource_owner", "datasource_editor", "datasource_viewer", "datasource_vieweradmin", "datasource_none", "reference_author", "reference_owner", "reference_editor", "reference_viewer", "reference_admin", "reference_none", "userdefinedfunction_author", "userdefinedfunction_owner", "userdefinedfunction_editor", "userdefinedfunction_viewer", "userdefinedfunction_vieweradmin", "userdefinedfunction_none", "workflow_author", "workflow_owner", "workflow_editor", "workflow_viewer", "workflow_vieweradmin", "workflow_none", "workflow_admin", "workload_viewer", "workload_none", "mlproject_author", "mlproject_owner", "mlproject_editor", "mlproject_viewer", "mlproject_vieweradmin", "mlproject_none", "mlproject_admin", "aiproject_author", "aiproject_owner", "aiproject_editor", "aiproject_viewer", "aiproject_vieweradmin", "aiproject_none", "aiproject_admin", "vectorproject_author", "vectorproject_owner", "vectorproject_editor", "vectorproject_viewer", "vectorproject_vieweradmin", "vectorproject_none", "vectorproject_admin", "locationintelligenceproject_author", "locationintelligenceproject_viewer", "locationintelligenceproject_vieweradmin", "locationintelligenceproject_owner", "locationintelligenceproject_none", "locationintelligenceproject_admin", "abapplication_author", "abapplication_owner", "abapplication_editor", "abapplication_viewer", "abapplication_vieweradmin", "abapplication_admin", "abapplication_none", "aidatalayer_author", "aidatalayer_owner", "aidatalayer_editor", "aidatalayer_viewer", "aidatalayer_vieweradmin", "aidatalayer_admin", "aidatalayer_none", "aimission_author", "aimission_owner", "aimission_editor", "aimission_viewer", "aimission_vieweradmin", "aimission_admin", "aimission_none", "desktopworkflow_author", "desktopworkflow_owner", "desktopworkflow_editor", "desktopworkflow_viewer", "desktopworkflow_vieweradmin", "desktopworkflow_admin", "desktopworkflow_none", "desktopapp_author", "desktopapp_owner", "desktopapp_editor", "desktopapp_viewer", "desktopapp_vieweradmin", "desktopapp_admin", "desktopapp_none", "report_author", "report_owner", "report_editor", "report_viewer", "report_vieweradmin", "report_admin", "report_none", "globaljobhistory_viewer", "globaljobhistory_none", "folder_owner", "folder_editor", "folder_viewer", "folder_none", "desktopmacro_author", "desktopmacro_owner", "desktopmacro_editor", "desktopmacro_viewer", "desktopmacro_vieweradmin", "desktopmacro_admin", "desktopmacro_none", "aireport_author", "aireport_owner", "aireport_editor", "aireport_viewer", "aireport_vieweradmin", "aireport_admin", "aireport_none", "desktopconnection_author", "desktopconnection_owner", "desktopconnection_editor", "desktopconnection_viewer", "desktopconnection_vieweradmin", "desktopconnection_collabsharee", "desktopconnection_admin", "desktopconnection_execsharee", "desktopconnection_none", "desktopdatasource_author", "desktopdatasource_owner", "desktopdatasource_admin", "desktopdatasource_none", "desktopcredential_author", "desktopcredential_owner", "desktopcredential_viewer", "desktopcredential_vieweradmin", "desktopcredential_admin", "desktopcredential_none", "desktopenvironmentrule_author", "desktopenvironmentrule_owner", "desktopenvironmentrule_none", "schedule_author", "schedule_owner", "schedule_editor", "schedule_viewer", "schedule_admin", "schedule_vieweradmin", "schedule_none", "package_author", "package_owner", "package_editor", "package_viewer", "package_admin", "package_vieweradmin", "package_none", "packagespec_author", "packagespec_owner", "packagespec_editor", "packagespec_viewer", "packagespec_admin", "packagespec_vieweradmin", "packagespec_none", "credential_author", "credential_owner", "credential_viewer", "credential_none", "custom_policy"]  # noqa: E501
@@ -156,7 +156,7 @@ class LResourceOperation(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ResourceOperation, dict):
+        if issubclass(LResourceOperation, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -172,7 +172,7 @@ class LResourceOperation(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ResourceOperation):
+        if not isinstance(other, LResourceOperation):
             return False
 
         return self.__dict__ == other.__dict__

@@ -39,7 +39,7 @@ class LFileWriterJob(object):
     }
 
     def __init__(self, write_setting=None, script_result=None, id=None):  # noqa: E501
-        """FileWriterJob - a model defined in Swagger"""  # noqa: E501
+        """LFileWriterJob - a model defined in Swagger"""  # noqa: E501
         self._write_setting = None
         self._script_result = None
         self._id = None
@@ -50,20 +50,20 @@ class LFileWriterJob(object):
 
     @property
     def write_setting(self):
-        """Gets the write_setting of this FileWriterJob.  # noqa: E501
+        """Gets the write_setting of this LFileWriterJob.  # noqa: E501
 
 
-        :return: The write_setting of this FileWriterJob.  # noqa: E501
+        :return: The write_setting of this LFileWriterJob.  # noqa: E501
         :rtype: object
         """
         return self._write_setting
 
     @write_setting.setter
     def write_setting(self, write_setting):
-        """Sets the write_setting of this FileWriterJob.
+        """Sets the write_setting of this LFileWriterJob.
 
 
-        :param write_setting: The write_setting of this FileWriterJob.  # noqa: E501
+        :param write_setting: The write_setting of this LFileWriterJob.  # noqa: E501
         :type: object
         """
         if write_setting is None:
@@ -73,20 +73,20 @@ class LFileWriterJob(object):
 
     @property
     def script_result(self):
-        """Gets the script_result of this FileWriterJob.  # noqa: E501
+        """Gets the script_result of this LFileWriterJob.  # noqa: E501
 
 
-        :return: The script_result of this FileWriterJob.  # noqa: E501
+        :return: The script_result of this LFileWriterJob.  # noqa: E501
         :rtype: object
         """
         return self._script_result
 
     @script_result.setter
     def script_result(self, script_result):
-        """Sets the script_result of this FileWriterJob.
+        """Sets the script_result of this LFileWriterJob.
 
 
-        :param script_result: The script_result of this FileWriterJob.  # noqa: E501
+        :param script_result: The script_result of this LFileWriterJob.  # noqa: E501
         :type: object
         """
         if script_result is None:
@@ -96,22 +96,22 @@ class LFileWriterJob(object):
 
     @property
     def id(self):
-        """Gets the id of this FileWriterJob.  # noqa: E501
+        """Gets the id of this LFileWriterJob.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this FileWriterJob.  # noqa: E501
+        :return: The id of this LFileWriterJob.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FileWriterJob.
+        """Sets the id of this LFileWriterJob.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this FileWriterJob.  # noqa: E501
+        :param id: The id of this LFileWriterJob.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -140,7 +140,7 @@ class LFileWriterJob(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FileWriterJob, dict):
+        if issubclass(LFileWriterJob, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -156,7 +156,7 @@ class LFileWriterJob(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FileWriterJob):
+        if not isinstance(other, LFileWriterJob):
             return False
 
         return self.__dict__ == other.__dict__

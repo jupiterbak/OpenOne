@@ -23,73 +23,87 @@ from src.client.plan_override_api import PlanOverrideApi
 from src.client.plan_snapshot_run_api import PlanSnapshotRunApi
 from src.client.person_api import PersonApi
 from src.client.workspace_api import WorkspaceApi
-# import ApiClient
 from src.client.api.api_client import ApiClient
 from src.client.configuration import Configuration
+
+# Legacy APIs - Account and Authentication
+from src.client.legacy_account_api import AccountApi as LegacyAccountApi
+from src.client.legacy_api_access_token_api import ApiAccessTokenApi as LegacyApiAccessTokenApi
+from src.client.legacy_authorization_api import AuthorizationApi as LegacyAuthorizationApi
+from src.client.legacy_o_auth2_api_token_api import OAuth2ApiTokenApi as LegacyOAuth2ApiTokenApi
+
+# Legacy APIs - AWS and Cloud Configuration
+from src.client.legacy_aws_config_api import AwsConfigApi as LegacyAwsConfigApi
+from src.client.legacy_aws_role_api import AwsRoleApi as LegacyAwsRoleApi
+from src.client.legacy_base_storage_config_api import BaseStorageConfigApi as LegacyBaseStorageConfigApi
+from src.client.legacy_cloud_config_api import CloudConfigApi as LegacyCloudConfigApi
+
+# Legacy APIs - Connections and Permissions
+from src.client.legacy_connection_api import ConnectionApi as LegacyConnectionApi
+from src.client.legacy_connection_permission_api import ConnectionPermissionApi as LegacyConnectionPermissionApi
+from src.client.legacy_connector_metadata_api import ConnectorMetadataApi as LegacyConnectorMetadataApi
+
+# Legacy APIs - Environment and Parameters
+from src.client.legacy_environment_parameter_api import EnvironmentParameterApi as LegacyEnvironmentParameterApi
+
+# Legacy APIs - Flows and Flow Management
+from src.client.legacy_flow_api import FlowApi as LegacyFlowApi
+from src.client.legacy_flow_node_api import FlowNodeApi as LegacyFlowNodeApi
+from src.client.legacy_flow_notification_settings_api import FlowNotificationSettingsApi as LegacyFlowNotificationSettingsApi
+from src.client.legacy_flow_permission_api import FlowPermissionApi as LegacyFlowPermissionApi
+from src.client.legacy_flow_run_api import FlowRunApi as LegacyFlowRunApi
+from src.client.legacy_flow_run_parameter_override_api import FlowRunParameterOverrideApi as LegacyFlowRunParameterOverrideApi
+
+# Legacy APIs - Folders and Organization
+from src.client.legacy_folder_api import FolderApi as LegacyFolderApi
+
+# Legacy APIs - Datasets and Data Management
+from src.client.legacy_imported_dataset_api import ImportedDatasetApi as LegacyImportedDatasetApi
+from src.client.legacy_wrangled_dataset_api import WrangledDatasetApi as LegacyWrangledDatasetApi
+
+# Legacy APIs - Jobs and Job Management
+from src.client.legacy_job_api import JobApi as LegacyJobApi
+from src.client.legacy_job_group_api import JobGroupApi as LegacyJobGroupApi
+
+# Legacy APIs - Macros and Scripts
+from src.client.legacy_macro_api import MacroApi as LegacyMacroApi
+from src.client.legacy_sql_script_api import SqlScriptApi as LegacySqlScriptApi
+
+# Legacy APIs - Miscellaneous
+from src.client.legacy_misc_api import MiscApi as LegacyMiscApi
+
+# Legacy APIs - Output and Publication
+from src.client.legacy_output_object_api import OutputObjectApi as LegacyOutputObjectApi
+from src.client.legacy_publication_api import PublicationApi as LegacyPublicationApi
+
+# Legacy APIs - Plans and Planning
+from src.client.legacy_plan_api import PlanApi as LegacyPlanApi
+from src.client.legacy_plan_edge_api import PlanEdgeApi as LegacyPlanEdgeApi
+from src.client.legacy_plan_node_api import PlanNodeApi as LegacyPlanNodeApi
+from src.client.legacy_plan_override_api import PlanOverrideApi as LegacyPlanOverrideApi
+from src.client.legacy_plan_snapshot_run_api import PlanSnapshotRunApi as LegacyPlanSnapshotRunApi
+
+# Legacy APIs - Scheduling
+from src.client.legacy_schedule_api import ScheduleApi as LegacyScheduleApi
+
+# Legacy APIs - Webhooks and Tasks
+from src.client.legacy_webhook_flow_task_api import WebhookFlowTaskApi as LegacyWebhookFlowTaskApi
+
+# Legacy APIs - Workspace and Write Settings
+from src.client.legacy_workspace_api import WorkspaceApi as LegacyWorkspaceApi
+from src.client.legacy_write_setting_api import WriteSettingApi as LegacyWriteSettingApi
+
+# Legacy APIs - Person and User Management
+from src.client.legacy_person_api import PersonApi as LegacyPersonApi
+
+# Import legacy models
+from src.client.legacy_models import *
+
+# Import IAM models
+from src.client.iam_models import *
+
+# Import plan models
+from src.client.plan_models import *
+
 # import scheduling models into sdk package
-from src.client.scheduling_models.any_ofschedule_error_response_exception_details import AnyOfscheduleErrorResponseExceptionDetails
-from src.client.scheduling_models.any_ofupdated_object_schema_id import AnyOfupdatedObjectSchemaId
-from src.client.scheduling_models.count import Count
-from src.client.scheduling_models.cron_trigger import CronTrigger
-from src.client.scheduling_models.cron_trigger_cron import CronTriggerCron
-from src.client.scheduling_models.daily_trigger import DailyTrigger
-from src.client.scheduling_models.daily_trigger_daily import DailyTriggerDaily
-from src.client.scheduling_models.file_watcher_trigger import FileWatcherTrigger
-from src.client.scheduling_models.file_watcher_trigger_file_watcher import FileWatcherTriggerFileWatcher
-from src.client.scheduling_models.hourly_trigger import HourlyTrigger
-from src.client.scheduling_models.hourly_trigger_hourly import HourlyTriggerHourly
-from src.client.scheduling_models.monthly_trigger import MonthlyTrigger
-from src.client.scheduling_models.monthly_trigger_monthly import MonthlyTriggerMonthly
-from src.client.scheduling_models.monthly_weekday_trigger import MonthlyWeekdayTrigger
-from src.client.scheduling_models.monthly_weekday_trigger_monthly_weekday import MonthlyWeekdayTriggerMonthlyWeekday
-from src.client.scheduling_models.one_ofschedule_create_request_tasks import OneOfscheduleCreateRequestTasks
-from src.client.scheduling_models.one_ofschedule_create_request_triggers import OneOfscheduleCreateRequestTriggers
-from src.client.scheduling_models.one_ofschedule_response_with_task_triggers import OneOfscheduleResponseWithTaskTriggers
-from src.client.scheduling_models.one_ofschedule_tasks import OneOfscheduleTasks
-from src.client.scheduling_models.one_ofschedule_triggers import OneOfscheduleTriggers
-from src.client.scheduling_models.one_ofschedule_update_request_tasks import OneOfscheduleUpdateRequestTasks
-from src.client.scheduling_models.one_ofschedule_update_request_triggers import OneOfscheduleUpdateRequestTriggers
-from src.client.scheduling_models.one_oftime_based_trigger_time_based import OneOftimeBasedTriggerTimeBased
-from src.client.scheduling_models.one_time_trigger import OneTimeTrigger
-from src.client.scheduling_models.one_time_trigger_one_time import OneTimeTriggerOneTime
-from src.client.scheduling_models.run_auto_insights_task_schema import RunAutoInsightsTaskSchema
-from src.client.scheduling_models.run_auto_insights_task_schema_run_auto_insights import RunAutoInsightsTaskSchemaRunAutoInsights
-from src.client.scheduling_models.run_auto_insights_task_with_auto_insights_schema import RunAutoInsightsTaskWithAutoInsightsSchema
-from src.client.scheduling_models.run_auto_insights_task_with_auto_insights_schema_run_auto_insights import RunAutoInsightsTaskWithAutoInsightsSchemaRunAutoInsights
-from src.client.scheduling_models.run_flow_task_schema import RunFlowTaskSchema
-from src.client.scheduling_models.run_flow_task_schema_run_flow import RunFlowTaskSchemaRunFlow
-from src.client.scheduling_models.run_flow_task_with_flow_schema import RunFlowTaskWithFlowSchema
-from src.client.scheduling_models.run_flow_task_with_flow_schema_run_flow import RunFlowTaskWithFlowSchemaRunFlow
-from src.client.scheduling_models.run_flow_task_with_flow_schema_run_flow_creator import RunFlowTaskWithFlowSchemaRunFlowCreator
-from src.client.scheduling_models.run_flow_task_with_flow_schema_run_flow_creator_user_avatar import RunFlowTaskWithFlowSchemaRunFlowCreatorUserAvatar
-from src.client.scheduling_models.run_location_intelligence_task_schema import RunLocationIntelligenceTaskSchema
-from src.client.scheduling_models.run_location_intelligence_task_schema_run_location_intelligence import RunLocationIntelligenceTaskSchemaRunLocationIntelligence
-from src.client.scheduling_models.run_location_intelligence_task_with_location_intelligence_schema import RunLocationIntelligenceTaskWithLocationIntelligenceSchema
-from src.client.scheduling_models.run_location_intelligence_task_with_location_intelligence_schema_run_location_intelligence import RunLocationIntelligenceTaskWithLocationIntelligenceSchemaRunLocationIntelligence
-from src.client.scheduling_models.run_plan_task_schema import RunPlanTaskSchema
-from src.client.scheduling_models.run_plan_task_schema_run_plan import RunPlanTaskSchemaRunPlan
-from src.client.scheduling_models.run_plan_task_with_plan_schema import RunPlanTaskWithPlanSchema
-from src.client.scheduling_models.run_plan_task_with_plan_schema_run_plan import RunPlanTaskWithPlanSchemaRunPlan
-from src.client.scheduling_models.run_report_task_schema import RunReportTaskSchema
-from src.client.scheduling_models.run_report_task_schema_run_report import RunReportTaskSchemaRunReport
-from src.client.scheduling_models.run_report_task_with_report_schema import RunReportTaskWithReportSchema
-from src.client.scheduling_models.run_report_task_with_report_schema_run_report import RunReportTaskWithReportSchemaRunReport
-from src.client.scheduling_models.run_task_schema import RunTaskSchema
-from src.client.scheduling_models.run_workflow_task_schema import RunWorkflowTaskSchema
-from src.client.scheduling_models.run_workflow_task_schema_run_workflow import RunWorkflowTaskSchemaRunWorkflow
-from src.client.scheduling_models.run_workflow_task_with_workflow_schema import RunWorkflowTaskWithWorkflowSchema
-from src.client.scheduling_models.run_workflow_task_with_workflow_schema_run_workflow import RunWorkflowTaskWithWorkflowSchemaRunWorkflow
-from src.client.scheduling_models.schedule import Schedule
-from src.client.scheduling_models.schedule_create_request import ScheduleCreateRequest
-from src.client.scheduling_models.schedule_error_response import ScheduleErrorResponse
-from src.client.scheduling_models.schedule_error_response_exception import ScheduleErrorResponseException
-from src.client.scheduling_models.schedule_response_with_task import ScheduleResponseWithTask
-from src.client.scheduling_models.schedule_response_with_task_list import ScheduleResponseWithTaskList
-from src.client.scheduling_models.schedule_update_request import ScheduleUpdateRequest
-from src.client.scheduling_models.table_watcher_trigger import TableWatcherTrigger
-from src.client.scheduling_models.table_watcher_trigger_table_watcher import TableWatcherTriggerTableWatcher
-from src.client.scheduling_models.time_based_trigger import TimeBasedTrigger
-from src.client.scheduling_models.updated_object_schema import UpdatedObjectSchema
-from src.client.scheduling_models.updated_object_schema_updater import UpdatedObjectSchemaUpdater
-from src.client.scheduling_models.weekly_trigger import WeeklyTrigger
-from src.client.scheduling_models.weekly_trigger_weekly import WeeklyTriggerWeekly
+from src.client.scheduling_models import *

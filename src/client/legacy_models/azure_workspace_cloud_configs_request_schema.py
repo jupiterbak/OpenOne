@@ -41,7 +41,7 @@ class LAzureWorkspaceCloudConfigsRequestSchema(object):
     }
 
     def __init__(self, settings=None, credential_provider=None, default_host=None, default_user_info=None):  # noqa: E501
-        """AzureWorkspaceCloudConfigsRequestSchema - a model defined in Swagger"""  # noqa: E501
+        """LAzureWorkspaceCloudConfigsRequestSchema - a model defined in Swagger"""  # noqa: E501
         self._settings = None
         self._credential_provider = None
         self._default_host = None
@@ -54,20 +54,20 @@ class LAzureWorkspaceCloudConfigsRequestSchema(object):
 
     @property
     def settings(self):
-        """Gets the settings of this AzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        """Gets the settings of this LAzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
 
 
-        :return: The settings of this AzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        :return: The settings of this LAzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
         :rtype: object
         """
         return self._settings
 
     @settings.setter
     def settings(self, settings):
-        """Sets the settings of this AzureWorkspaceCloudConfigsRequestSchema.
+        """Sets the settings of this LAzureWorkspaceCloudConfigsRequestSchema.
 
 
-        :param settings: The settings of this AzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        :param settings: The settings of this LAzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
         :type: object
         """
         if settings is None:
@@ -77,22 +77,22 @@ class LAzureWorkspaceCloudConfigsRequestSchema(object):
 
     @property
     def credential_provider(self):
-        """Gets the credential_provider of this AzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        """Gets the credential_provider of this LAzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
 
         Authentication types like SSO passthrough, Shared Access Signature etc. * `ssoPassthrough` - Authentication through sso.  # noqa: E501
 
-        :return: The credential_provider of this AzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        :return: The credential_provider of this LAzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
         :rtype: str
         """
         return self._credential_provider
 
     @credential_provider.setter
     def credential_provider(self, credential_provider):
-        """Sets the credential_provider of this AzureWorkspaceCloudConfigsRequestSchema.
+        """Sets the credential_provider of this LAzureWorkspaceCloudConfigsRequestSchema.
 
         Authentication types like SSO passthrough, Shared Access Signature etc. * `ssoPassthrough` - Authentication through sso.  # noqa: E501
 
-        :param credential_provider: The credential_provider of this AzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        :param credential_provider: The credential_provider of this LAzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
         :type: str
         """
         if credential_provider is None:
@@ -108,22 +108,22 @@ class LAzureWorkspaceCloudConfigsRequestSchema(object):
 
     @property
     def default_host(self):
-        """Gets the default_host of this AzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        """Gets the default_host of this LAzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
 
         A string that specifies the default ADLS storage account that will be used for uploads, outputs and staging files.  # noqa: E501
 
-        :return: The default_host of this AzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        :return: The default_host of this LAzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
         :rtype: str
         """
         return self._default_host
 
     @default_host.setter
     def default_host(self, default_host):
-        """Sets the default_host of this AzureWorkspaceCloudConfigsRequestSchema.
+        """Sets the default_host of this LAzureWorkspaceCloudConfigsRequestSchema.
 
         A string that specifies the default ADLS storage account that will be used for uploads, outputs and staging files.  # noqa: E501
 
-        :param default_host: The default_host of this AzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        :param default_host: The default_host of this LAzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
         :type: str
         """
         if default_host is None:
@@ -133,22 +133,22 @@ class LAzureWorkspaceCloudConfigsRequestSchema(object):
 
     @property
     def default_user_info(self):
-        """Gets the default_user_info of this AzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        """Gets the default_user_info of this LAzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
 
         A string that specifies the default ADLS filesystem or container that will be used for uploads, outputs and staging files.  # noqa: E501
 
-        :return: The default_user_info of this AzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        :return: The default_user_info of this LAzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
         :rtype: str
         """
         return self._default_user_info
 
     @default_user_info.setter
     def default_user_info(self, default_user_info):
-        """Sets the default_user_info of this AzureWorkspaceCloudConfigsRequestSchema.
+        """Sets the default_user_info of this LAzureWorkspaceCloudConfigsRequestSchema.
 
         A string that specifies the default ADLS filesystem or container that will be used for uploads, outputs and staging files.  # noqa: E501
 
-        :param default_user_info: The default_user_info of this AzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
+        :param default_user_info: The default_user_info of this LAzureWorkspaceCloudConfigsRequestSchema.  # noqa: E501
         :type: str
         """
         if default_user_info is None:
@@ -177,7 +177,7 @@ class LAzureWorkspaceCloudConfigsRequestSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AzureWorkspaceCloudConfigsRequestSchema, dict):
+        if issubclass(LAzureWorkspaceCloudConfigsRequestSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -193,7 +193,7 @@ class LAzureWorkspaceCloudConfigsRequestSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AzureWorkspaceCloudConfigsRequestSchema):
+        if not isinstance(other, LAzureWorkspaceCloudConfigsRequestSchema):
             return False
 
         return self.__dict__ == other.__dict__

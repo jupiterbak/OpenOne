@@ -45,7 +45,7 @@ class LFlowState(object):
     }
 
     def __init__(self, is_opened=None, flow=None, person=None, zoom=None, offset_x=None, offset_y=None):  # noqa: E501
-        """FlowState - a model defined in Swagger"""  # noqa: E501
+        """LFlowState - a model defined in Swagger"""  # noqa: E501
         self._is_opened = None
         self._flow = None
         self._person = None
@@ -68,20 +68,20 @@ class LFlowState(object):
 
     @property
     def is_opened(self):
-        """Gets the is_opened of this FlowState.  # noqa: E501
+        """Gets the is_opened of this LFlowState.  # noqa: E501
 
 
-        :return: The is_opened of this FlowState.  # noqa: E501
+        :return: The is_opened of this LFlowState.  # noqa: E501
         :rtype: bool
         """
         return self._is_opened
 
     @is_opened.setter
     def is_opened(self, is_opened):
-        """Sets the is_opened of this FlowState.
+        """Sets the is_opened of this LFlowState.
 
 
-        :param is_opened: The is_opened of this FlowState.  # noqa: E501
+        :param is_opened: The is_opened of this LFlowState.  # noqa: E501
         :type: bool
         """
 
@@ -89,20 +89,20 @@ class LFlowState(object):
 
     @property
     def flow(self):
-        """Gets the flow of this FlowState.  # noqa: E501
+        """Gets the flow of this LFlowState.  # noqa: E501
 
 
-        :return: The flow of this FlowState.  # noqa: E501
+        :return: The flow of this LFlowState.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this FlowState.
+        """Sets the flow of this LFlowState.
 
 
-        :param flow: The flow of this FlowState.  # noqa: E501
+        :param flow: The flow of this LFlowState.  # noqa: E501
         :type: object
         """
 
@@ -110,20 +110,20 @@ class LFlowState(object):
 
     @property
     def person(self):
-        """Gets the person of this FlowState.  # noqa: E501
+        """Gets the person of this LFlowState.  # noqa: E501
 
 
-        :return: The person of this FlowState.  # noqa: E501
+        :return: The person of this LFlowState.  # noqa: E501
         :rtype: object
         """
         return self._person
 
     @person.setter
     def person(self, person):
-        """Sets the person of this FlowState.
+        """Sets the person of this LFlowState.
 
 
-        :param person: The person of this FlowState.  # noqa: E501
+        :param person: The person of this LFlowState.  # noqa: E501
         :type: object
         """
 
@@ -131,20 +131,20 @@ class LFlowState(object):
 
     @property
     def zoom(self):
-        """Gets the zoom of this FlowState.  # noqa: E501
+        """Gets the zoom of this LFlowState.  # noqa: E501
 
 
-        :return: The zoom of this FlowState.  # noqa: E501
+        :return: The zoom of this LFlowState.  # noqa: E501
         :rtype: float
         """
         return self._zoom
 
     @zoom.setter
     def zoom(self, zoom):
-        """Sets the zoom of this FlowState.
+        """Sets the zoom of this LFlowState.
 
 
-        :param zoom: The zoom of this FlowState.  # noqa: E501
+        :param zoom: The zoom of this LFlowState.  # noqa: E501
         :type: float
         """
 
@@ -152,20 +152,20 @@ class LFlowState(object):
 
     @property
     def offset_x(self):
-        """Gets the offset_x of this FlowState.  # noqa: E501
+        """Gets the offset_x of this LFlowState.  # noqa: E501
 
 
-        :return: The offset_x of this FlowState.  # noqa: E501
+        :return: The offset_x of this LFlowState.  # noqa: E501
         :rtype: float
         """
         return self._offset_x
 
     @offset_x.setter
     def offset_x(self, offset_x):
-        """Sets the offset_x of this FlowState.
+        """Sets the offset_x of this LFlowState.
 
 
-        :param offset_x: The offset_x of this FlowState.  # noqa: E501
+        :param offset_x: The offset_x of this LFlowState.  # noqa: E501
         :type: float
         """
 
@@ -173,20 +173,20 @@ class LFlowState(object):
 
     @property
     def offset_y(self):
-        """Gets the offset_y of this FlowState.  # noqa: E501
+        """Gets the offset_y of this LFlowState.  # noqa: E501
 
 
-        :return: The offset_y of this FlowState.  # noqa: E501
+        :return: The offset_y of this LFlowState.  # noqa: E501
         :rtype: float
         """
         return self._offset_y
 
     @offset_y.setter
     def offset_y(self, offset_y):
-        """Sets the offset_y of this FlowState.
+        """Sets the offset_y of this LFlowState.
 
 
-        :param offset_y: The offset_y of this FlowState.  # noqa: E501
+        :param offset_y: The offset_y of this LFlowState.  # noqa: E501
         :type: float
         """
 
@@ -213,7 +213,7 @@ class LFlowState(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowState, dict):
+        if issubclass(LFlowState, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -229,7 +229,7 @@ class LFlowState(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowState):
+        if not isinstance(other, LFlowState):
             return False
 
         return self.__dict__ == other.__dict__

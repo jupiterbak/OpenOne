@@ -35,27 +35,27 @@ class LRunParameterStringPattern(object):
     }
 
     def __init__(self, string=None):  # noqa: E501
-        """RunParameterStringPattern - a model defined in Swagger"""  # noqa: E501
+        """LRunParameterStringPattern - a model defined in Swagger"""  # noqa: E501
         self._string = None
         self.discriminator = None
         self.string = string
 
     @property
     def string(self):
-        """Gets the string of this RunParameterStringPattern.  # noqa: E501
+        """Gets the string of this LRunParameterStringPattern.  # noqa: E501
 
 
-        :return: The string of this RunParameterStringPattern.  # noqa: E501
+        :return: The string of this LRunParameterStringPattern.  # noqa: E501
         :rtype: object
         """
         return self._string
 
     @string.setter
     def string(self, string):
-        """Sets the string of this RunParameterStringPattern.
+        """Sets the string of this LRunParameterStringPattern.
 
 
-        :param string: The string of this RunParameterStringPattern.  # noqa: E501
+        :param string: The string of this LRunParameterStringPattern.  # noqa: E501
         :type: object
         """
         if string is None:
@@ -84,7 +84,7 @@ class LRunParameterStringPattern(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunParameterStringPattern, dict):
+        if issubclass(LRunParameterStringPattern, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunParameterStringPattern(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunParameterStringPattern):
+        if not isinstance(other, LRunParameterStringPattern):
             return False
 
         return self.__dict__ == other.__dict__

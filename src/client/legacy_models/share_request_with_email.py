@@ -39,7 +39,7 @@ class LShareRequestWithEmail(object):
     }
 
     def __init__(self, email=None, role=None, policy=None):  # noqa: E501
-        """ShareRequestWithEmail - a model defined in Swagger"""  # noqa: E501
+        """LShareRequestWithEmail - a model defined in Swagger"""  # noqa: E501
         self._email = None
         self._role = None
         self._policy = None
@@ -50,22 +50,22 @@ class LShareRequestWithEmail(object):
 
     @property
     def email(self):
-        """Gets the email of this ShareRequestWithEmail.  # noqa: E501
+        """Gets the email of this LShareRequestWithEmail.  # noqa: E501
 
         Email of the person that should be added  # noqa: E501
 
-        :return: The email of this ShareRequestWithEmail.  # noqa: E501
+        :return: The email of this LShareRequestWithEmail.  # noqa: E501
         :rtype: str
         """
         return self._email
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ShareRequestWithEmail.
+        """Sets the email of this LShareRequestWithEmail.
 
         Email of the person that should be added  # noqa: E501
 
-        :param email: The email of this ShareRequestWithEmail.  # noqa: E501
+        :param email: The email of this LShareRequestWithEmail.  # noqa: E501
         :type: str
         """
         if email is None:
@@ -75,22 +75,22 @@ class LShareRequestWithEmail(object):
 
     @property
     def role(self):
-        """Gets the role of this ShareRequestWithEmail.  # noqa: E501
+        """Gets the role of this LShareRequestWithEmail.  # noqa: E501
 
         Role that should be assigned. * `collaborator` - A user who has access to a plan but does not own it is a collaborator. * `readOnly` - Allow the user to view and run the plan.  # noqa: E501
 
-        :return: The role of this ShareRequestWithEmail.  # noqa: E501
+        :return: The role of this LShareRequestWithEmail.  # noqa: E501
         :rtype: str
         """
         return self._role
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ShareRequestWithEmail.
+        """Sets the role of this LShareRequestWithEmail.
 
         Role that should be assigned. * `collaborator` - A user who has access to a plan but does not own it is a collaborator. * `readOnly` - Allow the user to view and run the plan.  # noqa: E501
 
-        :param role: The role of this ShareRequestWithEmail.  # noqa: E501
+        :param role: The role of this LShareRequestWithEmail.  # noqa: E501
         :type: str
         """
         if role is None:
@@ -106,22 +106,22 @@ class LShareRequestWithEmail(object):
 
     @property
     def policy(self):
-        """Gets the policy of this ShareRequestWithEmail.  # noqa: E501
+        """Gets the policy of this LShareRequestWithEmail.  # noqa: E501
 
         Policy that should be assigned. * `plan_editor` - Plan editor, can edit plan description and share the plan with others. * `plan_viewer` - Plan viewer, can see and run the plan.  # noqa: E501
 
-        :return: The policy of this ShareRequestWithEmail.  # noqa: E501
+        :return: The policy of this LShareRequestWithEmail.  # noqa: E501
         :rtype: str
         """
         return self._policy
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this ShareRequestWithEmail.
+        """Sets the policy of this LShareRequestWithEmail.
 
         Policy that should be assigned. * `plan_editor` - Plan editor, can edit plan description and share the plan with others. * `plan_viewer` - Plan viewer, can see and run the plan.  # noqa: E501
 
-        :param policy: The policy of this ShareRequestWithEmail.  # noqa: E501
+        :param policy: The policy of this LShareRequestWithEmail.  # noqa: E501
         :type: str
         """
         if policy is None:
@@ -156,7 +156,7 @@ class LShareRequestWithEmail(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ShareRequestWithEmail, dict):
+        if issubclass(LShareRequestWithEmail, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -172,7 +172,7 @@ class LShareRequestWithEmail(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ShareRequestWithEmail):
+        if not isinstance(other, LShareRequestWithEmail):
             return False
 
         return self.__dict__ == other.__dict__

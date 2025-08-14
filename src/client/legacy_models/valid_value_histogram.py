@@ -33,7 +33,7 @@ class LValidValueHistogram(object):
     }
 
     def __init__(self):  # noqa: E501
-        """ValidValueHistogram - a model defined in Swagger"""  # noqa: E501
+        """LValidValueHistogram - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LValidValueHistogram(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ValidValueHistogram, dict):
+        if issubclass(LValidValueHistogram, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LValidValueHistogram(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ValidValueHistogram):
+        if not isinstance(other, LValidValueHistogram):
             return False
 
         return self.__dict__ == other.__dict__

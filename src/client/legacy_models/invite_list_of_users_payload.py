@@ -28,7 +28,7 @@ class LInviteListOfUsersPayload(object):
     """
     swagger_types = {
         'emails': 'list[str]',
-        'roles': 'AnyOfinviteListOfUsersPayloadRoles'
+        'roles': 'LAnyOfinviteListOfUsersPayloadRoles'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LInviteListOfUsersPayload(object):
     }
 
     def __init__(self, emails=None, roles=None):  # noqa: E501
-        """InviteListOfUsersPayload - a model defined in Swagger"""  # noqa: E501
+        """LInviteListOfUsersPayload - a model defined in Swagger"""  # noqa: E501
         self._emails = None
         self._roles = None
         self.discriminator = None
@@ -47,20 +47,20 @@ class LInviteListOfUsersPayload(object):
 
     @property
     def emails(self):
-        """Gets the emails of this InviteListOfUsersPayload.  # noqa: E501
+        """Gets the emails of this LInviteListOfUsersPayload.  # noqa: E501
 
 
-        :return: The emails of this InviteListOfUsersPayload.  # noqa: E501
+        :return: The emails of this LInviteListOfUsersPayload.  # noqa: E501
         :rtype: list[str]
         """
         return self._emails
 
     @emails.setter
     def emails(self, emails):
-        """Sets the emails of this InviteListOfUsersPayload.
+        """Sets the emails of this LInviteListOfUsersPayload.
 
 
-        :param emails: The emails of this InviteListOfUsersPayload.  # noqa: E501
+        :param emails: The emails of this LInviteListOfUsersPayload.  # noqa: E501
         :type: list[str]
         """
         if emails is None:
@@ -70,21 +70,21 @@ class LInviteListOfUsersPayload(object):
 
     @property
     def roles(self):
-        """Gets the roles of this InviteListOfUsersPayload.  # noqa: E501
+        """Gets the roles of this LInviteListOfUsersPayload.  # noqa: E501
 
 
-        :return: The roles of this InviteListOfUsersPayload.  # noqa: E501
-        :rtype: AnyOfinviteListOfUsersPayloadRoles
+        :return: The roles of this LInviteListOfUsersPayload.  # noqa: E501
+        :rtype: LAnyOfinviteListOfUsersPayloadRoles
         """
         return self._roles
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this InviteListOfUsersPayload.
+        """Sets the roles of this LInviteListOfUsersPayload.
 
 
-        :param roles: The roles of this InviteListOfUsersPayload.  # noqa: E501
-        :type: AnyOfinviteListOfUsersPayloadRoles
+        :param roles: The roles of this LInviteListOfUsersPayload.  # noqa: E501
+        :type: LAnyOfinviteListOfUsersPayloadRoles
         """
 
         self._roles = roles
@@ -110,7 +110,7 @@ class LInviteListOfUsersPayload(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(InviteListOfUsersPayload, dict):
+        if issubclass(LInviteListOfUsersPayload, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LInviteListOfUsersPayload(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, InviteListOfUsersPayload):
+        if not isinstance(other, LInviteListOfUsersPayload):
             return False
 
         return self.__dict__ == other.__dict__

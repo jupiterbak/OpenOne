@@ -30,7 +30,7 @@ class LTopkChart(object):
         'k': 'int',
         'c': 'int',
         'ub': 'int',
-        'topk': 'list[TopkValue]'
+        'topk': 'list[LTopkValue]'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class LTopkChart(object):
     }
 
     def __init__(self, k=None, c=None, ub=None, topk=None):  # noqa: E501
-        """TopkChart - a model defined in Swagger"""  # noqa: E501
+        """LTopkChart - a model defined in Swagger"""  # noqa: E501
         self._k = None
         self._c = None
         self._ub = None
@@ -54,22 +54,22 @@ class LTopkChart(object):
 
     @property
     def k(self):
-        """Gets the k of this TopkChart.  # noqa: E501
+        """Gets the k of this LTopkChart.  # noqa: E501
 
         Maximum number of valid values collected  # noqa: E501
 
-        :return: The k of this TopkChart.  # noqa: E501
+        :return: The k of this LTopkChart.  # noqa: E501
         :rtype: int
         """
         return self._k
 
     @k.setter
     def k(self, k):
-        """Sets the k of this TopkChart.
+        """Sets the k of this LTopkChart.
 
         Maximum number of valid values collected  # noqa: E501
 
-        :param k: The k of this TopkChart.  # noqa: E501
+        :param k: The k of this LTopkChart.  # noqa: E501
         :type: int
         """
         if k is None:
@@ -79,22 +79,22 @@ class LTopkChart(object):
 
     @property
     def c(self):
-        """Gets the c of this TopkChart.  # noqa: E501
+        """Gets the c of this LTopkChart.  # noqa: E501
 
         Multiplication factor. If there are no more than `c*maxBins` different strings, the result will be exact; otherwise it might be approximate  # noqa: E501
 
-        :return: The c of this TopkChart.  # noqa: E501
+        :return: The c of this LTopkChart.  # noqa: E501
         :rtype: int
         """
         return self._c
 
     @c.setter
     def c(self, c):
-        """Sets the c of this TopkChart.
+        """Sets the c of this LTopkChart.
 
         Multiplication factor. If there are no more than `c*maxBins` different strings, the result will be exact; otherwise it might be approximate  # noqa: E501
 
-        :param c: The c of this TopkChart.  # noqa: E501
+        :param c: The c of this LTopkChart.  # noqa: E501
         :type: int
         """
         if c is None:
@@ -104,22 +104,22 @@ class LTopkChart(object):
 
     @property
     def ub(self):
-        """Gets the ub of this TopkChart.  # noqa: E501
+        """Gets the ub of this LTopkChart.  # noqa: E501
 
         Upper bound. If `0` it means that the result is exact. Otherwise, all elements which don't occur in the `topK` occur at most `upperBound` times in the dataset/  # noqa: E501
 
-        :return: The ub of this TopkChart.  # noqa: E501
+        :return: The ub of this LTopkChart.  # noqa: E501
         :rtype: int
         """
         return self._ub
 
     @ub.setter
     def ub(self, ub):
-        """Sets the ub of this TopkChart.
+        """Sets the ub of this LTopkChart.
 
         Upper bound. If `0` it means that the result is exact. Otherwise, all elements which don't occur in the `topK` occur at most `upperBound` times in the dataset/  # noqa: E501
 
-        :param ub: The ub of this TopkChart.  # noqa: E501
+        :param ub: The ub of this LTopkChart.  # noqa: E501
         :type: int
         """
         if ub is None:
@@ -129,21 +129,21 @@ class LTopkChart(object):
 
     @property
     def topk(self):
-        """Gets the topk of this TopkChart.  # noqa: E501
+        """Gets the topk of this LTopkChart.  # noqa: E501
 
 
-        :return: The topk of this TopkChart.  # noqa: E501
-        :rtype: list[TopkValue]
+        :return: The topk of this LTopkChart.  # noqa: E501
+        :rtype: list[LTopkValue]
         """
         return self._topk
 
     @topk.setter
     def topk(self, topk):
-        """Sets the topk of this TopkChart.
+        """Sets the topk of this LTopkChart.
 
 
-        :param topk: The topk of this TopkChart.  # noqa: E501
-        :type: list[TopkValue]
+        :param topk: The topk of this LTopkChart.  # noqa: E501
+        :type: list[LTopkValue]
         """
         if topk is None:
             raise ValueError("Invalid value for `topk`, must not be `None`")  # noqa: E501
@@ -171,7 +171,7 @@ class LTopkChart(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(TopkChart, dict):
+        if issubclass(LTopkChart, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -187,7 +187,7 @@ class LTopkChart(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, TopkChart):
+        if not isinstance(other, LTopkChart):
             return False
 
         return self.__dict__ == other.__dict__

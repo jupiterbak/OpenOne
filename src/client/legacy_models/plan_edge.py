@@ -27,7 +27,7 @@ class LPlanEdge(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfplanEdgeId',
+        'id': 'LAnyOfplanEdgeId',
         'creator': 'object',
         'updater': 'object',
         'created_at': 'datetime',
@@ -45,7 +45,7 @@ class LPlanEdge(object):
     }
 
     def __init__(self, id=None, creator=None, updater=None, created_at=None, updated_at=None, status_rule=None):  # noqa: E501
-        """PlanEdge - a model defined in Swagger"""  # noqa: E501
+        """LPlanEdge - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._creator = None
         self._updater = None
@@ -62,21 +62,21 @@ class LPlanEdge(object):
 
     @property
     def id(self):
-        """Gets the id of this PlanEdge.  # noqa: E501
+        """Gets the id of this LPlanEdge.  # noqa: E501
 
 
-        :return: The id of this PlanEdge.  # noqa: E501
-        :rtype: AnyOfplanEdgeId
+        :return: The id of this LPlanEdge.  # noqa: E501
+        :rtype: LAnyOfplanEdgeId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PlanEdge.
+        """Sets the id of this LPlanEdge.
 
 
-        :param id: The id of this PlanEdge.  # noqa: E501
-        :type: AnyOfplanEdgeId
+        :param id: The id of this LPlanEdge.  # noqa: E501
+        :type: LAnyOfplanEdgeId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -85,20 +85,20 @@ class LPlanEdge(object):
 
     @property
     def creator(self):
-        """Gets the creator of this PlanEdge.  # noqa: E501
+        """Gets the creator of this LPlanEdge.  # noqa: E501
 
 
-        :return: The creator of this PlanEdge.  # noqa: E501
+        :return: The creator of this LPlanEdge.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this PlanEdge.
+        """Sets the creator of this LPlanEdge.
 
 
-        :param creator: The creator of this PlanEdge.  # noqa: E501
+        :param creator: The creator of this LPlanEdge.  # noqa: E501
         :type: object
         """
         if creator is None:
@@ -108,20 +108,20 @@ class LPlanEdge(object):
 
     @property
     def updater(self):
-        """Gets the updater of this PlanEdge.  # noqa: E501
+        """Gets the updater of this LPlanEdge.  # noqa: E501
 
 
-        :return: The updater of this PlanEdge.  # noqa: E501
+        :return: The updater of this LPlanEdge.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this PlanEdge.
+        """Sets the updater of this LPlanEdge.
 
 
-        :param updater: The updater of this PlanEdge.  # noqa: E501
+        :param updater: The updater of this LPlanEdge.  # noqa: E501
         :type: object
         """
         if updater is None:
@@ -131,22 +131,22 @@ class LPlanEdge(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this PlanEdge.  # noqa: E501
+        """Gets the created_at of this LPlanEdge.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this PlanEdge.  # noqa: E501
+        :return: The created_at of this LPlanEdge.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this PlanEdge.
+        """Sets the created_at of this LPlanEdge.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this PlanEdge.  # noqa: E501
+        :param created_at: The created_at of this LPlanEdge.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -156,22 +156,22 @@ class LPlanEdge(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this PlanEdge.  # noqa: E501
+        """Gets the updated_at of this LPlanEdge.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this PlanEdge.  # noqa: E501
+        :return: The updated_at of this LPlanEdge.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this PlanEdge.
+        """Sets the updated_at of this LPlanEdge.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this PlanEdge.  # noqa: E501
+        :param updated_at: The updated_at of this LPlanEdge.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -181,20 +181,20 @@ class LPlanEdge(object):
 
     @property
     def status_rule(self):
-        """Gets the status_rule of this PlanEdge.  # noqa: E501
+        """Gets the status_rule of this LPlanEdge.  # noqa: E501
 
 
-        :return: The status_rule of this PlanEdge.  # noqa: E501
+        :return: The status_rule of this LPlanEdge.  # noqa: E501
         :rtype: str
         """
         return self._status_rule
 
     @status_rule.setter
     def status_rule(self, status_rule):
-        """Sets the status_rule of this PlanEdge.
+        """Sets the status_rule of this LPlanEdge.
 
 
-        :param status_rule: The status_rule of this PlanEdge.  # noqa: E501
+        :param status_rule: The status_rule of this LPlanEdge.  # noqa: E501
         :type: str
         """
         if status_rule is None:
@@ -229,7 +229,7 @@ class LPlanEdge(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanEdge, dict):
+        if issubclass(LPlanEdge, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -245,7 +245,7 @@ class LPlanEdge(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanEdge):
+        if not isinstance(other, LPlanEdge):
             return False
 
         return self.__dict__ == other.__dict__

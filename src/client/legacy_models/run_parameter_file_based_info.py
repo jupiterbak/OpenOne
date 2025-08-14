@@ -30,7 +30,7 @@ class LRunParameterFileBasedInfo(object):
         'type': 'str',
         'override_key': 'str',
         'insertion_indices': 'list[object]',
-        'value': 'RunParameterValueFileBasedSchema'
+        'value': 'LRunParameterValueFileBasedSchema'
     }
 
     attribute_map = {
@@ -41,7 +41,7 @@ class LRunParameterFileBasedInfo(object):
     }
 
     def __init__(self, type=None, override_key=None, insertion_indices=None, value=None):  # noqa: E501
-        """RunParameterFileBasedInfo - a model defined in Swagger"""  # noqa: E501
+        """LRunParameterFileBasedInfo - a model defined in Swagger"""  # noqa: E501
         self._type = None
         self._override_key = None
         self._insertion_indices = None
@@ -55,20 +55,20 @@ class LRunParameterFileBasedInfo(object):
 
     @property
     def type(self):
-        """Gets the type of this RunParameterFileBasedInfo.  # noqa: E501
+        """Gets the type of this LRunParameterFileBasedInfo.  # noqa: E501
 
 
-        :return: The type of this RunParameterFileBasedInfo.  # noqa: E501
+        :return: The type of this LRunParameterFileBasedInfo.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RunParameterFileBasedInfo.
+        """Sets the type of this LRunParameterFileBasedInfo.
 
 
-        :param type: The type of this RunParameterFileBasedInfo.  # noqa: E501
+        :param type: The type of this LRunParameterFileBasedInfo.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -84,22 +84,22 @@ class LRunParameterFileBasedInfo(object):
 
     @property
     def override_key(self):
-        """Gets the override_key of this RunParameterFileBasedInfo.  # noqa: E501
+        """Gets the override_key of this LRunParameterFileBasedInfo.  # noqa: E501
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :return: The override_key of this RunParameterFileBasedInfo.  # noqa: E501
+        :return: The override_key of this LRunParameterFileBasedInfo.  # noqa: E501
         :rtype: str
         """
         return self._override_key
 
     @override_key.setter
     def override_key(self, override_key):
-        """Sets the override_key of this RunParameterFileBasedInfo.
+        """Sets the override_key of this LRunParameterFileBasedInfo.
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :param override_key: The override_key of this RunParameterFileBasedInfo.  # noqa: E501
+        :param override_key: The override_key of this LRunParameterFileBasedInfo.  # noqa: E501
         :type: str
         """
 
@@ -107,20 +107,20 @@ class LRunParameterFileBasedInfo(object):
 
     @property
     def insertion_indices(self):
-        """Gets the insertion_indices of this RunParameterFileBasedInfo.  # noqa: E501
+        """Gets the insertion_indices of this LRunParameterFileBasedInfo.  # noqa: E501
 
 
-        :return: The insertion_indices of this RunParameterFileBasedInfo.  # noqa: E501
+        :return: The insertion_indices of this LRunParameterFileBasedInfo.  # noqa: E501
         :rtype: list[object]
         """
         return self._insertion_indices
 
     @insertion_indices.setter
     def insertion_indices(self, insertion_indices):
-        """Sets the insertion_indices of this RunParameterFileBasedInfo.
+        """Sets the insertion_indices of this LRunParameterFileBasedInfo.
 
 
-        :param insertion_indices: The insertion_indices of this RunParameterFileBasedInfo.  # noqa: E501
+        :param insertion_indices: The insertion_indices of this LRunParameterFileBasedInfo.  # noqa: E501
         :type: list[object]
         """
         if insertion_indices is None:
@@ -130,21 +130,21 @@ class LRunParameterFileBasedInfo(object):
 
     @property
     def value(self):
-        """Gets the value of this RunParameterFileBasedInfo.  # noqa: E501
+        """Gets the value of this LRunParameterFileBasedInfo.  # noqa: E501
 
 
-        :return: The value of this RunParameterFileBasedInfo.  # noqa: E501
-        :rtype: RunParameterValueFileBasedSchema
+        :return: The value of this LRunParameterFileBasedInfo.  # noqa: E501
+        :rtype: LRunParameterValueFileBasedSchema
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RunParameterFileBasedInfo.
+        """Sets the value of this LRunParameterFileBasedInfo.
 
 
-        :param value: The value of this RunParameterFileBasedInfo.  # noqa: E501
-        :type: RunParameterValueFileBasedSchema
+        :param value: The value of this LRunParameterFileBasedInfo.  # noqa: E501
+        :type: LRunParameterValueFileBasedSchema
         """
         if value is None:
             raise ValueError("Invalid value for `value`, must not be `None`")  # noqa: E501
@@ -172,7 +172,7 @@ class LRunParameterFileBasedInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunParameterFileBasedInfo, dict):
+        if issubclass(LRunParameterFileBasedInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -188,7 +188,7 @@ class LRunParameterFileBasedInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunParameterFileBasedInfo):
+        if not isinstance(other, LRunParameterFileBasedInfo):
             return False
 
         return self.__dict__ == other.__dict__

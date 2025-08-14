@@ -37,7 +37,7 @@ class LJobGroupCancelInformation(object):
     }
 
     def __init__(self, job_ids=None, jobgroup_id=None):  # noqa: E501
-        """JobGroupCancelInformation - a model defined in Swagger"""  # noqa: E501
+        """LJobGroupCancelInformation - a model defined in Swagger"""  # noqa: E501
         self._job_ids = None
         self._jobgroup_id = None
         self.discriminator = None
@@ -47,20 +47,20 @@ class LJobGroupCancelInformation(object):
 
     @property
     def job_ids(self):
-        """Gets the job_ids of this JobGroupCancelInformation.  # noqa: E501
+        """Gets the job_ids of this LJobGroupCancelInformation.  # noqa: E501
 
 
-        :return: The job_ids of this JobGroupCancelInformation.  # noqa: E501
+        :return: The job_ids of this LJobGroupCancelInformation.  # noqa: E501
         :rtype: list[int]
         """
         return self._job_ids
 
     @job_ids.setter
     def job_ids(self, job_ids):
-        """Sets the job_ids of this JobGroupCancelInformation.
+        """Sets the job_ids of this LJobGroupCancelInformation.
 
 
-        :param job_ids: The job_ids of this JobGroupCancelInformation.  # noqa: E501
+        :param job_ids: The job_ids of this LJobGroupCancelInformation.  # noqa: E501
         :type: list[int]
         """
 
@@ -68,20 +68,20 @@ class LJobGroupCancelInformation(object):
 
     @property
     def jobgroup_id(self):
-        """Gets the jobgroup_id of this JobGroupCancelInformation.  # noqa: E501
+        """Gets the jobgroup_id of this LJobGroupCancelInformation.  # noqa: E501
 
 
-        :return: The jobgroup_id of this JobGroupCancelInformation.  # noqa: E501
+        :return: The jobgroup_id of this LJobGroupCancelInformation.  # noqa: E501
         :rtype: int
         """
         return self._jobgroup_id
 
     @jobgroup_id.setter
     def jobgroup_id(self, jobgroup_id):
-        """Sets the jobgroup_id of this JobGroupCancelInformation.
+        """Sets the jobgroup_id of this LJobGroupCancelInformation.
 
 
-        :param jobgroup_id: The jobgroup_id of this JobGroupCancelInformation.  # noqa: E501
+        :param jobgroup_id: The jobgroup_id of this LJobGroupCancelInformation.  # noqa: E501
         :type: int
         """
         if jobgroup_id is None:
@@ -110,7 +110,7 @@ class LJobGroupCancelInformation(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(JobGroupCancelInformation, dict):
+        if issubclass(LJobGroupCancelInformation, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LJobGroupCancelInformation(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, JobGroupCancelInformation):
+        if not isinstance(other, LJobGroupCancelInformation):
             return False
 
         return self.__dict__ == other.__dict__

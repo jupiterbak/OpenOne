@@ -27,9 +27,9 @@ class LJobGroupFlowNodeProfile(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'profiler_type_check_histograms': 'dict(str, list[TypeCheckHistogram])',
-        'profiler_valid_value_histograms': 'dict(str, list[ValidValueHistogram])',
-        'profiler_rules': 'dict(str, list[DataQualityRuleResult])',
+        'profiler_type_check_histograms': 'dict(str, list[LTypeCheckHistogram])',
+        'profiler_valid_value_histograms': 'dict(str, list[LValidValueHistogram])',
+        'profiler_rules': 'dict(str, list[LDataQualityRuleResult])',
         'column_types': 'dict(str, list[str])'
     }
 
@@ -41,7 +41,7 @@ class LJobGroupFlowNodeProfile(object):
     }
 
     def __init__(self, profiler_type_check_histograms=None, profiler_valid_value_histograms=None, profiler_rules=None, column_types=None):  # noqa: E501
-        """JobGroupFlowNodeProfile - a model defined in Swagger"""  # noqa: E501
+        """LJobGroupFlowNodeProfile - a model defined in Swagger"""  # noqa: E501
         self._profiler_type_check_histograms = None
         self._profiler_valid_value_histograms = None
         self._profiler_rules = None
@@ -57,91 +57,91 @@ class LJobGroupFlowNodeProfile(object):
 
     @property
     def profiler_type_check_histograms(self):
-        """Gets the profiler_type_check_histograms of this JobGroupFlowNodeProfile.  # noqa: E501
+        """Gets the profiler_type_check_histograms of this LJobGroupFlowNodeProfile.  # noqa: E501
 
         For each column, how many rows conformed to the column's type.  # noqa: E501
 
-        :return: The profiler_type_check_histograms of this JobGroupFlowNodeProfile.  # noqa: E501
-        :rtype: dict(str, list[TypeCheckHistogram])
+        :return: The profiler_type_check_histograms of this LJobGroupFlowNodeProfile.  # noqa: E501
+        :rtype: dict(str, list[LTypeCheckHistogram])
         """
         return self._profiler_type_check_histograms
 
     @profiler_type_check_histograms.setter
     def profiler_type_check_histograms(self, profiler_type_check_histograms):
-        """Sets the profiler_type_check_histograms of this JobGroupFlowNodeProfile.
+        """Sets the profiler_type_check_histograms of this LJobGroupFlowNodeProfile.
 
         For each column, how many rows conformed to the column's type.  # noqa: E501
 
-        :param profiler_type_check_histograms: The profiler_type_check_histograms of this JobGroupFlowNodeProfile.  # noqa: E501
-        :type: dict(str, list[TypeCheckHistogram])
+        :param profiler_type_check_histograms: The profiler_type_check_histograms of this LJobGroupFlowNodeProfile.  # noqa: E501
+        :type: dict(str, list[LTypeCheckHistogram])
         """
 
         self._profiler_type_check_histograms = profiler_type_check_histograms
 
     @property
     def profiler_valid_value_histograms(self):
-        """Gets the profiler_valid_value_histograms of this JobGroupFlowNodeProfile.  # noqa: E501
+        """Gets the profiler_valid_value_histograms of this LJobGroupFlowNodeProfile.  # noqa: E501
 
         Information about distributions of valid values.  # noqa: E501
 
-        :return: The profiler_valid_value_histograms of this JobGroupFlowNodeProfile.  # noqa: E501
-        :rtype: dict(str, list[ValidValueHistogram])
+        :return: The profiler_valid_value_histograms of this LJobGroupFlowNodeProfile.  # noqa: E501
+        :rtype: dict(str, list[LValidValueHistogram])
         """
         return self._profiler_valid_value_histograms
 
     @profiler_valid_value_histograms.setter
     def profiler_valid_value_histograms(self, profiler_valid_value_histograms):
-        """Sets the profiler_valid_value_histograms of this JobGroupFlowNodeProfile.
+        """Sets the profiler_valid_value_histograms of this LJobGroupFlowNodeProfile.
 
         Information about distributions of valid values.  # noqa: E501
 
-        :param profiler_valid_value_histograms: The profiler_valid_value_histograms of this JobGroupFlowNodeProfile.  # noqa: E501
-        :type: dict(str, list[ValidValueHistogram])
+        :param profiler_valid_value_histograms: The profiler_valid_value_histograms of this LJobGroupFlowNodeProfile.  # noqa: E501
+        :type: dict(str, list[LValidValueHistogram])
         """
 
         self._profiler_valid_value_histograms = profiler_valid_value_histograms
 
     @property
     def profiler_rules(self):
-        """Gets the profiler_rules of this JobGroupFlowNodeProfile.  # noqa: E501
+        """Gets the profiler_rules of this LJobGroupFlowNodeProfile.  # noqa: E501
 
         Data quality rule application results.  # noqa: E501
 
-        :return: The profiler_rules of this JobGroupFlowNodeProfile.  # noqa: E501
-        :rtype: dict(str, list[DataQualityRuleResult])
+        :return: The profiler_rules of this LJobGroupFlowNodeProfile.  # noqa: E501
+        :rtype: dict(str, list[LDataQualityRuleResult])
         """
         return self._profiler_rules
 
     @profiler_rules.setter
     def profiler_rules(self, profiler_rules):
-        """Sets the profiler_rules of this JobGroupFlowNodeProfile.
+        """Sets the profiler_rules of this LJobGroupFlowNodeProfile.
 
         Data quality rule application results.  # noqa: E501
 
-        :param profiler_rules: The profiler_rules of this JobGroupFlowNodeProfile.  # noqa: E501
-        :type: dict(str, list[DataQualityRuleResult])
+        :param profiler_rules: The profiler_rules of this LJobGroupFlowNodeProfile.  # noqa: E501
+        :type: dict(str, list[LDataQualityRuleResult])
         """
 
         self._profiler_rules = profiler_rules
 
     @property
     def column_types(self):
-        """Gets the column_types of this JobGroupFlowNodeProfile.  # noqa: E501
+        """Gets the column_types of this LJobGroupFlowNodeProfile.  # noqa: E501
 
         Column name with associated type  # noqa: E501
 
-        :return: The column_types of this JobGroupFlowNodeProfile.  # noqa: E501
+        :return: The column_types of this LJobGroupFlowNodeProfile.  # noqa: E501
         :rtype: dict(str, list[str])
         """
         return self._column_types
 
     @column_types.setter
     def column_types(self, column_types):
-        """Sets the column_types of this JobGroupFlowNodeProfile.
+        """Sets the column_types of this LJobGroupFlowNodeProfile.
 
         Column name with associated type  # noqa: E501
 
-        :param column_types: The column_types of this JobGroupFlowNodeProfile.  # noqa: E501
+        :param column_types: The column_types of this LJobGroupFlowNodeProfile.  # noqa: E501
         :type: dict(str, list[str])
         """
         if column_types is None:
@@ -170,7 +170,7 @@ class LJobGroupFlowNodeProfile(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(JobGroupFlowNodeProfile, dict):
+        if issubclass(LJobGroupFlowNodeProfile, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -186,7 +186,7 @@ class LJobGroupFlowNodeProfile(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, JobGroupFlowNodeProfile):
+        if not isinstance(other, LJobGroupFlowNodeProfile):
             return False
 
         return self.__dict__ == other.__dict__

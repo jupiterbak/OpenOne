@@ -27,7 +27,7 @@ class LOutputObjectList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[OutputObject]',
+        'data': 'list[LOutputObject]',
         'count': 'int'
     }
 
@@ -37,7 +37,7 @@ class LOutputObjectList(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """OutputObjectList - a model defined in Swagger"""  # noqa: E501
+        """LOutputObjectList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LOutputObjectList(object):
 
     @property
     def data(self):
-        """Gets the data of this OutputObjectList.  # noqa: E501
+        """Gets the data of this LOutputObjectList.  # noqa: E501
 
 
-        :return: The data of this OutputObjectList.  # noqa: E501
-        :rtype: list[OutputObject]
+        :return: The data of this LOutputObjectList.  # noqa: E501
+        :rtype: list[LOutputObject]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this OutputObjectList.
+        """Sets the data of this LOutputObjectList.
 
 
-        :param data: The data of this OutputObjectList.  # noqa: E501
-        :type: list[OutputObject]
+        :param data: The data of this LOutputObjectList.  # noqa: E501
+        :type: list[LOutputObject]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LOutputObjectList(object):
 
     @property
     def count(self):
-        """Gets the count of this OutputObjectList.  # noqa: E501
+        """Gets the count of this LOutputObjectList.  # noqa: E501
 
 
-        :return: The count of this OutputObjectList.  # noqa: E501
+        :return: The count of this LOutputObjectList.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this OutputObjectList.
+        """Sets the count of this LOutputObjectList.
 
 
-        :param count: The count of this OutputObjectList.  # noqa: E501
+        :param count: The count of this LOutputObjectList.  # noqa: E501
         :type: int
         """
 
@@ -110,7 +110,7 @@ class LOutputObjectList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OutputObjectList, dict):
+        if issubclass(LOutputObjectList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LOutputObjectList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OutputObjectList):
+        if not isinstance(other, LOutputObjectList):
             return False
 
         return self.__dict__ == other.__dict__

@@ -28,7 +28,7 @@ class LFlowRunParameterOverrideCreateRequest(object):
     """
     swagger_types = {
         'override_key': 'str',
-        'value': 'OneOfflowRunParameterOverrideCreateRequestValue',
+        'value': 'LOneOfflowRunParameterOverrideCreateRequestValue',
         'flow_id': 'float'
     }
 
@@ -39,7 +39,7 @@ class LFlowRunParameterOverrideCreateRequest(object):
     }
 
     def __init__(self, override_key=None, value=None, flow_id=None):  # noqa: E501
-        """FlowRunParameterOverrideCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LFlowRunParameterOverrideCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._override_key = None
         self._value = None
         self._flow_id = None
@@ -50,22 +50,22 @@ class LFlowRunParameterOverrideCreateRequest(object):
 
     @property
     def override_key(self):
-        """Gets the override_key of this FlowRunParameterOverrideCreateRequest.  # noqa: E501
+        """Gets the override_key of this LFlowRunParameterOverrideCreateRequest.  # noqa: E501
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :return: The override_key of this FlowRunParameterOverrideCreateRequest.  # noqa: E501
+        :return: The override_key of this LFlowRunParameterOverrideCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._override_key
 
     @override_key.setter
     def override_key(self, override_key):
-        """Sets the override_key of this FlowRunParameterOverrideCreateRequest.
+        """Sets the override_key of this LFlowRunParameterOverrideCreateRequest.
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :param override_key: The override_key of this FlowRunParameterOverrideCreateRequest.  # noqa: E501
+        :param override_key: The override_key of this LFlowRunParameterOverrideCreateRequest.  # noqa: E501
         :type: str
         """
         if override_key is None:
@@ -75,21 +75,21 @@ class LFlowRunParameterOverrideCreateRequest(object):
 
     @property
     def value(self):
-        """Gets the value of this FlowRunParameterOverrideCreateRequest.  # noqa: E501
+        """Gets the value of this LFlowRunParameterOverrideCreateRequest.  # noqa: E501
 
 
-        :return: The value of this FlowRunParameterOverrideCreateRequest.  # noqa: E501
-        :rtype: OneOfflowRunParameterOverrideCreateRequestValue
+        :return: The value of this LFlowRunParameterOverrideCreateRequest.  # noqa: E501
+        :rtype: LOneOfflowRunParameterOverrideCreateRequestValue
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this FlowRunParameterOverrideCreateRequest.
+        """Sets the value of this LFlowRunParameterOverrideCreateRequest.
 
 
-        :param value: The value of this FlowRunParameterOverrideCreateRequest.  # noqa: E501
-        :type: OneOfflowRunParameterOverrideCreateRequestValue
+        :param value: The value of this LFlowRunParameterOverrideCreateRequest.  # noqa: E501
+        :type: LOneOfflowRunParameterOverrideCreateRequestValue
         """
         if value is None:
             raise ValueError("Invalid value for `value`, must not be `None`")  # noqa: E501
@@ -98,20 +98,20 @@ class LFlowRunParameterOverrideCreateRequest(object):
 
     @property
     def flow_id(self):
-        """Gets the flow_id of this FlowRunParameterOverrideCreateRequest.  # noqa: E501
+        """Gets the flow_id of this LFlowRunParameterOverrideCreateRequest.  # noqa: E501
 
 
-        :return: The flow_id of this FlowRunParameterOverrideCreateRequest.  # noqa: E501
+        :return: The flow_id of this LFlowRunParameterOverrideCreateRequest.  # noqa: E501
         :rtype: float
         """
         return self._flow_id
 
     @flow_id.setter
     def flow_id(self, flow_id):
-        """Sets the flow_id of this FlowRunParameterOverrideCreateRequest.
+        """Sets the flow_id of this LFlowRunParameterOverrideCreateRequest.
 
 
-        :param flow_id: The flow_id of this FlowRunParameterOverrideCreateRequest.  # noqa: E501
+        :param flow_id: The flow_id of this LFlowRunParameterOverrideCreateRequest.  # noqa: E501
         :type: float
         """
         if flow_id is None:
@@ -140,7 +140,7 @@ class LFlowRunParameterOverrideCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowRunParameterOverrideCreateRequest, dict):
+        if issubclass(LFlowRunParameterOverrideCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -156,7 +156,7 @@ class LFlowRunParameterOverrideCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowRunParameterOverrideCreateRequest):
+        if not isinstance(other, LFlowRunParameterOverrideCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

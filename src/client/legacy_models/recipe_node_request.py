@@ -43,7 +43,7 @@ class LRecipeNodeRequest(object):
     }
 
     def __init__(self, flow_id=None, script_id=None, activesample_id=None, reference_id=None, wrangled=None):  # noqa: E501
-        """RecipeNodeRequest - a model defined in Swagger"""  # noqa: E501
+        """LRecipeNodeRequest - a model defined in Swagger"""  # noqa: E501
         self._flow_id = None
         self._script_id = None
         self._activesample_id = None
@@ -60,22 +60,22 @@ class LRecipeNodeRequest(object):
 
     @property
     def flow_id(self):
-        """Gets the flow_id of this RecipeNodeRequest.  # noqa: E501
+        """Gets the flow_id of this LRecipeNodeRequest.  # noqa: E501
 
         Internal identifier of the `flow` that contains this dataset  # noqa: E501
 
-        :return: The flow_id of this RecipeNodeRequest.  # noqa: E501
+        :return: The flow_id of this LRecipeNodeRequest.  # noqa: E501
         :rtype: int
         """
         return self._flow_id
 
     @flow_id.setter
     def flow_id(self, flow_id):
-        """Sets the flow_id of this RecipeNodeRequest.
+        """Sets the flow_id of this LRecipeNodeRequest.
 
         Internal identifier of the `flow` that contains this dataset  # noqa: E501
 
-        :param flow_id: The flow_id of this RecipeNodeRequest.  # noqa: E501
+        :param flow_id: The flow_id of this LRecipeNodeRequest.  # noqa: E501
         :type: int
         """
         if flow_id is None:
@@ -85,22 +85,22 @@ class LRecipeNodeRequest(object):
 
     @property
     def script_id(self):
-        """Gets the script_id of this RecipeNodeRequest.  # noqa: E501
+        """Gets the script_id of this LRecipeNodeRequest.  # noqa: E501
 
         Internal identifier of the `recipe` associated with this dataset.  # noqa: E501
 
-        :return: The script_id of this RecipeNodeRequest.  # noqa: E501
+        :return: The script_id of this LRecipeNodeRequest.  # noqa: E501
         :rtype: int
         """
         return self._script_id
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this RecipeNodeRequest.
+        """Sets the script_id of this LRecipeNodeRequest.
 
         Internal identifier of the `recipe` associated with this dataset.  # noqa: E501
 
-        :param script_id: The script_id of this RecipeNodeRequest.  # noqa: E501
+        :param script_id: The script_id of this LRecipeNodeRequest.  # noqa: E501
         :type: int
         """
         if script_id is None:
@@ -110,22 +110,22 @@ class LRecipeNodeRequest(object):
 
     @property
     def activesample_id(self):
-        """Gets the activesample_id of this RecipeNodeRequest.  # noqa: E501
+        """Gets the activesample_id of this LRecipeNodeRequest.  # noqa: E501
 
         Internal identifier of the currently active `sample` for this dataset.  # noqa: E501
 
-        :return: The activesample_id of this RecipeNodeRequest.  # noqa: E501
+        :return: The activesample_id of this LRecipeNodeRequest.  # noqa: E501
         :rtype: int
         """
         return self._activesample_id
 
     @activesample_id.setter
     def activesample_id(self, activesample_id):
-        """Sets the activesample_id of this RecipeNodeRequest.
+        """Sets the activesample_id of this LRecipeNodeRequest.
 
         Internal identifier of the currently active `sample` for this dataset.  # noqa: E501
 
-        :param activesample_id: The activesample_id of this RecipeNodeRequest.  # noqa: E501
+        :param activesample_id: The activesample_id of this LRecipeNodeRequest.  # noqa: E501
         :type: int
         """
 
@@ -133,22 +133,22 @@ class LRecipeNodeRequest(object):
 
     @property
     def reference_id(self):
-        """Gets the reference_id of this RecipeNodeRequest.  # noqa: E501
+        """Gets the reference_id of this LRecipeNodeRequest.  # noqa: E501
 
         Internal identifier for referenceInfo, which contains the name and description of the reference object associated with this flow node. This is how the reference dataset will appear when used in other flows.  # noqa: E501
 
-        :return: The reference_id of this RecipeNodeRequest.  # noqa: E501
+        :return: The reference_id of this LRecipeNodeRequest.  # noqa: E501
         :rtype: int
         """
         return self._reference_id
 
     @reference_id.setter
     def reference_id(self, reference_id):
-        """Sets the reference_id of this RecipeNodeRequest.
+        """Sets the reference_id of this LRecipeNodeRequest.
 
         Internal identifier for referenceInfo, which contains the name and description of the reference object associated with this flow node. This is how the reference dataset will appear when used in other flows.  # noqa: E501
 
-        :param reference_id: The reference_id of this RecipeNodeRequest.  # noqa: E501
+        :param reference_id: The reference_id of this LRecipeNodeRequest.  # noqa: E501
         :type: int
         """
 
@@ -156,22 +156,22 @@ class LRecipeNodeRequest(object):
 
     @property
     def wrangled(self):
-        """Gets the wrangled of this RecipeNodeRequest.  # noqa: E501
+        """Gets the wrangled of this LRecipeNodeRequest.  # noqa: E501
 
         If false, this is an input dataset (i.e. an imported dataset or a reference dataset). If true, this flowNode contains a recipe that can be edited by the user.  # noqa: E501
 
-        :return: The wrangled of this RecipeNodeRequest.  # noqa: E501
+        :return: The wrangled of this LRecipeNodeRequest.  # noqa: E501
         :rtype: bool
         """
         return self._wrangled
 
     @wrangled.setter
     def wrangled(self, wrangled):
-        """Sets the wrangled of this RecipeNodeRequest.
+        """Sets the wrangled of this LRecipeNodeRequest.
 
         If false, this is an input dataset (i.e. an imported dataset or a reference dataset). If true, this flowNode contains a recipe that can be edited by the user.  # noqa: E501
 
-        :param wrangled: The wrangled of this RecipeNodeRequest.  # noqa: E501
+        :param wrangled: The wrangled of this LRecipeNodeRequest.  # noqa: E501
         :type: bool
         """
         if wrangled is None:
@@ -200,7 +200,7 @@ class LRecipeNodeRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RecipeNodeRequest, dict):
+        if issubclass(LRecipeNodeRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -216,7 +216,7 @@ class LRecipeNodeRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RecipeNodeRequest):
+        if not isinstance(other, LRecipeNodeRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -32,7 +32,7 @@ class LSqlScript(object):
         'vendor': 'str',
         'output_object_id': 'int',
         'connection': 'object',
-        'id': 'AnyOfsqlScriptId',
+        'id': 'LAnyOfsqlScriptId',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'creator': 'object',
@@ -53,7 +53,7 @@ class LSqlScript(object):
     }
 
     def __init__(self, sql_script=None, type=None, vendor=None, output_object_id=None, connection=None, id=None, created_at=None, updated_at=None, creator=None, updater=None):  # noqa: E501
-        """SqlScript - a model defined in Swagger"""  # noqa: E501
+        """LSqlScript - a model defined in Swagger"""  # noqa: E501
         self._sql_script = None
         self._type = None
         self._vendor = None
@@ -85,22 +85,22 @@ class LSqlScript(object):
 
     @property
     def sql_script(self):
-        """Gets the sql_script of this SqlScript.  # noqa: E501
+        """Gets the sql_script of this LSqlScript.  # noqa: E501
 
         String of SQL queries to be executed.  # noqa: E501
 
-        :return: The sql_script of this SqlScript.  # noqa: E501
+        :return: The sql_script of this LSqlScript.  # noqa: E501
         :rtype: str
         """
         return self._sql_script
 
     @sql_script.setter
     def sql_script(self, sql_script):
-        """Sets the sql_script of this SqlScript.
+        """Sets the sql_script of this LSqlScript.
 
         String of SQL queries to be executed.  # noqa: E501
 
-        :param sql_script: The sql_script of this SqlScript.  # noqa: E501
+        :param sql_script: The sql_script of this LSqlScript.  # noqa: E501
         :type: str
         """
 
@@ -108,22 +108,22 @@ class LSqlScript(object):
 
     @property
     def type(self):
-        """Gets the type of this SqlScript.  # noqa: E501
+        """Gets the type of this LSqlScript.  # noqa: E501
 
         Identifier to decide if the SQLs will be executed before or after a job.  # noqa: E501
 
-        :return: The type of this SqlScript.  # noqa: E501
+        :return: The type of this LSqlScript.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SqlScript.
+        """Sets the type of this LSqlScript.
 
         Identifier to decide if the SQLs will be executed before or after a job.  # noqa: E501
 
-        :param type: The type of this SqlScript.  # noqa: E501
+        :param type: The type of this LSqlScript.  # noqa: E501
         :type: str
         """
 
@@ -131,22 +131,22 @@ class LSqlScript(object):
 
     @property
     def vendor(self):
-        """Gets the vendor of this SqlScript.  # noqa: E501
+        """Gets the vendor of this LSqlScript.  # noqa: E501
 
         e.g. `databricks`, `hive`, `redshift`, `postgres`, `oracle`, `sqlserver`, `teradata`, `bigquery`, `tableau`, `sqldatawarehouse`, `synapse`, `snowflake`, `gsuser`, `glue`, `sftp`, `s3`, `s3user`, `gsheetsuser`, `jdbc_rest`, `onedrive`, `sharepoint_files` or `box`  # noqa: E501
 
-        :return: The vendor of this SqlScript.  # noqa: E501
+        :return: The vendor of this LSqlScript.  # noqa: E501
         :rtype: str
         """
         return self._vendor
 
     @vendor.setter
     def vendor(self, vendor):
-        """Sets the vendor of this SqlScript.
+        """Sets the vendor of this LSqlScript.
 
         e.g. `databricks`, `hive`, `redshift`, `postgres`, `oracle`, `sqlserver`, `teradata`, `bigquery`, `tableau`, `sqldatawarehouse`, `synapse`, `snowflake`, `gsuser`, `glue`, `sftp`, `s3`, `s3user`, `gsheetsuser`, `jdbc_rest`, `onedrive`, `sharepoint_files` or `box`  # noqa: E501
 
-        :param vendor: The vendor of this SqlScript.  # noqa: E501
+        :param vendor: The vendor of this LSqlScript.  # noqa: E501
         :type: str
         """
 
@@ -154,22 +154,22 @@ class LSqlScript(object):
 
     @property
     def output_object_id(self):
-        """Gets the output_object_id of this SqlScript.  # noqa: E501
+        """Gets the output_object_id of this LSqlScript.  # noqa: E501
 
         [outputObject](#tag/OutputObject) to attach this [sqlScript](#tag/SqlScript) to.  # noqa: E501
 
-        :return: The output_object_id of this SqlScript.  # noqa: E501
+        :return: The output_object_id of this LSqlScript.  # noqa: E501
         :rtype: int
         """
         return self._output_object_id
 
     @output_object_id.setter
     def output_object_id(self, output_object_id):
-        """Sets the output_object_id of this SqlScript.
+        """Sets the output_object_id of this LSqlScript.
 
         [outputObject](#tag/OutputObject) to attach this [sqlScript](#tag/SqlScript) to.  # noqa: E501
 
-        :param output_object_id: The output_object_id of this SqlScript.  # noqa: E501
+        :param output_object_id: The output_object_id of this LSqlScript.  # noqa: E501
         :type: int
         """
 
@@ -177,20 +177,20 @@ class LSqlScript(object):
 
     @property
     def connection(self):
-        """Gets the connection of this SqlScript.  # noqa: E501
+        """Gets the connection of this LSqlScript.  # noqa: E501
 
 
-        :return: The connection of this SqlScript.  # noqa: E501
+        :return: The connection of this LSqlScript.  # noqa: E501
         :rtype: object
         """
         return self._connection
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this SqlScript.
+        """Sets the connection of this LSqlScript.
 
 
-        :param connection: The connection of this SqlScript.  # noqa: E501
+        :param connection: The connection of this LSqlScript.  # noqa: E501
         :type: object
         """
 
@@ -198,21 +198,21 @@ class LSqlScript(object):
 
     @property
     def id(self):
-        """Gets the id of this SqlScript.  # noqa: E501
+        """Gets the id of this LSqlScript.  # noqa: E501
 
 
-        :return: The id of this SqlScript.  # noqa: E501
-        :rtype: AnyOfsqlScriptId
+        :return: The id of this LSqlScript.  # noqa: E501
+        :rtype: LAnyOfsqlScriptId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SqlScript.
+        """Sets the id of this LSqlScript.
 
 
-        :param id: The id of this SqlScript.  # noqa: E501
-        :type: AnyOfsqlScriptId
+        :param id: The id of this LSqlScript.  # noqa: E501
+        :type: LAnyOfsqlScriptId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -221,22 +221,22 @@ class LSqlScript(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this SqlScript.  # noqa: E501
+        """Gets the created_at of this LSqlScript.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this SqlScript.  # noqa: E501
+        :return: The created_at of this LSqlScript.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SqlScript.
+        """Sets the created_at of this LSqlScript.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this SqlScript.  # noqa: E501
+        :param created_at: The created_at of this LSqlScript.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -246,22 +246,22 @@ class LSqlScript(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SqlScript.  # noqa: E501
+        """Gets the updated_at of this LSqlScript.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this SqlScript.  # noqa: E501
+        :return: The updated_at of this LSqlScript.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SqlScript.
+        """Sets the updated_at of this LSqlScript.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this SqlScript.  # noqa: E501
+        :param updated_at: The updated_at of this LSqlScript.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -271,20 +271,20 @@ class LSqlScript(object):
 
     @property
     def creator(self):
-        """Gets the creator of this SqlScript.  # noqa: E501
+        """Gets the creator of this LSqlScript.  # noqa: E501
 
 
-        :return: The creator of this SqlScript.  # noqa: E501
+        :return: The creator of this LSqlScript.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this SqlScript.
+        """Sets the creator of this LSqlScript.
 
 
-        :param creator: The creator of this SqlScript.  # noqa: E501
+        :param creator: The creator of this LSqlScript.  # noqa: E501
         :type: object
         """
 
@@ -292,20 +292,20 @@ class LSqlScript(object):
 
     @property
     def updater(self):
-        """Gets the updater of this SqlScript.  # noqa: E501
+        """Gets the updater of this LSqlScript.  # noqa: E501
 
 
-        :return: The updater of this SqlScript.  # noqa: E501
+        :return: The updater of this LSqlScript.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this SqlScript.
+        """Sets the updater of this LSqlScript.
 
 
-        :param updater: The updater of this SqlScript.  # noqa: E501
+        :param updater: The updater of this LSqlScript.  # noqa: E501
         :type: object
         """
 
@@ -332,7 +332,7 @@ class LSqlScript(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(SqlScript, dict):
+        if issubclass(LSqlScript, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -348,7 +348,7 @@ class LSqlScript(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SqlScript):
+        if not isinstance(other, LSqlScript):
             return False
 
         return self.__dict__ == other.__dict__

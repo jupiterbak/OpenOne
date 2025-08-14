@@ -55,7 +55,7 @@ class LAwsCloudConfigsResponseSchema(object):
     }
 
     def __init__(self, settings=None, default_bucket=None, extra_buckets=None, credential_provider=None, active_role=None, credential=None, roles=None, base_path=None, external_id=None, created_at=None, updated_at=None):  # noqa: E501
-        """AwsCloudConfigsResponseSchema - a model defined in Swagger"""  # noqa: E501
+        """LAwsCloudConfigsResponseSchema - a model defined in Swagger"""  # noqa: E501
         self._settings = None
         self._default_bucket = None
         self._extra_buckets = None
@@ -88,20 +88,20 @@ class LAwsCloudConfigsResponseSchema(object):
 
     @property
     def settings(self):
-        """Gets the settings of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the settings of this LAwsCloudConfigsResponseSchema.  # noqa: E501
 
 
-        :return: The settings of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :return: The settings of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :rtype: object
         """
         return self._settings
 
     @settings.setter
     def settings(self, settings):
-        """Sets the settings of this AwsCloudConfigsResponseSchema.
+        """Sets the settings of this LAwsCloudConfigsResponseSchema.
 
 
-        :param settings: The settings of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :param settings: The settings of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :type: object
         """
         if settings is None:
@@ -111,22 +111,22 @@ class LAwsCloudConfigsResponseSchema(object):
 
     @property
     def default_bucket(self):
-        """Gets the default_bucket of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the default_bucket of this LAwsCloudConfigsResponseSchema.  # noqa: E501
 
         Default S3 bucket where user can upload and write results  # noqa: E501
 
-        :return: The default_bucket of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :return: The default_bucket of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._default_bucket
 
     @default_bucket.setter
     def default_bucket(self, default_bucket):
-        """Sets the default_bucket of this AwsCloudConfigsResponseSchema.
+        """Sets the default_bucket of this LAwsCloudConfigsResponseSchema.
 
         Default S3 bucket where user can upload and write results  # noqa: E501
 
-        :param default_bucket: The default_bucket of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :param default_bucket: The default_bucket of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :type: str
         """
         if default_bucket is None:
@@ -136,20 +136,20 @@ class LAwsCloudConfigsResponseSchema(object):
 
     @property
     def extra_buckets(self):
-        """Gets the extra_buckets of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the extra_buckets of this LAwsCloudConfigsResponseSchema.  # noqa: E501
 
 
-        :return: The extra_buckets of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :return: The extra_buckets of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :rtype: list[str]
         """
         return self._extra_buckets
 
     @extra_buckets.setter
     def extra_buckets(self, extra_buckets):
-        """Sets the extra_buckets of this AwsCloudConfigsResponseSchema.
+        """Sets the extra_buckets of this LAwsCloudConfigsResponseSchema.
 
 
-        :param extra_buckets: The extra_buckets of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :param extra_buckets: The extra_buckets of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :type: list[str]
         """
 
@@ -157,22 +157,22 @@ class LAwsCloudConfigsResponseSchema(object):
 
     @property
     def credential_provider(self):
-        """Gets the credential_provider of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the credential_provider of this LAwsCloudConfigsResponseSchema.  # noqa: E501
 
          * `default` - Using AWS key/secret to authenticate to S3 * `temporary` - Using AWS IAM Role to authenticate to S3  # noqa: E501
 
-        :return: The credential_provider of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :return: The credential_provider of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._credential_provider
 
     @credential_provider.setter
     def credential_provider(self, credential_provider):
-        """Sets the credential_provider of this AwsCloudConfigsResponseSchema.
+        """Sets the credential_provider of this LAwsCloudConfigsResponseSchema.
 
          * `default` - Using AWS key/secret to authenticate to S3 * `temporary` - Using AWS IAM Role to authenticate to S3  # noqa: E501
 
-        :param credential_provider: The credential_provider of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :param credential_provider: The credential_provider of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :type: str
         """
         if credential_provider is None:
@@ -188,22 +188,22 @@ class LAwsCloudConfigsResponseSchema(object):
 
     @property
     def active_role(self):
-        """Gets the active_role of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the active_role of this LAwsCloudConfigsResponseSchema.  # noqa: E501
 
         AWS IAM Role, required when credential provider is set to temporary  # noqa: E501
 
-        :return: The active_role of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :return: The active_role of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._active_role
 
     @active_role.setter
     def active_role(self, active_role):
-        """Sets the active_role of this AwsCloudConfigsResponseSchema.
+        """Sets the active_role of this LAwsCloudConfigsResponseSchema.
 
         AWS IAM Role, required when credential provider is set to temporary  # noqa: E501
 
-        :param active_role: The active_role of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :param active_role: The active_role of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :type: str
         """
 
@@ -211,20 +211,20 @@ class LAwsCloudConfigsResponseSchema(object):
 
     @property
     def credential(self):
-        """Gets the credential of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the credential of this LAwsCloudConfigsResponseSchema.  # noqa: E501
 
 
-        :return: The credential of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :return: The credential of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :rtype: object
         """
         return self._credential
 
     @credential.setter
     def credential(self, credential):
-        """Sets the credential of this AwsCloudConfigsResponseSchema.
+        """Sets the credential of this LAwsCloudConfigsResponseSchema.
 
 
-        :param credential: The credential of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :param credential: The credential of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :type: object
         """
 
@@ -232,20 +232,20 @@ class LAwsCloudConfigsResponseSchema(object):
 
     @property
     def roles(self):
-        """Gets the roles of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the roles of this LAwsCloudConfigsResponseSchema.  # noqa: E501
 
 
-        :return: The roles of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :return: The roles of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :rtype: list[str]
         """
         return self._roles
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this AwsCloudConfigsResponseSchema.
+        """Sets the roles of this LAwsCloudConfigsResponseSchema.
 
 
-        :param roles: The roles of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :param roles: The roles of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :type: list[str]
         """
 
@@ -253,22 +253,22 @@ class LAwsCloudConfigsResponseSchema(object):
 
     @property
     def base_path(self):
-        """Gets the base_path of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the base_path of this LAwsCloudConfigsResponseSchema.  # noqa: E501
 
         base directory for the base Storage in workspace  # noqa: E501
 
-        :return: The base_path of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :return: The base_path of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._base_path
 
     @base_path.setter
     def base_path(self, base_path):
-        """Sets the base_path of this AwsCloudConfigsResponseSchema.
+        """Sets the base_path of this LAwsCloudConfigsResponseSchema.
 
         base directory for the base Storage in workspace  # noqa: E501
 
-        :param base_path: The base_path of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :param base_path: The base_path of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :type: str
         """
 
@@ -276,22 +276,22 @@ class LAwsCloudConfigsResponseSchema(object):
 
     @property
     def external_id(self):
-        """Gets the external_id of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the external_id of this LAwsCloudConfigsResponseSchema.  # noqa: E501
 
         This unique identifier is used to manage     cross-account access in AWS. This value should not be modified.  # noqa: E501
 
-        :return: The external_id of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :return: The external_id of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :rtype: str
         """
         return self._external_id
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this AwsCloudConfigsResponseSchema.
+        """Sets the external_id of this LAwsCloudConfigsResponseSchema.
 
         This unique identifier is used to manage     cross-account access in AWS. This value should not be modified.  # noqa: E501
 
-        :param external_id: The external_id of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :param external_id: The external_id of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :type: str
         """
 
@@ -299,22 +299,22 @@ class LAwsCloudConfigsResponseSchema(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the created_at of this LAwsCloudConfigsResponseSchema.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :return: The created_at of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AwsCloudConfigsResponseSchema.
+        """Sets the created_at of this LAwsCloudConfigsResponseSchema.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :param created_at: The created_at of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -324,22 +324,22 @@ class LAwsCloudConfigsResponseSchema(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        """Gets the updated_at of this LAwsCloudConfigsResponseSchema.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :return: The updated_at of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this AwsCloudConfigsResponseSchema.
+        """Sets the updated_at of this LAwsCloudConfigsResponseSchema.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this AwsCloudConfigsResponseSchema.  # noqa: E501
+        :param updated_at: The updated_at of this LAwsCloudConfigsResponseSchema.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -368,7 +368,7 @@ class LAwsCloudConfigsResponseSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AwsCloudConfigsResponseSchema, dict):
+        if issubclass(LAwsCloudConfigsResponseSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -384,7 +384,7 @@ class LAwsCloudConfigsResponseSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AwsCloudConfigsResponseSchema):
+        if not isinstance(other, LAwsCloudConfigsResponseSchema):
             return False
 
         return self.__dict__ == other.__dict__

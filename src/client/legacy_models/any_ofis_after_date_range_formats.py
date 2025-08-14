@@ -33,7 +33,7 @@ class LAnyOfisAfterDateRangeFormats(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfisAfterDateRangeFormats - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfisAfterDateRangeFormats - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfisAfterDateRangeFormats(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfisAfterDateRangeFormats, dict):
+        if issubclass(LAnyOfisAfterDateRangeFormats, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfisAfterDateRangeFormats(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfisAfterDateRangeFormats):
+        if not isinstance(other, LAnyOfisAfterDateRangeFormats):
             return False
 
         return self.__dict__ == other.__dict__

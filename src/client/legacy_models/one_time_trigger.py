@@ -37,7 +37,7 @@ class LOneTimeTrigger(object):
     }
 
     def __init__(self, one_time=None, timezone=None):  # noqa: E501
-        """OneTimeTrigger - a model defined in Swagger"""  # noqa: E501
+        """LOneTimeTrigger - a model defined in Swagger"""  # noqa: E501
         self._one_time = None
         self._timezone = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LOneTimeTrigger(object):
 
     @property
     def one_time(self):
-        """Gets the one_time of this OneTimeTrigger.  # noqa: E501
+        """Gets the one_time of this LOneTimeTrigger.  # noqa: E501
 
 
-        :return: The one_time of this OneTimeTrigger.  # noqa: E501
+        :return: The one_time of this LOneTimeTrigger.  # noqa: E501
         :rtype: object
         """
         return self._one_time
 
     @one_time.setter
     def one_time(self, one_time):
-        """Sets the one_time of this OneTimeTrigger.
+        """Sets the one_time of this LOneTimeTrigger.
 
 
-        :param one_time: The one_time of this OneTimeTrigger.  # noqa: E501
+        :param one_time: The one_time of this LOneTimeTrigger.  # noqa: E501
         :type: object
         """
         if one_time is None:
@@ -69,22 +69,22 @@ class LOneTimeTrigger(object):
 
     @property
     def timezone(self):
-        """Gets the timezone of this OneTimeTrigger.  # noqa: E501
+        """Gets the timezone of this LOneTimeTrigger.  # noqa: E501
 
         timezone for this trigger, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :return: The timezone of this OneTimeTrigger.  # noqa: E501
+        :return: The timezone of this LOneTimeTrigger.  # noqa: E501
         :rtype: str
         """
         return self._timezone
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this OneTimeTrigger.
+        """Sets the timezone of this LOneTimeTrigger.
 
         timezone for this trigger, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :param timezone: The timezone of this OneTimeTrigger.  # noqa: E501
+        :param timezone: The timezone of this LOneTimeTrigger.  # noqa: E501
         :type: str
         """
         if timezone is None:
@@ -113,7 +113,7 @@ class LOneTimeTrigger(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OneTimeTrigger, dict):
+        if issubclass(LOneTimeTrigger, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LOneTimeTrigger(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OneTimeTrigger):
+        if not isinstance(other, LOneTimeTrigger):
             return False
 
         return self.__dict__ == other.__dict__

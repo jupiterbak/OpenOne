@@ -39,7 +39,7 @@ class LEditCreateRequestWithRecipe(object):
     }
 
     def __init__(self, parent=None, scriptlines=None, recipe=None):  # noqa: E501
-        """EditCreateRequestWithRecipe - a model defined in Swagger"""  # noqa: E501
+        """LEditCreateRequestWithRecipe - a model defined in Swagger"""  # noqa: E501
         self._parent = None
         self._scriptlines = None
         self._recipe = None
@@ -52,20 +52,20 @@ class LEditCreateRequestWithRecipe(object):
 
     @property
     def parent(self):
-        """Gets the parent of this EditCreateRequestWithRecipe.  # noqa: E501
+        """Gets the parent of this LEditCreateRequestWithRecipe.  # noqa: E501
 
 
-        :return: The parent of this EditCreateRequestWithRecipe.  # noqa: E501
+        :return: The parent of this LEditCreateRequestWithRecipe.  # noqa: E501
         :rtype: object
         """
         return self._parent
 
     @parent.setter
     def parent(self, parent):
-        """Sets the parent of this EditCreateRequestWithRecipe.
+        """Sets the parent of this LEditCreateRequestWithRecipe.
 
 
-        :param parent: The parent of this EditCreateRequestWithRecipe.  # noqa: E501
+        :param parent: The parent of this LEditCreateRequestWithRecipe.  # noqa: E501
         :type: object
         """
 
@@ -73,20 +73,20 @@ class LEditCreateRequestWithRecipe(object):
 
     @property
     def scriptlines(self):
-        """Gets the scriptlines of this EditCreateRequestWithRecipe.  # noqa: E501
+        """Gets the scriptlines of this LEditCreateRequestWithRecipe.  # noqa: E501
 
 
-        :return: The scriptlines of this EditCreateRequestWithRecipe.  # noqa: E501
+        :return: The scriptlines of this LEditCreateRequestWithRecipe.  # noqa: E501
         :rtype: list[object]
         """
         return self._scriptlines
 
     @scriptlines.setter
     def scriptlines(self, scriptlines):
-        """Sets the scriptlines of this EditCreateRequestWithRecipe.
+        """Sets the scriptlines of this LEditCreateRequestWithRecipe.
 
 
-        :param scriptlines: The scriptlines of this EditCreateRequestWithRecipe.  # noqa: E501
+        :param scriptlines: The scriptlines of this LEditCreateRequestWithRecipe.  # noqa: E501
         :type: list[object]
         """
 
@@ -94,20 +94,20 @@ class LEditCreateRequestWithRecipe(object):
 
     @property
     def recipe(self):
-        """Gets the recipe of this EditCreateRequestWithRecipe.  # noqa: E501
+        """Gets the recipe of this LEditCreateRequestWithRecipe.  # noqa: E501
 
 
-        :return: The recipe of this EditCreateRequestWithRecipe.  # noqa: E501
+        :return: The recipe of this LEditCreateRequestWithRecipe.  # noqa: E501
         :rtype: object
         """
         return self._recipe
 
     @recipe.setter
     def recipe(self, recipe):
-        """Sets the recipe of this EditCreateRequestWithRecipe.
+        """Sets the recipe of this LEditCreateRequestWithRecipe.
 
 
-        :param recipe: The recipe of this EditCreateRequestWithRecipe.  # noqa: E501
+        :param recipe: The recipe of this LEditCreateRequestWithRecipe.  # noqa: E501
         :type: object
         """
         if recipe is None:
@@ -136,7 +136,7 @@ class LEditCreateRequestWithRecipe(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(EditCreateRequestWithRecipe, dict):
+        if issubclass(LEditCreateRequestWithRecipe, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -152,7 +152,7 @@ class LEditCreateRequestWithRecipe(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, EditCreateRequestWithRecipe):
+        if not isinstance(other, LEditCreateRequestWithRecipe):
             return False
 
         return self.__dict__ == other.__dict__

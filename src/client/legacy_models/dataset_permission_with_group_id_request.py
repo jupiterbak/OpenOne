@@ -35,29 +35,29 @@ class LDatasetPermissionWithGroupIdRequest(object):
     }
 
     def __init__(self, group_id=None):  # noqa: E501
-        """DatasetPermissionWithGroupIdRequest - a model defined in Swagger"""  # noqa: E501
+        """LDatasetPermissionWithGroupIdRequest - a model defined in Swagger"""  # noqa: E501
         self._group_id = None
         self.discriminator = None
         self.group_id = group_id
 
     @property
     def group_id(self):
-        """Gets the group_id of this DatasetPermissionWithGroupIdRequest.  # noqa: E501
+        """Gets the group_id of this LDatasetPermissionWithGroupIdRequest.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The group_id of this DatasetPermissionWithGroupIdRequest.  # noqa: E501
+        :return: The group_id of this LDatasetPermissionWithGroupIdRequest.  # noqa: E501
         :rtype: int
         """
         return self._group_id
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DatasetPermissionWithGroupIdRequest.
+        """Sets the group_id of this LDatasetPermissionWithGroupIdRequest.
 
         unique identifier for this object.  # noqa: E501
 
-        :param group_id: The group_id of this DatasetPermissionWithGroupIdRequest.  # noqa: E501
+        :param group_id: The group_id of this LDatasetPermissionWithGroupIdRequest.  # noqa: E501
         :type: int
         """
         if group_id is None:
@@ -86,7 +86,7 @@ class LDatasetPermissionWithGroupIdRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DatasetPermissionWithGroupIdRequest, dict):
+        if issubclass(LDatasetPermissionWithGroupIdRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -102,7 +102,7 @@ class LDatasetPermissionWithGroupIdRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DatasetPermissionWithGroupIdRequest):
+        if not isinstance(other, LDatasetPermissionWithGroupIdRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -33,7 +33,7 @@ class LAnyOfbaseObjectSchemaId(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfbaseObjectSchemaId - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfbaseObjectSchemaId - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfbaseObjectSchemaId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfbaseObjectSchemaId, dict):
+        if issubclass(LAnyOfbaseObjectSchemaId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfbaseObjectSchemaId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfbaseObjectSchemaId):
+        if not isinstance(other, LAnyOfbaseObjectSchemaId):
             return False
 
         return self.__dict__ == other.__dict__

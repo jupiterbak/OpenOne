@@ -41,7 +41,7 @@ class LParsingNodeRequest(object):
     }
 
     def __init__(self, flow_id=None, script_id=None, activesample_id=None, wrangled=None):  # noqa: E501
-        """ParsingNodeRequest - a model defined in Swagger"""  # noqa: E501
+        """LParsingNodeRequest - a model defined in Swagger"""  # noqa: E501
         self._flow_id = None
         self._script_id = None
         self._activesample_id = None
@@ -55,22 +55,22 @@ class LParsingNodeRequest(object):
 
     @property
     def flow_id(self):
-        """Gets the flow_id of this ParsingNodeRequest.  # noqa: E501
+        """Gets the flow_id of this LParsingNodeRequest.  # noqa: E501
 
         Internal identifier of the `flow` that contains this dataset  # noqa: E501
 
-        :return: The flow_id of this ParsingNodeRequest.  # noqa: E501
+        :return: The flow_id of this LParsingNodeRequest.  # noqa: E501
         :rtype: int
         """
         return self._flow_id
 
     @flow_id.setter
     def flow_id(self, flow_id):
-        """Sets the flow_id of this ParsingNodeRequest.
+        """Sets the flow_id of this LParsingNodeRequest.
 
         Internal identifier of the `flow` that contains this dataset  # noqa: E501
 
-        :param flow_id: The flow_id of this ParsingNodeRequest.  # noqa: E501
+        :param flow_id: The flow_id of this LParsingNodeRequest.  # noqa: E501
         :type: int
         """
         if flow_id is None:
@@ -80,22 +80,22 @@ class LParsingNodeRequest(object):
 
     @property
     def script_id(self):
-        """Gets the script_id of this ParsingNodeRequest.  # noqa: E501
+        """Gets the script_id of this LParsingNodeRequest.  # noqa: E501
 
         Internal identifier of the `recipe` associated with this dataset.  # noqa: E501
 
-        :return: The script_id of this ParsingNodeRequest.  # noqa: E501
+        :return: The script_id of this LParsingNodeRequest.  # noqa: E501
         :rtype: int
         """
         return self._script_id
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this ParsingNodeRequest.
+        """Sets the script_id of this LParsingNodeRequest.
 
         Internal identifier of the `recipe` associated with this dataset.  # noqa: E501
 
-        :param script_id: The script_id of this ParsingNodeRequest.  # noqa: E501
+        :param script_id: The script_id of this LParsingNodeRequest.  # noqa: E501
         :type: int
         """
         if script_id is None:
@@ -105,22 +105,22 @@ class LParsingNodeRequest(object):
 
     @property
     def activesample_id(self):
-        """Gets the activesample_id of this ParsingNodeRequest.  # noqa: E501
+        """Gets the activesample_id of this LParsingNodeRequest.  # noqa: E501
 
         Internal identifier of the currently active `sample` for this dataset.  # noqa: E501
 
-        :return: The activesample_id of this ParsingNodeRequest.  # noqa: E501
+        :return: The activesample_id of this LParsingNodeRequest.  # noqa: E501
         :rtype: int
         """
         return self._activesample_id
 
     @activesample_id.setter
     def activesample_id(self, activesample_id):
-        """Sets the activesample_id of this ParsingNodeRequest.
+        """Sets the activesample_id of this LParsingNodeRequest.
 
         Internal identifier of the currently active `sample` for this dataset.  # noqa: E501
 
-        :param activesample_id: The activesample_id of this ParsingNodeRequest.  # noqa: E501
+        :param activesample_id: The activesample_id of this LParsingNodeRequest.  # noqa: E501
         :type: int
         """
 
@@ -128,22 +128,22 @@ class LParsingNodeRequest(object):
 
     @property
     def wrangled(self):
-        """Gets the wrangled of this ParsingNodeRequest.  # noqa: E501
+        """Gets the wrangled of this LParsingNodeRequest.  # noqa: E501
 
         If false, this is an input dataset (i.e. an imported dataset or a reference dataset). If true, this flowNode contains a recipe that can be edited by the user.  # noqa: E501
 
-        :return: The wrangled of this ParsingNodeRequest.  # noqa: E501
+        :return: The wrangled of this LParsingNodeRequest.  # noqa: E501
         :rtype: bool
         """
         return self._wrangled
 
     @wrangled.setter
     def wrangled(self, wrangled):
-        """Sets the wrangled of this ParsingNodeRequest.
+        """Sets the wrangled of this LParsingNodeRequest.
 
         If false, this is an input dataset (i.e. an imported dataset or a reference dataset). If true, this flowNode contains a recipe that can be edited by the user.  # noqa: E501
 
-        :param wrangled: The wrangled of this ParsingNodeRequest.  # noqa: E501
+        :param wrangled: The wrangled of this LParsingNodeRequest.  # noqa: E501
         :type: bool
         """
         if wrangled is None:
@@ -172,7 +172,7 @@ class LParsingNodeRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ParsingNodeRequest, dict):
+        if issubclass(LParsingNodeRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -188,7 +188,7 @@ class LParsingNodeRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ParsingNodeRequest):
+        if not isinstance(other, LParsingNodeRequest):
             return False
 
         return self.__dict__ == other.__dict__

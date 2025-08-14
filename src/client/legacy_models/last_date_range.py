@@ -28,7 +28,7 @@ class LLastDateRange(object):
     """
     swagger_types = {
         'timezone': 'str',
-        'formats': 'AnyOflastDateRangeFormats',
+        'formats': 'LAnyOflastDateRangeFormats',
         'last': 'object'
     }
 
@@ -39,7 +39,7 @@ class LLastDateRange(object):
     }
 
     def __init__(self, timezone=None, formats=None, last=None):  # noqa: E501
-        """LastDateRange - a model defined in Swagger"""  # noqa: E501
+        """LLastDateRange - a model defined in Swagger"""  # noqa: E501
         self._timezone = None
         self._formats = None
         self._last = None
@@ -50,22 +50,22 @@ class LLastDateRange(object):
 
     @property
     def timezone(self):
-        """Gets the timezone of this LastDateRange.  # noqa: E501
+        """Gets the timezone of this LLastDateRange.  # noqa: E501
 
         ISO Timezone, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :return: The timezone of this LastDateRange.  # noqa: E501
+        :return: The timezone of this LLastDateRange.  # noqa: E501
         :rtype: str
         """
         return self._timezone
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this LastDateRange.
+        """Sets the timezone of this LLastDateRange.
 
         ISO Timezone, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :param timezone: The timezone of this LastDateRange.  # noqa: E501
+        :param timezone: The timezone of this LLastDateRange.  # noqa: E501
         :type: str
         """
         if timezone is None:
@@ -75,21 +75,21 @@ class LLastDateRange(object):
 
     @property
     def formats(self):
-        """Gets the formats of this LastDateRange.  # noqa: E501
+        """Gets the formats of this LLastDateRange.  # noqa: E501
 
 
-        :return: The formats of this LastDateRange.  # noqa: E501
-        :rtype: AnyOflastDateRangeFormats
+        :return: The formats of this LLastDateRange.  # noqa: E501
+        :rtype: LAnyOflastDateRangeFormats
         """
         return self._formats
 
     @formats.setter
     def formats(self, formats):
-        """Sets the formats of this LastDateRange.
+        """Sets the formats of this LLastDateRange.
 
 
-        :param formats: The formats of this LastDateRange.  # noqa: E501
-        :type: AnyOflastDateRangeFormats
+        :param formats: The formats of this LLastDateRange.  # noqa: E501
+        :type: LAnyOflastDateRangeFormats
         """
         if formats is None:
             raise ValueError("Invalid value for `formats`, must not be `None`")  # noqa: E501
@@ -98,22 +98,22 @@ class LLastDateRange(object):
 
     @property
     def last(self):
-        """Gets the last of this LastDateRange.  # noqa: E501
+        """Gets the last of this LLastDateRange.  # noqa: E501
 
         Date range that includes the last `unit`. The current `unit` is excluded. eg. if `unit` is `week`, then the date range includes the last week starting from the day of week specified  # noqa: E501
 
-        :return: The last of this LastDateRange.  # noqa: E501
+        :return: The last of this LLastDateRange.  # noqa: E501
         :rtype: object
         """
         return self._last
 
     @last.setter
     def last(self, last):
-        """Sets the last of this LastDateRange.
+        """Sets the last of this LLastDateRange.
 
         Date range that includes the last `unit`. The current `unit` is excluded. eg. if `unit` is `week`, then the date range includes the last week starting from the day of week specified  # noqa: E501
 
-        :param last: The last of this LastDateRange.  # noqa: E501
+        :param last: The last of this LLastDateRange.  # noqa: E501
         :type: object
         """
         if last is None:
@@ -142,7 +142,7 @@ class LLastDateRange(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(LastDateRange, dict):
+        if issubclass(LLastDateRange, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -158,7 +158,7 @@ class LLastDateRange(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, LastDateRange):
+        if not isinstance(other, LLastDateRange):
             return False
 
         return self.__dict__ == other.__dict__

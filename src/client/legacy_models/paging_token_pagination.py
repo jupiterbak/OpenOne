@@ -41,7 +41,7 @@ class LPagingTokenPagination(object):
     }
 
     def __init__(self, pagination_type=None, pagetokenpath=None, hasmorepath=None, pagetokenparam=None):  # noqa: E501
-        """PagingTokenPagination - a model defined in Swagger"""  # noqa: E501
+        """LPagingTokenPagination - a model defined in Swagger"""  # noqa: E501
         self._pagination_type = None
         self._pagetokenpath = None
         self._hasmorepath = None
@@ -55,22 +55,22 @@ class LPagingTokenPagination(object):
 
     @property
     def pagination_type(self):
-        """Gets the pagination_type of this PagingTokenPagination.  # noqa: E501
+        """Gets the pagination_type of this LPagingTokenPagination.  # noqa: E501
 
         pagingToken pagination type.  # noqa: E501
 
-        :return: The pagination_type of this PagingTokenPagination.  # noqa: E501
+        :return: The pagination_type of this LPagingTokenPagination.  # noqa: E501
         :rtype: str
         """
         return self._pagination_type
 
     @pagination_type.setter
     def pagination_type(self, pagination_type):
-        """Sets the pagination_type of this PagingTokenPagination.
+        """Sets the pagination_type of this LPagingTokenPagination.
 
         pagingToken pagination type.  # noqa: E501
 
-        :param pagination_type: The pagination_type of this PagingTokenPagination.  # noqa: E501
+        :param pagination_type: The pagination_type of this LPagingTokenPagination.  # noqa: E501
         :type: str
         """
         if pagination_type is None:
@@ -80,22 +80,22 @@ class LPagingTokenPagination(object):
 
     @property
     def pagetokenpath(self):
-        """Gets the pagetokenpath of this PagingTokenPagination.  # noqa: E501
+        """Gets the pagetokenpath of this LPagingTokenPagination.  # noqa: E501
 
         xPath to page token.  # noqa: E501
 
-        :return: The pagetokenpath of this PagingTokenPagination.  # noqa: E501
+        :return: The pagetokenpath of this LPagingTokenPagination.  # noqa: E501
         :rtype: str
         """
         return self._pagetokenpath
 
     @pagetokenpath.setter
     def pagetokenpath(self, pagetokenpath):
-        """Sets the pagetokenpath of this PagingTokenPagination.
+        """Sets the pagetokenpath of this LPagingTokenPagination.
 
         xPath to page token.  # noqa: E501
 
-        :param pagetokenpath: The pagetokenpath of this PagingTokenPagination.  # noqa: E501
+        :param pagetokenpath: The pagetokenpath of this LPagingTokenPagination.  # noqa: E501
         :type: str
         """
         if pagetokenpath is None:
@@ -105,22 +105,22 @@ class LPagingTokenPagination(object):
 
     @property
     def hasmorepath(self):
-        """Gets the hasmorepath of this PagingTokenPagination.  # noqa: E501
+        """Gets the hasmorepath of this LPagingTokenPagination.  # noqa: E501
 
         xPath to key which denotes whether more pages are there or not.(Optional)  # noqa: E501
 
-        :return: The hasmorepath of this PagingTokenPagination.  # noqa: E501
+        :return: The hasmorepath of this LPagingTokenPagination.  # noqa: E501
         :rtype: str
         """
         return self._hasmorepath
 
     @hasmorepath.setter
     def hasmorepath(self, hasmorepath):
-        """Sets the hasmorepath of this PagingTokenPagination.
+        """Sets the hasmorepath of this LPagingTokenPagination.
 
         xPath to key which denotes whether more pages are there or not.(Optional)  # noqa: E501
 
-        :param hasmorepath: The hasmorepath of this PagingTokenPagination.  # noqa: E501
+        :param hasmorepath: The hasmorepath of this LPagingTokenPagination.  # noqa: E501
         :type: str
         """
 
@@ -128,22 +128,22 @@ class LPagingTokenPagination(object):
 
     @property
     def pagetokenparam(self):
-        """Gets the pagetokenparam of this PagingTokenPagination.  # noqa: E501
+        """Gets the pagetokenparam of this LPagingTokenPagination.  # noqa: E501
 
         Query param name to pass page token in next request.  # noqa: E501
 
-        :return: The pagetokenparam of this PagingTokenPagination.  # noqa: E501
+        :return: The pagetokenparam of this LPagingTokenPagination.  # noqa: E501
         :rtype: str
         """
         return self._pagetokenparam
 
     @pagetokenparam.setter
     def pagetokenparam(self, pagetokenparam):
-        """Sets the pagetokenparam of this PagingTokenPagination.
+        """Sets the pagetokenparam of this LPagingTokenPagination.
 
         Query param name to pass page token in next request.  # noqa: E501
 
-        :param pagetokenparam: The pagetokenparam of this PagingTokenPagination.  # noqa: E501
+        :param pagetokenparam: The pagetokenparam of this LPagingTokenPagination.  # noqa: E501
         :type: str
         """
         if pagetokenparam is None:
@@ -172,7 +172,7 @@ class LPagingTokenPagination(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PagingTokenPagination, dict):
+        if issubclass(LPagingTokenPagination, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -188,7 +188,7 @@ class LPagingTokenPagination(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PagingTokenPagination):
+        if not isinstance(other, LPagingTokenPagination):
             return False
 
         return self.__dict__ == other.__dict__

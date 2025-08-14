@@ -34,8 +34,8 @@ class TestCount(unittest.TestCase):
     def tearDown(self):
         pass
 
-    def testCount(self):
-        """Test Count"""
+    def testgetCurrentUser(self):
+        """Test getCurrentUser"""
         person = self.person_client.get_current_person()
         pprint(person)
 

@@ -32,8 +32,8 @@ class LPublicationCreateRequest(object):
         'target_type': 'str',
         'action': 'str',
         'output_object_id': 'int',
-        'connection_id': 'ConnectionIdInfo',
-        'run_parameters': 'list[RunParameterDestinationInfo]',
+        'connection_id': 'LConnectionIdInfo',
+        'run_parameters': 'list[LRunParameterDestinationInfo]',
         'parameters': 'dict(str, object)'
     }
 
@@ -49,7 +49,7 @@ class LPublicationCreateRequest(object):
     }
 
     def __init__(self, path=None, table_name=None, target_type=None, action=None, output_object_id=None, connection_id=None, run_parameters=None, parameters=None):  # noqa: E501
-        """PublicationCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LPublicationCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._path = None
         self._table_name = None
         self._target_type = None
@@ -74,22 +74,22 @@ class LPublicationCreateRequest(object):
 
     @property
     def path(self):
-        """Gets the path of this PublicationCreateRequest.  # noqa: E501
+        """Gets the path of this LPublicationCreateRequest.  # noqa: E501
 
         path to the location of the table/datasource.  # noqa: E501
 
-        :return: The path of this PublicationCreateRequest.  # noqa: E501
+        :return: The path of this LPublicationCreateRequest.  # noqa: E501
         :rtype: list[str]
         """
         return self._path
 
     @path.setter
     def path(self, path):
-        """Sets the path of this PublicationCreateRequest.
+        """Sets the path of this LPublicationCreateRequest.
 
         path to the location of the table/datasource.  # noqa: E501
 
-        :param path: The path of this PublicationCreateRequest.  # noqa: E501
+        :param path: The path of this LPublicationCreateRequest.  # noqa: E501
         :type: list[str]
         """
         if path is None:
@@ -99,22 +99,22 @@ class LPublicationCreateRequest(object):
 
     @property
     def table_name(self):
-        """Gets the table_name of this PublicationCreateRequest.  # noqa: E501
+        """Gets the table_name of this LPublicationCreateRequest.  # noqa: E501
 
         name of the table   # noqa: E501
 
-        :return: The table_name of this PublicationCreateRequest.  # noqa: E501
+        :return: The table_name of this LPublicationCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._table_name
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this PublicationCreateRequest.
+        """Sets the table_name of this LPublicationCreateRequest.
 
         name of the table   # noqa: E501
 
-        :param table_name: The table_name of this PublicationCreateRequest.  # noqa: E501
+        :param table_name: The table_name of this LPublicationCreateRequest.  # noqa: E501
         :type: str
         """
         if table_name is None:
@@ -124,22 +124,22 @@ class LPublicationCreateRequest(object):
 
     @property
     def target_type(self):
-        """Gets the target_type of this PublicationCreateRequest.  # noqa: E501
+        """Gets the target_type of this LPublicationCreateRequest.  # noqa: E501
 
         e.g. `databricks`, `hive`, `redshift`, `postgres`, `oracle`, `sqlserver`, `teradata`, `bigquery`, `tableau`, `sqldatawarehouse`, `synapse`, `snowflake`, `gsuser`, `glue`, `sftp`, `s3`, `s3user`, `gsheetsuser`, `jdbc_rest`, `onedrive`, `sharepoint_files` or `box`  # noqa: E501
 
-        :return: The target_type of this PublicationCreateRequest.  # noqa: E501
+        :return: The target_type of this LPublicationCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._target_type
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this PublicationCreateRequest.
+        """Sets the target_type of this LPublicationCreateRequest.
 
         e.g. `databricks`, `hive`, `redshift`, `postgres`, `oracle`, `sqlserver`, `teradata`, `bigquery`, `tableau`, `sqldatawarehouse`, `synapse`, `snowflake`, `gsuser`, `glue`, `sftp`, `s3`, `s3user`, `gsheetsuser`, `jdbc_rest`, `onedrive`, `sharepoint_files` or `box`  # noqa: E501
 
-        :param target_type: The target_type of this PublicationCreateRequest.  # noqa: E501
+        :param target_type: The target_type of this LPublicationCreateRequest.  # noqa: E501
         :type: str
         """
         if target_type is None:
@@ -149,22 +149,22 @@ class LPublicationCreateRequest(object):
 
     @property
     def action(self):
-        """Gets the action of this PublicationCreateRequest.  # noqa: E501
+        """Gets the action of this LPublicationCreateRequest.  # noqa: E501
 
         Type of writing action to perform with the results * `create` - Create a new table with each publication. This table is empty except for the schema, which is taken from the results. A new table receives a timestamp extension to its name. * `load` - Append a pre-existing table with the results of the data. The schema of the results and the table must match * `createAndLoad` - Create a new table with each publication and load it with the results data. A new table receives a timestamp extension to its name. * `truncateAndLoad` - Truncate a pre-existing table and load it with fresh data from the results. * `dropAndLoad` - Drop the target table and load a new table with the schema and data from the results. * `upsert` - Update matched records and insert new records in a pre-existing table with the results of the data. The schema of the results and the table must match  # noqa: E501
 
-        :return: The action of this PublicationCreateRequest.  # noqa: E501
+        :return: The action of this LPublicationCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._action
 
     @action.setter
     def action(self, action):
-        """Sets the action of this PublicationCreateRequest.
+        """Sets the action of this LPublicationCreateRequest.
 
         Type of writing action to perform with the results * `create` - Create a new table with each publication. This table is empty except for the schema, which is taken from the results. A new table receives a timestamp extension to its name. * `load` - Append a pre-existing table with the results of the data. The schema of the results and the table must match * `createAndLoad` - Create a new table with each publication and load it with the results data. A new table receives a timestamp extension to its name. * `truncateAndLoad` - Truncate a pre-existing table and load it with fresh data from the results. * `dropAndLoad` - Drop the target table and load a new table with the schema and data from the results. * `upsert` - Update matched records and insert new records in a pre-existing table with the results of the data. The schema of the results and the table must match  # noqa: E501
 
-        :param action: The action of this PublicationCreateRequest.  # noqa: E501
+        :param action: The action of this LPublicationCreateRequest.  # noqa: E501
         :type: str
         """
         if action is None:
@@ -180,22 +180,22 @@ class LPublicationCreateRequest(object):
 
     @property
     def output_object_id(self):
-        """Gets the output_object_id of this PublicationCreateRequest.  # noqa: E501
+        """Gets the output_object_id of this LPublicationCreateRequest.  # noqa: E501
 
         [outputObject](#tag/OutputObject) to attach this [publication](#tag/Publication) to.  # noqa: E501
 
-        :return: The output_object_id of this PublicationCreateRequest.  # noqa: E501
+        :return: The output_object_id of this LPublicationCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._output_object_id
 
     @output_object_id.setter
     def output_object_id(self, output_object_id):
-        """Sets the output_object_id of this PublicationCreateRequest.
+        """Sets the output_object_id of this LPublicationCreateRequest.
 
         [outputObject](#tag/OutputObject) to attach this [publication](#tag/Publication) to.  # noqa: E501
 
-        :param output_object_id: The output_object_id of this PublicationCreateRequest.  # noqa: E501
+        :param output_object_id: The output_object_id of this LPublicationCreateRequest.  # noqa: E501
         :type: int
         """
 
@@ -203,66 +203,66 @@ class LPublicationCreateRequest(object):
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this PublicationCreateRequest.  # noqa: E501
+        """Gets the connection_id of this LPublicationCreateRequest.  # noqa: E501
 
 
-        :return: The connection_id of this PublicationCreateRequest.  # noqa: E501
-        :rtype: ConnectionIdInfo
+        :return: The connection_id of this LPublicationCreateRequest.  # noqa: E501
+        :rtype: LConnectionIdInfo
         """
         return self._connection_id
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this PublicationCreateRequest.
+        """Sets the connection_id of this LPublicationCreateRequest.
 
 
-        :param connection_id: The connection_id of this PublicationCreateRequest.  # noqa: E501
-        :type: ConnectionIdInfo
+        :param connection_id: The connection_id of this LPublicationCreateRequest.  # noqa: E501
+        :type: LConnectionIdInfo
         """
 
         self._connection_id = connection_id
 
     @property
     def run_parameters(self):
-        """Gets the run_parameters of this PublicationCreateRequest.  # noqa: E501
+        """Gets the run_parameters of this LPublicationCreateRequest.  # noqa: E501
 
         Optional Parameters that can be used to parameterized the `tableName`  # noqa: E501
 
-        :return: The run_parameters of this PublicationCreateRequest.  # noqa: E501
-        :rtype: list[RunParameterDestinationInfo]
+        :return: The run_parameters of this LPublicationCreateRequest.  # noqa: E501
+        :rtype: list[LRunParameterDestinationInfo]
         """
         return self._run_parameters
 
     @run_parameters.setter
     def run_parameters(self, run_parameters):
-        """Sets the run_parameters of this PublicationCreateRequest.
+        """Sets the run_parameters of this LPublicationCreateRequest.
 
         Optional Parameters that can be used to parameterized the `tableName`  # noqa: E501
 
-        :param run_parameters: The run_parameters of this PublicationCreateRequest.  # noqa: E501
-        :type: list[RunParameterDestinationInfo]
+        :param run_parameters: The run_parameters of this LPublicationCreateRequest.  # noqa: E501
+        :type: list[LRunParameterDestinationInfo]
         """
 
         self._run_parameters = run_parameters
 
     @property
     def parameters(self):
-        """Gets the parameters of this PublicationCreateRequest.  # noqa: E501
+        """Gets the parameters of this LPublicationCreateRequest.  # noqa: E501
 
         Additional publication parameters specific to each JDBC data source. Example: isDeltaTable=true for Databricks connections to produce Delta Lake Tables  # noqa: E501
 
-        :return: The parameters of this PublicationCreateRequest.  # noqa: E501
+        :return: The parameters of this LPublicationCreateRequest.  # noqa: E501
         :rtype: dict(str, object)
         """
         return self._parameters
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this PublicationCreateRequest.
+        """Sets the parameters of this LPublicationCreateRequest.
 
         Additional publication parameters specific to each JDBC data source. Example: isDeltaTable=true for Databricks connections to produce Delta Lake Tables  # noqa: E501
 
-        :param parameters: The parameters of this PublicationCreateRequest.  # noqa: E501
+        :param parameters: The parameters of this LPublicationCreateRequest.  # noqa: E501
         :type: dict(str, object)
         """
 
@@ -289,7 +289,7 @@ class LPublicationCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PublicationCreateRequest, dict):
+        if issubclass(LPublicationCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -305,7 +305,7 @@ class LPublicationCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PublicationCreateRequest):
+        if not isinstance(other, LPublicationCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

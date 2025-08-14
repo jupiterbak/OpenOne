@@ -27,7 +27,7 @@ class LPersonIdProperty(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'person_id': 'AnyOfpersonIdPropertyPersonId'
+        'person_id': 'LAnyOfpersonIdPropertyPersonId'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LPersonIdProperty(object):
     }
 
     def __init__(self, person_id=None):  # noqa: E501
-        """PersonIdProperty - a model defined in Swagger"""  # noqa: E501
+        """LPersonIdProperty - a model defined in Swagger"""  # noqa: E501
         self._person_id = None
         self.discriminator = None
         self.person_id = person_id
 
     @property
     def person_id(self):
-        """Gets the person_id of this PersonIdProperty.  # noqa: E501
+        """Gets the person_id of this LPersonIdProperty.  # noqa: E501
 
 
-        :return: The person_id of this PersonIdProperty.  # noqa: E501
-        :rtype: AnyOfpersonIdPropertyPersonId
+        :return: The person_id of this LPersonIdProperty.  # noqa: E501
+        :rtype: LAnyOfpersonIdPropertyPersonId
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this PersonIdProperty.
+        """Sets the person_id of this LPersonIdProperty.
 
 
-        :param person_id: The person_id of this PersonIdProperty.  # noqa: E501
-        :type: AnyOfpersonIdPropertyPersonId
+        :param person_id: The person_id of this LPersonIdProperty.  # noqa: E501
+        :type: LAnyOfpersonIdPropertyPersonId
         """
         if person_id is None:
             raise ValueError("Invalid value for `person_id`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LPersonIdProperty(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PersonIdProperty, dict):
+        if issubclass(LPersonIdProperty, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LPersonIdProperty(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PersonIdProperty):
+        if not isinstance(other, LPersonIdProperty):
             return False
 
         return self.__dict__ == other.__dict__

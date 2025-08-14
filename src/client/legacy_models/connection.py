@@ -42,17 +42,17 @@ class LConnection(object):
         'has_credentials': 'bool',
         'host': 'str',
         'port': 'int',
-        'id': 'ConnectionIdInfo',
+        'id': 'LConnectionIdInfo',
         'uuid': 'str',
         'created_at': 'datetime',
         'updated_at': 'datetime',
-        'credentials': 'CredentialsInfo',
-        'advanced_credentials': 'AdvancedViewCredentialsInfo',
+        'credentials': 'LCredentialsInfo',
+        'advanced_credentials': 'LAdvancedViewCredentialsInfo',
         'creator': 'object',
         'updater': 'object',
         'workspace': 'object',
         'params': 'object',
-        'endpoints': 'JdbcRestEndpointsInfo'
+        'endpoints': 'LJdbcRestEndpointsInfo'
     }
 
     attribute_map = {
@@ -85,7 +85,7 @@ class LConnection(object):
     }
 
     def __init__(self, vendor=None, vendor_name=None, type=None, credential_type=None, advanced_credential_type=None, ssh_tunneling=None, ssl=None, name=None, description=None, disable_type_inference=None, is_global=None, credentials_shared=None, has_credentials=None, host=None, port=None, id=None, uuid=None, created_at=None, updated_at=None, credentials=None, advanced_credentials=None, creator=None, updater=None, workspace=None, params=None, endpoints=None):  # noqa: E501
-        """Connection - a model defined in Swagger"""  # noqa: E501
+        """LConnection - a model defined in Swagger"""  # noqa: E501
         self._vendor = None
         self._vendor_name = None
         self._type = None
@@ -160,22 +160,22 @@ class LConnection(object):
 
     @property
     def vendor(self):
-        """Gets the vendor of this Connection.  # noqa: E501
+        """Gets the vendor of this LConnection.  # noqa: E501
 
         String identifying the connection`s vendor  # noqa: E501
 
-        :return: The vendor of this Connection.  # noqa: E501
+        :return: The vendor of this LConnection.  # noqa: E501
         :rtype: str
         """
         return self._vendor
 
     @vendor.setter
     def vendor(self, vendor):
-        """Sets the vendor of this Connection.
+        """Sets the vendor of this LConnection.
 
         String identifying the connection`s vendor  # noqa: E501
 
-        :param vendor: The vendor of this Connection.  # noqa: E501
+        :param vendor: The vendor of this LConnection.  # noqa: E501
         :type: str
         """
         if vendor is None:
@@ -185,22 +185,22 @@ class LConnection(object):
 
     @property
     def vendor_name(self):
-        """Gets the vendor_name of this Connection.  # noqa: E501
+        """Gets the vendor_name of this LConnection.  # noqa: E501
 
         Name of the vendor of the connection  # noqa: E501
 
-        :return: The vendor_name of this Connection.  # noqa: E501
+        :return: The vendor_name of this LConnection.  # noqa: E501
         :rtype: str
         """
         return self._vendor_name
 
     @vendor_name.setter
     def vendor_name(self, vendor_name):
-        """Sets the vendor_name of this Connection.
+        """Sets the vendor_name of this LConnection.
 
         Name of the vendor of the connection  # noqa: E501
 
-        :param vendor_name: The vendor_name of this Connection.  # noqa: E501
+        :param vendor_name: The vendor_name of this LConnection.  # noqa: E501
         :type: str
         """
         if vendor_name is None:
@@ -210,22 +210,22 @@ class LConnection(object):
 
     @property
     def type(self):
-        """Gets the type of this Connection.  # noqa: E501
+        """Gets the type of this LConnection.  # noqa: E501
 
         Type of connection  # noqa: E501
 
-        :return: The type of this Connection.  # noqa: E501
+        :return: The type of this LConnection.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Connection.
+        """Sets the type of this LConnection.
 
         Type of connection  # noqa: E501
 
-        :param type: The type of this Connection.  # noqa: E501
+        :param type: The type of this LConnection.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -241,22 +241,22 @@ class LConnection(object):
 
     @property
     def credential_type(self):
-        """Gets the credential_type of this Connection.  # noqa: E501
+        """Gets the credential_type of this LConnection.  # noqa: E501
 
          * `basic` - Simple username/password to be provided in the credentials property      * `securityToken` - Connection uses username, password and security token to authenticate. * `iamRoleArn` - Connection uses username, password and optiona IAM Role ARN to authenticate. * `iamDbUser` - Connection uses IAM and DbUser to connect to the database. * `oauth2` - Connection uses OAuth 2.0 to authenticate. * `keySecret` - connection uses key and secret to authenticate. * `apiKey` - Connection uses API Key for authentication. * `awsKeySecret` - Connection uses AWS Access Key and Secret Key for authentication. * `basicWithAppToken` - Connection uses Username, Password and Application Token for authentication. * `userWithApiToken` - Connection uses User and Api Token for authentication. * `basicApp` - Connection uses App Id and Password for authentication. * `transactionKey` - Connection uses Login ID and Transaction key for authentication. * `password` - Connection uses Password for authentication. * `apiKeyWithToken` - Connection uses API Key and Token for authentication. * `noAuth` - No authentication required for the connection. * `httpHeaderBasedAuth` - Connection uses http header based credentials for authentication. * `privateApp` - Connection uses privateApp token for authentication. * `httpQueryBasedAuth` - Connection uses http query based credentials for authentication. * `accessToken` - Connection uses access token for authentication. * `personalAccessToken` - Connection uses personal access token for authentication. * `tokenAuth` - Connection uses token based authentication. * `personalAccessTokenNameSecret` - Connection uses personal access token name and secret pair for authentication. * `convergedConnectorAuth` - Authentication Type implemented by the converged connector.  # noqa: E501
 
-        :return: The credential_type of this Connection.  # noqa: E501
+        :return: The credential_type of this LConnection.  # noqa: E501
         :rtype: str
         """
         return self._credential_type
 
     @credential_type.setter
     def credential_type(self, credential_type):
-        """Sets the credential_type of this Connection.
+        """Sets the credential_type of this LConnection.
 
          * `basic` - Simple username/password to be provided in the credentials property      * `securityToken` - Connection uses username, password and security token to authenticate. * `iamRoleArn` - Connection uses username, password and optiona IAM Role ARN to authenticate. * `iamDbUser` - Connection uses IAM and DbUser to connect to the database. * `oauth2` - Connection uses OAuth 2.0 to authenticate. * `keySecret` - connection uses key and secret to authenticate. * `apiKey` - Connection uses API Key for authentication. * `awsKeySecret` - Connection uses AWS Access Key and Secret Key for authentication. * `basicWithAppToken` - Connection uses Username, Password and Application Token for authentication. * `userWithApiToken` - Connection uses User and Api Token for authentication. * `basicApp` - Connection uses App Id and Password for authentication. * `transactionKey` - Connection uses Login ID and Transaction key for authentication. * `password` - Connection uses Password for authentication. * `apiKeyWithToken` - Connection uses API Key and Token for authentication. * `noAuth` - No authentication required for the connection. * `httpHeaderBasedAuth` - Connection uses http header based credentials for authentication. * `privateApp` - Connection uses privateApp token for authentication. * `httpQueryBasedAuth` - Connection uses http query based credentials for authentication. * `accessToken` - Connection uses access token for authentication. * `personalAccessToken` - Connection uses personal access token for authentication. * `tokenAuth` - Connection uses token based authentication. * `personalAccessTokenNameSecret` - Connection uses personal access token name and secret pair for authentication. * `convergedConnectorAuth` - Authentication Type implemented by the converged connector.  # noqa: E501
 
-        :param credential_type: The credential_type of this Connection.  # noqa: E501
+        :param credential_type: The credential_type of this LConnection.  # noqa: E501
         :type: str
         """
         if credential_type is None:
@@ -272,22 +272,22 @@ class LConnection(object):
 
     @property
     def advanced_credential_type(self):
-        """Gets the advanced_credential_type of this Connection.  # noqa: E501
+        """Gets the advanced_credential_type of this LConnection.  # noqa: E501
 
             # noqa: E501
 
-        :return: The advanced_credential_type of this Connection.  # noqa: E501
+        :return: The advanced_credential_type of this LConnection.  # noqa: E501
         :rtype: str
         """
         return self._advanced_credential_type
 
     @advanced_credential_type.setter
     def advanced_credential_type(self, advanced_credential_type):
-        """Sets the advanced_credential_type of this Connection.
+        """Sets the advanced_credential_type of this LConnection.
 
             # noqa: E501
 
-        :param advanced_credential_type: The advanced_credential_type of this Connection.  # noqa: E501
+        :param advanced_credential_type: The advanced_credential_type of this LConnection.  # noqa: E501
         :type: str
         """
 
@@ -295,22 +295,22 @@ class LConnection(object):
 
     @property
     def ssh_tunneling(self):
-        """Gets the ssh_tunneling of this Connection.  # noqa: E501
+        """Gets the ssh_tunneling of this LConnection.  # noqa: E501
 
         When `true`, the Alteryx Analytics Cloud Platform uses SSH Tunneling to connect to the source  # noqa: E501
 
-        :return: The ssh_tunneling of this Connection.  # noqa: E501
+        :return: The ssh_tunneling of this LConnection.  # noqa: E501
         :rtype: bool
         """
         return self._ssh_tunneling
 
     @ssh_tunneling.setter
     def ssh_tunneling(self, ssh_tunneling):
-        """Sets the ssh_tunneling of this Connection.
+        """Sets the ssh_tunneling of this LConnection.
 
         When `true`, the Alteryx Analytics Cloud Platform uses SSH Tunneling to connect to the source  # noqa: E501
 
-        :param ssh_tunneling: The ssh_tunneling of this Connection.  # noqa: E501
+        :param ssh_tunneling: The ssh_tunneling of this LConnection.  # noqa: E501
         :type: bool
         """
 
@@ -318,22 +318,22 @@ class LConnection(object):
 
     @property
     def ssl(self):
-        """Gets the ssl of this Connection.  # noqa: E501
+        """Gets the ssl of this LConnection.  # noqa: E501
 
         When `true`, the Alteryx Analytics Cloud Platform uses SSL to connect to the source  # noqa: E501
 
-        :return: The ssl of this Connection.  # noqa: E501
+        :return: The ssl of this LConnection.  # noqa: E501
         :rtype: bool
         """
         return self._ssl
 
     @ssl.setter
     def ssl(self, ssl):
-        """Sets the ssl of this Connection.
+        """Sets the ssl of this LConnection.
 
         When `true`, the Alteryx Analytics Cloud Platform uses SSL to connect to the source  # noqa: E501
 
-        :param ssl: The ssl of this Connection.  # noqa: E501
+        :param ssl: The ssl of this LConnection.  # noqa: E501
         :type: bool
         """
 
@@ -341,22 +341,22 @@ class LConnection(object):
 
     @property
     def name(self):
-        """Gets the name of this Connection.  # noqa: E501
+        """Gets the name of this LConnection.  # noqa: E501
 
         Display name of the connection.  # noqa: E501
 
-        :return: The name of this Connection.  # noqa: E501
+        :return: The name of this LConnection.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Connection.
+        """Sets the name of this LConnection.
 
         Display name of the connection.  # noqa: E501
 
-        :param name: The name of this Connection.  # noqa: E501
+        :param name: The name of this LConnection.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -366,22 +366,22 @@ class LConnection(object):
 
     @property
     def description(self):
-        """Gets the description of this Connection.  # noqa: E501
+        """Gets the description of this LConnection.  # noqa: E501
 
         User-friendly description for the connection.  # noqa: E501
 
-        :return: The description of this Connection.  # noqa: E501
+        :return: The description of this LConnection.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Connection.
+        """Sets the description of this LConnection.
 
         User-friendly description for the connection.  # noqa: E501
 
-        :param description: The description of this Connection.  # noqa: E501
+        :param description: The description of this LConnection.  # noqa: E501
         :type: str
         """
 
@@ -389,22 +389,22 @@ class LConnection(object):
 
     @property
     def disable_type_inference(self):
-        """Gets the disable_type_inference of this Connection.  # noqa: E501
+        """Gets the disable_type_inference of this LConnection.  # noqa: E501
 
         If set to false, type inference has been disabled for this connection. The default is true. When type inference has been disabled, the Alteryx Analytics Cloud Platform does not apply Alteryx Analytics Cloud types to data when it is imported.  # noqa: E501
 
-        :return: The disable_type_inference of this Connection.  # noqa: E501
+        :return: The disable_type_inference of this LConnection.  # noqa: E501
         :rtype: bool
         """
         return self._disable_type_inference
 
     @disable_type_inference.setter
     def disable_type_inference(self, disable_type_inference):
-        """Sets the disable_type_inference of this Connection.
+        """Sets the disable_type_inference of this LConnection.
 
         If set to false, type inference has been disabled for this connection. The default is true. When type inference has been disabled, the Alteryx Analytics Cloud Platform does not apply Alteryx Analytics Cloud types to data when it is imported.  # noqa: E501
 
-        :param disable_type_inference: The disable_type_inference of this Connection.  # noqa: E501
+        :param disable_type_inference: The disable_type_inference of this LConnection.  # noqa: E501
         :type: bool
         """
 
@@ -412,22 +412,22 @@ class LConnection(object):
 
     @property
     def is_global(self):
-        """Gets the is_global of this Connection.  # noqa: E501
+        """Gets the is_global of this LConnection.  # noqa: E501
 
         If `true`, the connection is public and available to all users. Default is false.  **NOTE**: After a connection has been made public, it cannot be made private again. It must be deleted and recreated.  # noqa: E501
 
-        :return: The is_global of this Connection.  # noqa: E501
+        :return: The is_global of this LConnection.  # noqa: E501
         :rtype: bool
         """
         return self._is_global
 
     @is_global.setter
     def is_global(self, is_global):
-        """Sets the is_global of this Connection.
+        """Sets the is_global of this LConnection.
 
         If `true`, the connection is public and available to all users. Default is false.  **NOTE**: After a connection has been made public, it cannot be made private again. It must be deleted and recreated.  # noqa: E501
 
-        :param is_global: The is_global of this Connection.  # noqa: E501
+        :param is_global: The is_global of this LConnection.  # noqa: E501
         :type: bool
         """
 
@@ -435,22 +435,22 @@ class LConnection(object):
 
     @property
     def credentials_shared(self):
-        """Gets the credentials_shared of this Connection.  # noqa: E501
+        """Gets the credentials_shared of this LConnection.  # noqa: E501
 
         If `true`, the credentials used for the connection are available for use byusers who have been shared the connection.  # noqa: E501
 
-        :return: The credentials_shared of this Connection.  # noqa: E501
+        :return: The credentials_shared of this LConnection.  # noqa: E501
         :rtype: bool
         """
         return self._credentials_shared
 
     @credentials_shared.setter
     def credentials_shared(self, credentials_shared):
-        """Sets the credentials_shared of this Connection.
+        """Sets the credentials_shared of this LConnection.
 
         If `true`, the credentials used for the connection are available for use byusers who have been shared the connection.  # noqa: E501
 
-        :param credentials_shared: The credentials_shared of this Connection.  # noqa: E501
+        :param credentials_shared: The credentials_shared of this LConnection.  # noqa: E501
         :type: bool
         """
 
@@ -458,22 +458,22 @@ class LConnection(object):
 
     @property
     def has_credentials(self):
-        """Gets the has_credentials of this Connection.  # noqa: E501
+        """Gets the has_credentials of this LConnection.  # noqa: E501
 
         When `true`, the connection has credentials associated with it to connect to the source.  # noqa: E501
 
-        :return: The has_credentials of this Connection.  # noqa: E501
+        :return: The has_credentials of this LConnection.  # noqa: E501
         :rtype: bool
         """
         return self._has_credentials
 
     @has_credentials.setter
     def has_credentials(self, has_credentials):
-        """Sets the has_credentials of this Connection.
+        """Sets the has_credentials of this LConnection.
 
         When `true`, the connection has credentials associated with it to connect to the source.  # noqa: E501
 
-        :param has_credentials: The has_credentials of this Connection.  # noqa: E501
+        :param has_credentials: The has_credentials of this LConnection.  # noqa: E501
         :type: bool
         """
 
@@ -481,22 +481,22 @@ class LConnection(object):
 
     @property
     def host(self):
-        """Gets the host of this Connection.  # noqa: E501
+        """Gets the host of this LConnection.  # noqa: E501
 
         Host of the source  # noqa: E501
 
-        :return: The host of this Connection.  # noqa: E501
+        :return: The host of this LConnection.  # noqa: E501
         :rtype: str
         """
         return self._host
 
     @host.setter
     def host(self, host):
-        """Sets the host of this Connection.
+        """Sets the host of this LConnection.
 
         Host of the source  # noqa: E501
 
-        :param host: The host of this Connection.  # noqa: E501
+        :param host: The host of this LConnection.  # noqa: E501
         :type: str
         """
 
@@ -504,22 +504,22 @@ class LConnection(object):
 
     @property
     def port(self):
-        """Gets the port of this Connection.  # noqa: E501
+        """Gets the port of this LConnection.  # noqa: E501
 
         Port number for the source  # noqa: E501
 
-        :return: The port of this Connection.  # noqa: E501
+        :return: The port of this LConnection.  # noqa: E501
         :rtype: int
         """
         return self._port
 
     @port.setter
     def port(self, port):
-        """Sets the port of this Connection.
+        """Sets the port of this LConnection.
 
         Port number for the source  # noqa: E501
 
-        :param port: The port of this Connection.  # noqa: E501
+        :param port: The port of this LConnection.  # noqa: E501
         :type: int
         """
 
@@ -527,21 +527,21 @@ class LConnection(object):
 
     @property
     def id(self):
-        """Gets the id of this Connection.  # noqa: E501
+        """Gets the id of this LConnection.  # noqa: E501
 
 
-        :return: The id of this Connection.  # noqa: E501
-        :rtype: ConnectionIdInfo
+        :return: The id of this LConnection.  # noqa: E501
+        :rtype: LConnectionIdInfo
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Connection.
+        """Sets the id of this LConnection.
 
 
-        :param id: The id of this Connection.  # noqa: E501
-        :type: ConnectionIdInfo
+        :param id: The id of this LConnection.  # noqa: E501
+        :type: LConnectionIdInfo
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -550,22 +550,22 @@ class LConnection(object):
 
     @property
     def uuid(self):
-        """Gets the uuid of this Connection.  # noqa: E501
+        """Gets the uuid of this LConnection.  # noqa: E501
 
         A universal object identifier,which is unique across instances of the platform.  # noqa: E501
 
-        :return: The uuid of this Connection.  # noqa: E501
+        :return: The uuid of this LConnection.  # noqa: E501
         :rtype: str
         """
         return self._uuid
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this Connection.
+        """Sets the uuid of this LConnection.
 
         A universal object identifier,which is unique across instances of the platform.  # noqa: E501
 
-        :param uuid: The uuid of this Connection.  # noqa: E501
+        :param uuid: The uuid of this LConnection.  # noqa: E501
         :type: str
         """
         if uuid is None:
@@ -575,22 +575,22 @@ class LConnection(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this Connection.  # noqa: E501
+        """Gets the created_at of this LConnection.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this Connection.  # noqa: E501
+        :return: The created_at of this LConnection.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Connection.
+        """Sets the created_at of this LConnection.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this Connection.  # noqa: E501
+        :param created_at: The created_at of this LConnection.  # noqa: E501
         :type: datetime
         """
 
@@ -598,22 +598,22 @@ class LConnection(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Connection.  # noqa: E501
+        """Gets the updated_at of this LConnection.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this Connection.  # noqa: E501
+        :return: The updated_at of this LConnection.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Connection.
+        """Sets the updated_at of this LConnection.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this Connection.  # noqa: E501
+        :param updated_at: The updated_at of this LConnection.  # noqa: E501
         :type: datetime
         """
 
@@ -621,21 +621,21 @@ class LConnection(object):
 
     @property
     def credentials(self):
-        """Gets the credentials of this Connection.  # noqa: E501
+        """Gets the credentials of this LConnection.  # noqa: E501
 
 
-        :return: The credentials of this Connection.  # noqa: E501
-        :rtype: CredentialsInfo
+        :return: The credentials of this LConnection.  # noqa: E501
+        :rtype: LCredentialsInfo
         """
         return self._credentials
 
     @credentials.setter
     def credentials(self, credentials):
-        """Sets the credentials of this Connection.
+        """Sets the credentials of this LConnection.
 
 
-        :param credentials: The credentials of this Connection.  # noqa: E501
-        :type: CredentialsInfo
+        :param credentials: The credentials of this LConnection.  # noqa: E501
+        :type: LCredentialsInfo
         """
         if credentials is None:
             raise ValueError("Invalid value for `credentials`, must not be `None`")  # noqa: E501
@@ -644,41 +644,41 @@ class LConnection(object):
 
     @property
     def advanced_credentials(self):
-        """Gets the advanced_credentials of this Connection.  # noqa: E501
+        """Gets the advanced_credentials of this LConnection.  # noqa: E501
 
 
-        :return: The advanced_credentials of this Connection.  # noqa: E501
-        :rtype: AdvancedViewCredentialsInfo
+        :return: The advanced_credentials of this LConnection.  # noqa: E501
+        :rtype: LAdvancedViewCredentialsInfo
         """
         return self._advanced_credentials
 
     @advanced_credentials.setter
     def advanced_credentials(self, advanced_credentials):
-        """Sets the advanced_credentials of this Connection.
+        """Sets the advanced_credentials of this LConnection.
 
 
-        :param advanced_credentials: The advanced_credentials of this Connection.  # noqa: E501
-        :type: AdvancedViewCredentialsInfo
+        :param advanced_credentials: The advanced_credentials of this LConnection.  # noqa: E501
+        :type: LAdvancedViewCredentialsInfo
         """
 
         self._advanced_credentials = advanced_credentials
 
     @property
     def creator(self):
-        """Gets the creator of this Connection.  # noqa: E501
+        """Gets the creator of this LConnection.  # noqa: E501
 
 
-        :return: The creator of this Connection.  # noqa: E501
+        :return: The creator of this LConnection.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this Connection.
+        """Sets the creator of this LConnection.
 
 
-        :param creator: The creator of this Connection.  # noqa: E501
+        :param creator: The creator of this LConnection.  # noqa: E501
         :type: object
         """
 
@@ -686,20 +686,20 @@ class LConnection(object):
 
     @property
     def updater(self):
-        """Gets the updater of this Connection.  # noqa: E501
+        """Gets the updater of this LConnection.  # noqa: E501
 
 
-        :return: The updater of this Connection.  # noqa: E501
+        :return: The updater of this LConnection.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this Connection.
+        """Sets the updater of this LConnection.
 
 
-        :param updater: The updater of this Connection.  # noqa: E501
+        :param updater: The updater of this LConnection.  # noqa: E501
         :type: object
         """
 
@@ -707,20 +707,20 @@ class LConnection(object):
 
     @property
     def workspace(self):
-        """Gets the workspace of this Connection.  # noqa: E501
+        """Gets the workspace of this LConnection.  # noqa: E501
 
 
-        :return: The workspace of this Connection.  # noqa: E501
+        :return: The workspace of this LConnection.  # noqa: E501
         :rtype: object
         """
         return self._workspace
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this Connection.
+        """Sets the workspace of this LConnection.
 
 
-        :param workspace: The workspace of this Connection.  # noqa: E501
+        :param workspace: The workspace of this LConnection.  # noqa: E501
         :type: object
         """
 
@@ -728,22 +728,22 @@ class LConnection(object):
 
     @property
     def params(self):
-        """Gets the params of this Connection.  # noqa: E501
+        """Gets the params of this LConnection.  # noqa: E501
 
         This setting is populated with any parameters that are passed to the source duringconnection and operations. For relational sources, this setting may include thedefault database and extra load parameters.  # noqa: E501
 
-        :return: The params of this Connection.  # noqa: E501
+        :return: The params of this LConnection.  # noqa: E501
         :rtype: object
         """
         return self._params
 
     @params.setter
     def params(self, params):
-        """Sets the params of this Connection.
+        """Sets the params of this LConnection.
 
         This setting is populated with any parameters that are passed to the source duringconnection and operations. For relational sources, this setting may include thedefault database and extra load parameters.  # noqa: E501
 
-        :param params: The params of this Connection.  # noqa: E501
+        :param params: The params of this LConnection.  # noqa: E501
         :type: object
         """
 
@@ -751,21 +751,21 @@ class LConnection(object):
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this Connection.  # noqa: E501
+        """Gets the endpoints of this LConnection.  # noqa: E501
 
 
-        :return: The endpoints of this Connection.  # noqa: E501
-        :rtype: JdbcRestEndpointsInfo
+        :return: The endpoints of this LConnection.  # noqa: E501
+        :rtype: LJdbcRestEndpointsInfo
         """
         return self._endpoints
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this Connection.
+        """Sets the endpoints of this LConnection.
 
 
-        :param endpoints: The endpoints of this Connection.  # noqa: E501
-        :type: JdbcRestEndpointsInfo
+        :param endpoints: The endpoints of this LConnection.  # noqa: E501
+        :type: LJdbcRestEndpointsInfo
         """
 
         self._endpoints = endpoints
@@ -791,7 +791,7 @@ class LConnection(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Connection, dict):
+        if issubclass(LConnection, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -807,7 +807,7 @@ class LConnection(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Connection):
+        if not isinstance(other, LConnection):
             return False
 
         return self.__dict__ == other.__dict__

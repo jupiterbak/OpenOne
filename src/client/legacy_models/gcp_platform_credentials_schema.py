@@ -28,7 +28,7 @@ class LGcpPlatformCredentialsSchema(object):
     """
     swagger_types = {
         'platform': 'str',
-        'platform_credentials': 'GcpPlatformCredentials'
+        'platform_credentials': 'LGcpPlatformCredentials'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LGcpPlatformCredentialsSchema(object):
     }
 
     def __init__(self, platform=None, platform_credentials=None):  # noqa: E501
-        """GcpPlatformCredentialsSchema - a model defined in Swagger"""  # noqa: E501
+        """LGcpPlatformCredentialsSchema - a model defined in Swagger"""  # noqa: E501
         self._platform = None
         self._platform_credentials = None
         self.discriminator = None
@@ -46,22 +46,22 @@ class LGcpPlatformCredentialsSchema(object):
 
     @property
     def platform(self):
-        """Gets the platform of this GcpPlatformCredentialsSchema.  # noqa: E501
+        """Gets the platform of this LGcpPlatformCredentialsSchema.  # noqa: E501
 
          * `gcp` - GCP platform credentials * `aws` - AWS platform credentials * `azure` - Azure platform credentials  # noqa: E501
 
-        :return: The platform of this GcpPlatformCredentialsSchema.  # noqa: E501
+        :return: The platform of this LGcpPlatformCredentialsSchema.  # noqa: E501
         :rtype: str
         """
         return self._platform
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this GcpPlatformCredentialsSchema.
+        """Sets the platform of this LGcpPlatformCredentialsSchema.
 
          * `gcp` - GCP platform credentials * `aws` - AWS platform credentials * `azure` - Azure platform credentials  # noqa: E501
 
-        :param platform: The platform of this GcpPlatformCredentialsSchema.  # noqa: E501
+        :param platform: The platform of this LGcpPlatformCredentialsSchema.  # noqa: E501
         :type: str
         """
         if platform is None:
@@ -77,21 +77,21 @@ class LGcpPlatformCredentialsSchema(object):
 
     @property
     def platform_credentials(self):
-        """Gets the platform_credentials of this GcpPlatformCredentialsSchema.  # noqa: E501
+        """Gets the platform_credentials of this LGcpPlatformCredentialsSchema.  # noqa: E501
 
 
-        :return: The platform_credentials of this GcpPlatformCredentialsSchema.  # noqa: E501
-        :rtype: GcpPlatformCredentials
+        :return: The platform_credentials of this LGcpPlatformCredentialsSchema.  # noqa: E501
+        :rtype: LGcpPlatformCredentials
         """
         return self._platform_credentials
 
     @platform_credentials.setter
     def platform_credentials(self, platform_credentials):
-        """Sets the platform_credentials of this GcpPlatformCredentialsSchema.
+        """Sets the platform_credentials of this LGcpPlatformCredentialsSchema.
 
 
-        :param platform_credentials: The platform_credentials of this GcpPlatformCredentialsSchema.  # noqa: E501
-        :type: GcpPlatformCredentials
+        :param platform_credentials: The platform_credentials of this LGcpPlatformCredentialsSchema.  # noqa: E501
+        :type: LGcpPlatformCredentials
         """
         if platform_credentials is None:
             raise ValueError("Invalid value for `platform_credentials`, must not be `None`")  # noqa: E501
@@ -119,7 +119,7 @@ class LGcpPlatformCredentialsSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(GcpPlatformCredentialsSchema, dict):
+        if issubclass(LGcpPlatformCredentialsSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -135,7 +135,7 @@ class LGcpPlatformCredentialsSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, GcpPlatformCredentialsSchema):
+        if not isinstance(other, LGcpPlatformCredentialsSchema):
             return False
 
         return self.__dict__ == other.__dict__

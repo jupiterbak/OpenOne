@@ -37,7 +37,7 @@ class LType(object):
         'symbol_map': 'str',
         'regex_map': 'str',
         'sub_types': 'str',
-        'id': 'AnyOftypeId',
+        'id': 'LAnyOftypeId',
         'created_at': 'datetime',
         'updated_at': 'datetime'
     }
@@ -59,7 +59,7 @@ class LType(object):
     }
 
     def __init__(self, name=None, pretty_name=None, default_probability=None, test_case=None, primitive=None, enabled=None, category=None, symbol_map=None, regex_map=None, sub_types=None, id=None, created_at=None, updated_at=None):  # noqa: E501
-        """Type - a model defined in Swagger"""  # noqa: E501
+        """LType - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._pretty_name = None
         self._default_probability = None
@@ -100,22 +100,22 @@ class LType(object):
 
     @property
     def name(self):
-        """Gets the name of this Type.  # noqa: E501
+        """Gets the name of this LType.  # noqa: E501
 
         name of the type  # noqa: E501
 
-        :return: The name of this Type.  # noqa: E501
+        :return: The name of this LType.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Type.
+        """Sets the name of this LType.
 
         name of the type  # noqa: E501
 
-        :param name: The name of this Type.  # noqa: E501
+        :param name: The name of this LType.  # noqa: E501
         :type: str
         """
 
@@ -123,22 +123,22 @@ class LType(object):
 
     @property
     def pretty_name(self):
-        """Gets the pretty_name of this Type.  # noqa: E501
+        """Gets the pretty_name of this LType.  # noqa: E501
 
         User-friendly name for the type  # noqa: E501
 
-        :return: The pretty_name of this Type.  # noqa: E501
+        :return: The pretty_name of this LType.  # noqa: E501
         :rtype: str
         """
         return self._pretty_name
 
     @pretty_name.setter
     def pretty_name(self, pretty_name):
-        """Sets the pretty_name of this Type.
+        """Sets the pretty_name of this LType.
 
         User-friendly name for the type  # noqa: E501
 
-        :param pretty_name: The pretty_name of this Type.  # noqa: E501
+        :param pretty_name: The pretty_name of this LType.  # noqa: E501
         :type: str
         """
 
@@ -146,22 +146,22 @@ class LType(object):
 
     @property
     def default_probability(self):
-        """Gets the default_probability of this Type.  # noqa: E501
+        """Gets the default_probability of this LType.  # noqa: E501
 
         Default probability for that type  # noqa: E501
 
-        :return: The default_probability of this Type.  # noqa: E501
+        :return: The default_probability of this LType.  # noqa: E501
         :rtype: float
         """
         return self._default_probability
 
     @default_probability.setter
     def default_probability(self, default_probability):
-        """Sets the default_probability of this Type.
+        """Sets the default_probability of this LType.
 
         Default probability for that type  # noqa: E501
 
-        :param default_probability: The default_probability of this Type.  # noqa: E501
+        :param default_probability: The default_probability of this LType.  # noqa: E501
         :type: float
         """
 
@@ -169,22 +169,22 @@ class LType(object):
 
     @property
     def test_case(self):
-        """Gets the test_case of this Type.  # noqa: E501
+        """Gets the test_case of this LType.  # noqa: E501
 
         Regexes to test for this type  # noqa: E501
 
-        :return: The test_case of this Type.  # noqa: E501
+        :return: The test_case of this LType.  # noqa: E501
         :rtype: str
         """
         return self._test_case
 
     @test_case.setter
     def test_case(self, test_case):
-        """Sets the test_case of this Type.
+        """Sets the test_case of this LType.
 
         Regexes to test for this type  # noqa: E501
 
-        :param test_case: The test_case of this Type.  # noqa: E501
+        :param test_case: The test_case of this LType.  # noqa: E501
         :type: str
         """
 
@@ -192,20 +192,20 @@ class LType(object):
 
     @property
     def primitive(self):
-        """Gets the primitive of this Type.  # noqa: E501
+        """Gets the primitive of this LType.  # noqa: E501
 
 
-        :return: The primitive of this Type.  # noqa: E501
+        :return: The primitive of this LType.  # noqa: E501
         :rtype: bool
         """
         return self._primitive
 
     @primitive.setter
     def primitive(self, primitive):
-        """Sets the primitive of this Type.
+        """Sets the primitive of this LType.
 
 
-        :param primitive: The primitive of this Type.  # noqa: E501
+        :param primitive: The primitive of this LType.  # noqa: E501
         :type: bool
         """
 
@@ -213,20 +213,20 @@ class LType(object):
 
     @property
     def enabled(self):
-        """Gets the enabled of this Type.  # noqa: E501
+        """Gets the enabled of this LType.  # noqa: E501
 
 
-        :return: The enabled of this Type.  # noqa: E501
+        :return: The enabled of this LType.  # noqa: E501
         :rtype: bool
         """
         return self._enabled
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this Type.
+        """Sets the enabled of this LType.
 
 
-        :param enabled: The enabled of this Type.  # noqa: E501
+        :param enabled: The enabled of this LType.  # noqa: E501
         :type: bool
         """
 
@@ -234,20 +234,20 @@ class LType(object):
 
     @property
     def category(self):
-        """Gets the category of this Type.  # noqa: E501
+        """Gets the category of this LType.  # noqa: E501
 
 
-        :return: The category of this Type.  # noqa: E501
+        :return: The category of this LType.  # noqa: E501
         :rtype: str
         """
         return self._category
 
     @category.setter
     def category(self, category):
-        """Sets the category of this Type.
+        """Sets the category of this LType.
 
 
-        :param category: The category of this Type.  # noqa: E501
+        :param category: The category of this LType.  # noqa: E501
         :type: str
         """
 
@@ -255,20 +255,20 @@ class LType(object):
 
     @property
     def symbol_map(self):
-        """Gets the symbol_map of this Type.  # noqa: E501
+        """Gets the symbol_map of this LType.  # noqa: E501
 
 
-        :return: The symbol_map of this Type.  # noqa: E501
+        :return: The symbol_map of this LType.  # noqa: E501
         :rtype: str
         """
         return self._symbol_map
 
     @symbol_map.setter
     def symbol_map(self, symbol_map):
-        """Sets the symbol_map of this Type.
+        """Sets the symbol_map of this LType.
 
 
-        :param symbol_map: The symbol_map of this Type.  # noqa: E501
+        :param symbol_map: The symbol_map of this LType.  # noqa: E501
         :type: str
         """
 
@@ -276,20 +276,20 @@ class LType(object):
 
     @property
     def regex_map(self):
-        """Gets the regex_map of this Type.  # noqa: E501
+        """Gets the regex_map of this LType.  # noqa: E501
 
 
-        :return: The regex_map of this Type.  # noqa: E501
+        :return: The regex_map of this LType.  # noqa: E501
         :rtype: str
         """
         return self._regex_map
 
     @regex_map.setter
     def regex_map(self, regex_map):
-        """Sets the regex_map of this Type.
+        """Sets the regex_map of this LType.
 
 
-        :param regex_map: The regex_map of this Type.  # noqa: E501
+        :param regex_map: The regex_map of this LType.  # noqa: E501
         :type: str
         """
 
@@ -297,20 +297,20 @@ class LType(object):
 
     @property
     def sub_types(self):
-        """Gets the sub_types of this Type.  # noqa: E501
+        """Gets the sub_types of this LType.  # noqa: E501
 
 
-        :return: The sub_types of this Type.  # noqa: E501
+        :return: The sub_types of this LType.  # noqa: E501
         :rtype: str
         """
         return self._sub_types
 
     @sub_types.setter
     def sub_types(self, sub_types):
-        """Sets the sub_types of this Type.
+        """Sets the sub_types of this LType.
 
 
-        :param sub_types: The sub_types of this Type.  # noqa: E501
+        :param sub_types: The sub_types of this LType.  # noqa: E501
         :type: str
         """
 
@@ -318,21 +318,21 @@ class LType(object):
 
     @property
     def id(self):
-        """Gets the id of this Type.  # noqa: E501
+        """Gets the id of this LType.  # noqa: E501
 
 
-        :return: The id of this Type.  # noqa: E501
-        :rtype: AnyOftypeId
+        :return: The id of this LType.  # noqa: E501
+        :rtype: LAnyOftypeId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Type.
+        """Sets the id of this LType.
 
 
-        :param id: The id of this Type.  # noqa: E501
-        :type: AnyOftypeId
+        :param id: The id of this LType.  # noqa: E501
+        :type: LAnyOftypeId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -341,22 +341,22 @@ class LType(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this Type.  # noqa: E501
+        """Gets the created_at of this LType.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this Type.  # noqa: E501
+        :return: The created_at of this LType.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Type.
+        """Sets the created_at of this LType.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this Type.  # noqa: E501
+        :param created_at: The created_at of this LType.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -366,22 +366,22 @@ class LType(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Type.  # noqa: E501
+        """Gets the updated_at of this LType.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this Type.  # noqa: E501
+        :return: The updated_at of this LType.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Type.
+        """Sets the updated_at of this LType.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this Type.  # noqa: E501
+        :param updated_at: The updated_at of this LType.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -410,7 +410,7 @@ class LType(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Type, dict):
+        if issubclass(LType, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -426,7 +426,7 @@ class LType(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Type):
+        if not isinstance(other, LType):
             return False
 
         return self.__dict__ == other.__dict__

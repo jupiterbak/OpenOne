@@ -27,7 +27,7 @@ class LPlanFlowTask(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'id': 'AnyOfplanFlowTaskId',
+        'id': 'LAnyOfplanFlowTaskId',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'webhooks_enabled': 'bool'
@@ -41,7 +41,7 @@ class LPlanFlowTask(object):
     }
 
     def __init__(self, id=None, created_at=None, updated_at=None, webhooks_enabled=None):  # noqa: E501
-        """PlanFlowTask - a model defined in Swagger"""  # noqa: E501
+        """LPlanFlowTask - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._created_at = None
         self._updated_at = None
@@ -54,21 +54,21 @@ class LPlanFlowTask(object):
 
     @property
     def id(self):
-        """Gets the id of this PlanFlowTask.  # noqa: E501
+        """Gets the id of this LPlanFlowTask.  # noqa: E501
 
 
-        :return: The id of this PlanFlowTask.  # noqa: E501
-        :rtype: AnyOfplanFlowTaskId
+        :return: The id of this LPlanFlowTask.  # noqa: E501
+        :rtype: LAnyOfplanFlowTaskId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PlanFlowTask.
+        """Sets the id of this LPlanFlowTask.
 
 
-        :param id: The id of this PlanFlowTask.  # noqa: E501
-        :type: AnyOfplanFlowTaskId
+        :param id: The id of this LPlanFlowTask.  # noqa: E501
+        :type: LAnyOfplanFlowTaskId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -77,22 +77,22 @@ class LPlanFlowTask(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this PlanFlowTask.  # noqa: E501
+        """Gets the created_at of this LPlanFlowTask.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this PlanFlowTask.  # noqa: E501
+        :return: The created_at of this LPlanFlowTask.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this PlanFlowTask.
+        """Sets the created_at of this LPlanFlowTask.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this PlanFlowTask.  # noqa: E501
+        :param created_at: The created_at of this LPlanFlowTask.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -102,22 +102,22 @@ class LPlanFlowTask(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this PlanFlowTask.  # noqa: E501
+        """Gets the updated_at of this LPlanFlowTask.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this PlanFlowTask.  # noqa: E501
+        :return: The updated_at of this LPlanFlowTask.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this PlanFlowTask.
+        """Sets the updated_at of this LPlanFlowTask.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this PlanFlowTask.  # noqa: E501
+        :param updated_at: The updated_at of this LPlanFlowTask.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -127,20 +127,20 @@ class LPlanFlowTask(object):
 
     @property
     def webhooks_enabled(self):
-        """Gets the webhooks_enabled of this PlanFlowTask.  # noqa: E501
+        """Gets the webhooks_enabled of this LPlanFlowTask.  # noqa: E501
 
 
-        :return: The webhooks_enabled of this PlanFlowTask.  # noqa: E501
+        :return: The webhooks_enabled of this LPlanFlowTask.  # noqa: E501
         :rtype: bool
         """
         return self._webhooks_enabled
 
     @webhooks_enabled.setter
     def webhooks_enabled(self, webhooks_enabled):
-        """Sets the webhooks_enabled of this PlanFlowTask.
+        """Sets the webhooks_enabled of this LPlanFlowTask.
 
 
-        :param webhooks_enabled: The webhooks_enabled of this PlanFlowTask.  # noqa: E501
+        :param webhooks_enabled: The webhooks_enabled of this LPlanFlowTask.  # noqa: E501
         :type: bool
         """
         if webhooks_enabled is None:
@@ -169,7 +169,7 @@ class LPlanFlowTask(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanFlowTask, dict):
+        if issubclass(LPlanFlowTask, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -185,7 +185,7 @@ class LPlanFlowTask(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanFlowTask):
+        if not isinstance(other, LPlanFlowTask):
             return False
 
         return self.__dict__ == other.__dict__

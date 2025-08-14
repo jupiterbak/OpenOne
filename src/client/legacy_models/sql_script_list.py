@@ -27,7 +27,7 @@ class LSqlScriptList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[SqlScript]',
+        'data': 'list[LSqlScript]',
         'count': 'int'
     }
 
@@ -37,7 +37,7 @@ class LSqlScriptList(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """SqlScriptList - a model defined in Swagger"""  # noqa: E501
+        """LSqlScriptList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LSqlScriptList(object):
 
     @property
     def data(self):
-        """Gets the data of this SqlScriptList.  # noqa: E501
+        """Gets the data of this LSqlScriptList.  # noqa: E501
 
 
-        :return: The data of this SqlScriptList.  # noqa: E501
-        :rtype: list[SqlScript]
+        :return: The data of this LSqlScriptList.  # noqa: E501
+        :rtype: list[LSqlScript]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SqlScriptList.
+        """Sets the data of this LSqlScriptList.
 
 
-        :param data: The data of this SqlScriptList.  # noqa: E501
-        :type: list[SqlScript]
+        :param data: The data of this LSqlScriptList.  # noqa: E501
+        :type: list[LSqlScript]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LSqlScriptList(object):
 
     @property
     def count(self):
-        """Gets the count of this SqlScriptList.  # noqa: E501
+        """Gets the count of this LSqlScriptList.  # noqa: E501
 
 
-        :return: The count of this SqlScriptList.  # noqa: E501
+        :return: The count of this LSqlScriptList.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SqlScriptList.
+        """Sets the count of this LSqlScriptList.
 
 
-        :param count: The count of this SqlScriptList.  # noqa: E501
+        :param count: The count of this LSqlScriptList.  # noqa: E501
         :type: int
         """
 
@@ -110,7 +110,7 @@ class LSqlScriptList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(SqlScriptList, dict):
+        if issubclass(LSqlScriptList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LSqlScriptList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SqlScriptList):
+        if not isinstance(other, LSqlScriptList):
             return False
 
         return self.__dict__ == other.__dict__

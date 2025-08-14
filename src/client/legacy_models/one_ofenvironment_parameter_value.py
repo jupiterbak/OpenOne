@@ -33,7 +33,7 @@ class LOneOfenvironmentParameterValue(object):
     }
 
     def __init__(self):  # noqa: E501
-        """OneOfenvironmentParameterValue - a model defined in Swagger"""  # noqa: E501
+        """LOneOfenvironmentParameterValue - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LOneOfenvironmentParameterValue(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OneOfenvironmentParameterValue, dict):
+        if issubclass(LOneOfenvironmentParameterValue, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LOneOfenvironmentParameterValue(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OneOfenvironmentParameterValue):
+        if not isinstance(other, LOneOfenvironmentParameterValue):
             return False
 
         return self.__dict__ == other.__dict__

@@ -43,7 +43,7 @@ class LApiAccessToken(object):
     }
 
     def __init__(self, token_id=None, description=None, expired_at=None, created_at=None, last_used=None):  # noqa: E501
-        """ApiAccessToken - a model defined in Swagger"""  # noqa: E501
+        """LApiAccessToken - a model defined in Swagger"""  # noqa: E501
         self._token_id = None
         self._description = None
         self._expired_at = None
@@ -61,22 +61,22 @@ class LApiAccessToken(object):
 
     @property
     def token_id(self):
-        """Gets the token_id of this ApiAccessToken.  # noqa: E501
+        """Gets the token_id of this LApiAccessToken.  # noqa: E501
 
         Token identifier  # noqa: E501
 
-        :return: The token_id of this ApiAccessToken.  # noqa: E501
+        :return: The token_id of this LApiAccessToken.  # noqa: E501
         :rtype: str
         """
         return self._token_id
 
     @token_id.setter
     def token_id(self, token_id):
-        """Sets the token_id of this ApiAccessToken.
+        """Sets the token_id of this LApiAccessToken.
 
         Token identifier  # noqa: E501
 
-        :param token_id: The token_id of this ApiAccessToken.  # noqa: E501
+        :param token_id: The token_id of this LApiAccessToken.  # noqa: E501
         :type: str
         """
         if token_id is None:
@@ -86,22 +86,22 @@ class LApiAccessToken(object):
 
     @property
     def description(self):
-        """Gets the description of this ApiAccessToken.  # noqa: E501
+        """Gets the description of this LApiAccessToken.  # noqa: E501
 
         User-friendly description for the access token  # noqa: E501
 
-        :return: The description of this ApiAccessToken.  # noqa: E501
+        :return: The description of this LApiAccessToken.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApiAccessToken.
+        """Sets the description of this LApiAccessToken.
 
         User-friendly description for the access token  # noqa: E501
 
-        :param description: The description of this ApiAccessToken.  # noqa: E501
+        :param description: The description of this LApiAccessToken.  # noqa: E501
         :type: str
         """
 
@@ -109,22 +109,22 @@ class LApiAccessToken(object):
 
     @property
     def expired_at(self):
-        """Gets the expired_at of this ApiAccessToken.  # noqa: E501
+        """Gets the expired_at of this LApiAccessToken.  # noqa: E501
 
         Timestamp for when the access token expires. A `null` value indicates that the access token never expires.  # noqa: E501
 
-        :return: The expired_at of this ApiAccessToken.  # noqa: E501
+        :return: The expired_at of this LApiAccessToken.  # noqa: E501
         :rtype: datetime
         """
         return self._expired_at
 
     @expired_at.setter
     def expired_at(self, expired_at):
-        """Sets the expired_at of this ApiAccessToken.
+        """Sets the expired_at of this LApiAccessToken.
 
         Timestamp for when the access token expires. A `null` value indicates that the access token never expires.  # noqa: E501
 
-        :param expired_at: The expired_at of this ApiAccessToken.  # noqa: E501
+        :param expired_at: The expired_at of this LApiAccessToken.  # noqa: E501
         :type: datetime
         """
 
@@ -132,22 +132,22 @@ class LApiAccessToken(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ApiAccessToken.  # noqa: E501
+        """Gets the created_at of this LApiAccessToken.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this ApiAccessToken.  # noqa: E501
+        :return: The created_at of this LApiAccessToken.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ApiAccessToken.
+        """Sets the created_at of this LApiAccessToken.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this ApiAccessToken.  # noqa: E501
+        :param created_at: The created_at of this LApiAccessToken.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -157,22 +157,22 @@ class LApiAccessToken(object):
 
     @property
     def last_used(self):
-        """Gets the last_used of this ApiAccessToken.  # noqa: E501
+        """Gets the last_used of this LApiAccessToken.  # noqa: E501
 
         Timestamp for when the access token was last used. A `null` value indicates that the access token has never been used.  # noqa: E501
 
-        :return: The last_used of this ApiAccessToken.  # noqa: E501
+        :return: The last_used of this LApiAccessToken.  # noqa: E501
         :rtype: datetime
         """
         return self._last_used
 
     @last_used.setter
     def last_used(self, last_used):
-        """Sets the last_used of this ApiAccessToken.
+        """Sets the last_used of this LApiAccessToken.
 
         Timestamp for when the access token was last used. A `null` value indicates that the access token has never been used.  # noqa: E501
 
-        :param last_used: The last_used of this ApiAccessToken.  # noqa: E501
+        :param last_used: The last_used of this LApiAccessToken.  # noqa: E501
         :type: datetime
         """
 
@@ -199,7 +199,7 @@ class LApiAccessToken(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ApiAccessToken, dict):
+        if issubclass(LApiAccessToken, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -215,7 +215,7 @@ class LApiAccessToken(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ApiAccessToken):
+        if not isinstance(other, LApiAccessToken):
             return False
 
         return self.__dict__ == other.__dict__

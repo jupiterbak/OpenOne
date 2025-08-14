@@ -39,7 +39,7 @@ class LBaseStorageConfigsForProtocol(object):
     }
 
     def __init__(self, base_url=None, output_home_dir=None, upload_dir=None):  # noqa: E501
-        """BaseStorageConfigsForProtocol - a model defined in Swagger"""  # noqa: E501
+        """LBaseStorageConfigsForProtocol - a model defined in Swagger"""  # noqa: E501
         self._base_url = None
         self._output_home_dir = None
         self._upload_dir = None
@@ -51,20 +51,20 @@ class LBaseStorageConfigsForProtocol(object):
 
     @property
     def base_url(self):
-        """Gets the base_url of this BaseStorageConfigsForProtocol.  # noqa: E501
+        """Gets the base_url of this LBaseStorageConfigsForProtocol.  # noqa: E501
 
 
-        :return: The base_url of this BaseStorageConfigsForProtocol.  # noqa: E501
+        :return: The base_url of this LBaseStorageConfigsForProtocol.  # noqa: E501
         :rtype: str
         """
         return self._base_url
 
     @base_url.setter
     def base_url(self, base_url):
-        """Sets the base_url of this BaseStorageConfigsForProtocol.
+        """Sets the base_url of this LBaseStorageConfigsForProtocol.
 
 
-        :param base_url: The base_url of this BaseStorageConfigsForProtocol.  # noqa: E501
+        :param base_url: The base_url of this LBaseStorageConfigsForProtocol.  # noqa: E501
         :type: str
         """
 
@@ -72,20 +72,20 @@ class LBaseStorageConfigsForProtocol(object):
 
     @property
     def output_home_dir(self):
-        """Gets the output_home_dir of this BaseStorageConfigsForProtocol.  # noqa: E501
+        """Gets the output_home_dir of this LBaseStorageConfigsForProtocol.  # noqa: E501
 
 
-        :return: The output_home_dir of this BaseStorageConfigsForProtocol.  # noqa: E501
+        :return: The output_home_dir of this LBaseStorageConfigsForProtocol.  # noqa: E501
         :rtype: str
         """
         return self._output_home_dir
 
     @output_home_dir.setter
     def output_home_dir(self, output_home_dir):
-        """Sets the output_home_dir of this BaseStorageConfigsForProtocol.
+        """Sets the output_home_dir of this LBaseStorageConfigsForProtocol.
 
 
-        :param output_home_dir: The output_home_dir of this BaseStorageConfigsForProtocol.  # noqa: E501
+        :param output_home_dir: The output_home_dir of this LBaseStorageConfigsForProtocol.  # noqa: E501
         :type: str
         """
         if output_home_dir is None:
@@ -95,20 +95,20 @@ class LBaseStorageConfigsForProtocol(object):
 
     @property
     def upload_dir(self):
-        """Gets the upload_dir of this BaseStorageConfigsForProtocol.  # noqa: E501
+        """Gets the upload_dir of this LBaseStorageConfigsForProtocol.  # noqa: E501
 
 
-        :return: The upload_dir of this BaseStorageConfigsForProtocol.  # noqa: E501
+        :return: The upload_dir of this LBaseStorageConfigsForProtocol.  # noqa: E501
         :rtype: str
         """
         return self._upload_dir
 
     @upload_dir.setter
     def upload_dir(self, upload_dir):
-        """Sets the upload_dir of this BaseStorageConfigsForProtocol.
+        """Sets the upload_dir of this LBaseStorageConfigsForProtocol.
 
 
-        :param upload_dir: The upload_dir of this BaseStorageConfigsForProtocol.  # noqa: E501
+        :param upload_dir: The upload_dir of this LBaseStorageConfigsForProtocol.  # noqa: E501
         :type: str
         """
         if upload_dir is None:
@@ -137,7 +137,7 @@ class LBaseStorageConfigsForProtocol(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(BaseStorageConfigsForProtocol, dict):
+        if issubclass(LBaseStorageConfigsForProtocol, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -153,7 +153,7 @@ class LBaseStorageConfigsForProtocol(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BaseStorageConfigsForProtocol):
+        if not isinstance(other, LBaseStorageConfigsForProtocol):
             return False
 
         return self.__dict__ == other.__dict__

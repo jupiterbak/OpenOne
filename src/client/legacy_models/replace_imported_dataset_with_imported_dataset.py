@@ -27,8 +27,8 @@ class LReplaceImportedDatasetWithImportedDataset(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'imported_dataset_id': 'AnyOfreplaceImportedDatasetWithImportedDatasetImportedDatasetId',
-        'new_imported_dataset_id': 'AnyOfreplaceImportedDatasetWithImportedDatasetNewImportedDatasetId'
+        'imported_dataset_id': 'LAnyOfreplaceImportedDatasetWithImportedDatasetImportedDatasetId',
+        'new_imported_dataset_id': 'LAnyOfreplaceImportedDatasetWithImportedDatasetNewImportedDatasetId'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LReplaceImportedDatasetWithImportedDataset(object):
     }
 
     def __init__(self, imported_dataset_id=None, new_imported_dataset_id=None):  # noqa: E501
-        """ReplaceImportedDatasetWithImportedDataset - a model defined in Swagger"""  # noqa: E501
+        """LReplaceImportedDatasetWithImportedDataset - a model defined in Swagger"""  # noqa: E501
         self._imported_dataset_id = None
         self._new_imported_dataset_id = None
         self.discriminator = None
@@ -46,21 +46,21 @@ class LReplaceImportedDatasetWithImportedDataset(object):
 
     @property
     def imported_dataset_id(self):
-        """Gets the imported_dataset_id of this ReplaceImportedDatasetWithImportedDataset.  # noqa: E501
+        """Gets the imported_dataset_id of this LReplaceImportedDatasetWithImportedDataset.  # noqa: E501
 
 
-        :return: The imported_dataset_id of this ReplaceImportedDatasetWithImportedDataset.  # noqa: E501
-        :rtype: AnyOfreplaceImportedDatasetWithImportedDatasetImportedDatasetId
+        :return: The imported_dataset_id of this LReplaceImportedDatasetWithImportedDataset.  # noqa: E501
+        :rtype: LAnyOfreplaceImportedDatasetWithImportedDatasetImportedDatasetId
         """
         return self._imported_dataset_id
 
     @imported_dataset_id.setter
     def imported_dataset_id(self, imported_dataset_id):
-        """Sets the imported_dataset_id of this ReplaceImportedDatasetWithImportedDataset.
+        """Sets the imported_dataset_id of this LReplaceImportedDatasetWithImportedDataset.
 
 
-        :param imported_dataset_id: The imported_dataset_id of this ReplaceImportedDatasetWithImportedDataset.  # noqa: E501
-        :type: AnyOfreplaceImportedDatasetWithImportedDatasetImportedDatasetId
+        :param imported_dataset_id: The imported_dataset_id of this LReplaceImportedDatasetWithImportedDataset.  # noqa: E501
+        :type: LAnyOfreplaceImportedDatasetWithImportedDatasetImportedDatasetId
         """
         if imported_dataset_id is None:
             raise ValueError("Invalid value for `imported_dataset_id`, must not be `None`")  # noqa: E501
@@ -69,21 +69,21 @@ class LReplaceImportedDatasetWithImportedDataset(object):
 
     @property
     def new_imported_dataset_id(self):
-        """Gets the new_imported_dataset_id of this ReplaceImportedDatasetWithImportedDataset.  # noqa: E501
+        """Gets the new_imported_dataset_id of this LReplaceImportedDatasetWithImportedDataset.  # noqa: E501
 
 
-        :return: The new_imported_dataset_id of this ReplaceImportedDatasetWithImportedDataset.  # noqa: E501
-        :rtype: AnyOfreplaceImportedDatasetWithImportedDatasetNewImportedDatasetId
+        :return: The new_imported_dataset_id of this LReplaceImportedDatasetWithImportedDataset.  # noqa: E501
+        :rtype: LAnyOfreplaceImportedDatasetWithImportedDatasetNewImportedDatasetId
         """
         return self._new_imported_dataset_id
 
     @new_imported_dataset_id.setter
     def new_imported_dataset_id(self, new_imported_dataset_id):
-        """Sets the new_imported_dataset_id of this ReplaceImportedDatasetWithImportedDataset.
+        """Sets the new_imported_dataset_id of this LReplaceImportedDatasetWithImportedDataset.
 
 
-        :param new_imported_dataset_id: The new_imported_dataset_id of this ReplaceImportedDatasetWithImportedDataset.  # noqa: E501
-        :type: AnyOfreplaceImportedDatasetWithImportedDatasetNewImportedDatasetId
+        :param new_imported_dataset_id: The new_imported_dataset_id of this LReplaceImportedDatasetWithImportedDataset.  # noqa: E501
+        :type: LAnyOfreplaceImportedDatasetWithImportedDatasetNewImportedDatasetId
         """
         if new_imported_dataset_id is None:
             raise ValueError("Invalid value for `new_imported_dataset_id`, must not be `None`")  # noqa: E501
@@ -111,7 +111,7 @@ class LReplaceImportedDatasetWithImportedDataset(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ReplaceImportedDatasetWithImportedDataset, dict):
+        if issubclass(LReplaceImportedDatasetWithImportedDataset, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LReplaceImportedDatasetWithImportedDataset(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ReplaceImportedDatasetWithImportedDataset):
+        if not isinstance(other, LReplaceImportedDatasetWithImportedDataset):
             return False
 
         return self.__dict__ == other.__dict__

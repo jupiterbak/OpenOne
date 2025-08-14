@@ -33,7 +33,7 @@ class LAnyOfwebhookFlowTaskCreateRequestSomeFlowNodeIdsItems(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfwebhookFlowTaskCreateRequestSomeFlowNodeIdsItems - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfwebhookFlowTaskCreateRequestSomeFlowNodeIdsItems - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfwebhookFlowTaskCreateRequestSomeFlowNodeIdsItems(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfwebhookFlowTaskCreateRequestSomeFlowNodeIdsItems, dict):
+        if issubclass(LAnyOfwebhookFlowTaskCreateRequestSomeFlowNodeIdsItems, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfwebhookFlowTaskCreateRequestSomeFlowNodeIdsItems(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfwebhookFlowTaskCreateRequestSomeFlowNodeIdsItems):
+        if not isinstance(other, LAnyOfwebhookFlowTaskCreateRequestSomeFlowNodeIdsItems):
             return False
 
         return self.__dict__ == other.__dict__

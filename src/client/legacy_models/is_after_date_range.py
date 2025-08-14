@@ -28,7 +28,7 @@ class LIsAfterDateRange(object):
     """
     swagger_types = {
         'timezone': 'str',
-        'formats': 'AnyOfisAfterDateRangeFormats',
+        'formats': 'LAnyOfisAfterDateRangeFormats',
         'is_after': 'object'
     }
 
@@ -39,7 +39,7 @@ class LIsAfterDateRange(object):
     }
 
     def __init__(self, timezone=None, formats=None, is_after=None):  # noqa: E501
-        """IsAfterDateRange - a model defined in Swagger"""  # noqa: E501
+        """LIsAfterDateRange - a model defined in Swagger"""  # noqa: E501
         self._timezone = None
         self._formats = None
         self._is_after = None
@@ -50,22 +50,22 @@ class LIsAfterDateRange(object):
 
     @property
     def timezone(self):
-        """Gets the timezone of this IsAfterDateRange.  # noqa: E501
+        """Gets the timezone of this LIsAfterDateRange.  # noqa: E501
 
         ISO Timezone, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :return: The timezone of this IsAfterDateRange.  # noqa: E501
+        :return: The timezone of this LIsAfterDateRange.  # noqa: E501
         :rtype: str
         """
         return self._timezone
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this IsAfterDateRange.
+        """Sets the timezone of this LIsAfterDateRange.
 
         ISO Timezone, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :param timezone: The timezone of this IsAfterDateRange.  # noqa: E501
+        :param timezone: The timezone of this LIsAfterDateRange.  # noqa: E501
         :type: str
         """
         if timezone is None:
@@ -75,21 +75,21 @@ class LIsAfterDateRange(object):
 
     @property
     def formats(self):
-        """Gets the formats of this IsAfterDateRange.  # noqa: E501
+        """Gets the formats of this LIsAfterDateRange.  # noqa: E501
 
 
-        :return: The formats of this IsAfterDateRange.  # noqa: E501
-        :rtype: AnyOfisAfterDateRangeFormats
+        :return: The formats of this LIsAfterDateRange.  # noqa: E501
+        :rtype: LAnyOfisAfterDateRangeFormats
         """
         return self._formats
 
     @formats.setter
     def formats(self, formats):
-        """Sets the formats of this IsAfterDateRange.
+        """Sets the formats of this LIsAfterDateRange.
 
 
-        :param formats: The formats of this IsAfterDateRange.  # noqa: E501
-        :type: AnyOfisAfterDateRangeFormats
+        :param formats: The formats of this LIsAfterDateRange.  # noqa: E501
+        :type: LAnyOfisAfterDateRangeFormats
         """
         if formats is None:
             raise ValueError("Invalid value for `formats`, must not be `None`")  # noqa: E501
@@ -98,22 +98,22 @@ class LIsAfterDateRange(object):
 
     @property
     def is_after(self):
-        """Gets the is_after of this IsAfterDateRange.  # noqa: E501
+        """Gets the is_after of this LIsAfterDateRange.  # noqa: E501
 
         Date range that includes everything after the specified date (included)  # noqa: E501
 
-        :return: The is_after of this IsAfterDateRange.  # noqa: E501
+        :return: The is_after of this LIsAfterDateRange.  # noqa: E501
         :rtype: object
         """
         return self._is_after
 
     @is_after.setter
     def is_after(self, is_after):
-        """Sets the is_after of this IsAfterDateRange.
+        """Sets the is_after of this LIsAfterDateRange.
 
         Date range that includes everything after the specified date (included)  # noqa: E501
 
-        :param is_after: The is_after of this IsAfterDateRange.  # noqa: E501
+        :param is_after: The is_after of this LIsAfterDateRange.  # noqa: E501
         :type: object
         """
         if is_after is None:
@@ -142,7 +142,7 @@ class LIsAfterDateRange(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(IsAfterDateRange, dict):
+        if issubclass(LIsAfterDateRange, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -158,7 +158,7 @@ class LIsAfterDateRange(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, IsAfterDateRange):
+        if not isinstance(other, LIsAfterDateRange):
             return False
 
         return self.__dict__ == other.__dict__

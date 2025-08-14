@@ -37,7 +37,7 @@ class LWriteSettingCreateRequest(object):
         'has_quotes': 'bool',
         'include_mismatches': 'bool',
         'output_object_id': 'int',
-        'run_parameters': 'list[RunParameterDestinationInfo]',
+        'run_parameters': 'list[LRunParameterDestinationInfo]',
         'connection_id': 'str'
     }
 
@@ -57,7 +57,7 @@ class LWriteSettingCreateRequest(object):
     }
 
     def __init__(self, path=None, action=None, format=None, compression=None, header=None, as_single_file=None, delim=None, has_quotes=None, include_mismatches=None, output_object_id=None, run_parameters=None, connection_id=None):  # noqa: E501
-        """WriteSettingCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LWriteSettingCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._path = None
         self._action = None
         self._format = None
@@ -95,22 +95,22 @@ class LWriteSettingCreateRequest(object):
 
     @property
     def path(self):
-        """Gets the path of this WriteSettingCreateRequest.  # noqa: E501
+        """Gets the path of this LWriteSettingCreateRequest.  # noqa: E501
 
         The fully qualified path to the output location where to write the results.  # noqa: E501
 
-        :return: The path of this WriteSettingCreateRequest.  # noqa: E501
+        :return: The path of this LWriteSettingCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._path
 
     @path.setter
     def path(self, path):
-        """Sets the path of this WriteSettingCreateRequest.
+        """Sets the path of this LWriteSettingCreateRequest.
 
         The fully qualified path to the output location where to write the results.  # noqa: E501
 
-        :param path: The path of this WriteSettingCreateRequest.  # noqa: E501
+        :param path: The path of this LWriteSettingCreateRequest.  # noqa: E501
         :type: str
         """
         if path is None:
@@ -120,22 +120,22 @@ class LWriteSettingCreateRequest(object):
 
     @property
     def action(self):
-        """Gets the action of this WriteSettingCreateRequest.  # noqa: E501
+        """Gets the action of this LWriteSettingCreateRequest.  # noqa: E501
 
         If the output file or directory exists,   you can specify one of the following actions * `create` - Create a new, parallel location, preserving the old results. * `append` - Add the new results to the old results. * `overwrite` - Replace the old results with the new results.  # noqa: E501
 
-        :return: The action of this WriteSettingCreateRequest.  # noqa: E501
+        :return: The action of this LWriteSettingCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._action
 
     @action.setter
     def action(self, action):
-        """Sets the action of this WriteSettingCreateRequest.
+        """Sets the action of this LWriteSettingCreateRequest.
 
         If the output file or directory exists,   you can specify one of the following actions * `create` - Create a new, parallel location, preserving the old results. * `append` - Add the new results to the old results. * `overwrite` - Replace the old results with the new results.  # noqa: E501
 
-        :param action: The action of this WriteSettingCreateRequest.  # noqa: E501
+        :param action: The action of this LWriteSettingCreateRequest.  # noqa: E501
         :type: str
         """
         if action is None:
@@ -151,22 +151,22 @@ class LWriteSettingCreateRequest(object):
 
     @property
     def format(self):
-        """Gets the format of this WriteSettingCreateRequest.  # noqa: E501
+        """Gets the format of this LWriteSettingCreateRequest.  # noqa: E501
 
         Output format for the results. Specify one of the supported values. * `csv` - CSV format. When using `csv`, you can specify a custom delimiter using the `delim` parameter. * `json` - JSON format * `avro` - Avro format * `pqt` - Parquet format * `hyper` - Tableau Hyper format  # noqa: E501
 
-        :return: The format of this WriteSettingCreateRequest.  # noqa: E501
+        :return: The format of this LWriteSettingCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._format
 
     @format.setter
     def format(self, format):
-        """Sets the format of this WriteSettingCreateRequest.
+        """Sets the format of this LWriteSettingCreateRequest.
 
         Output format for the results. Specify one of the supported values. * `csv` - CSV format. When using `csv`, you can specify a custom delimiter using the `delim` parameter. * `json` - JSON format * `avro` - Avro format * `pqt` - Parquet format * `hyper` - Tableau Hyper format  # noqa: E501
 
-        :param format: The format of this WriteSettingCreateRequest.  # noqa: E501
+        :param format: The format of this LWriteSettingCreateRequest.  # noqa: E501
         :type: str
         """
         if format is None:
@@ -182,22 +182,22 @@ class LWriteSettingCreateRequest(object):
 
     @property
     def compression(self):
-        """Gets the compression of this WriteSettingCreateRequest.  # noqa: E501
+        """Gets the compression of this LWriteSettingCreateRequest.  # noqa: E501
 
         For csv and json results, you can optionally compress them using `bzip2` or `gzip` compression. Default is none. > ℹ️ **NOTE**: If compression is applied, the filename in the `path` value must end with the appropriate extension for the type of compression: `.gz` for *gzip* and `.bz2` for *bzip2* * `none` - No compression * `gzip` - Use `gzip` compression * `bzip2` - Use `bzip2` compression * `snappy` - Use `snappy` compression  # noqa: E501
 
-        :return: The compression of this WriteSettingCreateRequest.  # noqa: E501
+        :return: The compression of this LWriteSettingCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._compression
 
     @compression.setter
     def compression(self, compression):
-        """Sets the compression of this WriteSettingCreateRequest.
+        """Sets the compression of this LWriteSettingCreateRequest.
 
         For csv and json results, you can optionally compress them using `bzip2` or `gzip` compression. Default is none. > ℹ️ **NOTE**: If compression is applied, the filename in the `path` value must end with the appropriate extension for the type of compression: `.gz` for *gzip* and `.bz2` for *bzip2* * `none` - No compression * `gzip` - Use `gzip` compression * `bzip2` - Use `bzip2` compression * `snappy` - Use `snappy` compression  # noqa: E501
 
-        :param compression: The compression of this WriteSettingCreateRequest.  # noqa: E501
+        :param compression: The compression of this LWriteSettingCreateRequest.  # noqa: E501
         :type: str
         """
         allowed_values = ["none", "gzip", "bzip2", "snappy"]  # noqa: E501
@@ -211,22 +211,22 @@ class LWriteSettingCreateRequest(object):
 
     @property
     def header(self):
-        """Gets the header of this WriteSettingCreateRequest.  # noqa: E501
+        """Gets the header of this LWriteSettingCreateRequest.  # noqa: E501
 
         For csv results with action set to `create` or `append`, this value determines if a header row with column names is inserted at the top of the results. Default is `false`.  # noqa: E501
 
-        :return: The header of this WriteSettingCreateRequest.  # noqa: E501
+        :return: The header of this LWriteSettingCreateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._header
 
     @header.setter
     def header(self, header):
-        """Sets the header of this WriteSettingCreateRequest.
+        """Sets the header of this LWriteSettingCreateRequest.
 
         For csv results with action set to `create` or `append`, this value determines if a header row with column names is inserted at the top of the results. Default is `false`.  # noqa: E501
 
-        :param header: The header of this WriteSettingCreateRequest.  # noqa: E501
+        :param header: The header of this LWriteSettingCreateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -234,22 +234,22 @@ class LWriteSettingCreateRequest(object):
 
     @property
     def as_single_file(self):
-        """Gets the as_single_file of this WriteSettingCreateRequest.  # noqa: E501
+        """Gets the as_single_file of this LWriteSettingCreateRequest.  # noqa: E501
 
         For `csv` and `json` results, this value determines if the results are concatenated into a single file or stored as multiple files. Default is `false`.  # noqa: E501
 
-        :return: The as_single_file of this WriteSettingCreateRequest.  # noqa: E501
+        :return: The as_single_file of this LWriteSettingCreateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._as_single_file
 
     @as_single_file.setter
     def as_single_file(self, as_single_file):
-        """Sets the as_single_file of this WriteSettingCreateRequest.
+        """Sets the as_single_file of this LWriteSettingCreateRequest.
 
         For `csv` and `json` results, this value determines if the results are concatenated into a single file or stored as multiple files. Default is `false`.  # noqa: E501
 
-        :param as_single_file: The as_single_file of this WriteSettingCreateRequest.  # noqa: E501
+        :param as_single_file: The as_single_file of this LWriteSettingCreateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -257,22 +257,22 @@ class LWriteSettingCreateRequest(object):
 
     @property
     def delim(self):
-        """Gets the delim of this WriteSettingCreateRequest.  # noqa: E501
+        """Gets the delim of this LWriteSettingCreateRequest.  # noqa: E501
 
         The delimiter between field values in an output row. Only relevant if the chosen `format` is `csv`  # noqa: E501
 
-        :return: The delim of this WriteSettingCreateRequest.  # noqa: E501
+        :return: The delim of this LWriteSettingCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._delim
 
     @delim.setter
     def delim(self, delim):
-        """Sets the delim of this WriteSettingCreateRequest.
+        """Sets the delim of this LWriteSettingCreateRequest.
 
         The delimiter between field values in an output row. Only relevant if the chosen `format` is `csv`  # noqa: E501
 
-        :param delim: The delim of this WriteSettingCreateRequest.  # noqa: E501
+        :param delim: The delim of this LWriteSettingCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -280,22 +280,22 @@ class LWriteSettingCreateRequest(object):
 
     @property
     def has_quotes(self):
-        """Gets the has_quotes of this WriteSettingCreateRequest.  # noqa: E501
+        """Gets the has_quotes of this LWriteSettingCreateRequest.  # noqa: E501
 
         If true, each field in the output is wrapped in double-quotes.  # noqa: E501
 
-        :return: The has_quotes of this WriteSettingCreateRequest.  # noqa: E501
+        :return: The has_quotes of this LWriteSettingCreateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._has_quotes
 
     @has_quotes.setter
     def has_quotes(self, has_quotes):
-        """Sets the has_quotes of this WriteSettingCreateRequest.
+        """Sets the has_quotes of this LWriteSettingCreateRequest.
 
         If true, each field in the output is wrapped in double-quotes.  # noqa: E501
 
-        :param has_quotes: The has_quotes of this WriteSettingCreateRequest.  # noqa: E501
+        :param has_quotes: The has_quotes of this LWriteSettingCreateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -303,22 +303,22 @@ class LWriteSettingCreateRequest(object):
 
     @property
     def include_mismatches(self):
-        """Gets the include_mismatches of this WriteSettingCreateRequest.  # noqa: E501
+        """Gets the include_mismatches of this LWriteSettingCreateRequest.  # noqa: E501
 
         If true, write out mismatched values as a string.  # noqa: E501
 
-        :return: The include_mismatches of this WriteSettingCreateRequest.  # noqa: E501
+        :return: The include_mismatches of this LWriteSettingCreateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._include_mismatches
 
     @include_mismatches.setter
     def include_mismatches(self, include_mismatches):
-        """Sets the include_mismatches of this WriteSettingCreateRequest.
+        """Sets the include_mismatches of this LWriteSettingCreateRequest.
 
         If true, write out mismatched values as a string.  # noqa: E501
 
-        :param include_mismatches: The include_mismatches of this WriteSettingCreateRequest.  # noqa: E501
+        :param include_mismatches: The include_mismatches of this LWriteSettingCreateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -326,22 +326,22 @@ class LWriteSettingCreateRequest(object):
 
     @property
     def output_object_id(self):
-        """Gets the output_object_id of this WriteSettingCreateRequest.  # noqa: E501
+        """Gets the output_object_id of this LWriteSettingCreateRequest.  # noqa: E501
 
         [outputObject](#tag/OutputObject) to attach this [writeSetting](#tag/WriteSetting) to.  # noqa: E501
 
-        :return: The output_object_id of this WriteSettingCreateRequest.  # noqa: E501
+        :return: The output_object_id of this LWriteSettingCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._output_object_id
 
     @output_object_id.setter
     def output_object_id(self, output_object_id):
-        """Sets the output_object_id of this WriteSettingCreateRequest.
+        """Sets the output_object_id of this LWriteSettingCreateRequest.
 
         [outputObject](#tag/OutputObject) to attach this [writeSetting](#tag/WriteSetting) to.  # noqa: E501
 
-        :param output_object_id: The output_object_id of this WriteSettingCreateRequest.  # noqa: E501
+        :param output_object_id: The output_object_id of this LWriteSettingCreateRequest.  # noqa: E501
         :type: int
         """
 
@@ -349,45 +349,45 @@ class LWriteSettingCreateRequest(object):
 
     @property
     def run_parameters(self):
-        """Gets the run_parameters of this WriteSettingCreateRequest.  # noqa: E501
+        """Gets the run_parameters of this LWriteSettingCreateRequest.  # noqa: E501
 
         Optional Parameters that can be used to parameterized the path  # noqa: E501
 
-        :return: The run_parameters of this WriteSettingCreateRequest.  # noqa: E501
-        :rtype: list[RunParameterDestinationInfo]
+        :return: The run_parameters of this LWriteSettingCreateRequest.  # noqa: E501
+        :rtype: list[LRunParameterDestinationInfo]
         """
         return self._run_parameters
 
     @run_parameters.setter
     def run_parameters(self, run_parameters):
-        """Sets the run_parameters of this WriteSettingCreateRequest.
+        """Sets the run_parameters of this LWriteSettingCreateRequest.
 
         Optional Parameters that can be used to parameterized the path  # noqa: E501
 
-        :param run_parameters: The run_parameters of this WriteSettingCreateRequest.  # noqa: E501
-        :type: list[RunParameterDestinationInfo]
+        :param run_parameters: The run_parameters of this LWriteSettingCreateRequest.  # noqa: E501
+        :type: list[LRunParameterDestinationInfo]
         """
 
         self._run_parameters = run_parameters
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this WriteSettingCreateRequest.  # noqa: E501
+        """Gets the connection_id of this LWriteSettingCreateRequest.  # noqa: E501
 
         Internal identifier of the connection to use when writing to a SFTP destination.  # noqa: E501
 
-        :return: The connection_id of this WriteSettingCreateRequest.  # noqa: E501
+        :return: The connection_id of this LWriteSettingCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._connection_id
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this WriteSettingCreateRequest.
+        """Sets the connection_id of this LWriteSettingCreateRequest.
 
         Internal identifier of the connection to use when writing to a SFTP destination.  # noqa: E501
 
-        :param connection_id: The connection_id of this WriteSettingCreateRequest.  # noqa: E501
+        :param connection_id: The connection_id of this LWriteSettingCreateRequest.  # noqa: E501
         :type: str
         """
 
@@ -414,7 +414,7 @@ class LWriteSettingCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WriteSettingCreateRequest, dict):
+        if issubclass(LWriteSettingCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -430,7 +430,7 @@ class LWriteSettingCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WriteSettingCreateRequest):
+        if not isinstance(other, LWriteSettingCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -32,7 +32,7 @@ class LAwsConfig(object):
         'credential_provider': 'str',
         'role': 'str',
         'external_id': 'str',
-        'credential': 'AwsConfigCredential',
+        'credential': 'LAwsConfigCredential',
         'id': 'int',
         'created_at': 'datetime',
         'updated_at': 'datetime',
@@ -53,7 +53,7 @@ class LAwsConfig(object):
     }
 
     def __init__(self, default_bucket=None, extra_buckets=None, credential_provider=None, role=None, external_id=None, credential=None, id=None, created_at=None, updated_at=None, active_role_id=None):  # noqa: E501
-        """AwsConfig - a model defined in Swagger"""  # noqa: E501
+        """LAwsConfig - a model defined in Swagger"""  # noqa: E501
         self._default_bucket = None
         self._extra_buckets = None
         self._credential_provider = None
@@ -88,22 +88,22 @@ class LAwsConfig(object):
 
     @property
     def default_bucket(self):
-        """Gets the default_bucket of this AwsConfig.  # noqa: E501
+        """Gets the default_bucket of this LAwsConfig.  # noqa: E501
 
         Default S3 bucket where user can upload and write results  # noqa: E501
 
-        :return: The default_bucket of this AwsConfig.  # noqa: E501
+        :return: The default_bucket of this LAwsConfig.  # noqa: E501
         :rtype: str
         """
         return self._default_bucket
 
     @default_bucket.setter
     def default_bucket(self, default_bucket):
-        """Sets the default_bucket of this AwsConfig.
+        """Sets the default_bucket of this LAwsConfig.
 
         Default S3 bucket where user can upload and write results  # noqa: E501
 
-        :param default_bucket: The default_bucket of this AwsConfig.  # noqa: E501
+        :param default_bucket: The default_bucket of this LAwsConfig.  # noqa: E501
         :type: str
         """
 
@@ -111,20 +111,20 @@ class LAwsConfig(object):
 
     @property
     def extra_buckets(self):
-        """Gets the extra_buckets of this AwsConfig.  # noqa: E501
+        """Gets the extra_buckets of this LAwsConfig.  # noqa: E501
 
 
-        :return: The extra_buckets of this AwsConfig.  # noqa: E501
+        :return: The extra_buckets of this LAwsConfig.  # noqa: E501
         :rtype: list[str]
         """
         return self._extra_buckets
 
     @extra_buckets.setter
     def extra_buckets(self, extra_buckets):
-        """Sets the extra_buckets of this AwsConfig.
+        """Sets the extra_buckets of this LAwsConfig.
 
 
-        :param extra_buckets: The extra_buckets of this AwsConfig.  # noqa: E501
+        :param extra_buckets: The extra_buckets of this LAwsConfig.  # noqa: E501
         :type: list[str]
         """
 
@@ -132,22 +132,22 @@ class LAwsConfig(object):
 
     @property
     def credential_provider(self):
-        """Gets the credential_provider of this AwsConfig.  # noqa: E501
+        """Gets the credential_provider of this LAwsConfig.  # noqa: E501
 
          * `default` - Using AWS key/secret to authenticate to S3 * `temporary` - Using AWS IAM Role to authenticate to S3  # noqa: E501
 
-        :return: The credential_provider of this AwsConfig.  # noqa: E501
+        :return: The credential_provider of this LAwsConfig.  # noqa: E501
         :rtype: str
         """
         return self._credential_provider
 
     @credential_provider.setter
     def credential_provider(self, credential_provider):
-        """Sets the credential_provider of this AwsConfig.
+        """Sets the credential_provider of this LAwsConfig.
 
          * `default` - Using AWS key/secret to authenticate to S3 * `temporary` - Using AWS IAM Role to authenticate to S3  # noqa: E501
 
-        :param credential_provider: The credential_provider of this AwsConfig.  # noqa: E501
+        :param credential_provider: The credential_provider of this LAwsConfig.  # noqa: E501
         :type: str
         """
         allowed_values = ["default", "temporary"]  # noqa: E501
@@ -161,22 +161,22 @@ class LAwsConfig(object):
 
     @property
     def role(self):
-        """Gets the role of this AwsConfig.  # noqa: E501
+        """Gets the role of this LAwsConfig.  # noqa: E501
 
         AWS IAM Role, required when credential provider is set to temporary  # noqa: E501
 
-        :return: The role of this AwsConfig.  # noqa: E501
+        :return: The role of this LAwsConfig.  # noqa: E501
         :rtype: str
         """
         return self._role
 
     @role.setter
     def role(self, role):
-        """Sets the role of this AwsConfig.
+        """Sets the role of this LAwsConfig.
 
         AWS IAM Role, required when credential provider is set to temporary  # noqa: E501
 
-        :param role: The role of this AwsConfig.  # noqa: E501
+        :param role: The role of this LAwsConfig.  # noqa: E501
         :type: str
         """
 
@@ -184,22 +184,22 @@ class LAwsConfig(object):
 
     @property
     def external_id(self):
-        """Gets the external_id of this AwsConfig.  # noqa: E501
+        """Gets the external_id of this LAwsConfig.  # noqa: E501
 
         This identifier is used to manage     cross-account access in AWS. This value should not be modified.  # noqa: E501
 
-        :return: The external_id of this AwsConfig.  # noqa: E501
+        :return: The external_id of this LAwsConfig.  # noqa: E501
         :rtype: str
         """
         return self._external_id
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this AwsConfig.
+        """Sets the external_id of this LAwsConfig.
 
         This identifier is used to manage     cross-account access in AWS. This value should not be modified.  # noqa: E501
 
-        :param external_id: The external_id of this AwsConfig.  # noqa: E501
+        :param external_id: The external_id of this LAwsConfig.  # noqa: E501
         :type: str
         """
 
@@ -207,43 +207,43 @@ class LAwsConfig(object):
 
     @property
     def credential(self):
-        """Gets the credential of this AwsConfig.  # noqa: E501
+        """Gets the credential of this LAwsConfig.  # noqa: E501
 
 
-        :return: The credential of this AwsConfig.  # noqa: E501
-        :rtype: AwsConfigCredential
+        :return: The credential of this LAwsConfig.  # noqa: E501
+        :rtype: LAwsConfigCredential
         """
         return self._credential
 
     @credential.setter
     def credential(self, credential):
-        """Sets the credential of this AwsConfig.
+        """Sets the credential of this LAwsConfig.
 
 
-        :param credential: The credential of this AwsConfig.  # noqa: E501
-        :type: AwsConfigCredential
+        :param credential: The credential of this LAwsConfig.  # noqa: E501
+        :type: LAwsConfigCredential
         """
 
         self._credential = credential
 
     @property
     def id(self):
-        """Gets the id of this AwsConfig.  # noqa: E501
+        """Gets the id of this LAwsConfig.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this AwsConfig.  # noqa: E501
+        :return: The id of this LAwsConfig.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AwsConfig.
+        """Sets the id of this LAwsConfig.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this AwsConfig.  # noqa: E501
+        :param id: The id of this LAwsConfig.  # noqa: E501
         :type: int
         """
 
@@ -251,22 +251,22 @@ class LAwsConfig(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this AwsConfig.  # noqa: E501
+        """Gets the created_at of this LAwsConfig.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this AwsConfig.  # noqa: E501
+        :return: The created_at of this LAwsConfig.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AwsConfig.
+        """Sets the created_at of this LAwsConfig.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this AwsConfig.  # noqa: E501
+        :param created_at: The created_at of this LAwsConfig.  # noqa: E501
         :type: datetime
         """
 
@@ -274,22 +274,22 @@ class LAwsConfig(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this AwsConfig.  # noqa: E501
+        """Gets the updated_at of this LAwsConfig.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this AwsConfig.  # noqa: E501
+        :return: The updated_at of this LAwsConfig.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this AwsConfig.
+        """Sets the updated_at of this LAwsConfig.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this AwsConfig.  # noqa: E501
+        :param updated_at: The updated_at of this LAwsConfig.  # noqa: E501
         :type: datetime
         """
 
@@ -297,22 +297,22 @@ class LAwsConfig(object):
 
     @property
     def active_role_id(self):
-        """Gets the active_role_id of this AwsConfig.  # noqa: E501
+        """Gets the active_role_id of this LAwsConfig.  # noqa: E501
 
         If temporary credential provider is used, this id refers to the   IAM role to use for this AWS configuration.  # noqa: E501
 
-        :return: The active_role_id of this AwsConfig.  # noqa: E501
+        :return: The active_role_id of this LAwsConfig.  # noqa: E501
         :rtype: int
         """
         return self._active_role_id
 
     @active_role_id.setter
     def active_role_id(self, active_role_id):
-        """Sets the active_role_id of this AwsConfig.
+        """Sets the active_role_id of this LAwsConfig.
 
         If temporary credential provider is used, this id refers to the   IAM role to use for this AWS configuration.  # noqa: E501
 
-        :param active_role_id: The active_role_id of this AwsConfig.  # noqa: E501
+        :param active_role_id: The active_role_id of this LAwsConfig.  # noqa: E501
         :type: int
         """
 
@@ -339,7 +339,7 @@ class LAwsConfig(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AwsConfig, dict):
+        if issubclass(LAwsConfig, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -355,7 +355,7 @@ class LAwsConfig(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AwsConfig):
+        if not isinstance(other, LAwsConfig):
             return False
 
         return self.__dict__ == other.__dict__

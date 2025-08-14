@@ -37,7 +37,7 @@ class LCronTrigger(object):
     }
 
     def __init__(self, cron=None, timezone=None):  # noqa: E501
-        """CronTrigger - a model defined in Swagger"""  # noqa: E501
+        """LCronTrigger - a model defined in Swagger"""  # noqa: E501
         self._cron = None
         self._timezone = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LCronTrigger(object):
 
     @property
     def cron(self):
-        """Gets the cron of this CronTrigger.  # noqa: E501
+        """Gets the cron of this LCronTrigger.  # noqa: E501
 
 
-        :return: The cron of this CronTrigger.  # noqa: E501
+        :return: The cron of this LCronTrigger.  # noqa: E501
         :rtype: object
         """
         return self._cron
 
     @cron.setter
     def cron(self, cron):
-        """Sets the cron of this CronTrigger.
+        """Sets the cron of this LCronTrigger.
 
 
-        :param cron: The cron of this CronTrigger.  # noqa: E501
+        :param cron: The cron of this LCronTrigger.  # noqa: E501
         :type: object
         """
         if cron is None:
@@ -69,22 +69,22 @@ class LCronTrigger(object):
 
     @property
     def timezone(self):
-        """Gets the timezone of this CronTrigger.  # noqa: E501
+        """Gets the timezone of this LCronTrigger.  # noqa: E501
 
         timezone for this trigger, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :return: The timezone of this CronTrigger.  # noqa: E501
+        :return: The timezone of this LCronTrigger.  # noqa: E501
         :rtype: str
         """
         return self._timezone
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this CronTrigger.
+        """Sets the timezone of this LCronTrigger.
 
         timezone for this trigger, eg. \"Europe/Berlin\"  # noqa: E501
 
-        :param timezone: The timezone of this CronTrigger.  # noqa: E501
+        :param timezone: The timezone of this LCronTrigger.  # noqa: E501
         :type: str
         """
         if timezone is None:
@@ -113,7 +113,7 @@ class LCronTrigger(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(CronTrigger, dict):
+        if issubclass(LCronTrigger, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LCronTrigger(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CronTrigger):
+        if not isinstance(other, LCronTrigger):
             return False
 
         return self.__dict__ == other.__dict__

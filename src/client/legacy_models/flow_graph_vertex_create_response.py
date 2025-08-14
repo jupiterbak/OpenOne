@@ -57,7 +57,7 @@ class LFlowGraphVertexCreateResponse(object):
     }
 
     def __init__(self, id=None, object_type=None, object_id=None, x=None, y=None, width=None, height=None, flow=None, created_at=None, updated_at=None, creator=None, updater=None):  # noqa: E501
-        """FlowGraphVertexCreateResponse - a model defined in Swagger"""  # noqa: E501
+        """LFlowGraphVertexCreateResponse - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._object_type = None
         self._object_id = None
@@ -88,22 +88,22 @@ class LFlowGraphVertexCreateResponse(object):
 
     @property
     def id(self):
-        """Gets the id of this FlowGraphVertexCreateResponse.  # noqa: E501
+        """Gets the id of this LFlowGraphVertexCreateResponse.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :return: The id of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FlowGraphVertexCreateResponse.
+        """Sets the id of this LFlowGraphVertexCreateResponse.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :param id: The id of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -113,22 +113,22 @@ class LFlowGraphVertexCreateResponse(object):
 
     @property
     def object_type(self):
-        """Gets the object_type of this FlowGraphVertexCreateResponse.  # noqa: E501
+        """Gets the object_type of this LFlowGraphVertexCreateResponse.  # noqa: E501
 
         the type of object that exists in this vertex  # noqa: E501
 
-        :return: The object_type of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :return: The object_type of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :rtype: str
         """
         return self._object_type
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this FlowGraphVertexCreateResponse.
+        """Sets the object_type of this LFlowGraphVertexCreateResponse.
 
         the type of object that exists in this vertex  # noqa: E501
 
-        :param object_type: The object_type of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :param object_type: The object_type of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :type: str
         """
         if object_type is None:
@@ -138,22 +138,22 @@ class LFlowGraphVertexCreateResponse(object):
 
     @property
     def object_id(self):
-        """Gets the object_id of this FlowGraphVertexCreateResponse.  # noqa: E501
+        """Gets the object_id of this LFlowGraphVertexCreateResponse.  # noqa: E501
 
         the id of the object that exists in this vertex  # noqa: E501
 
-        :return: The object_id of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :return: The object_id of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :rtype: int
         """
         return self._object_id
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this FlowGraphVertexCreateResponse.
+        """Sets the object_id of this LFlowGraphVertexCreateResponse.
 
         the id of the object that exists in this vertex  # noqa: E501
 
-        :param object_id: The object_id of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :param object_id: The object_id of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :type: int
         """
         if object_id is None:
@@ -163,22 +163,22 @@ class LFlowGraphVertexCreateResponse(object):
 
     @property
     def x(self):
-        """Gets the x of this FlowGraphVertexCreateResponse.  # noqa: E501
+        """Gets the x of this LFlowGraphVertexCreateResponse.  # noqa: E501
 
         x coordinate of vertex  # noqa: E501
 
-        :return: The x of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :return: The x of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :rtype: int
         """
         return self._x
 
     @x.setter
     def x(self, x):
-        """Sets the x of this FlowGraphVertexCreateResponse.
+        """Sets the x of this LFlowGraphVertexCreateResponse.
 
         x coordinate of vertex  # noqa: E501
 
-        :param x: The x of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :param x: The x of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :type: int
         """
         if x is None:
@@ -188,22 +188,22 @@ class LFlowGraphVertexCreateResponse(object):
 
     @property
     def y(self):
-        """Gets the y of this FlowGraphVertexCreateResponse.  # noqa: E501
+        """Gets the y of this LFlowGraphVertexCreateResponse.  # noqa: E501
 
         y coordinate of vertex  # noqa: E501
 
-        :return: The y of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :return: The y of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :rtype: int
         """
         return self._y
 
     @y.setter
     def y(self, y):
-        """Sets the y of this FlowGraphVertexCreateResponse.
+        """Sets the y of this LFlowGraphVertexCreateResponse.
 
         y coordinate of vertex  # noqa: E501
 
-        :param y: The y of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :param y: The y of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :type: int
         """
         if y is None:
@@ -213,22 +213,22 @@ class LFlowGraphVertexCreateResponse(object):
 
     @property
     def width(self):
-        """Gets the width of this FlowGraphVertexCreateResponse.  # noqa: E501
+        """Gets the width of this LFlowGraphVertexCreateResponse.  # noqa: E501
 
         width of vertex  # noqa: E501
 
-        :return: The width of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :return: The width of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :rtype: int
         """
         return self._width
 
     @width.setter
     def width(self, width):
-        """Sets the width of this FlowGraphVertexCreateResponse.
+        """Sets the width of this LFlowGraphVertexCreateResponse.
 
         width of vertex  # noqa: E501
 
-        :param width: The width of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :param width: The width of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :type: int
         """
 
@@ -236,22 +236,22 @@ class LFlowGraphVertexCreateResponse(object):
 
     @property
     def height(self):
-        """Gets the height of this FlowGraphVertexCreateResponse.  # noqa: E501
+        """Gets the height of this LFlowGraphVertexCreateResponse.  # noqa: E501
 
         height of vertex  # noqa: E501
 
-        :return: The height of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :return: The height of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :rtype: int
         """
         return self._height
 
     @height.setter
     def height(self, height):
-        """Sets the height of this FlowGraphVertexCreateResponse.
+        """Sets the height of this LFlowGraphVertexCreateResponse.
 
         height of vertex  # noqa: E501
 
-        :param height: The height of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :param height: The height of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :type: int
         """
 
@@ -259,20 +259,20 @@ class LFlowGraphVertexCreateResponse(object):
 
     @property
     def flow(self):
-        """Gets the flow of this FlowGraphVertexCreateResponse.  # noqa: E501
+        """Gets the flow of this LFlowGraphVertexCreateResponse.  # noqa: E501
 
 
-        :return: The flow of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :return: The flow of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this FlowGraphVertexCreateResponse.
+        """Sets the flow of this LFlowGraphVertexCreateResponse.
 
 
-        :param flow: The flow of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :param flow: The flow of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :type: object
         """
         if flow is None:
@@ -282,22 +282,22 @@ class LFlowGraphVertexCreateResponse(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this FlowGraphVertexCreateResponse.  # noqa: E501
+        """Gets the created_at of this LFlowGraphVertexCreateResponse.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :return: The created_at of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this FlowGraphVertexCreateResponse.
+        """Sets the created_at of this LFlowGraphVertexCreateResponse.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :param created_at: The created_at of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -307,22 +307,22 @@ class LFlowGraphVertexCreateResponse(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this FlowGraphVertexCreateResponse.  # noqa: E501
+        """Gets the updated_at of this LFlowGraphVertexCreateResponse.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :return: The updated_at of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this FlowGraphVertexCreateResponse.
+        """Sets the updated_at of this LFlowGraphVertexCreateResponse.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :param updated_at: The updated_at of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -332,20 +332,20 @@ class LFlowGraphVertexCreateResponse(object):
 
     @property
     def creator(self):
-        """Gets the creator of this FlowGraphVertexCreateResponse.  # noqa: E501
+        """Gets the creator of this LFlowGraphVertexCreateResponse.  # noqa: E501
 
 
-        :return: The creator of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :return: The creator of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this FlowGraphVertexCreateResponse.
+        """Sets the creator of this LFlowGraphVertexCreateResponse.
 
 
-        :param creator: The creator of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :param creator: The creator of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :type: object
         """
         if creator is None:
@@ -355,20 +355,20 @@ class LFlowGraphVertexCreateResponse(object):
 
     @property
     def updater(self):
-        """Gets the updater of this FlowGraphVertexCreateResponse.  # noqa: E501
+        """Gets the updater of this LFlowGraphVertexCreateResponse.  # noqa: E501
 
 
-        :return: The updater of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :return: The updater of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this FlowGraphVertexCreateResponse.
+        """Sets the updater of this LFlowGraphVertexCreateResponse.
 
 
-        :param updater: The updater of this FlowGraphVertexCreateResponse.  # noqa: E501
+        :param updater: The updater of this LFlowGraphVertexCreateResponse.  # noqa: E501
         :type: object
         """
         if updater is None:
@@ -397,7 +397,7 @@ class LFlowGraphVertexCreateResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowGraphVertexCreateResponse, dict):
+        if issubclass(LFlowGraphVertexCreateResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -413,7 +413,7 @@ class LFlowGraphVertexCreateResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowGraphVertexCreateResponse):
+        if not isinstance(other, LFlowGraphVertexCreateResponse):
             return False
 
         return self.__dict__ == other.__dict__

@@ -37,7 +37,7 @@ class LFileWatcherTrigger(object):
     }
 
     def __init__(self, id=None, file_watcher=None):  # noqa: E501
-        """FileWatcherTrigger - a model defined in Swagger"""  # noqa: E501
+        """LFileWatcherTrigger - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._file_watcher = None
         self.discriminator = None
@@ -47,22 +47,22 @@ class LFileWatcherTrigger(object):
 
     @property
     def id(self):
-        """Gets the id of this FileWatcherTrigger.  # noqa: E501
+        """Gets the id of this LFileWatcherTrigger.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this FileWatcherTrigger.  # noqa: E501
+        :return: The id of this LFileWatcherTrigger.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FileWatcherTrigger.
+        """Sets the id of this LFileWatcherTrigger.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this FileWatcherTrigger.  # noqa: E501
+        :param id: The id of this LFileWatcherTrigger.  # noqa: E501
         :type: int
         """
 
@@ -70,20 +70,20 @@ class LFileWatcherTrigger(object):
 
     @property
     def file_watcher(self):
-        """Gets the file_watcher of this FileWatcherTrigger.  # noqa: E501
+        """Gets the file_watcher of this LFileWatcherTrigger.  # noqa: E501
 
 
-        :return: The file_watcher of this FileWatcherTrigger.  # noqa: E501
+        :return: The file_watcher of this LFileWatcherTrigger.  # noqa: E501
         :rtype: object
         """
         return self._file_watcher
 
     @file_watcher.setter
     def file_watcher(self, file_watcher):
-        """Sets the file_watcher of this FileWatcherTrigger.
+        """Sets the file_watcher of this LFileWatcherTrigger.
 
 
-        :param file_watcher: The file_watcher of this FileWatcherTrigger.  # noqa: E501
+        :param file_watcher: The file_watcher of this LFileWatcherTrigger.  # noqa: E501
         :type: object
         """
         if file_watcher is None:
@@ -112,7 +112,7 @@ class LFileWatcherTrigger(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FileWatcherTrigger, dict):
+        if issubclass(LFileWatcherTrigger, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -128,7 +128,7 @@ class LFileWatcherTrigger(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FileWatcherTrigger):
+        if not isinstance(other, LFileWatcherTrigger):
             return False
 
         return self.__dict__ == other.__dict__

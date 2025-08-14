@@ -37,7 +37,7 @@ class LPersonalAccessTokenNameSecret(object):
     }
 
     def __init__(self, personal_access_token_name=None, personal_access_token_secret=None):  # noqa: E501
-        """PersonalAccessTokenNameSecret - a model defined in Swagger"""  # noqa: E501
+        """LPersonalAccessTokenNameSecret - a model defined in Swagger"""  # noqa: E501
         self._personal_access_token_name = None
         self._personal_access_token_secret = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LPersonalAccessTokenNameSecret(object):
 
     @property
     def personal_access_token_name(self):
-        """Gets the personal_access_token_name of this PersonalAccessTokenNameSecret.  # noqa: E501
+        """Gets the personal_access_token_name of this LPersonalAccessTokenNameSecret.  # noqa: E501
 
 
-        :return: The personal_access_token_name of this PersonalAccessTokenNameSecret.  # noqa: E501
+        :return: The personal_access_token_name of this LPersonalAccessTokenNameSecret.  # noqa: E501
         :rtype: str
         """
         return self._personal_access_token_name
 
     @personal_access_token_name.setter
     def personal_access_token_name(self, personal_access_token_name):
-        """Sets the personal_access_token_name of this PersonalAccessTokenNameSecret.
+        """Sets the personal_access_token_name of this LPersonalAccessTokenNameSecret.
 
 
-        :param personal_access_token_name: The personal_access_token_name of this PersonalAccessTokenNameSecret.  # noqa: E501
+        :param personal_access_token_name: The personal_access_token_name of this LPersonalAccessTokenNameSecret.  # noqa: E501
         :type: str
         """
         if personal_access_token_name is None:
@@ -69,20 +69,20 @@ class LPersonalAccessTokenNameSecret(object):
 
     @property
     def personal_access_token_secret(self):
-        """Gets the personal_access_token_secret of this PersonalAccessTokenNameSecret.  # noqa: E501
+        """Gets the personal_access_token_secret of this LPersonalAccessTokenNameSecret.  # noqa: E501
 
 
-        :return: The personal_access_token_secret of this PersonalAccessTokenNameSecret.  # noqa: E501
+        :return: The personal_access_token_secret of this LPersonalAccessTokenNameSecret.  # noqa: E501
         :rtype: str
         """
         return self._personal_access_token_secret
 
     @personal_access_token_secret.setter
     def personal_access_token_secret(self, personal_access_token_secret):
-        """Sets the personal_access_token_secret of this PersonalAccessTokenNameSecret.
+        """Sets the personal_access_token_secret of this LPersonalAccessTokenNameSecret.
 
 
-        :param personal_access_token_secret: The personal_access_token_secret of this PersonalAccessTokenNameSecret.  # noqa: E501
+        :param personal_access_token_secret: The personal_access_token_secret of this LPersonalAccessTokenNameSecret.  # noqa: E501
         :type: str
         """
         if personal_access_token_secret is None:
@@ -111,7 +111,7 @@ class LPersonalAccessTokenNameSecret(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PersonalAccessTokenNameSecret, dict):
+        if issubclass(LPersonalAccessTokenNameSecret, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LPersonalAccessTokenNameSecret(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PersonalAccessTokenNameSecret):
+        if not isinstance(other, LPersonalAccessTokenNameSecret):
             return False
 
         return self.__dict__ == other.__dict__

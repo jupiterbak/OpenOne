@@ -35,27 +35,27 @@ class LAccessToken(object):
     }
 
     def __init__(self, access_token=None):  # noqa: E501
-        """AccessToken - a model defined in Swagger"""  # noqa: E501
+        """LAccessToken - a model defined in Swagger"""  # noqa: E501
         self._access_token = None
         self.discriminator = None
         self.access_token = access_token
 
     @property
     def access_token(self):
-        """Gets the access_token of this AccessToken.  # noqa: E501
+        """Gets the access_token of this LAccessToken.  # noqa: E501
 
 
-        :return: The access_token of this AccessToken.  # noqa: E501
+        :return: The access_token of this LAccessToken.  # noqa: E501
         :rtype: str
         """
         return self._access_token
 
     @access_token.setter
     def access_token(self, access_token):
-        """Sets the access_token of this AccessToken.
+        """Sets the access_token of this LAccessToken.
 
 
-        :param access_token: The access_token of this AccessToken.  # noqa: E501
+        :param access_token: The access_token of this LAccessToken.  # noqa: E501
         :type: str
         """
         if access_token is None:
@@ -84,7 +84,7 @@ class LAccessToken(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AccessToken, dict):
+        if issubclass(LAccessToken, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LAccessToken(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AccessToken):
+        if not isinstance(other, LAccessToken):
             return False
 
         return self.__dict__ == other.__dict__

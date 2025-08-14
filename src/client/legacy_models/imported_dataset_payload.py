@@ -41,7 +41,7 @@ class LImportedDatasetPayload(object):
     }
 
     def __init__(self, imported_dataset=None, inferred_script=None, flow=None, name=None):  # noqa: E501
-        """ImportedDatasetPayload - a model defined in Swagger"""  # noqa: E501
+        """LImportedDatasetPayload - a model defined in Swagger"""  # noqa: E501
         self._imported_dataset = None
         self._inferred_script = None
         self._flow = None
@@ -55,20 +55,20 @@ class LImportedDatasetPayload(object):
 
     @property
     def imported_dataset(self):
-        """Gets the imported_dataset of this ImportedDatasetPayload.  # noqa: E501
+        """Gets the imported_dataset of this LImportedDatasetPayload.  # noqa: E501
 
 
-        :return: The imported_dataset of this ImportedDatasetPayload.  # noqa: E501
+        :return: The imported_dataset of this LImportedDatasetPayload.  # noqa: E501
         :rtype: object
         """
         return self._imported_dataset
 
     @imported_dataset.setter
     def imported_dataset(self, imported_dataset):
-        """Sets the imported_dataset of this ImportedDatasetPayload.
+        """Sets the imported_dataset of this LImportedDatasetPayload.
 
 
-        :param imported_dataset: The imported_dataset of this ImportedDatasetPayload.  # noqa: E501
+        :param imported_dataset: The imported_dataset of this LImportedDatasetPayload.  # noqa: E501
         :type: object
         """
         if imported_dataset is None:
@@ -78,20 +78,20 @@ class LImportedDatasetPayload(object):
 
     @property
     def inferred_script(self):
-        """Gets the inferred_script of this ImportedDatasetPayload.  # noqa: E501
+        """Gets the inferred_script of this LImportedDatasetPayload.  # noqa: E501
 
 
-        :return: The inferred_script of this ImportedDatasetPayload.  # noqa: E501
+        :return: The inferred_script of this LImportedDatasetPayload.  # noqa: E501
         :rtype: object
         """
         return self._inferred_script
 
     @inferred_script.setter
     def inferred_script(self, inferred_script):
-        """Sets the inferred_script of this ImportedDatasetPayload.
+        """Sets the inferred_script of this LImportedDatasetPayload.
 
 
-        :param inferred_script: The inferred_script of this ImportedDatasetPayload.  # noqa: E501
+        :param inferred_script: The inferred_script of this LImportedDatasetPayload.  # noqa: E501
         :type: object
         """
 
@@ -99,20 +99,20 @@ class LImportedDatasetPayload(object):
 
     @property
     def flow(self):
-        """Gets the flow of this ImportedDatasetPayload.  # noqa: E501
+        """Gets the flow of this LImportedDatasetPayload.  # noqa: E501
 
 
-        :return: The flow of this ImportedDatasetPayload.  # noqa: E501
+        :return: The flow of this LImportedDatasetPayload.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this ImportedDatasetPayload.
+        """Sets the flow of this LImportedDatasetPayload.
 
 
-        :param flow: The flow of this ImportedDatasetPayload.  # noqa: E501
+        :param flow: The flow of this LImportedDatasetPayload.  # noqa: E501
         :type: object
         """
         if flow is None:
@@ -122,20 +122,20 @@ class LImportedDatasetPayload(object):
 
     @property
     def name(self):
-        """Gets the name of this ImportedDatasetPayload.  # noqa: E501
+        """Gets the name of this LImportedDatasetPayload.  # noqa: E501
 
 
-        :return: The name of this ImportedDatasetPayload.  # noqa: E501
+        :return: The name of this LImportedDatasetPayload.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ImportedDatasetPayload.
+        """Sets the name of this LImportedDatasetPayload.
 
 
-        :param name: The name of this ImportedDatasetPayload.  # noqa: E501
+        :param name: The name of this LImportedDatasetPayload.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -164,7 +164,7 @@ class LImportedDatasetPayload(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ImportedDatasetPayload, dict):
+        if issubclass(LImportedDatasetPayload, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -180,7 +180,7 @@ class LImportedDatasetPayload(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImportedDatasetPayload):
+        if not isinstance(other, LImportedDatasetPayload):
             return False
 
         return self.__dict__ == other.__dict__

@@ -35,15 +35,15 @@ class LAwsAccountRequestSchema(object):
     }
 
     attribute_map = {
-        'account_id': 'AccountId',
-        'vpc_id': 'VpcId',
-        'region': 'Region',
-        'access_key_id': 'AccessKeyId',
-        'secret_access_key': 'SecretAccessKey'
+        'account_id': 'LAccountId',
+        'vpc_id': 'LVpcId',
+        'region': 'LRegion',
+        'access_key_id': 'LAccessKeyId',
+        'secret_access_key': 'LSecretAccessKey'
     }
 
     def __init__(self, account_id=None, vpc_id=None, region=None, access_key_id=None, secret_access_key=None):  # noqa: E501
-        """AwsAccountRequestSchema - a model defined in Swagger"""  # noqa: E501
+        """LAwsAccountRequestSchema - a model defined in Swagger"""  # noqa: E501
         self._account_id = None
         self._vpc_id = None
         self._region = None
@@ -62,20 +62,20 @@ class LAwsAccountRequestSchema(object):
 
     @property
     def account_id(self):
-        """Gets the account_id of this AwsAccountRequestSchema.  # noqa: E501
+        """Gets the account_id of this LAwsAccountRequestSchema.  # noqa: E501
 
 
-        :return: The account_id of this AwsAccountRequestSchema.  # noqa: E501
+        :return: The account_id of this LAwsAccountRequestSchema.  # noqa: E501
         :rtype: str
         """
         return self._account_id
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this AwsAccountRequestSchema.
+        """Sets the account_id of this LAwsAccountRequestSchema.
 
 
-        :param account_id: The account_id of this AwsAccountRequestSchema.  # noqa: E501
+        :param account_id: The account_id of this LAwsAccountRequestSchema.  # noqa: E501
         :type: str
         """
 
@@ -83,20 +83,20 @@ class LAwsAccountRequestSchema(object):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this AwsAccountRequestSchema.  # noqa: E501
+        """Gets the vpc_id of this LAwsAccountRequestSchema.  # noqa: E501
 
 
-        :return: The vpc_id of this AwsAccountRequestSchema.  # noqa: E501
+        :return: The vpc_id of this LAwsAccountRequestSchema.  # noqa: E501
         :rtype: str
         """
         return self._vpc_id
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this AwsAccountRequestSchema.
+        """Sets the vpc_id of this LAwsAccountRequestSchema.
 
 
-        :param vpc_id: The vpc_id of this AwsAccountRequestSchema.  # noqa: E501
+        :param vpc_id: The vpc_id of this LAwsAccountRequestSchema.  # noqa: E501
         :type: str
         """
 
@@ -104,20 +104,20 @@ class LAwsAccountRequestSchema(object):
 
     @property
     def region(self):
-        """Gets the region of this AwsAccountRequestSchema.  # noqa: E501
+        """Gets the region of this LAwsAccountRequestSchema.  # noqa: E501
 
 
-        :return: The region of this AwsAccountRequestSchema.  # noqa: E501
+        :return: The region of this LAwsAccountRequestSchema.  # noqa: E501
         :rtype: str
         """
         return self._region
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AwsAccountRequestSchema.
+        """Sets the region of this LAwsAccountRequestSchema.
 
 
-        :param region: The region of this AwsAccountRequestSchema.  # noqa: E501
+        :param region: The region of this LAwsAccountRequestSchema.  # noqa: E501
         :type: str
         """
         if region is None:
@@ -127,20 +127,20 @@ class LAwsAccountRequestSchema(object):
 
     @property
     def access_key_id(self):
-        """Gets the access_key_id of this AwsAccountRequestSchema.  # noqa: E501
+        """Gets the access_key_id of this LAwsAccountRequestSchema.  # noqa: E501
 
 
-        :return: The access_key_id of this AwsAccountRequestSchema.  # noqa: E501
+        :return: The access_key_id of this LAwsAccountRequestSchema.  # noqa: E501
         :rtype: str
         """
         return self._access_key_id
 
     @access_key_id.setter
     def access_key_id(self, access_key_id):
-        """Sets the access_key_id of this AwsAccountRequestSchema.
+        """Sets the access_key_id of this LAwsAccountRequestSchema.
 
 
-        :param access_key_id: The access_key_id of this AwsAccountRequestSchema.  # noqa: E501
+        :param access_key_id: The access_key_id of this LAwsAccountRequestSchema.  # noqa: E501
         :type: str
         """
 
@@ -148,20 +148,20 @@ class LAwsAccountRequestSchema(object):
 
     @property
     def secret_access_key(self):
-        """Gets the secret_access_key of this AwsAccountRequestSchema.  # noqa: E501
+        """Gets the secret_access_key of this LAwsAccountRequestSchema.  # noqa: E501
 
 
-        :return: The secret_access_key of this AwsAccountRequestSchema.  # noqa: E501
+        :return: The secret_access_key of this LAwsAccountRequestSchema.  # noqa: E501
         :rtype: str
         """
         return self._secret_access_key
 
     @secret_access_key.setter
     def secret_access_key(self, secret_access_key):
-        """Sets the secret_access_key of this AwsAccountRequestSchema.
+        """Sets the secret_access_key of this LAwsAccountRequestSchema.
 
 
-        :param secret_access_key: The secret_access_key of this AwsAccountRequestSchema.  # noqa: E501
+        :param secret_access_key: The secret_access_key of this LAwsAccountRequestSchema.  # noqa: E501
         :type: str
         """
 
@@ -188,7 +188,7 @@ class LAwsAccountRequestSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AwsAccountRequestSchema, dict):
+        if issubclass(LAwsAccountRequestSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -204,7 +204,7 @@ class LAwsAccountRequestSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AwsAccountRequestSchema):
+        if not isinstance(other, LAwsAccountRequestSchema):
             return False
 
         return self.__dict__ == other.__dict__

@@ -43,7 +43,7 @@ class LAwsDefaultConfig(object):
     }
 
     def __init__(self, id=None, protocol=None, default_bucket=None, credential_provider=None, extra_buckets=None):  # noqa: E501
-        """AwsDefaultConfig - a model defined in Swagger"""  # noqa: E501
+        """LAwsDefaultConfig - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._protocol = None
         self._default_bucket = None
@@ -62,22 +62,22 @@ class LAwsDefaultConfig(object):
 
     @property
     def id(self):
-        """Gets the id of this AwsDefaultConfig.  # noqa: E501
+        """Gets the id of this LAwsDefaultConfig.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this AwsDefaultConfig.  # noqa: E501
+        :return: The id of this LAwsDefaultConfig.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AwsDefaultConfig.
+        """Sets the id of this LAwsDefaultConfig.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this AwsDefaultConfig.  # noqa: E501
+        :param id: The id of this LAwsDefaultConfig.  # noqa: E501
         :type: int
         """
 
@@ -85,20 +85,20 @@ class LAwsDefaultConfig(object):
 
     @property
     def protocol(self):
-        """Gets the protocol of this AwsDefaultConfig.  # noqa: E501
+        """Gets the protocol of this LAwsDefaultConfig.  # noqa: E501
 
 
-        :return: The protocol of this AwsDefaultConfig.  # noqa: E501
+        :return: The protocol of this LAwsDefaultConfig.  # noqa: E501
         :rtype: str
         """
         return self._protocol
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this AwsDefaultConfig.
+        """Sets the protocol of this LAwsDefaultConfig.
 
 
-        :param protocol: The protocol of this AwsDefaultConfig.  # noqa: E501
+        :param protocol: The protocol of this LAwsDefaultConfig.  # noqa: E501
         :type: str
         """
 
@@ -106,22 +106,22 @@ class LAwsDefaultConfig(object):
 
     @property
     def default_bucket(self):
-        """Gets the default_bucket of this AwsDefaultConfig.  # noqa: E501
+        """Gets the default_bucket of this LAwsDefaultConfig.  # noqa: E501
 
         Default S3 bucket where user can upload and write results  # noqa: E501
 
-        :return: The default_bucket of this AwsDefaultConfig.  # noqa: E501
+        :return: The default_bucket of this LAwsDefaultConfig.  # noqa: E501
         :rtype: str
         """
         return self._default_bucket
 
     @default_bucket.setter
     def default_bucket(self, default_bucket):
-        """Sets the default_bucket of this AwsDefaultConfig.
+        """Sets the default_bucket of this LAwsDefaultConfig.
 
         Default S3 bucket where user can upload and write results  # noqa: E501
 
-        :param default_bucket: The default_bucket of this AwsDefaultConfig.  # noqa: E501
+        :param default_bucket: The default_bucket of this LAwsDefaultConfig.  # noqa: E501
         :type: str
         """
 
@@ -129,22 +129,22 @@ class LAwsDefaultConfig(object):
 
     @property
     def credential_provider(self):
-        """Gets the credential_provider of this AwsDefaultConfig.  # noqa: E501
+        """Gets the credential_provider of this LAwsDefaultConfig.  # noqa: E501
 
          * `default` - Using AWS key/secret to authenticate to S3 * `temporary` - Using AWS IAM Role to authenticate to S3  # noqa: E501
 
-        :return: The credential_provider of this AwsDefaultConfig.  # noqa: E501
+        :return: The credential_provider of this LAwsDefaultConfig.  # noqa: E501
         :rtype: str
         """
         return self._credential_provider
 
     @credential_provider.setter
     def credential_provider(self, credential_provider):
-        """Sets the credential_provider of this AwsDefaultConfig.
+        """Sets the credential_provider of this LAwsDefaultConfig.
 
          * `default` - Using AWS key/secret to authenticate to S3 * `temporary` - Using AWS IAM Role to authenticate to S3  # noqa: E501
 
-        :param credential_provider: The credential_provider of this AwsDefaultConfig.  # noqa: E501
+        :param credential_provider: The credential_provider of this LAwsDefaultConfig.  # noqa: E501
         :type: str
         """
         if credential_provider is None:
@@ -160,20 +160,20 @@ class LAwsDefaultConfig(object):
 
     @property
     def extra_buckets(self):
-        """Gets the extra_buckets of this AwsDefaultConfig.  # noqa: E501
+        """Gets the extra_buckets of this LAwsDefaultConfig.  # noqa: E501
 
 
-        :return: The extra_buckets of this AwsDefaultConfig.  # noqa: E501
+        :return: The extra_buckets of this LAwsDefaultConfig.  # noqa: E501
         :rtype: list[str]
         """
         return self._extra_buckets
 
     @extra_buckets.setter
     def extra_buckets(self, extra_buckets):
-        """Sets the extra_buckets of this AwsDefaultConfig.
+        """Sets the extra_buckets of this LAwsDefaultConfig.
 
 
-        :param extra_buckets: The extra_buckets of this AwsDefaultConfig.  # noqa: E501
+        :param extra_buckets: The extra_buckets of this LAwsDefaultConfig.  # noqa: E501
         :type: list[str]
         """
 
@@ -200,7 +200,7 @@ class LAwsDefaultConfig(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AwsDefaultConfig, dict):
+        if issubclass(LAwsDefaultConfig, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -216,7 +216,7 @@ class LAwsDefaultConfig(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AwsDefaultConfig):
+        if not isinstance(other, LAwsDefaultConfig):
             return False
 
         return self.__dict__ == other.__dict__

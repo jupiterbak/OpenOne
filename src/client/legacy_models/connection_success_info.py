@@ -35,27 +35,27 @@ class LConnectionSuccessInfo(object):
     }
 
     def __init__(self, result=None):  # noqa: E501
-        """ConnectionSuccessInfo - a model defined in Swagger"""  # noqa: E501
+        """LConnectionSuccessInfo - a model defined in Swagger"""  # noqa: E501
         self._result = None
         self.discriminator = None
         self.result = result
 
     @property
     def result(self):
-        """Gets the result of this ConnectionSuccessInfo.  # noqa: E501
+        """Gets the result of this LConnectionSuccessInfo.  # noqa: E501
 
 
-        :return: The result of this ConnectionSuccessInfo.  # noqa: E501
+        :return: The result of this LConnectionSuccessInfo.  # noqa: E501
         :rtype: str
         """
         return self._result
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ConnectionSuccessInfo.
+        """Sets the result of this LConnectionSuccessInfo.
 
 
-        :param result: The result of this ConnectionSuccessInfo.  # noqa: E501
+        :param result: The result of this LConnectionSuccessInfo.  # noqa: E501
         :type: str
         """
         if result is None:
@@ -84,7 +84,7 @@ class LConnectionSuccessInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConnectionSuccessInfo, dict):
+        if issubclass(LConnectionSuccessInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LConnectionSuccessInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConnectionSuccessInfo):
+        if not isinstance(other, LConnectionSuccessInfo):
             return False
 
         return self.__dict__ == other.__dict__

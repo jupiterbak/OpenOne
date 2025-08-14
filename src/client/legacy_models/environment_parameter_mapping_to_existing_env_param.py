@@ -37,7 +37,7 @@ class LEnvironmentParameterMappingToExistingEnvParam(object):
     }
 
     def __init__(self, override_key=None, mapped_override_key=None):  # noqa: E501
-        """EnvironmentParameterMappingToExistingEnvParam - a model defined in Swagger"""  # noqa: E501
+        """LEnvironmentParameterMappingToExistingEnvParam - a model defined in Swagger"""  # noqa: E501
         self._override_key = None
         self._mapped_override_key = None
         self.discriminator = None
@@ -46,22 +46,22 @@ class LEnvironmentParameterMappingToExistingEnvParam(object):
 
     @property
     def override_key(self):
-        """Gets the override_key of this EnvironmentParameterMappingToExistingEnvParam.  # noqa: E501
+        """Gets the override_key of this LEnvironmentParameterMappingToExistingEnvParam.  # noqa: E501
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :return: The override_key of this EnvironmentParameterMappingToExistingEnvParam.  # noqa: E501
+        :return: The override_key of this LEnvironmentParameterMappingToExistingEnvParam.  # noqa: E501
         :rtype: str
         """
         return self._override_key
 
     @override_key.setter
     def override_key(self, override_key):
-        """Sets the override_key of this EnvironmentParameterMappingToExistingEnvParam.
+        """Sets the override_key of this LEnvironmentParameterMappingToExistingEnvParam.
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :param override_key: The override_key of this EnvironmentParameterMappingToExistingEnvParam.  # noqa: E501
+        :param override_key: The override_key of this LEnvironmentParameterMappingToExistingEnvParam.  # noqa: E501
         :type: str
         """
         if override_key is None:
@@ -71,22 +71,22 @@ class LEnvironmentParameterMappingToExistingEnvParam(object):
 
     @property
     def mapped_override_key(self):
-        """Gets the mapped_override_key of this EnvironmentParameterMappingToExistingEnvParam.  # noqa: E501
+        """Gets the mapped_override_key of this LEnvironmentParameterMappingToExistingEnvParam.  # noqa: E501
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :return: The mapped_override_key of this EnvironmentParameterMappingToExistingEnvParam.  # noqa: E501
+        :return: The mapped_override_key of this LEnvironmentParameterMappingToExistingEnvParam.  # noqa: E501
         :rtype: str
         """
         return self._mapped_override_key
 
     @mapped_override_key.setter
     def mapped_override_key(self, mapped_override_key):
-        """Sets the mapped_override_key of this EnvironmentParameterMappingToExistingEnvParam.
+        """Sets the mapped_override_key of this LEnvironmentParameterMappingToExistingEnvParam.
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :param mapped_override_key: The mapped_override_key of this EnvironmentParameterMappingToExistingEnvParam.  # noqa: E501
+        :param mapped_override_key: The mapped_override_key of this LEnvironmentParameterMappingToExistingEnvParam.  # noqa: E501
         :type: str
         """
         if mapped_override_key is None:
@@ -115,7 +115,7 @@ class LEnvironmentParameterMappingToExistingEnvParam(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(EnvironmentParameterMappingToExistingEnvParam, dict):
+        if issubclass(LEnvironmentParameterMappingToExistingEnvParam, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -131,7 +131,7 @@ class LEnvironmentParameterMappingToExistingEnvParam(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, EnvironmentParameterMappingToExistingEnvParam):
+        if not isinstance(other, LEnvironmentParameterMappingToExistingEnvParam):
             return False
 
         return self.__dict__ == other.__dict__

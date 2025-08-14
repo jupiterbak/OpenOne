@@ -27,7 +27,7 @@ class LAuthorizationRoleList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[AuthorizationRole]'
+        'data': 'list[LAuthorizationRole]'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LAuthorizationRoleList(object):
     }
 
     def __init__(self, data=None):  # noqa: E501
-        """AuthorizationRoleList - a model defined in Swagger"""  # noqa: E501
+        """LAuthorizationRoleList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self.discriminator = None
         self.data = data
 
     @property
     def data(self):
-        """Gets the data of this AuthorizationRoleList.  # noqa: E501
+        """Gets the data of this LAuthorizationRoleList.  # noqa: E501
 
 
-        :return: The data of this AuthorizationRoleList.  # noqa: E501
-        :rtype: list[AuthorizationRole]
+        :return: The data of this LAuthorizationRoleList.  # noqa: E501
+        :rtype: list[LAuthorizationRole]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this AuthorizationRoleList.
+        """Sets the data of this LAuthorizationRoleList.
 
 
-        :param data: The data of this AuthorizationRoleList.  # noqa: E501
-        :type: list[AuthorizationRole]
+        :param data: The data of this LAuthorizationRoleList.  # noqa: E501
+        :type: list[LAuthorizationRole]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LAuthorizationRoleList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AuthorizationRoleList, dict):
+        if issubclass(LAuthorizationRoleList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LAuthorizationRoleList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AuthorizationRoleList):
+        if not isinstance(other, LAuthorizationRoleList):
             return False
 
         return self.__dict__ == other.__dict__

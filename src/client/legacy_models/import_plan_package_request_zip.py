@@ -33,7 +33,7 @@ class LImportPlanPackageRequestZip(object):
     }
 
     def __init__(self):  # noqa: E501
-        """ImportPlanPackageRequestZip - a model defined in Swagger"""  # noqa: E501
+        """LImportPlanPackageRequestZip - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LImportPlanPackageRequestZip(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ImportPlanPackageRequestZip, dict):
+        if issubclass(LImportPlanPackageRequestZip, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LImportPlanPackageRequestZip(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImportPlanPackageRequestZip):
+        if not isinstance(other, LImportPlanPackageRequestZip):
             return False
 
         return self.__dict__ == other.__dict__

@@ -33,7 +33,7 @@ class LOneOfflowRunParameterOverrideCreateRequestValue(object):
     }
 
     def __init__(self):  # noqa: E501
-        """OneOfflowRunParameterOverrideCreateRequestValue - a model defined in Swagger"""  # noqa: E501
+        """LOneOfflowRunParameterOverrideCreateRequestValue - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LOneOfflowRunParameterOverrideCreateRequestValue(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OneOfflowRunParameterOverrideCreateRequestValue, dict):
+        if issubclass(LOneOfflowRunParameterOverrideCreateRequestValue, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LOneOfflowRunParameterOverrideCreateRequestValue(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OneOfflowRunParameterOverrideCreateRequestValue):
+        if not isinstance(other, LOneOfflowRunParameterOverrideCreateRequestValue):
             return False
 
         return self.__dict__ == other.__dict__

@@ -35,27 +35,27 @@ class LRunFlowTaskWithFlowSchema(object):
     }
 
     def __init__(self, run_flow=None):  # noqa: E501
-        """RunFlowTaskWithFlowSchema - a model defined in Swagger"""  # noqa: E501
+        """LRunFlowTaskWithFlowSchema - a model defined in Swagger"""  # noqa: E501
         self._run_flow = None
         self.discriminator = None
         self.run_flow = run_flow
 
     @property
     def run_flow(self):
-        """Gets the run_flow of this RunFlowTaskWithFlowSchema.  # noqa: E501
+        """Gets the run_flow of this LRunFlowTaskWithFlowSchema.  # noqa: E501
 
 
-        :return: The run_flow of this RunFlowTaskWithFlowSchema.  # noqa: E501
+        :return: The run_flow of this LRunFlowTaskWithFlowSchema.  # noqa: E501
         :rtype: object
         """
         return self._run_flow
 
     @run_flow.setter
     def run_flow(self, run_flow):
-        """Sets the run_flow of this RunFlowTaskWithFlowSchema.
+        """Sets the run_flow of this LRunFlowTaskWithFlowSchema.
 
 
-        :param run_flow: The run_flow of this RunFlowTaskWithFlowSchema.  # noqa: E501
+        :param run_flow: The run_flow of this LRunFlowTaskWithFlowSchema.  # noqa: E501
         :type: object
         """
         if run_flow is None:
@@ -84,7 +84,7 @@ class LRunFlowTaskWithFlowSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunFlowTaskWithFlowSchema, dict):
+        if issubclass(LRunFlowTaskWithFlowSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunFlowTaskWithFlowSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunFlowTaskWithFlowSchema):
+        if not isinstance(other, LRunFlowTaskWithFlowSchema):
             return False
 
         return self.__dict__ == other.__dict__

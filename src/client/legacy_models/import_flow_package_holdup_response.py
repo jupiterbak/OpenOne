@@ -27,7 +27,7 @@ class LImportFlowPackageHoldupResponse(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'package_contents': 'ImportFlowPackageRequestZip',
+        'package_contents': 'LImportFlowPackageRequestZip',
         'referenced_environment_parameters': 'list[object]',
         'connections_without_mapping': 'list[object]'
     }
@@ -39,7 +39,7 @@ class LImportFlowPackageHoldupResponse(object):
     }
 
     def __init__(self, package_contents=None, referenced_environment_parameters=None, connections_without_mapping=None):  # noqa: E501
-        """ImportFlowPackageHoldupResponse - a model defined in Swagger"""  # noqa: E501
+        """LImportFlowPackageHoldupResponse - a model defined in Swagger"""  # noqa: E501
         self._package_contents = None
         self._referenced_environment_parameters = None
         self._connections_without_mapping = None
@@ -50,21 +50,21 @@ class LImportFlowPackageHoldupResponse(object):
 
     @property
     def package_contents(self):
-        """Gets the package_contents of this ImportFlowPackageHoldupResponse.  # noqa: E501
+        """Gets the package_contents of this LImportFlowPackageHoldupResponse.  # noqa: E501
 
 
-        :return: The package_contents of this ImportFlowPackageHoldupResponse.  # noqa: E501
-        :rtype: ImportFlowPackageRequestZip
+        :return: The package_contents of this LImportFlowPackageHoldupResponse.  # noqa: E501
+        :rtype: LImportFlowPackageRequestZip
         """
         return self._package_contents
 
     @package_contents.setter
     def package_contents(self, package_contents):
-        """Sets the package_contents of this ImportFlowPackageHoldupResponse.
+        """Sets the package_contents of this LImportFlowPackageHoldupResponse.
 
 
-        :param package_contents: The package_contents of this ImportFlowPackageHoldupResponse.  # noqa: E501
-        :type: ImportFlowPackageRequestZip
+        :param package_contents: The package_contents of this LImportFlowPackageHoldupResponse.  # noqa: E501
+        :type: LImportFlowPackageRequestZip
         """
         if package_contents is None:
             raise ValueError("Invalid value for `package_contents`, must not be `None`")  # noqa: E501
@@ -73,20 +73,20 @@ class LImportFlowPackageHoldupResponse(object):
 
     @property
     def referenced_environment_parameters(self):
-        """Gets the referenced_environment_parameters of this ImportFlowPackageHoldupResponse.  # noqa: E501
+        """Gets the referenced_environment_parameters of this LImportFlowPackageHoldupResponse.  # noqa: E501
 
 
-        :return: The referenced_environment_parameters of this ImportFlowPackageHoldupResponse.  # noqa: E501
+        :return: The referenced_environment_parameters of this LImportFlowPackageHoldupResponse.  # noqa: E501
         :rtype: list[object]
         """
         return self._referenced_environment_parameters
 
     @referenced_environment_parameters.setter
     def referenced_environment_parameters(self, referenced_environment_parameters):
-        """Sets the referenced_environment_parameters of this ImportFlowPackageHoldupResponse.
+        """Sets the referenced_environment_parameters of this LImportFlowPackageHoldupResponse.
 
 
-        :param referenced_environment_parameters: The referenced_environment_parameters of this ImportFlowPackageHoldupResponse.  # noqa: E501
+        :param referenced_environment_parameters: The referenced_environment_parameters of this LImportFlowPackageHoldupResponse.  # noqa: E501
         :type: list[object]
         """
         if referenced_environment_parameters is None:
@@ -96,20 +96,20 @@ class LImportFlowPackageHoldupResponse(object):
 
     @property
     def connections_without_mapping(self):
-        """Gets the connections_without_mapping of this ImportFlowPackageHoldupResponse.  # noqa: E501
+        """Gets the connections_without_mapping of this LImportFlowPackageHoldupResponse.  # noqa: E501
 
 
-        :return: The connections_without_mapping of this ImportFlowPackageHoldupResponse.  # noqa: E501
+        :return: The connections_without_mapping of this LImportFlowPackageHoldupResponse.  # noqa: E501
         :rtype: list[object]
         """
         return self._connections_without_mapping
 
     @connections_without_mapping.setter
     def connections_without_mapping(self, connections_without_mapping):
-        """Sets the connections_without_mapping of this ImportFlowPackageHoldupResponse.
+        """Sets the connections_without_mapping of this LImportFlowPackageHoldupResponse.
 
 
-        :param connections_without_mapping: The connections_without_mapping of this ImportFlowPackageHoldupResponse.  # noqa: E501
+        :param connections_without_mapping: The connections_without_mapping of this LImportFlowPackageHoldupResponse.  # noqa: E501
         :type: list[object]
         """
         if connections_without_mapping is None:
@@ -138,7 +138,7 @@ class LImportFlowPackageHoldupResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ImportFlowPackageHoldupResponse, dict):
+        if issubclass(LImportFlowPackageHoldupResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -154,7 +154,7 @@ class LImportFlowPackageHoldupResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImportFlowPackageHoldupResponse):
+        if not isinstance(other, LImportFlowPackageHoldupResponse):
             return False
 
         return self.__dict__ == other.__dict__

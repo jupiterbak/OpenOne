@@ -33,7 +33,7 @@ class LAnyOfreplaceFlowNodeWithImportedDatasetNewImportedDatasetId(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfreplaceFlowNodeWithImportedDatasetNewImportedDatasetId - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfreplaceFlowNodeWithImportedDatasetNewImportedDatasetId - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfreplaceFlowNodeWithImportedDatasetNewImportedDatasetId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfreplaceFlowNodeWithImportedDatasetNewImportedDatasetId, dict):
+        if issubclass(LAnyOfreplaceFlowNodeWithImportedDatasetNewImportedDatasetId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfreplaceFlowNodeWithImportedDatasetNewImportedDatasetId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfreplaceFlowNodeWithImportedDatasetNewImportedDatasetId):
+        if not isinstance(other, LAnyOfreplaceFlowNodeWithImportedDatasetNewImportedDatasetId):
             return False
 
         return self.__dict__ == other.__dict__

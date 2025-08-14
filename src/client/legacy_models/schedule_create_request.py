@@ -28,8 +28,8 @@ class LScheduleCreateRequest(object):
     """
     swagger_types = {
         'name': 'str',
-        'triggers': 'OneOfscheduleCreateRequestTriggers',
-        'tasks': 'OneOfscheduleCreateRequestTasks'
+        'triggers': 'LOneOfscheduleCreateRequestTriggers',
+        'tasks': 'LOneOfscheduleCreateRequestTasks'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class LScheduleCreateRequest(object):
     }
 
     def __init__(self, name=None, triggers=None, tasks=None):  # noqa: E501
-        """ScheduleCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LScheduleCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._triggers = None
         self._tasks = None
@@ -50,22 +50,22 @@ class LScheduleCreateRequest(object):
 
     @property
     def name(self):
-        """Gets the name of this ScheduleCreateRequest.  # noqa: E501
+        """Gets the name of this LScheduleCreateRequest.  # noqa: E501
 
         name of the schedule  # noqa: E501
 
-        :return: The name of this ScheduleCreateRequest.  # noqa: E501
+        :return: The name of this LScheduleCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ScheduleCreateRequest.
+        """Sets the name of this LScheduleCreateRequest.
 
         name of the schedule  # noqa: E501
 
-        :param name: The name of this ScheduleCreateRequest.  # noqa: E501
+        :param name: The name of this LScheduleCreateRequest.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -75,21 +75,21 @@ class LScheduleCreateRequest(object):
 
     @property
     def triggers(self):
-        """Gets the triggers of this ScheduleCreateRequest.  # noqa: E501
+        """Gets the triggers of this LScheduleCreateRequest.  # noqa: E501
 
 
-        :return: The triggers of this ScheduleCreateRequest.  # noqa: E501
-        :rtype: OneOfscheduleCreateRequestTriggers
+        :return: The triggers of this LScheduleCreateRequest.  # noqa: E501
+        :rtype: LOneOfscheduleCreateRequestTriggers
         """
         return self._triggers
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this ScheduleCreateRequest.
+        """Sets the triggers of this LScheduleCreateRequest.
 
 
-        :param triggers: The triggers of this ScheduleCreateRequest.  # noqa: E501
-        :type: OneOfscheduleCreateRequestTriggers
+        :param triggers: The triggers of this LScheduleCreateRequest.  # noqa: E501
+        :type: LOneOfscheduleCreateRequestTriggers
         """
         if triggers is None:
             raise ValueError("Invalid value for `triggers`, must not be `None`")  # noqa: E501
@@ -98,21 +98,21 @@ class LScheduleCreateRequest(object):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ScheduleCreateRequest.  # noqa: E501
+        """Gets the tasks of this LScheduleCreateRequest.  # noqa: E501
 
 
-        :return: The tasks of this ScheduleCreateRequest.  # noqa: E501
-        :rtype: OneOfscheduleCreateRequestTasks
+        :return: The tasks of this LScheduleCreateRequest.  # noqa: E501
+        :rtype: LOneOfscheduleCreateRequestTasks
         """
         return self._tasks
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ScheduleCreateRequest.
+        """Sets the tasks of this LScheduleCreateRequest.
 
 
-        :param tasks: The tasks of this ScheduleCreateRequest.  # noqa: E501
-        :type: OneOfscheduleCreateRequestTasks
+        :param tasks: The tasks of this LScheduleCreateRequest.  # noqa: E501
+        :type: LOneOfscheduleCreateRequestTasks
         """
         if tasks is None:
             raise ValueError("Invalid value for `tasks`, must not be `None`")  # noqa: E501
@@ -140,7 +140,7 @@ class LScheduleCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ScheduleCreateRequest, dict):
+        if issubclass(LScheduleCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -156,7 +156,7 @@ class LScheduleCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ScheduleCreateRequest):
+        if not isinstance(other, LScheduleCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

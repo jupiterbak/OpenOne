@@ -27,7 +27,7 @@ class LMemberInformation(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'members': 'Members'
+        'members': 'LMembers'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LMemberInformation(object):
     }
 
     def __init__(self, members=None):  # noqa: E501
-        """MemberInformation - a model defined in Swagger"""  # noqa: E501
+        """LMemberInformation - a model defined in Swagger"""  # noqa: E501
         self._members = None
         self.discriminator = None
         self.members = members
 
     @property
     def members(self):
-        """Gets the members of this MemberInformation.  # noqa: E501
+        """Gets the members of this LMemberInformation.  # noqa: E501
 
 
-        :return: The members of this MemberInformation.  # noqa: E501
-        :rtype: Members
+        :return: The members of this LMemberInformation.  # noqa: E501
+        :rtype: LMembers
         """
         return self._members
 
     @members.setter
     def members(self, members):
-        """Sets the members of this MemberInformation.
+        """Sets the members of this LMemberInformation.
 
 
-        :param members: The members of this MemberInformation.  # noqa: E501
-        :type: Members
+        :param members: The members of this LMemberInformation.  # noqa: E501
+        :type: LMembers
         """
         if members is None:
             raise ValueError("Invalid value for `members`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LMemberInformation(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(MemberInformation, dict):
+        if issubclass(LMemberInformation, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LMemberInformation(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, MemberInformation):
+        if not isinstance(other, LMemberInformation):
             return False
 
         return self.__dict__ == other.__dict__

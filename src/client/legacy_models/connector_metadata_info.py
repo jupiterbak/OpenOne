@@ -27,9 +27,9 @@ class LConnectorMetadataInfo(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'connection_metadata': 'ConnectionMetadataInfo',
-        'runtime_metadata': 'RuntimeMetadataInfo',
-        'publish_metadata': 'PublishMetadataInfo'
+        'connection_metadata': 'LConnectionMetadataInfo',
+        'runtime_metadata': 'LRuntimeMetadataInfo',
+        'publish_metadata': 'LPublishMetadataInfo'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class LConnectorMetadataInfo(object):
     }
 
     def __init__(self, connection_metadata=None, runtime_metadata=None, publish_metadata=None):  # noqa: E501
-        """ConnectorMetadataInfo - a model defined in Swagger"""  # noqa: E501
+        """LConnectorMetadataInfo - a model defined in Swagger"""  # noqa: E501
         self._connection_metadata = None
         self._runtime_metadata = None
         self._publish_metadata = None
@@ -53,63 +53,63 @@ class LConnectorMetadataInfo(object):
 
     @property
     def connection_metadata(self):
-        """Gets the connection_metadata of this ConnectorMetadataInfo.  # noqa: E501
+        """Gets the connection_metadata of this LConnectorMetadataInfo.  # noqa: E501
 
 
-        :return: The connection_metadata of this ConnectorMetadataInfo.  # noqa: E501
-        :rtype: ConnectionMetadataInfo
+        :return: The connection_metadata of this LConnectorMetadataInfo.  # noqa: E501
+        :rtype: LConnectionMetadataInfo
         """
         return self._connection_metadata
 
     @connection_metadata.setter
     def connection_metadata(self, connection_metadata):
-        """Sets the connection_metadata of this ConnectorMetadataInfo.
+        """Sets the connection_metadata of this LConnectorMetadataInfo.
 
 
-        :param connection_metadata: The connection_metadata of this ConnectorMetadataInfo.  # noqa: E501
-        :type: ConnectionMetadataInfo
+        :param connection_metadata: The connection_metadata of this LConnectorMetadataInfo.  # noqa: E501
+        :type: LConnectionMetadataInfo
         """
 
         self._connection_metadata = connection_metadata
 
     @property
     def runtime_metadata(self):
-        """Gets the runtime_metadata of this ConnectorMetadataInfo.  # noqa: E501
+        """Gets the runtime_metadata of this LConnectorMetadataInfo.  # noqa: E501
 
 
-        :return: The runtime_metadata of this ConnectorMetadataInfo.  # noqa: E501
-        :rtype: RuntimeMetadataInfo
+        :return: The runtime_metadata of this LConnectorMetadataInfo.  # noqa: E501
+        :rtype: LRuntimeMetadataInfo
         """
         return self._runtime_metadata
 
     @runtime_metadata.setter
     def runtime_metadata(self, runtime_metadata):
-        """Sets the runtime_metadata of this ConnectorMetadataInfo.
+        """Sets the runtime_metadata of this LConnectorMetadataInfo.
 
 
-        :param runtime_metadata: The runtime_metadata of this ConnectorMetadataInfo.  # noqa: E501
-        :type: RuntimeMetadataInfo
+        :param runtime_metadata: The runtime_metadata of this LConnectorMetadataInfo.  # noqa: E501
+        :type: LRuntimeMetadataInfo
         """
 
         self._runtime_metadata = runtime_metadata
 
     @property
     def publish_metadata(self):
-        """Gets the publish_metadata of this ConnectorMetadataInfo.  # noqa: E501
+        """Gets the publish_metadata of this LConnectorMetadataInfo.  # noqa: E501
 
 
-        :return: The publish_metadata of this ConnectorMetadataInfo.  # noqa: E501
-        :rtype: PublishMetadataInfo
+        :return: The publish_metadata of this LConnectorMetadataInfo.  # noqa: E501
+        :rtype: LPublishMetadataInfo
         """
         return self._publish_metadata
 
     @publish_metadata.setter
     def publish_metadata(self, publish_metadata):
-        """Sets the publish_metadata of this ConnectorMetadataInfo.
+        """Sets the publish_metadata of this LConnectorMetadataInfo.
 
 
-        :param publish_metadata: The publish_metadata of this ConnectorMetadataInfo.  # noqa: E501
-        :type: PublishMetadataInfo
+        :param publish_metadata: The publish_metadata of this LConnectorMetadataInfo.  # noqa: E501
+        :type: LPublishMetadataInfo
         """
 
         self._publish_metadata = publish_metadata
@@ -135,7 +135,7 @@ class LConnectorMetadataInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConnectorMetadataInfo, dict):
+        if issubclass(LConnectorMetadataInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -151,7 +151,7 @@ class LConnectorMetadataInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConnectorMetadataInfo):
+        if not isinstance(other, LConnectorMetadataInfo):
             return False
 
         return self.__dict__ == other.__dict__

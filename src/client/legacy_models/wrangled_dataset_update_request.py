@@ -33,7 +33,7 @@ class LWrangledDatasetUpdateRequest(object):
     }
 
     def __init__(self):  # noqa: E501
-        """WrangledDatasetUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LWrangledDatasetUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LWrangledDatasetUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WrangledDatasetUpdateRequest, dict):
+        if issubclass(LWrangledDatasetUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LWrangledDatasetUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WrangledDatasetUpdateRequest):
+        if not isinstance(other, LWrangledDatasetUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

@@ -45,7 +45,7 @@ class LFlowGraphVertexAddVerticesUpdateRequest(object):
     }
 
     def __init__(self, id=None, x=None, y=None, width=None, height=None, flow_id=None):  # noqa: E501
-        """FlowGraphVertexAddVerticesUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LFlowGraphVertexAddVerticesUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._x = None
         self._y = None
@@ -66,22 +66,22 @@ class LFlowGraphVertexAddVerticesUpdateRequest(object):
 
     @property
     def id(self):
-        """Gets the id of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        """Gets the id of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        :return: The id of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FlowGraphVertexAddVerticesUpdateRequest.
+        """Sets the id of this LFlowGraphVertexAddVerticesUpdateRequest.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        :param id: The id of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -91,22 +91,22 @@ class LFlowGraphVertexAddVerticesUpdateRequest(object):
 
     @property
     def x(self):
-        """Gets the x of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        """Gets the x of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
 
         x coordinate of vertex  # noqa: E501
 
-        :return: The x of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        :return: The x of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
         :rtype: int
         """
         return self._x
 
     @x.setter
     def x(self, x):
-        """Sets the x of this FlowGraphVertexAddVerticesUpdateRequest.
+        """Sets the x of this LFlowGraphVertexAddVerticesUpdateRequest.
 
         x coordinate of vertex  # noqa: E501
 
-        :param x: The x of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        :param x: The x of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
         :type: int
         """
 
@@ -114,22 +114,22 @@ class LFlowGraphVertexAddVerticesUpdateRequest(object):
 
     @property
     def y(self):
-        """Gets the y of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        """Gets the y of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
 
         y coordinate of vertex  # noqa: E501
 
-        :return: The y of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        :return: The y of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
         :rtype: int
         """
         return self._y
 
     @y.setter
     def y(self, y):
-        """Sets the y of this FlowGraphVertexAddVerticesUpdateRequest.
+        """Sets the y of this LFlowGraphVertexAddVerticesUpdateRequest.
 
         y coordinate of vertex  # noqa: E501
 
-        :param y: The y of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        :param y: The y of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
         :type: int
         """
 
@@ -137,22 +137,22 @@ class LFlowGraphVertexAddVerticesUpdateRequest(object):
 
     @property
     def width(self):
-        """Gets the width of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        """Gets the width of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
 
         width of vertex  # noqa: E501
 
-        :return: The width of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        :return: The width of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
         :rtype: int
         """
         return self._width
 
     @width.setter
     def width(self, width):
-        """Sets the width of this FlowGraphVertexAddVerticesUpdateRequest.
+        """Sets the width of this LFlowGraphVertexAddVerticesUpdateRequest.
 
         width of vertex  # noqa: E501
 
-        :param width: The width of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        :param width: The width of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
         :type: int
         """
 
@@ -160,22 +160,22 @@ class LFlowGraphVertexAddVerticesUpdateRequest(object):
 
     @property
     def height(self):
-        """Gets the height of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        """Gets the height of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
 
         height of vertex  # noqa: E501
 
-        :return: The height of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        :return: The height of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
         :rtype: int
         """
         return self._height
 
     @height.setter
     def height(self, height):
-        """Sets the height of this FlowGraphVertexAddVerticesUpdateRequest.
+        """Sets the height of this LFlowGraphVertexAddVerticesUpdateRequest.
 
         height of vertex  # noqa: E501
 
-        :param height: The height of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        :param height: The height of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
         :type: int
         """
 
@@ -183,22 +183,22 @@ class LFlowGraphVertexAddVerticesUpdateRequest(object):
 
     @property
     def flow_id(self):
-        """Gets the flow_id of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        """Gets the flow_id of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
 
         id of the flow this vertex belongs to  # noqa: E501
 
-        :return: The flow_id of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        :return: The flow_id of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
         :rtype: int
         """
         return self._flow_id
 
     @flow_id.setter
     def flow_id(self, flow_id):
-        """Sets the flow_id of this FlowGraphVertexAddVerticesUpdateRequest.
+        """Sets the flow_id of this LFlowGraphVertexAddVerticesUpdateRequest.
 
         id of the flow this vertex belongs to  # noqa: E501
 
-        :param flow_id: The flow_id of this FlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
+        :param flow_id: The flow_id of this LFlowGraphVertexAddVerticesUpdateRequest.  # noqa: E501
         :type: int
         """
         if flow_id is None:
@@ -227,7 +227,7 @@ class LFlowGraphVertexAddVerticesUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowGraphVertexAddVerticesUpdateRequest, dict):
+        if issubclass(LFlowGraphVertexAddVerticesUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -243,7 +243,7 @@ class LFlowGraphVertexAddVerticesUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowGraphVertexAddVerticesUpdateRequest):
+        if not isinstance(other, LFlowGraphVertexAddVerticesUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

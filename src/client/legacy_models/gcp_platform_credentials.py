@@ -37,7 +37,7 @@ class LGcpPlatformCredentials(object):
     }
 
     def __init__(self, project_id=None, access_token=None):  # noqa: E501
-        """GcpPlatformCredentials - a model defined in Swagger"""  # noqa: E501
+        """LGcpPlatformCredentials - a model defined in Swagger"""  # noqa: E501
         self._project_id = None
         self._access_token = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LGcpPlatformCredentials(object):
 
     @property
     def project_id(self):
-        """Gets the project_id of this GcpPlatformCredentials.  # noqa: E501
+        """Gets the project_id of this LGcpPlatformCredentials.  # noqa: E501
 
 
-        :return: The project_id of this GcpPlatformCredentials.  # noqa: E501
+        :return: The project_id of this LGcpPlatformCredentials.  # noqa: E501
         :rtype: str
         """
         return self._project_id
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this GcpPlatformCredentials.
+        """Sets the project_id of this LGcpPlatformCredentials.
 
 
-        :param project_id: The project_id of this GcpPlatformCredentials.  # noqa: E501
+        :param project_id: The project_id of this LGcpPlatformCredentials.  # noqa: E501
         :type: str
         """
         if project_id is None:
@@ -69,20 +69,20 @@ class LGcpPlatformCredentials(object):
 
     @property
     def access_token(self):
-        """Gets the access_token of this GcpPlatformCredentials.  # noqa: E501
+        """Gets the access_token of this LGcpPlatformCredentials.  # noqa: E501
 
 
-        :return: The access_token of this GcpPlatformCredentials.  # noqa: E501
+        :return: The access_token of this LGcpPlatformCredentials.  # noqa: E501
         :rtype: str
         """
         return self._access_token
 
     @access_token.setter
     def access_token(self, access_token):
-        """Sets the access_token of this GcpPlatformCredentials.
+        """Sets the access_token of this LGcpPlatformCredentials.
 
 
-        :param access_token: The access_token of this GcpPlatformCredentials.  # noqa: E501
+        :param access_token: The access_token of this LGcpPlatformCredentials.  # noqa: E501
         :type: str
         """
         if access_token is None:
@@ -111,7 +111,7 @@ class LGcpPlatformCredentials(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(GcpPlatformCredentials, dict):
+        if issubclass(LGcpPlatformCredentials, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LGcpPlatformCredentials(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, GcpPlatformCredentials):
+        if not isinstance(other, LGcpPlatformCredentials):
             return False
 
         return self.__dict__ == other.__dict__

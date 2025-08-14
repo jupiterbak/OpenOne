@@ -39,7 +39,7 @@ class LFlowNodeInfo(object):
     }
 
     def __init__(self, id=None, script_lines=None, output_columns=None):  # noqa: E501
-        """FlowNodeInfo - a model defined in Swagger"""  # noqa: E501
+        """LFlowNodeInfo - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._script_lines = None
         self._output_columns = None
@@ -52,20 +52,20 @@ class LFlowNodeInfo(object):
 
     @property
     def id(self):
-        """Gets the id of this FlowNodeInfo.  # noqa: E501
+        """Gets the id of this LFlowNodeInfo.  # noqa: E501
 
 
-        :return: The id of this FlowNodeInfo.  # noqa: E501
+        :return: The id of this LFlowNodeInfo.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FlowNodeInfo.
+        """Sets the id of this LFlowNodeInfo.
 
 
-        :param id: The id of this FlowNodeInfo.  # noqa: E501
+        :param id: The id of this LFlowNodeInfo.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -75,20 +75,20 @@ class LFlowNodeInfo(object):
 
     @property
     def script_lines(self):
-        """Gets the script_lines of this FlowNodeInfo.  # noqa: E501
+        """Gets the script_lines of this LFlowNodeInfo.  # noqa: E501
 
 
-        :return: The script_lines of this FlowNodeInfo.  # noqa: E501
+        :return: The script_lines of this LFlowNodeInfo.  # noqa: E501
         :rtype: list[str]
         """
         return self._script_lines
 
     @script_lines.setter
     def script_lines(self, script_lines):
-        """Sets the script_lines of this FlowNodeInfo.
+        """Sets the script_lines of this LFlowNodeInfo.
 
 
-        :param script_lines: The script_lines of this FlowNodeInfo.  # noqa: E501
+        :param script_lines: The script_lines of this LFlowNodeInfo.  # noqa: E501
         :type: list[str]
         """
 
@@ -96,20 +96,20 @@ class LFlowNodeInfo(object):
 
     @property
     def output_columns(self):
-        """Gets the output_columns of this FlowNodeInfo.  # noqa: E501
+        """Gets the output_columns of this LFlowNodeInfo.  # noqa: E501
 
 
-        :return: The output_columns of this FlowNodeInfo.  # noqa: E501
+        :return: The output_columns of this LFlowNodeInfo.  # noqa: E501
         :rtype: list[object]
         """
         return self._output_columns
 
     @output_columns.setter
     def output_columns(self, output_columns):
-        """Sets the output_columns of this FlowNodeInfo.
+        """Sets the output_columns of this LFlowNodeInfo.
 
 
-        :param output_columns: The output_columns of this FlowNodeInfo.  # noqa: E501
+        :param output_columns: The output_columns of this LFlowNodeInfo.  # noqa: E501
         :type: list[object]
         """
 
@@ -136,7 +136,7 @@ class LFlowNodeInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowNodeInfo, dict):
+        if issubclass(LFlowNodeInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -152,7 +152,7 @@ class LFlowNodeInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowNodeInfo):
+        if not isinstance(other, LFlowNodeInfo):
             return False
 
         return self.__dict__ == other.__dict__

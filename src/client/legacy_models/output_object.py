@@ -31,7 +31,7 @@ class LOutputObject(object):
         'profiler': 'bool',
         'is_adhoc': 'bool',
         'flownode': 'object',
-        'id': 'AnyOfoutputObjectId',
+        'id': 'LAnyOfoutputObjectId',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'creator': 'object',
@@ -55,7 +55,7 @@ class LOutputObject(object):
     }
 
     def __init__(self, execution=None, profiler=None, is_adhoc=True, flownode=None, id=None, created_at=None, updated_at=None, creator=None, updater=None, name=None, description=None):  # noqa: E501
-        """OutputObject - a model defined in Swagger"""  # noqa: E501
+        """LOutputObject - a model defined in Swagger"""  # noqa: E501
         self._execution = None
         self._profiler = None
         self._is_adhoc = None
@@ -90,22 +90,22 @@ class LOutputObject(object):
 
     @property
     def execution(self):
-        """Gets the execution of this OutputObject.  # noqa: E501
+        """Gets the execution of this LOutputObject.  # noqa: E501
 
         Execution language. Indicate on which engine the job was executed.   Can be null/missing for scheduled jobs that fail during the validation phase.  * `photon` - Photon engine. High performance embedded engine designed for small datasets (up to 1GB).       Not available for all product editions. * `amp` - Amp engine. * `xml-amp` - XML-AMP engine. Only available for standard workflows.    * `emrSpark` - Spark engine running on EMR       # noqa: E501
 
-        :return: The execution of this OutputObject.  # noqa: E501
+        :return: The execution of this LOutputObject.  # noqa: E501
         :rtype: str
         """
         return self._execution
 
     @execution.setter
     def execution(self, execution):
-        """Sets the execution of this OutputObject.
+        """Sets the execution of this LOutputObject.
 
         Execution language. Indicate on which engine the job was executed.   Can be null/missing for scheduled jobs that fail during the validation phase.  * `photon` - Photon engine. High performance embedded engine designed for small datasets (up to 1GB).       Not available for all product editions. * `amp` - Amp engine. * `xml-amp` - XML-AMP engine. Only available for standard workflows.    * `emrSpark` - Spark engine running on EMR       # noqa: E501
 
-        :param execution: The execution of this OutputObject.  # noqa: E501
+        :param execution: The execution of this LOutputObject.  # noqa: E501
         :type: str
         """
         allowed_values = ["photon", "amp", "xml-amp", "emrSpark"]  # noqa: E501
@@ -119,22 +119,22 @@ class LOutputObject(object):
 
     @property
     def profiler(self):
-        """Gets the profiler of this OutputObject.  # noqa: E501
+        """Gets the profiler of this LOutputObject.  # noqa: E501
 
         Indicate if recipe errors should be ignored for the [jobGroup](#tag/JobGroup).  # noqa: E501
 
-        :return: The profiler of this OutputObject.  # noqa: E501
+        :return: The profiler of this LOutputObject.  # noqa: E501
         :rtype: bool
         """
         return self._profiler
 
     @profiler.setter
     def profiler(self, profiler):
-        """Sets the profiler of this OutputObject.
+        """Sets the profiler of this LOutputObject.
 
         Indicate if recipe errors should be ignored for the [jobGroup](#tag/JobGroup).  # noqa: E501
 
-        :param profiler: The profiler of this OutputObject.  # noqa: E501
+        :param profiler: The profiler of this LOutputObject.  # noqa: E501
         :type: bool
         """
 
@@ -142,22 +142,22 @@ class LOutputObject(object):
 
     @property
     def is_adhoc(self):
-        """Gets the is_adhoc of this OutputObject.  # noqa: E501
+        """Gets the is_adhoc of this LOutputObject.  # noqa: E501
 
         Indicate if the [outputObject](#tag/OutputObject) correspond to manual (Adhoc) or scheduled run.  # noqa: E501
 
-        :return: The is_adhoc of this OutputObject.  # noqa: E501
+        :return: The is_adhoc of this LOutputObject.  # noqa: E501
         :rtype: bool
         """
         return self._is_adhoc
 
     @is_adhoc.setter
     def is_adhoc(self, is_adhoc):
-        """Sets the is_adhoc of this OutputObject.
+        """Sets the is_adhoc of this LOutputObject.
 
         Indicate if the [outputObject](#tag/OutputObject) correspond to manual (Adhoc) or scheduled run.  # noqa: E501
 
-        :param is_adhoc: The is_adhoc of this OutputObject.  # noqa: E501
+        :param is_adhoc: The is_adhoc of this LOutputObject.  # noqa: E501
         :type: bool
         """
 
@@ -165,20 +165,20 @@ class LOutputObject(object):
 
     @property
     def flownode(self):
-        """Gets the flownode of this OutputObject.  # noqa: E501
+        """Gets the flownode of this LOutputObject.  # noqa: E501
 
 
-        :return: The flownode of this OutputObject.  # noqa: E501
+        :return: The flownode of this LOutputObject.  # noqa: E501
         :rtype: object
         """
         return self._flownode
 
     @flownode.setter
     def flownode(self, flownode):
-        """Sets the flownode of this OutputObject.
+        """Sets the flownode of this LOutputObject.
 
 
-        :param flownode: The flownode of this OutputObject.  # noqa: E501
+        :param flownode: The flownode of this LOutputObject.  # noqa: E501
         :type: object
         """
 
@@ -186,21 +186,21 @@ class LOutputObject(object):
 
     @property
     def id(self):
-        """Gets the id of this OutputObject.  # noqa: E501
+        """Gets the id of this LOutputObject.  # noqa: E501
 
 
-        :return: The id of this OutputObject.  # noqa: E501
-        :rtype: AnyOfoutputObjectId
+        :return: The id of this LOutputObject.  # noqa: E501
+        :rtype: LAnyOfoutputObjectId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OutputObject.
+        """Sets the id of this LOutputObject.
 
 
-        :param id: The id of this OutputObject.  # noqa: E501
-        :type: AnyOfoutputObjectId
+        :param id: The id of this LOutputObject.  # noqa: E501
+        :type: LAnyOfoutputObjectId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -209,22 +209,22 @@ class LOutputObject(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this OutputObject.  # noqa: E501
+        """Gets the created_at of this LOutputObject.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this OutputObject.  # noqa: E501
+        :return: The created_at of this LOutputObject.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this OutputObject.
+        """Sets the created_at of this LOutputObject.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this OutputObject.  # noqa: E501
+        :param created_at: The created_at of this LOutputObject.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -234,22 +234,22 @@ class LOutputObject(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this OutputObject.  # noqa: E501
+        """Gets the updated_at of this LOutputObject.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this OutputObject.  # noqa: E501
+        :return: The updated_at of this LOutputObject.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this OutputObject.
+        """Sets the updated_at of this LOutputObject.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this OutputObject.  # noqa: E501
+        :param updated_at: The updated_at of this LOutputObject.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -259,20 +259,20 @@ class LOutputObject(object):
 
     @property
     def creator(self):
-        """Gets the creator of this OutputObject.  # noqa: E501
+        """Gets the creator of this LOutputObject.  # noqa: E501
 
 
-        :return: The creator of this OutputObject.  # noqa: E501
+        :return: The creator of this LOutputObject.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this OutputObject.
+        """Sets the creator of this LOutputObject.
 
 
-        :param creator: The creator of this OutputObject.  # noqa: E501
+        :param creator: The creator of this LOutputObject.  # noqa: E501
         :type: object
         """
 
@@ -280,20 +280,20 @@ class LOutputObject(object):
 
     @property
     def updater(self):
-        """Gets the updater of this OutputObject.  # noqa: E501
+        """Gets the updater of this LOutputObject.  # noqa: E501
 
 
-        :return: The updater of this OutputObject.  # noqa: E501
+        :return: The updater of this LOutputObject.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this OutputObject.
+        """Sets the updater of this LOutputObject.
 
 
-        :param updater: The updater of this OutputObject.  # noqa: E501
+        :param updater: The updater of this LOutputObject.  # noqa: E501
         :type: object
         """
 
@@ -301,22 +301,22 @@ class LOutputObject(object):
 
     @property
     def name(self):
-        """Gets the name of this OutputObject.  # noqa: E501
+        """Gets the name of this LOutputObject.  # noqa: E501
 
         Name of output as it appears in the flow view  # noqa: E501
 
-        :return: The name of this OutputObject.  # noqa: E501
+        :return: The name of this LOutputObject.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OutputObject.
+        """Sets the name of this LOutputObject.
 
         Name of output as it appears in the flow view  # noqa: E501
 
-        :param name: The name of this OutputObject.  # noqa: E501
+        :param name: The name of this LOutputObject.  # noqa: E501
         :type: str
         """
 
@@ -324,22 +324,22 @@ class LOutputObject(object):
 
     @property
     def description(self):
-        """Gets the description of this OutputObject.  # noqa: E501
+        """Gets the description of this LOutputObject.  # noqa: E501
 
         Description of output  # noqa: E501
 
-        :return: The description of this OutputObject.  # noqa: E501
+        :return: The description of this LOutputObject.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OutputObject.
+        """Sets the description of this LOutputObject.
 
         Description of output  # noqa: E501
 
-        :param description: The description of this OutputObject.  # noqa: E501
+        :param description: The description of this LOutputObject.  # noqa: E501
         :type: str
         """
 
@@ -366,7 +366,7 @@ class LOutputObject(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OutputObject, dict):
+        if issubclass(LOutputObject, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -382,7 +382,7 @@ class LOutputObject(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OutputObject):
+        if not isinstance(other, LOutputObject):
             return False
 
         return self.__dict__ == other.__dict__

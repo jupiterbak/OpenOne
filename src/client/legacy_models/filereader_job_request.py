@@ -37,7 +37,7 @@ class LFilereaderJobRequest(object):
     }
 
     def __init__(self, location=None, datasource_id=None):  # noqa: E501
-        """FilereaderJobRequest - a model defined in Swagger"""  # noqa: E501
+        """LFilereaderJobRequest - a model defined in Swagger"""  # noqa: E501
         self._location = None
         self._datasource_id = None
         self.discriminator = None
@@ -48,20 +48,20 @@ class LFilereaderJobRequest(object):
 
     @property
     def location(self):
-        """Gets the location of this FilereaderJobRequest.  # noqa: E501
+        """Gets the location of this LFilereaderJobRequest.  # noqa: E501
 
 
-        :return: The location of this FilereaderJobRequest.  # noqa: E501
+        :return: The location of this LFilereaderJobRequest.  # noqa: E501
         :rtype: str
         """
         return self._location
 
     @location.setter
     def location(self, location):
-        """Sets the location of this FilereaderJobRequest.
+        """Sets the location of this LFilereaderJobRequest.
 
 
-        :param location: The location of this FilereaderJobRequest.  # noqa: E501
+        :param location: The location of this LFilereaderJobRequest.  # noqa: E501
         :type: str
         """
 
@@ -69,20 +69,20 @@ class LFilereaderJobRequest(object):
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this FilereaderJobRequest.  # noqa: E501
+        """Gets the datasource_id of this LFilereaderJobRequest.  # noqa: E501
 
 
-        :return: The datasource_id of this FilereaderJobRequest.  # noqa: E501
+        :return: The datasource_id of this LFilereaderJobRequest.  # noqa: E501
         :rtype: int
         """
         return self._datasource_id
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this FilereaderJobRequest.
+        """Sets the datasource_id of this LFilereaderJobRequest.
 
 
-        :param datasource_id: The datasource_id of this FilereaderJobRequest.  # noqa: E501
+        :param datasource_id: The datasource_id of this LFilereaderJobRequest.  # noqa: E501
         :type: int
         """
 
@@ -109,7 +109,7 @@ class LFilereaderJobRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FilereaderJobRequest, dict):
+        if issubclass(LFilereaderJobRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -125,7 +125,7 @@ class LFilereaderJobRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FilereaderJobRequest):
+        if not isinstance(other, LFilereaderJobRequest):
             return False
 
         return self.__dict__ == other.__dict__

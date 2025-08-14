@@ -37,7 +37,7 @@ class LFolderUpdateRequest(object):
     }
 
     def __init__(self, name=None, description=None):  # noqa: E501
-        """FolderUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LFolderUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._description = None
         self.discriminator = None
@@ -48,22 +48,22 @@ class LFolderUpdateRequest(object):
 
     @property
     def name(self):
-        """Gets the name of this FolderUpdateRequest.  # noqa: E501
+        """Gets the name of this LFolderUpdateRequest.  # noqa: E501
 
         Display name of the folder.  # noqa: E501
 
-        :return: The name of this FolderUpdateRequest.  # noqa: E501
+        :return: The name of this LFolderUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FolderUpdateRequest.
+        """Sets the name of this LFolderUpdateRequest.
 
         Display name of the folder.  # noqa: E501
 
-        :param name: The name of this FolderUpdateRequest.  # noqa: E501
+        :param name: The name of this LFolderUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -71,22 +71,22 @@ class LFolderUpdateRequest(object):
 
     @property
     def description(self):
-        """Gets the description of this FolderUpdateRequest.  # noqa: E501
+        """Gets the description of this LFolderUpdateRequest.  # noqa: E501
 
         User-friendly description for the folder.  # noqa: E501
 
-        :return: The description of this FolderUpdateRequest.  # noqa: E501
+        :return: The description of this LFolderUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FolderUpdateRequest.
+        """Sets the description of this LFolderUpdateRequest.
 
         User-friendly description for the folder.  # noqa: E501
 
-        :param description: The description of this FolderUpdateRequest.  # noqa: E501
+        :param description: The description of this LFolderUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -113,7 +113,7 @@ class LFolderUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FolderUpdateRequest, dict):
+        if issubclass(LFolderUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LFolderUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FolderUpdateRequest):
+        if not isinstance(other, LFolderUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

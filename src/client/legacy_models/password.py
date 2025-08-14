@@ -35,27 +35,27 @@ class LPassword(object):
     }
 
     def __init__(self, password=None):  # noqa: E501
-        """Password - a model defined in Swagger"""  # noqa: E501
+        """LPassword - a model defined in Swagger"""  # noqa: E501
         self._password = None
         self.discriminator = None
         self.password = password
 
     @property
     def password(self):
-        """Gets the password of this Password.  # noqa: E501
+        """Gets the password of this LPassword.  # noqa: E501
 
 
-        :return: The password of this Password.  # noqa: E501
+        :return: The password of this LPassword.  # noqa: E501
         :rtype: str
         """
         return self._password
 
     @password.setter
     def password(self, password):
-        """Sets the password of this Password.
+        """Sets the password of this LPassword.
 
 
-        :param password: The password of this Password.  # noqa: E501
+        :param password: The password of this LPassword.  # noqa: E501
         :type: str
         """
         if password is None:
@@ -84,7 +84,7 @@ class LPassword(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Password, dict):
+        if issubclass(LPassword, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LPassword(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Password):
+        if not isinstance(other, LPassword):
             return False
 
         return self.__dict__ == other.__dict__

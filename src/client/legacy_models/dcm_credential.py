@@ -55,7 +55,7 @@ class LDcmCredential(object):
     }
 
     def __init__(self, id=None, object_id=None, credential_data=None, secrets=None, workspace_id=None, created_on=None, last_changed_on=None, deleted_on=None, person_id=None, created_at=None, updated_at=None):  # noqa: E501
-        """DcmCredential - a model defined in Swagger"""  # noqa: E501
+        """LDcmCredential - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._object_id = None
         self._credential_data = None
@@ -92,22 +92,22 @@ class LDcmCredential(object):
 
     @property
     def id(self):
-        """Gets the id of this DcmCredential.  # noqa: E501
+        """Gets the id of this LDcmCredential.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this DcmCredential.  # noqa: E501
+        :return: The id of this LDcmCredential.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DcmCredential.
+        """Sets the id of this LDcmCredential.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this DcmCredential.  # noqa: E501
+        :param id: The id of this LDcmCredential.  # noqa: E501
         :type: int
         """
 
@@ -115,22 +115,22 @@ class LDcmCredential(object):
 
     @property
     def object_id(self):
-        """Gets the object_id of this DcmCredential.  # noqa: E501
+        """Gets the object_id of this LDcmCredential.  # noqa: E501
 
         DCM Credential Object ID  # noqa: E501
 
-        :return: The object_id of this DcmCredential.  # noqa: E501
+        :return: The object_id of this LDcmCredential.  # noqa: E501
         :rtype: str
         """
         return self._object_id
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this DcmCredential.
+        """Sets the object_id of this LDcmCredential.
 
         DCM Credential Object ID  # noqa: E501
 
-        :param object_id: The object_id of this DcmCredential.  # noqa: E501
+        :param object_id: The object_id of this LDcmCredential.  # noqa: E501
         :type: str
         """
         if object_id is None:
@@ -140,22 +140,22 @@ class LDcmCredential(object):
 
     @property
     def credential_data(self):
-        """Gets the credential_data of this DcmCredential.  # noqa: E501
+        """Gets the credential_data of this LDcmCredential.  # noqa: E501
 
         DCM Credential data  # noqa: E501
 
-        :return: The credential_data of this DcmCredential.  # noqa: E501
+        :return: The credential_data of this LDcmCredential.  # noqa: E501
         :rtype: object
         """
         return self._credential_data
 
     @credential_data.setter
     def credential_data(self, credential_data):
-        """Sets the credential_data of this DcmCredential.
+        """Sets the credential_data of this LDcmCredential.
 
         DCM Credential data  # noqa: E501
 
-        :param credential_data: The credential_data of this DcmCredential.  # noqa: E501
+        :param credential_data: The credential_data of this LDcmCredential.  # noqa: E501
         :type: object
         """
 
@@ -163,22 +163,22 @@ class LDcmCredential(object):
 
     @property
     def secrets(self):
-        """Gets the secrets of this DcmCredential.  # noqa: E501
+        """Gets the secrets of this LDcmCredential.  # noqa: E501
 
         DCM Credential secrets  # noqa: E501
 
-        :return: The secrets of this DcmCredential.  # noqa: E501
+        :return: The secrets of this LDcmCredential.  # noqa: E501
         :rtype: object
         """
         return self._secrets
 
     @secrets.setter
     def secrets(self, secrets):
-        """Sets the secrets of this DcmCredential.
+        """Sets the secrets of this LDcmCredential.
 
         DCM Credential secrets  # noqa: E501
 
-        :param secrets: The secrets of this DcmCredential.  # noqa: E501
+        :param secrets: The secrets of this LDcmCredential.  # noqa: E501
         :type: object
         """
 
@@ -186,22 +186,22 @@ class LDcmCredential(object):
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DcmCredential.  # noqa: E501
+        """Gets the workspace_id of this LDcmCredential.  # noqa: E501
 
         Worksapce ID  # noqa: E501
 
-        :return: The workspace_id of this DcmCredential.  # noqa: E501
+        :return: The workspace_id of this LDcmCredential.  # noqa: E501
         :rtype: int
         """
         return self._workspace_id
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DcmCredential.
+        """Sets the workspace_id of this LDcmCredential.
 
         Worksapce ID  # noqa: E501
 
-        :param workspace_id: The workspace_id of this DcmCredential.  # noqa: E501
+        :param workspace_id: The workspace_id of this LDcmCredential.  # noqa: E501
         :type: int
         """
 
@@ -209,22 +209,22 @@ class LDcmCredential(object):
 
     @property
     def created_on(self):
-        """Gets the created_on of this DcmCredential.  # noqa: E501
+        """Gets the created_on of this LDcmCredential.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_on of this DcmCredential.  # noqa: E501
+        :return: The created_on of this LDcmCredential.  # noqa: E501
         :rtype: datetime
         """
         return self._created_on
 
     @created_on.setter
     def created_on(self, created_on):
-        """Sets the created_on of this DcmCredential.
+        """Sets the created_on of this LDcmCredential.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_on: The created_on of this DcmCredential.  # noqa: E501
+        :param created_on: The created_on of this LDcmCredential.  # noqa: E501
         :type: datetime
         """
 
@@ -232,22 +232,22 @@ class LDcmCredential(object):
 
     @property
     def last_changed_on(self):
-        """Gets the last_changed_on of this DcmCredential.  # noqa: E501
+        """Gets the last_changed_on of this LDcmCredential.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The last_changed_on of this DcmCredential.  # noqa: E501
+        :return: The last_changed_on of this LDcmCredential.  # noqa: E501
         :rtype: datetime
         """
         return self._last_changed_on
 
     @last_changed_on.setter
     def last_changed_on(self, last_changed_on):
-        """Sets the last_changed_on of this DcmCredential.
+        """Sets the last_changed_on of this LDcmCredential.
 
         The time this object was last updated.  # noqa: E501
 
-        :param last_changed_on: The last_changed_on of this DcmCredential.  # noqa: E501
+        :param last_changed_on: The last_changed_on of this LDcmCredential.  # noqa: E501
         :type: datetime
         """
 
@@ -255,22 +255,22 @@ class LDcmCredential(object):
 
     @property
     def deleted_on(self):
-        """Gets the deleted_on of this DcmCredential.  # noqa: E501
+        """Gets the deleted_on of this LDcmCredential.  # noqa: E501
 
         The time this object was deleted.  # noqa: E501
 
-        :return: The deleted_on of this DcmCredential.  # noqa: E501
+        :return: The deleted_on of this LDcmCredential.  # noqa: E501
         :rtype: datetime
         """
         return self._deleted_on
 
     @deleted_on.setter
     def deleted_on(self, deleted_on):
-        """Sets the deleted_on of this DcmCredential.
+        """Sets the deleted_on of this LDcmCredential.
 
         The time this object was deleted.  # noqa: E501
 
-        :param deleted_on: The deleted_on of this DcmCredential.  # noqa: E501
+        :param deleted_on: The deleted_on of this LDcmCredential.  # noqa: E501
         :type: datetime
         """
 
@@ -278,22 +278,22 @@ class LDcmCredential(object):
 
     @property
     def person_id(self):
-        """Gets the person_id of this DcmCredential.  # noqa: E501
+        """Gets the person_id of this LDcmCredential.  # noqa: E501
 
         Identifier of the user who created this object.  # noqa: E501
 
-        :return: The person_id of this DcmCredential.  # noqa: E501
+        :return: The person_id of this LDcmCredential.  # noqa: E501
         :rtype: int
         """
         return self._person_id
 
     @person_id.setter
     def person_id(self, person_id):
-        """Sets the person_id of this DcmCredential.
+        """Sets the person_id of this LDcmCredential.
 
         Identifier of the user who created this object.  # noqa: E501
 
-        :param person_id: The person_id of this DcmCredential.  # noqa: E501
+        :param person_id: The person_id of this LDcmCredential.  # noqa: E501
         :type: int
         """
 
@@ -301,22 +301,22 @@ class LDcmCredential(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this DcmCredential.  # noqa: E501
+        """Gets the created_at of this LDcmCredential.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this DcmCredential.  # noqa: E501
+        :return: The created_at of this LDcmCredential.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this DcmCredential.
+        """Sets the created_at of this LDcmCredential.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this DcmCredential.  # noqa: E501
+        :param created_at: The created_at of this LDcmCredential.  # noqa: E501
         :type: datetime
         """
 
@@ -324,22 +324,22 @@ class LDcmCredential(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this DcmCredential.  # noqa: E501
+        """Gets the updated_at of this LDcmCredential.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this DcmCredential.  # noqa: E501
+        :return: The updated_at of this LDcmCredential.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this DcmCredential.
+        """Sets the updated_at of this LDcmCredential.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this DcmCredential.  # noqa: E501
+        :param updated_at: The updated_at of this LDcmCredential.  # noqa: E501
         :type: datetime
         """
 
@@ -366,7 +366,7 @@ class LDcmCredential(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DcmCredential, dict):
+        if issubclass(LDcmCredential, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -382,7 +382,7 @@ class LDcmCredential(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DcmCredential):
+        if not isinstance(other, LDcmCredential):
             return False
 
         return self.__dict__ == other.__dict__

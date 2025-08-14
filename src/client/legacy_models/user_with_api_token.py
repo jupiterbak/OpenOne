@@ -37,7 +37,7 @@ class LUserWithApiToken(object):
     }
 
     def __init__(self, user=None, api_token=None):  # noqa: E501
-        """UserWithApiToken - a model defined in Swagger"""  # noqa: E501
+        """LUserWithApiToken - a model defined in Swagger"""  # noqa: E501
         self._user = None
         self._api_token = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LUserWithApiToken(object):
 
     @property
     def user(self):
-        """Gets the user of this UserWithApiToken.  # noqa: E501
+        """Gets the user of this LUserWithApiToken.  # noqa: E501
 
 
-        :return: The user of this UserWithApiToken.  # noqa: E501
+        :return: The user of this LUserWithApiToken.  # noqa: E501
         :rtype: str
         """
         return self._user
 
     @user.setter
     def user(self, user):
-        """Sets the user of this UserWithApiToken.
+        """Sets the user of this LUserWithApiToken.
 
 
-        :param user: The user of this UserWithApiToken.  # noqa: E501
+        :param user: The user of this LUserWithApiToken.  # noqa: E501
         :type: str
         """
         if user is None:
@@ -69,20 +69,20 @@ class LUserWithApiToken(object):
 
     @property
     def api_token(self):
-        """Gets the api_token of this UserWithApiToken.  # noqa: E501
+        """Gets the api_token of this LUserWithApiToken.  # noqa: E501
 
 
-        :return: The api_token of this UserWithApiToken.  # noqa: E501
+        :return: The api_token of this LUserWithApiToken.  # noqa: E501
         :rtype: str
         """
         return self._api_token
 
     @api_token.setter
     def api_token(self, api_token):
-        """Sets the api_token of this UserWithApiToken.
+        """Sets the api_token of this LUserWithApiToken.
 
 
-        :param api_token: The api_token of this UserWithApiToken.  # noqa: E501
+        :param api_token: The api_token of this LUserWithApiToken.  # noqa: E501
         :type: str
         """
         if api_token is None:
@@ -111,7 +111,7 @@ class LUserWithApiToken(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(UserWithApiToken, dict):
+        if issubclass(LUserWithApiToken, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LUserWithApiToken(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UserWithApiToken):
+        if not isinstance(other, LUserWithApiToken):
             return False
 
         return self.__dict__ == other.__dict__

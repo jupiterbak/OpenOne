@@ -33,7 +33,7 @@ class LAnyOfpublicationId(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfpublicationId - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfpublicationId - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfpublicationId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfpublicationId, dict):
+        if issubclass(LAnyOfpublicationId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfpublicationId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfpublicationId):
+        if not isinstance(other, LAnyOfpublicationId):
             return False
 
         return self.__dict__ == other.__dict__

@@ -41,7 +41,7 @@ class LRecordOffsetPagination(object):
     }
 
     def __init__(self, pagination_type=None, pageoffsetparam=None, pagesizeparam=None, pagesize=None):  # noqa: E501
-        """RecordOffsetPagination - a model defined in Swagger"""  # noqa: E501
+        """LRecordOffsetPagination - a model defined in Swagger"""  # noqa: E501
         self._pagination_type = None
         self._pageoffsetparam = None
         self._pagesizeparam = None
@@ -54,22 +54,22 @@ class LRecordOffsetPagination(object):
 
     @property
     def pagination_type(self):
-        """Gets the pagination_type of this RecordOffsetPagination.  # noqa: E501
+        """Gets the pagination_type of this LRecordOffsetPagination.  # noqa: E501
 
         recordOffset pagination type.  # noqa: E501
 
-        :return: The pagination_type of this RecordOffsetPagination.  # noqa: E501
+        :return: The pagination_type of this LRecordOffsetPagination.  # noqa: E501
         :rtype: str
         """
         return self._pagination_type
 
     @pagination_type.setter
     def pagination_type(self, pagination_type):
-        """Sets the pagination_type of this RecordOffsetPagination.
+        """Sets the pagination_type of this LRecordOffsetPagination.
 
         recordOffset pagination type.  # noqa: E501
 
-        :param pagination_type: The pagination_type of this RecordOffsetPagination.  # noqa: E501
+        :param pagination_type: The pagination_type of this LRecordOffsetPagination.  # noqa: E501
         :type: str
         """
         if pagination_type is None:
@@ -79,22 +79,22 @@ class LRecordOffsetPagination(object):
 
     @property
     def pageoffsetparam(self):
-        """Gets the pageoffsetparam of this RecordOffsetPagination.  # noqa: E501
+        """Gets the pageoffsetparam of this LRecordOffsetPagination.  # noqa: E501
 
         Page offset param.  # noqa: E501
 
-        :return: The pageoffsetparam of this RecordOffsetPagination.  # noqa: E501
+        :return: The pageoffsetparam of this LRecordOffsetPagination.  # noqa: E501
         :rtype: str
         """
         return self._pageoffsetparam
 
     @pageoffsetparam.setter
     def pageoffsetparam(self, pageoffsetparam):
-        """Sets the pageoffsetparam of this RecordOffsetPagination.
+        """Sets the pageoffsetparam of this LRecordOffsetPagination.
 
         Page offset param.  # noqa: E501
 
-        :param pageoffsetparam: The pageoffsetparam of this RecordOffsetPagination.  # noqa: E501
+        :param pageoffsetparam: The pageoffsetparam of this LRecordOffsetPagination.  # noqa: E501
         :type: str
         """
         if pageoffsetparam is None:
@@ -104,22 +104,22 @@ class LRecordOffsetPagination(object):
 
     @property
     def pagesizeparam(self):
-        """Gets the pagesizeparam of this RecordOffsetPagination.  # noqa: E501
+        """Gets the pagesizeparam of this LRecordOffsetPagination.  # noqa: E501
 
         Page size param.  # noqa: E501
 
-        :return: The pagesizeparam of this RecordOffsetPagination.  # noqa: E501
+        :return: The pagesizeparam of this LRecordOffsetPagination.  # noqa: E501
         :rtype: str
         """
         return self._pagesizeparam
 
     @pagesizeparam.setter
     def pagesizeparam(self, pagesizeparam):
-        """Sets the pagesizeparam of this RecordOffsetPagination.
+        """Sets the pagesizeparam of this LRecordOffsetPagination.
 
         Page size param.  # noqa: E501
 
-        :param pagesizeparam: The pagesizeparam of this RecordOffsetPagination.  # noqa: E501
+        :param pagesizeparam: The pagesizeparam of this LRecordOffsetPagination.  # noqa: E501
         :type: str
         """
         if pagesizeparam is None:
@@ -129,22 +129,22 @@ class LRecordOffsetPagination(object):
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this RecordOffsetPagination.  # noqa: E501
+        """Gets the pagesize of this LRecordOffsetPagination.  # noqa: E501
 
         Page size.  # noqa: E501
 
-        :return: The pagesize of this RecordOffsetPagination.  # noqa: E501
+        :return: The pagesize of this LRecordOffsetPagination.  # noqa: E501
         :rtype: int
         """
         return self._pagesize
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this RecordOffsetPagination.
+        """Sets the pagesize of this LRecordOffsetPagination.
 
         Page size.  # noqa: E501
 
-        :param pagesize: The pagesize of this RecordOffsetPagination.  # noqa: E501
+        :param pagesize: The pagesize of this LRecordOffsetPagination.  # noqa: E501
         :type: int
         """
         if pagesize is None:
@@ -173,7 +173,7 @@ class LRecordOffsetPagination(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RecordOffsetPagination, dict):
+        if issubclass(LRecordOffsetPagination, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -189,7 +189,7 @@ class LRecordOffsetPagination(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RecordOffsetPagination):
+        if not isinstance(other, LRecordOffsetPagination):
             return False
 
         return self.__dict__ == other.__dict__

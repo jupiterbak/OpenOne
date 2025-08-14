@@ -34,7 +34,7 @@ class LPersonUpdateRequest(object):
         'name': 'str',
         'output_home_dir': 'str',
         'upload_dir': 'str',
-        'authorization_roles': 'list[AuthorizationRole]'
+        'authorization_roles': 'list[LAuthorizationRole]'
     }
 
     attribute_map = {
@@ -49,7 +49,7 @@ class LPersonUpdateRequest(object):
     }
 
     def __init__(self, email=None, is_disabled=None, state=None, validate_export_compliance=None, name=None, output_home_dir=None, upload_dir=None, authorization_roles=None):  # noqa: E501
-        """PersonUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LPersonUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._email = None
         self._is_disabled = None
         self._state = None
@@ -78,20 +78,20 @@ class LPersonUpdateRequest(object):
 
     @property
     def email(self):
-        """Gets the email of this PersonUpdateRequest.  # noqa: E501
+        """Gets the email of this LPersonUpdateRequest.  # noqa: E501
 
 
-        :return: The email of this PersonUpdateRequest.  # noqa: E501
+        :return: The email of this LPersonUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._email
 
     @email.setter
     def email(self, email):
-        """Sets the email of this PersonUpdateRequest.
+        """Sets the email of this LPersonUpdateRequest.
 
 
-        :param email: The email of this PersonUpdateRequest.  # noqa: E501
+        :param email: The email of this LPersonUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -99,22 +99,22 @@ class LPersonUpdateRequest(object):
 
     @property
     def is_disabled(self):
-        """Gets the is_disabled of this PersonUpdateRequest.  # noqa: E501
+        """Gets the is_disabled of this LPersonUpdateRequest.  # noqa: E501
 
         If true, the account is disabled. This property can only be changed by an admin account.  # noqa: E501
 
-        :return: The is_disabled of this PersonUpdateRequest.  # noqa: E501
+        :return: The is_disabled of this LPersonUpdateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._is_disabled
 
     @is_disabled.setter
     def is_disabled(self, is_disabled):
-        """Sets the is_disabled of this PersonUpdateRequest.
+        """Sets the is_disabled of this LPersonUpdateRequest.
 
         If true, the account is disabled. This property can only be changed by an admin account.  # noqa: E501
 
-        :param is_disabled: The is_disabled of this PersonUpdateRequest.  # noqa: E501
+        :param is_disabled: The is_disabled of this LPersonUpdateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -122,22 +122,22 @@ class LPersonUpdateRequest(object):
 
     @property
     def state(self):
-        """Gets the state of this PersonUpdateRequest.  # noqa: E501
+        """Gets the state of this LPersonUpdateRequest.  # noqa: E501
 
         Current state of the user account. This property can only be changed by an admin account. * `active` - User is active and usable in the workspace * `hidden` - User cannot access the workspace. User's data remains.  # noqa: E501
 
-        :return: The state of this PersonUpdateRequest.  # noqa: E501
+        :return: The state of this LPersonUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._state
 
     @state.setter
     def state(self, state):
-        """Sets the state of this PersonUpdateRequest.
+        """Sets the state of this LPersonUpdateRequest.
 
         Current state of the user account. This property can only be changed by an admin account. * `active` - User is active and usable in the workspace * `hidden` - User cannot access the workspace. User's data remains.  # noqa: E501
 
-        :param state: The state of this PersonUpdateRequest.  # noqa: E501
+        :param state: The state of this LPersonUpdateRequest.  # noqa: E501
         :type: str
         """
         allowed_values = ["active", "hidden"]  # noqa: E501
@@ -151,22 +151,22 @@ class LPersonUpdateRequest(object):
 
     @property
     def validate_export_compliance(self):
-        """Gets the validate_export_compliance of this PersonUpdateRequest.  # noqa: E501
+        """Gets the validate_export_compliance of this LPersonUpdateRequest.  # noqa: E501
 
         When true, the user is subject to an export compliance check when they register.  # noqa: E501
 
-        :return: The validate_export_compliance of this PersonUpdateRequest.  # noqa: E501
+        :return: The validate_export_compliance of this LPersonUpdateRequest.  # noqa: E501
         :rtype: bool
         """
         return self._validate_export_compliance
 
     @validate_export_compliance.setter
     def validate_export_compliance(self, validate_export_compliance):
-        """Sets the validate_export_compliance of this PersonUpdateRequest.
+        """Sets the validate_export_compliance of this LPersonUpdateRequest.
 
         When true, the user is subject to an export compliance check when they register.  # noqa: E501
 
-        :param validate_export_compliance: The validate_export_compliance of this PersonUpdateRequest.  # noqa: E501
+        :param validate_export_compliance: The validate_export_compliance of this LPersonUpdateRequest.  # noqa: E501
         :type: bool
         """
 
@@ -174,22 +174,22 @@ class LPersonUpdateRequest(object):
 
     @property
     def name(self):
-        """Gets the name of this PersonUpdateRequest.  # noqa: E501
+        """Gets the name of this LPersonUpdateRequest.  # noqa: E501
 
         name of the user  # noqa: E501
 
-        :return: The name of this PersonUpdateRequest.  # noqa: E501
+        :return: The name of this LPersonUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PersonUpdateRequest.
+        """Sets the name of this LPersonUpdateRequest.
 
         name of the user  # noqa: E501
 
-        :param name: The name of this PersonUpdateRequest.  # noqa: E501
+        :param name: The name of this LPersonUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -197,22 +197,22 @@ class LPersonUpdateRequest(object):
 
     @property
     def output_home_dir(self):
-        """Gets the output_home_dir of this PersonUpdateRequest.  # noqa: E501
+        """Gets the output_home_dir of this LPersonUpdateRequest.  # noqa: E501
 
         Home directory where the user's generated results are written  # noqa: E501
 
-        :return: The output_home_dir of this PersonUpdateRequest.  # noqa: E501
+        :return: The output_home_dir of this LPersonUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._output_home_dir
 
     @output_home_dir.setter
     def output_home_dir(self, output_home_dir):
-        """Sets the output_home_dir of this PersonUpdateRequest.
+        """Sets the output_home_dir of this LPersonUpdateRequest.
 
         Home directory where the user's generated results are written  # noqa: E501
 
-        :param output_home_dir: The output_home_dir of this PersonUpdateRequest.  # noqa: E501
+        :param output_home_dir: The output_home_dir of this LPersonUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -220,22 +220,22 @@ class LPersonUpdateRequest(object):
 
     @property
     def upload_dir(self):
-        """Gets the upload_dir of this PersonUpdateRequest.  # noqa: E501
+        """Gets the upload_dir of this LPersonUpdateRequest.  # noqa: E501
 
         Path on backend datastore where files uploaded from the user's desktop are stored for use as imported datasets.  # noqa: E501
 
-        :return: The upload_dir of this PersonUpdateRequest.  # noqa: E501
+        :return: The upload_dir of this LPersonUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._upload_dir
 
     @upload_dir.setter
     def upload_dir(self, upload_dir):
-        """Sets the upload_dir of this PersonUpdateRequest.
+        """Sets the upload_dir of this LPersonUpdateRequest.
 
         Path on backend datastore where files uploaded from the user's desktop are stored for use as imported datasets.  # noqa: E501
 
-        :param upload_dir: The upload_dir of this PersonUpdateRequest.  # noqa: E501
+        :param upload_dir: The upload_dir of this LPersonUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -243,23 +243,23 @@ class LPersonUpdateRequest(object):
 
     @property
     def authorization_roles(self):
-        """Gets the authorization_roles of this PersonUpdateRequest.  # noqa: E501
+        """Gets the authorization_roles of this LPersonUpdateRequest.  # noqa: E501
 
         List of the roles that this subject has been assigned  # noqa: E501
 
-        :return: The authorization_roles of this PersonUpdateRequest.  # noqa: E501
-        :rtype: list[AuthorizationRole]
+        :return: The authorization_roles of this LPersonUpdateRequest.  # noqa: E501
+        :rtype: list[LAuthorizationRole]
         """
         return self._authorization_roles
 
     @authorization_roles.setter
     def authorization_roles(self, authorization_roles):
-        """Sets the authorization_roles of this PersonUpdateRequest.
+        """Sets the authorization_roles of this LPersonUpdateRequest.
 
         List of the roles that this subject has been assigned  # noqa: E501
 
-        :param authorization_roles: The authorization_roles of this PersonUpdateRequest.  # noqa: E501
-        :type: list[AuthorizationRole]
+        :param authorization_roles: The authorization_roles of this LPersonUpdateRequest.  # noqa: E501
+        :type: list[LAuthorizationRole]
         """
 
         self._authorization_roles = authorization_roles
@@ -285,7 +285,7 @@ class LPersonUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PersonUpdateRequest, dict):
+        if issubclass(LPersonUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -301,7 +301,7 @@ class LPersonUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PersonUpdateRequest):
+        if not isinstance(other, LPersonUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

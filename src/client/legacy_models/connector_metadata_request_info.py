@@ -37,7 +37,7 @@ class LConnectorMetadataRequestInfo(object):
     }
 
     def __init__(self, runtime_metadata=None, publish_metadata=None):  # noqa: E501
-        """ConnectorMetadataRequestInfo - a model defined in Swagger"""  # noqa: E501
+        """LConnectorMetadataRequestInfo - a model defined in Swagger"""  # noqa: E501
         self._runtime_metadata = None
         self._publish_metadata = None
         self.discriminator = None
@@ -48,20 +48,20 @@ class LConnectorMetadataRequestInfo(object):
 
     @property
     def runtime_metadata(self):
-        """Gets the runtime_metadata of this ConnectorMetadataRequestInfo.  # noqa: E501
+        """Gets the runtime_metadata of this LConnectorMetadataRequestInfo.  # noqa: E501
 
 
-        :return: The runtime_metadata of this ConnectorMetadataRequestInfo.  # noqa: E501
+        :return: The runtime_metadata of this LConnectorMetadataRequestInfo.  # noqa: E501
         :rtype: object
         """
         return self._runtime_metadata
 
     @runtime_metadata.setter
     def runtime_metadata(self, runtime_metadata):
-        """Sets the runtime_metadata of this ConnectorMetadataRequestInfo.
+        """Sets the runtime_metadata of this LConnectorMetadataRequestInfo.
 
 
-        :param runtime_metadata: The runtime_metadata of this ConnectorMetadataRequestInfo.  # noqa: E501
+        :param runtime_metadata: The runtime_metadata of this LConnectorMetadataRequestInfo.  # noqa: E501
         :type: object
         """
 
@@ -69,20 +69,20 @@ class LConnectorMetadataRequestInfo(object):
 
     @property
     def publish_metadata(self):
-        """Gets the publish_metadata of this ConnectorMetadataRequestInfo.  # noqa: E501
+        """Gets the publish_metadata of this LConnectorMetadataRequestInfo.  # noqa: E501
 
 
-        :return: The publish_metadata of this ConnectorMetadataRequestInfo.  # noqa: E501
+        :return: The publish_metadata of this LConnectorMetadataRequestInfo.  # noqa: E501
         :rtype: object
         """
         return self._publish_metadata
 
     @publish_metadata.setter
     def publish_metadata(self, publish_metadata):
-        """Sets the publish_metadata of this ConnectorMetadataRequestInfo.
+        """Sets the publish_metadata of this LConnectorMetadataRequestInfo.
 
 
-        :param publish_metadata: The publish_metadata of this ConnectorMetadataRequestInfo.  # noqa: E501
+        :param publish_metadata: The publish_metadata of this LConnectorMetadataRequestInfo.  # noqa: E501
         :type: object
         """
 
@@ -109,7 +109,7 @@ class LConnectorMetadataRequestInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConnectorMetadataRequestInfo, dict):
+        if issubclass(LConnectorMetadataRequestInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -125,7 +125,7 @@ class LConnectorMetadataRequestInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConnectorMetadataRequestInfo):
+        if not isinstance(other, LConnectorMetadataRequestInfo):
             return False
 
         return self.__dict__ == other.__dict__

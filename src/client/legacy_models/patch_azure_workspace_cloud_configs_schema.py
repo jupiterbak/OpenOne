@@ -41,7 +41,7 @@ class LPatchAzureWorkspaceCloudConfigsSchema(object):
     }
 
     def __init__(self, settings=None, credential_provider=None, default_host=None, default_user_info=None):  # noqa: E501
-        """PatchAzureWorkspaceCloudConfigsSchema - a model defined in Swagger"""  # noqa: E501
+        """LPatchAzureWorkspaceCloudConfigsSchema - a model defined in Swagger"""  # noqa: E501
         self._settings = None
         self._credential_provider = None
         self._default_host = None
@@ -58,20 +58,20 @@ class LPatchAzureWorkspaceCloudConfigsSchema(object):
 
     @property
     def settings(self):
-        """Gets the settings of this PatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
+        """Gets the settings of this LPatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
 
 
-        :return: The settings of this PatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
+        :return: The settings of this LPatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
         :rtype: object
         """
         return self._settings
 
     @settings.setter
     def settings(self, settings):
-        """Sets the settings of this PatchAzureWorkspaceCloudConfigsSchema.
+        """Sets the settings of this LPatchAzureWorkspaceCloudConfigsSchema.
 
 
-        :param settings: The settings of this PatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
+        :param settings: The settings of this LPatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
         :type: object
         """
 
@@ -79,22 +79,22 @@ class LPatchAzureWorkspaceCloudConfigsSchema(object):
 
     @property
     def credential_provider(self):
-        """Gets the credential_provider of this PatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
+        """Gets the credential_provider of this LPatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
 
         Authentication types like SSO passthrough, Shared Access Signature etc. * `ssoPassthrough` - Authentication through sso.  # noqa: E501
 
-        :return: The credential_provider of this PatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
+        :return: The credential_provider of this LPatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
         :rtype: str
         """
         return self._credential_provider
 
     @credential_provider.setter
     def credential_provider(self, credential_provider):
-        """Sets the credential_provider of this PatchAzureWorkspaceCloudConfigsSchema.
+        """Sets the credential_provider of this LPatchAzureWorkspaceCloudConfigsSchema.
 
         Authentication types like SSO passthrough, Shared Access Signature etc. * `ssoPassthrough` - Authentication through sso.  # noqa: E501
 
-        :param credential_provider: The credential_provider of this PatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
+        :param credential_provider: The credential_provider of this LPatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
         :type: str
         """
         allowed_values = ["ssoPassthrough"]  # noqa: E501
@@ -108,22 +108,22 @@ class LPatchAzureWorkspaceCloudConfigsSchema(object):
 
     @property
     def default_host(self):
-        """Gets the default_host of this PatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
+        """Gets the default_host of this LPatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
 
         A string that specifies the default ADLS storage account that will be used for uploads, outputs and staging files.  # noqa: E501
 
-        :return: The default_host of this PatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
+        :return: The default_host of this LPatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
         :rtype: str
         """
         return self._default_host
 
     @default_host.setter
     def default_host(self, default_host):
-        """Sets the default_host of this PatchAzureWorkspaceCloudConfigsSchema.
+        """Sets the default_host of this LPatchAzureWorkspaceCloudConfigsSchema.
 
         A string that specifies the default ADLS storage account that will be used for uploads, outputs and staging files.  # noqa: E501
 
-        :param default_host: The default_host of this PatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
+        :param default_host: The default_host of this LPatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
         :type: str
         """
 
@@ -131,22 +131,22 @@ class LPatchAzureWorkspaceCloudConfigsSchema(object):
 
     @property
     def default_user_info(self):
-        """Gets the default_user_info of this PatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
+        """Gets the default_user_info of this LPatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
 
         A string that specifies the default ADLS filesystem or container that will be used for uploads, outputs and staging files.  # noqa: E501
 
-        :return: The default_user_info of this PatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
+        :return: The default_user_info of this LPatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
         :rtype: str
         """
         return self._default_user_info
 
     @default_user_info.setter
     def default_user_info(self, default_user_info):
-        """Sets the default_user_info of this PatchAzureWorkspaceCloudConfigsSchema.
+        """Sets the default_user_info of this LPatchAzureWorkspaceCloudConfigsSchema.
 
         A string that specifies the default ADLS filesystem or container that will be used for uploads, outputs and staging files.  # noqa: E501
 
-        :param default_user_info: The default_user_info of this PatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
+        :param default_user_info: The default_user_info of this LPatchAzureWorkspaceCloudConfigsSchema.  # noqa: E501
         :type: str
         """
 
@@ -173,7 +173,7 @@ class LPatchAzureWorkspaceCloudConfigsSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PatchAzureWorkspaceCloudConfigsSchema, dict):
+        if issubclass(LPatchAzureWorkspaceCloudConfigsSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -189,7 +189,7 @@ class LPatchAzureWorkspaceCloudConfigsSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PatchAzureWorkspaceCloudConfigsSchema):
+        if not isinstance(other, LPatchAzureWorkspaceCloudConfigsSchema):
             return False
 
         return self.__dict__ == other.__dict__

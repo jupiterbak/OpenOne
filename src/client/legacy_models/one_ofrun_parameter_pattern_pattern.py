@@ -33,7 +33,7 @@ class LOneOfrunParameterPatternPattern(object):
     }
 
     def __init__(self):  # noqa: E501
-        """OneOfrunParameterPatternPattern - a model defined in Swagger"""  # noqa: E501
+        """LOneOfrunParameterPatternPattern - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LOneOfrunParameterPatternPattern(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OneOfrunParameterPatternPattern, dict):
+        if issubclass(LOneOfrunParameterPatternPattern, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LOneOfrunParameterPatternPattern(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OneOfrunParameterPatternPattern):
+        if not isinstance(other, LOneOfrunParameterPatternPattern):
             return False
 
         return self.__dict__ == other.__dict__

@@ -33,7 +33,7 @@ class LAnyOfprofileJobRequestEmrConfigId(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfprofileJobRequestEmrConfigId - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfprofileJobRequestEmrConfigId - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfprofileJobRequestEmrConfigId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfprofileJobRequestEmrConfigId, dict):
+        if issubclass(LAnyOfprofileJobRequestEmrConfigId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfprofileJobRequestEmrConfigId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfprofileJobRequestEmrConfigId):
+        if not isinstance(other, LAnyOfprofileJobRequestEmrConfigId):
             return False
 
         return self.__dict__ == other.__dict__

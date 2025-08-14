@@ -32,12 +32,12 @@ class LConfigResponseBranch(object):
     }
 
     attribute_map = {
-        'name': 'Name',
-        'hash': 'Hash'
+        'name': 'LName',
+        'hash': 'LHash'
     }
 
     def __init__(self, name=None, hash=None):  # noqa: E501
-        """ConfigResponseBranch - a model defined in Swagger"""  # noqa: E501
+        """LConfigResponseBranch - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._hash = None
         self.discriminator = None
@@ -48,20 +48,20 @@ class LConfigResponseBranch(object):
 
     @property
     def name(self):
-        """Gets the name of this ConfigResponseBranch.  # noqa: E501
+        """Gets the name of this LConfigResponseBranch.  # noqa: E501
 
 
-        :return: The name of this ConfigResponseBranch.  # noqa: E501
+        :return: The name of this LConfigResponseBranch.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigResponseBranch.
+        """Sets the name of this LConfigResponseBranch.
 
 
-        :param name: The name of this ConfigResponseBranch.  # noqa: E501
+        :param name: The name of this LConfigResponseBranch.  # noqa: E501
         :type: str
         """
 
@@ -69,20 +69,20 @@ class LConfigResponseBranch(object):
 
     @property
     def hash(self):
-        """Gets the hash of this ConfigResponseBranch.  # noqa: E501
+        """Gets the hash of this LConfigResponseBranch.  # noqa: E501
 
 
-        :return: The hash of this ConfigResponseBranch.  # noqa: E501
+        :return: The hash of this LConfigResponseBranch.  # noqa: E501
         :rtype: str
         """
         return self._hash
 
     @hash.setter
     def hash(self, hash):
-        """Sets the hash of this ConfigResponseBranch.
+        """Sets the hash of this LConfigResponseBranch.
 
 
-        :param hash: The hash of this ConfigResponseBranch.  # noqa: E501
+        :param hash: The hash of this LConfigResponseBranch.  # noqa: E501
         :type: str
         """
 
@@ -109,7 +109,7 @@ class LConfigResponseBranch(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConfigResponseBranch, dict):
+        if issubclass(LConfigResponseBranch, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -125,7 +125,7 @@ class LConfigResponseBranch(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConfigResponseBranch):
+        if not isinstance(other, LConfigResponseBranch):
             return False
 
         return self.__dict__ == other.__dict__

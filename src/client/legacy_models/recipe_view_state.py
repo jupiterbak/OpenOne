@@ -37,7 +37,7 @@ class LRecipeViewState(object):
     }
 
     def __init__(self, key=None, value=None):  # noqa: E501
-        """RecipeViewState - a model defined in Swagger"""  # noqa: E501
+        """LRecipeViewState - a model defined in Swagger"""  # noqa: E501
         self._key = None
         self._value = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LRecipeViewState(object):
 
     @property
     def key(self):
-        """Gets the key of this RecipeViewState.  # noqa: E501
+        """Gets the key of this LRecipeViewState.  # noqa: E501
 
 
-        :return: The key of this RecipeViewState.  # noqa: E501
+        :return: The key of this LRecipeViewState.  # noqa: E501
         :rtype: str
         """
         return self._key
 
     @key.setter
     def key(self, key):
-        """Sets the key of this RecipeViewState.
+        """Sets the key of this LRecipeViewState.
 
 
-        :param key: The key of this RecipeViewState.  # noqa: E501
+        :param key: The key of this LRecipeViewState.  # noqa: E501
         :type: str
         """
         if key is None:
@@ -69,20 +69,20 @@ class LRecipeViewState(object):
 
     @property
     def value(self):
-        """Gets the value of this RecipeViewState.  # noqa: E501
+        """Gets the value of this LRecipeViewState.  # noqa: E501
 
 
-        :return: The value of this RecipeViewState.  # noqa: E501
+        :return: The value of this LRecipeViewState.  # noqa: E501
         :rtype: str
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RecipeViewState.
+        """Sets the value of this LRecipeViewState.
 
 
-        :param value: The value of this RecipeViewState.  # noqa: E501
+        :param value: The value of this LRecipeViewState.  # noqa: E501
         :type: str
         """
         if value is None:
@@ -111,7 +111,7 @@ class LRecipeViewState(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RecipeViewState, dict):
+        if issubclass(LRecipeViewState, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LRecipeViewState(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RecipeViewState):
+        if not isinstance(other, LRecipeViewState):
             return False
 
         return self.__dict__ == other.__dict__

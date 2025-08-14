@@ -37,7 +37,7 @@ class LInviteUserPayload(object):
     }
 
     def __init__(self, email=None, skip_email_invitations=None):  # noqa: E501
-        """InviteUserPayload - a model defined in Swagger"""  # noqa: E501
+        """LInviteUserPayload - a model defined in Swagger"""  # noqa: E501
         self._email = None
         self._skip_email_invitations = None
         self.discriminator = None
@@ -47,22 +47,22 @@ class LInviteUserPayload(object):
 
     @property
     def email(self):
-        """Gets the email of this InviteUserPayload.  # noqa: E501
+        """Gets the email of this LInviteUserPayload.  # noqa: E501
 
         email of the user you want to invite  # noqa: E501
 
-        :return: The email of this InviteUserPayload.  # noqa: E501
+        :return: The email of this LInviteUserPayload.  # noqa: E501
         :rtype: str
         """
         return self._email
 
     @email.setter
     def email(self, email):
-        """Sets the email of this InviteUserPayload.
+        """Sets the email of this LInviteUserPayload.
 
         email of the user you want to invite  # noqa: E501
 
-        :param email: The email of this InviteUserPayload.  # noqa: E501
+        :param email: The email of this LInviteUserPayload.  # noqa: E501
         :type: str
         """
         if email is None:
@@ -72,20 +72,20 @@ class LInviteUserPayload(object):
 
     @property
     def skip_email_invitations(self):
-        """Gets the skip_email_invitations of this InviteUserPayload.  # noqa: E501
+        """Gets the skip_email_invitations of this LInviteUserPayload.  # noqa: E501
 
 
-        :return: The skip_email_invitations of this InviteUserPayload.  # noqa: E501
+        :return: The skip_email_invitations of this LInviteUserPayload.  # noqa: E501
         :rtype: list[str]
         """
         return self._skip_email_invitations
 
     @skip_email_invitations.setter
     def skip_email_invitations(self, skip_email_invitations):
-        """Sets the skip_email_invitations of this InviteUserPayload.
+        """Sets the skip_email_invitations of this LInviteUserPayload.
 
 
-        :param skip_email_invitations: The skip_email_invitations of this InviteUserPayload.  # noqa: E501
+        :param skip_email_invitations: The skip_email_invitations of this LInviteUserPayload.  # noqa: E501
         :type: list[str]
         """
 
@@ -112,7 +112,7 @@ class LInviteUserPayload(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(InviteUserPayload, dict):
+        if issubclass(LInviteUserPayload, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -128,7 +128,7 @@ class LInviteUserPayload(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, InviteUserPayload):
+        if not isinstance(other, LInviteUserPayload):
             return False
 
         return self.__dict__ == other.__dict__

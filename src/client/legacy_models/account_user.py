@@ -27,13 +27,13 @@ class LAccountUser(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'billing_account_id': 'AnyOfaccountUserBillingAccountId',
+        'billing_account_id': 'LAnyOfaccountUserBillingAccountId',
         'name': 'str',
         'sfdc_account_id': 'str',
         'workspaces': 'list[object]',
         'status': 'str',
         'roles': 'list[object]',
-        'maximal_capabilities': 'MaximalCapabilitiesInfo'
+        'maximal_capabilities': 'LMaximalCapabilitiesInfo'
     }
 
     attribute_map = {
@@ -47,7 +47,7 @@ class LAccountUser(object):
     }
 
     def __init__(self, billing_account_id=None, name=None, sfdc_account_id=None, workspaces=None, status=None, roles=None, maximal_capabilities=None):  # noqa: E501
-        """AccountUser - a model defined in Swagger"""  # noqa: E501
+        """LAccountUser - a model defined in Swagger"""  # noqa: E501
         self._billing_account_id = None
         self._name = None
         self._sfdc_account_id = None
@@ -67,21 +67,21 @@ class LAccountUser(object):
 
     @property
     def billing_account_id(self):
-        """Gets the billing_account_id of this AccountUser.  # noqa: E501
+        """Gets the billing_account_id of this LAccountUser.  # noqa: E501
 
 
-        :return: The billing_account_id of this AccountUser.  # noqa: E501
-        :rtype: AnyOfaccountUserBillingAccountId
+        :return: The billing_account_id of this LAccountUser.  # noqa: E501
+        :rtype: LAnyOfaccountUserBillingAccountId
         """
         return self._billing_account_id
 
     @billing_account_id.setter
     def billing_account_id(self, billing_account_id):
-        """Sets the billing_account_id of this AccountUser.
+        """Sets the billing_account_id of this LAccountUser.
 
 
-        :param billing_account_id: The billing_account_id of this AccountUser.  # noqa: E501
-        :type: AnyOfaccountUserBillingAccountId
+        :param billing_account_id: The billing_account_id of this LAccountUser.  # noqa: E501
+        :type: LAnyOfaccountUserBillingAccountId
         """
         if billing_account_id is None:
             raise ValueError("Invalid value for `billing_account_id`, must not be `None`")  # noqa: E501
@@ -90,20 +90,20 @@ class LAccountUser(object):
 
     @property
     def name(self):
-        """Gets the name of this AccountUser.  # noqa: E501
+        """Gets the name of this LAccountUser.  # noqa: E501
 
 
-        :return: The name of this AccountUser.  # noqa: E501
+        :return: The name of this LAccountUser.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AccountUser.
+        """Sets the name of this LAccountUser.
 
 
-        :param name: The name of this AccountUser.  # noqa: E501
+        :param name: The name of this LAccountUser.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -113,20 +113,20 @@ class LAccountUser(object):
 
     @property
     def sfdc_account_id(self):
-        """Gets the sfdc_account_id of this AccountUser.  # noqa: E501
+        """Gets the sfdc_account_id of this LAccountUser.  # noqa: E501
 
 
-        :return: The sfdc_account_id of this AccountUser.  # noqa: E501
+        :return: The sfdc_account_id of this LAccountUser.  # noqa: E501
         :rtype: str
         """
         return self._sfdc_account_id
 
     @sfdc_account_id.setter
     def sfdc_account_id(self, sfdc_account_id):
-        """Sets the sfdc_account_id of this AccountUser.
+        """Sets the sfdc_account_id of this LAccountUser.
 
 
-        :param sfdc_account_id: The sfdc_account_id of this AccountUser.  # noqa: E501
+        :param sfdc_account_id: The sfdc_account_id of this LAccountUser.  # noqa: E501
         :type: str
         """
         if sfdc_account_id is None:
@@ -136,20 +136,20 @@ class LAccountUser(object):
 
     @property
     def workspaces(self):
-        """Gets the workspaces of this AccountUser.  # noqa: E501
+        """Gets the workspaces of this LAccountUser.  # noqa: E501
 
 
-        :return: The workspaces of this AccountUser.  # noqa: E501
+        :return: The workspaces of this LAccountUser.  # noqa: E501
         :rtype: list[object]
         """
         return self._workspaces
 
     @workspaces.setter
     def workspaces(self, workspaces):
-        """Sets the workspaces of this AccountUser.
+        """Sets the workspaces of this LAccountUser.
 
 
-        :param workspaces: The workspaces of this AccountUser.  # noqa: E501
+        :param workspaces: The workspaces of this LAccountUser.  # noqa: E501
         :type: list[object]
         """
         if workspaces is None:
@@ -159,20 +159,20 @@ class LAccountUser(object):
 
     @property
     def status(self):
-        """Gets the status of this AccountUser.  # noqa: E501
+        """Gets the status of this LAccountUser.  # noqa: E501
 
 
-        :return: The status of this AccountUser.  # noqa: E501
+        :return: The status of this LAccountUser.  # noqa: E501
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AccountUser.
+        """Sets the status of this LAccountUser.
 
 
-        :param status: The status of this AccountUser.  # noqa: E501
+        :param status: The status of this LAccountUser.  # noqa: E501
         :type: str
         """
         if status is None:
@@ -188,20 +188,20 @@ class LAccountUser(object):
 
     @property
     def roles(self):
-        """Gets the roles of this AccountUser.  # noqa: E501
+        """Gets the roles of this LAccountUser.  # noqa: E501
 
 
-        :return: The roles of this AccountUser.  # noqa: E501
+        :return: The roles of this LAccountUser.  # noqa: E501
         :rtype: list[object]
         """
         return self._roles
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this AccountUser.
+        """Sets the roles of this LAccountUser.
 
 
-        :param roles: The roles of this AccountUser.  # noqa: E501
+        :param roles: The roles of this LAccountUser.  # noqa: E501
         :type: list[object]
         """
         if roles is None:
@@ -211,21 +211,21 @@ class LAccountUser(object):
 
     @property
     def maximal_capabilities(self):
-        """Gets the maximal_capabilities of this AccountUser.  # noqa: E501
+        """Gets the maximal_capabilities of this LAccountUser.  # noqa: E501
 
 
-        :return: The maximal_capabilities of this AccountUser.  # noqa: E501
-        :rtype: MaximalCapabilitiesInfo
+        :return: The maximal_capabilities of this LAccountUser.  # noqa: E501
+        :rtype: LMaximalCapabilitiesInfo
         """
         return self._maximal_capabilities
 
     @maximal_capabilities.setter
     def maximal_capabilities(self, maximal_capabilities):
-        """Sets the maximal_capabilities of this AccountUser.
+        """Sets the maximal_capabilities of this LAccountUser.
 
 
-        :param maximal_capabilities: The maximal_capabilities of this AccountUser.  # noqa: E501
-        :type: MaximalCapabilitiesInfo
+        :param maximal_capabilities: The maximal_capabilities of this LAccountUser.  # noqa: E501
+        :type: LMaximalCapabilitiesInfo
         """
 
         self._maximal_capabilities = maximal_capabilities
@@ -251,7 +251,7 @@ class LAccountUser(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AccountUser, dict):
+        if issubclass(LAccountUser, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -267,7 +267,7 @@ class LAccountUser(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AccountUser):
+        if not isinstance(other, LAccountUser):
             return False
 
         return self.__dict__ == other.__dict__

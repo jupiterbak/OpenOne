@@ -39,7 +39,7 @@ class LProject(object):
     }
 
     def __init__(self, active=None, name=None, project_id=None):  # noqa: E501
-        """Project - a model defined in Swagger"""  # noqa: E501
+        """LProject - a model defined in Swagger"""  # noqa: E501
         self._active = None
         self._name = None
         self._project_id = None
@@ -50,20 +50,20 @@ class LProject(object):
 
     @property
     def active(self):
-        """Gets the active of this Project.  # noqa: E501
+        """Gets the active of this LProject.  # noqa: E501
 
 
-        :return: The active of this Project.  # noqa: E501
+        :return: The active of this LProject.  # noqa: E501
         :rtype: bool
         """
         return self._active
 
     @active.setter
     def active(self, active):
-        """Sets the active of this Project.
+        """Sets the active of this LProject.
 
 
-        :param active: The active of this Project.  # noqa: E501
+        :param active: The active of this LProject.  # noqa: E501
         :type: bool
         """
         if active is None:
@@ -73,20 +73,20 @@ class LProject(object):
 
     @property
     def name(self):
-        """Gets the name of this Project.  # noqa: E501
+        """Gets the name of this LProject.  # noqa: E501
 
 
-        :return: The name of this Project.  # noqa: E501
+        :return: The name of this LProject.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Project.
+        """Sets the name of this LProject.
 
 
-        :param name: The name of this Project.  # noqa: E501
+        :param name: The name of this LProject.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -96,20 +96,20 @@ class LProject(object):
 
     @property
     def project_id(self):
-        """Gets the project_id of this Project.  # noqa: E501
+        """Gets the project_id of this LProject.  # noqa: E501
 
 
-        :return: The project_id of this Project.  # noqa: E501
+        :return: The project_id of this LProject.  # noqa: E501
         :rtype: str
         """
         return self._project_id
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Project.
+        """Sets the project_id of this LProject.
 
 
-        :param project_id: The project_id of this Project.  # noqa: E501
+        :param project_id: The project_id of this LProject.  # noqa: E501
         :type: str
         """
         if project_id is None:
@@ -138,7 +138,7 @@ class LProject(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Project, dict):
+        if issubclass(LProject, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -154,7 +154,7 @@ class LProject(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Project):
+        if not isinstance(other, LProject):
             return False
 
         return self.__dict__ == other.__dict__

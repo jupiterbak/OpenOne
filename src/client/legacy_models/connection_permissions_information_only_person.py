@@ -39,7 +39,7 @@ class LConnectionPermissionsInformationOnlyPerson(object):
     }
 
     def __init__(self, name=None, email=None, id=None):  # noqa: E501
-        """ConnectionPermissionsInformationOnlyPerson - a model defined in Swagger"""  # noqa: E501
+        """LConnectionPermissionsInformationOnlyPerson - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._email = None
         self._id = None
@@ -51,20 +51,20 @@ class LConnectionPermissionsInformationOnlyPerson(object):
 
     @property
     def name(self):
-        """Gets the name of this ConnectionPermissionsInformationOnlyPerson.  # noqa: E501
+        """Gets the name of this LConnectionPermissionsInformationOnlyPerson.  # noqa: E501
 
 
-        :return: The name of this ConnectionPermissionsInformationOnlyPerson.  # noqa: E501
+        :return: The name of this LConnectionPermissionsInformationOnlyPerson.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConnectionPermissionsInformationOnlyPerson.
+        """Sets the name of this LConnectionPermissionsInformationOnlyPerson.
 
 
-        :param name: The name of this ConnectionPermissionsInformationOnlyPerson.  # noqa: E501
+        :param name: The name of this LConnectionPermissionsInformationOnlyPerson.  # noqa: E501
         :type: str
         """
 
@@ -72,20 +72,20 @@ class LConnectionPermissionsInformationOnlyPerson(object):
 
     @property
     def email(self):
-        """Gets the email of this ConnectionPermissionsInformationOnlyPerson.  # noqa: E501
+        """Gets the email of this LConnectionPermissionsInformationOnlyPerson.  # noqa: E501
 
 
-        :return: The email of this ConnectionPermissionsInformationOnlyPerson.  # noqa: E501
+        :return: The email of this LConnectionPermissionsInformationOnlyPerson.  # noqa: E501
         :rtype: str
         """
         return self._email
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ConnectionPermissionsInformationOnlyPerson.
+        """Sets the email of this LConnectionPermissionsInformationOnlyPerson.
 
 
-        :param email: The email of this ConnectionPermissionsInformationOnlyPerson.  # noqa: E501
+        :param email: The email of this LConnectionPermissionsInformationOnlyPerson.  # noqa: E501
         :type: str
         """
         if email is None:
@@ -95,20 +95,20 @@ class LConnectionPermissionsInformationOnlyPerson(object):
 
     @property
     def id(self):
-        """Gets the id of this ConnectionPermissionsInformationOnlyPerson.  # noqa: E501
+        """Gets the id of this LConnectionPermissionsInformationOnlyPerson.  # noqa: E501
 
 
-        :return: The id of this ConnectionPermissionsInformationOnlyPerson.  # noqa: E501
+        :return: The id of this LConnectionPermissionsInformationOnlyPerson.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConnectionPermissionsInformationOnlyPerson.
+        """Sets the id of this LConnectionPermissionsInformationOnlyPerson.
 
 
-        :param id: The id of this ConnectionPermissionsInformationOnlyPerson.  # noqa: E501
+        :param id: The id of this LConnectionPermissionsInformationOnlyPerson.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -137,7 +137,7 @@ class LConnectionPermissionsInformationOnlyPerson(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConnectionPermissionsInformationOnlyPerson, dict):
+        if issubclass(LConnectionPermissionsInformationOnlyPerson, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -153,7 +153,7 @@ class LConnectionPermissionsInformationOnlyPerson(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConnectionPermissionsInformationOnlyPerson):
+        if not isinstance(other, LConnectionPermissionsInformationOnlyPerson):
             return False
 
         return self.__dict__ == other.__dict__

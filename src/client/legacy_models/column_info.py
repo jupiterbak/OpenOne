@@ -35,27 +35,27 @@ class LColumnInfo(object):
     }
 
     def __init__(self, metadata=None):  # noqa: E501
-        """ColumnInfo - a model defined in Swagger"""  # noqa: E501
+        """LColumnInfo - a model defined in Swagger"""  # noqa: E501
         self._metadata = None
         self.discriminator = None
         self.metadata = metadata
 
     @property
     def metadata(self):
-        """Gets the metadata of this ColumnInfo.  # noqa: E501
+        """Gets the metadata of this LColumnInfo.  # noqa: E501
 
 
-        :return: The metadata of this ColumnInfo.  # noqa: E501
+        :return: The metadata of this LColumnInfo.  # noqa: E501
         :rtype: object
         """
         return self._metadata
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ColumnInfo.
+        """Sets the metadata of this LColumnInfo.
 
 
-        :param metadata: The metadata of this ColumnInfo.  # noqa: E501
+        :param metadata: The metadata of this LColumnInfo.  # noqa: E501
         :type: object
         """
         if metadata is None:
@@ -84,7 +84,7 @@ class LColumnInfo(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ColumnInfo, dict):
+        if issubclass(LColumnInfo, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LColumnInfo(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ColumnInfo):
+        if not isinstance(other, LColumnInfo):
             return False
 
         return self.__dict__ == other.__dict__

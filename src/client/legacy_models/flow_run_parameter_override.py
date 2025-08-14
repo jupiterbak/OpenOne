@@ -28,7 +28,7 @@ class LFlowRunParameterOverride(object):
     """
     swagger_types = {
         'override_key': 'str',
-        'value': 'OneOfflowRunParameterOverrideValue',
+        'value': 'LOneOfflowRunParameterOverrideValue',
         'flow': 'object',
         'id': 'int',
         'created_at': 'datetime',
@@ -45,7 +45,7 @@ class LFlowRunParameterOverride(object):
     }
 
     def __init__(self, override_key=None, value=None, flow=None, id=None, created_at=None, updated_at=None):  # noqa: E501
-        """FlowRunParameterOverride - a model defined in Swagger"""  # noqa: E501
+        """LFlowRunParameterOverride - a model defined in Swagger"""  # noqa: E501
         self._override_key = None
         self._value = None
         self._flow = None
@@ -64,22 +64,22 @@ class LFlowRunParameterOverride(object):
 
     @property
     def override_key(self):
-        """Gets the override_key of this FlowRunParameterOverride.  # noqa: E501
+        """Gets the override_key of this LFlowRunParameterOverride.  # noqa: E501
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :return: The override_key of this FlowRunParameterOverride.  # noqa: E501
+        :return: The override_key of this LFlowRunParameterOverride.  # noqa: E501
         :rtype: str
         """
         return self._override_key
 
     @override_key.setter
     def override_key(self, override_key):
-        """Sets the override_key of this FlowRunParameterOverride.
+        """Sets the override_key of this LFlowRunParameterOverride.
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :param override_key: The override_key of this FlowRunParameterOverride.  # noqa: E501
+        :param override_key: The override_key of this LFlowRunParameterOverride.  # noqa: E501
         :type: str
         """
 
@@ -87,41 +87,41 @@ class LFlowRunParameterOverride(object):
 
     @property
     def value(self):
-        """Gets the value of this FlowRunParameterOverride.  # noqa: E501
+        """Gets the value of this LFlowRunParameterOverride.  # noqa: E501
 
 
-        :return: The value of this FlowRunParameterOverride.  # noqa: E501
-        :rtype: OneOfflowRunParameterOverrideValue
+        :return: The value of this LFlowRunParameterOverride.  # noqa: E501
+        :rtype: LOneOfflowRunParameterOverrideValue
         """
         return self._value
 
     @value.setter
     def value(self, value):
-        """Sets the value of this FlowRunParameterOverride.
+        """Sets the value of this LFlowRunParameterOverride.
 
 
-        :param value: The value of this FlowRunParameterOverride.  # noqa: E501
-        :type: OneOfflowRunParameterOverrideValue
+        :param value: The value of this LFlowRunParameterOverride.  # noqa: E501
+        :type: LOneOfflowRunParameterOverrideValue
         """
 
         self._value = value
 
     @property
     def flow(self):
-        """Gets the flow of this FlowRunParameterOverride.  # noqa: E501
+        """Gets the flow of this LFlowRunParameterOverride.  # noqa: E501
 
 
-        :return: The flow of this FlowRunParameterOverride.  # noqa: E501
+        :return: The flow of this LFlowRunParameterOverride.  # noqa: E501
         :rtype: object
         """
         return self._flow
 
     @flow.setter
     def flow(self, flow):
-        """Sets the flow of this FlowRunParameterOverride.
+        """Sets the flow of this LFlowRunParameterOverride.
 
 
-        :param flow: The flow of this FlowRunParameterOverride.  # noqa: E501
+        :param flow: The flow of this LFlowRunParameterOverride.  # noqa: E501
         :type: object
         """
         if flow is None:
@@ -131,22 +131,22 @@ class LFlowRunParameterOverride(object):
 
     @property
     def id(self):
-        """Gets the id of this FlowRunParameterOverride.  # noqa: E501
+        """Gets the id of this LFlowRunParameterOverride.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The id of this FlowRunParameterOverride.  # noqa: E501
+        :return: The id of this LFlowRunParameterOverride.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FlowRunParameterOverride.
+        """Sets the id of this LFlowRunParameterOverride.
 
         unique identifier for this object.  # noqa: E501
 
-        :param id: The id of this FlowRunParameterOverride.  # noqa: E501
+        :param id: The id of this LFlowRunParameterOverride.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -156,22 +156,22 @@ class LFlowRunParameterOverride(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this FlowRunParameterOverride.  # noqa: E501
+        """Gets the created_at of this LFlowRunParameterOverride.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this FlowRunParameterOverride.  # noqa: E501
+        :return: The created_at of this LFlowRunParameterOverride.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this FlowRunParameterOverride.
+        """Sets the created_at of this LFlowRunParameterOverride.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this FlowRunParameterOverride.  # noqa: E501
+        :param created_at: The created_at of this LFlowRunParameterOverride.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -181,22 +181,22 @@ class LFlowRunParameterOverride(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this FlowRunParameterOverride.  # noqa: E501
+        """Gets the updated_at of this LFlowRunParameterOverride.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this FlowRunParameterOverride.  # noqa: E501
+        :return: The updated_at of this LFlowRunParameterOverride.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this FlowRunParameterOverride.
+        """Sets the updated_at of this LFlowRunParameterOverride.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this FlowRunParameterOverride.  # noqa: E501
+        :param updated_at: The updated_at of this LFlowRunParameterOverride.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -225,7 +225,7 @@ class LFlowRunParameterOverride(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(FlowRunParameterOverride, dict):
+        if issubclass(LFlowRunParameterOverride, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -241,7 +241,7 @@ class LFlowRunParameterOverride(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, FlowRunParameterOverride):
+        if not isinstance(other, LFlowRunParameterOverride):
             return False
 
         return self.__dict__ == other.__dict__

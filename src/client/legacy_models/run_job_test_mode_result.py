@@ -39,7 +39,7 @@ class LRunJobTestModeResult(object):
     }
 
     def __init__(self, dataset_id=None, dataset_name=None, session_id=None):  # noqa: E501
-        """RunJobTestModeResult - a model defined in Swagger"""  # noqa: E501
+        """LRunJobTestModeResult - a model defined in Swagger"""  # noqa: E501
         self._dataset_id = None
         self._dataset_name = None
         self._session_id = None
@@ -50,20 +50,20 @@ class LRunJobTestModeResult(object):
 
     @property
     def dataset_id(self):
-        """Gets the dataset_id of this RunJobTestModeResult.  # noqa: E501
+        """Gets the dataset_id of this LRunJobTestModeResult.  # noqa: E501
 
 
-        :return: The dataset_id of this RunJobTestModeResult.  # noqa: E501
+        :return: The dataset_id of this LRunJobTestModeResult.  # noqa: E501
         :rtype: int
         """
         return self._dataset_id
 
     @dataset_id.setter
     def dataset_id(self, dataset_id):
-        """Sets the dataset_id of this RunJobTestModeResult.
+        """Sets the dataset_id of this LRunJobTestModeResult.
 
 
-        :param dataset_id: The dataset_id of this RunJobTestModeResult.  # noqa: E501
+        :param dataset_id: The dataset_id of this LRunJobTestModeResult.  # noqa: E501
         :type: int
         """
         if dataset_id is None:
@@ -73,20 +73,20 @@ class LRunJobTestModeResult(object):
 
     @property
     def dataset_name(self):
-        """Gets the dataset_name of this RunJobTestModeResult.  # noqa: E501
+        """Gets the dataset_name of this LRunJobTestModeResult.  # noqa: E501
 
 
-        :return: The dataset_name of this RunJobTestModeResult.  # noqa: E501
+        :return: The dataset_name of this LRunJobTestModeResult.  # noqa: E501
         :rtype: str
         """
         return self._dataset_name
 
     @dataset_name.setter
     def dataset_name(self, dataset_name):
-        """Sets the dataset_name of this RunJobTestModeResult.
+        """Sets the dataset_name of this LRunJobTestModeResult.
 
 
-        :param dataset_name: The dataset_name of this RunJobTestModeResult.  # noqa: E501
+        :param dataset_name: The dataset_name of this LRunJobTestModeResult.  # noqa: E501
         :type: str
         """
         if dataset_name is None:
@@ -96,20 +96,20 @@ class LRunJobTestModeResult(object):
 
     @property
     def session_id(self):
-        """Gets the session_id of this RunJobTestModeResult.  # noqa: E501
+        """Gets the session_id of this LRunJobTestModeResult.  # noqa: E501
 
 
-        :return: The session_id of this RunJobTestModeResult.  # noqa: E501
+        :return: The session_id of this LRunJobTestModeResult.  # noqa: E501
         :rtype: str
         """
         return self._session_id
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this RunJobTestModeResult.
+        """Sets the session_id of this LRunJobTestModeResult.
 
 
-        :param session_id: The session_id of this RunJobTestModeResult.  # noqa: E501
+        :param session_id: The session_id of this LRunJobTestModeResult.  # noqa: E501
         :type: str
         """
         if session_id is None:
@@ -138,7 +138,7 @@ class LRunJobTestModeResult(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunJobTestModeResult, dict):
+        if issubclass(LRunJobTestModeResult, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -154,7 +154,7 @@ class LRunJobTestModeResult(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunJobTestModeResult):
+        if not isinstance(other, LRunJobTestModeResult):
             return False
 
         return self.__dict__ == other.__dict__

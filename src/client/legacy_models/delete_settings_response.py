@@ -35,29 +35,29 @@ class LDeleteSettingsResponse(object):
     }
 
     def __init__(self, number_of_rows_deleted=None):  # noqa: E501
-        """DeleteSettingsResponse - a model defined in Swagger"""  # noqa: E501
+        """LDeleteSettingsResponse - a model defined in Swagger"""  # noqa: E501
         self._number_of_rows_deleted = None
         self.discriminator = None
         self.number_of_rows_deleted = number_of_rows_deleted
 
     @property
     def number_of_rows_deleted(self):
-        """Gets the number_of_rows_deleted of this DeleteSettingsResponse.  # noqa: E501
+        """Gets the number_of_rows_deleted of this LDeleteSettingsResponse.  # noqa: E501
 
         number of rows deleted  # noqa: E501
 
-        :return: The number_of_rows_deleted of this DeleteSettingsResponse.  # noqa: E501
+        :return: The number_of_rows_deleted of this LDeleteSettingsResponse.  # noqa: E501
         :rtype: int
         """
         return self._number_of_rows_deleted
 
     @number_of_rows_deleted.setter
     def number_of_rows_deleted(self, number_of_rows_deleted):
-        """Sets the number_of_rows_deleted of this DeleteSettingsResponse.
+        """Sets the number_of_rows_deleted of this LDeleteSettingsResponse.
 
         number of rows deleted  # noqa: E501
 
-        :param number_of_rows_deleted: The number_of_rows_deleted of this DeleteSettingsResponse.  # noqa: E501
+        :param number_of_rows_deleted: The number_of_rows_deleted of this LDeleteSettingsResponse.  # noqa: E501
         :type: int
         """
         if number_of_rows_deleted is None:
@@ -86,7 +86,7 @@ class LDeleteSettingsResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DeleteSettingsResponse, dict):
+        if issubclass(LDeleteSettingsResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -102,7 +102,7 @@ class LDeleteSettingsResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DeleteSettingsResponse):
+        if not isinstance(other, LDeleteSettingsResponse):
             return False
 
         return self.__dict__ == other.__dict__

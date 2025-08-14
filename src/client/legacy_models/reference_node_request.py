@@ -41,7 +41,7 @@ class LReferenceNodeRequest(object):
     }
 
     def __init__(self, flow_id=None, flow_node_id=None, activesample_id=None, wrangled=None):  # noqa: E501
-        """ReferenceNodeRequest - a model defined in Swagger"""  # noqa: E501
+        """LReferenceNodeRequest - a model defined in Swagger"""  # noqa: E501
         self._flow_id = None
         self._flow_node_id = None
         self._activesample_id = None
@@ -55,22 +55,22 @@ class LReferenceNodeRequest(object):
 
     @property
     def flow_id(self):
-        """Gets the flow_id of this ReferenceNodeRequest.  # noqa: E501
+        """Gets the flow_id of this LReferenceNodeRequest.  # noqa: E501
 
         Internal identifier of the `flow` that contains this dataset  # noqa: E501
 
-        :return: The flow_id of this ReferenceNodeRequest.  # noqa: E501
+        :return: The flow_id of this LReferenceNodeRequest.  # noqa: E501
         :rtype: int
         """
         return self._flow_id
 
     @flow_id.setter
     def flow_id(self, flow_id):
-        """Sets the flow_id of this ReferenceNodeRequest.
+        """Sets the flow_id of this LReferenceNodeRequest.
 
         Internal identifier of the `flow` that contains this dataset  # noqa: E501
 
-        :param flow_id: The flow_id of this ReferenceNodeRequest.  # noqa: E501
+        :param flow_id: The flow_id of this LReferenceNodeRequest.  # noqa: E501
         :type: int
         """
         if flow_id is None:
@@ -80,22 +80,22 @@ class LReferenceNodeRequest(object):
 
     @property
     def flow_node_id(self):
-        """Gets the flow_node_id of this ReferenceNodeRequest.  # noqa: E501
+        """Gets the flow_node_id of this LReferenceNodeRequest.  # noqa: E501
 
         Internal identifier of the flowNode that this dataset references.  # noqa: E501
 
-        :return: The flow_node_id of this ReferenceNodeRequest.  # noqa: E501
+        :return: The flow_node_id of this LReferenceNodeRequest.  # noqa: E501
         :rtype: int
         """
         return self._flow_node_id
 
     @flow_node_id.setter
     def flow_node_id(self, flow_node_id):
-        """Sets the flow_node_id of this ReferenceNodeRequest.
+        """Sets the flow_node_id of this LReferenceNodeRequest.
 
         Internal identifier of the flowNode that this dataset references.  # noqa: E501
 
-        :param flow_node_id: The flow_node_id of this ReferenceNodeRequest.  # noqa: E501
+        :param flow_node_id: The flow_node_id of this LReferenceNodeRequest.  # noqa: E501
         :type: int
         """
         if flow_node_id is None:
@@ -105,22 +105,22 @@ class LReferenceNodeRequest(object):
 
     @property
     def activesample_id(self):
-        """Gets the activesample_id of this ReferenceNodeRequest.  # noqa: E501
+        """Gets the activesample_id of this LReferenceNodeRequest.  # noqa: E501
 
         Internal identifier of the currently active `sample` for this dataset.  # noqa: E501
 
-        :return: The activesample_id of this ReferenceNodeRequest.  # noqa: E501
+        :return: The activesample_id of this LReferenceNodeRequest.  # noqa: E501
         :rtype: int
         """
         return self._activesample_id
 
     @activesample_id.setter
     def activesample_id(self, activesample_id):
-        """Sets the activesample_id of this ReferenceNodeRequest.
+        """Sets the activesample_id of this LReferenceNodeRequest.
 
         Internal identifier of the currently active `sample` for this dataset.  # noqa: E501
 
-        :param activesample_id: The activesample_id of this ReferenceNodeRequest.  # noqa: E501
+        :param activesample_id: The activesample_id of this LReferenceNodeRequest.  # noqa: E501
         :type: int
         """
 
@@ -128,22 +128,22 @@ class LReferenceNodeRequest(object):
 
     @property
     def wrangled(self):
-        """Gets the wrangled of this ReferenceNodeRequest.  # noqa: E501
+        """Gets the wrangled of this LReferenceNodeRequest.  # noqa: E501
 
         If false, this is an input dataset (i.e. an imported dataset or a reference dataset). If true, this flowNode contains a recipe that can be edited by the user.  # noqa: E501
 
-        :return: The wrangled of this ReferenceNodeRequest.  # noqa: E501
+        :return: The wrangled of this LReferenceNodeRequest.  # noqa: E501
         :rtype: bool
         """
         return self._wrangled
 
     @wrangled.setter
     def wrangled(self, wrangled):
-        """Sets the wrangled of this ReferenceNodeRequest.
+        """Sets the wrangled of this LReferenceNodeRequest.
 
         If false, this is an input dataset (i.e. an imported dataset or a reference dataset). If true, this flowNode contains a recipe that can be edited by the user.  # noqa: E501
 
-        :param wrangled: The wrangled of this ReferenceNodeRequest.  # noqa: E501
+        :param wrangled: The wrangled of this LReferenceNodeRequest.  # noqa: E501
         :type: bool
         """
         if wrangled is None:
@@ -172,7 +172,7 @@ class LReferenceNodeRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ReferenceNodeRequest, dict):
+        if issubclass(LReferenceNodeRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -188,7 +188,7 @@ class LReferenceNodeRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ReferenceNodeRequest):
+        if not isinstance(other, LReferenceNodeRequest):
             return False
 
         return self.__dict__ == other.__dict__

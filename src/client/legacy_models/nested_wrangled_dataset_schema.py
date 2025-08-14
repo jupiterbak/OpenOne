@@ -35,27 +35,27 @@ class LNestedWrangledDatasetSchema(object):
     }
 
     def __init__(self, wrangled_dataset=None):  # noqa: E501
-        """NestedWrangledDatasetSchema - a model defined in Swagger"""  # noqa: E501
+        """LNestedWrangledDatasetSchema - a model defined in Swagger"""  # noqa: E501
         self._wrangled_dataset = None
         self.discriminator = None
         self.wrangled_dataset = wrangled_dataset
 
     @property
     def wrangled_dataset(self):
-        """Gets the wrangled_dataset of this NestedWrangledDatasetSchema.  # noqa: E501
+        """Gets the wrangled_dataset of this LNestedWrangledDatasetSchema.  # noqa: E501
 
 
-        :return: The wrangled_dataset of this NestedWrangledDatasetSchema.  # noqa: E501
+        :return: The wrangled_dataset of this LNestedWrangledDatasetSchema.  # noqa: E501
         :rtype: object
         """
         return self._wrangled_dataset
 
     @wrangled_dataset.setter
     def wrangled_dataset(self, wrangled_dataset):
-        """Sets the wrangled_dataset of this NestedWrangledDatasetSchema.
+        """Sets the wrangled_dataset of this LNestedWrangledDatasetSchema.
 
 
-        :param wrangled_dataset: The wrangled_dataset of this NestedWrangledDatasetSchema.  # noqa: E501
+        :param wrangled_dataset: The wrangled_dataset of this LNestedWrangledDatasetSchema.  # noqa: E501
         :type: object
         """
         if wrangled_dataset is None:
@@ -84,7 +84,7 @@ class LNestedWrangledDatasetSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(NestedWrangledDatasetSchema, dict):
+        if issubclass(LNestedWrangledDatasetSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LNestedWrangledDatasetSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, NestedWrangledDatasetSchema):
+        if not isinstance(other, LNestedWrangledDatasetSchema):
             return False
 
         return self.__dict__ == other.__dict__

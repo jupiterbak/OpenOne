@@ -43,7 +43,7 @@ class LBillingAccountData(object):
     }
 
     def __init__(self, billing_account_id=None, billing_account_name=None, sfdc_account_id=None, workspace_ids=None, entitlements=None):  # noqa: E501
-        """BillingAccountData - a model defined in Swagger"""  # noqa: E501
+        """LBillingAccountData - a model defined in Swagger"""  # noqa: E501
         self._billing_account_id = None
         self._billing_account_name = None
         self._sfdc_account_id = None
@@ -58,20 +58,20 @@ class LBillingAccountData(object):
 
     @property
     def billing_account_id(self):
-        """Gets the billing_account_id of this BillingAccountData.  # noqa: E501
+        """Gets the billing_account_id of this LBillingAccountData.  # noqa: E501
 
 
-        :return: The billing_account_id of this BillingAccountData.  # noqa: E501
+        :return: The billing_account_id of this LBillingAccountData.  # noqa: E501
         :rtype: str
         """
         return self._billing_account_id
 
     @billing_account_id.setter
     def billing_account_id(self, billing_account_id):
-        """Sets the billing_account_id of this BillingAccountData.
+        """Sets the billing_account_id of this LBillingAccountData.
 
 
-        :param billing_account_id: The billing_account_id of this BillingAccountData.  # noqa: E501
+        :param billing_account_id: The billing_account_id of this LBillingAccountData.  # noqa: E501
         :type: str
         """
         if billing_account_id is None:
@@ -81,20 +81,20 @@ class LBillingAccountData(object):
 
     @property
     def billing_account_name(self):
-        """Gets the billing_account_name of this BillingAccountData.  # noqa: E501
+        """Gets the billing_account_name of this LBillingAccountData.  # noqa: E501
 
 
-        :return: The billing_account_name of this BillingAccountData.  # noqa: E501
+        :return: The billing_account_name of this LBillingAccountData.  # noqa: E501
         :rtype: str
         """
         return self._billing_account_name
 
     @billing_account_name.setter
     def billing_account_name(self, billing_account_name):
-        """Sets the billing_account_name of this BillingAccountData.
+        """Sets the billing_account_name of this LBillingAccountData.
 
 
-        :param billing_account_name: The billing_account_name of this BillingAccountData.  # noqa: E501
+        :param billing_account_name: The billing_account_name of this LBillingAccountData.  # noqa: E501
         :type: str
         """
         if billing_account_name is None:
@@ -104,20 +104,20 @@ class LBillingAccountData(object):
 
     @property
     def sfdc_account_id(self):
-        """Gets the sfdc_account_id of this BillingAccountData.  # noqa: E501
+        """Gets the sfdc_account_id of this LBillingAccountData.  # noqa: E501
 
 
-        :return: The sfdc_account_id of this BillingAccountData.  # noqa: E501
+        :return: The sfdc_account_id of this LBillingAccountData.  # noqa: E501
         :rtype: str
         """
         return self._sfdc_account_id
 
     @sfdc_account_id.setter
     def sfdc_account_id(self, sfdc_account_id):
-        """Sets the sfdc_account_id of this BillingAccountData.
+        """Sets the sfdc_account_id of this LBillingAccountData.
 
 
-        :param sfdc_account_id: The sfdc_account_id of this BillingAccountData.  # noqa: E501
+        :param sfdc_account_id: The sfdc_account_id of this LBillingAccountData.  # noqa: E501
         :type: str
         """
         if sfdc_account_id is None:
@@ -127,20 +127,20 @@ class LBillingAccountData(object):
 
     @property
     def workspace_ids(self):
-        """Gets the workspace_ids of this BillingAccountData.  # noqa: E501
+        """Gets the workspace_ids of this LBillingAccountData.  # noqa: E501
 
 
-        :return: The workspace_ids of this BillingAccountData.  # noqa: E501
+        :return: The workspace_ids of this LBillingAccountData.  # noqa: E501
         :rtype: list[int]
         """
         return self._workspace_ids
 
     @workspace_ids.setter
     def workspace_ids(self, workspace_ids):
-        """Sets the workspace_ids of this BillingAccountData.
+        """Sets the workspace_ids of this LBillingAccountData.
 
 
-        :param workspace_ids: The workspace_ids of this BillingAccountData.  # noqa: E501
+        :param workspace_ids: The workspace_ids of this LBillingAccountData.  # noqa: E501
         :type: list[int]
         """
         if workspace_ids is None:
@@ -150,20 +150,20 @@ class LBillingAccountData(object):
 
     @property
     def entitlements(self):
-        """Gets the entitlements of this BillingAccountData.  # noqa: E501
+        """Gets the entitlements of this LBillingAccountData.  # noqa: E501
 
 
-        :return: The entitlements of this BillingAccountData.  # noqa: E501
+        :return: The entitlements of this LBillingAccountData.  # noqa: E501
         :rtype: list[object]
         """
         return self._entitlements
 
     @entitlements.setter
     def entitlements(self, entitlements):
-        """Sets the entitlements of this BillingAccountData.
+        """Sets the entitlements of this LBillingAccountData.
 
 
-        :param entitlements: The entitlements of this BillingAccountData.  # noqa: E501
+        :param entitlements: The entitlements of this LBillingAccountData.  # noqa: E501
         :type: list[object]
         """
         if entitlements is None:
@@ -192,7 +192,7 @@ class LBillingAccountData(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(BillingAccountData, dict):
+        if issubclass(LBillingAccountData, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -208,7 +208,7 @@ class LBillingAccountData(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BillingAccountData):
+        if not isinstance(other, LBillingAccountData):
             return False
 
         return self.__dict__ == other.__dict__

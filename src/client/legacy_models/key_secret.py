@@ -41,7 +41,7 @@ class LKeySecret(object):
     }
 
     def __init__(self, key=None, secret=None, server_side_encryption=None, server_side_kms_key_id=None):  # noqa: E501
-        """KeySecret - a model defined in Swagger"""  # noqa: E501
+        """LKeySecret - a model defined in Swagger"""  # noqa: E501
         self._key = None
         self._secret = None
         self._server_side_encryption = None
@@ -56,20 +56,20 @@ class LKeySecret(object):
 
     @property
     def key(self):
-        """Gets the key of this KeySecret.  # noqa: E501
+        """Gets the key of this LKeySecret.  # noqa: E501
 
 
-        :return: The key of this KeySecret.  # noqa: E501
+        :return: The key of this LKeySecret.  # noqa: E501
         :rtype: str
         """
         return self._key
 
     @key.setter
     def key(self, key):
-        """Sets the key of this KeySecret.
+        """Sets the key of this LKeySecret.
 
 
-        :param key: The key of this KeySecret.  # noqa: E501
+        :param key: The key of this LKeySecret.  # noqa: E501
         :type: str
         """
         if key is None:
@@ -79,20 +79,20 @@ class LKeySecret(object):
 
     @property
     def secret(self):
-        """Gets the secret of this KeySecret.  # noqa: E501
+        """Gets the secret of this LKeySecret.  # noqa: E501
 
 
-        :return: The secret of this KeySecret.  # noqa: E501
+        :return: The secret of this LKeySecret.  # noqa: E501
         :rtype: str
         """
         return self._secret
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this KeySecret.
+        """Sets the secret of this LKeySecret.
 
 
-        :param secret: The secret of this KeySecret.  # noqa: E501
+        :param secret: The secret of this LKeySecret.  # noqa: E501
         :type: str
         """
         if secret is None:
@@ -102,22 +102,22 @@ class LKeySecret(object):
 
     @property
     def server_side_encryption(self):
-        """Gets the server_side_encryption of this KeySecret.  # noqa: E501
+        """Gets the server_side_encryption of this LKeySecret.  # noqa: E501
 
          * `none` - no encryption is used * `AES256` - Server-Side Encryption with Amazon S3-Managed Keys * `aws:kms` - Server-Side Encryption with AWS KMS-Managed Keys  # noqa: E501
 
-        :return: The server_side_encryption of this KeySecret.  # noqa: E501
+        :return: The server_side_encryption of this LKeySecret.  # noqa: E501
         :rtype: str
         """
         return self._server_side_encryption
 
     @server_side_encryption.setter
     def server_side_encryption(self, server_side_encryption):
-        """Sets the server_side_encryption of this KeySecret.
+        """Sets the server_side_encryption of this LKeySecret.
 
          * `none` - no encryption is used * `AES256` - Server-Side Encryption with Amazon S3-Managed Keys * `aws:kms` - Server-Side Encryption with AWS KMS-Managed Keys  # noqa: E501
 
-        :param server_side_encryption: The server_side_encryption of this KeySecret.  # noqa: E501
+        :param server_side_encryption: The server_side_encryption of this LKeySecret.  # noqa: E501
         :type: str
         """
         allowed_values = ["none", "AES256", "aws:kms"]  # noqa: E501
@@ -131,22 +131,22 @@ class LKeySecret(object):
 
     @property
     def server_side_kms_key_id(self):
-        """Gets the server_side_kms_key_id of this KeySecret.  # noqa: E501
+        """Gets the server_side_kms_key_id of this LKeySecret.  # noqa: E501
 
         It is required when serverSideEncryption is set to aws:kms  # noqa: E501
 
-        :return: The server_side_kms_key_id of this KeySecret.  # noqa: E501
+        :return: The server_side_kms_key_id of this LKeySecret.  # noqa: E501
         :rtype: str
         """
         return self._server_side_kms_key_id
 
     @server_side_kms_key_id.setter
     def server_side_kms_key_id(self, server_side_kms_key_id):
-        """Sets the server_side_kms_key_id of this KeySecret.
+        """Sets the server_side_kms_key_id of this LKeySecret.
 
         It is required when serverSideEncryption is set to aws:kms  # noqa: E501
 
-        :param server_side_kms_key_id: The server_side_kms_key_id of this KeySecret.  # noqa: E501
+        :param server_side_kms_key_id: The server_side_kms_key_id of this LKeySecret.  # noqa: E501
         :type: str
         """
 
@@ -173,7 +173,7 @@ class LKeySecret(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(KeySecret, dict):
+        if issubclass(LKeySecret, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -189,7 +189,7 @@ class LKeySecret(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, KeySecret):
+        if not isinstance(other, LKeySecret):
             return False
 
         return self.__dict__ == other.__dict__

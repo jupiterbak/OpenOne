@@ -51,7 +51,7 @@ class LDataQualityRuleResult(object):
     }
 
     def __init__(self, id=None, type=None, comment=None, description=None, status=None, updated_at=None, pass_count=None, fail_count=None, total_count=None):  # noqa: E501
-        """DataQualityRuleResult - a model defined in Swagger"""  # noqa: E501
+        """LDataQualityRuleResult - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self._type = None
         self._comment = None
@@ -74,22 +74,22 @@ class LDataQualityRuleResult(object):
 
     @property
     def id(self):
-        """Gets the id of this DataQualityRuleResult.  # noqa: E501
+        """Gets the id of this LDataQualityRuleResult.  # noqa: E501
 
         Identifier of the data quality rule application in the recipe. Can be used to identify the rule  # noqa: E501
 
-        :return: The id of this DataQualityRuleResult.  # noqa: E501
+        :return: The id of this LDataQualityRuleResult.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DataQualityRuleResult.
+        """Sets the id of this LDataQualityRuleResult.
 
         Identifier of the data quality rule application in the recipe. Can be used to identify the rule  # noqa: E501
 
-        :param id: The id of this DataQualityRuleResult.  # noqa: E501
+        :param id: The id of this LDataQualityRuleResult.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -99,22 +99,22 @@ class LDataQualityRuleResult(object):
 
     @property
     def type(self):
-        """Gets the type of this DataQualityRuleResult.  # noqa: E501
+        """Gets the type of this LDataQualityRuleResult.  # noqa: E501
 
         Type of the rule  # noqa: E501
 
-        :return: The type of this DataQualityRuleResult.  # noqa: E501
+        :return: The type of this LDataQualityRuleResult.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DataQualityRuleResult.
+        """Sets the type of this LDataQualityRuleResult.
 
         Type of the rule  # noqa: E501
 
-        :param type: The type of this DataQualityRuleResult.  # noqa: E501
+        :param type: The type of this LDataQualityRuleResult.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -124,20 +124,20 @@ class LDataQualityRuleResult(object):
 
     @property
     def comment(self):
-        """Gets the comment of this DataQualityRuleResult.  # noqa: E501
+        """Gets the comment of this LDataQualityRuleResult.  # noqa: E501
 
 
-        :return: The comment of this DataQualityRuleResult.  # noqa: E501
+        :return: The comment of this LDataQualityRuleResult.  # noqa: E501
         :rtype: str
         """
         return self._comment
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this DataQualityRuleResult.
+        """Sets the comment of this LDataQualityRuleResult.
 
 
-        :param comment: The comment of this DataQualityRuleResult.  # noqa: E501
+        :param comment: The comment of this LDataQualityRuleResult.  # noqa: E501
         :type: str
         """
         if comment is None:
@@ -147,22 +147,22 @@ class LDataQualityRuleResult(object):
 
     @property
     def description(self):
-        """Gets the description of this DataQualityRuleResult.  # noqa: E501
+        """Gets the description of this LDataQualityRuleResult.  # noqa: E501
 
         Textual description of the data quality rule application  # noqa: E501
 
-        :return: The description of this DataQualityRuleResult.  # noqa: E501
+        :return: The description of this LDataQualityRuleResult.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DataQualityRuleResult.
+        """Sets the description of this LDataQualityRuleResult.
 
         Textual description of the data quality rule application  # noqa: E501
 
-        :param description: The description of this DataQualityRuleResult.  # noqa: E501
+        :param description: The description of this LDataQualityRuleResult.  # noqa: E501
         :type: str
         """
         if description is None:
@@ -172,22 +172,22 @@ class LDataQualityRuleResult(object):
 
     @property
     def status(self):
-        """Gets the status of this DataQualityRuleResult.  # noqa: E501
+        """Gets the status of this LDataQualityRuleResult.  # noqa: E501
 
         Rule application summary result * `pass` - The rule passed for all rows * `fail` - The rule failed for at least 1 row * `invalid` - Rule validation failed  # noqa: E501
 
-        :return: The status of this DataQualityRuleResult.  # noqa: E501
+        :return: The status of this LDataQualityRuleResult.  # noqa: E501
         :rtype: str
         """
         return self._status
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DataQualityRuleResult.
+        """Sets the status of this LDataQualityRuleResult.
 
         Rule application summary result * `pass` - The rule passed for all rows * `fail` - The rule failed for at least 1 row * `invalid` - Rule validation failed  # noqa: E501
 
-        :param status: The status of this DataQualityRuleResult.  # noqa: E501
+        :param status: The status of this LDataQualityRuleResult.  # noqa: E501
         :type: str
         """
         if status is None:
@@ -203,22 +203,22 @@ class LDataQualityRuleResult(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this DataQualityRuleResult.  # noqa: E501
+        """Gets the updated_at of this LDataQualityRuleResult.  # noqa: E501
 
         ISO 8601 formatted timestamp of the last rule application change  # noqa: E501
 
-        :return: The updated_at of this DataQualityRuleResult.  # noqa: E501
+        :return: The updated_at of this LDataQualityRuleResult.  # noqa: E501
         :rtype: str
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this DataQualityRuleResult.
+        """Sets the updated_at of this LDataQualityRuleResult.
 
         ISO 8601 formatted timestamp of the last rule application change  # noqa: E501
 
-        :param updated_at: The updated_at of this DataQualityRuleResult.  # noqa: E501
+        :param updated_at: The updated_at of this LDataQualityRuleResult.  # noqa: E501
         :type: str
         """
         if updated_at is None:
@@ -228,22 +228,22 @@ class LDataQualityRuleResult(object):
 
     @property
     def pass_count(self):
-        """Gets the pass_count of this DataQualityRuleResult.  # noqa: E501
+        """Gets the pass_count of this LDataQualityRuleResult.  # noqa: E501
 
         Number of rows for which the data quality rule passes  # noqa: E501
 
-        :return: The pass_count of this DataQualityRuleResult.  # noqa: E501
+        :return: The pass_count of this LDataQualityRuleResult.  # noqa: E501
         :rtype: int
         """
         return self._pass_count
 
     @pass_count.setter
     def pass_count(self, pass_count):
-        """Sets the pass_count of this DataQualityRuleResult.
+        """Sets the pass_count of this LDataQualityRuleResult.
 
         Number of rows for which the data quality rule passes  # noqa: E501
 
-        :param pass_count: The pass_count of this DataQualityRuleResult.  # noqa: E501
+        :param pass_count: The pass_count of this LDataQualityRuleResult.  # noqa: E501
         :type: int
         """
         if pass_count is None:
@@ -253,22 +253,22 @@ class LDataQualityRuleResult(object):
 
     @property
     def fail_count(self):
-        """Gets the fail_count of this DataQualityRuleResult.  # noqa: E501
+        """Gets the fail_count of this LDataQualityRuleResult.  # noqa: E501
 
         Number of rows for which the data quality rule fail  # noqa: E501
 
-        :return: The fail_count of this DataQualityRuleResult.  # noqa: E501
+        :return: The fail_count of this LDataQualityRuleResult.  # noqa: E501
         :rtype: int
         """
         return self._fail_count
 
     @fail_count.setter
     def fail_count(self, fail_count):
-        """Sets the fail_count of this DataQualityRuleResult.
+        """Sets the fail_count of this LDataQualityRuleResult.
 
         Number of rows for which the data quality rule fail  # noqa: E501
 
-        :param fail_count: The fail_count of this DataQualityRuleResult.  # noqa: E501
+        :param fail_count: The fail_count of this LDataQualityRuleResult.  # noqa: E501
         :type: int
         """
         if fail_count is None:
@@ -278,22 +278,22 @@ class LDataQualityRuleResult(object):
 
     @property
     def total_count(self):
-        """Gets the total_count of this DataQualityRuleResult.  # noqa: E501
+        """Gets the total_count of this LDataQualityRuleResult.  # noqa: E501
 
         Total number of rows. Sum of failCount and passCount  # noqa: E501
 
-        :return: The total_count of this DataQualityRuleResult.  # noqa: E501
+        :return: The total_count of this LDataQualityRuleResult.  # noqa: E501
         :rtype: int
         """
         return self._total_count
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this DataQualityRuleResult.
+        """Sets the total_count of this LDataQualityRuleResult.
 
         Total number of rows. Sum of failCount and passCount  # noqa: E501
 
-        :param total_count: The total_count of this DataQualityRuleResult.  # noqa: E501
+        :param total_count: The total_count of this LDataQualityRuleResult.  # noqa: E501
         :type: int
         """
         if total_count is None:
@@ -322,7 +322,7 @@ class LDataQualityRuleResult(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(DataQualityRuleResult, dict):
+        if issubclass(LDataQualityRuleResult, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -338,7 +338,7 @@ class LDataQualityRuleResult(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, DataQualityRuleResult):
+        if not isinstance(other, LDataQualityRuleResult):
             return False
 
         return self.__dict__ == other.__dict__

@@ -35,27 +35,27 @@ class LIamDbUser(object):
     }
 
     def __init__(self, username=None):  # noqa: E501
-        """IamDbUser - a model defined in Swagger"""  # noqa: E501
+        """LIamDbUser - a model defined in Swagger"""  # noqa: E501
         self._username = None
         self.discriminator = None
         self.username = username
 
     @property
     def username(self):
-        """Gets the username of this IamDbUser.  # noqa: E501
+        """Gets the username of this LIamDbUser.  # noqa: E501
 
 
-        :return: The username of this IamDbUser.  # noqa: E501
+        :return: The username of this LIamDbUser.  # noqa: E501
         :rtype: str
         """
         return self._username
 
     @username.setter
     def username(self, username):
-        """Sets the username of this IamDbUser.
+        """Sets the username of this LIamDbUser.
 
 
-        :param username: The username of this IamDbUser.  # noqa: E501
+        :param username: The username of this LIamDbUser.  # noqa: E501
         :type: str
         """
         if username is None:
@@ -84,7 +84,7 @@ class LIamDbUser(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(IamDbUser, dict):
+        if issubclass(LIamDbUser, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LIamDbUser(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, IamDbUser):
+        if not isinstance(other, LIamDbUser):
             return False
 
         return self.__dict__ == other.__dict__

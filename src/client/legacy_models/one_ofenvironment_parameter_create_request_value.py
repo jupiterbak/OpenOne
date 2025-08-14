@@ -33,7 +33,7 @@ class LOneOfenvironmentParameterCreateRequestValue(object):
     }
 
     def __init__(self):  # noqa: E501
-        """OneOfenvironmentParameterCreateRequestValue - a model defined in Swagger"""  # noqa: E501
+        """LOneOfenvironmentParameterCreateRequestValue - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LOneOfenvironmentParameterCreateRequestValue(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OneOfenvironmentParameterCreateRequestValue, dict):
+        if issubclass(LOneOfenvironmentParameterCreateRequestValue, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LOneOfenvironmentParameterCreateRequestValue(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OneOfenvironmentParameterCreateRequestValue):
+        if not isinstance(other, LOneOfenvironmentParameterCreateRequestValue):
             return False
 
         return self.__dict__ == other.__dict__

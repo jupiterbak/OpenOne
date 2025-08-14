@@ -33,7 +33,7 @@ class LAnyOfplanFlowTaskId(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfplanFlowTaskId - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfplanFlowTaskId - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfplanFlowTaskId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfplanFlowTaskId, dict):
+        if issubclass(LAnyOfplanFlowTaskId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfplanFlowTaskId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfplanFlowTaskId):
+        if not isinstance(other, LAnyOfplanFlowTaskId):
             return False
 
         return self.__dict__ == other.__dict__

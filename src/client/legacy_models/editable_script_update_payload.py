@@ -37,7 +37,7 @@ class LEditableScriptUpdatePayload(object):
     }
 
     def __init__(self, name=None, description=None):  # noqa: E501
-        """EditableScriptUpdatePayload - a model defined in Swagger"""  # noqa: E501
+        """LEditableScriptUpdatePayload - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._description = None
         self.discriminator = None
@@ -48,20 +48,20 @@ class LEditableScriptUpdatePayload(object):
 
     @property
     def name(self):
-        """Gets the name of this EditableScriptUpdatePayload.  # noqa: E501
+        """Gets the name of this LEditableScriptUpdatePayload.  # noqa: E501
 
 
-        :return: The name of this EditableScriptUpdatePayload.  # noqa: E501
+        :return: The name of this LEditableScriptUpdatePayload.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EditableScriptUpdatePayload.
+        """Sets the name of this LEditableScriptUpdatePayload.
 
 
-        :param name: The name of this EditableScriptUpdatePayload.  # noqa: E501
+        :param name: The name of this LEditableScriptUpdatePayload.  # noqa: E501
         :type: str
         """
 
@@ -69,20 +69,20 @@ class LEditableScriptUpdatePayload(object):
 
     @property
     def description(self):
-        """Gets the description of this EditableScriptUpdatePayload.  # noqa: E501
+        """Gets the description of this LEditableScriptUpdatePayload.  # noqa: E501
 
 
-        :return: The description of this EditableScriptUpdatePayload.  # noqa: E501
+        :return: The description of this LEditableScriptUpdatePayload.  # noqa: E501
         :rtype: str
         """
         return self._description
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EditableScriptUpdatePayload.
+        """Sets the description of this LEditableScriptUpdatePayload.
 
 
-        :param description: The description of this EditableScriptUpdatePayload.  # noqa: E501
+        :param description: The description of this LEditableScriptUpdatePayload.  # noqa: E501
         :type: str
         """
 
@@ -109,7 +109,7 @@ class LEditableScriptUpdatePayload(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(EditableScriptUpdatePayload, dict):
+        if issubclass(LEditableScriptUpdatePayload, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -125,7 +125,7 @@ class LEditableScriptUpdatePayload(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, EditableScriptUpdatePayload):
+        if not isinstance(other, LEditableScriptUpdatePayload):
             return False
 
         return self.__dict__ == other.__dict__

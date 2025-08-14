@@ -27,9 +27,9 @@ class LImportFlowConnectionIdMapping(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'package_contents': 'ImportFlowPackageRequestZip',
-        'environment_parameter_mapping': 'list[EnvironmentParameterMapping]',
-        'connection_id_mapping': 'list[ConnectionIdMapping]'
+        'package_contents': 'LImportFlowPackageRequestZip',
+        'environment_parameter_mapping': 'list[LEnvironmentParameterMapping]',
+        'connection_id_mapping': 'list[LConnectionIdMapping]'
     }
 
     attribute_map = {
@@ -39,7 +39,7 @@ class LImportFlowConnectionIdMapping(object):
     }
 
     def __init__(self, package_contents=None, environment_parameter_mapping=None, connection_id_mapping=None):  # noqa: E501
-        """ImportFlowConnectionIdMapping - a model defined in Swagger"""  # noqa: E501
+        """LImportFlowConnectionIdMapping - a model defined in Swagger"""  # noqa: E501
         self._package_contents = None
         self._environment_parameter_mapping = None
         self._connection_id_mapping = None
@@ -51,21 +51,21 @@ class LImportFlowConnectionIdMapping(object):
 
     @property
     def package_contents(self):
-        """Gets the package_contents of this ImportFlowConnectionIdMapping.  # noqa: E501
+        """Gets the package_contents of this LImportFlowConnectionIdMapping.  # noqa: E501
 
 
-        :return: The package_contents of this ImportFlowConnectionIdMapping.  # noqa: E501
-        :rtype: ImportFlowPackageRequestZip
+        :return: The package_contents of this LImportFlowConnectionIdMapping.  # noqa: E501
+        :rtype: LImportFlowPackageRequestZip
         """
         return self._package_contents
 
     @package_contents.setter
     def package_contents(self, package_contents):
-        """Sets the package_contents of this ImportFlowConnectionIdMapping.
+        """Sets the package_contents of this LImportFlowConnectionIdMapping.
 
 
-        :param package_contents: The package_contents of this ImportFlowConnectionIdMapping.  # noqa: E501
-        :type: ImportFlowPackageRequestZip
+        :param package_contents: The package_contents of this LImportFlowConnectionIdMapping.  # noqa: E501
+        :type: LImportFlowPackageRequestZip
         """
         if package_contents is None:
             raise ValueError("Invalid value for `package_contents`, must not be `None`")  # noqa: E501
@@ -74,42 +74,42 @@ class LImportFlowConnectionIdMapping(object):
 
     @property
     def environment_parameter_mapping(self):
-        """Gets the environment_parameter_mapping of this ImportFlowConnectionIdMapping.  # noqa: E501
+        """Gets the environment_parameter_mapping of this LImportFlowConnectionIdMapping.  # noqa: E501
 
 
-        :return: The environment_parameter_mapping of this ImportFlowConnectionIdMapping.  # noqa: E501
-        :rtype: list[EnvironmentParameterMapping]
+        :return: The environment_parameter_mapping of this LImportFlowConnectionIdMapping.  # noqa: E501
+        :rtype: list[LEnvironmentParameterMapping]
         """
         return self._environment_parameter_mapping
 
     @environment_parameter_mapping.setter
     def environment_parameter_mapping(self, environment_parameter_mapping):
-        """Sets the environment_parameter_mapping of this ImportFlowConnectionIdMapping.
+        """Sets the environment_parameter_mapping of this LImportFlowConnectionIdMapping.
 
 
-        :param environment_parameter_mapping: The environment_parameter_mapping of this ImportFlowConnectionIdMapping.  # noqa: E501
-        :type: list[EnvironmentParameterMapping]
+        :param environment_parameter_mapping: The environment_parameter_mapping of this LImportFlowConnectionIdMapping.  # noqa: E501
+        :type: list[LEnvironmentParameterMapping]
         """
 
         self._environment_parameter_mapping = environment_parameter_mapping
 
     @property
     def connection_id_mapping(self):
-        """Gets the connection_id_mapping of this ImportFlowConnectionIdMapping.  # noqa: E501
+        """Gets the connection_id_mapping of this LImportFlowConnectionIdMapping.  # noqa: E501
 
 
-        :return: The connection_id_mapping of this ImportFlowConnectionIdMapping.  # noqa: E501
-        :rtype: list[ConnectionIdMapping]
+        :return: The connection_id_mapping of this LImportFlowConnectionIdMapping.  # noqa: E501
+        :rtype: list[LConnectionIdMapping]
         """
         return self._connection_id_mapping
 
     @connection_id_mapping.setter
     def connection_id_mapping(self, connection_id_mapping):
-        """Sets the connection_id_mapping of this ImportFlowConnectionIdMapping.
+        """Sets the connection_id_mapping of this LImportFlowConnectionIdMapping.
 
 
-        :param connection_id_mapping: The connection_id_mapping of this ImportFlowConnectionIdMapping.  # noqa: E501
-        :type: list[ConnectionIdMapping]
+        :param connection_id_mapping: The connection_id_mapping of this LImportFlowConnectionIdMapping.  # noqa: E501
+        :type: list[LConnectionIdMapping]
         """
         if connection_id_mapping is None:
             raise ValueError("Invalid value for `connection_id_mapping`, must not be `None`")  # noqa: E501
@@ -137,7 +137,7 @@ class LImportFlowConnectionIdMapping(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ImportFlowConnectionIdMapping, dict):
+        if issubclass(LImportFlowConnectionIdMapping, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -153,7 +153,7 @@ class LImportFlowConnectionIdMapping(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ImportFlowConnectionIdMapping):
+        if not isinstance(other, LImportFlowConnectionIdMapping):
             return False
 
         return self.__dict__ == other.__dict__

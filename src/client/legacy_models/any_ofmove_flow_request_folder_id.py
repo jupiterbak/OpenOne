@@ -33,7 +33,7 @@ class LAnyOfmoveFlowRequestFolderId(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfmoveFlowRequestFolderId - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfmoveFlowRequestFolderId - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfmoveFlowRequestFolderId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfmoveFlowRequestFolderId, dict):
+        if issubclass(LAnyOfmoveFlowRequestFolderId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfmoveFlowRequestFolderId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfmoveFlowRequestFolderId):
+        if not isinstance(other, LAnyOfmoveFlowRequestFolderId):
             return False
 
         return self.__dict__ == other.__dict__

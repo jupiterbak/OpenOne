@@ -37,7 +37,7 @@ class LBasicApp(object):
     }
 
     def __init__(self, app_id=None, password=None):  # noqa: E501
-        """BasicApp - a model defined in Swagger"""  # noqa: E501
+        """LBasicApp - a model defined in Swagger"""  # noqa: E501
         self._app_id = None
         self._password = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LBasicApp(object):
 
     @property
     def app_id(self):
-        """Gets the app_id of this BasicApp.  # noqa: E501
+        """Gets the app_id of this LBasicApp.  # noqa: E501
 
 
-        :return: The app_id of this BasicApp.  # noqa: E501
+        :return: The app_id of this LBasicApp.  # noqa: E501
         :rtype: str
         """
         return self._app_id
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this BasicApp.
+        """Sets the app_id of this LBasicApp.
 
 
-        :param app_id: The app_id of this BasicApp.  # noqa: E501
+        :param app_id: The app_id of this LBasicApp.  # noqa: E501
         :type: str
         """
         if app_id is None:
@@ -69,20 +69,20 @@ class LBasicApp(object):
 
     @property
     def password(self):
-        """Gets the password of this BasicApp.  # noqa: E501
+        """Gets the password of this LBasicApp.  # noqa: E501
 
 
-        :return: The password of this BasicApp.  # noqa: E501
+        :return: The password of this LBasicApp.  # noqa: E501
         :rtype: str
         """
         return self._password
 
     @password.setter
     def password(self, password):
-        """Sets the password of this BasicApp.
+        """Sets the password of this LBasicApp.
 
 
-        :param password: The password of this BasicApp.  # noqa: E501
+        :param password: The password of this LBasicApp.  # noqa: E501
         :type: str
         """
         if password is None:
@@ -111,7 +111,7 @@ class LBasicApp(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(BasicApp, dict):
+        if issubclass(LBasicApp, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LBasicApp(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, BasicApp):
+        if not isinstance(other, LBasicApp):
             return False
 
         return self.__dict__ == other.__dict__

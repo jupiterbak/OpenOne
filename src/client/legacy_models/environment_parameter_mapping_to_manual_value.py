@@ -28,7 +28,7 @@ class LEnvironmentParameterMappingToManualValue(object):
     """
     swagger_types = {
         'override_key': 'str',
-        'mapped_value': 'OneOfenvironmentParameterMappingToManualValueMappedValue'
+        'mapped_value': 'LOneOfenvironmentParameterMappingToManualValueMappedValue'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LEnvironmentParameterMappingToManualValue(object):
     }
 
     def __init__(self, override_key=None, mapped_value=None):  # noqa: E501
-        """EnvironmentParameterMappingToManualValue - a model defined in Swagger"""  # noqa: E501
+        """LEnvironmentParameterMappingToManualValue - a model defined in Swagger"""  # noqa: E501
         self._override_key = None
         self._mapped_value = None
         self.discriminator = None
@@ -46,22 +46,22 @@ class LEnvironmentParameterMappingToManualValue(object):
 
     @property
     def override_key(self):
-        """Gets the override_key of this EnvironmentParameterMappingToManualValue.  # noqa: E501
+        """Gets the override_key of this LEnvironmentParameterMappingToManualValue.  # noqa: E501
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :return: The override_key of this EnvironmentParameterMappingToManualValue.  # noqa: E501
+        :return: The override_key of this LEnvironmentParameterMappingToManualValue.  # noqa: E501
         :rtype: str
         """
         return self._override_key
 
     @override_key.setter
     def override_key(self, override_key):
-        """Sets the override_key of this EnvironmentParameterMappingToManualValue.
+        """Sets the override_key of this LEnvironmentParameterMappingToManualValue.
 
         key/name used when overriding the value of the variable  # noqa: E501
 
-        :param override_key: The override_key of this EnvironmentParameterMappingToManualValue.  # noqa: E501
+        :param override_key: The override_key of this LEnvironmentParameterMappingToManualValue.  # noqa: E501
         :type: str
         """
         if override_key is None:
@@ -71,21 +71,21 @@ class LEnvironmentParameterMappingToManualValue(object):
 
     @property
     def mapped_value(self):
-        """Gets the mapped_value of this EnvironmentParameterMappingToManualValue.  # noqa: E501
+        """Gets the mapped_value of this LEnvironmentParameterMappingToManualValue.  # noqa: E501
 
 
-        :return: The mapped_value of this EnvironmentParameterMappingToManualValue.  # noqa: E501
-        :rtype: OneOfenvironmentParameterMappingToManualValueMappedValue
+        :return: The mapped_value of this LEnvironmentParameterMappingToManualValue.  # noqa: E501
+        :rtype: LOneOfenvironmentParameterMappingToManualValueMappedValue
         """
         return self._mapped_value
 
     @mapped_value.setter
     def mapped_value(self, mapped_value):
-        """Sets the mapped_value of this EnvironmentParameterMappingToManualValue.
+        """Sets the mapped_value of this LEnvironmentParameterMappingToManualValue.
 
 
-        :param mapped_value: The mapped_value of this EnvironmentParameterMappingToManualValue.  # noqa: E501
-        :type: OneOfenvironmentParameterMappingToManualValueMappedValue
+        :param mapped_value: The mapped_value of this LEnvironmentParameterMappingToManualValue.  # noqa: E501
+        :type: LOneOfenvironmentParameterMappingToManualValueMappedValue
         """
         if mapped_value is None:
             raise ValueError("Invalid value for `mapped_value`, must not be `None`")  # noqa: E501
@@ -113,7 +113,7 @@ class LEnvironmentParameterMappingToManualValue(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(EnvironmentParameterMappingToManualValue, dict):
+        if issubclass(LEnvironmentParameterMappingToManualValue, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LEnvironmentParameterMappingToManualValue(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, EnvironmentParameterMappingToManualValue):
+        if not isinstance(other, LEnvironmentParameterMappingToManualValue):
             return False
 
         return self.__dict__ == other.__dict__

@@ -30,7 +30,7 @@ class LPerson(object):
         'email': 'str',
         'is_disabled': 'bool',
         'validate_export_compliance': 'bool',
-        'id': 'AnyOfpersonId',
+        'id': 'LAnyOfpersonId',
         'created_at': 'datetime',
         'updated_at': 'datetime'
     }
@@ -45,7 +45,7 @@ class LPerson(object):
     }
 
     def __init__(self, email=None, is_disabled=None, validate_export_compliance=None, id=None, created_at=None, updated_at=None):  # noqa: E501
-        """Person - a model defined in Swagger"""  # noqa: E501
+        """LPerson - a model defined in Swagger"""  # noqa: E501
         self._email = None
         self._is_disabled = None
         self._validate_export_compliance = None
@@ -65,20 +65,20 @@ class LPerson(object):
 
     @property
     def email(self):
-        """Gets the email of this Person.  # noqa: E501
+        """Gets the email of this LPerson.  # noqa: E501
 
 
-        :return: The email of this Person.  # noqa: E501
+        :return: The email of this LPerson.  # noqa: E501
         :rtype: str
         """
         return self._email
 
     @email.setter
     def email(self, email):
-        """Sets the email of this Person.
+        """Sets the email of this LPerson.
 
 
-        :param email: The email of this Person.  # noqa: E501
+        :param email: The email of this LPerson.  # noqa: E501
         :type: str
         """
 
@@ -86,22 +86,22 @@ class LPerson(object):
 
     @property
     def is_disabled(self):
-        """Gets the is_disabled of this Person.  # noqa: E501
+        """Gets the is_disabled of this LPerson.  # noqa: E501
 
         If true, the account is disabled. This property can only be changed by an admin account.  # noqa: E501
 
-        :return: The is_disabled of this Person.  # noqa: E501
+        :return: The is_disabled of this LPerson.  # noqa: E501
         :rtype: bool
         """
         return self._is_disabled
 
     @is_disabled.setter
     def is_disabled(self, is_disabled):
-        """Sets the is_disabled of this Person.
+        """Sets the is_disabled of this LPerson.
 
         If true, the account is disabled. This property can only be changed by an admin account.  # noqa: E501
 
-        :param is_disabled: The is_disabled of this Person.  # noqa: E501
+        :param is_disabled: The is_disabled of this LPerson.  # noqa: E501
         :type: bool
         """
 
@@ -109,22 +109,22 @@ class LPerson(object):
 
     @property
     def validate_export_compliance(self):
-        """Gets the validate_export_compliance of this Person.  # noqa: E501
+        """Gets the validate_export_compliance of this LPerson.  # noqa: E501
 
         When true, the user is subject to an export compliance check when they register.  # noqa: E501
 
-        :return: The validate_export_compliance of this Person.  # noqa: E501
+        :return: The validate_export_compliance of this LPerson.  # noqa: E501
         :rtype: bool
         """
         return self._validate_export_compliance
 
     @validate_export_compliance.setter
     def validate_export_compliance(self, validate_export_compliance):
-        """Sets the validate_export_compliance of this Person.
+        """Sets the validate_export_compliance of this LPerson.
 
         When true, the user is subject to an export compliance check when they register.  # noqa: E501
 
-        :param validate_export_compliance: The validate_export_compliance of this Person.  # noqa: E501
+        :param validate_export_compliance: The validate_export_compliance of this LPerson.  # noqa: E501
         :type: bool
         """
 
@@ -132,21 +132,21 @@ class LPerson(object):
 
     @property
     def id(self):
-        """Gets the id of this Person.  # noqa: E501
+        """Gets the id of this LPerson.  # noqa: E501
 
 
-        :return: The id of this Person.  # noqa: E501
-        :rtype: AnyOfpersonId
+        :return: The id of this LPerson.  # noqa: E501
+        :rtype: LAnyOfpersonId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Person.
+        """Sets the id of this LPerson.
 
 
-        :param id: The id of this Person.  # noqa: E501
-        :type: AnyOfpersonId
+        :param id: The id of this LPerson.  # noqa: E501
+        :type: LAnyOfpersonId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -155,22 +155,22 @@ class LPerson(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this Person.  # noqa: E501
+        """Gets the created_at of this LPerson.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this Person.  # noqa: E501
+        :return: The created_at of this LPerson.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Person.
+        """Sets the created_at of this LPerson.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this Person.  # noqa: E501
+        :param created_at: The created_at of this LPerson.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -180,22 +180,22 @@ class LPerson(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Person.  # noqa: E501
+        """Gets the updated_at of this LPerson.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this Person.  # noqa: E501
+        :return: The updated_at of this LPerson.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Person.
+        """Sets the updated_at of this LPerson.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this Person.  # noqa: E501
+        :param updated_at: The updated_at of this LPerson.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -224,7 +224,7 @@ class LPerson(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Person, dict):
+        if issubclass(LPerson, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -240,7 +240,7 @@ class LPerson(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Person):
+        if not isinstance(other, LPerson):
             return False
 
         return self.__dict__ == other.__dict__

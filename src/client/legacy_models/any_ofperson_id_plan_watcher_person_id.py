@@ -33,7 +33,7 @@ class LAnyOfpersonIdPlanWatcherPersonId(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfpersonIdPlanWatcherPersonId - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfpersonIdPlanWatcherPersonId - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfpersonIdPlanWatcherPersonId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfpersonIdPlanWatcherPersonId, dict):
+        if issubclass(LAnyOfpersonIdPlanWatcherPersonId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfpersonIdPlanWatcherPersonId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfpersonIdPlanWatcherPersonId):
+        if not isinstance(other, LAnyOfpersonIdPlanWatcherPersonId):
             return False
 
         return self.__dict__ == other.__dict__

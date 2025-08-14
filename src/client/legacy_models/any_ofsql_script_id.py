@@ -33,7 +33,7 @@ class LAnyOfsqlScriptId(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfsqlScriptId - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfsqlScriptId - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfsqlScriptId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfsqlScriptId, dict):
+        if issubclass(LAnyOfsqlScriptId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfsqlScriptId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfsqlScriptId):
+        if not isinstance(other, LAnyOfsqlScriptId):
             return False
 
         return self.__dict__ == other.__dict__

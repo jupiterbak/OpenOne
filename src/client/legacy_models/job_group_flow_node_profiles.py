@@ -37,7 +37,7 @@ class LJobGroupFlowNodeProfiles(dict):
         attribute_map.update(dict.attribute_map)
 
     def __init__(self, *args, **kwargs):  # noqa: E501
-        """JobGroupFlowNodeProfiles - a model defined in Swagger"""  # noqa: E501
+        """LJobGroupFlowNodeProfiles - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
         dict.__init__(self, *args, **kwargs)
 
@@ -62,7 +62,7 @@ class LJobGroupFlowNodeProfiles(dict):
                 ))
             else:
                 result[attr] = value
-        if issubclass(JobGroupFlowNodeProfiles, dict):
+        if issubclass(LJobGroupFlowNodeProfiles, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -78,7 +78,7 @@ class LJobGroupFlowNodeProfiles(dict):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, JobGroupFlowNodeProfiles):
+        if not isinstance(other, LJobGroupFlowNodeProfiles):
             return False
 
         return self.__dict__ == other.__dict__

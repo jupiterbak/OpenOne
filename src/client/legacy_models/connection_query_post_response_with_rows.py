@@ -37,7 +37,7 @@ class LConnectionQueryPostResponseWithRows(object):
     }
 
     def __init__(self, name=None, head_rows=None):  # noqa: E501
-        """ConnectionQueryPostResponseWithRows - a model defined in Swagger"""  # noqa: E501
+        """LConnectionQueryPostResponseWithRows - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self._head_rows = None
         self.discriminator = None
@@ -46,20 +46,20 @@ class LConnectionQueryPostResponseWithRows(object):
 
     @property
     def name(self):
-        """Gets the name of this ConnectionQueryPostResponseWithRows.  # noqa: E501
+        """Gets the name of this LConnectionQueryPostResponseWithRows.  # noqa: E501
 
 
-        :return: The name of this ConnectionQueryPostResponseWithRows.  # noqa: E501
+        :return: The name of this LConnectionQueryPostResponseWithRows.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConnectionQueryPostResponseWithRows.
+        """Sets the name of this LConnectionQueryPostResponseWithRows.
 
 
-        :param name: The name of this ConnectionQueryPostResponseWithRows.  # noqa: E501
+        :param name: The name of this LConnectionQueryPostResponseWithRows.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -69,20 +69,20 @@ class LConnectionQueryPostResponseWithRows(object):
 
     @property
     def head_rows(self):
-        """Gets the head_rows of this ConnectionQueryPostResponseWithRows.  # noqa: E501
+        """Gets the head_rows of this LConnectionQueryPostResponseWithRows.  # noqa: E501
 
 
-        :return: The head_rows of this ConnectionQueryPostResponseWithRows.  # noqa: E501
+        :return: The head_rows of this LConnectionQueryPostResponseWithRows.  # noqa: E501
         :rtype: list[object]
         """
         return self._head_rows
 
     @head_rows.setter
     def head_rows(self, head_rows):
-        """Sets the head_rows of this ConnectionQueryPostResponseWithRows.
+        """Sets the head_rows of this LConnectionQueryPostResponseWithRows.
 
 
-        :param head_rows: The head_rows of this ConnectionQueryPostResponseWithRows.  # noqa: E501
+        :param head_rows: The head_rows of this LConnectionQueryPostResponseWithRows.  # noqa: E501
         :type: list[object]
         """
         if head_rows is None:
@@ -111,7 +111,7 @@ class LConnectionQueryPostResponseWithRows(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ConnectionQueryPostResponseWithRows, dict):
+        if issubclass(LConnectionQueryPostResponseWithRows, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LConnectionQueryPostResponseWithRows(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ConnectionQueryPostResponseWithRows):
+        if not isinstance(other, LConnectionQueryPostResponseWithRows):
             return False
 
         return self.__dict__ == other.__dict__

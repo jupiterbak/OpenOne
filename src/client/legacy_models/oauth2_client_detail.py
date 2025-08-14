@@ -49,7 +49,7 @@ class LOauth2ClientDetail(object):
     }
 
     def __init__(self, oauth2_client_id=None, name=None, type=None, oauth2_grant_type=None, created_at=None, updated_at=None, creator=None, updater=None):  # noqa: E501
-        """Oauth2ClientDetail - a model defined in Swagger"""  # noqa: E501
+        """LOauth2ClientDetail - a model defined in Swagger"""  # noqa: E501
         self._oauth2_client_id = None
         self._name = None
         self._type = None
@@ -76,20 +76,20 @@ class LOauth2ClientDetail(object):
 
     @property
     def oauth2_client_id(self):
-        """Gets the oauth2_client_id of this Oauth2ClientDetail.  # noqa: E501
+        """Gets the oauth2_client_id of this LOauth2ClientDetail.  # noqa: E501
 
 
-        :return: The oauth2_client_id of this Oauth2ClientDetail.  # noqa: E501
+        :return: The oauth2_client_id of this LOauth2ClientDetail.  # noqa: E501
         :rtype: int
         """
         return self._oauth2_client_id
 
     @oauth2_client_id.setter
     def oauth2_client_id(self, oauth2_client_id):
-        """Sets the oauth2_client_id of this Oauth2ClientDetail.
+        """Sets the oauth2_client_id of this LOauth2ClientDetail.
 
 
-        :param oauth2_client_id: The oauth2_client_id of this Oauth2ClientDetail.  # noqa: E501
+        :param oauth2_client_id: The oauth2_client_id of this LOauth2ClientDetail.  # noqa: E501
         :type: int
         """
 
@@ -97,20 +97,20 @@ class LOauth2ClientDetail(object):
 
     @property
     def name(self):
-        """Gets the name of this Oauth2ClientDetail.  # noqa: E501
+        """Gets the name of this LOauth2ClientDetail.  # noqa: E501
 
 
-        :return: The name of this Oauth2ClientDetail.  # noqa: E501
+        :return: The name of this LOauth2ClientDetail.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Oauth2ClientDetail.
+        """Sets the name of this LOauth2ClientDetail.
 
 
-        :param name: The name of this Oauth2ClientDetail.  # noqa: E501
+        :param name: The name of this LOauth2ClientDetail.  # noqa: E501
         :type: str
         """
         if name is None:
@@ -120,20 +120,20 @@ class LOauth2ClientDetail(object):
 
     @property
     def type(self):
-        """Gets the type of this Oauth2ClientDetail.  # noqa: E501
+        """Gets the type of this LOauth2ClientDetail.  # noqa: E501
 
 
-        :return: The type of this Oauth2ClientDetail.  # noqa: E501
+        :return: The type of this LOauth2ClientDetail.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Oauth2ClientDetail.
+        """Sets the type of this LOauth2ClientDetail.
 
 
-        :param type: The type of this Oauth2ClientDetail.  # noqa: E501
+        :param type: The type of this LOauth2ClientDetail.  # noqa: E501
         :type: str
         """
 
@@ -141,20 +141,20 @@ class LOauth2ClientDetail(object):
 
     @property
     def oauth2_grant_type(self):
-        """Gets the oauth2_grant_type of this Oauth2ClientDetail.  # noqa: E501
+        """Gets the oauth2_grant_type of this LOauth2ClientDetail.  # noqa: E501
 
 
-        :return: The oauth2_grant_type of this Oauth2ClientDetail.  # noqa: E501
+        :return: The oauth2_grant_type of this LOauth2ClientDetail.  # noqa: E501
         :rtype: str
         """
         return self._oauth2_grant_type
 
     @oauth2_grant_type.setter
     def oauth2_grant_type(self, oauth2_grant_type):
-        """Sets the oauth2_grant_type of this Oauth2ClientDetail.
+        """Sets the oauth2_grant_type of this LOauth2ClientDetail.
 
 
-        :param oauth2_grant_type: The oauth2_grant_type of this Oauth2ClientDetail.  # noqa: E501
+        :param oauth2_grant_type: The oauth2_grant_type of this LOauth2ClientDetail.  # noqa: E501
         :type: str
         """
 
@@ -162,22 +162,22 @@ class LOauth2ClientDetail(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this Oauth2ClientDetail.  # noqa: E501
+        """Gets the created_at of this LOauth2ClientDetail.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this Oauth2ClientDetail.  # noqa: E501
+        :return: The created_at of this LOauth2ClientDetail.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Oauth2ClientDetail.
+        """Sets the created_at of this LOauth2ClientDetail.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this Oauth2ClientDetail.  # noqa: E501
+        :param created_at: The created_at of this LOauth2ClientDetail.  # noqa: E501
         :type: datetime
         """
 
@@ -185,22 +185,22 @@ class LOauth2ClientDetail(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Oauth2ClientDetail.  # noqa: E501
+        """Gets the updated_at of this LOauth2ClientDetail.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this Oauth2ClientDetail.  # noqa: E501
+        :return: The updated_at of this LOauth2ClientDetail.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Oauth2ClientDetail.
+        """Sets the updated_at of this LOauth2ClientDetail.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this Oauth2ClientDetail.  # noqa: E501
+        :param updated_at: The updated_at of this LOauth2ClientDetail.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -210,20 +210,20 @@ class LOauth2ClientDetail(object):
 
     @property
     def creator(self):
-        """Gets the creator of this Oauth2ClientDetail.  # noqa: E501
+        """Gets the creator of this LOauth2ClientDetail.  # noqa: E501
 
 
-        :return: The creator of this Oauth2ClientDetail.  # noqa: E501
+        :return: The creator of this LOauth2ClientDetail.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this Oauth2ClientDetail.
+        """Sets the creator of this LOauth2ClientDetail.
 
 
-        :param creator: The creator of this Oauth2ClientDetail.  # noqa: E501
+        :param creator: The creator of this LOauth2ClientDetail.  # noqa: E501
         :type: object
         """
 
@@ -231,20 +231,20 @@ class LOauth2ClientDetail(object):
 
     @property
     def updater(self):
-        """Gets the updater of this Oauth2ClientDetail.  # noqa: E501
+        """Gets the updater of this LOauth2ClientDetail.  # noqa: E501
 
 
-        :return: The updater of this Oauth2ClientDetail.  # noqa: E501
+        :return: The updater of this LOauth2ClientDetail.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this Oauth2ClientDetail.
+        """Sets the updater of this LOauth2ClientDetail.
 
 
-        :param updater: The updater of this Oauth2ClientDetail.  # noqa: E501
+        :param updater: The updater of this LOauth2ClientDetail.  # noqa: E501
         :type: object
         """
 
@@ -271,7 +271,7 @@ class LOauth2ClientDetail(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Oauth2ClientDetail, dict):
+        if issubclass(LOauth2ClientDetail, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -287,7 +287,7 @@ class LOauth2ClientDetail(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Oauth2ClientDetail):
+        if not isinstance(other, LOauth2ClientDetail):
             return False
 
         return self.__dict__ == other.__dict__

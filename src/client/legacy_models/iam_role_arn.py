@@ -39,7 +39,7 @@ class LIamRoleArn(object):
     }
 
     def __init__(self, username=None, password=None, iam_role_arn=None):  # noqa: E501
-        """IamRoleArn - a model defined in Swagger"""  # noqa: E501
+        """LIamRoleArn - a model defined in Swagger"""  # noqa: E501
         self._username = None
         self._password = None
         self._iam_role_arn = None
@@ -51,20 +51,20 @@ class LIamRoleArn(object):
 
     @property
     def username(self):
-        """Gets the username of this IamRoleArn.  # noqa: E501
+        """Gets the username of this LIamRoleArn.  # noqa: E501
 
 
-        :return: The username of this IamRoleArn.  # noqa: E501
+        :return: The username of this LIamRoleArn.  # noqa: E501
         :rtype: str
         """
         return self._username
 
     @username.setter
     def username(self, username):
-        """Sets the username of this IamRoleArn.
+        """Sets the username of this LIamRoleArn.
 
 
-        :param username: The username of this IamRoleArn.  # noqa: E501
+        :param username: The username of this LIamRoleArn.  # noqa: E501
         :type: str
         """
         if username is None:
@@ -74,20 +74,20 @@ class LIamRoleArn(object):
 
     @property
     def password(self):
-        """Gets the password of this IamRoleArn.  # noqa: E501
+        """Gets the password of this LIamRoleArn.  # noqa: E501
 
 
-        :return: The password of this IamRoleArn.  # noqa: E501
+        :return: The password of this LIamRoleArn.  # noqa: E501
         :rtype: str
         """
         return self._password
 
     @password.setter
     def password(self, password):
-        """Sets the password of this IamRoleArn.
+        """Sets the password of this LIamRoleArn.
 
 
-        :param password: The password of this IamRoleArn.  # noqa: E501
+        :param password: The password of this LIamRoleArn.  # noqa: E501
         :type: str
         """
         if password is None:
@@ -97,20 +97,20 @@ class LIamRoleArn(object):
 
     @property
     def iam_role_arn(self):
-        """Gets the iam_role_arn of this IamRoleArn.  # noqa: E501
+        """Gets the iam_role_arn of this LIamRoleArn.  # noqa: E501
 
 
-        :return: The iam_role_arn of this IamRoleArn.  # noqa: E501
+        :return: The iam_role_arn of this LIamRoleArn.  # noqa: E501
         :rtype: str
         """
         return self._iam_role_arn
 
     @iam_role_arn.setter
     def iam_role_arn(self, iam_role_arn):
-        """Sets the iam_role_arn of this IamRoleArn.
+        """Sets the iam_role_arn of this LIamRoleArn.
 
 
-        :param iam_role_arn: The iam_role_arn of this IamRoleArn.  # noqa: E501
+        :param iam_role_arn: The iam_role_arn of this LIamRoleArn.  # noqa: E501
         :type: str
         """
 
@@ -137,7 +137,7 @@ class LIamRoleArn(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(IamRoleArn, dict):
+        if issubclass(LIamRoleArn, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -153,7 +153,7 @@ class LIamRoleArn(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, IamRoleArn):
+        if not isinstance(other, LIamRoleArn):
             return False
 
         return self.__dict__ == other.__dict__

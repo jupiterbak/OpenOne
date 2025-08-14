@@ -27,7 +27,7 @@ class LAccountUserIdList(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'data': 'list[AccountUserId]',
+        'data': 'list[LAccountUserId]',
         'count': 'int'
     }
 
@@ -37,7 +37,7 @@ class LAccountUserIdList(object):
     }
 
     def __init__(self, data=None, count=None):  # noqa: E501
-        """AccountUserIdList - a model defined in Swagger"""  # noqa: E501
+        """LAccountUserIdList - a model defined in Swagger"""  # noqa: E501
         self._data = None
         self._count = None
         self.discriminator = None
@@ -47,21 +47,21 @@ class LAccountUserIdList(object):
 
     @property
     def data(self):
-        """Gets the data of this AccountUserIdList.  # noqa: E501
+        """Gets the data of this LAccountUserIdList.  # noqa: E501
 
 
-        :return: The data of this AccountUserIdList.  # noqa: E501
-        :rtype: list[AccountUserId]
+        :return: The data of this LAccountUserIdList.  # noqa: E501
+        :rtype: list[LAccountUserId]
         """
         return self._data
 
     @data.setter
     def data(self, data):
-        """Sets the data of this AccountUserIdList.
+        """Sets the data of this LAccountUserIdList.
 
 
-        :param data: The data of this AccountUserIdList.  # noqa: E501
-        :type: list[AccountUserId]
+        :param data: The data of this LAccountUserIdList.  # noqa: E501
+        :type: list[LAccountUserId]
         """
         if data is None:
             raise ValueError("Invalid value for `data`, must not be `None`")  # noqa: E501
@@ -70,20 +70,20 @@ class LAccountUserIdList(object):
 
     @property
     def count(self):
-        """Gets the count of this AccountUserIdList.  # noqa: E501
+        """Gets the count of this LAccountUserIdList.  # noqa: E501
 
 
-        :return: The count of this AccountUserIdList.  # noqa: E501
+        :return: The count of this LAccountUserIdList.  # noqa: E501
         :rtype: int
         """
         return self._count
 
     @count.setter
     def count(self, count):
-        """Sets the count of this AccountUserIdList.
+        """Sets the count of this LAccountUserIdList.
 
 
-        :param count: The count of this AccountUserIdList.  # noqa: E501
+        :param count: The count of this LAccountUserIdList.  # noqa: E501
         :type: int
         """
 
@@ -110,7 +110,7 @@ class LAccountUserIdList(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AccountUserIdList, dict):
+        if issubclass(LAccountUserIdList, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -126,7 +126,7 @@ class LAccountUserIdList(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AccountUserIdList):
+        if not isinstance(other, LAccountUserIdList):
             return False
 
         return self.__dict__ == other.__dict__

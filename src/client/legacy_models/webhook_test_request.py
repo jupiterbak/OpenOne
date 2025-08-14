@@ -45,7 +45,7 @@ class LWebhookTestRequest(object):
     }
 
     def __init__(self, url=None, method=None, body=None, headers=None, secret_key=None, ssl_verification=None):  # noqa: E501
-        """WebhookTestRequest - a model defined in Swagger"""  # noqa: E501
+        """LWebhookTestRequest - a model defined in Swagger"""  # noqa: E501
         self._url = None
         self._method = None
         self._body = None
@@ -66,22 +66,22 @@ class LWebhookTestRequest(object):
 
     @property
     def url(self):
-        """Gets the url of this WebhookTestRequest.  # noqa: E501
+        """Gets the url of this LWebhookTestRequest.  # noqa: E501
 
         Webhook url  # noqa: E501
 
-        :return: The url of this WebhookTestRequest.  # noqa: E501
+        :return: The url of this LWebhookTestRequest.  # noqa: E501
         :rtype: str
         """
         return self._url
 
     @url.setter
     def url(self, url):
-        """Sets the url of this WebhookTestRequest.
+        """Sets the url of this LWebhookTestRequest.
 
         Webhook url  # noqa: E501
 
-        :param url: The url of this WebhookTestRequest.  # noqa: E501
+        :param url: The url of this LWebhookTestRequest.  # noqa: E501
         :type: str
         """
         if url is None:
@@ -91,22 +91,22 @@ class LWebhookTestRequest(object):
 
     @property
     def method(self):
-        """Gets the method of this WebhookTestRequest.  # noqa: E501
+        """Gets the method of this LWebhookTestRequest.  # noqa: E501
 
         HTTP method  # noqa: E501
 
-        :return: The method of this WebhookTestRequest.  # noqa: E501
+        :return: The method of this LWebhookTestRequest.  # noqa: E501
         :rtype: str
         """
         return self._method
 
     @method.setter
     def method(self, method):
-        """Sets the method of this WebhookTestRequest.
+        """Sets the method of this LWebhookTestRequest.
 
         HTTP method  # noqa: E501
 
-        :param method: The method of this WebhookTestRequest.  # noqa: E501
+        :param method: The method of this LWebhookTestRequest.  # noqa: E501
         :type: str
         """
         if method is None:
@@ -122,22 +122,22 @@ class LWebhookTestRequest(object):
 
     @property
     def body(self):
-        """Gets the body of this WebhookTestRequest.  # noqa: E501
+        """Gets the body of this LWebhookTestRequest.  # noqa: E501
 
         Webhook body  # noqa: E501
 
-        :return: The body of this WebhookTestRequest.  # noqa: E501
+        :return: The body of this LWebhookTestRequest.  # noqa: E501
         :rtype: str
         """
         return self._body
 
     @body.setter
     def body(self, body):
-        """Sets the body of this WebhookTestRequest.
+        """Sets the body of this LWebhookTestRequest.
 
         Webhook body  # noqa: E501
 
-        :param body: The body of this WebhookTestRequest.  # noqa: E501
+        :param body: The body of this LWebhookTestRequest.  # noqa: E501
         :type: str
         """
 
@@ -145,22 +145,22 @@ class LWebhookTestRequest(object):
 
     @property
     def headers(self):
-        """Gets the headers of this WebhookTestRequest.  # noqa: E501
+        """Gets the headers of this LWebhookTestRequest.  # noqa: E501
 
         Webhook HTTP headers  # noqa: E501
 
-        :return: The headers of this WebhookTestRequest.  # noqa: E501
+        :return: The headers of this LWebhookTestRequest.  # noqa: E501
         :rtype: dict(str, str)
         """
         return self._headers
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this WebhookTestRequest.
+        """Sets the headers of this LWebhookTestRequest.
 
         Webhook HTTP headers  # noqa: E501
 
-        :param headers: The headers of this WebhookTestRequest.  # noqa: E501
+        :param headers: The headers of this LWebhookTestRequest.  # noqa: E501
         :type: dict(str, str)
         """
 
@@ -168,22 +168,22 @@ class LWebhookTestRequest(object):
 
     @property
     def secret_key(self):
-        """Gets the secret_key of this WebhookTestRequest.  # noqa: E501
+        """Gets the secret_key of this LWebhookTestRequest.  # noqa: E501
 
         Optional secret key used to sign the webhook  # noqa: E501
 
-        :return: The secret_key of this WebhookTestRequest.  # noqa: E501
+        :return: The secret_key of this LWebhookTestRequest.  # noqa: E501
         :rtype: str
         """
         return self._secret_key
 
     @secret_key.setter
     def secret_key(self, secret_key):
-        """Sets the secret_key of this WebhookTestRequest.
+        """Sets the secret_key of this LWebhookTestRequest.
 
         Optional secret key used to sign the webhook  # noqa: E501
 
-        :param secret_key: The secret_key of this WebhookTestRequest.  # noqa: E501
+        :param secret_key: The secret_key of this LWebhookTestRequest.  # noqa: E501
         :type: str
         """
 
@@ -191,22 +191,22 @@ class LWebhookTestRequest(object):
 
     @property
     def ssl_verification(self):
-        """Gets the ssl_verification of this WebhookTestRequest.  # noqa: E501
+        """Gets the ssl_verification of this LWebhookTestRequest.  # noqa: E501
 
         Enable SSL verification  # noqa: E501
 
-        :return: The ssl_verification of this WebhookTestRequest.  # noqa: E501
+        :return: The ssl_verification of this LWebhookTestRequest.  # noqa: E501
         :rtype: bool
         """
         return self._ssl_verification
 
     @ssl_verification.setter
     def ssl_verification(self, ssl_verification):
-        """Sets the ssl_verification of this WebhookTestRequest.
+        """Sets the ssl_verification of this LWebhookTestRequest.
 
         Enable SSL verification  # noqa: E501
 
-        :param ssl_verification: The ssl_verification of this WebhookTestRequest.  # noqa: E501
+        :param ssl_verification: The ssl_verification of this LWebhookTestRequest.  # noqa: E501
         :type: bool
         """
 
@@ -233,7 +233,7 @@ class LWebhookTestRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WebhookTestRequest, dict):
+        if issubclass(LWebhookTestRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -249,7 +249,7 @@ class LWebhookTestRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WebhookTestRequest):
+        if not isinstance(other, LWebhookTestRequest):
             return False
 
         return self.__dict__ == other.__dict__

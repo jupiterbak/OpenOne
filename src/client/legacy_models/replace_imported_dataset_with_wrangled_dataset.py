@@ -27,8 +27,8 @@ class LReplaceImportedDatasetWithWrangledDataset(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'imported_dataset_id': 'AnyOfreplaceImportedDatasetWithWrangledDatasetImportedDatasetId',
-        'new_wrangled_dataset_id': 'AnyOfreplaceImportedDatasetWithWrangledDatasetNewWrangledDatasetId'
+        'imported_dataset_id': 'LAnyOfreplaceImportedDatasetWithWrangledDatasetImportedDatasetId',
+        'new_wrangled_dataset_id': 'LAnyOfreplaceImportedDatasetWithWrangledDatasetNewWrangledDatasetId'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LReplaceImportedDatasetWithWrangledDataset(object):
     }
 
     def __init__(self, imported_dataset_id=None, new_wrangled_dataset_id=None):  # noqa: E501
-        """ReplaceImportedDatasetWithWrangledDataset - a model defined in Swagger"""  # noqa: E501
+        """LReplaceImportedDatasetWithWrangledDataset - a model defined in Swagger"""  # noqa: E501
         self._imported_dataset_id = None
         self._new_wrangled_dataset_id = None
         self.discriminator = None
@@ -46,21 +46,21 @@ class LReplaceImportedDatasetWithWrangledDataset(object):
 
     @property
     def imported_dataset_id(self):
-        """Gets the imported_dataset_id of this ReplaceImportedDatasetWithWrangledDataset.  # noqa: E501
+        """Gets the imported_dataset_id of this LReplaceImportedDatasetWithWrangledDataset.  # noqa: E501
 
 
-        :return: The imported_dataset_id of this ReplaceImportedDatasetWithWrangledDataset.  # noqa: E501
-        :rtype: AnyOfreplaceImportedDatasetWithWrangledDatasetImportedDatasetId
+        :return: The imported_dataset_id of this LReplaceImportedDatasetWithWrangledDataset.  # noqa: E501
+        :rtype: LAnyOfreplaceImportedDatasetWithWrangledDatasetImportedDatasetId
         """
         return self._imported_dataset_id
 
     @imported_dataset_id.setter
     def imported_dataset_id(self, imported_dataset_id):
-        """Sets the imported_dataset_id of this ReplaceImportedDatasetWithWrangledDataset.
+        """Sets the imported_dataset_id of this LReplaceImportedDatasetWithWrangledDataset.
 
 
-        :param imported_dataset_id: The imported_dataset_id of this ReplaceImportedDatasetWithWrangledDataset.  # noqa: E501
-        :type: AnyOfreplaceImportedDatasetWithWrangledDatasetImportedDatasetId
+        :param imported_dataset_id: The imported_dataset_id of this LReplaceImportedDatasetWithWrangledDataset.  # noqa: E501
+        :type: LAnyOfreplaceImportedDatasetWithWrangledDatasetImportedDatasetId
         """
         if imported_dataset_id is None:
             raise ValueError("Invalid value for `imported_dataset_id`, must not be `None`")  # noqa: E501
@@ -69,21 +69,21 @@ class LReplaceImportedDatasetWithWrangledDataset(object):
 
     @property
     def new_wrangled_dataset_id(self):
-        """Gets the new_wrangled_dataset_id of this ReplaceImportedDatasetWithWrangledDataset.  # noqa: E501
+        """Gets the new_wrangled_dataset_id of this LReplaceImportedDatasetWithWrangledDataset.  # noqa: E501
 
 
-        :return: The new_wrangled_dataset_id of this ReplaceImportedDatasetWithWrangledDataset.  # noqa: E501
-        :rtype: AnyOfreplaceImportedDatasetWithWrangledDatasetNewWrangledDatasetId
+        :return: The new_wrangled_dataset_id of this LReplaceImportedDatasetWithWrangledDataset.  # noqa: E501
+        :rtype: LAnyOfreplaceImportedDatasetWithWrangledDatasetNewWrangledDatasetId
         """
         return self._new_wrangled_dataset_id
 
     @new_wrangled_dataset_id.setter
     def new_wrangled_dataset_id(self, new_wrangled_dataset_id):
-        """Sets the new_wrangled_dataset_id of this ReplaceImportedDatasetWithWrangledDataset.
+        """Sets the new_wrangled_dataset_id of this LReplaceImportedDatasetWithWrangledDataset.
 
 
-        :param new_wrangled_dataset_id: The new_wrangled_dataset_id of this ReplaceImportedDatasetWithWrangledDataset.  # noqa: E501
-        :type: AnyOfreplaceImportedDatasetWithWrangledDatasetNewWrangledDatasetId
+        :param new_wrangled_dataset_id: The new_wrangled_dataset_id of this LReplaceImportedDatasetWithWrangledDataset.  # noqa: E501
+        :type: LAnyOfreplaceImportedDatasetWithWrangledDatasetNewWrangledDatasetId
         """
         if new_wrangled_dataset_id is None:
             raise ValueError("Invalid value for `new_wrangled_dataset_id`, must not be `None`")  # noqa: E501
@@ -111,7 +111,7 @@ class LReplaceImportedDatasetWithWrangledDataset(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ReplaceImportedDatasetWithWrangledDataset, dict):
+        if issubclass(LReplaceImportedDatasetWithWrangledDataset, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LReplaceImportedDatasetWithWrangledDataset(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ReplaceImportedDatasetWithWrangledDataset):
+        if not isinstance(other, LReplaceImportedDatasetWithWrangledDataset):
             return False
 
         return self.__dict__ == other.__dict__

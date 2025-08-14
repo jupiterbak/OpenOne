@@ -35,7 +35,7 @@ class LCopyImportedDatasetRequest(object):
     }
 
     def __init__(self, name=None):  # noqa: E501
-        """CopyImportedDatasetRequest - a model defined in Swagger"""  # noqa: E501
+        """LCopyImportedDatasetRequest - a model defined in Swagger"""  # noqa: E501
         self._name = None
         self.discriminator = None
         if name is not None:
@@ -43,22 +43,22 @@ class LCopyImportedDatasetRequest(object):
 
     @property
     def name(self):
-        """Gets the name of this CopyImportedDatasetRequest.  # noqa: E501
+        """Gets the name of this LCopyImportedDatasetRequest.  # noqa: E501
 
         name of the copied dataset  # noqa: E501
 
-        :return: The name of this CopyImportedDatasetRequest.  # noqa: E501
+        :return: The name of this LCopyImportedDatasetRequest.  # noqa: E501
         :rtype: str
         """
         return self._name
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CopyImportedDatasetRequest.
+        """Sets the name of this LCopyImportedDatasetRequest.
 
         name of the copied dataset  # noqa: E501
 
-        :param name: The name of this CopyImportedDatasetRequest.  # noqa: E501
+        :param name: The name of this LCopyImportedDatasetRequest.  # noqa: E501
         :type: str
         """
 
@@ -85,7 +85,7 @@ class LCopyImportedDatasetRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(CopyImportedDatasetRequest, dict):
+        if issubclass(LCopyImportedDatasetRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -101,7 +101,7 @@ class LCopyImportedDatasetRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CopyImportedDatasetRequest):
+        if not isinstance(other, LCopyImportedDatasetRequest):
             return False
 
         return self.__dict__ == other.__dict__

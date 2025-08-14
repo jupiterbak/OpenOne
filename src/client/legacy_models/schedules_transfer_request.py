@@ -39,7 +39,7 @@ class LSchedulesTransferRequest(object):
     }
 
     def __init__(self, schedule_ids=None, to_user_id=None, to_workspace_id=None):  # noqa: E501
-        """SchedulesTransferRequest - a model defined in Swagger"""  # noqa: E501
+        """LSchedulesTransferRequest - a model defined in Swagger"""  # noqa: E501
         self._schedule_ids = None
         self._to_user_id = None
         self._to_workspace_id = None
@@ -51,20 +51,20 @@ class LSchedulesTransferRequest(object):
 
     @property
     def schedule_ids(self):
-        """Gets the schedule_ids of this SchedulesTransferRequest.  # noqa: E501
+        """Gets the schedule_ids of this LSchedulesTransferRequest.  # noqa: E501
 
 
-        :return: The schedule_ids of this SchedulesTransferRequest.  # noqa: E501
+        :return: The schedule_ids of this LSchedulesTransferRequest.  # noqa: E501
         :rtype: list[int]
         """
         return self._schedule_ids
 
     @schedule_ids.setter
     def schedule_ids(self, schedule_ids):
-        """Sets the schedule_ids of this SchedulesTransferRequest.
+        """Sets the schedule_ids of this LSchedulesTransferRequest.
 
 
-        :param schedule_ids: The schedule_ids of this SchedulesTransferRequest.  # noqa: E501
+        :param schedule_ids: The schedule_ids of this LSchedulesTransferRequest.  # noqa: E501
         :type: list[int]
         """
         if schedule_ids is None:
@@ -74,22 +74,22 @@ class LSchedulesTransferRequest(object):
 
     @property
     def to_user_id(self):
-        """Gets the to_user_id of this SchedulesTransferRequest.  # noqa: E501
+        """Gets the to_user_id of this LSchedulesTransferRequest.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The to_user_id of this SchedulesTransferRequest.  # noqa: E501
+        :return: The to_user_id of this LSchedulesTransferRequest.  # noqa: E501
         :rtype: int
         """
         return self._to_user_id
 
     @to_user_id.setter
     def to_user_id(self, to_user_id):
-        """Sets the to_user_id of this SchedulesTransferRequest.
+        """Sets the to_user_id of this LSchedulesTransferRequest.
 
         unique identifier for this object.  # noqa: E501
 
-        :param to_user_id: The to_user_id of this SchedulesTransferRequest.  # noqa: E501
+        :param to_user_id: The to_user_id of this LSchedulesTransferRequest.  # noqa: E501
         :type: int
         """
         if to_user_id is None:
@@ -99,22 +99,22 @@ class LSchedulesTransferRequest(object):
 
     @property
     def to_workspace_id(self):
-        """Gets the to_workspace_id of this SchedulesTransferRequest.  # noqa: E501
+        """Gets the to_workspace_id of this LSchedulesTransferRequest.  # noqa: E501
 
         unique identifier for this object.  # noqa: E501
 
-        :return: The to_workspace_id of this SchedulesTransferRequest.  # noqa: E501
+        :return: The to_workspace_id of this LSchedulesTransferRequest.  # noqa: E501
         :rtype: int
         """
         return self._to_workspace_id
 
     @to_workspace_id.setter
     def to_workspace_id(self, to_workspace_id):
-        """Sets the to_workspace_id of this SchedulesTransferRequest.
+        """Sets the to_workspace_id of this LSchedulesTransferRequest.
 
         unique identifier for this object.  # noqa: E501
 
-        :param to_workspace_id: The to_workspace_id of this SchedulesTransferRequest.  # noqa: E501
+        :param to_workspace_id: The to_workspace_id of this LSchedulesTransferRequest.  # noqa: E501
         :type: int
         """
 
@@ -141,7 +141,7 @@ class LSchedulesTransferRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(SchedulesTransferRequest, dict):
+        if issubclass(LSchedulesTransferRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -157,7 +157,7 @@ class LSchedulesTransferRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SchedulesTransferRequest):
+        if not isinstance(other, LSchedulesTransferRequest):
             return False
 
         return self.__dict__ == other.__dict__

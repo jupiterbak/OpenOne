@@ -37,7 +37,7 @@ class LOutputObjectSchemaDriftOptionsUpdateRequest(object):
     }
 
     def __init__(self, schema_validation='true', stop_job_on_errors_found='false'):  # noqa: E501
-        """OutputObjectSchemaDriftOptionsUpdateRequest - a model defined in Swagger"""  # noqa: E501
+        """LOutputObjectSchemaDriftOptionsUpdateRequest - a model defined in Swagger"""  # noqa: E501
         self._schema_validation = None
         self._stop_job_on_errors_found = None
         self.discriminator = None
@@ -48,22 +48,22 @@ class LOutputObjectSchemaDriftOptionsUpdateRequest(object):
 
     @property
     def schema_validation(self):
-        """Gets the schema_validation of this OutputObjectSchemaDriftOptionsUpdateRequest.  # noqa: E501
+        """Gets the schema_validation of this LOutputObjectSchemaDriftOptionsUpdateRequest.  # noqa: E501
 
         Setting this flag to true will mean the job will perform schema drift verification.  # noqa: E501
 
-        :return: The schema_validation of this OutputObjectSchemaDriftOptionsUpdateRequest.  # noqa: E501
+        :return: The schema_validation of this LOutputObjectSchemaDriftOptionsUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._schema_validation
 
     @schema_validation.setter
     def schema_validation(self, schema_validation):
-        """Sets the schema_validation of this OutputObjectSchemaDriftOptionsUpdateRequest.
+        """Sets the schema_validation of this LOutputObjectSchemaDriftOptionsUpdateRequest.
 
         Setting this flag to true will mean the job will perform schema drift verification.  # noqa: E501
 
-        :param schema_validation: The schema_validation of this OutputObjectSchemaDriftOptionsUpdateRequest.  # noqa: E501
+        :param schema_validation: The schema_validation of this LOutputObjectSchemaDriftOptionsUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -71,22 +71,22 @@ class LOutputObjectSchemaDriftOptionsUpdateRequest(object):
 
     @property
     def stop_job_on_errors_found(self):
-        """Gets the stop_job_on_errors_found of this OutputObjectSchemaDriftOptionsUpdateRequest.  # noqa: E501
+        """Gets the stop_job_on_errors_found of this LOutputObjectSchemaDriftOptionsUpdateRequest.  # noqa: E501
 
         Setting this flag to true will mean the job will fail on schema drift errors. Setting it to false mean the job will run the job even if there are upstream schema drift errors.  # noqa: E501
 
-        :return: The stop_job_on_errors_found of this OutputObjectSchemaDriftOptionsUpdateRequest.  # noqa: E501
+        :return: The stop_job_on_errors_found of this LOutputObjectSchemaDriftOptionsUpdateRequest.  # noqa: E501
         :rtype: str
         """
         return self._stop_job_on_errors_found
 
     @stop_job_on_errors_found.setter
     def stop_job_on_errors_found(self, stop_job_on_errors_found):
-        """Sets the stop_job_on_errors_found of this OutputObjectSchemaDriftOptionsUpdateRequest.
+        """Sets the stop_job_on_errors_found of this LOutputObjectSchemaDriftOptionsUpdateRequest.
 
         Setting this flag to true will mean the job will fail on schema drift errors. Setting it to false mean the job will run the job even if there are upstream schema drift errors.  # noqa: E501
 
-        :param stop_job_on_errors_found: The stop_job_on_errors_found of this OutputObjectSchemaDriftOptionsUpdateRequest.  # noqa: E501
+        :param stop_job_on_errors_found: The stop_job_on_errors_found of this LOutputObjectSchemaDriftOptionsUpdateRequest.  # noqa: E501
         :type: str
         """
 
@@ -113,7 +113,7 @@ class LOutputObjectSchemaDriftOptionsUpdateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OutputObjectSchemaDriftOptionsUpdateRequest, dict):
+        if issubclass(LOutputObjectSchemaDriftOptionsUpdateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LOutputObjectSchemaDriftOptionsUpdateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OutputObjectSchemaDriftOptionsUpdateRequest):
+        if not isinstance(other, LOutputObjectSchemaDriftOptionsUpdateRequest):
             return False
 
         return self.__dict__ == other.__dict__

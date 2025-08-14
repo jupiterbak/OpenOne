@@ -33,7 +33,7 @@ class LPlanWatcherSchema(object):
     }
 
     def __init__(self):  # noqa: E501
-        """PlanWatcherSchema - a model defined in Swagger"""  # noqa: E501
+        """LPlanWatcherSchema - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LPlanWatcherSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanWatcherSchema, dict):
+        if issubclass(LPlanWatcherSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LPlanWatcherSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanWatcherSchema):
+        if not isinstance(other, LPlanWatcherSchema):
             return False
 
         return self.__dict__ == other.__dict__

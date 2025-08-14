@@ -37,7 +37,7 @@ class LRunParameterOverrides(object):
     }
 
     def __init__(self, reference_date=None, overrides=None):  # noqa: E501
-        """RunParameterOverrides - a model defined in Swagger"""  # noqa: E501
+        """LRunParameterOverrides - a model defined in Swagger"""  # noqa: E501
         self._reference_date = None
         self._overrides = None
         self.discriminator = None
@@ -48,22 +48,22 @@ class LRunParameterOverrides(object):
 
     @property
     def reference_date(self):
-        """Gets the reference_date of this RunParameterOverrides.  # noqa: E501
+        """Gets the reference_date of this LRunParameterOverrides.  # noqa: E501
 
         (optional) Indicates to which date should NOW resolves to when using date-time parameters  # noqa: E501
 
-        :return: The reference_date of this RunParameterOverrides.  # noqa: E501
+        :return: The reference_date of this LRunParameterOverrides.  # noqa: E501
         :rtype: datetime
         """
         return self._reference_date
 
     @reference_date.setter
     def reference_date(self, reference_date):
-        """Sets the reference_date of this RunParameterOverrides.
+        """Sets the reference_date of this LRunParameterOverrides.
 
         (optional) Indicates to which date should NOW resolves to when using date-time parameters  # noqa: E501
 
-        :param reference_date: The reference_date of this RunParameterOverrides.  # noqa: E501
+        :param reference_date: The reference_date of this LRunParameterOverrides.  # noqa: E501
         :type: datetime
         """
 
@@ -71,20 +71,20 @@ class LRunParameterOverrides(object):
 
     @property
     def overrides(self):
-        """Gets the overrides of this RunParameterOverrides.  # noqa: E501
+        """Gets the overrides of this LRunParameterOverrides.  # noqa: E501
 
 
-        :return: The overrides of this RunParameterOverrides.  # noqa: E501
+        :return: The overrides of this LRunParameterOverrides.  # noqa: E501
         :rtype: object
         """
         return self._overrides
 
     @overrides.setter
     def overrides(self, overrides):
-        """Sets the overrides of this RunParameterOverrides.
+        """Sets the overrides of this LRunParameterOverrides.
 
 
-        :param overrides: The overrides of this RunParameterOverrides.  # noqa: E501
+        :param overrides: The overrides of this LRunParameterOverrides.  # noqa: E501
         :type: object
         """
 
@@ -111,7 +111,7 @@ class LRunParameterOverrides(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunParameterOverrides, dict):
+        if issubclass(LRunParameterOverrides, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -127,7 +127,7 @@ class LRunParameterOverrides(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunParameterOverrides):
+        if not isinstance(other, LRunParameterOverrides):
             return False
 
         return self.__dict__ == other.__dict__

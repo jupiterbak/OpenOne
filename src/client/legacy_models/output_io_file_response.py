@@ -39,7 +39,7 @@ class LOutputIoFileResponse(object):
     }
 
     def __init__(self, uri=None, file_type=None, is_primary_output=None):  # noqa: E501
-        """OutputIoFileResponse - a model defined in Swagger"""  # noqa: E501
+        """LOutputIoFileResponse - a model defined in Swagger"""  # noqa: E501
         self._uri = None
         self._file_type = None
         self._is_primary_output = None
@@ -52,20 +52,20 @@ class LOutputIoFileResponse(object):
 
     @property
     def uri(self):
-        """Gets the uri of this OutputIoFileResponse.  # noqa: E501
+        """Gets the uri of this LOutputIoFileResponse.  # noqa: E501
 
 
-        :return: The uri of this OutputIoFileResponse.  # noqa: E501
+        :return: The uri of this LOutputIoFileResponse.  # noqa: E501
         :rtype: str
         """
         return self._uri
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this OutputIoFileResponse.
+        """Sets the uri of this LOutputIoFileResponse.
 
 
-        :param uri: The uri of this OutputIoFileResponse.  # noqa: E501
+        :param uri: The uri of this LOutputIoFileResponse.  # noqa: E501
         :type: str
         """
         if uri is None:
@@ -75,20 +75,20 @@ class LOutputIoFileResponse(object):
 
     @property
     def file_type(self):
-        """Gets the file_type of this OutputIoFileResponse.  # noqa: E501
+        """Gets the file_type of this LOutputIoFileResponse.  # noqa: E501
 
 
-        :return: The file_type of this OutputIoFileResponse.  # noqa: E501
+        :return: The file_type of this LOutputIoFileResponse.  # noqa: E501
         :rtype: str
         """
         return self._file_type
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this OutputIoFileResponse.
+        """Sets the file_type of this LOutputIoFileResponse.
 
 
-        :param file_type: The file_type of this OutputIoFileResponse.  # noqa: E501
+        :param file_type: The file_type of this LOutputIoFileResponse.  # noqa: E501
         :type: str
         """
         allowed_values = ["FILE", "DIRECTORY"]  # noqa: E501
@@ -102,20 +102,20 @@ class LOutputIoFileResponse(object):
 
     @property
     def is_primary_output(self):
-        """Gets the is_primary_output of this OutputIoFileResponse.  # noqa: E501
+        """Gets the is_primary_output of this LOutputIoFileResponse.  # noqa: E501
 
 
-        :return: The is_primary_output of this OutputIoFileResponse.  # noqa: E501
+        :return: The is_primary_output of this LOutputIoFileResponse.  # noqa: E501
         :rtype: bool
         """
         return self._is_primary_output
 
     @is_primary_output.setter
     def is_primary_output(self, is_primary_output):
-        """Sets the is_primary_output of this OutputIoFileResponse.
+        """Sets the is_primary_output of this LOutputIoFileResponse.
 
 
-        :param is_primary_output: The is_primary_output of this OutputIoFileResponse.  # noqa: E501
+        :param is_primary_output: The is_primary_output of this LOutputIoFileResponse.  # noqa: E501
         :type: bool
         """
 
@@ -142,7 +142,7 @@ class LOutputIoFileResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(OutputIoFileResponse, dict):
+        if issubclass(LOutputIoFileResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -158,7 +158,7 @@ class LOutputIoFileResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, OutputIoFileResponse):
+        if not isinstance(other, LOutputIoFileResponse):
             return False
 
         return self.__dict__ == other.__dict__

@@ -31,8 +31,8 @@ class LSqlScriptCreateRequest(object):
         'type': 'str',
         'vendor': 'str',
         'output_object_id': 'int',
-        'connection_id': 'ConnectionIdInfo',
-        'run_parameters': 'list[RunParameterSqlScriptInfo]'
+        'connection_id': 'LConnectionIdInfo',
+        'run_parameters': 'list[LRunParameterSqlScriptInfo]'
     }
 
     attribute_map = {
@@ -45,7 +45,7 @@ class LSqlScriptCreateRequest(object):
     }
 
     def __init__(self, sql_script=None, type=None, vendor=None, output_object_id=None, connection_id=None, run_parameters=None):  # noqa: E501
-        """SqlScriptCreateRequest - a model defined in Swagger"""  # noqa: E501
+        """LSqlScriptCreateRequest - a model defined in Swagger"""  # noqa: E501
         self._sql_script = None
         self._type = None
         self._vendor = None
@@ -65,22 +65,22 @@ class LSqlScriptCreateRequest(object):
 
     @property
     def sql_script(self):
-        """Gets the sql_script of this SqlScriptCreateRequest.  # noqa: E501
+        """Gets the sql_script of this LSqlScriptCreateRequest.  # noqa: E501
 
         String of SQL queries to be executed.  # noqa: E501
 
-        :return: The sql_script of this SqlScriptCreateRequest.  # noqa: E501
+        :return: The sql_script of this LSqlScriptCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._sql_script
 
     @sql_script.setter
     def sql_script(self, sql_script):
-        """Sets the sql_script of this SqlScriptCreateRequest.
+        """Sets the sql_script of this LSqlScriptCreateRequest.
 
         String of SQL queries to be executed.  # noqa: E501
 
-        :param sql_script: The sql_script of this SqlScriptCreateRequest.  # noqa: E501
+        :param sql_script: The sql_script of this LSqlScriptCreateRequest.  # noqa: E501
         :type: str
         """
         if sql_script is None:
@@ -90,22 +90,22 @@ class LSqlScriptCreateRequest(object):
 
     @property
     def type(self):
-        """Gets the type of this SqlScriptCreateRequest.  # noqa: E501
+        """Gets the type of this LSqlScriptCreateRequest.  # noqa: E501
 
         Identifier to decide if the SQLs will be executed before or after a job.  # noqa: E501
 
-        :return: The type of this SqlScriptCreateRequest.  # noqa: E501
+        :return: The type of this LSqlScriptCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._type
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SqlScriptCreateRequest.
+        """Sets the type of this LSqlScriptCreateRequest.
 
         Identifier to decide if the SQLs will be executed before or after a job.  # noqa: E501
 
-        :param type: The type of this SqlScriptCreateRequest.  # noqa: E501
+        :param type: The type of this LSqlScriptCreateRequest.  # noqa: E501
         :type: str
         """
         if type is None:
@@ -115,22 +115,22 @@ class LSqlScriptCreateRequest(object):
 
     @property
     def vendor(self):
-        """Gets the vendor of this SqlScriptCreateRequest.  # noqa: E501
+        """Gets the vendor of this LSqlScriptCreateRequest.  # noqa: E501
 
         e.g. `databricks`, `hive`, `redshift`, `postgres`, `oracle`, `sqlserver`, `teradata`, `bigquery`, `tableau`, `sqldatawarehouse`, `synapse`, `snowflake`, `gsuser`, `glue`, `sftp`, `s3`, `s3user`, `gsheetsuser`, `jdbc_rest`, `onedrive`, `sharepoint_files` or `box`  # noqa: E501
 
-        :return: The vendor of this SqlScriptCreateRequest.  # noqa: E501
+        :return: The vendor of this LSqlScriptCreateRequest.  # noqa: E501
         :rtype: str
         """
         return self._vendor
 
     @vendor.setter
     def vendor(self, vendor):
-        """Sets the vendor of this SqlScriptCreateRequest.
+        """Sets the vendor of this LSqlScriptCreateRequest.
 
         e.g. `databricks`, `hive`, `redshift`, `postgres`, `oracle`, `sqlserver`, `teradata`, `bigquery`, `tableau`, `sqldatawarehouse`, `synapse`, `snowflake`, `gsuser`, `glue`, `sftp`, `s3`, `s3user`, `gsheetsuser`, `jdbc_rest`, `onedrive`, `sharepoint_files` or `box`  # noqa: E501
 
-        :param vendor: The vendor of this SqlScriptCreateRequest.  # noqa: E501
+        :param vendor: The vendor of this LSqlScriptCreateRequest.  # noqa: E501
         :type: str
         """
         if vendor is None:
@@ -140,22 +140,22 @@ class LSqlScriptCreateRequest(object):
 
     @property
     def output_object_id(self):
-        """Gets the output_object_id of this SqlScriptCreateRequest.  # noqa: E501
+        """Gets the output_object_id of this LSqlScriptCreateRequest.  # noqa: E501
 
         [outputObject](#tag/OutputObject) to attach this [sqlScript](#tag/SqlScript) to.  # noqa: E501
 
-        :return: The output_object_id of this SqlScriptCreateRequest.  # noqa: E501
+        :return: The output_object_id of this LSqlScriptCreateRequest.  # noqa: E501
         :rtype: int
         """
         return self._output_object_id
 
     @output_object_id.setter
     def output_object_id(self, output_object_id):
-        """Sets the output_object_id of this SqlScriptCreateRequest.
+        """Sets the output_object_id of this LSqlScriptCreateRequest.
 
         [outputObject](#tag/OutputObject) to attach this [sqlScript](#tag/SqlScript) to.  # noqa: E501
 
-        :param output_object_id: The output_object_id of this SqlScriptCreateRequest.  # noqa: E501
+        :param output_object_id: The output_object_id of this LSqlScriptCreateRequest.  # noqa: E501
         :type: int
         """
 
@@ -163,44 +163,44 @@ class LSqlScriptCreateRequest(object):
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this SqlScriptCreateRequest.  # noqa: E501
+        """Gets the connection_id of this LSqlScriptCreateRequest.  # noqa: E501
 
 
-        :return: The connection_id of this SqlScriptCreateRequest.  # noqa: E501
-        :rtype: ConnectionIdInfo
+        :return: The connection_id of this LSqlScriptCreateRequest.  # noqa: E501
+        :rtype: LConnectionIdInfo
         """
         return self._connection_id
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this SqlScriptCreateRequest.
+        """Sets the connection_id of this LSqlScriptCreateRequest.
 
 
-        :param connection_id: The connection_id of this SqlScriptCreateRequest.  # noqa: E501
-        :type: ConnectionIdInfo
+        :param connection_id: The connection_id of this LSqlScriptCreateRequest.  # noqa: E501
+        :type: LConnectionIdInfo
         """
 
         self._connection_id = connection_id
 
     @property
     def run_parameters(self):
-        """Gets the run_parameters of this SqlScriptCreateRequest.  # noqa: E501
+        """Gets the run_parameters of this LSqlScriptCreateRequest.  # noqa: E501
 
         Optional Parameters that can be used to parameterized the `sqlScript`  # noqa: E501
 
-        :return: The run_parameters of this SqlScriptCreateRequest.  # noqa: E501
-        :rtype: list[RunParameterSqlScriptInfo]
+        :return: The run_parameters of this LSqlScriptCreateRequest.  # noqa: E501
+        :rtype: list[LRunParameterSqlScriptInfo]
         """
         return self._run_parameters
 
     @run_parameters.setter
     def run_parameters(self, run_parameters):
-        """Sets the run_parameters of this SqlScriptCreateRequest.
+        """Sets the run_parameters of this LSqlScriptCreateRequest.
 
         Optional Parameters that can be used to parameterized the `sqlScript`  # noqa: E501
 
-        :param run_parameters: The run_parameters of this SqlScriptCreateRequest.  # noqa: E501
-        :type: list[RunParameterSqlScriptInfo]
+        :param run_parameters: The run_parameters of this LSqlScriptCreateRequest.  # noqa: E501
+        :type: list[LRunParameterSqlScriptInfo]
         """
 
         self._run_parameters = run_parameters
@@ -226,7 +226,7 @@ class LSqlScriptCreateRequest(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(SqlScriptCreateRequest, dict):
+        if issubclass(LSqlScriptCreateRequest, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -242,7 +242,7 @@ class LSqlScriptCreateRequest(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, SqlScriptCreateRequest):
+        if not isinstance(other, LSqlScriptCreateRequest):
             return False
 
         return self.__dict__ == other.__dict__

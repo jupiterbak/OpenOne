@@ -33,7 +33,7 @@ class LPublication(object):
         'action': 'str',
         'outputobject': 'object',
         'connection': 'object',
-        'id': 'AnyOfpublicationId',
+        'id': 'LAnyOfpublicationId',
         'created_at': 'datetime',
         'updated_at': 'datetime',
         'creator': 'object',
@@ -57,7 +57,7 @@ class LPublication(object):
     }
 
     def __init__(self, path=None, table_name=None, target_type=None, action=None, outputobject=None, connection=None, id=None, created_at=None, updated_at=None, creator=None, updater=None, parameters=None):  # noqa: E501
-        """Publication - a model defined in Swagger"""  # noqa: E501
+        """LPublication - a model defined in Swagger"""  # noqa: E501
         self._path = None
         self._table_name = None
         self._target_type = None
@@ -95,22 +95,22 @@ class LPublication(object):
 
     @property
     def path(self):
-        """Gets the path of this Publication.  # noqa: E501
+        """Gets the path of this LPublication.  # noqa: E501
 
         path to the location of the table/datasource.  # noqa: E501
 
-        :return: The path of this Publication.  # noqa: E501
+        :return: The path of this LPublication.  # noqa: E501
         :rtype: list[str]
         """
         return self._path
 
     @path.setter
     def path(self, path):
-        """Sets the path of this Publication.
+        """Sets the path of this LPublication.
 
         path to the location of the table/datasource.  # noqa: E501
 
-        :param path: The path of this Publication.  # noqa: E501
+        :param path: The path of this LPublication.  # noqa: E501
         :type: list[str]
         """
 
@@ -118,22 +118,22 @@ class LPublication(object):
 
     @property
     def table_name(self):
-        """Gets the table_name of this Publication.  # noqa: E501
+        """Gets the table_name of this LPublication.  # noqa: E501
 
         name of the table   # noqa: E501
 
-        :return: The table_name of this Publication.  # noqa: E501
+        :return: The table_name of this LPublication.  # noqa: E501
         :rtype: str
         """
         return self._table_name
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this Publication.
+        """Sets the table_name of this LPublication.
 
         name of the table   # noqa: E501
 
-        :param table_name: The table_name of this Publication.  # noqa: E501
+        :param table_name: The table_name of this LPublication.  # noqa: E501
         :type: str
         """
 
@@ -141,22 +141,22 @@ class LPublication(object):
 
     @property
     def target_type(self):
-        """Gets the target_type of this Publication.  # noqa: E501
+        """Gets the target_type of this LPublication.  # noqa: E501
 
         e.g. `databricks`, `hive`, `redshift`, `postgres`, `oracle`, `sqlserver`, `teradata`, `bigquery`, `tableau`, `sqldatawarehouse`, `synapse`, `snowflake`, `gsuser`, `glue`, `sftp`, `s3`, `s3user`, `gsheetsuser`, `jdbc_rest`, `onedrive`, `sharepoint_files` or `box`  # noqa: E501
 
-        :return: The target_type of this Publication.  # noqa: E501
+        :return: The target_type of this LPublication.  # noqa: E501
         :rtype: str
         """
         return self._target_type
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this Publication.
+        """Sets the target_type of this LPublication.
 
         e.g. `databricks`, `hive`, `redshift`, `postgres`, `oracle`, `sqlserver`, `teradata`, `bigquery`, `tableau`, `sqldatawarehouse`, `synapse`, `snowflake`, `gsuser`, `glue`, `sftp`, `s3`, `s3user`, `gsheetsuser`, `jdbc_rest`, `onedrive`, `sharepoint_files` or `box`  # noqa: E501
 
-        :param target_type: The target_type of this Publication.  # noqa: E501
+        :param target_type: The target_type of this LPublication.  # noqa: E501
         :type: str
         """
 
@@ -164,22 +164,22 @@ class LPublication(object):
 
     @property
     def action(self):
-        """Gets the action of this Publication.  # noqa: E501
+        """Gets the action of this LPublication.  # noqa: E501
 
         Type of writing action to perform with the results * `create` - Create a new table with each publication. This table is empty except for the schema, which is taken from the results. A new table receives a timestamp extension to its name. * `load` - Append a pre-existing table with the results of the data. The schema of the results and the table must match * `createAndLoad` - Create a new table with each publication and load it with the results data. A new table receives a timestamp extension to its name. * `truncateAndLoad` - Truncate a pre-existing table and load it with fresh data from the results. * `dropAndLoad` - Drop the target table and load a new table with the schema and data from the results. * `upsert` - Update matched records and insert new records in a pre-existing table with the results of the data. The schema of the results and the table must match  # noqa: E501
 
-        :return: The action of this Publication.  # noqa: E501
+        :return: The action of this LPublication.  # noqa: E501
         :rtype: str
         """
         return self._action
 
     @action.setter
     def action(self, action):
-        """Sets the action of this Publication.
+        """Sets the action of this LPublication.
 
         Type of writing action to perform with the results * `create` - Create a new table with each publication. This table is empty except for the schema, which is taken from the results. A new table receives a timestamp extension to its name. * `load` - Append a pre-existing table with the results of the data. The schema of the results and the table must match * `createAndLoad` - Create a new table with each publication and load it with the results data. A new table receives a timestamp extension to its name. * `truncateAndLoad` - Truncate a pre-existing table and load it with fresh data from the results. * `dropAndLoad` - Drop the target table and load a new table with the schema and data from the results. * `upsert` - Update matched records and insert new records in a pre-existing table with the results of the data. The schema of the results and the table must match  # noqa: E501
 
-        :param action: The action of this Publication.  # noqa: E501
+        :param action: The action of this LPublication.  # noqa: E501
         :type: str
         """
         allowed_values = ["create", "load", "createAndLoad", "truncateAndLoad", "dropAndLoad", "upsert"]  # noqa: E501
@@ -193,20 +193,20 @@ class LPublication(object):
 
     @property
     def outputobject(self):
-        """Gets the outputobject of this Publication.  # noqa: E501
+        """Gets the outputobject of this LPublication.  # noqa: E501
 
 
-        :return: The outputobject of this Publication.  # noqa: E501
+        :return: The outputobject of this LPublication.  # noqa: E501
         :rtype: object
         """
         return self._outputobject
 
     @outputobject.setter
     def outputobject(self, outputobject):
-        """Sets the outputobject of this Publication.
+        """Sets the outputobject of this LPublication.
 
 
-        :param outputobject: The outputobject of this Publication.  # noqa: E501
+        :param outputobject: The outputobject of this LPublication.  # noqa: E501
         :type: object
         """
 
@@ -214,20 +214,20 @@ class LPublication(object):
 
     @property
     def connection(self):
-        """Gets the connection of this Publication.  # noqa: E501
+        """Gets the connection of this LPublication.  # noqa: E501
 
 
-        :return: The connection of this Publication.  # noqa: E501
+        :return: The connection of this LPublication.  # noqa: E501
         :rtype: object
         """
         return self._connection
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this Publication.
+        """Sets the connection of this LPublication.
 
 
-        :param connection: The connection of this Publication.  # noqa: E501
+        :param connection: The connection of this LPublication.  # noqa: E501
         :type: object
         """
 
@@ -235,21 +235,21 @@ class LPublication(object):
 
     @property
     def id(self):
-        """Gets the id of this Publication.  # noqa: E501
+        """Gets the id of this LPublication.  # noqa: E501
 
 
-        :return: The id of this Publication.  # noqa: E501
-        :rtype: AnyOfpublicationId
+        :return: The id of this LPublication.  # noqa: E501
+        :rtype: LAnyOfpublicationId
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Publication.
+        """Sets the id of this LPublication.
 
 
-        :param id: The id of this Publication.  # noqa: E501
-        :type: AnyOfpublicationId
+        :param id: The id of this LPublication.  # noqa: E501
+        :type: LAnyOfpublicationId
         """
         if id is None:
             raise ValueError("Invalid value for `id`, must not be `None`")  # noqa: E501
@@ -258,22 +258,22 @@ class LPublication(object):
 
     @property
     def created_at(self):
-        """Gets the created_at of this Publication.  # noqa: E501
+        """Gets the created_at of this LPublication.  # noqa: E501
 
         The time this object was first created.  # noqa: E501
 
-        :return: The created_at of this Publication.  # noqa: E501
+        :return: The created_at of this LPublication.  # noqa: E501
         :rtype: datetime
         """
         return self._created_at
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Publication.
+        """Sets the created_at of this LPublication.
 
         The time this object was first created.  # noqa: E501
 
-        :param created_at: The created_at of this Publication.  # noqa: E501
+        :param created_at: The created_at of this LPublication.  # noqa: E501
         :type: datetime
         """
         if created_at is None:
@@ -283,22 +283,22 @@ class LPublication(object):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Publication.  # noqa: E501
+        """Gets the updated_at of this LPublication.  # noqa: E501
 
         The time this object was last updated.  # noqa: E501
 
-        :return: The updated_at of this Publication.  # noqa: E501
+        :return: The updated_at of this LPublication.  # noqa: E501
         :rtype: datetime
         """
         return self._updated_at
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Publication.
+        """Sets the updated_at of this LPublication.
 
         The time this object was last updated.  # noqa: E501
 
-        :param updated_at: The updated_at of this Publication.  # noqa: E501
+        :param updated_at: The updated_at of this LPublication.  # noqa: E501
         :type: datetime
         """
         if updated_at is None:
@@ -308,20 +308,20 @@ class LPublication(object):
 
     @property
     def creator(self):
-        """Gets the creator of this Publication.  # noqa: E501
+        """Gets the creator of this LPublication.  # noqa: E501
 
 
-        :return: The creator of this Publication.  # noqa: E501
+        :return: The creator of this LPublication.  # noqa: E501
         :rtype: object
         """
         return self._creator
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this Publication.
+        """Sets the creator of this LPublication.
 
 
-        :param creator: The creator of this Publication.  # noqa: E501
+        :param creator: The creator of this LPublication.  # noqa: E501
         :type: object
         """
 
@@ -329,20 +329,20 @@ class LPublication(object):
 
     @property
     def updater(self):
-        """Gets the updater of this Publication.  # noqa: E501
+        """Gets the updater of this LPublication.  # noqa: E501
 
 
-        :return: The updater of this Publication.  # noqa: E501
+        :return: The updater of this LPublication.  # noqa: E501
         :rtype: object
         """
         return self._updater
 
     @updater.setter
     def updater(self, updater):
-        """Sets the updater of this Publication.
+        """Sets the updater of this LPublication.
 
 
-        :param updater: The updater of this Publication.  # noqa: E501
+        :param updater: The updater of this LPublication.  # noqa: E501
         :type: object
         """
 
@@ -350,22 +350,22 @@ class LPublication(object):
 
     @property
     def parameters(self):
-        """Gets the parameters of this Publication.  # noqa: E501
+        """Gets the parameters of this LPublication.  # noqa: E501
 
         Additional publication parameters specific to each JDBC data source. Example: isDeltaTable=true for Databricks connections to produce Delta Lake Tables  # noqa: E501
 
-        :return: The parameters of this Publication.  # noqa: E501
+        :return: The parameters of this LPublication.  # noqa: E501
         :rtype: dict(str, object)
         """
         return self._parameters
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this Publication.
+        """Sets the parameters of this LPublication.
 
         Additional publication parameters specific to each JDBC data source. Example: isDeltaTable=true for Databricks connections to produce Delta Lake Tables  # noqa: E501
 
-        :param parameters: The parameters of this Publication.  # noqa: E501
+        :param parameters: The parameters of this LPublication.  # noqa: E501
         :type: dict(str, object)
         """
 
@@ -392,7 +392,7 @@ class LPublication(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(Publication, dict):
+        if issubclass(LPublication, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -408,7 +408,7 @@ class LPublication(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, Publication):
+        if not isinstance(other, LPublication):
             return False
 
         return self.__dict__ == other.__dict__

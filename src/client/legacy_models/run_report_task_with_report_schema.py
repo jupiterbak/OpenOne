@@ -35,27 +35,27 @@ class LRunReportTaskWithReportSchema(object):
     }
 
     def __init__(self, run_report=None):  # noqa: E501
-        """RunReportTaskWithReportSchema - a model defined in Swagger"""  # noqa: E501
+        """LRunReportTaskWithReportSchema - a model defined in Swagger"""  # noqa: E501
         self._run_report = None
         self.discriminator = None
         self.run_report = run_report
 
     @property
     def run_report(self):
-        """Gets the run_report of this RunReportTaskWithReportSchema.  # noqa: E501
+        """Gets the run_report of this LRunReportTaskWithReportSchema.  # noqa: E501
 
 
-        :return: The run_report of this RunReportTaskWithReportSchema.  # noqa: E501
+        :return: The run_report of this LRunReportTaskWithReportSchema.  # noqa: E501
         :rtype: object
         """
         return self._run_report
 
     @run_report.setter
     def run_report(self, run_report):
-        """Sets the run_report of this RunReportTaskWithReportSchema.
+        """Sets the run_report of this LRunReportTaskWithReportSchema.
 
 
-        :param run_report: The run_report of this RunReportTaskWithReportSchema.  # noqa: E501
+        :param run_report: The run_report of this LRunReportTaskWithReportSchema.  # noqa: E501
         :type: object
         """
         if run_report is None:
@@ -84,7 +84,7 @@ class LRunReportTaskWithReportSchema(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunReportTaskWithReportSchema, dict):
+        if issubclass(LRunReportTaskWithReportSchema, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunReportTaskWithReportSchema(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunReportTaskWithReportSchema):
+        if not isinstance(other, LRunReportTaskWithReportSchema):
             return False
 
         return self.__dict__ == other.__dict__

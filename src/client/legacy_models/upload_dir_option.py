@@ -27,7 +27,7 @@ class LUploadDirOption(object):
                             and the value is json key in definition.
     """
     swagger_types = {
-        'upload_dir': 'UserPreference'
+        'upload_dir': 'LUserPreference'
     }
 
     attribute_map = {
@@ -35,28 +35,28 @@ class LUploadDirOption(object):
     }
 
     def __init__(self, upload_dir=None):  # noqa: E501
-        """UploadDirOption - a model defined in Swagger"""  # noqa: E501
+        """LUploadDirOption - a model defined in Swagger"""  # noqa: E501
         self._upload_dir = None
         self.discriminator = None
         self.upload_dir = upload_dir
 
     @property
     def upload_dir(self):
-        """Gets the upload_dir of this UploadDirOption.  # noqa: E501
+        """Gets the upload_dir of this LUploadDirOption.  # noqa: E501
 
 
-        :return: The upload_dir of this UploadDirOption.  # noqa: E501
-        :rtype: UserPreference
+        :return: The upload_dir of this LUploadDirOption.  # noqa: E501
+        :rtype: LUserPreference
         """
         return self._upload_dir
 
     @upload_dir.setter
     def upload_dir(self, upload_dir):
-        """Sets the upload_dir of this UploadDirOption.
+        """Sets the upload_dir of this LUploadDirOption.
 
 
-        :param upload_dir: The upload_dir of this UploadDirOption.  # noqa: E501
-        :type: UserPreference
+        :param upload_dir: The upload_dir of this LUploadDirOption.  # noqa: E501
+        :type: LUserPreference
         """
         if upload_dir is None:
             raise ValueError("Invalid value for `upload_dir`, must not be `None`")  # noqa: E501
@@ -84,7 +84,7 @@ class LUploadDirOption(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(UploadDirOption, dict):
+        if issubclass(LUploadDirOption, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LUploadDirOption(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, UploadDirOption):
+        if not isinstance(other, LUploadDirOption):
             return False
 
         return self.__dict__ == other.__dict__

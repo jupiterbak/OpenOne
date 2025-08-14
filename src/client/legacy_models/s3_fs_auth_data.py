@@ -35,27 +35,27 @@ class LS3FsAuthData(object):
     }
 
     def __init__(self, s3=None):  # noqa: E501
-        """S3FsAuthData - a model defined in Swagger"""  # noqa: E501
+        """LS3FsAuthData - a model defined in Swagger"""  # noqa: E501
         self._s3 = None
         self.discriminator = None
         self.s3 = s3
 
     @property
     def s3(self):
-        """Gets the s3 of this S3FsAuthData.  # noqa: E501
+        """Gets the s3 of this LS3FsAuthData.  # noqa: E501
 
 
-        :return: The s3 of this S3FsAuthData.  # noqa: E501
+        :return: The s3 of this LS3FsAuthData.  # noqa: E501
         :rtype: object
         """
         return self._s3
 
     @s3.setter
     def s3(self, s3):
-        """Sets the s3 of this S3FsAuthData.
+        """Sets the s3 of this LS3FsAuthData.
 
 
-        :param s3: The s3 of this S3FsAuthData.  # noqa: E501
+        :param s3: The s3 of this LS3FsAuthData.  # noqa: E501
         :type: object
         """
         if s3 is None:
@@ -84,7 +84,7 @@ class LS3FsAuthData(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(S3FsAuthData, dict):
+        if issubclass(LS3FsAuthData, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LS3FsAuthData(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, S3FsAuthData):
+        if not isinstance(other, LS3FsAuthData):
             return False
 
         return self.__dict__ == other.__dict__

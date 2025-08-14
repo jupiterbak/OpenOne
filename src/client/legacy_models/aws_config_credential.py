@@ -35,27 +35,27 @@ class LAwsConfigCredential(object):
     }
 
     def __init__(self, id=None):  # noqa: E501
-        """AwsConfigCredential - a model defined in Swagger"""  # noqa: E501
+        """LAwsConfigCredential - a model defined in Swagger"""  # noqa: E501
         self._id = None
         self.discriminator = None
         self.id = id
 
     @property
     def id(self):
-        """Gets the id of this AwsConfigCredential.  # noqa: E501
+        """Gets the id of this LAwsConfigCredential.  # noqa: E501
 
 
-        :return: The id of this AwsConfigCredential.  # noqa: E501
+        :return: The id of this LAwsConfigCredential.  # noqa: E501
         :rtype: int
         """
         return self._id
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AwsConfigCredential.
+        """Sets the id of this LAwsConfigCredential.
 
 
-        :param id: The id of this AwsConfigCredential.  # noqa: E501
+        :param id: The id of this LAwsConfigCredential.  # noqa: E501
         :type: int
         """
         if id is None:
@@ -84,7 +84,7 @@ class LAwsConfigCredential(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AwsConfigCredential, dict):
+        if issubclass(LAwsConfigCredential, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LAwsConfigCredential(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AwsConfigCredential):
+        if not isinstance(other, LAwsConfigCredential):
             return False
 
         return self.__dict__ == other.__dict__

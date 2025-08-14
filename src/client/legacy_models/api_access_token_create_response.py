@@ -28,7 +28,7 @@ class LApiAccessTokenCreateResponse(object):
     """
     swagger_types = {
         'token_value': 'str',
-        'token_info': 'ApiAccessToken'
+        'token_info': 'LApiAccessToken'
     }
 
     attribute_map = {
@@ -37,7 +37,7 @@ class LApiAccessTokenCreateResponse(object):
     }
 
     def __init__(self, token_value=None, token_info=None):  # noqa: E501
-        """ApiAccessTokenCreateResponse - a model defined in Swagger"""  # noqa: E501
+        """LApiAccessTokenCreateResponse - a model defined in Swagger"""  # noqa: E501
         self._token_value = None
         self._token_info = None
         self.discriminator = None
@@ -46,22 +46,22 @@ class LApiAccessTokenCreateResponse(object):
 
     @property
     def token_value(self):
-        """Gets the token_value of this ApiAccessTokenCreateResponse.  # noqa: E501
+        """Gets the token_value of this LApiAccessTokenCreateResponse.  # noqa: E501
 
         The API access token itself  # noqa: E501
 
-        :return: The token_value of this ApiAccessTokenCreateResponse.  # noqa: E501
+        :return: The token_value of this LApiAccessTokenCreateResponse.  # noqa: E501
         :rtype: str
         """
         return self._token_value
 
     @token_value.setter
     def token_value(self, token_value):
-        """Sets the token_value of this ApiAccessTokenCreateResponse.
+        """Sets the token_value of this LApiAccessTokenCreateResponse.
 
         The API access token itself  # noqa: E501
 
-        :param token_value: The token_value of this ApiAccessTokenCreateResponse.  # noqa: E501
+        :param token_value: The token_value of this LApiAccessTokenCreateResponse.  # noqa: E501
         :type: str
         """
         if token_value is None:
@@ -71,21 +71,21 @@ class LApiAccessTokenCreateResponse(object):
 
     @property
     def token_info(self):
-        """Gets the token_info of this ApiAccessTokenCreateResponse.  # noqa: E501
+        """Gets the token_info of this LApiAccessTokenCreateResponse.  # noqa: E501
 
 
-        :return: The token_info of this ApiAccessTokenCreateResponse.  # noqa: E501
-        :rtype: ApiAccessToken
+        :return: The token_info of this LApiAccessTokenCreateResponse.  # noqa: E501
+        :rtype: LApiAccessToken
         """
         return self._token_info
 
     @token_info.setter
     def token_info(self, token_info):
-        """Sets the token_info of this ApiAccessTokenCreateResponse.
+        """Sets the token_info of this LApiAccessTokenCreateResponse.
 
 
-        :param token_info: The token_info of this ApiAccessTokenCreateResponse.  # noqa: E501
-        :type: ApiAccessToken
+        :param token_info: The token_info of this LApiAccessTokenCreateResponse.  # noqa: E501
+        :type: LApiAccessToken
         """
         if token_info is None:
             raise ValueError("Invalid value for `token_info`, must not be `None`")  # noqa: E501
@@ -113,7 +113,7 @@ class LApiAccessTokenCreateResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(ApiAccessTokenCreateResponse, dict):
+        if issubclass(LApiAccessTokenCreateResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -129,7 +129,7 @@ class LApiAccessTokenCreateResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, ApiAccessTokenCreateResponse):
+        if not isinstance(other, LApiAccessTokenCreateResponse):
             return False
 
         return self.__dict__ == other.__dict__

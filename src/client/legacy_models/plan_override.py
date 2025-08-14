@@ -33,7 +33,7 @@ class LPlanOverride(object):
     }
 
     def __init__(self):  # noqa: E501
-        """PlanOverride - a model defined in Swagger"""  # noqa: E501
+        """LPlanOverride - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LPlanOverride(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(PlanOverride, dict):
+        if issubclass(LPlanOverride, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LPlanOverride(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, PlanOverride):
+        if not isinstance(other, LPlanOverride):
             return False
 
         return self.__dict__ == other.__dict__

@@ -41,7 +41,7 @@ class LAzurePlatformCredentials(object):
     }
 
     def __init__(self, adl=None, wasb=None, system=None, user=None):  # noqa: E501
-        """AzurePlatformCredentials - a model defined in Swagger"""  # noqa: E501
+        """LAzurePlatformCredentials - a model defined in Swagger"""  # noqa: E501
         self._adl = None
         self._wasb = None
         self._system = None
@@ -57,20 +57,20 @@ class LAzurePlatformCredentials(object):
 
     @property
     def adl(self):
-        """Gets the adl of this AzurePlatformCredentials.  # noqa: E501
+        """Gets the adl of this LAzurePlatformCredentials.  # noqa: E501
 
 
-        :return: The adl of this AzurePlatformCredentials.  # noqa: E501
+        :return: The adl of this LAzurePlatformCredentials.  # noqa: E501
         :rtype: object
         """
         return self._adl
 
     @adl.setter
     def adl(self, adl):
-        """Sets the adl of this AzurePlatformCredentials.
+        """Sets the adl of this LAzurePlatformCredentials.
 
 
-        :param adl: The adl of this AzurePlatformCredentials.  # noqa: E501
+        :param adl: The adl of this LAzurePlatformCredentials.  # noqa: E501
         :type: object
         """
 
@@ -78,20 +78,20 @@ class LAzurePlatformCredentials(object):
 
     @property
     def wasb(self):
-        """Gets the wasb of this AzurePlatformCredentials.  # noqa: E501
+        """Gets the wasb of this LAzurePlatformCredentials.  # noqa: E501
 
 
-        :return: The wasb of this AzurePlatformCredentials.  # noqa: E501
+        :return: The wasb of this LAzurePlatformCredentials.  # noqa: E501
         :rtype: object
         """
         return self._wasb
 
     @wasb.setter
     def wasb(self, wasb):
-        """Sets the wasb of this AzurePlatformCredentials.
+        """Sets the wasb of this LAzurePlatformCredentials.
 
 
-        :param wasb: The wasb of this AzurePlatformCredentials.  # noqa: E501
+        :param wasb: The wasb of this LAzurePlatformCredentials.  # noqa: E501
         :type: object
         """
 
@@ -99,20 +99,20 @@ class LAzurePlatformCredentials(object):
 
     @property
     def system(self):
-        """Gets the system of this AzurePlatformCredentials.  # noqa: E501
+        """Gets the system of this LAzurePlatformCredentials.  # noqa: E501
 
 
-        :return: The system of this AzurePlatformCredentials.  # noqa: E501
+        :return: The system of this LAzurePlatformCredentials.  # noqa: E501
         :rtype: object
         """
         return self._system
 
     @system.setter
     def system(self, system):
-        """Sets the system of this AzurePlatformCredentials.
+        """Sets the system of this LAzurePlatformCredentials.
 
 
-        :param system: The system of this AzurePlatformCredentials.  # noqa: E501
+        :param system: The system of this LAzurePlatformCredentials.  # noqa: E501
         :type: object
         """
         if system is None:
@@ -122,20 +122,20 @@ class LAzurePlatformCredentials(object):
 
     @property
     def user(self):
-        """Gets the user of this AzurePlatformCredentials.  # noqa: E501
+        """Gets the user of this LAzurePlatformCredentials.  # noqa: E501
 
 
-        :return: The user of this AzurePlatformCredentials.  # noqa: E501
+        :return: The user of this LAzurePlatformCredentials.  # noqa: E501
         :rtype: object
         """
         return self._user
 
     @user.setter
     def user(self, user):
-        """Sets the user of this AzurePlatformCredentials.
+        """Sets the user of this LAzurePlatformCredentials.
 
 
-        :param user: The user of this AzurePlatformCredentials.  # noqa: E501
+        :param user: The user of this LAzurePlatformCredentials.  # noqa: E501
         :type: object
         """
 
@@ -162,7 +162,7 @@ class LAzurePlatformCredentials(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AzurePlatformCredentials, dict):
+        if issubclass(LAzurePlatformCredentials, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -178,7 +178,7 @@ class LAzurePlatformCredentials(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AzurePlatformCredentials):
+        if not isinstance(other, LAzurePlatformCredentials):
             return False
 
         return self.__dict__ == other.__dict__

@@ -35,27 +35,27 @@ class LEmailProperty(object):
     }
 
     def __init__(self, email=None):  # noqa: E501
-        """EmailProperty - a model defined in Swagger"""  # noqa: E501
+        """LEmailProperty - a model defined in Swagger"""  # noqa: E501
         self._email = None
         self.discriminator = None
         self.email = email
 
     @property
     def email(self):
-        """Gets the email of this EmailProperty.  # noqa: E501
+        """Gets the email of this LEmailProperty.  # noqa: E501
 
 
-        :return: The email of this EmailProperty.  # noqa: E501
+        :return: The email of this LEmailProperty.  # noqa: E501
         :rtype: str
         """
         return self._email
 
     @email.setter
     def email(self, email):
-        """Sets the email of this EmailProperty.
+        """Sets the email of this LEmailProperty.
 
 
-        :param email: The email of this EmailProperty.  # noqa: E501
+        :param email: The email of this LEmailProperty.  # noqa: E501
         :type: str
         """
         if email is None:
@@ -84,7 +84,7 @@ class LEmailProperty(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(EmailProperty, dict):
+        if issubclass(LEmailProperty, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LEmailProperty(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, EmailProperty):
+        if not isinstance(other, LEmailProperty):
             return False
 
         return self.__dict__ == other.__dict__

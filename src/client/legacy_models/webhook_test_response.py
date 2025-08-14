@@ -37,7 +37,7 @@ class LWebhookTestResponse(object):
     }
 
     def __init__(self, status_code=None, error=None):  # noqa: E501
-        """WebhookTestResponse - a model defined in Swagger"""  # noqa: E501
+        """LWebhookTestResponse - a model defined in Swagger"""  # noqa: E501
         self._status_code = None
         self._error = None
         self.discriminator = None
@@ -48,20 +48,20 @@ class LWebhookTestResponse(object):
 
     @property
     def status_code(self):
-        """Gets the status_code of this WebhookTestResponse.  # noqa: E501
+        """Gets the status_code of this LWebhookTestResponse.  # noqa: E501
 
 
-        :return: The status_code of this WebhookTestResponse.  # noqa: E501
+        :return: The status_code of this LWebhookTestResponse.  # noqa: E501
         :rtype: int
         """
         return self._status_code
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this WebhookTestResponse.
+        """Sets the status_code of this LWebhookTestResponse.
 
 
-        :param status_code: The status_code of this WebhookTestResponse.  # noqa: E501
+        :param status_code: The status_code of this LWebhookTestResponse.  # noqa: E501
         :type: int
         """
 
@@ -69,20 +69,20 @@ class LWebhookTestResponse(object):
 
     @property
     def error(self):
-        """Gets the error of this WebhookTestResponse.  # noqa: E501
+        """Gets the error of this LWebhookTestResponse.  # noqa: E501
 
 
-        :return: The error of this WebhookTestResponse.  # noqa: E501
+        :return: The error of this LWebhookTestResponse.  # noqa: E501
         :rtype: object
         """
         return self._error
 
     @error.setter
     def error(self, error):
-        """Sets the error of this WebhookTestResponse.
+        """Sets the error of this LWebhookTestResponse.
 
 
-        :param error: The error of this WebhookTestResponse.  # noqa: E501
+        :param error: The error of this LWebhookTestResponse.  # noqa: E501
         :type: object
         """
 
@@ -109,7 +109,7 @@ class LWebhookTestResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(WebhookTestResponse, dict):
+        if issubclass(LWebhookTestResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -125,7 +125,7 @@ class LWebhookTestResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, WebhookTestResponse):
+        if not isinstance(other, LWebhookTestResponse):
             return False
 
         return self.__dict__ == other.__dict__

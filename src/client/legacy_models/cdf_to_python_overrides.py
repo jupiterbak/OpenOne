@@ -37,7 +37,7 @@ class LCdfToPythonOverrides(object):
     }
 
     def __init__(self, execution=None, profiler=None):  # noqa: E501
-        """CdfToPythonOverrides - a model defined in Swagger"""  # noqa: E501
+        """LCdfToPythonOverrides - a model defined in Swagger"""  # noqa: E501
         self._execution = None
         self._profiler = None
         self.discriminator = None
@@ -46,22 +46,22 @@ class LCdfToPythonOverrides(object):
 
     @property
     def execution(self):
-        """Gets the execution of this CdfToPythonOverrides.  # noqa: E501
+        """Gets the execution of this LCdfToPythonOverrides.  # noqa: E501
 
         Execution language. Indicate on which engine the job was executed.   Can be null/missing for scheduled jobs that fail during the validation phase.  * `photon` - Photon engine. High performance embedded engine designed for small datasets (up to 1GB).       Not available for all product editions. * `amp` - Amp engine. * `xml-amp` - XML-AMP engine. Only available for standard workflows.    * `emrSpark` - Spark engine running on EMR       # noqa: E501
 
-        :return: The execution of this CdfToPythonOverrides.  # noqa: E501
+        :return: The execution of this LCdfToPythonOverrides.  # noqa: E501
         :rtype: str
         """
         return self._execution
 
     @execution.setter
     def execution(self, execution):
-        """Sets the execution of this CdfToPythonOverrides.
+        """Sets the execution of this LCdfToPythonOverrides.
 
         Execution language. Indicate on which engine the job was executed.   Can be null/missing for scheduled jobs that fail during the validation phase.  * `photon` - Photon engine. High performance embedded engine designed for small datasets (up to 1GB).       Not available for all product editions. * `amp` - Amp engine. * `xml-amp` - XML-AMP engine. Only available for standard workflows.    * `emrSpark` - Spark engine running on EMR       # noqa: E501
 
-        :param execution: The execution of this CdfToPythonOverrides.  # noqa: E501
+        :param execution: The execution of this LCdfToPythonOverrides.  # noqa: E501
         :type: str
         """
         if execution is None:
@@ -77,22 +77,22 @@ class LCdfToPythonOverrides(object):
 
     @property
     def profiler(self):
-        """Gets the profiler of this CdfToPythonOverrides.  # noqa: E501
+        """Gets the profiler of this LCdfToPythonOverrides.  # noqa: E501
 
         Indicate if recipe errors should be ignored for the [jobGroup](#tag/JobGroup).  # noqa: E501
 
-        :return: The profiler of this CdfToPythonOverrides.  # noqa: E501
+        :return: The profiler of this LCdfToPythonOverrides.  # noqa: E501
         :rtype: bool
         """
         return self._profiler
 
     @profiler.setter
     def profiler(self, profiler):
-        """Sets the profiler of this CdfToPythonOverrides.
+        """Sets the profiler of this LCdfToPythonOverrides.
 
         Indicate if recipe errors should be ignored for the [jobGroup](#tag/JobGroup).  # noqa: E501
 
-        :param profiler: The profiler of this CdfToPythonOverrides.  # noqa: E501
+        :param profiler: The profiler of this LCdfToPythonOverrides.  # noqa: E501
         :type: bool
         """
         if profiler is None:
@@ -121,7 +121,7 @@ class LCdfToPythonOverrides(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(CdfToPythonOverrides, dict):
+        if issubclass(LCdfToPythonOverrides, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -137,7 +137,7 @@ class LCdfToPythonOverrides(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, CdfToPythonOverrides):
+        if not isinstance(other, LCdfToPythonOverrides):
             return False
 
         return self.__dict__ == other.__dict__

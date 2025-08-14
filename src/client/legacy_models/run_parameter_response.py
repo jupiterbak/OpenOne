@@ -35,27 +35,27 @@ class LRunParameterResponse(object):
     }
 
     def __init__(self, plan_node_parameters=None):  # noqa: E501
-        """RunParameterResponse - a model defined in Swagger"""  # noqa: E501
+        """LRunParameterResponse - a model defined in Swagger"""  # noqa: E501
         self._plan_node_parameters = None
         self.discriminator = None
         self.plan_node_parameters = plan_node_parameters
 
     @property
     def plan_node_parameters(self):
-        """Gets the plan_node_parameters of this RunParameterResponse.  # noqa: E501
+        """Gets the plan_node_parameters of this LRunParameterResponse.  # noqa: E501
 
 
-        :return: The plan_node_parameters of this RunParameterResponse.  # noqa: E501
+        :return: The plan_node_parameters of this LRunParameterResponse.  # noqa: E501
         :rtype: list[object]
         """
         return self._plan_node_parameters
 
     @plan_node_parameters.setter
     def plan_node_parameters(self, plan_node_parameters):
-        """Sets the plan_node_parameters of this RunParameterResponse.
+        """Sets the plan_node_parameters of this LRunParameterResponse.
 
 
-        :param plan_node_parameters: The plan_node_parameters of this RunParameterResponse.  # noqa: E501
+        :param plan_node_parameters: The plan_node_parameters of this LRunParameterResponse.  # noqa: E501
         :type: list[object]
         """
         if plan_node_parameters is None:
@@ -84,7 +84,7 @@ class LRunParameterResponse(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(RunParameterResponse, dict):
+        if issubclass(LRunParameterResponse, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -100,7 +100,7 @@ class LRunParameterResponse(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, RunParameterResponse):
+        if not isinstance(other, LRunParameterResponse):
             return False
 
         return self.__dict__ == other.__dict__

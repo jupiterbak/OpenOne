@@ -33,7 +33,7 @@ class LAnyOfplanEdgeCreateRequestOutPlanNodeId(object):
     }
 
     def __init__(self):  # noqa: E501
-        """AnyOfplanEdgeCreateRequestOutPlanNodeId - a model defined in Swagger"""  # noqa: E501
+        """LAnyOfplanEdgeCreateRequestOutPlanNodeId - a model defined in Swagger"""  # noqa: E501
         self.discriminator = None
 
     def to_dict(self):
@@ -57,7 +57,7 @@ class LAnyOfplanEdgeCreateRequestOutPlanNodeId(object):
                 ))
             else:
                 result[attr] = value
-        if issubclass(AnyOfplanEdgeCreateRequestOutPlanNodeId, dict):
+        if issubclass(LAnyOfplanEdgeCreateRequestOutPlanNodeId, dict):
             for key, value in self.items():
                 result[key] = value
 
@@ -73,7 +73,7 @@ class LAnyOfplanEdgeCreateRequestOutPlanNodeId(object):
 
     def __eq__(self, other):
         """Returns true if both objects are equal"""
-        if not isinstance(other, AnyOfplanEdgeCreateRequestOutPlanNodeId):
+        if not isinstance(other, LAnyOfplanEdgeCreateRequestOutPlanNodeId):
             return False
 
         return self.__dict__ == other.__dict__
