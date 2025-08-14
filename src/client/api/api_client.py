@@ -23,7 +23,7 @@ import six
 from six.moves.urllib.parse import quote
 
 from ..configuration import Configuration
-from .. import scheduling_models
+from .. import scheduling_models, plan_models, iam_models
 from . import rest
 
 
@@ -258,7 +258,21 @@ class ApiClient(object):
             if klass in self.NATIVE_TYPES_MAPPING:
                 klass = self.NATIVE_TYPES_MAPPING[klass]
             else:
-                klass = getattr(scheduling_models, klass)
+                # get the proper class from the scheduling_models, plan_models, or iam_models
+                # make sure to use the correct module for the class
+                # if the class is not found in any of the modules, raise an error
+                # if the class is found in multiple modules, raise an error
+                if klass in scheduling_models.__dict__:
+                    klass = getattr(scheduling_models, klass)
+                elif klass in plan_models.__dict__:
+                    klass = getattr(plan_models, klass)
+                elif klass in iam_models.__dict__:
+                    klass = getattr(iam_models, klass)
+                else:
+                    raise ValueError(f"Class {klass} not found in any of the modules")
+                # if the class is found in multiple modules, raise an error
+                if klass in scheduling_models.__dict__ and klass in plan_models.__dict__ or klass in scheduling_models.__dict__ and klass in iam_models.__dict__ or klass in plan_models.__dict__ and klass in iam_models.__dict__:
+                    raise ValueError(f"Class {klass} found in multiple modules")
 
         if klass in self.PRIMITIVE_TYPES:
             return self.__deserialize_primitive(data, klass)
