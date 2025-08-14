@@ -147,7 +147,7 @@ def count_schedules(schedule_api: ScheduleApi) -> str:
 
 
 ## Workspace API Functions
-def list_workspaces(workspace_api: LegacyWorkspaceApi, account_id: str) -> str:
+def list_workspaces(workspace_api: LegacyWorkspaceApi) -> str:
     """List all workspaces available to the current user.
     
     Args:
@@ -155,7 +155,7 @@ def list_workspaces(workspace_api: LegacyWorkspaceApi, account_id: str) -> str:
         account_id: The ID of the account to list workspaces for. If not provided, the current user's account ID will be used.
         """
     try:
-        response = workspace_api.list_workspaces(account_id=account_id, limit=100)
+        response = workspace_api.list_workspaces()
         result = response.to_dict() if hasattr(response, 'to_dict') else response
         return json.dumps(result, indent=2, default=str)
     except Exception as e:
@@ -203,7 +203,7 @@ def list_workspace_users(workspace_api: WorkspaceApi, workspace_id: str) -> str:
     """
     try:
         # check if the workspace exists
-        response = workspace_api.get_workspace(workspace_id)
+        response = workspace_api.get_configuration_for_workspace(workspace_id)
         if response is None:
             logger.error(f"Workspace {workspace_id} not found")
             return json.dumps({"error": f"Workspace {workspace_id} not found"}, indent=2, default=str)

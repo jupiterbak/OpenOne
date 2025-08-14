@@ -242,14 +242,12 @@ class AACMCPServer:
             name="list_workspaces",
             description="List all workspaces available to the current user"
         )
-        def list_workspaces(account_id: str) -> str:
+        def list_workspaces() -> str:
             """List all workspaces available to the current user.
             
-            Args:
-                account_id: The ID of the account to list workspaces for
             """
             self._ensure_client_initialized()
-            return tools.list_workspaces(self.legacy_workspace_api, account_id)
+            return tools.list_workspaces(self.legacy_workspace_api)
         
         @self.app.tool(
             name="get_current_workspace",

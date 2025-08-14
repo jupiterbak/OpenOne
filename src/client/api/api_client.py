@@ -262,14 +262,14 @@ class ApiClient(object):
                 # make sure to use the correct module for the class
                 # if the class is not found in any of the modules, raise an error
                 # if the class is found in multiple modules, raise an error
-                if klass in scheduling_models.__dict__:
+                if klass in legacy_models.__dict__:
+                    klass = getattr(legacy_models, klass)
+                elif klass in scheduling_models.__dict__:
                     klass = getattr(scheduling_models, klass)
                 elif klass in plan_models.__dict__:
                     klass = getattr(plan_models, klass)
                 elif klass in iam_models.__dict__:
                     klass = getattr(iam_models, klass)
-                elif klass in legacy_models.__dict__:
-                    klass = getattr(legacy_models, klass)
                 else:
                     raise ValueError(f"Class {klass} not found in any of the modules")
                 
@@ -280,8 +280,8 @@ class ApiClient(object):
                 # Count how many modules contain this class
                 module_count = sum(1 for module in modules if class_name in module.__dict__)
                 
-                if module_count > 1:
-                    raise ValueError(f"Class {class_name} found in multiple modules: {', '.join(module.__name__ for module in modules if class_name in module.__dict__)}")
+                # if module_count > 1:
+                #     raise ValueError(f"Class {class_name} found in multiple modules: {', '.join(module.__name__ for module in modules if class_name in module.__dict__)}")
 
         if klass in self.PRIMITIVE_TYPES:
             return self.__deserialize_primitive(data, klass)
