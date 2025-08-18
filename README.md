@@ -1,30 +1,30 @@
 
 
-# aac-mcp
+# OpenOne
 
-**Unofficial MCP Server & API Client for Alteryx Analytics Cloud (AAC)**
+**Unofficial MCP Server & API Client for OpenOne Analytics Platform**
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![MCP Compatible](https://img.shields.io/badge/MCP-Compatible-blue)](https://modelcontextprotocol.io/)
 
-> **⚠️ DISCLAIMER**: This is NOT an official Alteryx implementation. This project is a personal initiative and is not affiliated with, endorsed by, or supported by Alteryx or any other company.
+> **⚠️ DISCLAIMER**: This is NOT an official OpenOne implementation. This project is a personal initiative and is not affiliated with, endorsed by, or supported by OpenOne or any other company.
 
 
 ## Overview
 
-aac-mcp is an unofficial Model Context Protocol (MCP) server and Python API client for Alteryx Analytics Cloud (AAC). It enables seamless integration between Claude and other MCP-compatible clients with your Alteryx Analytics Cloud instance, providing programmatic access to schedules, workflows, and user management.
+OpenOne is an unofficial Model Context Protocol (MCP) server and Python API client for OpenOne Analytics Platform. It enables seamless integration between Claude and other MCP-compatible clients with your OpenOne Analytics Platform instance, providing programmatic access to schedules, workflows, and user management.
 
 ### 🚀 Quick Stats
 - **31 MCP Tools** across 8 functional categories
-- **Complete API Coverage** for all core AAC operations including legacy APIs  
+- **Complete API Coverage** for all core OpenOne operations including legacy APIs  
 - **Production Ready** with comprehensive error handling
 - **Real-time Integration** with Claude Desktop
 
 ## Features
 
 - **🔗 MCP-Compatible Server** - Direct integration with Claude and other MCP clients
-- **🐍 Python API Client** - Full-featured client for Alteryx Analytics Cloud
+- **🐍 Python API Client** - Full-featured client for OpenOne Analytics Platform
 - **📅 Schedule Management** - Complete CRUD operations for workflow schedules
 - **🗂️ Plan Management** - Create, run, and manage execution plans
 - **🏢 Workspace Management** - Multi-workspace support and user administration
@@ -32,12 +32,12 @@ aac-mcp is an unofficial Model Context Protocol (MCP) server and Python API clie
 - **🔌 Connection Management** - Monitor and manage data connections
 - **📄 Publication Management** - Handle published outputs and results
 - **👥 User Management** - User profiles and permission management
-- **🌍 Multi-Region Support** - Works with all AAC regions worldwide
+- **🌍 Multi-Region Support** - Works with all OpenOne regions worldwide
 - **🔄 Real-time Operations** - Live status monitoring and execution tracking
 
 ## Legacy API Coverage
 
-The client provides comprehensive access to all legacy Alteryx Analytics Cloud APIs:
+The client provides comprehensive access to all legacy OpenOne Analytics Platform APIs:
 
 - **Account & Authentication** - Account management, API tokens, OAuth2, authorization
 - **AWS & Cloud Config** - AWS configuration, roles, storage, cloud settings
@@ -55,15 +55,15 @@ The client provides comprehensive access to all legacy Alteryx Analytics Cloud A
 ### Prerequisites
 
 - Python 3.10 or higher
-- Alteryx Analytics Cloud account
+- OpenOne Analytics Platform account
 - OAuth2 credentials (Client ID, initial Access Token & Refresh Token)
 
 ### Install Options
 
 **From GitHub (Recommended)**:
 ```bash
-git clone https://github.com/jupiterbak/aac-mcp.git
-cd aac-mcp
+git clone https://github.com/jupiterbak/OpenOne.git
+cd OpenOne
 pip install .
 ```
 
@@ -71,19 +71,19 @@ pip install .
 
 #### Environment Variables
 
-Set up your Alteryx Analytics Cloud credentials using environment variables:
+Set up your OpenOne Analytics Platform credentials using environment variables:
 
 ```bash
 # Required
-export ALTERYX_AACP_API_BASE_URL="https://api.eu1.alteryxcloud.com"
-export ALTERYX_AACP_TOKEN_ENDPOINT="https://pingauth-eu1.alteryxcloud.com/as"
-export ALTERYX_AACP_CLIENT_ID="your_client_id_here"
-export ALTERYX_AACP_PROJECT_ID="your_project_id_here"
-export ALTERYX_AACP_ACCESS_TOKEN="your_access_token_here"
-export ALTERYX_AACP_REFRESH_TOKEN="your_refresh_token"
+export OPENONE_API_BASE_URL="https://api.eu1.openone.com"
+export OPENONE_TOKEN_ENDPOINT="https://pingauth-eu1.openone.com/as"
+export OPENONE_CLIENT_ID="your_client_id_here"
+export OPENONE_PROJECT_ID="your_project_id_here"
+export OPENONE_ACCESS_TOKEN="your_access_token_here"
+export OPENONE_REFRESH_TOKEN="your_refresh_token"
 # Optional
-export ALTERYX_AACP_PERSISTENT_FOLDER="~/.aacp"
-export ALTERYX_VERIFY_SSL=1
+export OPENONE_PERSISTENT_FOLDER="~/.openone"
+export OPENONE_VERIFY_SSL=1
 ```
 
 #### Configuration File
@@ -91,14 +91,14 @@ export ALTERYX_VERIFY_SSL=1
 Create a `.env` file in your project root:
 
 ```env
-ALTERYX_AACP_API_BASE_URL=https://api.eu1.alteryxcloud.com
-ALTERYX_AACP_TOKEN_ENDPOINT=https://pingauth-eu1.alteryxcloud.com/as
-ALTERYX_AACP_CLIENT_ID=your_client_id_here
-ALTERYX_AACP_PROJECT_ID=your_project_id_here
-ALTERYX_AACP_ACCESS_TOKEN=your_access_token_here
-ALTERYX_AACP_REFRESH_TOKEN=your_refresh_token
-ALTERYX_AACP_PERSISTENT_FOLDER=~/.aacp
-ALTERYX_VERIFY_SSL=1
+OPENONE_API_BASE_URL=https://api.eu1.openone.com
+OPENONE_TOKEN_ENDPOINT=https://pingauth-eu1.openone.com/as
+OPENONE_CLIENT_ID=your_client_id_here
+OPENONE_PROJECT_ID=your_project_id_here
+OPENONE_ACCESS_TOKEN=your_access_token_here
+OPENONE_REFRESH_TOKEN=your_refresh_token
+OPENONE_PERSISTENT_FOLDER=~/.openone
+OPENONE_VERIFY_SSL=1
 ```
 
 #### MCP Server Setup - Claude Desktop Configuration
@@ -108,17 +108,17 @@ Add the following to your Claude configuration file:
 ```json
 {
   "mcpServers": {
-    "aac-mcp": {
+    "openone": {
       "command": "python",
-      "args": ["-m", "aac_mcp"],
+      "args": ["-m", "openone"],
       "env": {
-        "ALTERYX_AACP_API_BASE_URL": "https://api.eu1.alteryxcloud.com",
-        "ALTERYX_AACP_TOKEN_ENDPOINT": "https://pingauth-eu1.alteryxcloud.com/as",
-        "ALTERYX_AACP_CLIENT_ID": "your_client_id_here",
-        "ALTERYX_AACP_PROJECT_ID": "your_project_id_here",
-        "ALTERYX_AACP_ACCESS_TOKEN": "your_access_token_here",
-        "ALTERYX_AACP_REFRESH_TOKEN": "your_refresh_token",
-        "ALTERYX_AACP_PERSISTENT_FOLDER": "~/.aacp"
+        "OPENONE_API_BASE_URL": "https://api.eu1.openone.com",
+        "OPENONE_TOKEN_ENDPOINT": "https://pingauth-eu1.openone.com/as",
+        "OPENONE_CLIENT_ID": "your_client_id_here",
+        "OPENONE_PROJECT_ID": "your_project_id_here",
+        "OPENONE_ACCESS_TOKEN": "your_access_token_here",
+        "OPENONE_REFRESH_TOKEN": "your_refresh_token",
+        "OPENONE_PERSISTENT_FOLDER": "~/.openone"
       }
     }
   }
@@ -132,12 +132,12 @@ Instead of setting environment variables in the Claude config, you can create a 
 ```json
 {
   "mcpServers": {
-    "aac-mcp": {
+    "openone": {
       "command": "python",
-      "args": ["-m", "aac_mcp"],
+      "args": ["-m", "openone"],
       "cwd": "/path/to/your/project",
       "env": {
-        "ALTERYX_AACP_CONFIG_FILE": "/path/to/your/.env"
+        "OPENONE_CONFIG_FILE": "/path/to/your/.env"
       }
     }
   }
@@ -149,7 +149,7 @@ Instead of setting environment variables in the Claude config, you can create a 
 After configuration, restart Claude Desktop and test with these example queries:
 
 **Basic Operations:**
-- "List all schedules in my Alteryx Analytics Cloud instance"
+- "List all schedules in my OpenOne Analytics Platform instance"
 - "Show me my current workspace details and user count"
 - "Get a count of all my plans and datasets"
 
@@ -302,7 +302,7 @@ Here are some example queries you can use with Claude once the MCP server is con
 | **Connection Management** | 3 tools | List, Get, Check Status |
 | **Publication Management** | 3 tools | List, Get, Delete |
 | **Wrangled Dataset Management** | 3 tools | List, Get, Get Inputs |
-| **Total** | **31 tools** | Complete AAC integration |
+| **Total** | **31 tools** | Complete OpenOne integration |
 
 ## 🤝 Contributing
 
@@ -317,8 +317,8 @@ We welcome contributions! Here's how you can help:
 ### Development Setup
 
 ```bash
-git clone https://github.com/jupiterbak/aac-mcp.git
-cd aac-mcp
+git clone https://github.com/jupiterbak/OpenOne.git
+cd OpenOne
 pip install -e .[develop]
 pytest  # Run tests
 ```
@@ -336,10 +336,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**Made with ❤️ for the Alteryx Community**
+**Made with ❤️ for the OpenOne Community**
 
-[![GitHub stars](https://img.shields.io/github/stars/jupiterbak/aac-mcp?style=social)](https://github.com/jupiterbak/aac-mcp)
-[![GitHub forks](https://img.shields.io/github/forks/jupiterbak/aac-mcp?style=social)](https://github.com/jupiterbak/aac-mcp)
+[![GitHub stars](https://img.shields.io/github/stars/jupiterbak/OpenOne?style=social)](https://github.com/jupiterbak/OpenOne)
+[![GitHub forks](https://img.shields.io/github/forks/jupiterbak/OpenOne?style=social)](https://github.com/jupiterbak/OpenOne)
 
 </div>
 

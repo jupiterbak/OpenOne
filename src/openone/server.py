@@ -1,6 +1,6 @@
 
 """
-FastMCP Server for Alteryx Analytics Cloud Schedule API.
+FastMCP Server for OpenOne Analytics Platform Schedule API.
 """
 
 import json
@@ -26,8 +26,8 @@ from . import tools
 logger = logging.getLogger(__name__)
 
 
-class AACMCPServer:
-    """FastMCP Server for Alteryx Analytics Cloud Schedule API."""
+class OpenOneMCPServer:
+    """FastMCP Server for OpenOne Analytics Platform Schedule API."""
     
     def __init__(self):
         self.config = Configuration()
@@ -50,8 +50,8 @@ class AACMCPServer:
         
         # Initialize FastMCP server
         self.app = FastMCP(
-            name="aac-mcp",
-            instructions="MCP server for Alteryx Analytics Cloud Schedule API operations"
+            name="openone",
+            instructions="MCP server for OpenOne Analytics Platform Schedule API operations"
         )
         
         # Register all tools

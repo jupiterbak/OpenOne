@@ -54,16 +54,16 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
     def __init__(self):
         """Constructor"""
         # Default Base url
-        self.host = os.getenv("ALTERYX_AACP_API_BASE_URL", "https://api.us1.alteryxcloud.com")
+        self.host = os.getenv("OPENONE_API_BASE_URL", "https://api.eu1.alteryxcloud.com")
         # Default Legacy Base url which is the host api without 'api.'
         self.legacy_host = self.host.replace("api.", "")
-        self.token_endpoint = os.getenv("ALTERYX_AACP_TOKEN_ENDPOINT", "https://pingauth.alteryxcloud.com/as")
+        self.token_endpoint = os.getenv("OPENONE_TOKEN_ENDPOINT", "https://pingauth-eu1.alteryxcloud.com/as")
         self.refresh_endpoint = self.token_endpoint + "/token"
-        self.project_id = os.getenv("ALTERYX_AACP_PROJECT_ID", "Your Project ID")
-        self.client_id = os.getenv("ALTERYX_AACP_CLIENT_ID", "Your Client ID")
-        self.access_token = os.getenv("ALTERYX_AACP_ACCESS_TOKEN", "Your Access Token")
-        self.refresh_token = os.getenv("ALTERYX_AACP_REFRESH_TOKEN", "Your Refresh Token")
-        self.persitent_folder = os.getenv("ALTERYX_AACP_PERSISTENT_FOLDER", "~/.aacp")
+        self.project_id = os.getenv("OPENONE_PROJECT_ID", "Your Project ID")
+        self.client_id = os.getenv("OPENONE_CLIENT_ID", "Your Client ID")
+        self.access_token = os.getenv("OPENONE_ACCESS_TOKEN", "Your Access Token")
+        self.refresh_token = os.getenv("OPENONE_REFRESH_TOKEN", "Your Refresh Token")
+        self.persitent_folder = os.getenv("OPENONE_PERSISTENT_FOLDER", "~/.aacp")
         
         # Authentication Settings
         # dict to store API key(s)
@@ -74,7 +74,7 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
         
         # Logging Settings
         self.logger = {}
-        self.logger["package_logger"] = logging.getLogger("aacp_client")
+        self.logger["package_logger"] = logging.getLogger("openone_client")
         self.logger["urllib3_logger"] = logging.getLogger("urllib3")
         # Log format
         self.logger_format = '%(asctime)s %(levelname)s %(message)s'
@@ -90,7 +90,7 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
         # SSL/TLS verification
         # Set this to false to skip verifying SSL certificate when calling API
         # from https server.
-        self.verify_ssl = os.getenv("ALTERYX_VERIFY_SSL", "1").lower() not in ("0", "false", "no")
+        self.verify_ssl = os.getenv("OPENONE_VERIFY_SSL", "1").lower() not in ("0", "false", "no")
         # Set this to customize the certificate file to verify the peer.
         self.ssl_ca_cert = None
         # client certificate file

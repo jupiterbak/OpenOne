@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Main entry point for AAC MCP Server using FastMCP.
+Main entry point for OpenOne MCP Server using FastMCP.
 
 This module provides a command-line interface to start the MCP server
 with different transport options: stdio, SSE, or streamable HTTP.
@@ -12,7 +12,7 @@ import logging
 import sys
 from typing import Optional
 
-from .server import AACMCPServer
+from .server import OpenOneMCPServer
 
 logger = logging.getLogger(__name__)
 
@@ -32,16 +32,16 @@ def setup_logging(level: str = "INFO") -> None:
 def parse_args() -> argparse.Namespace:
     """Parse command-line arguments."""
     parser = argparse.ArgumentParser(
-        description="AAC MCP Server - Alteryx Analytics Cloud Model Context Protocol Server using FastMCP",
+        description="OpenOne MCP Server - OpenOne Analytics Platform Model Context Protocol Server using FastMCP",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  python -m src.aac_mcp                          # Start with stdio (default)
-  python -m src.aac_mcp --transport stdio        # Start with stdio
-  python -m src.aac_mcp --transport sse          # Start with SSE on localhost:8000
-  python -m src.aac_mcp --transport sse --host 0.0.0.0 --port 9000
-  python -m src.aac_mcp --transport streamable-http   # Start with streamable HTTP transport
-  python -m src.aac_mcp --log-level DEBUG        # Enable debug logging
+  python -m src.openone                          # Start with stdio (default)
+  python -m src.openone --transport stdio        # Start with stdio
+  python -m src.openone --transport sse          # Start with SSE on localhost:8000
+  python -m src.openone --transport sse --host 0.0.0.0 --port 9000
+  python -m src.openone --transport streamable-http   # Start with streamable HTTP transport
+  python -m src.openone --log-level DEBUG        # Enable debug logging
         """
     )
     
@@ -75,7 +75,7 @@ Examples:
     parser.add_argument(
         "--version",
         action="version",
-        version="AAC MCP Server 0.1.0 (FastMCP)"
+        version="OpenOne MCP Server 0.1.0 (FastMCP)"
     )
     
     return parser.parse_args()
@@ -89,8 +89,8 @@ def main() -> None:
     
     # Create the server instance
     try:
-        server = AACMCPServer()
-        logger.info(f"Created AAC MCP Server using FastMCP")
+        server = OpenOneMCPServer()
+        logger.info(f"Created OpenOne MCP Server using FastMCP")
     except Exception as e:
         logger.error(f"Failed to create server: {e}")
         sys.exit(1)
