@@ -788,7 +788,7 @@ def list_job_groups(job_group_api: JobGroupApi) -> str:
         job_group_api: The Job Group API instance
     """
     try:
-        response = job_group_api.list_job_groups()
+        response = job_group_api.list_job_groups(limit=1000)
         result = response.to_dict() if hasattr(response, 'to_dict') else response
 
         return json.dumps(result, indent=2, default=str)
