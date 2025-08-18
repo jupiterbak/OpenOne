@@ -35,21 +35,6 @@ OpenOne is an unofficial Model Context Protocol (MCP) server and Python API clie
   - **🌍 Multi-Region Support** - Works with all OpenOne regions worldwide
 - **🔄 Real-time Operations** - Live status monitoring and execution tracking
 
-## Legacy API Coverage
-
-The client provides comprehensive access to all legacy OpenOne Analytics Platform APIs:
-
-- **Account & Authentication** - Account management, API tokens, OAuth2, authorization
-- **AWS & Cloud Config** - AWS configuration, roles, storage, cloud settings
-- **Connections & Permissions** - Data connections, permissions, connector metadata
-- **Flows & Workflows** - Flow management, nodes, permissions, runs, notifications
-- **Data Management** - Imported datasets, wrangled datasets, folders
-- **Jobs & Scheduling** - Job management, job groups, scheduling
-- **Plans & Planning** - Plan management, nodes, edges, overrides
-- **Workspace & Users** - Workspace management, user management, write settings
-- **Scripts & Macros** - SQL scripts, macros, output objects, publications
-
-
 ## Installation
 
 ### Prerequisites
@@ -75,8 +60,8 @@ Set up your OpenOne Analytics Platform credentials using environment variables:
 
 ```bash
 # Required
-export OPENONE_API_BASE_URL="https://api.eu1.openone.com"
-export OPENONE_TOKEN_ENDPOINT="https://pingauth-eu1.openone.com/as"
+export OPENONE_API_BASE_URL="https://api.eu1.alteryxcloud.com"
+export OPENONE_TOKEN_ENDPOINT="https://pingauth-eu1.alteryxcloud.com/as"
 export OPENONE_CLIENT_ID="your_client_id_here"
 export OPENONE_PROJECT_ID="your_project_id_here"
 export OPENONE_ACCESS_TOKEN="your_access_token_here"
@@ -91,8 +76,8 @@ export OPENONE_VERIFY_SSL=1
 Create a `.env` file in your project root:
 
 ```env
-OPENONE_API_BASE_URL=https://api.eu1.openone.com
-OPENONE_TOKEN_ENDPOINT=https://pingauth-eu1.openone.com/as
+OPENONE_API_BASE_URL=https://api.eu1.alteryxcloud.com
+OPENONE_TOKEN_ENDPOINT=https://pingauth-eu1.alteryxcloud.com/as
 OPENONE_CLIENT_ID=your_client_id_here
 OPENONE_PROJECT_ID=your_project_id_here
 OPENONE_ACCESS_TOKEN=your_access_token_here
@@ -112,8 +97,8 @@ Add the following to your Claude configuration file:
       "command": "python",
       "args": ["-m", "openone"],
       "env": {
-        "OPENONE_API_BASE_URL": "https://api.eu1.openone.com",
-        "OPENONE_TOKEN_ENDPOINT": "https://pingauth-eu1.openone.com/as",
+        "OPENONE_API_BASE_URL": "https://api.eu1.alteryxcloud.com",
+        "OPENONE_TOKEN_ENDPOINT": "https://pingauth-eu1.alteryxcloud.com/as",
         "OPENONE_CLIENT_ID": "your_client_id_here",
         "OPENONE_PROJECT_ID": "your_project_id_here",
         "OPENONE_ACCESS_TOKEN": "your_access_token_here",
