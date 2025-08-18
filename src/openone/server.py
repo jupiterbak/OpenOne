@@ -7,7 +7,7 @@ import json
 import logging
 from typing import Any, Dict, List, Optional
 
-from fastmcp import FastMCP
+from fastmcp import FastMCP, Context
 from ..client.schedule_api import ScheduleApi
 from ..client.workspace_api import WorkspaceApi
 from ..client.person_api import PersonApi
@@ -60,6 +60,9 @@ class OpenOneMCPServer:
         
         # Register all tools
         self._register_tools()
+        
+        # Register all resources
+        self._register_resources()
     
     def _initialize_client(self) -> None:
         """Initialize all API clients."""
@@ -96,13 +99,13 @@ class OpenOneMCPServer:
             name="list_schedules",
             description="List all schedules in the workspace"
         )
-        def list_schedules() -> str:
+        def list_schedules(ctx: Context) -> str:
             """List all schedules in the workspace."""
             self._ensure_client_initialized()
             
             # Report progress context for potentially long-running operation
-            self.app.request_context.report_progress("📅 Retrieving schedules from Alteryx Analytics Platform...")
-            
+            ctx.report_progress("📅 Retrieving schedules from Alteryx Analytics Platform...")
+
             return tools.list_schedules(self.schedule_api)
         
         @self.app.tool(
@@ -176,12 +179,12 @@ class OpenOneMCPServer:
             name="list_plans",
             description="List all plans in the current workspace"
         )
-        def list_plans() -> str:
+        def list_plans(ctx: Context) -> str:
             """List all plans in the current workspace."""
             self._ensure_client_initialized()
             
             # Report progress context for potentially long-running operation
-            self.app.request_context.report_progress("🗂️ Fetching all plans from current workspace...")
+            ctx.report_progress("🗂️ Fetching all plans from current workspace...")
             
             return tools.list_plans(self.plan_api)
         
@@ -196,9 +199,6 @@ class OpenOneMCPServer:
                 plan_id: The ID of the plan to retrieve
             """
             self._ensure_client_initialized()
-            
-            # Report progress context for potentially long-running operation
-            self.app.request_context.report_progress(f"🗂️ Loading full plan details for {plan_id}...")
             
             return tools.get_plan(self.plan_api, plan_id)
         
@@ -246,14 +246,14 @@ class OpenOneMCPServer:
             name="list_workspaces",
             description="List all workspaces available to the current user"
         )
-        def list_workspaces() -> str:
+        def list_workspaces(ctx: Context) -> str:
             """List all workspaces available to the current user.
             
             """
             self._ensure_client_initialized()
             
             # Report progress context for potentially long-running operation
-            self.app.request_context.report_progress("🏢 Fetching all accessible workspaces across regions...")
+            ctx.report_progress("🏢 Fetching all accessible workspaces across regions...")
             
             return tools.list_workspaces(self.legacy_workspace_api)
         
@@ -333,12 +333,12 @@ class OpenOneMCPServer:
             name="list_datasets",
             description="List all datasets accessible to the current user"
         )
-        def list_datasets() -> str:
+        def list_datasets(ctx: Context) -> str:
             """List all datasets."""
             self._ensure_client_initialized()
             
             # Report progress context for potentially long-running operation
-            self.app.request_context.report_progress("📊 Loading all datasets from workspace (up to 1000 records)...")
+            ctx.report_progress("📊 Loading all datasets from workspace (up to 1000 records)...")
             
             return tools.list_datasets(self.legacy_imported_dataset_api)
         
@@ -472,12 +472,12 @@ class OpenOneMCPServer:
             name="list_workflows",
             description="List all workflows accessible to the current user"
         )
-        def list_workflows() -> str:
+        def list_workflows(ctx: Context) -> str:
             """List all workflows accessible to the current user."""
             self._ensure_client_initialized()
             
             # Report progress context for potentially long-running operation
-            self.app.request_context.report_progress("⚙️ Fetching all workflows from Alteryx Analytics Platform (up to 1000 records)...")
+            ctx.report_progress("⚙️ Fetching all workflows from Alteryx Analytics Platform (up to 1000 records)...")
             
             return tools.list_workflows(self.workflows_api)
         
@@ -516,12 +516,12 @@ class OpenOneMCPServer:
             name="list_job_groups",
             description="List all job groups accessible to the current user"
         )
-        def list_job_groups() -> str:
+        def list_job_groups(ctx: Context) -> str:
             """List all job groups accessible to the current user."""
             self._ensure_client_initialized()
             
             # Report progress context for potentially long-running operation
-            self.app.request_context.report_progress("🔄 Loading all job groups and execution history (up to 1000 records)...")
+            ctx.report_progress("🔄 Loading all job groups and execution history (up to 1000 records)...")
             
             return tools.list_job_groups(self.legacy_job_group_api)
         
@@ -584,4 +584,251 @@ class OpenOneMCPServer:
             self.app.request_context.report_progress(f"🔄 Retrieving output datasets for job {job_id}...")
             
             return tools.get_job_output(self.legacy_job_group_api, job_id)
+        
+        # Resource Management Tools
+        @self.app.tool(
+            name="list_available_resources",
+            description="List all available MCP resources (datasets and workflows)"
+        )
+        def list_available_resources(ctx: Context) -> str:
+            """List all available MCP resources."""
+            self._ensure_client_initialized()
+            
+            # Report progress context for potentially long-running operation
+            ctx.report_progress("📋 Gathering all available MCP resources...")
+            
+            try:
+                all_resources = []
+                
+                # Get dataset resources
+                ctx.report_progress("📊 Loading all datasets from workspace (up to 1000 records)...")
+                try:
+                    dataset_resources = self._list_dataset_resources()
+                    all_resources.extend(dataset_resources)
+                except Exception as e:
+                    logger.error(f"Error getting dataset resources: {e}")
+                
+                # Get workflow resources
+                ctx.report_progress("⚙️ Fetching all workflows from Alteryx Analytics Platform (up to 1000 records)...")
+                try:
+                    workflow_resources = self._list_workflow_resources()
+                    all_resources.extend(workflow_resources)
+                except Exception as e:
+                    logger.error(f"Error getting workflow resources: {e}")
+                
+                # Add configuration resource
+                config_resource = {
+                    "uri": "config://settings",
+                    "name": "Server Configuration", 
+                    "description": "Current OpenOne MCP server configuration and settings",
+                    "mimeType": "application/json"
+                }
+                all_resources.append(config_resource)
+                
+                resource_summary = {
+                    "total_resources": len(all_resources),
+                    "resource_types": {
+                        "datasets": len([r for r in all_resources if r["uri"].startswith("dataset://")]),
+                        "workflows": len([r for r in all_resources if r["uri"].startswith("workflow://")]),
+                        "configuration": len([r for r in all_resources if r["uri"].startswith("config://")]),
+                    },
+                    "resources": all_resources
+                }
+                
+                return json.dumps(resource_summary, indent=2, default=str)
+                
+            except Exception as e:
+                logger.error(f"Error listing available resources: {e}")
+                return json.dumps({"error": f"Error listing available resources: {e}"}, indent=2)
+
+    def _register_resources(self) -> None:
+        """Register all MCP resources."""
+        
+        # Dataset Resources
+        @self.app.resource("dataset://{dataset_id}")
+        def read_dataset(dataset_id: str) -> str:
+            """Read a specific dataset resource."""
+            self._ensure_client_initialized()
+            
+            try:
+                # Get dataset details
+                response = self.legacy_imported_dataset_api.get_imported_dataset(dataset_id)
+                result = response.to_dict() if hasattr(response, 'to_dict') else response
+                return json.dumps(result, indent=2, default=str)
+                
+            except Exception as e:
+                logger.error(f"Error reading dataset {dataset_id}: {e}")
+                return json.dumps({"error": f"Error reading dataset {dataset_id}: {e}"}, indent=2)
+        
+        # Register resource listing handler
+        def _list_datasets_resources() -> List[Dict[str, Any]]:
+            """List all available dataset resources."""
+            self._ensure_client_initialized()
+            
+            try:
+                # Get datasets from API
+                response = self.legacy_imported_dataset_api.list_dataset_library(
+                    datasets_filter="all", 
+                    ownership_filter="all", 
+                    schematized=False, 
+                    limit=1000
+                )
+                
+                # Convert to resource format
+                datasets_data = response.to_dict() if hasattr(response, 'to_dict') else response
+                resources = []
+                
+                # Extract datasets from response
+                if isinstance(datasets_data, dict) and 'data' in datasets_data:
+                    datasets = datasets_data['data']
+                elif isinstance(datasets_data, list):
+                    datasets = datasets_data
+                else:
+                    datasets = []
+                
+                for dataset in datasets:
+                    if isinstance(dataset, dict):
+                        dataset_id = dataset.get('id', 'unknown')
+                        name = dataset.get('name', f'Dataset {dataset_id}')
+                        description = dataset.get('description', 'No description available')
+                        
+                        resources.append({
+                            "uri": f"dataset://{dataset_id}",
+                            "name": name,
+                            "description": description,
+                            "mimeType": "application/json"
+                        })
+                
+                return resources
+                
+            except Exception as e:
+                logger.error(f"Error listing datasets as resources: {e}")
+                return []
+        
+        # Store the resource lister for potential MCP use
+        self._list_dataset_resources = _list_datasets_resources
+        
+        # Add workflow resources
+        @self.app.resource("workflow://{workflow_id}")
+        def read_workflow(workflow_id: str) -> str:
+            """Read a specific workflow resource."""
+            self._ensure_client_initialized()
+            
+            try:
+                # Get workflow details
+                response = self.workflows_api.get_workflow(workflow_id)
+                result = response.to_dict() if hasattr(response, 'to_dict') else response
+                return json.dumps(result, indent=2, default=str)
+                
+            except Exception as e:
+                logger.error(f"Error reading workflow {workflow_id}: {e}")
+                return json.dumps({"error": f"Error reading workflow {workflow_id}: {e}"}, indent=2)
+        
+        # Register workflow resource listing handler
+        def _list_workflows_resources() -> List[Dict[str, Any]]:
+            """List all available workflow resources."""
+            self._ensure_client_initialized()
+            
+            try:
+                # Get workflows from API
+                response = self.workflows_api.get_workflows(limit=1000)
+                
+                # Convert to resource format
+                workflows_data = response.to_dict() if hasattr(response, 'to_dict') else response
+                resources = []
+                
+                # Extract workflows from response
+                if isinstance(workflows_data, dict) and 'data' in workflows_data:
+                    workflows = workflows_data['data']
+                elif isinstance(workflows_data, list):
+                    workflows = workflows_data
+                else:
+                    workflows = []
+                
+                for workflow in workflows:
+                    if isinstance(workflow, dict):
+                        workflow_id = workflow.get('id', 'unknown')
+                        name = workflow.get('name', f'Workflow {workflow_id}')
+                        description = workflow.get('description', 'No description available')
+                        
+                        resources.append({
+                            "uri": f"workflow://{workflow_id}",
+                            "name": name,
+                            "description": description,
+                            "mimeType": "application/json"
+                        })
+                
+                return resources
+                
+            except Exception as e:
+                logger.error(f"Error listing workflows as resources: {e}")
+                return []
+        
+        # Store the workflow resource lister
+        self._list_workflow_resources = _list_workflows_resources
+        
+        # Add configuration resource
+        @self.app.resource("config://settings")
+        def read_config() -> str:
+            """Read the current server configuration."""
+            try:
+                # Get configuration details
+                config_data = {
+                    "server_info": {
+                        "name": "openone",
+                        "description": "MCP server for OpenOne Analytics Platform",
+                        "version": "1.0.0"
+                    },
+                    "api_configuration": {
+                        "api_base_url": getattr(self.config, 'host', 'Not configured'),
+                        "token_endpoint": getattr(self.config, 'token_endpoint', 'Not configured'),
+                        "project_id": getattr(self.config, 'project_id', 'Not configured'),
+                        "verify_ssl": getattr(self.config, 'verify_ssl', True),
+                        "persistent_folder": getattr(self.config, 'persitent_folder', 'Not configured'),
+                    },
+                    "authentication": {
+                        "client_id_configured": bool(getattr(self.config, 'client_id', None)),
+                        "access_token_configured": bool(getattr(self.config, 'access_token', None)),
+                        "refresh_token_configured": bool(getattr(self.config, 'refresh_token', None)),
+                        "token_expires_at": getattr(self.config.oauth2_handler, 'token_expires_at', None)
+                    },
+                    "available_apis": {
+                        "schedule_api": "Available",
+                        "workspace_api": "Available", 
+                        "person_api": "Available",
+                        "plan_api": "Available",
+                        "workflows_api": "Available",
+                        "legacy_person_api": "Available",
+                        "legacy_workspace_api": "Available",
+                        "legacy_imported_dataset_api": "Available",
+                        "legacy_connection_api": "Available",
+                        "legacy_publication_api": "Available",
+                        "legacy_wrangled_dataset_api": "Available",
+                        "legacy_job_group_api": "Available"
+                    },
+                    "resource_types": {
+                        "datasets": "dataset://{dataset_id}",
+                        "workflows": "workflow://{workflow_id}",
+                        "configuration": "config://settings"
+                    },
+                    "tool_summary": {
+                        "total_tools": 26,
+                        "categories": {
+                            "schedule_management": 6,
+                            "plan_management": 6, 
+                            "workspace_management": 5,
+                            "user_management": 2,
+                            "dataset_management": 2,
+                            "workflow_management": 3,
+                            "job_management": 5,
+                            "resource_management": 1
+                        }
+                    }
+                }
+                
+                return json.dumps(config_data, indent=2, default=str)
+                
+            except Exception as e:
+                logger.error(f"Error reading configuration: {e}")
+                return json.dumps({"error": f"Error reading configuration: {e}"}, indent=2)
 
