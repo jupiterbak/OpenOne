@@ -18,8 +18,8 @@ OpenOne is an unofficial Model Context Protocol (MCP) server and Python API clie
 ### 🚀 Quick Stats
 - **25 MCP Tools** across 8 functional categories
 - **Complete API Coverage** for all core Alteryx APIs including legacy APIs  
-- **Production Ready** with comprehensive error handling
-- **Real-time Integration** with Claude Desktop
+- **Production Ready** with comprehensive error handling and progress reporting
+- **Real-time Integration** with Claude Desktop and contextual feedback
 
 ## Features
 
@@ -33,7 +33,6 @@ OpenOne is an unofficial Model Context Protocol (MCP) server and Python API clie
   - **🔄 Job Management** - Monitor job execution and retrieve inputs/outputs
   - **👥 User Management** - User profiles and permission management
   - **🌍 Multi-Region Support** - Works with all regions worldwide
-- **🔄 Real-time Operations** - Live status monitoring and execution tracking
 
 ## Installation
 
@@ -134,30 +133,6 @@ Instead of setting environment variables in the Claude config, you can create a 
   }
 }
 ```
-
-#### Testing the MCP Server
-
-After configuration, restart Claude Desktop and test with these example queries:
-
-**Basic Operations:**
-- "List all schedules in my OpenOne Analytics Platform instance"
-- "Show me my current workspace details and user count"
-- "Get a count of all my plans and datasets"
-
-**Schedule Management:**
-- "Disable the schedule with ID 12345 and tell me why"
-- "Show me all enabled schedules and their next run times"
-- "Delete all schedules that haven't run in the last 30 days"
-
-**Data Operations:**
-- "List all my datasets and show their connection status"
-- "Check if my database connections are working properly"
-- "Show me all wrangled datasets and their input sources"
-
-**Advanced Queries:**
-- "Run plan abc123 and monitor its execution status"
-- "Show me all workspace admins and their permissions"
-- "List my publications and delete any older than 6 months"
 
 ### API Client Usage
 
@@ -283,6 +258,7 @@ Here are some example queries you can use with Claude once the MCP server is con
 - "Run workflow wf-789 and monitor its execution"
 - "Show me all job groups and their current status"
 - "Get the input and output datasets for job job-123"
+
 
 ### 🔢 Tool Summary
 

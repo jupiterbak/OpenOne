@@ -99,6 +99,10 @@ class OpenOneMCPServer:
         def list_schedules() -> str:
             """List all schedules in the workspace."""
             self._ensure_client_initialized()
+            
+            # Report progress context for potentially long-running operation
+            self.app.request_context.report_progress("📅 Retrieving schedules from Alteryx Analytics Platform...")
+            
             return tools.list_schedules(self.schedule_api)
         
         @self.app.tool(
@@ -175,6 +179,10 @@ class OpenOneMCPServer:
         def list_plans() -> str:
             """List all plans in the current workspace."""
             self._ensure_client_initialized()
+            
+            # Report progress context for potentially long-running operation
+            self.app.request_context.report_progress("🗂️ Fetching all plans from current workspace...")
+            
             return tools.list_plans(self.plan_api)
         
         @self.app.tool(
@@ -188,6 +196,10 @@ class OpenOneMCPServer:
                 plan_id: The ID of the plan to retrieve
             """
             self._ensure_client_initialized()
+            
+            # Report progress context for potentially long-running operation
+            self.app.request_context.report_progress(f"🗂️ Loading full plan details for {plan_id}...")
+            
             return tools.get_plan(self.plan_api, plan_id)
         
         @self.app.tool(
@@ -223,6 +235,10 @@ class OpenOneMCPServer:
                 plan_id: The ID of the plan to run
             """
             self._ensure_client_initialized()
+            
+            # Report progress context for potentially long-running operation
+            self.app.request_context.report_progress(f"🚀 Executing plan {plan_id} on Alteryx Analytics Platform...")
+            
             return tools.run_plan(self.plan_api, plan_id)
         
         # Workspace Management Tools
@@ -235,6 +251,10 @@ class OpenOneMCPServer:
             
             """
             self._ensure_client_initialized()
+            
+            # Report progress context for potentially long-running operation
+            self.app.request_context.report_progress("🏢 Fetching all accessible workspaces across regions...")
+            
             return tools.list_workspaces(self.legacy_workspace_api)
         
         @self.app.tool(
@@ -316,6 +336,10 @@ class OpenOneMCPServer:
         def list_datasets() -> str:
             """List all datasets."""
             self._ensure_client_initialized()
+            
+            # Report progress context for potentially long-running operation
+            self.app.request_context.report_progress("📊 Loading all datasets from workspace (up to 1000 records)...")
+            
             return tools.list_datasets(self.legacy_imported_dataset_api)
         
         @self.app.tool(
@@ -403,41 +427,45 @@ class OpenOneMCPServer:
         #     self._ensure_client_initialized()
         #     return tools.delete_publication(self.legacy_publication_api, publication_id)
         
-        # Wrangled Dataset Management Tools
-        @self.app.tool(
-            name="list_wrangled_datasets",
-            description="List all wrangled datasets. A wrangled dataset is a dataset that has been produced by a workflow after execution."
-        )
-        def list_wrangled_datasets() -> str:
-            """List all wrangled datasets."""
-            self._ensure_client_initialized()
-            return tools.list_wrangled_datasets(self.legacy_wrangled_dataset_api)
-        
-        @self.app.tool(
-            name="get_wrangled_dataset",
-            description="Get a wrangled dataset by wrangled dataset ID"
-        )
-        def get_wrangled_dataset(wrangled_dataset_id: str) -> str:
-            """Get a wrangled dataset by ID.
+        # # Wrangled Dataset Management Tools
+        # @self.app.tool(
+        #     name="list_wrangled_datasets",
+        #     description="List all wrangled datasets. A wrangled dataset is a dataset that has been produced by a workflow after execution."
+        # )
+        # def list_wrangled_datasets() -> str:
+        #     """List all wrangled datasets."""
+        #     self._ensure_client_initialized()
             
-            Args:
-                wrangled_dataset_id: The ID of the wrangled dataset to retrieve
-            """
-            self._ensure_client_initialized()
-            return tools.get_wrangled_dataset(self.legacy_wrangled_dataset_api, wrangled_dataset_id)
-        
-        @self.app.tool(
-            name="get_inputs_for_wrangled_dataset",
-            description="Get the inputs for a wrangled dataset by wrangled dataset ID. These are the datasets that were used to produce the wrangled dataset."
-        )
-        def get_inputs_for_wrangled_dataset(wrangled_dataset_id: str) -> str:
-            """Get the inputs for a wrangled dataset by ID.
+        #     # Report progress context for potentially long-running operation
+        #     self.app.request_context.report_progress("🧹 Retrieving all wrangled datasets produced by workflows...")
             
-            Args:
-                wrangled_dataset_id: The ID of the wrangled dataset to get inputs for
-            """
-            self._ensure_client_initialized()
-            return tools.get_inputs_for_wrangled_dataset(self.legacy_wrangled_dataset_api, wrangled_dataset_id)
+        #     return tools.list_wrangled_datasets(self.legacy_wrangled_dataset_api)
+        
+        # @self.app.tool(
+        #     name="get_wrangled_dataset",
+        #     description="Get a wrangled dataset by wrangled dataset ID"
+        # )
+        # def get_wrangled_dataset(wrangled_dataset_id: str) -> str:
+        #     """Get a wrangled dataset by ID.
+            
+        #     Args:
+        #         wrangled_dataset_id: The ID of the wrangled dataset to retrieve
+        #     """
+        #     self._ensure_client_initialized()
+        #     return tools.get_wrangled_dataset(self.legacy_wrangled_dataset_api, wrangled_dataset_id)
+        
+        # @self.app.tool(
+        #     name="get_inputs_for_wrangled_dataset",
+        #     description="Get the inputs for a wrangled dataset by wrangled dataset ID. These are the datasets that were used to produce the wrangled dataset."
+        # )
+        # def get_inputs_for_wrangled_dataset(wrangled_dataset_id: str) -> str:
+        #     """Get the inputs for a wrangled dataset by ID.
+            
+        #     Args:
+        #         wrangled_dataset_id: The ID of the wrangled dataset to get inputs for
+        #     """
+        #     self._ensure_client_initialized()
+        #     return tools.get_inputs_for_wrangled_dataset(self.legacy_wrangled_dataset_api, wrangled_dataset_id)
         
         # Workflow Management Tools
         @self.app.tool(
@@ -447,6 +475,10 @@ class OpenOneMCPServer:
         def list_workflows() -> str:
             """List all workflows accessible to the current user."""
             self._ensure_client_initialized()
+            
+            # Report progress context for potentially long-running operation
+            self.app.request_context.report_progress("⚙️ Fetching all workflows from Alteryx Analytics Platform (up to 1000 records)...")
+            
             return tools.list_workflows(self.workflows_api)
         
         @self.app.tool(
@@ -473,6 +505,10 @@ class OpenOneMCPServer:
                 workflow_id: The ID of the workflow to run
             """
             self._ensure_client_initialized()
+            
+            # Report progress context for potentially long-running operation
+            self.app.request_context.report_progress(f"⚙️ Starting workflow execution for {workflow_id} (compiler v6.21.6, engine: amp)...")
+            
             return tools.run_workflow(self.workflows_api, workflow_id)
         
         # Job Group Management Tools
@@ -483,6 +519,10 @@ class OpenOneMCPServer:
         def list_job_groups() -> str:
             """List all job groups accessible to the current user."""
             self._ensure_client_initialized()
+            
+            # Report progress context for potentially long-running operation
+            self.app.request_context.report_progress("🔄 Loading all job groups and execution history (up to 1000 records)...")
+            
             return tools.list_job_groups(self.legacy_job_group_api)
         
         @self.app.tool(
@@ -522,6 +562,10 @@ class OpenOneMCPServer:
                 job_id: The ID of the job to get inputs for
             """
             self._ensure_client_initialized()
+            
+            # Report progress context for potentially long-running operation
+            self.app.request_context.report_progress(f"🔄 Retrieving input datasets for job {job_id}...")
+            
             return tools.get_job_input(self.legacy_job_group_api, job_id)
         
         @self.app.tool(
@@ -535,5 +579,9 @@ class OpenOneMCPServer:
                 job_id: The ID of the job to get outputs for
             """
             self._ensure_client_initialized()
+            
+            # Report progress context for potentially long-running operation
+            self.app.request_context.report_progress(f"🔄 Retrieving output datasets for job {job_id}...")
+            
             return tools.get_job_output(self.legacy_job_group_api, job_id)
 
