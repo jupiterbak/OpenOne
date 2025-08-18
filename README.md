@@ -16,7 +16,7 @@
 OpenOne is an unofficial Model Context Protocol (MCP) server and Python API client for Alteryx Analytics Platform. It enables seamless integration between Claude and other MCP-compatible clients with your Alteryx Analytics Platform instance, providing programmatic access to schedules, datasets, plans and user management.
 
 ### 🚀 Quick Stats
-- **31 MCP Tools** across 8 functional categories
+- **25 MCP Tools** across 8 functional categories
 - **Complete API Coverage** for all core Alteryx APIs including legacy APIs  
 - **Production Ready** with comprehensive error handling
 - **Real-time Integration** with Claude Desktop
@@ -29,8 +29,8 @@ OpenOne is an unofficial Model Context Protocol (MCP) server and Python API clie
   - **🗂️ Plan Management** - Create, run, and manage execution plans
   - **🏢 Workspace Management** - Multi-workspace support and user administration
   - **📊 Dataset Management** - Access imported and wrangled datasets
-  - **🔌 Connection Management** - Monitor and manage data connections
-  - **📄 Publication Management** - Handle published outputs and results
+  - **⚙️ Workflow Management** - List, get, and run workflows
+  - **🔄 Job Management** - Monitor job execution and retrieve inputs/outputs
   - **👥 User Management** - User profiles and permission management
   - **🌍 Multi-Region Support** - Works with all regions worldwide
 - **🔄 Real-time Operations** - Live status monitoring and execution tracking
@@ -188,7 +188,6 @@ The MCP server provides comprehensive access to Alteryx Analytics Cloud through 
 |------|-------------|-------------|
 | `list_schedules` | List all schedules in the workspace | None |
 | `get_schedule` | Get details of a specific schedule | `schedule_id` |
-| `update_schedule` | Update an existing schedule | `schedule_id`, `schedule_data` |
 | `delete_schedule` | Delete a schedule by ID | `schedule_id` |
 | `enable_schedule` | Enable a schedule by ID | `schedule_id` |
 | `disable_schedule` | Disable a schedule by ID | `schedule_id` |
@@ -198,53 +197,55 @@ The MCP server provides comprehensive access to Alteryx Analytics Cloud through 
 | Tool | Description | Parameters |
 |------|-------------|-------------|
 | `list_plans` | List all plans in current workspace | None |
+| `get_plan` | Get a plan by plan ID | `plan_id` |
+| `delete_plan` | Delete a plan by plan ID | `plan_id` |
+| `get_plan_schedules` | Get schedules for a plan by plan ID | `plan_id` |
+| `run_plan` | Run a plan by plan ID | `plan_id` |
 | `count_plans` | Get the count of plans in workspace | None |
-| `get_plan` | Get a plan by ID | `plan_id` |
-| `delete_plan` | Delete a plan by ID | `plan_id` |
-| `get_plan_schedules` | Get schedules for a plan | `plan_id` |
-| `run_plan` | Run a plan by ID | `plan_id` |
 
 ### 🏢 Workspace Management Tools
 | Tool | Description | Parameters |
 |------|-------------|-------------|
 | `list_workspaces` | List all available workspaces | None |
-| `get_current_workspace` | Get current workspace details | None |
-| `get_workspace_configuration` | Get workspace configuration | `workspace_id` |
-| `list_workspace_users` | List users in a workspace | `workspace_id` |
-| `list_workspace_admins` | List admins in a workspace | `workspace_id` |
+| `get_current_workspace` | Get current workspace that user is in | None |
+| `get_workspace_configuration` | Get workspace configuration by workspace ID | `workspace_id` |
+| `list_workspace_users` | List users in a workspace by workspace ID | `workspace_id` |
+| `list_workspace_admins` | List admins in a workspace by workspace ID | `workspace_id` |
 
 ### 👥 User Management Tools
 | Tool | Description | Parameters |
 |------|-------------|-------------|
 | `get_current_user` | Get current user information | None |
-| `get_user` | Get user details by ID | `user_id` |
+| `get_user` | Get user details by user ID | `user_id` |
 
 ### 📊 Dataset Management Tools
 | Tool | Description | Parameters |
 |------|-------------|-------------|
-| `list_datasets` | List all datasets | None |
-| `get_dataset` | Get dataset details by ID | `dataset_id` |
-
-### 🔌 Connection Management Tools
-| Tool | Description | Parameters |
-|------|-------------|-------------|
-| `list_connections` | List all connections | None |
-| `get_connection` | Get connection details by ID | `connection_id` |
-| `get_connection_status` | Get connection status | `connection_id` |
-
-### 📄 Publication Management Tools
-| Tool | Description | Parameters |
-|------|-------------|-------------|
-| `list_publications` | List all publications for user | None |
-| `get_publication` | Get publication details by ID | `publication_id` |
-| `delete_publication` | Delete a publication by ID | `publication_id` |
+| `list_datasets` | List all datasets accessible to current user | None |
+| `get_dataset` | Get dataset details by dataset ID | `dataset_id` |
 
 ### 🧹 Wrangled Dataset Management Tools
 | Tool | Description | Parameters |
 |------|-------------|-------------|
-| `list_wrangled_datasets` | List all wrangled datasets | None |
-| `get_wrangled_dataset` | Get wrangled dataset by ID | `wrangled_dataset_id` |
-| `get_inputs_for_wrangled_dataset` | Get inputs for wrangled dataset | `wrangled_dataset_id` |
+| `list_wrangled_datasets` | List all wrangled datasets (produced by workflows) | None |
+| `get_wrangled_dataset` | Get wrangled dataset by wrangled dataset ID | `wrangled_dataset_id` |
+| `get_inputs_for_wrangled_dataset` | Get input datasets for wrangled dataset by wrangled dataset ID | `wrangled_dataset_id` |
+
+### ⚙️ Workflow Management Tools
+| Tool | Description | Parameters |
+|------|-------------|-------------|
+| `list_workflows` | List all workflows accessible to current user | None |
+| `get_workflow` | Get workflow details by workflow ID | `workflow_id` |
+| `run_workflow` | Run a workflow by workflow ID | `workflow_id` |
+
+### 🔄 Job Management Tools
+| Tool | Description | Parameters |
+|------|-------------|-------------|
+| `list_job_groups` | List all job groups accessible to current user | None |
+| `get_job_group` | Get job group details by job ID | `job_id` |
+| `get_job_status` | Get status of a job by job ID | `job_id` |
+| `get_job_input` | Get all input datasets of a job by job ID | `job_id` |
+| `get_job_output` | Get all output datasets of a job by job ID | `job_id` |
 
 ### Example Usage with Claude
 
@@ -266,28 +267,30 @@ Here are some example queries you can use with Claude once the MCP server is con
 - "Show me all users in workspace ws-456 and their roles"
 - "Get my current user profile and permissions"
 
-**Data & Connections:**
+**Data Management:**
 - "List all my datasets and show their sizes"
-- "Check the status of my database connection conn-789"
-- "Show me all my data connections and which ones are active"
+- "Show me all my wrangled datasets and their input sources"
+- "Get details about dataset ds-456 and its metadata"
 
-**Publications:**
-- "List all my published outputs and their creation dates"
-- "Get details about publication pub-321"
+**Workflows & Jobs:**
+- "List all my workflows and show which ones are active"
+- "Run workflow wf-789 and monitor its execution"
+- "Show me all job groups and their current status"
+- "Get the input and output datasets for job job-123"
 
 ### 🔢 Tool Summary
 
 | Category | Tool Count | Key Operations |
 |----------|------------|----------------|
-| **Schedule Management** | 7 tools | List, Get, Update, Delete, Enable, Disable, Count |
+| **Schedule Management** | 6 tools | List, Get, Delete, Enable, Disable, Count |
 | **Plan Management** | 6 tools | List, Get, Delete, Run, Get Schedules, Count |
 | **Workspace Management** | 5 tools | List, Get Current, Get Config, List Users/Admins |
 | **User Management** | 2 tools | Get Current User, Get User by ID |
 | **Dataset Management** | 2 tools | List, Get by ID |
-| **Connection Management** | 3 tools | List, Get, Check Status |
-| **Publication Management** | 3 tools | List, Get, Delete |
 | **Wrangled Dataset Management** | 3 tools | List, Get, Get Inputs |
-| **Total** | **31 tools** | Complete AACP integration |
+| **Workflow Management** | 3 tools | List, Get, Run |
+| **Job Management** | 5 tools | List, Get, Status, Get Inputs/Outputs |
+| **Total** | **25 tools** | Complete Alteryx Platform integration |
 
 ## 🤝 Contributing
 
