@@ -93,17 +93,17 @@ Add the following to your Claude configuration file:
 ```json
 {
   "mcpServers": {
-    "openone": {
-      "command": "python",
-      "args": ["-m", "openone"],
+     "aacp-mcp-server": {
+      "command": "uvx",
+      "args": ["openone", "--transport", "stdio"],
       "env": {
         "OPENONE_API_BASE_URL": "https://api.eu1.alteryxcloud.com",
         "OPENONE_TOKEN_ENDPOINT": "https://pingauth-eu1.alteryxcloud.com/as",
-        "OPENONE_CLIENT_ID": "your_client_id_here",
-        "OPENONE_PROJECT_ID": "your_project_id_here",
-        "OPENONE_ACCESS_TOKEN": "your_access_token_here",
-        "OPENONE_REFRESH_TOKEN": "your_refresh_token",
-        "OPENONE_PERSISTENT_FOLDER": "~/.openone"
+        "OPENONE_CLIENT_ID":"your-client-id",
+        "OPENONE_PROJECT_ID":"your-project-id",
+        "OPENONE_ACCESS_TOKEN": "your-access-token",
+        "OPENONE_REFRESH_TOKEN":"your-refresh-token",
+        "OPENONE_PERSISTENT_FOLDER":"~/.aacp"
       }
     }
   }
@@ -118,11 +118,17 @@ Instead of setting environment variables in the Claude config, you can create a 
 {
   "mcpServers": {
     "openone": {
-      "command": "python",
-      "args": ["-m", "openone"],
+      "command": "uvx",
+      "args": [".", "--transport", "stdio"],
       "cwd": "/path/to/your/project",
       "env": {
-        "OPENONE_CONFIG_FILE": "/path/to/your/.env"
+        "OPENONE_API_BASE_URL": "https://api.eu1.alteryxcloud.com",
+        "OPENONE_TOKEN_ENDPOINT": "https://pingauth-eu1.alteryxcloud.com/as",
+        "OPENONE_CLIENT_ID":"your-client-id",
+        "OPENONE_PROJECT_ID":"your-project-id",
+        "OPENONE_ACCESS_TOKEN": "your-access-token",
+        "OPENONE_REFRESH_TOKEN":"your-refresh-token",
+        "OPENONE_PERSISTENT_FOLDER":"~/.aacp"
       }
     }
   }

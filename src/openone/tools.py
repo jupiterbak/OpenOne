@@ -433,7 +433,7 @@ def list_datasets(dataset_api: LegacyImportedDatasetApi) -> str:
         dataset_api: The Dataset API instance
     """
     try:
-        response = dataset_api.list_dataset_library(datasets_filter="all", ownership_filter="all", schematized=False, limit=100)
+        response = dataset_api.list_dataset_library(datasets_filter="all", ownership_filter="all", schematized=False, limit=1000)
         result = response.to_dict() if hasattr(response, 'to_dict') else response
         return json.dumps(result, indent=2, default=str)
     except Exception as e:
@@ -632,7 +632,7 @@ def get_inputs_for_wrangled_dataset(wrangled_dataset_api: LegacyWrangledDatasetA
     except Exception as e:
         logger.error(f"Error getting inputs for wrangled dataset {wrangled_dataset_id}: {e}")
         return json.dumps({"error": f"Error getting inputs for wrangled dataset {wrangled_dataset_id}: {e}"}, indent=2, default=str)
-    
+
 # Workflow API Functions
 def list_workflows(workflows_api: WorkflowsApi) -> str:
     """List all workflows accessible to the current user with a limit of 1000 workflows.
