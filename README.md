@@ -2,7 +2,7 @@
 
 # OpenOne
 
-**Unofficial MCP Server & API Client for OpenOne Analytics Platform**
+**Unofficial MCP Server & API Client for Alteryx Analytics Platform**
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -25,14 +25,14 @@ OpenOne is an unofficial Model Context Protocol (MCP) server and Python API clie
 
 - **🔗 MCP-Compatible Server** - Direct integration with Claude and other MCP clients
 - **🐍 Python API Client** - Full-featured client for OpenOne Analytics Platform
-- **📅 Schedule Management** - Complete CRUD operations for workflow schedules
-- **🗂️ Plan Management** - Create, run, and manage execution plans
-- **🏢 Workspace Management** - Multi-workspace support and user administration
-- **📊 Dataset Management** - Access imported and wrangled datasets
-- **🔌 Connection Management** - Monitor and manage data connections
-- **📄 Publication Management** - Handle published outputs and results
-- **👥 User Management** - User profiles and permission management
-- **🌍 Multi-Region Support** - Works with all OpenOne regions worldwide
+  - **📅 Schedule Management** - Complete CRUD operations for workflow schedules
+  - **🗂️ Plan Management** - Create, run, and manage execution plans
+  - **🏢 Workspace Management** - Multi-workspace support and user administration
+  - **📊 Dataset Management** - Access imported and wrangled datasets
+  - **🔌 Connection Management** - Monitor and manage data connections
+  - **📄 Publication Management** - Handle published outputs and results
+  - **👥 User Management** - User profiles and permission management
+  - **🌍 Multi-Region Support** - Works with all OpenOne regions worldwide
 - **🔄 Real-time Operations** - Live status monitoring and execution tracking
 
 ## Legacy API Coverage
