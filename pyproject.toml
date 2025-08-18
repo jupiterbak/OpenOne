@@ -1,6 +1,6 @@
 [project]
 name = "OpenOne"
-version = "0.1.0"
+version = "0.1.1"
 description = "Model Context Protocol (MCP) server for Alteryx Analytics Cloud"
 authors = [
     { name = "Jupiter Bakakeu", email = "jupiter.bakakeu@gmail.com" }

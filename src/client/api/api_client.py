@@ -143,7 +143,12 @@ class ApiClient(object):
             body = self.sanitize_for_serialization(body)
 
         # request url
-        url = self.configuration.host + resource_path if '/v4' not in resource_path else self.configuration.legacy_host + resource_path
+        # Use legacy_host for legacy '/v4' endpoints and for service endpoints like '/svc-*'
+        if resource_path.startswith('/v4') or resource_path.startswith('/svc-'):
+            base_host = self.configuration.legacy_host
+        else:
+            base_host = self.configuration.host
+        url = base_host + resource_path
 
         # perform request and return response
         response_data = self.request(
@@ -271,7 +276,8 @@ class ApiClient(object):
                 elif klass in iam_models.__dict__:
                     klass = getattr(iam_models, klass)
                 else:
-                    raise ValueError(f"Class {klass} not found in any of the modules")
+                    klass = object
+                    # raise ValueError(f"Class {klass} not found in any of the modules")
                 
                 # Check if the class is found in multiple modules to avoid conflicts
                 modules = [scheduling_models, plan_models, iam_models, legacy_models]

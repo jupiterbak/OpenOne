@@ -16,6 +16,8 @@ from ..client.legacy_imported_dataset_api import ImportedDatasetApi as LegacyImp
 from ..client.legacy_connection_api import ConnectionApi as LegacyConnectionApi
 from ..client.legacy_publication_api import PublicationApi as LegacyPublicationApi
 from ..client.legacy_wrangled_dataset_api import WrangledDatasetApi as LegacyWrangledDatasetApi
+from ..client.workflows_api import WorkflowsApi
+from ..client.legacy_job_group_api import JobGroupApi
 
 logger = logging.getLogger(__name__)
 
@@ -129,6 +131,36 @@ def disable_schedule(schedule_api: ScheduleApi, schedule_id: str) -> str:
     except Exception as e:
         logger.error(f"Error disabling schedule {schedule_id}: {e}")
         return json.dumps({"error": f"Error disabling schedule {schedule_id}: {e}"}, indent=2, default=str)
+
+
+def update_schedule(schedule_api: ScheduleApi, schedule_id: str, schedule_data: Dict[str, Any]) -> str:
+    """Update an existing schedule.
+    
+    Args:
+        schedule_api: The Schedule API instance
+        schedule_id: The ID of the schedule to update
+        schedule_data: Dictionary containing updated schedule data
+    """
+    if not schedule_id:
+        return json.dumps({"error": "schedule_id is required"}, indent=2, default=str)
+    
+    if not schedule_data:
+        return json.dumps({"error": "schedule_data is required"}, indent=2, default=str)
+    
+    try:
+        # Check if the schedule exists first
+        existing_schedule = schedule_api.get_schedule(schedule_id)
+        if existing_schedule is None:
+            logger.error(f"Schedule {schedule_id} not found")
+            return json.dumps({"error": f"Schedule {schedule_id} not found"}, indent=2, default=str)
+        
+        # Update the schedule
+        response = schedule_api.update_schedule(schedule_id, schedule_data)
+        result = response.to_dict() if hasattr(response, 'to_dict') else response
+        return json.dumps(result, indent=2, default=str)
+    except Exception as e:
+        logger.error(f"Error updating schedule {schedule_id}: {e}")
+        return json.dumps({"error": f"Error updating schedule {schedule_id}: {e}"}, indent=2, default=str)
 
 
 def count_schedules(schedule_api: ScheduleApi) -> str:
@@ -600,4 +632,169 @@ def get_inputs_for_wrangled_dataset(wrangled_dataset_api: LegacyWrangledDatasetA
     except Exception as e:
         logger.error(f"Error getting inputs for wrangled dataset {wrangled_dataset_id}: {e}")
         return json.dumps({"error": f"Error getting inputs for wrangled dataset {wrangled_dataset_id}: {e}"}, indent=2, default=str)
+    
+# Workflow API Functions
+def list_workflows(workflows_api: WorkflowsApi) -> str:
+    """List all workflows accessible to the current user with a limit of 1000 workflows.
+    
+    Args:
+        workflows_api: The Workflows API instance
+    """
+    try:
+        response = workflows_api.get_workflows(limit=1000)
+        result = response.to_dict() if hasattr(response, 'to_dict') else response
+        return json.dumps(result, indent=2, default=str)
+    except Exception as e:
+        logger.error(f"Error listing workflows: {e}")
+        return json.dumps({"error": f"Error listing workflows: {e}"}, indent=2, default=str)
+    
+    
+def get_workflow(workflows_api: WorkflowsApi, workflow_id: str) -> str:
+    """Get a workflow by ID.
+    
+    Args:
+        workflows_api: The Workflows API instance
+        workflow_id: The ID of the workflow to retrieve
+    """
+    if not workflow_id:
+        return json.dumps({"error": "workflow_id is required"}, indent=2, default=str) 
+    
+    try:
+        response = workflows_api.get_workflow(workflow_id)
+        result = response.to_dict() if hasattr(response, 'to_dict') else response
+        return json.dumps(result, indent=2, default=str)
+    except Exception as e:
+        logger.error(f"Error getting workflow {workflow_id}: {e}")
+        return json.dumps({"error": f"Error getting workflow {workflow_id}: {e}"}, indent=2, default=str)
+    
+def run_workflow(workflows_api: WorkflowsApi, workflow_id: str) -> str:
+    """Run a workflow by ID.
+    
+    Args:
+        workflows_api: The Workflows API instance
+        workflow_id: The ID of the workflow to run
+    """
+    if not workflow_id:
+        return json.dumps({"error": "workflow_id is required"}, indent=2, default=str) 
+    
+    try:
+        # check if the workflow exists
+        response = workflows_api.get_workflow(workflow_id)
+        if response is None:
+            logger.error(f"Workflow {workflow_id} not found")
+            return json.dumps({"error": f"Workflow {workflow_id} not found"}, indent=2, default=str)
+        
+        # run the workflow
+        response = workflows_api.run_workflow(workflow_id, compiler_version="6.21.6", execution_engine="amp")
+        result = response.to_dict() if hasattr(response, 'to_dict') else response
+        return json.dumps(result, indent=2, default=str)
+    except Exception as e:
+        logger.error(f"Error running workflow {workflow_id}: {e}")
+        return json.dumps({"error": f"Error running workflow {workflow_id}: {e}"}, indent=2, default=str)
+
+
+# Job API Functions
+def get_job_group(job_group_api: JobGroupApi, job_id: str) -> str:
+    """Get a job group by ID.
+    
+    Args:
+        job_group_api: The Job Group API instance
+        job_id: The ID of the job to retrieve
+    """
+    if not job_id:
+        return json.dumps({"error": "job_id is required"}, indent=2, default=str)
+    
+    try:
+        response = job_group_api.get_job_group(job_id)
+        result = response.to_dict() if hasattr(response, 'to_dict') else response
+        return json.dumps(result, indent=2, default=str)
+    except Exception as e:
+        logger.error(f"Error getting job {job_id}: {e}")
+        return json.dumps({"error": f"Error getting job {job_id}: {e}"}, indent=2, default=str)
+    
+def get_job_status(job_group_api: JobGroupApi, job_id: str) -> str:
+    """Get the status of a job by ID.
+    
+    Args:
+        job_group_api: The Job Group API instance
+        job_id: The ID of the job to retrieve
+    """
+    if not job_id:
+        return json.dumps({"error": "job_id is required"}, indent=2, default=str)
+    
+    try:
+        response = job_group_api.get_job_group_status(id=job_id)
+        result = response.to_dict() if hasattr(response, 'to_dict') else response
+        return json.dumps(result, indent=2, default=str)
+    except Exception as e:
+        logger.error(f"Error getting job status {job_id}: {e}")
+        return json.dumps({"error": f"Error getting job status {job_id}: {e}"}, indent=2, default=str)
+    
+def get_job_input(job_group_api: JobGroupApi, job_id: str) -> str:
+    """Get all the inputs datasets of a job by the job ID.
+    
+    Args:
+        job_group_api: The Job Group API instance
+        job_id: The ID of the job to retrieve
+    """
+    if not job_id:
+        return json.dumps({"error": "job_id is required"}, indent=2, default=str)
+    
+    try:
+        # check if the job exists
+        response = job_group_api.get_job_group(job_id)
+        if response is None:
+            logger.error(f"Job {job_id} not found")
+            return json.dumps({"error": f"Job {job_id} not found"}, indent=2, default=str)
+        
+        # get the inputs for the job
+        response = job_group_api.get_job_group_inputs(id=job_id)
+        result = response.to_dict() if hasattr(response, 'to_dict') else response
+        return json.dumps(result, indent=2, default=str)
+    except Exception as e:
+        logger.error(f"Error getting job input {job_id}: {e}")
+        return json.dumps({"error": f"Error getting job input {job_id}: {e}"}, indent=2, default=str)
+    
+def get_job_output(job_group_api: JobGroupApi, job_id: str) -> str:
+    """Get all the outputs datasets of a job by the job ID.
+    
+    Args:
+        job_group_api: The Job Group API instance
+        job_id: The ID of the job to retrieve
+    """
+    if not job_id:
+        return json.dumps({"error": "job_id is required"}, indent=2, default=str)
+    
+    try:
+        # check if the job exists
+        response = job_group_api.get_job_group(job_id)
+        if response is None:
+            logger.error(f"Job {job_id} not found")
+            return json.dumps({"error": f"Job {job_id} not found"}, indent=2, default=str)
+        
+        # get the outputs for the job
+        response = job_group_api.get_job_group_outputs(id=job_id)
+        result = response.to_dict() if hasattr(response, 'to_dict') else response
+        return json.dumps(result, indent=2, default=str)
+    except Exception as e:
+        logger.error(f"Error getting job output {job_id}: {e}")
+        return json.dumps({"error": f"Error getting job output {job_id}: {e}"}, indent=2, default=str)
+    
+
+def list_job_groups(job_group_api: JobGroupApi) -> str:
+    """List all jobs that a user has access to.
+    
+    Args:
+        job_group_api: The Job Group API instance
+    """
+    try:
+        response = job_group_api.list_job_groups()
+        result = response.to_dict() if hasattr(response, 'to_dict') else response
+
+        return json.dumps(result, indent=2, default=str)
+    except Exception as e:
+        logger.error(f"Error listing job groups: {e}")
+        return json.dumps({"error": f"Error listing job groups: {e}"}, indent=2, default=str)
+    
+    
     
