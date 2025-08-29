@@ -2,7 +2,7 @@
 
 # OpenOne
 
-**Unofficial MCP Server & API Client for Alteryx Analytics Platform**
+**Unofficial MCP Server & API Client for Alteryx Analytics Cloud Platform**
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
@@ -15,24 +15,18 @@
 
 OpenOne is an unofficial Model Context Protocol (MCP) server and Python API client for Alteryx Analytics Platform. It enables seamless integration between Claude and other MCP-compatible clients with your Alteryx Analytics Platform instance, providing programmatic access to schedules, datasets, plans and user management.
 
-### 🚀 Quick Stats
-- **25 MCP Tools** across 8 functional categories
-- **Complete API Coverage** for all core Alteryx APIs including legacy APIs  
-- **Production Ready** with comprehensive error handling and progress reporting
-- **Real-time Integration** with Claude Desktop and contextual feedback
-
 ## Features
 
-- **🔗 MCP-Compatible Server** - Direct integration with Claude and other MCP clients
-- **🐍 Python API Client** - Full-featured client for Alteryx Analytics Platform
-  - **📅 Schedule Management** - Complete CRUD operations for workflow schedules
-  - **🗂️ Plan Management** - Create, run, and manage execution plans
-  - **🏢 Workspace Management** - Multi-workspace support and user administration
-  - **📊 Dataset Management** - Access imported and wrangled datasets
-  - **⚙️ Workflow Management** - List, get, and run workflows
-  - **🔄 Job Management** - Monitor job execution and retrieve inputs/outputs
-  - **👥 User Management** - User profiles and permission management
-  - **🌍 Multi-Region Support** - Works with all regions worldwide
+- **MCP-Compatible Server** - Direct integration with Claude and other MCP clients
+- **Python API Client** - Full-featured client for Alteryx Analytics Platform
+  - **Schedule Management** - Complete CRUD operations for workflow schedules
+  - **Plan Management** - Create, run, and manage execution plans
+  - **Workspace Management** - Multi-workspace support and user administration
+  - **Dataset Management** - Access imported and wrangled datasets
+  - **Workflow Management** - List, get, and run workflows
+  - **Job Management** - Monitor job execution and retrieve inputs/outputs
+  - **User Management** - User profiles and permission management
+  - **Multi-Region Support** - Works with all regions worldwide
 
 ## Installation
 
@@ -52,38 +46,6 @@ pip install .
 ```
 
 ### Configuration
-
-#### Environment Variables
-
-Set up your OpenOne Analytics Platform credentials using environment variables:
-
-```bash
-# Required
-export OPENONE_API_BASE_URL="https://api.eu1.alteryxcloud.com"
-export OPENONE_TOKEN_ENDPOINT="https://pingauth-eu1.alteryxcloud.com/as"
-export OPENONE_CLIENT_ID="your_client_id_here"
-export OPENONE_PROJECT_ID="your_project_id_here"
-export OPENONE_ACCESS_TOKEN="your_access_token_here"
-export OPENONE_REFRESH_TOKEN="your_refresh_token"
-# Optional
-export OPENONE_PERSISTENT_FOLDER="~/.openone"
-export OPENONE_VERIFY_SSL=1
-```
-
-#### Configuration File
-
-Create a `.env` file in your project root:
-
-```env
-OPENONE_API_BASE_URL=https://api.eu1.alteryxcloud.com
-OPENONE_TOKEN_ENDPOINT=https://pingauth-eu1.alteryxcloud.com/as
-OPENONE_CLIENT_ID=your_client_id_here
-OPENONE_PROJECT_ID=your_project_id_here
-OPENONE_ACCESS_TOKEN=your_access_token_here
-OPENONE_REFRESH_TOKEN=your_refresh_token
-OPENONE_PERSISTENT_FOLDER=~/.openone
-OPENONE_VERIFY_SSL=1
-```
 
 #### MCP Server Setup - Claude Desktop Configuration
 
@@ -134,6 +96,38 @@ Instead of setting environment variables in the Claude config, you can create a 
 }
 ```
 
+#### Environment Variables
+
+Set up your OpenOne Analytics Platform credentials using environment variables:
+
+```bash
+# Required
+export OPENONE_API_BASE_URL="https://api.eu1.alteryxcloud.com"
+export OPENONE_TOKEN_ENDPOINT="https://pingauth-eu1.alteryxcloud.com/as"
+export OPENONE_CLIENT_ID="your_client_id_here"
+export OPENONE_PROJECT_ID="your_project_id_here"
+export OPENONE_ACCESS_TOKEN="your_access_token_here"
+export OPENONE_REFRESH_TOKEN="your_refresh_token"
+# Optional
+export OPENONE_PERSISTENT_FOLDER="~/.openone"
+export OPENONE_VERIFY_SSL=1
+```
+
+#### Configuration File
+
+Create a `.env` file in your project root:
+
+```env
+OPENONE_API_BASE_URL=https://api.eu1.alteryxcloud.com
+OPENONE_TOKEN_ENDPOINT=https://pingauth-eu1.alteryxcloud.com/as
+OPENONE_CLIENT_ID=your_client_id_here
+OPENONE_PROJECT_ID=your_project_id_here
+OPENONE_ACCESS_TOKEN=your_access_token_here
+OPENONE_REFRESH_TOKEN=your_refresh_token
+OPENONE_PERSISTENT_FOLDER=~/.openone
+OPENONE_VERIFY_SSL=1
+```
+
 ### API Client Usage
 
 ### Basic Usage
@@ -164,7 +158,7 @@ except ApiException as e:
 
 The MCP server provides comprehensive access to Alteryx Analytics Cloud through organized tool categories:
 
-### 📅 Schedule Management Tools
+### Schedule Management Tools
 | Tool | Description | Parameters |
 |------|-------------|-------------|
 | `list_schedules` | List all schedules in the workspace | None |
@@ -174,7 +168,7 @@ The MCP server provides comprehensive access to Alteryx Analytics Cloud through 
 | `disable_schedule` | Disable a schedule by ID | `schedule_id` |
 | `count_schedules` | Get the count of schedules in workspace | None |
 
-### 🗂️ Plan Management Tools
+### Plan Management Tools
 | Tool | Description | Parameters |
 |------|-------------|-------------|
 | `list_plans` | List all plans in current workspace | None |
@@ -184,7 +178,7 @@ The MCP server provides comprehensive access to Alteryx Analytics Cloud through 
 | `run_plan` | Run a plan by plan ID | `plan_id` |
 | `count_plans` | Get the count of plans in workspace | None |
 
-### 🏢 Workspace Management Tools
+### Workspace Management Tools
 | Tool | Description | Parameters |
 |------|-------------|-------------|
 | `list_workspaces` | List all available workspaces | None |
@@ -193,19 +187,19 @@ The MCP server provides comprehensive access to Alteryx Analytics Cloud through 
 | `list_workspace_users` | List users in a workspace by workspace ID | `workspace_id` |
 | `list_workspace_admins` | List admins in a workspace by workspace ID | `workspace_id` |
 
-### 👥 User Management Tools
+### User Management Tools
 | Tool | Description | Parameters |
 |------|-------------|-------------|
 | `get_current_user` | Get current user information | None |
 | `get_user` | Get user details by user ID | `user_id` |
 
-### 📊 Dataset Management Tools
+### Dataset Management Tools
 | Tool | Description | Parameters |
 |------|-------------|-------------|
 | `list_datasets` | List all datasets accessible to current user | None |
 | `get_dataset` | Get dataset details by dataset ID | `dataset_id` |
 
-### 🧹 Wrangled Dataset Management Tools
+### Wrangled Dataset Management Tools
 | Tool | Description | Parameters |
 |------|-------------|-------------|
 | `list_wrangled_datasets` | List all wrangled datasets (produced by workflows) | None |
@@ -219,7 +213,7 @@ The MCP server provides comprehensive access to Alteryx Analytics Cloud through 
 | `get_workflow` | Get workflow details by workflow ID | `workflow_id` |
 | `run_workflow` | Run a workflow by workflow ID | `workflow_id` |
 
-### 🔄 Job Management Tools
+### Job Management Tools
 | Tool | Description | Parameters |
 |------|-------------|-------------|
 | `list_job_groups` | List all job groups accessible to current user | None |
@@ -260,7 +254,7 @@ Here are some example queries you can use with Claude once the MCP server is con
 - "Get the input and output datasets for job job-123"
 
 
-### 🔢 Tool Summary
+### Tool Summary
 
 | Category | Tool Count | Key Operations |
 |----------|------------|----------------|
@@ -274,7 +268,7 @@ Here are some example queries you can use with Claude once the MCP server is con
 | **Job Management** | 5 tools | List, Get, Status, Get Inputs/Outputs |
 | **Total** | **25 tools** | Complete Alteryx Platform integration |
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Here's how you can help:
 
@@ -283,22 +277,6 @@ We welcome contributions! Here's how you can help:
 3. **Commit** your changes (`git commit -m 'Add amazing feature'`)
 4. **Push** to the branch (`git push origin feature/amazing-feature`)
 5. **Open** a Pull Request
-
-### Development Setup
-
-```bash
-git clone https://github.com/jupiterbak/OpenOne.git
-cd OpenOne
-pip install -e .[develop]
-pytest  # Run tests
-```
-
-### Code Style
-
-- Follow PEP 8 guidelines
-- Add type hints where appropriate
-- Include docstrings for all functions
-- Write tests for new features
 
 ## 📄 License
 
