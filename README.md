@@ -18,7 +18,7 @@ OpenOne is an unofficial Model Context Protocol (MCP) server and Python API clie
 ## Features
 
 - **MCP-Compatible Server** - Direct integration with Claude and other MCP clients
-- **Python API Client** - Full-featured client for Alteryx Analytics Platform
+- **Python API Client for AACP** - Full-featured python client for Alteryx Analytics Platform
   - **Schedule Management** - Complete CRUD operations for workflow schedules
   - **Plan Management** - Create, run, and manage execution plans
   - **Workspace Management** - Multi-workspace support and user administration
@@ -35,6 +35,18 @@ OpenOne is an unofficial Model Context Protocol (MCP) server and Python API clie
 - Python 3.10 or higher
 - Alteryx Analytics Cloud Platform account
 - OAuth2 credentials (Client ID, initial Access Token & Refresh Token)
+- Alteryx Project ID
+
+####
+To get your Alteryx Project ID:
+
+1. Visit <https://us1.alteryxcloud.com/cloud-portal/library/alteryx-io> (or <https://eu1.alteryxcloud.com/cloud-portal/library/alteryx-io> or <https://au1.alteryxcloud.com/cloud-portal/library/alteryx-io> for other regions). Ensure that you're logged in to the workspace in which you wish to use APIs.
+
+1. Click the "+ New" button to create a new API Project. Enter a name for your new project, then click "Save".
+
+1. You should see your new project in the list of projects.
+
+1. Click on the project and copy the API Project ID to your clipboard.
 
 ### Install Options
 
