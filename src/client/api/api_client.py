@@ -108,7 +108,7 @@ class ApiClient(object):
             header_params = dict(self.parameters_to_tuples(header_params,
                                                            collection_formats))
         # add alteryx project id to header params
-        header_params['x-api-project-id'] = config.project_id
+        # header_params['x-api-project-id'] = config.project_id
 
         # path parameters
         if path_params:

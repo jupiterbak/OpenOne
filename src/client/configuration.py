@@ -137,7 +137,7 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
             self.original_project_id = config["original_project_id"] if "original_project_id" in config else None
             self.original_access_token = config["original_access_token"] if "original_access_token" in config else None
             self.original_refresh_token = config["original_refresh_token"] if "original_refresh_token" in config else None
-            need_to_update = self.original_client_id != self.client_id or self.original_project_id != self.project_id or self.original_refresh_token != self.refresh_token
+            need_to_update = self.original_client_id != self.client_id or self.original_refresh_token != self.refresh_token
 
         # If the config file does not exist, create it
         if not os.path.exists(self.config_file) or need_to_update:

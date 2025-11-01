@@ -35,18 +35,6 @@ OpenOne is an unofficial Model Context Protocol (MCP) server and Python API clie
 - Python 3.10 or higher
 - Alteryx Analytics Cloud Platform account
 - OAuth2 credentials (Client ID, initial Access Token & Refresh Token)
-- Alteryx Project ID
-
-####
-To get your Alteryx Project ID:
-
-1. Visit <https://us1.alteryxcloud.com/cloud-portal/library/alteryx-io> (or <https://eu1.alteryxcloud.com/cloud-portal/library/alteryx-io> or <https://au1.alteryxcloud.com/cloud-portal/library/alteryx-io> for other regions). Ensure that you're logged in to the workspace in which you wish to use APIs.
-
-1. Click the "+ New" button to create a new API Project. Enter a name for your new project, then click "Save".
-
-1. You should see your new project in the list of projects.
-
-1. Click on the project and copy the API Project ID to your clipboard.
 
 ### Install Options
 
@@ -66,14 +54,13 @@ Add the following to your Claude configuration file:
 ```json
 {
   "mcpServers": {
-     "aacp-mcp-server": {
+    "aacp-mcp-server": {
       "command": "uvx",
       "args": ["openone", "--transport", "stdio"],
       "env": {
         "OPENONE_API_BASE_URL": "https://api.eu1.alteryxcloud.com",
         "OPENONE_TOKEN_ENDPOINT": "https://pingauth-eu1.alteryxcloud.com/as",
         "OPENONE_CLIENT_ID":"your-client-id",
-        "OPENONE_PROJECT_ID":"your-project-id",
         "OPENONE_ACCESS_TOKEN": "your-access-token",
         "OPENONE_REFRESH_TOKEN":"your-refresh-token",
         "OPENONE_PERSISTENT_FOLDER":"~/.aacp"
@@ -96,9 +83,8 @@ Instead of setting environment variables in the Claude config, you can create a 
       "cwd": "/path/to/your/project",
       "env": {
         "OPENONE_API_BASE_URL": "https://api.eu1.alteryxcloud.com",
-        "OPENONE_TOKEN_ENDPOINT": "https://pingauth-eu1.alteryxcloud.com/as",
+        "OPENONE_TOKEN_ENDPOINT":"https://pingauth-eu1.alteryxcloud.com/as",
         "OPENONE_CLIENT_ID":"your-client-id",
-        "OPENONE_PROJECT_ID":"your-project-id",
         "OPENONE_ACCESS_TOKEN": "your-access-token",
         "OPENONE_REFRESH_TOKEN":"your-refresh-token",
         "OPENONE_PERSISTENT_FOLDER":"~/.aacp"
@@ -117,7 +103,6 @@ Set up your OpenOne Analytics Platform credentials using environment variables:
 export OPENONE_API_BASE_URL="https://api.eu1.alteryxcloud.com"
 export OPENONE_TOKEN_ENDPOINT="https://pingauth-eu1.alteryxcloud.com/as"
 export OPENONE_CLIENT_ID="your_client_id_here"
-export OPENONE_PROJECT_ID="your_project_id_here"
 export OPENONE_ACCESS_TOKEN="your_access_token_here"
 export OPENONE_REFRESH_TOKEN="your_refresh_token"
 # Optional
@@ -133,7 +118,6 @@ Create a `.env` file in your project root:
 OPENONE_API_BASE_URL=https://api.eu1.alteryxcloud.com
 OPENONE_TOKEN_ENDPOINT=https://pingauth-eu1.alteryxcloud.com/as
 OPENONE_CLIENT_ID=your_client_id_here
-OPENONE_PROJECT_ID=your_project_id_here
 OPENONE_ACCESS_TOKEN=your_access_token_here
 OPENONE_REFRESH_TOKEN=your_refresh_token
 OPENONE_PERSISTENT_FOLDER=~/.openone
