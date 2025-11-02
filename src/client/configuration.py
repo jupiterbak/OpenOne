@@ -59,7 +59,6 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
         self.legacy_host = self.host.replace("api.", "")
         self.token_endpoint = os.getenv("OPENONE_TOKEN_ENDPOINT", "https://pingauth-eu1.alteryxcloud.com/as")
         self.refresh_endpoint = self.token_endpoint + "/token"
-        self.project_id = os.getenv("OPENONE_PROJECT_ID", "Your Project ID")
         self.client_id = os.getenv("OPENONE_CLIENT_ID", "Your Client ID")
         self.access_token = os.getenv("OPENONE_ACCESS_TOKEN", "Your Access Token")
         self.refresh_token = os.getenv("OPENONE_REFRESH_TOKEN", "Your Refresh Token")
@@ -126,7 +125,6 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
             with open(self.config_file, "r") as f:
                 config = json.load(f)
             self.client_id = config["client_id"]
-            self.project_id = config["project_id"]
             self.access_token = config["access_token"]
             self.refresh_token = config["refresh_token"]
             self.host = config["host"]
@@ -134,7 +132,6 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
             self.refresh_endpoint = config["refresh_endpoint"]
             self.verify_ssl = config["verify_ssl"]
             self.original_client_id = config["original_client_id"] if "original_client_id" in config else None
-            self.original_project_id = config["original_project_id"] if "original_project_id" in config else None
             self.original_access_token = config["original_access_token"] if "original_access_token" in config else None
             self.original_refresh_token = config["original_refresh_token"] if "original_refresh_token" in config else None
             need_to_update = self.original_client_id != self.client_id or self.original_refresh_token != self.refresh_token
@@ -145,11 +142,9 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
                 json.dump(
                     {
                         "client_id": self.client_id,
-                        "project_id": self.project_id, 
                         "access_token": self.access_token, 
                         "refresh_token": self.refresh_token,
                         "original_client_id": self.client_id,
-                        "original_project_id": self.project_id,
                         "original_access_token": self.access_token,
                         "original_refresh_token": self.refresh_token,
                         "host": self.host, 
