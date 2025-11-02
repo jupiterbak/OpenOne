@@ -62,6 +62,8 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
         self.client_id = os.getenv("OPENONE_CLIENT_ID", "Your Client ID")
         self.access_token = os.getenv("OPENONE_ACCESS_TOKEN", "Your Access Token")
         self.refresh_token = os.getenv("OPENONE_REFRESH_TOKEN", "Your Refresh Token")
+        # Optional project id (some API calls / headers may require a project identifier)
+        self.project_id = os.getenv("OPENONE_PROJECT_ID", None)
         self.persitent_folder = os.getenv("OPENONE_PERSISTENT_FOLDER", "~/.aacp")
         
         # Authentication Settings
@@ -124,16 +126,18 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
         if os.path.exists(self.config_file):
             with open(self.config_file, "r") as f:
                 config = json.load(f)
-            self.client_id = config["client_id"]
-            self.access_token = config["access_token"]
-            self.refresh_token = config["refresh_token"]
-            self.host = config["host"]
-            self.token_endpoint = config["token_endpoint"]
-            self.refresh_endpoint = config["refresh_endpoint"]
-            self.verify_ssl = config["verify_ssl"]
-            self.original_client_id = config["original_client_id"] if "original_client_id" in config else None
-            self.original_access_token = config["original_access_token"] if "original_access_token" in config else None
-            self.original_refresh_token = config["original_refresh_token"] if "original_refresh_token" in config else None
+            # Use .get to avoid KeyError if keys are missing from the config file
+            self.client_id = config.get("client_id", self.client_id)
+            self.access_token = config.get("access_token", self.access_token)
+            self.refresh_token = config.get("refresh_token", self.refresh_token)
+            self.host = config.get("host", self.host)
+            self.token_endpoint = config.get("token_endpoint", self.token_endpoint)
+            self.refresh_endpoint = config.get("refresh_endpoint", self.refresh_endpoint)
+            self.verify_ssl = config.get("verify_ssl", self.verify_ssl)
+            self.project_id = config.get("project_id", self.project_id)
+            self.original_client_id = config.get("original_client_id") if "original_client_id" in config else None
+            self.original_access_token = config.get("original_access_token") if "original_access_token" in config else None
+            self.original_refresh_token = config.get("original_refresh_token") if "original_refresh_token" in config else None
             need_to_update = self.original_client_id != self.client_id or self.original_refresh_token != self.refresh_token
 
         # If the config file does not exist, create it
@@ -144,6 +148,7 @@ class Configuration(six.with_metaclass(TypeWithDefault, object)):
                         "client_id": self.client_id,
                         "access_token": self.access_token, 
                         "refresh_token": self.refresh_token,
+                        "project_id": self.project_id,
                         "original_client_id": self.client_id,
                         "original_access_token": self.access_token,
                         "original_refresh_token": self.refresh_token,

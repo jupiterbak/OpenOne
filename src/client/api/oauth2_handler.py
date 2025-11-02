@@ -30,7 +30,8 @@ class OAuth2Handler:
         :param refresh_endpoint: OAuth2 refresh endpoint
         :param expires_in: OAuth2 token expiration time in seconds
         """
-        self.configuration_file_path = configuration_file_path
+        # Expand user path and store
+        self.configuration_file_path = os.path.expanduser(configuration_file_path)
 
         # if the configuration file path is not a valid file, raise an error
         if not os.path.isfile(self.configuration_file_path):
@@ -40,11 +41,12 @@ class OAuth2Handler:
         with open(self.configuration_file_path, "r") as f:
             self.configuration = json.load(f)
 
-        self.client_id = self.configuration["client_id"]
-        self.access_token = self.configuration["access_token"]
-        self.refresh_token = self.configuration["refresh_token"]
-        self.refresh_endpoint = self.configuration["refresh_endpoint"]
-        self.token_expires_at = self.configuration["token_expires_at"] if "token_expires_at" in self.configuration else time.time() - 300
+        # Use .get to avoid KeyError if a key is missing from the credentials file
+        self.client_id = self.configuration.get("client_id")
+        self.access_token = self.configuration.get("access_token")
+        self.refresh_token = self.configuration.get("refresh_token")
+        self.refresh_endpoint = self.configuration.get("refresh_endpoint")
+        self.token_expires_at = self.configuration.get("token_expires_at", time.time() - 300)
         self.logger = logging.getLogger(__name__)
     
     def set_tokens(self, access_token: str, refresh_token: str, expires_in: int = 3600):
